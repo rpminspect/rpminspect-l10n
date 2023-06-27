@@ -37,11 +37,7 @@ jobs:
                   ref: main
             - name: Push new rpminspect.pot
               run: |
-                  if [ ! -d rpminspect-l10n/${{ matrix.branch }} ]; then
-                      mkdir -p rpminspect-l10n/${{ matrix.branch }}
-                  fi
-
-                  cp -v rpminspect/po/rpminspect.pot rpminspect-l10n/${{ matrix.branch }}
+                  cp -v rpminspect/po/rpminspect.pot rpminspect-l10n
                   cd rpminspect-l10n
                   git config user.name github-actions
                   git config user.email github-actions@github.com
