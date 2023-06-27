@@ -29,8 +29,6 @@ jobs:
                   ref: ${{ matrix.rpminspect-branch }}
             - name: Install build requirements for rpminspect
               run: |
-                  apt-get update
-                  apt-get upgrade -y
                   apt-get install -y git make
                   make -C rpminspect instreqs
             - name: Create pot file
