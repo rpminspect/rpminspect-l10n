@@ -6,27 +6,40 @@ on:
     workflow_dispatch:
 
 jobs:
+
+        # Use containers on their ubuntu latest image
+        runs-on: ubuntu-latest
+
+        # Set up the matrix of distributions to test
+        strategy:
+            matrix:
+                container: ["ubuntu:latest"]
+
+        container:
+            image: ${{ matrix.container }}
+
+
     update-pot-file:
         strategy:
             # only one job at once otherwise one job will push and second job will get conflict on remote
             max-parallel: 1
 
-            # update this matrix to support new Anaconda branches
+            # set up a matrix of distributions
             matrix:
-                branch: [ main ]
-                include:
-                    - branch: main
-                      rpminspect-branch: main
+                container: [ "ubuntu:latest" ]
+
+            container:
+                image: ${{ matrix.container }}
 
         runs-on: ubuntu-latest
 
         steps:
-            - name: Checkout rpminspect ${{ matrix.rpminspect-branch }}
+            - name: Checkout rpminspect
               uses: actions/checkout@v3
               with:
                   path: rpminspect
                   repository: rpminspect/rpminspect
-                  ref: ${{ matrix.rpminspect-branch }}
+                  ref: main
             - name: Install build requirements for rpminspect
               run: |
                   apt-get install -y git make
