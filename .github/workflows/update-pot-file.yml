@@ -32,6 +32,8 @@ jobs:
 
             - name: Install build requirements for rpminspect
               run: |
+                  apt-get update
+                  apt-get upgrade -y
                   apt-get install -y git make
                   make -C rpminspect instreqs
 
