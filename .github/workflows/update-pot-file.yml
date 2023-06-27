@@ -1,0 +1,79 @@
+name: Update rpminspect.pot template
+
+on:
+    schedule:
+        - cron: 0 0 * * *
+    workflow_dispatch:
+
+jobs:
+    update-pot-file:
+        strategy:
+            # only one job at once otherwise one job will push and second job will get conflict on remote
+            max-parallel: 1
+
+            # update this matrix to support new Anaconda branches
+            matrix:
+                branch: [ main ]
+                include:
+                    - branch: main
+                      rpminspect-branch: main
+
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout rpminspect ${{ matrix.rpminspect-branch }}
+              uses: actions/checkout@v3
+              with:
+                  path: rpminspect
+                  repository: rpminspect/rpminspect
+                  ref: ${{ matrix.rpminspect-branch }}
+            - name: Create pot file
+              run: |
+                  make update-pot
+            - name: Checkout rpminspect-l10n
+              uses: actions/checkout@v3
+              with:
+                  path: rpminspect-l10n
+                  ref: main
+            - name: Push new rpminspect.pot
+              run: |
+                  if [ ! -d rpminspect-l10n/${{ matrix.branch }} ]; then
+                      mkdir -p rpminspect-l10n/${{ matrix.branch }}
+                  fi
+
+                  cp -v rpminspect/po/rpminspect.pot rpminspect-l10n/${{ matrix.branch }}
+                  cd rpminspect-l10n
+                  git config user.name github-actions
+                  git config user.email github-actions@github.com
+                  git add .
+
+                  # test if the rpminspect.pot file needs updating
+                  if ! git diff -I 'POT-Creation-Date:' --cached --quiet ; then
+                      echo "The rpminspect.pot file did not change."
+                      exit 0
+                  else
+                      git dif --cached
+                  fi
+
+                  git commit -m "Update ${{ matrix.branch }} rpminspect.pot file"
+
+                  # try to push, retry 5 times
+                  # push from weblate could happen easily because webhook updates the translation
+                  RETRIES=5
+                  DELAY=2
+                  COUNT=0
+
+                  while [ $COUNT -lt $RETRIES ]; do
+                      git pull --rebase
+                      git push
+
+                      if [ $? -eq 0 ]; then
+                          exit 0
+                      fi
+
+                      COUNT=$(($COUNT + 1))
+                      sleep $DELAY
+                  done
+
+                  # retries failed
+                  exit 1
