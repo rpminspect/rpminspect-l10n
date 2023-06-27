@@ -27,6 +27,12 @@ jobs:
                   path: rpminspect
                   repository: rpminspect/rpminspect
                   ref: ${{ matrix.rpminspect-branch }}
+            - name: Install build requirements for rpminspect
+              run: |
+                  apt-get update
+                  apt-get upgrade -y
+                  apt-get install -y git make
+                  make -C rpminspect instreqs
             - name: Create pot file
               run: |
                   make -C rpminspect update-pot
