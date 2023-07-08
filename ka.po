@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-06-28 05:25+0000\n"
+"PO-Revision-Date: 2023-07-09 04:21+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ka/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.1\n"
+"X-Generator: Weblate 4.18.2\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -2739,7 +2739,7 @@ msgstr ""
 
 #: lib/inspect_permissions.c:114
 msgid " changed"
-msgstr ""
+msgstr " შეიცვალა"
 
 #: lib/inspect_permissions.c:129
 #, c-format
