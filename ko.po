@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-07-04 17:20+0000\n"
+"PO-Revision-Date: 2023-08-09 02:21+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -3292,7 +3292,7 @@ msgstr "변경"
 
 #: lib/output_summary.c:61
 msgid "ok"
-msgstr ""
+msgstr "좋음"
 
 #: lib/output_summary.c:63
 msgid "unknown"
@@ -3301,7 +3301,7 @@ msgstr "알 수 없음"
 #: lib/output_text.c:92 lib/output_xunit.c:83
 #, c-format
 msgid "Result: %s\n"
-msgstr ""
+msgstr "결과: %s\n"
 
 #: lib/output_text.c:95 lib/output_xunit.c:96
 #, c-format
@@ -3309,6 +3309,8 @@ msgid ""
 "Waiver Authorization: %s\n"
 "\n"
 msgstr ""
+"면제 승인: %s\n"
+"\n"
 
 #: lib/output_text.c:99 lib/output_xunit.c:110
 #, c-format
@@ -3317,6 +3319,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"상세한 설명:\n"
+"%s\n"
+"\n"
 
 #: lib/output_text.c:103 lib/output_xunit.c:118
 #, c-format
@@ -3324,44 +3329,46 @@ msgid ""
 "Suggested Remedy:\n"
 "%s"
 msgstr ""
+"제안된 해결책:\n"
+"%s"
 
 #: lib/output_xunit.c:54
 #, c-format
 msgid "*** opening %s for writing"
-msgstr ""
+msgstr "*** 작성을 위해 %s를 여는 중"
 
 #: lib/parse_yaml.c:114 lib/parse_yaml.c:139
 #, c-format
 msgid "*** %s: broken document"
-msgstr ""
+msgstr "*** %s: 깨진 문서"
 
 #: lib/parse_yaml.c:158 lib/parse_yaml.c:305
 #, c-format
 msgid "*** skipping token type %s"
-msgstr ""
+msgstr "*** 토큰 유형 %s 건너뛰기"
 
 #: lib/parse_yaml.c:386
 msgid "*** malformed type - freed?"
-msgstr ""
+msgstr "*** 잘못된 형식의 유형 - 해제?"
 
 #: lib/peers.c:176
 #, c-format
 msgid "There is not enough available space to unpack all of the RPMs.\n"
-msgstr ""
+msgstr "모든 RPM 압축을 해제하기에 사용 할만한 공간이 충분하지 않습니다.\n"
 
 #: lib/readelf.c:48
 #, c-format
 msgid "*** unknown elftype_t %d"
-msgstr ""
+msgstr "*** 알 수 없는 elftype_t %d"
 
 #: lib/readelf.c:76
 msgid "*** libelf version mismatch"
-msgstr ""
+msgstr "*** libelf 버전이 일치하지 않음"
 
 #: lib/readfile.c:50
 #, c-format
 msgid "*** unable to find end of %s"
-msgstr ""
+msgstr "*** %s의 끝을 찾을 수 없음"
 
 #: lib/readfile.c:68
 #, c-format
@@ -3856,20 +3863,20 @@ msgstr ""
 #: src/rpminspect.c:984
 #, c-format
 msgid "Skipping %s inspection..."
-msgstr ""
+msgstr "%s 검사 건너뛰기..."
 
 #: src/rpminspect.c:989
 msgid "skip"
-msgstr ""
+msgstr "건너뛰기"
 
 #: src/rpminspect.c:1009
 #, c-format
 msgid "Running %s inspection..."
-msgstr ""
+msgstr "%s 검사를 진행 중..."
 
 #: src/rpminspect.c:1018
 msgid "pass"
-msgstr ""
+msgstr "통과"
 
 #: src/rpminspect.c:1018
 msgid "FAIL"
@@ -3881,3 +3888,5 @@ msgid ""
 "\n"
 "Keeping working directory: %s\n"
 msgstr ""
+"\n"
+"작업 디렉토리 유지: %s\n"
