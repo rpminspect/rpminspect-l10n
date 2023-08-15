@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-08-09 02:21+0000\n"
+"PO-Revision-Date: 2023-08-17 00:21+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -2699,27 +2699,27 @@ msgstr ""
 
 #: lib/inspect_permissions.c:84
 msgid " changed setuid/setgid;"
-msgstr ""
+msgstr " 변경된 setuid/setgid;"
 
 #: lib/inspect_permissions.c:89
 msgid " became a directory;"
-msgstr ""
+msgstr " 디렉토리가 됩니다;"
 
 #: lib/inspect_permissions.c:91
 msgid " became a character device;"
-msgstr ""
+msgstr " 문자 장치가 됩니다;"
 
 #: lib/inspect_permissions.c:93
 msgid " became a block device;"
-msgstr ""
+msgstr " 블록 장치가 됩니다;"
 
 #: lib/inspect_permissions.c:95
 msgid " became a regular file;"
-msgstr ""
+msgstr " 정규 파일이 됩니다;"
 
 #: lib/inspect_permissions.c:97
 msgid " became a FIFO;"
-msgstr ""
+msgstr " FIFO로 됩니다;"
 
 #: lib/inspect_permissions.c:99
 msgid " became a symbolic link;"
@@ -3183,11 +3183,11 @@ msgstr ""
 #: lib/inspect_virus.c:169
 #, c-format
 msgid "%s version %u (%s)"
-msgstr ""
+msgstr "%s 버전 %u (%s)"
 
 #: lib/inspect_virus.c:201
 msgid "virus or malware in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${ARCH}의 ${FILE}에서 바이러스 또는 멀웨어"
 
 #: lib/inspect_xml.c:195
 #, c-format
@@ -3759,12 +3759,12 @@ msgstr "%s 버전 %s\n"
 #: src/rpminspect.c:539
 #, c-format
 msgid "*** ?? getopt returned character code 0%o ??"
-msgstr ""
+msgstr "*** ?? getopt 반환된 문자 코드 0%o ??"
 
 #: src/rpminspect.c:546
 #, c-format
 msgid "Available build types:\n"
-msgstr ""
+msgstr "사용 가능한 제작 유형:\n"
 
 #: src/rpminspect.c:567
 #, c-format
@@ -3772,6 +3772,8 @@ msgid ""
 "\n"
 "Available output formats:\n"
 msgstr ""
+"\n"
+"사용 가능한 출력 형식:\n"
 
 #: src/rpminspect.c:584
 #, c-format
@@ -3779,6 +3781,8 @@ msgid ""
 "\n"
 "Available inspections:\n"
 msgstr ""
+"\n"
+"사용 가능한 검사:\n"
 
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
 #, c-format
