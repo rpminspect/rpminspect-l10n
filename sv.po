@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-09-10 11:21+0000\n"
+"PO-Revision-Date: 2023-09-13 09:35+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.0.1\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -797,7 +797,7 @@ msgid ""
 "permissions are expected, update %s and send a patch to the project that "
 "owns it."
 msgstr ""
-"Se till att avsnittet %%files innehåller makrot %%defatt. Om dessa "
+"Se till att avsnittet %%files innehåller makrot %%defattr. Om dessa "
 "rättigheter är förväntade, uppdatera då %s och skicka en ändring till "
 "projektet som äger den."
 
@@ -808,6 +808,9 @@ msgid ""
 "configuration, which is usually root. If this ownership is expected, update "
 "%s and send a patch to the project that owns it."
 msgstr ""
+"Bin-sökvägsfiler måste ägas av den bin_owner som angetts i rpminspect-"
+"konfigurationen. Om detta ägarskap är förväntat, uppdatera då %s och skicka "
+"en ändring till projektet som äger den."
 
 #: include/results.h:381
 #, c-format
@@ -816,6 +819,9 @@ msgid ""
 "configuration, which is usually root. If this ownership is expect, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"Bin-sökvägsfiler måste ägas av den bin_group som angetts i rpminspect-"
+"konfigurationen. Om detta ägarskap är förväntat, uppdatera då %s och skicka "
+"en ändring till projektet som äger den."
 
 #: include/results.h:388
 #, c-format
@@ -824,6 +830,10 @@ msgid ""
 "or remove the world execute bit on the file (chmod o-x). If this ownership "
 "is expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"Gör antingen chgrp på filen till den bin_group som angetts i rpminspect-"
+"konfigurationen eller ta bort biten körrättighet för världen på filen (chmod "
+"o-x). Om detta ägarskap är förväntat, uppdatera då %s och skicka en ändring "
+"till projektet som äger den."
 
 #: include/results.h:395
 #, c-format
@@ -832,6 +842,10 @@ msgid ""
 "or remove the group write bit on the file (chmod g-w). If this ownership is "
 "expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"Gör antingen chgrp på filen till den bin_group som angetts i rpminspect-"
+"konfigurationen eller ta bort biten skrivrättighet för gruppen på filen ("
+"chmod g-w). Om detta ägarskap är förväntat, uppdatera då %s och skicka en "
+"ändring till projektet som äger den."
 
 #: include/results.h:402
 #, c-format
@@ -840,6 +854,9 @@ msgid ""
 "process to set correct owner and group information. If expected, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"Verifiera att ägarskapsändringar är förvätnade. Om inte, justera "
+"paketbyggsprocessen så att rätt ägar- och gruppinformation sätts. Om "
+"förväntat, uppdatera då %s och skicka en ändring till projektet som äger den."
 
 #: include/results.h:409
 msgid ""
@@ -850,26 +867,36 @@ msgid ""
 "remedy, add a fileinfo rule for this file to the vendor data package under "
 "the appropriate product release file."
 msgstr ""
+"rpminspect förväntar sig en fileinfo-regel från leverantörens datapaket för "
+"denna fil. Vanligen betyder detta att filen har rättigheter som avviker från "
+"standard (t.ex., setuid) vilket är en situation då rpminspect skulle "
+"kontrollera fileinfo-listan för att säkerställa att paketet följer "
+"leverantörens regler. För att åtgärda, lägg till en fileinfo-regel för denna "
+"fil till leverantörens datapaket under dentillämpliga produktutgåvefilen."
 
 #: include/results.h:424
 msgid "Consult the shell documentation for proper syntax."
-msgstr ""
+msgstr "Konsultera skaldokumentationen för rätt syntax."
 
 #: include/results.h:431
 msgid ""
 "The file referenced was not a known shell script in the before build but is "
 "now a shell script in the after build."
 msgstr ""
+"Den refererade filen var inte ett känt skalskript i det tidigare bygget men "
+"är nu ett skalskript i det senare bygget."
 
 #: include/results.h:438
 msgid ""
 "The referenced shell script is invalid. Consider debugging it with the '-n' "
 "option on the shell to find and fix the problem."
 msgstr ""
+"Det refererade skalskriptet är felaktigt. Överväg att felsöka det med "
+"flaggan ”-n” till skalet för att hitta och rätta problemet."
 
 #: include/results.h:453
 msgid "See annocheck(1) for more information."
-msgstr ""
+msgstr "Se annocheck(1) för mer information."
 
 #: include/results.h:460
 msgid ""
@@ -878,6 +905,11 @@ msgid ""
 "declarations). Symbols may also appear as unfortified if the compiler is "
 "unable to determine the size of a buffer, which is not necessarily an error."
 msgstr ""
+"Säkerställ att alla objektfiler är kompilerade med ”-O2 -D_FORTIFY_SOURCE=2” "
+"och att alla tillämpliga huvuden är inkluderade (inga implicita "
+"funktionsdeklarationer). Symboler kan även förekomma som oförstärkta om "
+"kompilatorn inte kan avgöra storleken på en buffert, vilket inte "
+"nödvändigtvis är ett fel."
 
 #: include/results.h:475
 msgid ""
@@ -887,6 +919,11 @@ msgid ""
 "If they are not, modify the package spec file to ensure the build links with "
 "the correct shared libraries."
 msgstr ""
+"DT_NEEDED-symboler har lagts till eller tagits bort. Detta händer när "
+"byggmiljön har olika versioner av de begärda biblioteken. Ibland är detta "
+"avsiktligt men ibland inte. Verifiera att dessa ändringar är förväntade. Om "
+"de inte är det, modifiera paketets spec-fil för att säkerställa abb bygget "
+"länkar med rätt delade bibliotek."
 
 #: include/results.h:490
 msgid ""
@@ -894,6 +931,9 @@ msgid ""
 "is, you can adjust the filesize inspection settings in the rpminspect.yaml "
 "file."
 msgstr ""
+"En fil växte en hel del. Säkerställ att denna ändring är avsedd. Om den är "
+"det kan man justera inspektionsinställningen filesize i filen rpminspect."
+"yaml."
 
 #: include/results.h:497
 msgid ""
@@ -901,18 +941,25 @@ msgid ""
 "it is, you can adjust the filesize inspection settings in the rpminspect."
 "yaml file."
 msgstr ""
+"En fil krympte en hel del. Säkerställ att denna ändring är avsedd. Om den är "
+"det kan man justera inspektionsinställningen filesize i filen rpminspect."
+"yaml."
 
 #: include/results.h:504
 msgid ""
 "A previously empty file is no longer empty.  Make sure this change is "
 "intended and fix the package spec file if necessary."
 msgstr ""
+"En fil som tidigare var tom är inte längre tom. Förvissa dig om att denna "
+"ändring är avsiktlig och fixa paketets spec-fil om nödvändigt."
 
 #: include/results.h:511
 msgid ""
 "A previously non-empty file is now empty.  Make sure this change is intended "
 "and fix the package space file if necessary."
 msgstr ""
+"En fil som tidigare inte var tom är nu tom. Förvissa dig om att denna "
+"ändring är avsiktlig och fixa paketets spec-fil om nödvändigt."
 
 #: include/results.h:526
 #, c-format
@@ -923,6 +970,12 @@ msgid ""
 "may also be of help for this situation.  If necessary, update %s with the "
 "changes found here and send a patch to the project that owns the data file."
 msgstr ""
+"Oväntade förmågor hittades på den indikerade filen. Konsultera "
+"capabilities(7) och justera antingen filerna i paketet eller modifiera "
+"listan av förmågor i leverantörens datapaket till rpminspect. "
+"Säkerhetsgruppen kan också vara till hjälp i denna situation. Om nödvändigt, "
+"uppdatera %s med ändringarna som hittades här och skicka en ändring till "
+"projektet som äger datafilen."
 
 #: include/results.h:541
 msgid ""
@@ -930,6 +983,9 @@ msgid ""
 "usability problems for users if module parameters were removed in a "
 "maintenance update."
 msgstr ""
+"Kärnmodulsparametrar togs bort mellan byggen. Detta kan orsaka "
+"användbarhetsproblem för användare om modulparametrar togs bort i en "
+"underhållsuppdatering."
 
 #: include/results.h:548
 msgid ""
@@ -937,6 +993,9 @@ msgid ""
 "usability problems for users if module dependencies changed in a maintenance "
 "update."
 msgstr ""
+"Kärnmodulsberoenden ändrades mellan byggen. Detta kan orsaka "
+"användbarhetsproblem för användare om modulparametrar togs bort i en "
+"underhållsuppdatering."
 
 #: include/results.h:555
 msgid ""
@@ -944,6 +1003,9 @@ msgid ""
 "usability problems for users if module device aliases changed in a "
 "maintenance update."
 msgstr ""
+"Enhetsalias för kärnmoduler ändrades mellan byggen. Detta kan orsaka "
+"användbarhetsproblem för användare om modulparametrar togs bort i en "
+"underhållsuppdatering."
 
 #: include/results.h:565
 msgid ""
@@ -951,12 +1013,17 @@ msgid ""
 "build.  This may be deliberate, but check to make sure you do not have any "
 "unexpected ExclusiveArch lines in the spec file."
 msgstr ""
+"En arkitektur som fanns i det tidigare bygget saknas nu i det senare bygget. "
+"Detta kan vara medvetet, men kontrollera för att se till att du inte har "
+"några oväntade rader ExclusiveArch i spec-filen."
 
 #: include/results.h:566
 msgid ""
 "A new architecture has appeared in the after build.  This may indicate "
 "progress in the world of computing."
 msgstr ""
+"En ny arkitektur har dykt upp i det senare bygget. Detta kan indikera "
+"framsteg i datorvärlden."
 
 #: include/results.h:576
 msgid ""
@@ -964,12 +1031,17 @@ msgid ""
 "This may be deliberate, but check to make sure you have correct syntax "
 "defining the subpackage in the spec file"
 msgstr ""
+"Ett underpaket som fanns i det tidigare bygget saknas nu i det senare "
+"bygget. Detta kan vara avsiktligt, men kontroller för att säkerställa att du "
+"har korrekt syntax som definierar underpaketet i spec-filen"
 
 #: include/results.h:577
 msgid ""
 "A new subpackage has appeared in the after build.  This may indicate "
 "progress in the world of computing."
 msgstr ""
+"Ett nytt underpaket har dykt upp i det senare bygget. Detta kan indikera "
+"framsteg i datorvärlden."
 
 #: include/results.h:587
 #, c-format
@@ -977,18 +1049,25 @@ msgid ""
 "Make sure the spec file in the after build contains a valid %changelog "
 "section."
 msgstr ""
+"Se till att spec-filen i det senare bygget innehåller ett giltigt %changelog-"
+"avsnitt."
 
 #: include/results.h:597
 msgid ""
 "Files should not be installed in old directory names.  Modify the package to "
 "install the affected file to the preferred directory."
 msgstr ""
+"Filer skall inte installeras i gamla katalognamn. Ändra paketet till att "
+"installera den berörda filen i den rekommenderade katalogen."
 
 #: include/results.h:607
 msgid ""
 "ELF .o and .a files should not carry LTO (Link Time Optimization) bytecode.  "
 "Make sure you have stripped LTO bytecode from those files at install time."
 msgstr ""
+"ELF-filer .o och .a skall inte ha med bytekod för LTO ("
+"länktillfällesoptimering, Link Time Optimization). Se till att du har "
+"strippat LTO-bytekod från dessa filer vid installationstillfället."
 
 #: include/results.h:617
 msgid ""
@@ -997,6 +1076,11 @@ msgid ""
 "and have a non-symlink turn in to a symlink, ensure this is deliberate.  "
 "NOTE:  You cannot turn a directory in to a symlink due to RPM limitations."
 msgstr ""
+"Säkerställ att symlänkar pekar på ett giltigt mål i ett av underpaketen till "
+"bygget; hängande symlänkar är inte tillåtna. Om man jämför byggen och en "
+"tidigare inte symlänk ändras till en symlänk, se till att detta är "
+"avsiktligt. OBS: man kan inte göra en katalog till en symlänk på grund av "
+"begränsningar i RPM."
 
 #: include/results.h:618
 #, c-format
@@ -1009,6 +1093,13 @@ msgid ""
 "scriptlet for replacing a directory.  See the packaging guidelines for "
 "'Scriptlet to replace a directory' for more information."
 msgstr ""
+"Säkerställ att symlänkar pekar på ett giltigt mål i ett av underpaketen till "
+"bygget; hängande symlänkar är inte tillåtna. Om man jämför byggen och en "
+"tidigare inte symlänk ändras till en symlänk, se till att detta är "
+"avsiktligt. OBS: man kan inte göra en katalog till en symlänk på grund av "
+"begränsningar i RPM. Om du absolut måste göra det, se till att du inkluderar "
+"%pretrans-skriptet för att ersätta en katalog. Se paketeringsguilden för ”"
+"Scriptlet to replace a directory” för mer information."
 
 #: include/results.h:628
 #, c-format
@@ -1018,6 +1109,10 @@ msgid ""
 "See the RPM documentation or distribution package maintainer guide for more "
 "information."
 msgstr ""
+"Ta bort förbjudna sökvägsreferenser från den indikerade raden i sektionen "
+"%files. I många fall kan man använda RPM-makron för att ange sökvägsplatser. "
+"Se RPM-dokumentationen eller distributionens paketunderhållsguide för mer "
+"information."
 
 #: include/results.h:638
 msgid ""
@@ -1025,6 +1120,9 @@ msgid ""
 "is intended and if necessary fix the spec file so the correct file is "
 "included in the built package."
 msgstr ""
+"I många fall är ändringen av MIME-typ medveten. Verifiera att ändringen är "
+"avsiktlig och om nödvändigt fixa spec-filen så att rätt fil inkluderas i det "
+"byggda paketet."
 
 #: include/results.h:648
 msgid ""
@@ -1032,6 +1130,9 @@ msgid ""
 "users.  See the abidiff(1) documentation and the distribution ABI policies "
 "to determine if this detected change is allowed."
 msgstr ""
+"ABI-ändringar som introduceras under underhållsuppdateringar kan leda till "
+"problem för användare. Se dokumentationen för abidiff(1) och distributionens "
+"ABI-policyer för att avgöra om denna upptäckta ändring är tillåten."
 
 #: include/results.h:658
 msgid ""
@@ -1039,6 +1140,10 @@ msgid ""
 "problems for users.  See the libabigail documentation and the distribution "
 "KMI policy to determine if this detected change is allowed."
 msgstr ""
+"Ändringar av kärnmodulgränssnittet som introduceras under "
+"underhållsuppdateringar kan leda till problem för användare. Se "
+"dokumentationen för libabigail och distributionens KMI-policy för att avgöra "
+"om denna upptäckta ändring är tillåten."
 
 #: include/results.h:668
 #, c-format
@@ -1048,6 +1153,10 @@ msgid ""
 "configuration files, make sure the package can handle upgrading an existing "
 "package -or- honor the old file locations."
 msgstr ""
+"Ändring av %config skall göras försiktigt. Se till att du har installerat "
+"rätt fil och på rätt plats. om ett paket strukturerar om "
+"konfigurationsfiler, se till att paketet kan hantera uppgradering av ett "
+"befintligt paket -eller- acceptera de gamla filplatserna."
 
 #: include/results.h:678
 #, c-format
@@ -1056,6 +1165,10 @@ msgid ""
 "the package is not a rebase.  Sometimes upstream projects rename or move "
 "documentation files and the spec file needs to account for those changes."
 msgstr ""
+"Ändringar hittade bland %doc-filerna. Verifiera att dessa ändringar är "
+"avsiktliga om paketet inte är en ombasering. Ibland byter uppströmsprojekt "
+"namn på eller flyttar dokumentationsfiler och spec-fillen behöver ta hänsyn "
+"till dessa ändringar."
 
 #: include/results.h:688
 msgid ""
@@ -1065,6 +1178,11 @@ msgid ""
 "the source package has any zero length or otherwise invalid patches and "
 "correct the problem."
 msgstr ""
+"En felaktig patch-fil hittades. Detta är vanligen resultatet av att generera "
+"en samling patchar genom att jämföra två träd. När filer försvinner kan det "
+"leda till nollängdspatchar i den resulterande samlingen. Granska för att se "
+"om källpaketet har några patchar med nollängd eller på annat sätt felaktiga "
+"och rätta till problement."
 
 #: include/results.h:690
 #, c-format
@@ -1078,6 +1196,14 @@ msgid ""
 "define the patch at the top of the spec file.  So Patch47 is applied with "
 "either a '%patch 47', '%patch -P 47', '%patch -P47', or '%patch47' macro."
 msgstr ""
+"Den nämnda patchen definieras i käll-RPM-huvudet (detta betyder att det har "
+"en PatchN:-definition i spec-filen) men används inte någonstans i spec-"
+"filen. Det saknar ett måtsvarande %patch-makro och spec-filen saknar makrona "
+"%autosetup eller %autopatch. Man kan fixa detta genom att lägga till det "
+"lämpliga %patch-makrot i spec-filen (normalt i %prep-sektionen). Antalet som "
+"anges med makrot %patch motsvrar numret som används för att definiera "
+"patchen i början av spec-filen. Så Patch47 används med endera av makrona ”"
+"%patch 47”, ”%patch -P 47”, ”%patch -P47” eller ”%patch47”."
 
 #: include/results.h:692
 #, c-format
@@ -1087,12 +1213,18 @@ msgid ""
 "For example, Patch47 needs to have either a '%patch 47', '%patch -P 47', "
 "'%patch -P47', or '%patch47' macro."
 msgstr ""
+"Den nämnda patchen definieras stämmer inte med numret i makrot %patch. Se "
+"till att alla numrerade patcher har motsvarande %patch-makron. Till exempel, "
+"Patch47 behöver ha endera av makrona ”%patch 47”, ”%patch -P 47”, ”%patch "
+"-P47” eller ”%patch47”."
 
 #: include/results.h:694
 msgid ""
 "The defined patch file is not something rpminspect can handle.  This is "
 "likely a bug and should be reported to the upstream rpminspect project."
 msgstr ""
+"Den definierade är inte något som rpminspect kan hantera. Detta är sannolikt "
+"ett fel och bör rapporteras till rpminspect-projektet uppströms."
 
 #: include/results.h:704
 msgid ""
@@ -1102,6 +1234,11 @@ msgid ""
 "sure the file in question is clean, please file a bug with rpminspect for "
 "further help."
 msgstr ""
+"ClamAV har hittat ett virus i den namngivna filen. Detta kan vara en falsk "
+"träff, men du bör manuellt inspektera filen i fråga för att säkerställa att "
+"den är ren. Detta kan vara ett problem med ClamAV-databasen eller -"
+"detekteringen. Om du är säker på att filen i fråga är ren, skapa gärna en "
+"felrapport till rpminspect för ytterligare hjälp."
 
 #: include/results.h:714
 #, c-format
@@ -1111,6 +1248,10 @@ msgid ""
 "vendor data package for the product.  Modify the %s file and send a patch to "
 "the project that owns it."
 msgstr ""
+"En fil med potentiellt politiskt känsligt innehåll hittades i paketet. Om "
+"denna fil är tillåten skall den läggas till i leverantörsdatapaketet för "
+"rpminspect för den produkten. Ändra filen %s och skicka en ändring till "
+"projektet som äger den."
 
 #: include/results.h:724
 msgid ""
@@ -1123,6 +1264,14 @@ msgid ""
 "order to allow for backwards compatibility.  Whenever possible the "
 "deprecated functions should not be used."
 msgstr ""
+"Förbjudna symboler hittades i en ELF-fil i paketet. "
+"Konfigurationsinställningarna för rpminspect indikerar att de nämnda "
+"symbolerna är förbjudnai paket. Om detta är medvetet kan du vilja avaktivera "
+"badfuncs-inspektionen. OM det inte är medvetet, kontrollera manualsidorna "
+"för de nämnda symbolerna för att se vilka API-funktioner som har ersatt de "
+"förbjudna symbolerna. Vanligtvis markeras en funktion som undanbedda men "
+"tillhandahålls fortfarande för att möjliggöra bakåtkompatibilitet. Alltid "
+"när det är möjligt skall de undanbedda funktionerna inte användas."
 
 #: include/results.h:734
 msgid ""
@@ -1133,6 +1282,12 @@ msgid ""
 "try using a program such as patchelf to remove these properties from the ELF "
 "files."
 msgstr ""
+"Antingen egenskapen DT_RPATH eller DT_RUNPATH hittades i delade ELF-objekt i "
+"detta paket. Det avrådes från att använda DT_RPATH och DT_RUNPATH utom i "
+"vissa situationer. Kontrollera för att se till att du avaktiverar rpath "
+"under steget %build i spec-filen. Om du inte kan göra detta lätt kan du "
+"försöka använda ett program såsom patchelf för att ta bort dessa egenskaper "
+"från ELF-filerna."
 
 #: include/results.h:736
 msgid ""
@@ -1140,6 +1295,9 @@ msgid ""
 "This indicates a linker error and should not happen.  ELF objects should "
 "only carry DT_RPATH or DT_RUNPATH, never both."
 msgstr ""
+"Både egenskapen DT_RPATH och DT_RUNPATH hittades i ett delat ELF-objekt. "
+"Detta indikerar ett länkfel och skall inte inträffa. ELF-objekt skall bara "
+"innehålla DT_RPATH eller DT_RUNPATH, aldrig båda."
 
 #: include/results.h:746
 msgid ""
@@ -1149,6 +1307,11 @@ msgid ""
 "discuss the situation with the Product Security Team to determine the "
 "correct course of action."
 msgstr ""
+"Konfigurationsfilen till rpminspect innehåller en list av förbjudna Unicode-"
+"kodpunkter. En av dem hittades i det extraherade och patchade källkodsträdet "
+"eller i en av textkällfilerna i käll-RPM:en. Ta antingen bort denna kodpunkt "
+"eller diskutera situationen med produktsäkerhetsgruppen för att avgöra det "
+"rätta tillvägagångssättet."
 
 #: include/results.h:748
 #, c-format
@@ -1159,6 +1322,10 @@ msgid ""
 "running.  A common cause is removal of the working directory while the "
 "program is executing."
 msgstr ""
+"Sektionen %prep i spec-filen kunde av något skäl inte köras. Detta är oftast "
+"resultatet av ett fel i librpmbuild, vilket vanligen är knutet till problem "
+"att extrahera arkiv eller att filsystemet ändras medan rpminspect kör. Ett "
+"vanligt skäl är att arbetskatalogen tas bort medan programmet kör."
 
 #: include/results.h:758
 msgid ""
@@ -1166,6 +1333,9 @@ msgid ""
 "Check the spec file for this dependency and ensure you have not misspelled a "
 "macro or used a macro name that does not exist."
 msgstr ""
+"Oexpanderade RPM-spec-filsmakron hittades i den nämnda beroenderegeln. "
+"Kontrollera detta beroende i spec-filen och se till att du inte har stavat "
+"fel på ett makro eller använt ett makronamn som inte finns."
 
 #: include/results.h:760
 msgid ""
@@ -1174,6 +1344,10 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{version}-%{release}' "
 "in the spec file."
 msgstr ""
+"Lägg till det explicita Requires som indikeras till spec-filen för det "
+"nämnda underpaketet. Underpaket som beror på delade bibliotek i andra "
+"underpaket måste innehålla ett uttryckligt ”Requires: UNDERPAKETNAMN = "
+"%{version}-%{release}” i spec-filen."
 
 #: include/results.h:762
 msgid ""
@@ -1182,6 +1356,10 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{epoch}:%{version}-"
 "%{release}' in the spec file."
 msgstr ""
+"Lägg till det explicita Requires som indikeras till spec-filen för det "
+"nämnda underpaketet. Underpaket som beror på delade bibliotek i andra "
+"underpaket måste innehålla ett uttryckligt ”Requires: UNDERPAKETNAMN = "
+"%{epoch}:%{version}-%{release}” i spec-filen."
 
 #: include/results.h:764
 #, c-format
@@ -1192,6 +1370,11 @@ msgid ""
 "spec file but you do need to make sure only one subpackage is packaging up "
 "the shared library in question."
 msgstr ""
+"Kontrollera underpaketets sektion %files och explicita Provides-satser. "
+"Endast ett underpaket skall tillhandahålla ett givet delat bibliotek. Delade "
+"biblioteks namn läggs automatiskt till so Provides, så det finns inget behov "
+"av att ange dem i spec-filen men man behöver se till att endast ett "
+"underpaket paketerar ihop det delade biblioteket i fråga."
 
 #: include/results.h:766
 msgid ""
