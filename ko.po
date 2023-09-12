@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-08-23 13:21+0000\n"
+"PO-Revision-Date: 2023-09-13 09:35+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.0.1\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -1214,7 +1214,7 @@ msgstr ""
 #: lib/init.c:548
 #, c-format
 msgid "*** unknown inspections: `%s`"
-msgstr ""
+msgstr "*** 알 수 없는 검사: `%s`"
 
 #: lib/init.c:559
 msgid "*** malformed/unknown inspections section"
@@ -1398,7 +1398,7 @@ msgstr ""
 
 #: lib/inspect_addedfiles.c:232
 msgid "new file ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${ARCH}의 신규 파일 ${FILE}"
 
 #: lib/inspect_addedfiles.c:248
 msgid "the fileinfo list"
@@ -1898,7 +1898,7 @@ msgstr "${ARCH}의 ELF 파일 ${FILE}"
 #: lib/inspect_dsodeps.c:106
 #, c-format
 msgid "%s was a dynamic ELF file and now is not on %s"
-msgstr ""
+msgstr "%s는 동적 ELF 파일이었고 이젠 %s에 없습니다"
 
 #: lib/inspect_dsodeps.c:146
 #, c-format
@@ -3276,7 +3276,7 @@ msgstr ""
 #: lib/output_json.c:99 lib/output_summary.c:45 lib/output_text.c:53
 #, c-format
 msgid "*** error opening %s for writing"
-msgstr ""
+msgstr "*** 작성을 위해 오류 %s를 여는 중"
 
 #: lib/output_summary.c:53
 msgid "added"
@@ -3792,25 +3792,25 @@ msgstr "*** 구성 파일 %s를 읽는데 실패함"
 #: src/rpminspect.c:658
 #, c-format
 msgid "*** Please specify a configuration file using '-c' or supply ./%s"
-msgstr ""
+msgstr "*** '-c'를 사용하여 구성 파일을 지정하거나 ./%s를 제공해 주세요"
 
 #: src/rpminspect.c:736
 msgid "*** Invalid before and after build specification."
-msgstr ""
+msgstr "*** 제작 전/후 사향이 잘못되었습니다."
 
 #: src/rpminspect.c:744
 msgid "*** unable to read RPM configuration"
-msgstr ""
+msgstr "*** RPM 구성을 읽을 수 없음"
 
 #: src/rpminspect.c:775
 #, c-format
 msgid "*** unsupported architecture specified: `%s`"
-msgstr ""
+msgstr "*** 미지원 구조가 지정되었습니다: `%s`"
 
 #: src/rpminspect.c:793
 #, c-format
 msgid "*** unable to create directory %s"
-msgstr ""
+msgstr "*** 디렉토리 %s를 생성 할 수 없음"
 
 #: src/rpminspect.c:851
 #, c-format
@@ -3837,32 +3837,32 @@ msgstr ""
 #: src/rpminspect.c:902
 #, c-format
 msgid "Local configuration file: %s"
-msgstr ""
+msgstr "로컬 구성 파일 : %s"
 
 #: src/rpminspect.c:912
 msgid "Before Build"
-msgstr ""
+msgstr "제작 전"
 
 #: src/rpminspect.c:917
 msgid "After Build"
-msgstr ""
+msgstr "제작 후"
 
 #: src/rpminspect.c:920
 msgid "Build"
-msgstr ""
+msgstr "제작"
 
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
-msgstr ""
+msgstr "*** 피어가 없고, 지정된 구조를 위한 꾸러미가 있는지 확인합니다"
 
 #: src/rpminspect.c:958
 msgid ""
 "*** unable to find a set of peer packages between the before and after builds"
-msgstr ""
+msgstr "*** 제작 전/후 사이에서 피어 꾸러미의 묶음을 찾을 수 없음"
 
 #: src/rpminspect.c:972
 msgid "*** unable to determine product release or none specified (-r)."
-msgstr ""
+msgstr "*** 제품 출시를 결정 할 수 없거나 지정되지 않음 (-r)."
 
 #: src/rpminspect.c:984
 #, c-format
