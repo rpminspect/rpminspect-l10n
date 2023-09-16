@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-09-13 09:35+0000\n"
+"PO-Revision-Date: 2023-09-16 19:05+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.1\n"
+"X-Generator: Weblate 5.0.2\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -1384,6 +1384,12 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Ett beroende uppräknat i det tidigare bygget ändrades till det nämnda "
+"beroendet i det senare bygget. OM detta är ett VERIFY-resultat betyder det "
+"att rpminspect noterade ändingen i vad den betraktar som en "
+"underhållsuppdatering av ett paket. Ett INFO-resultat betyder att den "
+"noterade denna ändring, men bedömer att den är ok för att den jämför ett "
+"ombaserat bygge."
 
 #: include/results.h:768
 msgid ""
@@ -1393,6 +1399,11 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Ett nytt beroende syns i det senare bygget som inte fanns i det tidigare "
+"bygget. OM detta är ett VERIFY-resultat betyder det att rpminspect noterade "
+"ändingen i vad den betraktar som en underhållsuppdatering av ett paket. Ett "
+"INFO-resultat betyder att den noterade denna ändring, men bedömer att den är "
+"ok för att den jämför ett ombaserat bygge."
 
 #: include/results.h:770
 msgid ""
@@ -1402,6 +1413,12 @@ msgid ""
 "An INFO result means it noticed this change, but deems it ok because it is "
 "comparing a rebased build."
 msgstr ""
+"Ett beroende som syns i det tidigare bygget syns inte i det senare bygget "
+"vilket betyder att det togs bort eller förlorades. Om detta är ett VERIFY-"
+"resultat betyder det att rpminspect noterade ändingen i vad den betraktar "
+"som en underhållsuppdatering av ett paket. Ett INFO-resultat betyder att den "
+"noterade denna ändring, men bedömer att den är ok för att den jämför ett "
+"ombaserat bygge."
 
 #: include/results.h:772
 msgid ""
@@ -1411,151 +1428,157 @@ msgid ""
 "%{version}-%{release}' to capture the package package Epoch in the "
 "dependency."
 msgstr ""
+"Paketet har ett epokvärde större än noll, men det explicita "
+"underpaketsberoendena använder det inte konsekvent. För det rapporterade "
+"beroendet behöver ”= %{version}-%{release}” ändras till ”= "
+"%{epoch}:%{version}-%{release}” för att fånga paketets epok i beroendet."
 
 #: include/results.h:781
 msgid ""
 "Refer to the udev documentation at https://www.freedesktop.org/software/"
 "systemd/man/udev.html for help correcting the errors and warnings."
 msgstr ""
+"Se udev-dokumentationen på https://www.freedesktop.org/software/systemd/man/"
+"udev.html för hjälp att rätta felen och varningarna."
 
 #: lib/abi.c:65
 #, c-format
 msgid "*** malformed ABI level identifier: %s"
-msgstr ""
+msgstr "*** felformaterad ABI-nivåidentifierare: %s"
 
 #: lib/abi.c:70
 #, c-format
 msgid "*** ABI level %d already defined"
-msgstr ""
+msgstr "*** ABI-nivå %d är redan definierad"
 
 #: lib/abi.c:84
 #, c-format
 msgid "*** malformed ABI level entry: %s"
-msgstr ""
+msgstr "*** felformaterad ABI-nivåpost: %s"
 
 #: lib/builds.c:73
 #, c-format
 msgid "*** unable to create download directory %s"
-msgstr ""
+msgstr "*** kan inte skapa hämtningskatalogen %s"
 
 #: lib/builds.c:85
 #, c-format
 msgid "*** unknown working directory type: %d"
-msgstr ""
+msgstr "*** okänd arbetskatalogtyp: %d"
 
 #: lib/builds.c:173
 #, c-format
 msgid "*** unable to read %s, skipping"
-msgstr ""
+msgstr "*** kan inte läsa %s, hoppar över"
 
 #: lib/builds.c:205
 #, c-format
 msgid "*** unknown directory member encountered: %s"
-msgstr ""
+msgstr "*** okänd katalogmedlem påträffades: %s"
 
 #: lib/builds.c:234
 #, c-format
 msgid "There is not enough available space to download the requested %s.\n"
-msgstr ""
+msgstr "Det finns inte tillräckligt med utrymme för att hämta den begärda %s.\n"
 
 #: lib/builds.c:235 lib/peers.c:177
 #, c-format
 msgid "    Need %s in %s, have %s.\n"
-msgstr ""
+msgstr "    Behöver %s i %s, har %s.\n"
 
 #: lib/builds.c:236 lib/peers.c:178
 #, c-format
 msgid "See the `-w' option for specifying an alternate working directory.\n"
-msgstr ""
+msgstr "Se flaggan ”-w” för att ange en alternativ arbetskatalog.\n"
 
 #: lib/builds.c:249
 #, c-format
 msgid "Unable to determine the required space to download the requested %s.\n"
-msgstr ""
+msgstr "Kan inte avgöra det nödvändiga utrymmet för att hämta den begärda %s.\n"
 
 #: lib/builds.c:250
 #, c-format
 msgid "Ensure %s has sufficient space available."
-msgstr ""
+msgstr "Se till att %s har tillräckligt med utrymme tillgängligt."
 
 #: lib/builds.c:290 lib/builds.c:294
 msgid "build"
-msgstr ""
+msgstr "bygg"
 
 #: lib/builds.c:320
 msgid "Downloading module"
-msgstr ""
+msgstr "Hämtar modul"
 
 #: lib/builds.c:323
 msgid "Downloading RPM build"
-msgstr ""
+msgstr "Hämtar RPM-bygge"
 
 #: lib/builds.c:373 lib/inspect_modularity.c:47
 #, c-format
 msgid "*** ignoring malformed module metadata file: %s"
-msgstr ""
+msgstr "*** ignorerar felformaterad modulmetadatafil: %s"
 
 #: lib/builds.c:383
 #, c-format
 msgid "*** malformed rpm filters in file: %s"
-msgstr ""
+msgstr "*** felformade rpm-filter i filen: %s"
 
 #: lib/builds.c:541 lib/builds.c:545
 msgid "task"
-msgstr ""
+msgstr "uppgift"
 
 #: lib/builds.c:659 lib/builds.c:662
 msgid "RPM"
-msgstr ""
+msgstr "RPM"
 
 #: lib/builds.c:791
 #, c-format
 msgid "*** `%s' already exists in %s"
-msgstr ""
+msgstr "*** ”%s” finns redan i %s"
 
 #: lib/builds.c:829
 #, c-format
 msgid "*** unable to find local build: %s"
-msgstr ""
+msgstr "*** kan inte hitta lokalt bygge: %s"
 
 #: lib/builds.c:841
 #, c-format
 msgid "*** unable to download RPM: %s"
-msgstr ""
+msgstr "*** kan inte hämta RPM: %s"
 
 #: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
 #, c-format
 msgid "*** unable to find build %s in Koji hub %s"
-msgstr ""
+msgstr "*** kan inte hitta bygget %s i Koji-nav %s"
 
 #: lib/builds.c:872
 #, c-format
 msgid "*** unable to find task %s in Koji hub %s"
-msgstr ""
+msgstr "*** kan inte hitta uppgiften %s i Koji-nav %s"
 
 #: lib/checksums.c:91
 #, c-format
 msgid "*** %s is a FIFO"
-msgstr ""
+msgstr "*** %s är en FIFO"
 
 #: lib/copyfile.c:117
 #, c-format
 msgid "%s already exists"
-msgstr ""
+msgstr "%s finns redan"
 
 #: lib/copyfile.c:122
 msgid ", overwriting"
-msgstr ""
+msgstr ", skriver över"
 
 #: lib/curl.c:267 lib/readfile.c:60
 #, c-format
 msgid "*** unable to read %s"
-msgstr ""
+msgstr "*** kan inte läsa %s"
 
 #: lib/fileinfo.c:64
 #, c-format
 msgid "%s in %s on %s carries expected mode %04o"
-msgstr ""
+msgstr "%s i %s på %s har oväntade rättigheter %04o"
 
 #: lib/fileinfo.c:76
 #, c-format
@@ -1563,6 +1586,8 @@ msgid ""
 "%s in %s on %s carries unexpected mode %04o; expected mode %04o; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s i %s på %s har oväntade rättigheter %04o; förväntade rättigheter %04o; "
+"kräver inspektion av säkerhetsgruppen"
 
 #: lib/fileinfo.c:96
 #, c-format
@@ -1570,11 +1595,13 @@ msgid ""
 "%s in %s on %s carries insecure mode %04o, Security Team review may be "
 "required"
 msgstr ""
+"%s i %s på %s har osäkra rättigheter %04o, granskning av säkerhetsgruppen "
+"kan behövas"
 
 #: lib/fileinfo.c:155
 #, c-format
 msgid "%s in %s on %s carries expected owner '%s'"
-msgstr ""
+msgstr "%s i %s på %s har oväntad ägare ”%s”"
 
 #: lib/fileinfo.c:168
 #, c-format
@@ -1582,6 +1609,8 @@ msgid ""
 "%s in %s on %s carries unexpected owner '%s'; expected owner '%s'; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s i %s på %s har oväntad ägare ”%s”; förväntad ägare ”%s”; kräver "
+"inspektion av säkerhetsgruppen"
 
 #: lib/fileinfo.c:192 lib/fileinfo.c:286
 #, c-format
@@ -1589,11 +1618,13 @@ msgid ""
 "%s in %s on %s carries insecure mode %04o but has no fileinfo rule for owner "
 "specification, Security Team review may be required"
 msgstr ""
+"%s i %s på %s har osäkra rättigheter %04o men har ingen fileinfo-regel för "
+"specifikation av ägare, granskning av säkerhetsgruppen kan behövas"
 
 #: lib/fileinfo.c:249
 #, c-format
 msgid "%s in %s on %s carries expected group '%s'"
-msgstr ""
+msgstr "%s i %s på %s har den förväntade gruppen ”%s”"
 
 #: lib/fileinfo.c:262
 #, c-format
@@ -1601,154 +1632,159 @@ msgid ""
 "%s in %s on %s carries group unexpected '%s'; expected group '%s'; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s i %s på %s har oväntad grupp ”%s”; förväntad grupp ”%s”; kräver "
+"inspektion av säkerhetsgruppen"
 
 #: lib/init.c:226
 #, c-format
 msgid "*** invalid input string `%s`"
-msgstr ""
+msgstr "*** felaktig inmatningssträng ”%s”"
 
 #: lib/init.c:253 lib/init.c:262 lib/init.c:270 lib/init.c:282 lib/init.c:291
 #: lib/init.c:299 lib/init.c:311 lib/init.c:320 lib/init.c:328 lib/init.c:340
 #, c-format
 msgid "*** invalid mode string: %s"
-msgstr ""
+msgstr "*** felaktig rättighetssträng: %s"
 
 #: lib/init.c:378
 #, c-format
 msgid "*** problem adding entries to array %s->%s"
-msgstr ""
+msgstr "*** problem att lägga till poster till vektorn %s→%s"
 
 #: lib/init.c:399
 #, c-format
 msgid "*** problem adding ignore entries to %s"
-msgstr ""
+msgstr "*** problem att lägga till poster för att ignorera till %s"
 
 #: lib/init.c:418 lib/init.c:432
 msgid "*** error reading "
-msgstr ""
+msgstr "*** fel vid läsning "
 
 #: lib/init.c:458
 #, c-format
 msgid "*** ignoring malformed section %s->%s"
-msgstr ""
+msgstr "*** ignorerar felformaterad sektion %s→%s"
 
 #: lib/init.c:515 lib/init.c:528
 #, c-format
 msgid "*** error reading %s ignore pattern"
-msgstr ""
+msgstr "*** fel när ignoreringsmönster %s lästes"
 
 #: lib/init.c:544
 #, c-format
 msgid "*** flag must be 'on' or 'off'; ignoring '%s'"
-msgstr ""
+msgstr "*** flaggan måste vara ”on” eller ”off”; ignorerar ”%s”"
 
 #: lib/init.c:548
 #, c-format
 msgid "*** unknown inspections: `%s`"
-msgstr ""
+msgstr "*** oväntade inspektioner: ”%s”"
 
 #: lib/init.c:559
 msgid "*** malformed/unknown inspections section"
-msgstr ""
+msgstr "*** felformaterad/okänd inspektionssektion"
 
 #: lib/init.c:591
 #, c-format
 msgid "*** ignoring malformed %s configuration file: %s"
-msgstr ""
+msgstr "*** ignorerar felformaterad %s-konfigurationsfil: %s"
 
 #: lib/init.c:653
 #, c-format
 msgid "*** unknown modularity static context settiongs '%s'"
-msgstr ""
+msgstr "*** okänd statisk kontextinställning av modularitet ”%s”"
 
 #: lib/init.c:717
 #, c-format
 msgid "*** unknown specname match setting '%s', defaulting to 'full'"
 msgstr ""
+"*** okänd matchningsinställning av spec-namn ”%s”; tarstandardvärdet ”full”"
 
 #: lib/init.c:732
 #, c-format
 msgid "*** unknown specname primary setting '%s', defaulting to 'name'"
 msgstr ""
+"*** okänd primärinställning av spec-namn ”%s”; tar standardvärdet ”name”"
 
 #: lib/init.c:747
 #, c-format
 msgid "*** invalid annocheck failure_reporting_level: %s, defaulting to %s"
 msgstr ""
+"*** felaktig annocheck failure_reporting_level: %s, tar standardvärdet %s"
 
 #: lib/init.c:804
 msgid "*** malformed badfuncs->allowed section"
-msgstr ""
+msgstr "*** felformaterad sektion badfuncs→allowed"
 
 #: lib/init.c:822
 #, c-format
 msgid "*** error reading unicode exclude regular expression: %s"
-msgstr ""
+msgstr "*** fel när reguljärt uttryck för uteslutning i unicode lästes: %s"
 
 #: lib/init.c:832
 msgid "*** malformed rpmdeps->ignore section; skipping"
-msgstr ""
+msgstr "*** felformaterad sektion rpmdeps→ignore; hoppar över"
 
 #: lib/init.c:968
 #, c-format
 msgid "*** Invalid filename in the fileinfo list: %s"
-msgstr ""
+msgstr "*** felaktigt filnamn i fileinfo-listan: %s"
 
 #: lib/init.c:969
 msgid "*** From this invalid line:"
-msgstr ""
+msgstr "*** Från denna felaktiga rad:"
 
 #: lib/init.c:970
 #, c-format
 msgid "***     %s"
-msgstr ""
+msgstr "***     %s"
 
 #: lib/init.c:1121
 #, c-format
 msgid "*** unexpected token `%s' seen in %s, cannot continue"
-msgstr ""
+msgstr "*** oväntad symbol ”%s” sedd i %s, kan inte fortsätta"
 
 #: lib/init.c:1414
 #, c-format
 msgid "*** invalid security rule: %s"
-msgstr ""
+msgstr "*** felaktig säkerhetsregel: %s"
 
 #: lib/init.c:1426
 #, c-format
 msgid "*** unknown security rule: %s"
-msgstr ""
+msgstr "*** okänd säkerhetsregel: %s"
 
 #: lib/init.c:1435
 #, c-format
 msgid "*** unknown security action: %s"
-msgstr ""
+msgstr "*** okänd säkerhetsåtgärd: %s"
 
 #: lib/init.c:1461
 #, c-format
 msgid "*** malformed security line: %s"
-msgstr ""
+msgstr "*** felformaterad säkerhetsrad: %s"
 
 #: lib/init.c:1622
 #, c-format
 msgid "*** missing configuration file `%s'"
-msgstr ""
+msgstr "*** saknad konfigurationsfil ”%s”"
 
 #: lib/init.c:1658
 #, c-format
 msgid "*** unable to find profile '%s'"
-msgstr ""
+msgstr "*** kan inte hitta profilen ”%s”"
 
 #: lib/inspect_abidiff.c:266
 msgid "abidiff usage error"
-msgstr ""
+msgstr "abidiff användningsfel"
 
 #: lib/inspect_abidiff.c:275
 msgid "ABI change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "ABI-ändring i ${FILE} på ${ARCH}"
 
 #: lib/inspect_abidiff.c:284
 msgid "ABI incompatible change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "ABI-inkompatibel ändring i ${FILE} på ${ARCH}"
 
 #: lib/inspect_abidiff.c:296
 #, c-format
@@ -1756,6 +1792,8 @@ msgid ""
 "Comparing old vs. new version of %s in package %s with ABI compatibility "
 "level %ld on %s revealed ABI differences."
 msgstr ""
+"Jämförelsen av gammal med ny version av %s i paketet %s med ABI-"
+"kompatibilitetsnivå %ld på %s avslöjade ABI-skillnader."
 
 #: lib/inspect_abidiff.c:298
 #, c-format
@@ -1763,6 +1801,8 @@ msgid ""
 "Comparing old vs. new version of %s in package %s on %s revealed ABI "
 "differences."
 msgstr ""
+"Jämförelsen av gammal med ny version av %s i paketet %s på %s avslöjade ABI-"
+"skillnader."
 
 #: lib/inspect_abidiff.c:302
 #, c-format
@@ -1770,11 +1810,14 @@ msgid ""
 "Comparing from %s to %s in package %s with ABI compatibility level %ld on %s "
 "revealed ABI differences."
 msgstr ""
+"Jämförelsen från %s till %s i paketet %s med ABI-kompatibilitetsnivå %ld på "
+"%s avslöjade ABI-skillnader."
 
 #: lib/inspect_abidiff.c:304
 #, c-format
 msgid "Comparing from %s to %s in package %s on %s revealed ABI differences."
 msgstr ""
+"Jämförelsen från %s till %s i paketet %s på %s avslöjade ABI-skillnader."
 
 #: lib/inspect_abidiff.c:309
 #, c-format
@@ -1783,6 +1826,9 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Kommando %s\n"
+"\n"
+"%s"
 
 #: lib/inspect_addedfiles.c:149
 #, c-format
@@ -1790,10 +1836,12 @@ msgid ""
 "Packages should not contain files or directories starting with `%s` on %s in "
 "%s: %s"
 msgstr ""
+"Paket skall inte innehålla filer eller kataloger som börjar med ”%s” på %s i "
+"%s: %s"
 
 #: lib/inspect_addedfiles.c:150 lib/inspect_addedfiles.c:164
 msgid "invalid directory ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "Felaktig katalog ${FILE} på ${ARCH}"
 
 #: lib/inspect_addedfiles.c:163
 #, c-format
@@ -1801,11 +1849,13 @@ msgid ""
 "Packages should not contain files or directories ending with `%s` on %s in "
 "%s: %s"
 msgstr ""
+"Paket skall inte innehålla filer eller kataloger som slutar med ”%s” på %s i "
+"%s: %s"
 
 #: lib/inspect_addedfiles.c:177
 #, c-format
 msgid "Forbidden directory `%s` found on %s in %s: %s"
-msgstr ""
+msgstr "Förbjuden katalog ”%s” funnen på %s i %s: %s"
 
 #: lib/inspect_addedfiles.c:178
 msgid "forbidden directory ${FILE} on ${ARCH}"
