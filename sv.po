@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-09-18 09:35+0000\n"
+"PO-Revision-Date: 2023-09-20 07:35+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -1998,73 +1998,73 @@ msgstr "libannocheck ”%s” test lyckas för %s på %s"
 #: lib/inspect_annocheck.c:551 lib/inspect_annocheck.c:569
 #, c-format
 msgid "annocheck '%s' test passes for %s on %s"
-msgstr ""
+msgstr "annocheck ”%s” test lyckas för %s på %s"
 
 #: lib/inspect_annocheck.c:553
 #, c-format
 msgid "annocheck '%s' test now passes for %s on %s"
-msgstr ""
+msgstr "annocheck ”%s” test lyckas nu för %s på %s"
 
 #: lib/inspect_annocheck.c:555
 #, c-format
 msgid "annocheck '%s' test now fails for %s on %s"
-msgstr ""
+msgstr "annocheck ”%s” test misslyckas nu för %s på %s"
 
 #: lib/inspect_annocheck.c:561 lib/inspect_annocheck.c:571
 #, c-format
 msgid "annocheck '%s' test fails for %s on %s"
-msgstr ""
+msgstr "annocheck ”%s” test misslyckas för %s på %s"
 
 #: lib/inspect_annocheck.c:616
 #, c-format
 msgid "%s may have lost -D_FORTIFY_SOURCE on %s"
-msgstr ""
+msgstr "%s kan ha förlorat -D_FORTIFY_SOURCE på %s"
 
 #: lib/inspect_arch.c:77
 msgid "lost ${ARCH}"
-msgstr ""
+msgstr "förlorade ${ARCH}"
 
 #: lib/inspect_arch.c:79
 #, c-format
 msgid "Architecture '%s' has disappeared"
-msgstr ""
+msgstr "Arkitekturen ”%s” har försvunnit"
 
 #: lib/inspect_arch.c:94
 msgid "gained ${ARCH}"
-msgstr ""
+msgstr "fick ${ARCH}"
 
 #: lib/inspect_arch.c:96
 #, c-format
 msgid "Architecture '%s' has appeared"
-msgstr ""
+msgstr "Arkitekturen ”%s” har tillkommit"
 
 #: lib/inspect_badfuncs.c:152
 #, c-format
 msgid "Forbidden function symbols found:\n"
-msgstr ""
+msgstr "Förbjudna funktionssymboler hittade:\n"
 
 #: lib/inspect_badfuncs.c:168
 #, c-format
 msgid "%s may use forbidden functions on %s"
-msgstr ""
+msgstr "%s kan använda förbjudna funktioner på %s"
 
 #: lib/inspect_badfuncs.c:175
 msgid "forbidden functions in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "förbjudna funktioner i ${FILE} på ${ARCH}"
 
 #: lib/inspect_capabilities.c:82
 #, c-format
 msgid "File capabilities for %s changed from '%s' to '%s' in %s on %s\n"
-msgstr ""
+msgstr "Filförmågor för %s ändrades från ”%s” till ”%s” i %s på %s\n"
 
 #: lib/inspect_capabilities.c:86
 msgid "${FILE} capabilities on ${ARCH}"
-msgstr ""
+msgstr "${FILE} förmågor på ${ARCH}"
 
 #: lib/inspect_capabilities.c:98
 #, c-format
 msgid "File capabilities found for %s: '%s' in %s on %s\n"
-msgstr ""
+msgstr "Filförmågor funna för %s: ”%s” i %s på %s\n"
 
 #: lib/inspect_capabilities.c:134
 #, c-format
@@ -2072,60 +2072,66 @@ msgid ""
 "File capabilities list entry found for %s: '%s' in %s on %s, matches "
 "package\n"
 msgstr ""
+"Listpost för filförmågor funna för %s: ”%s” i %s på %s, machar paketet\n"
 
 #: lib/inspect_capabilities.c:145
 #, c-format
 msgid ""
 "File capabilities list mismatch for %s: expected '%s', got '%s' in %s on %s\n"
 msgstr ""
+"Lista över filförmågor stämmer inte för %s: ”%s” förväntades, fick ”%s” i %s "
+"på %s\n"
 
 #: lib/inspect_capabilities.c:149 lib/inspect_capabilities.c:169
 #: lib/inspect_capabilities.c:188
 msgid "${FILE} capabilities list on ${ARCH}"
-msgstr ""
+msgstr "${FILE} förmågelista på ${ARCH}"
 
 #: lib/inspect_capabilities.c:165
 #, c-format
 msgid ""
 "File capabilities for %s (%s) not found on the capabilities list in %s on "
 "%s\n"
-msgstr ""
+msgstr "Filförmågor för %s (%s) finns inte i förmågelistan i %s på %s\n"
 
 #: lib/inspect_capabilities.c:184
 #, c-format
 msgid ""
 "File capabilities expected for %s in %s but not found on %s: expected '%s'\n"
 msgstr ""
+"Filförmågor förväntade för %s i %s men finns inte på %s: ”%s” föräntades\n"
 
 #: lib/inspect_changedfiles.c:31
 msgid ""
 "  Changes to security policy related files require inspection by the "
 "Security Response Team."
 msgstr ""
+"  Ändringar av filer relaterade till säkerhetspolicyn kräver inspektion av "
+"säkerhetsgruppen."
 
 #: lib/inspect_changedfiles.c:319
 #, c-format
 msgid "Compressed %s file %s changed content in %s on %s."
-msgstr ""
+msgstr "Komprimerad %s-fil %s ändrade innehåll i %s på %s."
 
 #: lib/inspect_changedfiles.c:353 lib/inspect_changedfiles.c:367
 #, c-format
 msgid "Error running msgunfmt on %s in %s on %s; malformed mo file?"
-msgstr ""
+msgstr "Fel när msgunfmt kördes på %s i %s på %s; felformaterade mo-fil?"
 
 #: lib/inspect_changedfiles.c:357 lib/inspect_changedfiles.c:371
 msgid "msgunfmt on ${FILE}"
-msgstr ""
+msgstr "msgunfmt på ${FILE}"
 
 #: lib/inspect_changedfiles.c:382
 #, c-format
 msgid "Message catalog %s changed content in %s on %s"
-msgstr ""
+msgstr "Meddelandekatalogen %s ändrade innehåll i %s på %s"
 
 #: lib/inspect_changedfiles.c:386 lib/inspect_changedfiles.c:443
 #: lib/inspect_changedfiles.c:465
 msgid "${FILE}"
-msgstr ""
+msgstr "${FILE}"
 
 #: lib/inspect_changedfiles.c:439
 #, c-format
@@ -2133,25 +2139,27 @@ msgid ""
 "Public header file %s changed content in %s on %s.  A unified diff of the "
 "changes follows."
 msgstr ""
+"Den publika huvudfilen %s ändrade innehåll i %s på %s. En unifierad diff "
+"över ändringarna följer."
 
 #: lib/inspect_changedfiles.c:462
 #, c-format
 msgid "File %s changed content in %s on %s."
-msgstr ""
+msgstr "Filen %s ändrade innehåll i %s på %s."
 
 #: lib/inspect_changelog.c:235 lib/inspect_changelog.c:369
 #, c-format
 msgid "%%changelog"
-msgstr ""
+msgstr "%%changelog"
 
 #: lib/inspect_changelog.c:438
 msgid "Inspection skipped because this build's type is not `rpm'."
-msgstr ""
+msgstr "Inspektionen överhoppad för att detta bygges typ inte är ”rpm”."
 
 #: lib/inspect_config.c:65
 #, c-format
 msgid "%config ${FILE}"
-msgstr ""
+msgstr "%config ${FILE}"
 
 #: lib/inspect_config.c:114
 #, c-format
@@ -2159,6 +2167,8 @@ msgid ""
 "%%config file %s went from actual file to symlink (pointing to %s) in %s on "
 "%s"
 msgstr ""
+"%%config-filen %s gick från en faktiskt fil till en symlänk (som pekar på %s)"
+" i %s på %s"
 
 #: lib/inspect_config.c:123
 #, c-format
@@ -2166,16 +2176,18 @@ msgid ""
 "%%config file %s was a symlink (pointing to %s), became an actual file in %s "
 "on %s"
 msgstr ""
+"%%config-filen %s var en symlänk (som pekade på %s), blev en faktiskt fil i "
+"%s på %s"
 
 #: lib/inspect_config.c:132
 #, c-format
 msgid "Symlink value for %%config file %s changed in %s on %s."
-msgstr ""
+msgstr "Symlänkens värde för %%config-filen %s ändrades i %s på %s."
 
 #: lib/inspect_config.c:153
 #, c-format
 msgid "%%config file content change for %s in %s on %s"
-msgstr ""
+msgstr "%%config-filens innehåll ändrades för %s i %s på %s"
 
 #: lib/inspect_config.c:168
 #, c-format
@@ -2183,66 +2195,68 @@ msgid ""
 "%%config file change for %s in %s on %s (%smarked as %%config -> %smarked as "
 "%%config)\n"
 msgstr ""
+"%%config-filens ändrades för %s i %s på %s (%smarkerad som %%config → "
+"%smarkerad som %%config)\n"
 
 #: lib/inspect_config.c:169 lib/inspect_doc.c:114
 msgid "not "
-msgstr ""
+msgstr "inte "
 
 #: lib/inspect_debuginfo.c:217
 #, c-format
 msgid "%s in %s on %s is missing debugging symbols"
-msgstr ""
+msgstr "%s i %s på %s saknar felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:221
 msgid "missing debugging symbols"
-msgstr ""
+msgstr "saknade felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:224
 #, c-format
 msgid "Missing: %s"
-msgstr ""
+msgstr "Saknas: %s"
 
 #: lib/inspect_debuginfo.c:235
 #, c-format
 msgid "%s in %s on %s contains debugging symbols"
-msgstr ""
+msgstr "%s i %s på %s innehåller felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:239
 msgid "contains debugging symbols"
-msgstr ""
+msgstr "innehåller felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:241
 #, c-format
 msgid "Contains: %s"
-msgstr ""
+msgstr "Innehåller: %s"
 
 #: lib/inspect_debuginfo.c:260
 #, c-format
 msgid "%s in %s on %s gained debugging symbols"
-msgstr ""
+msgstr "%s i %s på %s fick felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:261
 msgid "gained debugging symbols"
-msgstr ""
+msgstr "fick felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:266
 #, c-format
 msgid "Gained: %s"
-msgstr ""
+msgstr "Fick: %s"
 
 #: lib/inspect_debuginfo.c:286
 #, c-format
 msgid "%s in %s on %s lost debugging symbols"
-msgstr ""
+msgstr "%s i %s på %s tappade felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:287
 msgid "lost debugging symbols"
-msgstr ""
+msgstr "tappade felsökningssymboler"
 
 #: lib/inspect_debuginfo.c:292
 #, c-format
 msgid "Lost: %s"
-msgstr ""
+msgstr "Tappade: %s"
 
 #: lib/inspect_debuginfo.c:318
 #, c-format
@@ -2250,10 +2264,11 @@ msgid ""
 "%s in %s on %s carries .gosymtab but should not have the .gnu_debugdata "
 "symbol"
 msgstr ""
+"%s i %s på %s har med .gosymtab ben skall inte ina symbolen .gnu_debugdata"
 
 #: lib/inspect_debuginfo.c:320
 msgid ".gnu_debugdata with .gosymtab"
-msgstr ""
+msgstr ".gnu_debugdata med .gosymtab"
 
 #: lib/inspect_desktop.c:275
 #, c-format
@@ -2261,10 +2276,12 @@ msgid ""
 "Desktop file %s on %s references executable %s but %s is not executable by "
 "all"
 msgstr ""
+"Skrivbordsfilen %s på %s refererar den körbara %s men %s är inte körbar för "
+"alla"
 
 #: lib/inspect_desktop.c:279
 msgid "${FILE} references non-executable file on ${ARCH}"
-msgstr ""
+msgstr "${FILE} refererar en icke körbar fil på ${ARCH}"
 
 #: lib/inspect_desktop.c:300
 #, c-format
@@ -2273,6 +2290,9 @@ msgid ""
 "executable of that name, however it has a TryExec key so it may be ignored "
 "in case %s does not exist"
 msgstr ""
+"Skrivbordsfilen %s på %s refererar den körbara %s; inga underpaket "
+"innehåller en körbar med det namnet, dock har den en TryExec-nyckel så den "
+"kan ignoreras ifall %s inte finns"
 
 #: lib/inspect_desktop.c:308
 #, c-format
@@ -2280,28 +2300,33 @@ msgid ""
 "Desktop file %s on %s references executable %s but no subpackages contain an "
 "executable of that name"
 msgstr ""
+"Skrivbordsfilen %s på %s refererar den körbara %s; inga underpaket "
+"innehåller en körbar med det namnet"
 
 #: lib/inspect_desktop.c:312
 msgid "${FILE} references missing executable on ${ARCH}"
-msgstr ""
+msgstr "${FILE} refererar en saknad körbar på ${ARCH}"
 
 #: lib/inspect_desktop.c:354
 #, c-format
 msgid "Desktop file %s on %s references icon %s but %s is not readable by all"
 msgstr ""
+"Skrivbordsfilen %s på %s refererar ikonen %s men %s är inte läsbar av alla"
 
 #: lib/inspect_desktop.c:358
 msgid "${FILE} references unreadble icon on ${ARCH}"
-msgstr ""
+msgstr "${FILE} refererar en oläsbar ikon på ${ARCH}"
 
 #: lib/inspect_desktop.c:376
 #, c-format
 msgid "Desktop file %s on %s references icon %s but no subpackages contain %s"
 msgstr ""
+"Skrivbordsfilen %s på %s refererar ikonen %s men inga underpaket innehåller "
+"%s"
 
 #: lib/inspect_desktop.c:380
 msgid "${FILE} references missing icon on ${ARCH}"
-msgstr ""
+msgstr "${FILE} refererar en saknad ikon på ${ARCH}"
 
 #: lib/inspect_desktop.c:452
 msgid "${FILE} is not valid on ${ARCH}"
