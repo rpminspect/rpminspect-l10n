@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-09-20 07:35+0000\n"
+"PO-Revision-Date: 2023-09-23 20:35+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -2330,7 +2330,7 @@ msgstr "${FILE} refererar en saknad ikon på ${ARCH}"
 
 #: lib/inspect_desktop.c:452
 msgid "${FILE} is not valid on ${ARCH}"
-msgstr ""
+msgstr "${FILE} är inte giltig på ${ARCH}"
 
 #: lib/inspect_desktop.c:455
 #, c-format
@@ -2338,27 +2338,33 @@ msgid ""
 "File %s is no longer a valid desktop entry file on %s; desktop-file-validate "
 "reports:"
 msgstr ""
+"Filen %s är inte längre en giltig skrivborspostfil på %s; desktop-file-"
+"validate rapporterar:"
 
 #: lib/inspect_desktop.c:457
 #, c-format
 msgid ""
 "New file %s is not a valid desktop file on %s; desktop-file-validate reports:"
 msgstr ""
+"Den nya filen %s är inte en giltig skrivbordsfil på %s; desktop-file-"
+"validate rapporterar:"
 
 #: lib/inspect_desktop.c:459
 #, c-format
 msgid ""
 "File %s is not a valid desktop file on %s; desktop-file-validate reports:"
 msgstr ""
+"Filen %s är inte en giltig skrivbordsfil på %s; desktop-file-validate "
+"rapporterar:"
 
 #: lib/inspect_disttag.c:184
 #, c-format
 msgid "The %s file is missing the %s tag."
-msgstr ""
+msgstr "Filen %s saknar taggen %s."
 
 #: lib/inspect_disttag.c:186
 msgid "${FILE} missing Release tag"
-msgstr ""
+msgstr "${FILE} saknar en Release-tagg"
 
 #: lib/inspect_disttag.c:192
 #, c-format
@@ -2367,25 +2373,28 @@ msgid ""
 "should be of the form '%s' in the %s tag or in a macro used in the %s tag. "
 "After RPM macro expansion, no dist tag was found in this %s tag value."
 msgstr ""
+"Värdet på taggen %s saknar dist-taggen på korrekt format. Dist-taggen skall "
+"ha formen ”%s” i taggen %s eller i ett makro som används i taggen %s. Efter "
+"expansion av RPM-makron fanns ingen dist-tagg i värdet på taggen %s."
 
 #: lib/inspect_disttag.c:194
 #, c-format
 msgid "${FILE} does not use '%%{?dist}' in Release"
-msgstr ""
+msgstr "${FILE} använder inte ”%%{?dist}” i Release"
 
 #: lib/inspect_disttag.c:263
 msgid "Specified package is not a source RPM, skipping."
-msgstr ""
+msgstr "Det angivna paketet är inte en käll-RPM, hoppar över."
 
 #: lib/inspect_doc.c:71
 #, c-format
 msgid "%doc ${FILE}"
-msgstr ""
+msgstr "%doc ${FILE}"
 
 #: lib/inspect_doc.c:98
 #, c-format
 msgid "%%doc file content change for %s in %s on %s\n"
-msgstr ""
+msgstr "%%doc-filens innehåll ändrades för %s i %s på %s\n"
 
 #: lib/inspect_doc.c:113
 #, c-format
@@ -2393,134 +2402,139 @@ msgid ""
 "%%doc file change for %s in %s on %s (%smarked as %%doc -> %smarked as "
 "%%doc)\n"
 msgstr ""
+"%%doc-filens ändrades för %s i %s på %s (%smarkerad som %%doc → %smarkerad "
+"som %%doc)\n"
 
 #: lib/inspect_dsodeps.c:94
 #, c-format
 msgid "%s was an ELF file and now is not on %s"
-msgstr ""
+msgstr "%s var en ELF-fil och är nu inte det på %s"
 
 #: lib/inspect_dsodeps.c:96 lib/inspect_dsodeps.c:108
 msgid "ELF file ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "ELF-filen ${FILE} på ${ARCH}"
 
 #: lib/inspect_dsodeps.c:106
 #, c-format
 msgid "%s was a dynamic ELF file and now is not on %s"
-msgstr ""
+msgstr "%s var en dynamisk ELF-fil och är nu inte det på %s"
 
 #: lib/inspect_dsodeps.c:146
 #, c-format
 msgid "DT_NEEDED symbol(s) removed from %s on %s"
-msgstr ""
+msgstr "DT_NEEDED-symboler borttagna från %s på %s"
 
 #: lib/inspect_dsodeps.c:148 lib/inspect_dsodeps.c:165
 msgid "DT_NEEDED symbol(s) in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "DT_NEEDED-symboler i ${FILE} på ${ARCH}"
 
 #: lib/inspect_dsodeps.c:163
 #, c-format
 msgid "DT_NEEDED symbol(s) added to %s on %s"
-msgstr ""
+msgstr "DT_NEEDED-symboler tillagda till %s på %s"
 
 #: lib/inspect_elf.c:433
 #, c-format
 msgid "Object still has executable stack (no GNU-stack note): %s on %s"
 msgstr ""
+"Objekten har fortfarande exekverbar stack (ingen notering GNU-stack): %s på "
+"%s"
 
 #: lib/inspect_elf.c:435
 #, c-format
 msgid "Object has executable stack (no GNU-stack note): %s on %s"
-msgstr ""
+msgstr "Objekten har exekverbar stack (ingen notering GNU-stack): %s på %s"
 
 #: lib/inspect_elf.c:438
 #, c-format
 msgid "Program built without GNU_STACK: %s on %s"
-msgstr ""
+msgstr "Program byggt utan GNU_STACK: %s på %s"
 
 #: lib/inspect_elf.c:444
 msgid "GNU_STACK in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "GNU_STACK i ${FILE} på ${ARCH}"
 
 #: lib/inspect_elf.c:496
 #, c-format
 msgid "File %s has invalid execstack flags (%s) on %s"
-msgstr ""
+msgstr "Filen %s har felaktiga execstack-flaggor (%s) på %s"
 
 #: lib/inspect_elf.c:501
 #, c-format
 msgid "File %s has unrecognized GNU_STACK '%s' (expected RW or RWE) on %s"
-msgstr ""
+msgstr "Filen %s har en okänd GNU_STACK ”%s” (RW eller RWE förväntades) på %s"
 
 #: lib/inspect_elf.c:510 lib/inspect_elf.c:540
 msgid "execstack in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "execstack i ${FILE} på ${ARCH}"
 
 #: lib/inspect_elf.c:525
 #, c-format
 msgid "Object still has executable stack (GNU-stack note = X): %s on %s"
 msgstr ""
+"Objektet har fortfarande exekverbar stack (notering GNU-stack =X): %s på %s"
 
 #: lib/inspect_elf.c:527
 #, c-format
 msgid "Object has executable stack (GNU-stack note = X): %s on %s"
-msgstr ""
+msgstr "Objektet har exekverbar stack (notering GNU-stack =X): %s på %s"
 
 #: lib/inspect_elf.c:531
 #, c-format
 msgid "Stack is still executable: %s on %s"
-msgstr ""
+msgstr "Stacken är fortfarande körbar: %s på %s"
 
 #: lib/inspect_elf.c:533
 #, c-format
 msgid "Stack is executable: %s on %s"
-msgstr ""
+msgstr "Stacken är körbar: %s på %s"
 
 #: lib/inspect_elf.c:564
 #, c-format
 msgid "%s lost full GNU_RELRO security protection on %s"
-msgstr ""
+msgstr "%s förlorade fullständigt GNU_RELRO-säkerhetsskydd på %s"
 
 #: lib/inspect_elf.c:567
 #, c-format
 msgid "%s lost GNU_RELRO security protection on %s"
-msgstr ""
+msgstr "%s förlorade GNU_RELRO-säkerhetsskydd på %s"
 
 #: lib/inspect_elf.c:578
 msgid "lost GNU_RELRO in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "förlorade GNU_RELRO i ${FILE} på ${ARCH}"
 
 #: lib/inspect_elf.c:725
 #, c-format
 msgid "The following objects lost -fPIC:\n"
-msgstr ""
+msgstr "Följande objekt förlorade -fPIC:\n"
 
 #: lib/inspect_elf.c:742
 #, c-format
 msgid "The following new objects were built without -fPIC:\n"
-msgstr ""
+msgstr "Följande nya objekt byggdes utan -fPIC:\n"
 
 #: lib/inspect_elf.c:755
 #, c-format
 msgid "%s in %s has objects built without -fPIC on %s"
-msgstr ""
+msgstr "%s i %s har objekt byggda utan -fPIC på %s"
 
 #: lib/inspect_elf.c:763
 msgid "missing -fPIC in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "saknat -fPIC i ${FILE} på ${ARCH}"
 
 #: lib/inspect_elf.c:799
 msgid "TEXTREL relocations in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "TEXTREL-omlokaliseringar i ${FILE} på ${ARCH}"
 
 #: lib/inspect_elf.c:814
 #, c-format
 msgid "%s in %s acquired TEXTREL relocations on %s"
-msgstr ""
+msgstr "%s i %s fick TEXTREL-omlokaliseringar på %s"
 
 #: lib/inspect_elf.c:817
 #, c-format
 msgid "%s in %s has TEXTREL relocations on %s"
-msgstr ""
+msgstr "%s i %s har TEXTREL-omlokaliseringar på %s"
 
 #: lib/inspect_emptyrpm.c:95
 #, c-format
@@ -2528,6 +2542,8 @@ msgid ""
 "New package %s is empty (no payloads); this is expected per the rpminspect "
 "configuration"
 msgstr ""
+"Det nya paketet %s är tomt (ingen last); detta är förväntad enligt "
+"rpminspect-konfigurationen"
 
 #: lib/inspect_emptyrpm.c:105
 #, c-format
@@ -2535,65 +2551,67 @@ msgid ""
 "New package %s is empty (no payloads); this is expected because the package "
 "only contains %%ghost entries"
 msgstr ""
+"Det nya paketet %s är tomt (ingen last); detta är förväntat eftersom paketet "
+"endast innehåller %%ghost-poster"
 
 #: lib/inspect_emptyrpm.c:116
 #, c-format
 msgid "New package %s is empty (no payloads)"
-msgstr ""
+msgstr "Det nya paketet %s är tomt (ingen last)"
 
 #: lib/inspect_emptyrpm.c:120
 msgid "${FILE} has empty payload"
-msgstr ""
+msgstr "${FILE} har tom last"
 
 #: lib/inspect_files.c:111
 #, c-format
 msgid "Forbidden path reference (%s) on line %ld of %s"
-msgstr ""
+msgstr "Förbjuden sökvägsreferens (%s) på rad %ld av %s"
 
 #: lib/inspect_files.c:113
 #, c-format
 msgid "invalid spec line: %s"
-msgstr ""
+msgstr "felaktig spec-rad: %s"
 
 #: lib/inspect_files.c:172
 msgid "The files inspection is only for source packages, skipping."
-msgstr ""
+msgstr "Filinspektionen är endast för källpaket, hoppar över."
 
 #: lib/inspect_filesize.c:67
 #, c-format
 msgid "%s became a non-empty file on %s"
-msgstr ""
+msgstr "%s blev en icke-tom fil på %s"
 
 #: lib/inspect_filesize.c:71
 msgid "non-empty ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "icke-tom ${FILE} på ${ARCH}"
 
 #: lib/inspect_filesize.c:76
 #, c-format
 msgid "%s became an empty file on %s"
-msgstr ""
+msgstr "%s blev en tom fil på %s"
 
 #: lib/inspect_filesize.c:80
 msgid "empty ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "tom ${FILE} på ${ARCH}"
 
 #: lib/inspect_filesize.c:98
 #, c-format
 msgid "%s grew by %lld%% on %s"
-msgstr ""
+msgstr "%s växte med %lld %% på %s"
 
 #: lib/inspect_filesize.c:99
 msgid "${FILE} size grew on ${ARCH}"
-msgstr ""
+msgstr "storleken på ${FILE} ökade på ${ARCH}"
 
 #: lib/inspect_filesize.c:103
 #, c-format
 msgid "%s shrank by %lld%% on %s"
-msgstr ""
+msgstr "%s krympte med %lld %% på %s"
 
 #: lib/inspect_filesize.c:104
 msgid "${FILE} size shrank on ${ARCH}"
-msgstr ""
+msgstr "storleken på ${FILE} minskade på ${ARCH}"
 
 #: lib/inspect_javabytecode.c:130
 #, c-format
@@ -2601,10 +2619,12 @@ msgid ""
 "File %s (%s), Java byte code version %d is incorrect (wrong endianness? "
 "corrupted file? space JDK?)"
 msgstr ""
+"Filen %s (%s), Java-bytekodversion %d är felaktig (fel byteordning? trasig "
+"fil? rymd-JDK?)"
 
 #: lib/inspect_javabytecode.c:131
 msgid "incorrect Java byte code version in ${FILE}"
-msgstr ""
+msgstr "felaktig Java-bytekodversion i ${FILE}"
 
 #: lib/inspect_javabytecode.c:136
 #, c-format
@@ -2612,33 +2632,37 @@ msgid ""
 "File %s (%s), Java byte code version %d greater than supported major version "
 "%d for product release %s"
 msgstr ""
+"Filen %s (%s), Java-bytekodversion %d är större än den stödda huvudversionen "
+"%d för produktutgåvan %s"
 
 #: lib/inspect_javabytecode.c:137
 msgid "Java byte code version too new in ${FILE}"
-msgstr ""
+msgstr "Java-bytekodversionen är för ny i ${FILE}"
 
 #: lib/inspect_javabytecode.c:152
 #, c-format
 msgid "Java byte code version changed from %d to %d in %s from %s"
-msgstr ""
+msgstr "Java-bytekodversionen ändrades från %d till %d i %s från %s"
 
 #: lib/inspect_javabytecode.c:153
 msgid "Java byte code version changed in ${FILE}"
-msgstr ""
+msgstr "Java-bytekodversionen ändrades i ${FILE}"
 
 #: lib/inspect_javabytecode.c:255 lib/inspect_javabytecode.c:267
 msgid "*** missing JVM version to product release mapping"
-msgstr ""
+msgstr "*** saknad avbildning från JVM-version till produktutgåva"
 
 #: lib/inspect_kmidiff.c:252
 #, c-format
 msgid ""
 "Comparing %s to %s in package %s on %s generated a kmidiff(1) usage error."
 msgstr ""
+"Jämförelse av %s med %s i paketet %s på %s genererade ett användningsfel "
+"från kmidiff(1)."
 
 #: lib/inspect_kmidiff.c:254
 msgid "kmidiff usage error"
-msgstr ""
+msgstr "kmidiff användningsfel"
 
 #: lib/inspect_kmidiff.c:256
 #, c-format
@@ -2646,10 +2670,12 @@ msgid ""
 "Comparing %s to %s in package %s on %s revealed Kernel Module Interface "
 "(KMI) differences."
 msgstr ""
+"Jämförelse av %s med %s i paketet %s på %s avslöjade skillnader i "
+"kärnmodulsgränssnitt (Kernel Module Interface, KMI)."
 
 #: lib/inspect_kmidiff.c:258
 msgid "KMI change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "KMI-ändring i ${FILE} på ${ARCH}"
 
 #: lib/inspect_kmidiff.c:260
 #, c-format
@@ -2657,20 +2683,23 @@ msgid ""
 "Comparing %s to %s in package %s on %s revealed incompatible Kernel Module "
 "Interface (KMI) differences."
 msgstr ""
+"Jämförelse av %s med %s i paketet %s på %s avslöjade inkompatibla skillnader "
+"i kärnmodulsgränssnitt (Kernel Module Interface, KMI)."
 
 #: lib/inspect_kmidiff.c:263
 msgid "KMI incompatible change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "KMI-inkompatibel ändring i ${FILE} på ${ARCH}"
 
 #: lib/inspect_kmidiff.c:265
 #, c-format
 msgid ""
 "kmidiff(1) comparison of %s to %s in package %s on %s ended unexpectedly."
 msgstr ""
+"kmidiff(1)-jämförelsen av %s med %s i paketet %s på %s avslutades oväntat."
 
 #: lib/inspect_kmidiff.c:267
 msgid "kmidiff unexpected exit"
-msgstr ""
+msgstr "kmidiff avslutades oväntat"
 
 #: lib/inspect_kmidiff.c:274
 #, c-format
@@ -2678,52 +2707,54 @@ msgid ""
 "Command: %s\n"
 "Exit code: %d%s%s"
 msgstr ""
+"Kommando: %s\n"
+"Slutkodod: %d%s%s"
 
 #: lib/inspect_kmod.c:28
 msgid "${FILE} kernel module alias on ${ARCH}"
-msgstr ""
+msgstr "${FILE} kärnmodulalias på ${ARCH}"
 
 #: lib/inspect_kmod.c:31
 #, c-format
 msgid "Kernel module '%s' lost alias '%s'"
-msgstr ""
+msgstr "Kärnmodulen ”%s” tappade aliaset ”%s”"
 
 #: lib/inspect_kmod.c:41
 #, c-format
 msgid "Kernel module '%s' gained alias '%s'"
-msgstr ""
+msgstr "Kärnmodulen ”%s” fick aliaset ”%s”"
 
 #: lib/inspect_kmod.c:188
 #, c-format
 msgid "Kernel module %s removes parameter '%s' (was present in %s)."
-msgstr ""
+msgstr "Kärnmodulen %s tar bort parametern ”%s” (fanns i %s)."
 
 #: lib/inspect_kmod.c:191 lib/inspect_kmod.c:208
 msgid "${FILE} kernel module parameter on ${ARCH}"
-msgstr ""
+msgstr "${FILE} kärnmodulparameter på ${ARCH}"
 
 #: lib/inspect_kmod.c:205
 #, c-format
 msgid "Kernel module %s adds parameter '%s' (was not present in %s)."
-msgstr ""
+msgstr "Kärnmodulen %s lägger till parametern ”%s” (fanns inte i %s)."
 
 #: lib/inspect_kmod.c:226
 #, c-format
 msgid "Kernel module %s removes dependency '%s' (was present in %s)."
-msgstr ""
+msgstr "Kärnmodulen %s tar bort beroendet ”%s” (fanns i %s)."
 
 #: lib/inspect_kmod.c:229
 msgid "${FILE} kernel module dependency on ${ARCH}"
-msgstr ""
+msgstr "${FILE} kärnmodulberoende på ${ARCH}"
 
 #: lib/inspect_kmod.c:243
 #, c-format
 msgid "Kernel module %s adds dependency '%s' (was not present in %s)."
-msgstr ""
+msgstr "Kärnmodulen %s lägger till beroendet ”%s” (fanns inte i %s)."
 
 #: lib/inspect_kmod.c:246
 msgid "${FILE} kernel module parameter"
-msgstr ""
+msgstr "${FILE} kärnmodulparameter"
 
 #: lib/inspect_license.c:47
 #, c-format
