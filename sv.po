@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-09-23 20:35+0000\n"
+"PO-Revision-Date: 2023-09-26 08:35+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -2759,147 +2759,153 @@ msgstr "${FILE} kärnmodulparameter"
 #: lib/inspect_license.c:47
 #, c-format
 msgid "*** parse error in license database %s"
-msgstr ""
+msgstr "*** tolkningsfel i licensdatabasen %s"
 
 #: lib/inspect_license.c:135
 msgid "*** problem checking license database"
-msgstr ""
+msgstr "*** problem vid kontroll av licensdatabasen"
 
 #: lib/inspect_license.c:464
 #, c-format
 msgid "Unapproved license in %s: %s"
-msgstr ""
+msgstr "Ej godkänd licens i %s: %s"
 
 #: lib/inspect_license.c:505
 #, c-format
 msgid "Empty License Tag in %s"
-msgstr ""
+msgstr "Tom licenstagg i %s"
 
 #: lib/inspect_license.c:509
 msgid "missing License tag in ${FILE}"
-msgstr ""
+msgstr "saknad License-tagg i ${FILE}"
 
 #: lib/inspect_license.c:518
 #, c-format
 msgid "Valid License Tag in %s: %s"
-msgstr ""
+msgstr "Giltig License-tagg i %s: %s"
 
 #: lib/inspect_license.c:532
 #, c-format
 msgid "License Tag contains unprofessional language in %s: %s"
-msgstr ""
+msgstr "License-taggen innehåller oprofessionellt språk i %s: %s"
 
 #: lib/inspect_license.c:536
 msgid "unprofessional language in License tag in ${FILE}"
-msgstr ""
+msgstr "oprofessionellt språk i License-taggen i ${FILE}"
 
 #: lib/inspect_license.c:573
 msgid "Missing license database(s)."
-msgstr ""
+msgstr "Saknad licensdatabas."
 
 #: lib/inspect_license.c:577
 msgid "missing license database"
-msgstr ""
+msgstr "saknad licensdatabas"
 
 #: lib/inspect_lostpayload.c:62
 #, c-format
 msgid "Existing subpackage %s is now missing on %s"
-msgstr ""
+msgstr "Det befintliga underpaketet %s saknas nu på %s"
 
 #: lib/inspect_lostpayload.c:66
 msgid "missing subpackage ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "saknat underpaket ${FILE} på ${ARCH}"
 
 #: lib/inspect_lostpayload.c:82
 #, c-format
 msgid "Package %s on %s continues to be empty (no payloads)"
-msgstr ""
+msgstr "Paketet %s på %s är fortfarande tomt (ingen last)"
 
 #: lib/inspect_lostpayload.c:86
 msgid "existing empty subpackage ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "befintligt tomt underpaket ${FILE} på ${ARCH}"
 
 #: lib/inspect_lostpayload.c:93
 #, c-format
 msgid "Package %s on %s became empty (no payloads)"
-msgstr ""
+msgstr "Paketet %s på %s blev tomt (ingen last)"
 
 #: lib/inspect_lostpayload.c:97
 msgid "subpackage ${FILE} on ${ARCH} now has empty payload"
-msgstr ""
+msgstr "underpaketet ${FILE} på ${ARCH} har nu tom last"
 
 #: lib/inspect_lto.c:144
 msgid "${FILE} not portable on ${ARCH}"
-msgstr ""
+msgstr "${FILE} är inte portabel på ${ARCH}"
 
 #: lib/inspect_lto.c:152
 #, c-format
 msgid ""
 "%s contains symbols [%s] on %s; this is not portable across compiler versions"
 msgstr ""
+"%s innehåller symbolerna [%s] på %s; detta är inte portabelt mellan "
+"kompilatorversioner"
 
 #: lib/inspect_lto.c:168
 #, c-format
 msgid ""
 "%s contains symbol [%s] on %s; this is not portable across compiler versions"
 msgstr ""
+"%s innehåller symbolen [%s] på %s; detta är inte portabelt mellan "
+"kompilatorversioner"
 
 #: lib/inspect_manpage.c:52
 #, c-format
 msgid "Error parsing %s:%d:%d: %s: %s: %s\n"
-msgstr ""
+msgstr "Fel vid tolkning av %s:%d:%d: %s: %s: %s\n"
 
 #: lib/inspect_manpage.c:81
 #, c-format
 msgid "*** unable to compile man page path regular expression: %s"
 msgstr ""
+"*** kan inte kompilera reguljäruttrycket för sökvägen till manualsidor: %s"
 
 #: lib/inspect_manpage.c:179
 #, c-format
 msgid "Unable to open man page %s\n"
-msgstr ""
+msgstr "Kan inte öppna manualsidan %s\n"
 
 #: lib/inspect_manpage.c:187
 #, c-format
 msgid "Man page %s does not end in %s\n"
-msgstr ""
+msgstr "Manualsidan %s slutar inte med %s\n"
 
 #: lib/inspect_manpage.c:195
 #, c-format
 msgid "man page with %s suffix is not really compressed with gzip\n"
 msgstr ""
+"manualsidan med ändelsen %s är inte i verkligheten komprimerad med gzip\n"
 
 #: lib/inspect_manpage.c:236
 #, c-format
 msgid "Errors found validating %s\n"
-msgstr ""
+msgstr "Fel hittades vid validering av %s\n"
 
 #: lib/inspect_manpage.c:299
 #, c-format
 msgid "Man page %s is possibly empty on %s in %s"
-msgstr ""
+msgstr "Manualsidan %s är möjligen tom på %s i %s"
 
 #: lib/inspect_manpage.c:302
 msgid "empty man page ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "tom manualsida ${FILE} på ${ARCH}"
 
 #: lib/inspect_manpage.c:315
 #, c-format
 msgid "Man page checker reported problems with %s on %s in %s"
-msgstr ""
+msgstr "Manualsideskontrollen rapporterade problem med %s på %s i %s"
 
 #: lib/inspect_manpage.c:318
 msgid "man page ${FILE} on ${ARCH} has errors"
-msgstr ""
+msgstr "manualsidan ${FILE} på ${ARCH} har fel"
 
 #: lib/inspect_manpage.c:327
 #, c-format
 msgid "Man page %s has incorrect path on %s in %s"
-msgstr ""
+msgstr "Manualsidan %s har felaktig sökväg på %s i %s"
 
 #: lib/inspect_manpage.c:330
 msgid "man page ${FILE} on ${ARCH} has incorrect path"
-msgstr ""
+msgstr "manualsidan ${FILE} på ${ARCH} har felaktig sökväg"
 
 #: lib/inspect_metadata.c:40
 #, c-format
@@ -2907,15 +2913,17 @@ msgid ""
 "Vendor not set in the rpminspect configuration, ignoring Package Vendor "
 "\"%s\" in %s"
 msgstr ""
+"Leverantören är inte angiven i rpminspect-konfigurationen, ignorerar "
+"paketets leverantör ”%s” i %s"
 
 #: lib/inspect_metadata.c:51
 #, c-format
 msgid "Package Vendor \"%s\" is not \"%s\" in %s"
-msgstr ""
+msgstr "Paketets Vendor ”%s” är inte ”%s” i %s"
 
 #: lib/inspect_metadata.c:55
 msgid "invalid vendor ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "felaktig leverantör ${FILE} på ${ARCH}"
 
 #: lib/inspect_metadata.c:76
 #, c-format
@@ -2923,58 +2931,60 @@ msgid ""
 "Package Build Host \"%s\" is not within an expected build host subdomain in "
 "%s"
 msgstr ""
+"Paketets byggvärd ”%s” är inte inom den förväntade underdomänen för "
+"byggvärdar i %s"
 
 #: lib/inspect_metadata.c:80
 msgid "invalid build host ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "felaktig byggvärd ${FILE} på ${ARCH}"
 
 #: lib/inspect_metadata.c:92
 #, c-format
 msgid "Package Summary contains unprofessional language in %s"
-msgstr ""
+msgstr "Paketets sammanfattning innehåller oprofessionellt språk i %s"
 
 #: lib/inspect_metadata.c:93
 #, c-format
 msgid "Summary: %s"
-msgstr ""
+msgstr "Sammanfattning: %s"
 
 #: lib/inspect_metadata.c:97
 msgid "Summary contains unprofessional words on ${ARCH}"
-msgstr ""
+msgstr "Sammanfattningen innehåller oprofessionella ord på ${ARCH}"
 
 #: lib/inspect_metadata.c:109
 #, c-format
 msgid "Package Description contains unprofessional language in %s:"
-msgstr ""
+msgstr "Paketets beskrivning innehåller oprofessionellt språk i %s:"
 
 #: lib/inspect_metadata.c:114
 msgid "Description contains unprofessional words on ${ARCH}"
-msgstr ""
+msgstr "Beskrivningen innehåller oprofessionella ord på ${ARCH}"
 
 #: lib/inspect_metadata.c:134
 #, c-format
 msgid "Gained Package Vendor \"%s\" in %s"
-msgstr ""
+msgstr "Fick paketleverantören ”%s” i %s"
 
 #: lib/inspect_metadata.c:136
 #, c-format
 msgid "Lost Package Vendor \"%s\" in %s"
-msgstr ""
+msgstr "Tappade paketleverantören ”%s” i %s"
 
 #: lib/inspect_metadata.c:138
 #, c-format
 msgid "Package Vendor changed from \"%s\" to \"%s\" in %s"
-msgstr ""
+msgstr "Paketleverantören ändrades från ”%s” till ”%s” i %s"
 
 #: lib/inspect_metadata.c:156
 #, c-format
 msgid "Package Summary change from \"%s\" to \"%s\" in %s"
-msgstr ""
+msgstr "Paketsammanfattningen ändrades från ”%s” till ”%s” i %s"
 
 #: lib/inspect_metadata.c:169
 #, c-format
 msgid "Package Description changed in %s"
-msgstr ""
+msgstr "Paketbeskrivningen ändrades i %s"
 
 #: lib/inspect_metadata.c:170
 #, c-format
@@ -2987,6 +2997,13 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"från:\n"
+"\n"
+"%s\n"
+"\n"
+"till:\n"
+"\n"
+"%s"
 
 #: lib/inspect_modularity.c:119
 #, c-format
@@ -2994,6 +3011,8 @@ msgid ""
 "The /data/static_context value in %s is %s, but the product release rules "
 "forbid the presence of /data/static_context in the module metadata."
 msgstr ""
+"Värdet /data/static_context i %s är %s, men reglerna för produktutgåvor "
+"förbjuder närvaron av /data/static_context i modulmetadatan."
 
 #: lib/inspect_modularity.c:125
 #, c-format
@@ -3001,6 +3020,8 @@ msgid ""
 "The /data/static_context value in %s is %s, but the product release rules "
 "require the presence of /data/static_context in the module metadata."
 msgstr ""
+"Värdet /data/static_context i %s är %s, men reglerna för produktutgåvor "
+"kräver närvaron av /data/static_context i modulmetadatan."
 
 #: lib/inspect_modularity.c:131
 #, c-format
@@ -3008,6 +3029,8 @@ msgid ""
 "The /data/static_context value in %s is %s, but the product release rules "
 "recommend the presence of /data/static_context in the module metadata."
 msgstr ""
+"Värdet /data/static_context i %s är %s, men reglerna för produktutgåvor "
+"rekommenderar närvaron av /data/static_context i modulmetadatan."
 
 #: lib/inspect_modularity.c:133
 #, c-format
@@ -3015,6 +3038,8 @@ msgid ""
 "The /data/static_context value in %s is %s, and the product release rules do "
 "not have a setting for /data/static_context in the module metadata."
 msgstr ""
+"Värdet /data/static_context i %s är %s, och reglerna för produktutgåvor har "
+"inte en inställning för närvaron av /data/static_context i modulmetadatan."
 
 #: lib/inspect_modularity.c:135
 #, c-format
@@ -3022,16 +3047,18 @@ msgid ""
 "The /data/static_context value in %s is %s as required by the product "
 "release rules."
 msgstr ""
+"Värdet /data/static_context i %s är %s som krävt av reglerna för "
+"pruduktutgåvor."
 
 #: lib/inspect_modularity.c:143
 #, c-format
 msgid "%s The /data/static_context value is the same as in %s."
-msgstr ""
+msgstr "%s Värdet /data/static_context är samma som i %s."
 
 #: lib/inspect_modularity.c:145
 #, c-format
 msgid "%s The /data/static_context value has changed since %s."
-msgstr ""
+msgstr "%s Värdet /data/static_context har ändrats sedan %s."
 
 #: lib/inspect_modularity.c:180
 #, c-format
@@ -3039,29 +3066,30 @@ msgid ""
 "Package \"%s\" is part of a module but lacks the '%%{modularitylabel}' "
 "header tag."
 msgstr ""
+"Paketet ”%s” är del av en modul men saknar huvudtaggen ”%%{modularitylabel}”."
 
 #: lib/inspect_modularity.c:224
 msgid "Inspection skipped because this build's type is not `module'."
-msgstr ""
+msgstr "Inspektionen överhoppad för att detta bygges typ inte är ”module”."
 
 #: lib/inspect_movedfiles.c:52
 #, c-format
 msgid "%s moved to ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "%s flyttad till ${FILE} på ${ARCH}"
 
 #: lib/inspect_movedfiles.c:55
 #, c-format
 msgid "%s probably moved to %s on %s\n"
-msgstr ""
+msgstr "%s förmodligen flyttad till %s på %s\n"
 
 #: lib/inspect_ownership.c:77
 #, c-format
 msgid "File %s has forbidden owner `%s` on %s"
-msgstr ""
+msgstr "Filen %s har en förbjuden ägare ”%s” på %s"
 
 #: lib/inspect_ownership.c:82
 msgid "forbidden owner for ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "förbjuden ägare för ${FILE} på ${ARCH}"
 
 #: lib/inspect_ownership.c:92
 #, c-format
