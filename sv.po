@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-09-27 15:35+0000\n"
+"PO-Revision-Date: 2023-09-29 20:36+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -3243,105 +3243,105 @@ msgstr "Inga källpaket tillgängliga, hoppar över inspektionen."
 #: lib/inspect_patches.c:725
 #, c-format
 msgid "Unhandled patch file `%s` defined in spec file"
-msgstr ""
+msgstr "Ohanterad patch-fil ”%s” definierad i spec-filen"
 
 #: lib/inspect_patches.c:822
 #, c-format
 msgid "*** unrecognized %%patch line: %s"
-msgstr ""
+msgstr "*** okänd %%patch-rad: %s"
 
 #: lib/inspect_patches.c:828
 #, c-format
 msgid "*** unable to read spec file line: %s"
-msgstr ""
+msgstr "*** kan inte läsa spec-filsraden: %s"
 
 #: lib/inspect_patches.c:881
 #, c-format
 msgid "Patch file `%s` removed"
-msgstr ""
+msgstr "Patch-filen ”%s” borttagen"
 
 #: lib/inspect_pathmigration.c:81
 #, c-format
 msgid "File %s found should be in %s on %s"
-msgstr ""
+msgstr "Den funna filen %s borde vara i %s på %s"
 
 #: lib/inspect_pathmigration.c:82
 #, c-format
 msgid "${FILE} should be in %s on ${ARCH}"
-msgstr ""
+msgstr "${FILE} borde vara i %s på ${ARCH}"
 
 #: lib/inspect_permissions.c:84
 msgid " changed setuid/setgid;"
-msgstr ""
+msgstr " ändrade setuid/setgid;"
 
 #: lib/inspect_permissions.c:89
 msgid " became a directory;"
-msgstr ""
+msgstr " blev en katalog;"
 
 #: lib/inspect_permissions.c:91
 msgid " became a character device;"
-msgstr ""
+msgstr " blev en teckenenhet;"
 
 #: lib/inspect_permissions.c:93
 msgid " became a block device;"
-msgstr ""
+msgstr " blev en blockenhet;"
 
 #: lib/inspect_permissions.c:95
 msgid " became a regular file;"
-msgstr ""
+msgstr " blev en vanlig fil;"
 
 #: lib/inspect_permissions.c:97
 msgid " became a FIFO;"
-msgstr ""
+msgstr " blev en FIFO;"
 
 #: lib/inspect_permissions.c:99
 msgid " became a symbolic link;"
-msgstr ""
+msgstr " blev en symbolisk länk;"
 
 #: lib/inspect_permissions.c:101
 msgid " became a socket;"
-msgstr ""
+msgstr " blev ett uttag;"
 
 #: lib/inspect_permissions.c:105
 msgid " permissions"
-msgstr ""
+msgstr " rättigheter"
 
 #: lib/inspect_permissions.c:111
 msgid " relaxed"
-msgstr ""
+msgstr " lättad"
 
 #: lib/inspect_permissions.c:114
 msgid " changed"
-msgstr ""
+msgstr " ändrad"
 
 #: lib/inspect_permissions.c:129
 #, c-format
 msgid "%s from %04o to %04o on %s"
-msgstr ""
+msgstr "%s från %04o till %04o på %s"
 
 #: lib/inspect_permissions.c:135
 #, c-format
 msgid "${FILE} permissions from %04o to %04o on ${ARCH}"
-msgstr ""
+msgstr "${FILE} rättigheter från %04o till %04o på ${ARCH}"
 
 #: lib/inspect_permissions.c:149
 #, c-format
 msgid "%s (%s) is world-writable on %s"
-msgstr ""
+msgstr "%s (%s) är skrivbar för alla på %s"
 
 #: lib/inspect_permissions.c:152
 msgid "${FILE} is world-writable on ${ARCH}"
-msgstr ""
+msgstr "${FILE} är skrivbar för alla på ${ARCH}"
 
 #: lib/inspect_politics.c:47 lib/inspect_politics.c:67
 #, c-format
 msgid "*** invalid politics entry with pattern=%s and digest=%s"
-msgstr ""
+msgstr "*** felaktig politikpost med mönstret=%s och kontrollsumma=%s"
 
 #: lib/inspect_politics.c:92
 #, c-format
 msgid "*** unknown digest type for pattern %s: %s"
-msgstr ""
+msgstr "*** okänd kontrollsummetyp för mönstret %s: %s"
 
 #: lib/inspect_politics.c:126
 #, c-format
@@ -3349,6 +3349,8 @@ msgid ""
 "Possible politically sensitive file (%s) found in %s on %s: rules allow this "
 "file."
 msgstr ""
+"Möjligt politiskt känslig fil (%s) funnen i %s på %s: regler tillåter denna "
+"fil."
 
 #: lib/inspect_politics.c:134
 #, c-format
@@ -3356,50 +3358,54 @@ msgid ""
 "Possible politically sensitive file (%s) found in %s on %s: rules prohibit "
 "this file."
 msgstr ""
+"Möjligt politiskt känslig fil (%s) funnen i %s på %s: regler förhindrar "
+"denna fil."
 
 #: lib/inspect_politics.c:138
 msgid "${FILE} is politically sensitive"
-msgstr ""
+msgstr "${FILE} är politiskt känslig"
 
 #: lib/inspect_removedfiles.c:26
 msgid ""
 "; Removing security policy related files requires inspection by the Security "
 "Response Team."
 msgstr ""
+"; Att ta bort filer relaterade till säkerhetspolicyn kräver inspektion av "
+"säkerhetsgruppen."
 
 #: lib/inspect_removedfiles.c:85
 msgid "library ${FILE} removed on ${ARCH}"
-msgstr ""
+msgstr "biblioteket ${FILE} borttaget på ${ARCH}"
 
 #: lib/inspect_removedfiles.c:131
 #, c-format
 msgid "ABI break: Library %s with SONAME '%s' removed from %s"
-msgstr ""
+msgstr "ABI-brott: biblioteket %s med SONAME ”%s” borttaget från %s"
 
 #: lib/inspect_removedfiles.c:132
 msgid "missing SONAME in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "saknat SONAME i ${FILE} på ${ARCH}"
 
 #: lib/inspect_removedfiles.c:135
 #, c-format
 msgid "ABI break: Library %s removed from %s"
-msgstr ""
+msgstr "ABI-brott: biblioteket %s borttaget från %s"
 
 #: lib/inspect_removedfiles.c:138
 #, c-format
 msgid "%s removed from %s"
-msgstr ""
+msgstr "%s borttaget från %s"
 
 #: lib/inspect_rpmdeps.c:129
 #, c-format
 msgid "Invalid looking %s dependency in the %s package on %s: %s"
-msgstr ""
+msgstr "Beroendet %s ser felaktigt ut i paketet %s på %s: %s"
 
 #: lib/inspect_rpmdeps.c:132 lib/inspect_rpmdeps.c:892
 #: lib/inspect_rpmdeps.c:902 lib/inspect_rpmdeps.c:948
 #, c-format
 msgid "'${FILE}' in %s on ${ARCH}"
-msgstr ""
+msgstr "'${FILE}' i %s på ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:386
 #, c-format
@@ -3409,11 +3415,15 @@ msgid ""
 "%s' to the spec file to avoid the need to test interoperability between "
 "various combinations of old and new subpackages."
 msgstr ""
+"Underpaketet %s på %s medför ”%s” vilket kommer från underpaketet %s men "
+"inte har ett explicit paketversionskrav. Lägg till ”Requires: %s = %s” till "
+"spec-filen för att undvika behovet att testa interoperabilitet mellan olika "
+"kombinationer av gamla och nya underpaket."
 
 #: lib/inspect_rpmdeps.c:387
 #, c-format
 msgid "missing 'Requires: ${FILE} = %s' in %s on ${ARCH}"
-msgstr ""
+msgstr "saknat ”Requires: ${FILE} = %s” i %s på ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:409
 #, c-format
@@ -3421,116 +3431,118 @@ msgid ""
 "Multiple subpackages provide '%s': [%s] but these subpackages carry explicit "
 "Requires: [%s]"
 msgstr ""
+"Flera underpaket tillhandahåller ”%s”: [%s] men dessa underpaket har ett "
+"explicit krav: [%s]"
 
 #: lib/inspect_rpmdeps.c:410
 #, c-format
 msgid "%s all provide '${FILE}' on ${ARCH}"
-msgstr ""
+msgstr "%s tillhandahåller alla ”${FILE}” på ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:540
 #, c-format
 msgid "Missing epoch prefix on the version-release in '%s' for %s on %s"
-msgstr ""
+msgstr "Saknat epokprefix på version-utgåva i ”%s” för %s på %s"
 
 #: lib/inspect_rpmdeps.c:541
 #, c-format
 msgid "'${FILE}' needs epoch in %s on ${ARCH}"
-msgstr ""
+msgstr "”${FILE}” behöver en epok i %s på ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:807
 msgid "spec file"
-msgstr ""
+msgstr "spec-fil"
 
 #: lib/inspect_rpmdeps.c:887
 #, c-format
 msgid "Gained '%s' in source package %s"
-msgstr ""
+msgstr "Fick ”%s” i källpaketet %s"
 
 #: lib/inspect_rpmdeps.c:889
 #, c-format
 msgid "Gained '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "Fick ”%s” i underpaketet %s på %s"
 
 #: lib/inspect_rpmdeps.c:897
 #, c-format
 msgid "Retained '%s' in source package %s"
-msgstr ""
+msgstr "BEhöll ”%s” i källpaketet %s"
 
 #: lib/inspect_rpmdeps.c:899
 #, c-format
 msgid "Retained '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "Behöll ”%s” i underpaketet %s på %s"
 
 #: lib/inspect_rpmdeps.c:907
 #, c-format
 msgid "Changed '%s' to '%s' in source package %s"
-msgstr ""
+msgstr "Ändrade ”%s” till ”%s” i källpaketet %s"
 
 #: lib/inspect_rpmdeps.c:909
 #, c-format
 msgid "Changed '%s' to '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "Ändrade ”%s” till ”%s” i underpaketet %s på %s"
 
 #: lib/inspect_rpmdeps.c:912
 #, c-format
 msgid "'%s' became '${FILE}' in %s on ${ARCH}"
-msgstr ""
+msgstr "”%s” blev ”${FILE}” i %s på ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:918
 msgid "; this is expected"
-msgstr ""
+msgstr "; detta förväntades"
 
 #: lib/inspect_rpmdeps.c:940
 #, c-format
 msgid "Lost '%s' in source package %s"
-msgstr ""
+msgstr "Tappade ”%s” i källpaketet %s"
 
 #: lib/inspect_rpmdeps.c:942
 #, c-format
 msgid "Lost '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "TAppade ”%s” i underpaketet %s på %s"
 
 #: lib/inspect_runpath.c:136
 #, c-format
 msgid "*** unable to compile $ORIGIN root prefix regular expression: %s"
-msgstr ""
+msgstr "*** kan inte kompilera reguljäruttrycket för $ORIGIN-rotprefixet: %s"
 
 #: lib/inspect_runpath.c:190
 #, c-format
 msgid "%s has an invalid-looking %s on %s: %s"
-msgstr ""
+msgstr "%s har %s som ser felaktigt ut på %s: %s"
 
 #: lib/inspect_runpath.c:192
 msgid "runtime search path in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "en körtidssökväg i ${FILE} på ${ARCH}"
 
 #: lib/inspect_runpath.c:270
 msgid "both DT_RPATH and DT_RUNPATH in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "både DT_RPATH och DT_RUNPATH i ${FILE} på ${ARCH}"
 
 #: lib/inspect_runpath.c:272
 #, c-format
 msgid "%s has both DT_RPATH and DT_RUNPATH on %s; this is not allowed"
-msgstr ""
+msgstr "%s har både DT_RPATH och DT_RUNPATH på %s; detta är inte tillåtet"
 
 #: lib/inspect_shellsyntax.c:125
 msgid "invalid shell script ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "felaktig skalskript ${FILE} på ${ARCH}"
 
 #: lib/inspect_shellsyntax.c:132
 #, c-format
 msgid "%s is a shell script but was not before on %s"
-msgstr ""
+msgstr "%s är ett skalskript men var inte det tidigare på %s"
 
 #: lib/inspect_shellsyntax.c:134
 #, c-format
 msgid "%s is a %s script but was a %s script before on %s"
-msgstr ""
+msgstr "%s är ett %s-skript mer var ett %s-skript tidigare på %s"
 
 #: lib/inspect_shellsyntax.c:181
 #, c-format
 msgid "%s is no longer a valid %s script on %s"
-msgstr ""
+msgstr "%s är inte längre ett giltigt %s-skript på %s"
 
 #: lib/inspect_shellsyntax.c:190
 #, c-format
