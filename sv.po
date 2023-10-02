@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-09-29 20:36+0000\n"
+"PO-Revision-Date: 2023-10-04 11:36+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -3547,18 +3547,20 @@ msgstr "%s är inte längre ett giltigt %s-skript på %s"
 #: lib/inspect_shellsyntax.c:190
 #, c-format
 msgid "%s became a valid %s script on %s"
-msgstr ""
+msgstr "%s blev ett giltigt %s-skript på %s"
 
 #: lib/inspect_shellsyntax.c:193
 msgid ""
 ". The script fails with '-n' but passes with '-O extglob'; be sure 'shopt "
 "extglob' is set in the script."
 msgstr ""
+". Skriptet misslyckas med ”-n” men fungerar med ”-O extglob”; säkerställ att "
+"”shopt extglob” är satt i skriptet."
 
 #: lib/inspect_shellsyntax.c:204 lib/inspect_shellsyntax.c:224
 #, c-format
 msgid "%s is not a valid %s script on %s"
-msgstr ""
+msgstr "%s är inte ett giltigt %s-skript på %s"
 
 #: lib/inspect_shellsyntax.c:215
 #, c-format
@@ -3566,131 +3568,137 @@ msgid ""
 "%s fails with '-n' but passes with '-O extglob'; be sure 'shopt extglob' is "
 "set in the script on %s"
 msgstr ""
+"%s misslyckas med ”-n” men fungerar med ”-O extglob”; säkerställ att ”shopt "
+"extglob” är satt i skriptet -på %s"
 
 #: lib/inspect_specname.c:68
 msgid "unexpected spec filename"
-msgstr ""
+msgstr "oväntat spec-filnamn"
 
 #: lib/inspect_specname.c:71
 msgid "exactly match"
-msgstr ""
+msgstr "matchar inte exakt"
 
 #: lib/inspect_specname.c:73
 msgid "begin with"
-msgstr ""
+msgstr "börjar inte med"
 
 #: lib/inspect_specname.c:75
 msgid "end with"
-msgstr ""
+msgstr "slutar inte med"
 
 #: lib/inspect_specname.c:78
 #, c-format
 msgid "Spec filename does not %s the primary name %s; got '%s'"
-msgstr ""
+msgstr "Specfilnamnet %s det primära namnet %s; fick ”%s”"
 
 #: lib/inspect_specname.c:109
 msgid "The specname inspection is only for source packages, skipping."
-msgstr ""
+msgstr "Spec-namnsinspektionen är endast för källpaket, hoppar över."
 
 #: lib/inspect_subpackages.c:68
 #, c-format
 msgid "Subpackage '%s' has disappeared on '%s'"
-msgstr ""
+msgstr "Underpaketet ”%s” har försvunnit på ”%s”"
 
 #: lib/inspect_subpackages.c:75 lib/inspect_subpackages.c:99
 msgid "subpackage ${FILE}"
-msgstr ""
+msgstr "underpaket ${FILE}"
 
 #: lib/inspect_subpackages.c:92
 #, c-format
 msgid "Subpackage '%s' has appeared on '%s'"
-msgstr ""
+msgstr "Underpaketet ”%s” har tillkommit på ”%s”"
 
 #: lib/inspect_symlinks.c:98
 #, c-format
 msgid ""
 "Directory %s became a symbolic link (to %s) in %s on %s; this is not allowed!"
 msgstr ""
+"Katalogen %s blev en symbolisk länk (till %s) i %s på %s; detta är inte "
+"tillåtet!"
 
 #: lib/inspect_symlinks.c:100
 #, c-format
 msgid "%s %s became a symbolic link (to %s) in %s on %s"
-msgstr ""
+msgstr "%s %s blev en symbolisk länk (till %s) i %s på %s"
 
 #: lib/inspect_symlinks.c:108
 msgid "${FILE} became a symlink on ${ARCH}"
-msgstr ""
+msgstr "${FILE} blev en symlänk på ${ARCH}"
 
 #: lib/inspect_symlinks.c:125
 msgid "unable to read symlink ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "kan inte läsa symlänken ${FILE} på ${ARCH}"
 
 #: lib/inspect_symlinks.c:126
 #, c-format
 msgid "An error occurred reading symbolic link %s in %s on %s."
-msgstr ""
+msgstr "Ett fel uppstod när den symboliska länken %s lästes i %s på %s."
 
 #: lib/inspect_symlinks.c:178
 #, c-format
 msgid ""
 "%s %s has too many levels of redirects and cannot be resolved in %s on %s"
 msgstr ""
+"%s %s har för många nivåer av omdirigeringar och kan inte lösas upp i %s på "
+"%s"
 
 #: lib/inspect_symlinks.c:182
 msgid "too many redirects for ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "för många omdirigeringar för ${FILE} på ${ARCH}"
 
 #: lib/inspect_symlinks.c:277
 #, c-format
 msgid "%s %s %s a dangling symbolic link in %s on %s"
-msgstr ""
+msgstr "%s %s %s en hängande symbolisk länk i %s på %s"
 
 #: lib/inspect_symlinks.c:284
 msgid "dangling symlink ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "hängande symlänk ${FILE} på ${ARCH}"
 
 #: lib/inspect_types.c:69
 msgid "${FILE} MIME type on ${ARCH}"
-msgstr ""
+msgstr "${FILE} MIME-typ på ${ARCH}"
 
 #: lib/inspect_types.c:77 lib/inspect_types.c:82
 #, c-format
 msgid "Unknown MIME type `%s' on %s in %s"
-msgstr ""
+msgstr "Okänd MIME-typ ”%s” på %s i %s"
 
 #: lib/inspect_types.c:107
 #, c-format
 msgid "MIME type for %s in %s was `%s/%s' and became `%s/%s'"
-msgstr ""
+msgstr "MIME-typen för %s i %s var ”%s/%s” och blev ”%s/%s”"
 
 #: lib/inspect_udevrules.c:104 lib/inspect_udevrules.c:116
 #, c-format
 msgid "%s is a valid udev rules file on %s"
-msgstr ""
+msgstr "%s är en giltig udev-regelfil på %s"
 
 #: lib/inspect_udevrules.c:106
 #, c-format
 msgid "%s is now a valid udev rules file on %s"
-msgstr ""
+msgstr "%s är nu en giltig udev-regelfil på %s"
 
 #: lib/inspect_udevrules.c:109
 #, c-format
 msgid "%s is no longer a valid udev rules file on %s"
-msgstr ""
+msgstr "%s är inte längre en giltig udev-regelfil på %s"
 
 #: lib/inspect_udevrules.c:112 lib/inspect_udevrules.c:118
 #, c-format
 msgid "%s is not a valid udev rules file on %s"
-msgstr ""
+msgstr "%s är inte en giltig udev-regelfil på %s"
 
 #: lib/inspect_unicode.c:465
 #, c-format
 msgid "*** empty localpath on %s"
-msgstr ""
+msgstr "*** tom lokalsökväg på %s"
 
 #: lib/inspect_unicode.c:474
 msgid "forbidden code point in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "förbjudna kodpunkt i ${FILE} på ${ARCH}"
 
 #: lib/inspect_unicode.c:551
 #, c-format
@@ -3698,11 +3706,13 @@ msgid ""
 "A forbidden code point, 0x%04X, was found in the %s source file on line %ld "
 "at column %ld.  This source file is used by %s."
 msgstr ""
+"En förbjuden kodpunkt, 0x%04X, fanns i källfilen %s på rad %ld i kolumn %ld. "
+"Denna källsfil används av %s."
 
 #: lib/inspect_unicode.c:621
 #, c-format
 msgid "unable to run %prep in ${FILE}"
-msgstr ""
+msgstr "kan inte köra %prep i ${FILE}"
 
 #: lib/inspect_unicode.c:624
 #, c-format
@@ -3710,183 +3720,193 @@ msgid ""
 "Unable to run through the %%prep section in %s or manually unpack sources "
 "for further scanning."
 msgstr ""
+"Kan inte köra igenom %%prep-sektionen i %s eller manuellt packa upp "
+"källkoden för vidare granskning."
 
 #: lib/inspect_unicode.c:744
 msgid "The unicode inspection is only for source packages, skipping."
-msgstr ""
+msgstr "Unicode-inspektionen är endast för källpaket, hoppar över."
 
 #: lib/inspect_upstream.c:60
 #, c-format
 msgid "New upstream source file `%s` appeared"
-msgstr ""
+msgstr "En ny uppströms källfil ”%s” tillkom"
 
 #: lib/inspect_upstream.c:62
 msgid "new source file ${FILE}"
-msgstr ""
+msgstr "ny källfil ${FILE}"
 
 #: lib/inspect_upstream.c:91
 #, c-format
 msgid "Upstream source file `%s` changed content"
-msgstr ""
+msgstr "Uppströms källfilen ”%s” ändrade innehåll"
 
 #: lib/inspect_upstream.c:93
 msgid "checksum of ${FILE}"
-msgstr ""
+msgstr "kontrollsumma av ${FILE}"
 
 #: lib/inspect_upstream.c:195
 #, c-format
 msgid "Source file `%s` removed"
-msgstr ""
+msgstr "Källfilen ”%s” borttagen"
 
 #: lib/inspect_upstream.c:197
 msgid "source file ${FILE} removed"
-msgstr ""
+msgstr "källfilen ${FILE} borttagen"
 
 #: lib/inspect_virus.c:40
 msgid "*** cl_engine_new returned NULL, check clamav library"
-msgstr ""
+msgstr "*** cl_engine_new returnerade NULL, kontrollera clamav-biblioteket"
 
 #: lib/inspect_virus.c:98
 #, c-format
 msgid "Virus detected in %s in the %s package on %s: %s"
-msgstr ""
+msgstr "Virus upptäckt i %s i paketet %s på %s: %s"
 
 #: lib/inspect_virus.c:135
 msgid "clamav version information"
-msgstr ""
+msgstr "clamav-versionsinformation"
 
 #: lib/inspect_virus.c:140
 #, c-format
 msgid "clamav version %s"
-msgstr ""
+msgstr "clamav version %s"
 
 #: lib/inspect_virus.c:145
 #, c-format
 msgid "*** missing %s"
-msgstr ""
+msgstr "*** %s saknas"
 
 #: lib/inspect_virus.c:169
 #, c-format
 msgid "%s version %u (%s)"
-msgstr ""
+msgstr "%s version %u (%s)"
 
 #: lib/inspect_virus.c:201
 msgid "virus or malware in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "virus eller skadlig kod i ${FILE} på ${ARCH}"
 
 #: lib/inspect_xml.c:195
 #, c-format
 msgid "%s is a well-formed XML file in %s on %s, but is not a valid XML file"
-msgstr ""
+msgstr "%s är en välformad XML-fil i %s på %s, men är inte en giltig XML-fl"
 
 #: lib/inspect_xml.c:203
 #, c-format
 msgid "%s is not a well-formed XML file in %s on %s"
-msgstr ""
+msgstr "%s är inte en välformad XML-fil i %s på %s"
 
 #: lib/inspect_xml.c:207
 msgid "${FILE} is not well-formed XML on ${ARCH}"
-msgstr ""
+msgstr "${FILE} är inte välfomad XML på ${ARCH}"
 
 #: lib/koji.c:142
 #, c-format
 msgid "*** XML-RPC Fault: %s (%d)"
-msgstr ""
+msgstr "*** XML RPC-fel: %s (%d)"
 
 #: lib/koji.c:652
 #, c-format
 msgid "*** xmlrpc fault code %s (%d): getBuild(%s) from %s"
-msgstr ""
+msgstr "*** xmlrpc felkod %s (%d): getBuild(%s) från %s"
 
 #: lib/koji.c:884
 #, c-format
 msgid "*** Koji build state is %s for %s, cannot continue"
-msgstr ""
+msgstr "*** Koji byggtillstånd är %s för %s, kan inte fortsätta"
 
 #: lib/koji.c:1147
 #, c-format
 msgid "*** xmlrpc fault code %s (%d): getTaskInfo(%s) from %s"
-msgstr ""
+msgstr "*** xmlrpc felkod %s (%d): getTaskInfo(%s) från %s"
 
 #: lib/koji.c:1171
 #, c-format
 msgid "*** Koji task state is %s for task %s, cannot continue"
-msgstr ""
+msgstr "*** Koji uppgiftstillstånd är %s för uppgiften %s, kan inte fortsätta"
 
 #: lib/koji.c:1399
 msgid "RPM package build"
-msgstr ""
+msgstr "RPM-paketbygge"
 
 #: lib/koji.c:1401
 msgid "Module build consisting of multiple RPM package builds"
-msgstr ""
+msgstr "Modulbygge bestående av flera RPM-paketbyggen"
 
 #: lib/magic.c:21
 msgid "*** unable to initialize the magic library"
-msgstr ""
+msgstr "*** kan inte initialisera magibiblioteket"
 
 #: lib/magic.c:26
 #, c-format
 msgid "*** unable to load the magic database: %s"
-msgstr ""
+msgstr "*** kan inte ladda magidatabasen: %s"
 
 #: lib/mkdirp.c:76 lib/mkdirp.c:89
 #, c-format
 msgid "*** unable to mkdir %s"
-msgstr ""
+msgstr "*** kan inte göra mkdir %s"
 
 #: lib/output.c:25
 msgid ""
 "Detailed results suitable for the console and piping through paging programs."
 msgstr ""
+"Detaljerade resultat lämpliga för konsolen och för rör till "
+"bläddningsprogram."
 
 #: lib/output.c:27
 msgid ""
 "Results organized as a JSON data structure suitable for reading by web "
 "applications and other frontend tools."
 msgstr ""
+"Resultaten organiserade som en JSON-datastruktur lämplig för att läsas av "
+"webbprogram och andra framändesverktyg."
 
 #: lib/output.c:29
 msgid ""
 "Results organized as an XUnit data structure suitable for use with Jenkins "
 "and other XUnit-enabled services."
 msgstr ""
+"Resultaten organiserade som en XUnit-datastruktur lämplig att användas med "
+"Jenkins och andra XUnit-kunniga tjänster."
 
 #: lib/output.c:31
 msgid ""
 "Results summarized with one result per line, suitable for console viewing "
 "with a paging program."
 msgstr ""
+"Resultaten sammanfattade med ett resultat per rad, lämplig för att visas på "
+"konsolen med ett bläddringsprogram."
 
 #: lib/output_json.c:99 lib/output_summary.c:45 lib/output_text.c:53
 #, c-format
 msgid "*** error opening %s for writing"
-msgstr ""
+msgstr "*** fel när %s öppnades för skrivning"
 
 #: lib/output_summary.c:53
 msgid "added"
-msgstr ""
+msgstr "tillagda"
 
 #: lib/output_summary.c:55
 msgid "removed"
-msgstr ""
+msgstr "borttagna"
 
 #: lib/output_summary.c:57
 msgid "changed"
-msgstr ""
+msgstr "ändrade"
 
 #: lib/output_summary.c:61
 msgid "ok"
-msgstr ""
+msgstr "ok"
 
 #: lib/output_summary.c:63
 msgid "unknown"
-msgstr ""
+msgstr "okända"
 
 #: lib/output_text.c:92 lib/output_xunit.c:83
 #, c-format
 msgid "Result: %s\n"
-msgstr ""
+msgstr "Resultat: %s\n"
 
 #: lib/output_text.c:95 lib/output_xunit.c:96
 #, c-format
@@ -3894,6 +3914,8 @@ msgid ""
 "Waiver Authorization: %s\n"
 "\n"
 msgstr ""
+"Undantagsauktorisering: %s\n"
+"\n"
 
 #: lib/output_text.c:99 lib/output_xunit.c:110
 #, c-format
@@ -3902,6 +3924,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Detaljer:\n"
+"%s\n"
+"\n"
 
 #: lib/output_text.c:103 lib/output_xunit.c:118
 #, c-format
@@ -3909,78 +3934,82 @@ msgid ""
 "Suggested Remedy:\n"
 "%s"
 msgstr ""
+"Föreslagen åtgärd:\n"
+"%s"
 
 #: lib/output_xunit.c:54
 #, c-format
 msgid "*** opening %s for writing"
-msgstr ""
+msgstr "*** öppnar %s för skrivning"
 
 #: lib/parse_yaml.c:114 lib/parse_yaml.c:139
 #, c-format
 msgid "*** %s: broken document"
-msgstr ""
+msgstr "*** %s: trasigt dokument"
 
 #: lib/parse_yaml.c:158 lib/parse_yaml.c:305
 #, c-format
 msgid "*** skipping token type %s"
-msgstr ""
+msgstr "*** hoppar över symboltypen %s"
 
 #: lib/parse_yaml.c:386
 msgid "*** malformed type - freed?"
-msgstr ""
+msgstr "*** felformaterat typ – friad?"
 
 #: lib/peers.c:176
 #, c-format
 msgid "There is not enough available space to unpack all of the RPMs.\n"
 msgstr ""
+"Det finns inte tillräckligt med tillgängligt utrymme för att packa upp alla "
+"RPM:erna.\n"
 
 #: lib/readelf.c:48
 #, c-format
 msgid "*** unknown elftype_t %d"
-msgstr ""
+msgstr "*** okänd elftype_t %d"
 
 #: lib/readelf.c:76
 msgid "*** libelf version mismatch"
-msgstr ""
+msgstr "*** libelf-version stämmer inte"
 
 #: lib/readfile.c:50
 #, c-format
 msgid "*** unable to find end of %s"
-msgstr ""
+msgstr "*** kan inte hitta slutet på %s"
 
 #: lib/readfile.c:68
 #, c-format
 msgid "*** unable to close %s"
-msgstr ""
+msgstr "*** kan inte stänga %s"
 
 #: lib/rmtree.c:74
 #, c-format
 msgid "*** %s is not a directory"
-msgstr ""
+msgstr "*** %s är inte en katalog"
 
 #: lib/rpm.c:71
 #, c-format
 msgid "*** Fopen failed for %s: %s"
-msgstr ""
+msgstr "*** Fopen misslyckades för %s: %s"
 
 #: lib/rpm.c:255
 #, c-format
 msgid "*** file index %d is out of bounds for %s"
-msgstr ""
+msgstr "*** filindex %d är utanför gränserna för %s"
 
 #: lib/rpm.c:431
 msgid "*** error reading file from RPM payload"
-msgstr ""
+msgstr "*** fel när en fil lästes från RPM-lasten"
 
 #: lib/runcmd.c:171
 #, c-format
 msgid "%d"
-msgstr ""
+msgstr "%d"
 
 #: lib/runcmd.c:173
 #, c-format
 msgid "%d (%s)"
-msgstr ""
+msgstr "%d (%s)"
 
 #: lib/runcmd.c:178
 #, c-format
@@ -3989,103 +4018,106 @@ msgid ""
 "\n"
 "%s tried to run the command and it received signal %s"
 msgstr ""
+"%s\n"
+"\n"
+"%s försökte köra kommandot och det fick signalen %s"
 
 #: lib/runcmd.c:182
 #, c-format
 msgid "%s tried to run the command and it received signal %s"
-msgstr ""
+msgstr "%s försökte köra kommandot och det fick signalen %s"
 
 #: lib/strfuncs.c:250 lib/strfuncs.c:282
 msgid "NULL"
-msgstr ""
+msgstr "NULL"
 
 #: lib/strfuncs.c:252 lib/strfuncs.c:284
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: lib/strfuncs.c:254 lib/strfuncs.c:286
 msgid "INFO"
-msgstr ""
+msgstr "INFO"
 
 #: lib/strfuncs.c:256 lib/strfuncs.c:288
 msgid "VERIFY"
-msgstr ""
+msgstr "VERIFIERA"
 
 #: lib/strfuncs.c:258 lib/strfuncs.c:290
 msgid "BAD"
-msgstr ""
+msgstr "FELAKTIG"
 
 #: lib/strfuncs.c:260 lib/strfuncs.c:292
 msgid "SKIP"
-msgstr ""
+msgstr "HOPPA ÖVER"
 
 #: lib/strfuncs.c:262 lib/strfuncs.c:294
 msgid "DIAGNOSTICS"
-msgstr ""
+msgstr "DIAGNOSTIK"
 
 #: lib/strfuncs.c:264 lib/strfuncs.c:314
 msgid "UnKnOwN"
-msgstr ""
+msgstr "Okänd"
 
 #: lib/strfuncs.c:308
 msgid "Not Waivable"
-msgstr ""
+msgstr "Kan inte undantas"
 
 #: lib/strfuncs.c:310
 msgid "Anyone"
-msgstr ""
+msgstr "Vem som helst"
 
 #: lib/strfuncs.c:312
 msgid "Security"
-msgstr ""
+msgstr "Säkerhet"
 
 #: lib/strfuncs.c:543
 msgid "regular file"
-msgstr ""
+msgstr "normal fil"
 
 #: lib/strfuncs.c:545
 msgid "directory"
-msgstr ""
+msgstr "katalog"
 
 #: lib/strfuncs.c:547
 msgid "character device"
-msgstr ""
+msgstr "teckenenhet"
 
 #: lib/strfuncs.c:549
 msgid "block device"
-msgstr ""
+msgstr "blockenhet"
 
 #: lib/strfuncs.c:551
 msgid "FIFO (named pipe)"
-msgstr ""
+msgstr "FIFO (namngivet rör)"
 
 #: lib/strfuncs.c:553
 msgid "symbolic link"
-msgstr ""
+msgstr "symbolisk länk"
 
 #: lib/strfuncs.c:555
 msgid "socket"
-msgstr ""
+msgstr "uttag"
 
 #: lib/strfuncs.c:614
 msgid "Success."
-msgstr ""
+msgstr "Lyckades."
 
 #: lib/strfuncs.c:616
 msgid "One or more inspections failed."
-msgstr ""
+msgstr "En eller flera inspektioner misslyckades."
 
 #: lib/strfuncs.c:618
 msgid "Program error."
-msgstr ""
+msgstr "Programfel."
 
 #: lib/strfuncs.c:620
 msgid "The specified profile is not found."
-msgstr ""
+msgstr "Den angivna profilen finns inte."
 
 #: lib/strfuncs.c:622
 msgid "Insufficient disk space in the working directory."
-msgstr ""
+msgstr "Otillräckligt diskutrymme i arbetskatalogen."
 
 #: src/rpminspect.c:48
 #, c-format
@@ -4093,16 +4125,18 @@ msgid ""
 "Compare package builds for policy compliance and consistency.\n"
 "\n"
 msgstr ""
+"Jämför paketbyggen med avseende på åtlydnad av policyn och konsistens.\n"
+"\n"
 
 #: src/rpminspect.c:49
 #, c-format
 msgid "Usage: %s [OPTIONS] [before build] [after build]\n"
-msgstr ""
+msgstr "Användning: %s [FLAGGOR] [tidigare bygge] [senare bygge]\n"
 
 #: src/rpminspect.c:50
 #, c-format
 msgid "Options:\n"
-msgstr ""
+msgstr "Flaggor:\n"
 
 #: src/rpminspect.c:51
 #, c-format
@@ -4127,12 +4161,12 @@ msgstr ""
 #: src/rpminspect.c:55
 #, c-format
 msgid "  -E LIST, --exclude=LIST     List of tests to exclude\n"
-msgstr ""
+msgstr "  -E LISTA, --exclude=LISTA   Lista över tester att utesluta\n"
 
 #: src/rpminspect.c:56
 #, c-format
 msgid "                                (default: none)\n"
-msgstr ""
+msgstr "                                (standard: ingen)\n"
 
 #: src/rpminspect.c:57
 #, c-format
@@ -4148,51 +4182,53 @@ msgstr ""
 #, c-format
 msgid "  -n, --no-rebase             Disable build rebase detection\n"
 msgstr ""
+"  -n, --no-rebase             Avaktivera detektering av byggmobaseringar\n"
 
 #: src/rpminspect.c:60
 #, c-format
 msgid "  -b TYPE, --build-type=TYPE  Set Koji build type to TYPE\n"
-msgstr ""
+msgstr "  -b TYP, --build-type=TYP    Sästt Koji-byggtyp till TYP\n"
 
 #: src/rpminspect.c:61
 #, c-format
 msgid "  -o FILE, --output=FILE      Write results to FILE\n"
-msgstr ""
+msgstr "  -o FIL, --output=FIL        Skriv resultatet till FIL\n"
 
 #: src/rpminspect.c:62
 #, c-format
 msgid "                                (default: stdout)\n"
-msgstr ""
+msgstr "                                (standard: stdandard ut)\n"
 
 #: src/rpminspect.c:63
 #, c-format
 msgid "  -F TYPE, --format=TYPE      Format output results as TYPE\n"
-msgstr ""
+msgstr "  -F TYP, --format=TYP        Formatera utdataresultat som TYP\n"
 
 #: src/rpminspect.c:64
 #, c-format
 msgid "                                (default: text)\n"
-msgstr ""
+msgstr "                                (standard: text)\n"
 
 #: src/rpminspect.c:65
 #, c-format
 msgid "  -t TAG, --threshold=TAG     Result threshold triggering exit\n"
-msgstr ""
+msgstr "  -t TAGG, --threshold=TAGG   Resulttröskelvärde som medför avslut\n"
 
 #: src/rpminspect.c:66
 #, c-format
 msgid "                              failure (default: VERIFY)\n"
-msgstr ""
+msgstr "                              fel (standard: VERIFY)\n"
 
 #: src/rpminspect.c:67
 #, c-format
 msgid "  -s TAG, --suppress=TAG      Results suppression threshold\n"
 msgstr ""
+"  -s TAGG, --suppress=TAGG    Tröskelvärde för att undertrycka resultat\n"
 
 #: src/rpminspect.c:68
 #, c-format
 msgid "                                (default: off, report everything)\n"
-msgstr ""
+msgstr "                                (standard: av, rapportera allt)\n"
 
 #: src/rpminspect.c:69
 #, c-format
