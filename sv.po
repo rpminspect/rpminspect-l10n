@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-10-04 11:36+0000\n"
+"PO-Revision-Date: 2023-10-07 07:35+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -4141,22 +4141,22 @@ msgstr "Flaggor:\n"
 #: src/rpminspect.c:51
 #, c-format
 msgid "  -c FILE, --config=FILE      Configuration file to use\n"
-msgstr ""
+msgstr "  -c FIL, --config=FIL        Konfigurationsfil att använda\n"
 
 #: src/rpminspect.c:52
 #, c-format
 msgid "  -p NAME, --profile=NAME     Configuration profile to use\n"
-msgstr ""
+msgstr "  -p NAMN, --profile=NAMN     Konfigurationsprofil att använda\n"
 
 #: src/rpminspect.c:53
 #, c-format
 msgid "  -T LIST, --tests=LIST       List of tests to run\n"
-msgstr ""
+msgstr "  -T LISTA, --tests=LISTA     Lista över tester att köra\n"
 
 #: src/rpminspect.c:54
 #, c-format
 msgid "                                (default: ALL)\n"
-msgstr ""
+msgstr "                                (standard: ALLA)\n"
 
 #: src/rpminspect.c:55
 #, c-format
@@ -4171,12 +4171,12 @@ msgstr "                                (standard: ingen)\n"
 #: src/rpminspect.c:57
 #, c-format
 msgid "  -a LIST, --arches=LIST      List of architectures to check\n"
-msgstr ""
+msgstr "  -a LISTA, --arches=LISTA    Lista över arkitekturer att kontrollera\n"
 
 #: src/rpminspect.c:58
 #, c-format
 msgid "  -r STR, --release=STR       Product release string\n"
-msgstr ""
+msgstr "  -r STR, --release=STR       Produktutgåvesträng\n"
 
 #: src/rpminspect.c:59
 #, c-format
@@ -4233,65 +4233,69 @@ msgstr "                                (standard: av, rapportera allt)\n"
 #: src/rpminspect.c:69
 #, c-format
 msgid "  -l, --list                  List available tests and formats\n"
-msgstr ""
+msgstr "  -l, --list                  Lista tillgängliga tester och format\n"
 
 #: src/rpminspect.c:70
 #, c-format
 msgid "  -w PATH, --workdir=PATH     Temporary directory to use\n"
-msgstr ""
+msgstr "  -w SÖKVÄG, --workdir=SÖKVÄG Temporärkatalog att använda\n"
 
 #: src/rpminspect.c:71
 #, c-format
 msgid "                                (default: %s)\n"
-msgstr ""
+msgstr "                                (standard: %s)\n"
 
 #: src/rpminspect.c:72
 #, c-format
 msgid ""
 "  -f, --fetch-only            Fetch builds only, do not perform inspections\n"
 msgstr ""
+"  -f, --fetch-only            Hämta bara byggen, utför inga inspektioner\n"
 
 #: src/rpminspect.c:73
 #, c-format
 msgid "                                (implies -k)\n"
-msgstr ""
+msgstr "                                (implicerar -k)\n"
 
 #: src/rpminspect.c:74
 #, c-format
 msgid ""
 "  -k, --keep                  Do not remove the comparison working files\n"
 msgstr ""
+"  -k, --keep                  Ta inte bort arbetsfilerna från jämförelsen\n"
 
 #: src/rpminspect.c:75
 #, c-format
 msgid "  -d, --debug                 Debugging mode output\n"
-msgstr ""
+msgstr "  -d, --debug                 Läge för felsökningsutdata\n"
 
 #: src/rpminspect.c:76
 #, c-format
 msgid ""
 "  -D, --dump-config           Dump configuration settings (in YAML format)\n"
 msgstr ""
+"  -D, --dump-config           Dumpa konfigurationsinställningarna (i YAML-"
+"format)\n"
 
 #: src/rpminspect.c:77
 #, c-format
 msgid "  -v, --verbose               Verbose inspection output\n"
-msgstr ""
+msgstr "  -v, --verbose               Utförlig inspektionsutdata\n"
 
 #: src/rpminspect.c:78
 #, c-format
 msgid "                              when finished, display full path\n"
-msgstr ""
+msgstr "                              när avslutat, visa fullständig sökväg\n"
 
 #: src/rpminspect.c:79
 #, c-format
 msgid "  -?, --help                  Display usage information\n"
-msgstr ""
+msgstr "  -?, --help                  Visa användningsinformation\n"
 
 #: src/rpminspect.c:80
 #, c-format
 msgid "  -V, --version               Display program version\n"
-msgstr ""
+msgstr "  -V, --version               Visa programversion\n"
 
 #: src/rpminspect.c:81
 #, c-format
@@ -4299,86 +4303,89 @@ msgid ""
 "\n"
 "See the rpminspect(1) man page for more information.\n"
 msgstr ""
+"\n"
+"Se manualsidan rpminspect(1) för mer information.\n"
 
 #: src/rpminspect.c:114
 #, c-format
 msgid "*** unable to compile product release regular expression: %s"
-msgstr ""
+msgstr "*** kan inte kompilera reguljäruttrycket för produktutgåvan: %s"
 
 #: src/rpminspect.c:168 src/rpminspect.c:179
 #, c-format
 msgid "*** product release for after build (%s) is empty"
-msgstr ""
+msgstr "*** produktutgåvan för det senare bygget (%s) är tom"
 
 #: src/rpminspect.c:196 src/rpminspect.c:204
 #, c-format
 msgid "*** product release for before build (%s) is empty"
-msgstr ""
+msgstr "*** produktutgåvan för det tidigare bygget (%s) är tom"
 
 #: src/rpminspect.c:259
 #, c-format
 msgid "*** unable to determine product release for %s and %s"
-msgstr ""
+msgstr "*** kan inte avgöra produktutgåva för %s och %s"
 
 #: src/rpminspect.c:260
 msgid ""
 "*** See the 'favor_release' setting in the rpminspect configuration file."
 msgstr ""
+"*** Se inställningen ”favor_release” i konfigurationsfilen för rpminspect."
 
 #: src/rpminspect.c:288
 msgid "*** the -T and -E options are mutually exclusive"
-msgstr ""
+msgstr "*** flaggorna -T och -E är ömsesidigt uteslutande"
 
 #: src/rpminspect.c:289 src/rpminspect.c:305 src/rpminspect.c:737
 #: src/rpminspect.c:776
 #, c-format
 msgid "*** See `%s --help` for more information."
-msgstr ""
+msgstr "*** Se ”%s --help” för mer information."
 
 #: src/rpminspect.c:304
 #, c-format
 msgid "*** unknown inspection: `%s`"
-msgstr ""
+msgstr "*** oväntad inspektion: ”%s”"
 
 #: src/rpminspect.c:455
 #, c-format
 msgid "*** unsupported build type: `%s`."
-msgstr ""
+msgstr "*** byggtyp som inte stödjs: ”%s”."
 
 #: src/rpminspect.c:464
 #, c-format
 msgid "*** invalid build type: `%s`."
-msgstr ""
+msgstr "*** ogiltig byggtyp: ”%s”."
 
 #: src/rpminspect.c:481
 #, c-format
 msgid "*** invalid output format: `%s`."
-msgstr ""
+msgstr "*** ogiltigt utdataformat: ”%s”."
 
 #: src/rpminspect.c:493
 #, c-format
 msgid "*** unable to expand working directory: `%s`"
-msgstr ""
+msgstr "*** kan inte expandera arbetskatalogen: ”%s”"
 
 #: src/rpminspect.c:506
 #, c-format
 msgid "*** unable to use `%s' as working directory"
-msgstr ""
+msgstr "*** kan inte använda ”%s” som arbetskatalog"
 
 #: src/rpminspect.c:536
 #, c-format
 msgid "%s version %s\n"
-msgstr ""
+msgstr "%s version %s\n"
 
 #: src/rpminspect.c:539
 #, c-format
 msgid "*** ?? getopt returned character code 0%o ??"
-msgstr ""
+msgstr "*** ?? getopt returnerade teckenkod 0%o ??"
 
 #: src/rpminspect.c:546
 #, c-format
 msgid "Available build types:\n"
-msgstr ""
+msgstr "Tillgängliga byggtyper:\n"
 
 #: src/rpminspect.c:567
 #, c-format
@@ -4386,6 +4393,8 @@ msgid ""
 "\n"
 "Available output formats:\n"
 msgstr ""
+"\n"
+"Tillgängliga utdataformat:\n"
 
 #: src/rpminspect.c:584
 #, c-format
@@ -4393,34 +4402,36 @@ msgid ""
 "\n"
 "Available inspections:\n"
 msgstr ""
+"\n"
+"Tillgängliga inspektioner:\n"
 
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
 #, c-format
 msgid "*** failed to read configuration file %s"
-msgstr ""
+msgstr "*** misslyckades med att läsa konfigurationsfilen %s"
 
 #: src/rpminspect.c:658
 #, c-format
 msgid "*** Please specify a configuration file using '-c' or supply ./%s"
-msgstr ""
+msgstr "*** Ange en konfigurationsfil med ”-c” eller ge ./%s"
 
 #: src/rpminspect.c:736
 msgid "*** Invalid before and after build specification."
-msgstr ""
+msgstr "*** Felaktig specifikation av tidigare och senare bygge."
 
 #: src/rpminspect.c:744
 msgid "*** unable to read RPM configuration"
-msgstr ""
+msgstr "*** kan inte läsa RPM-konfigurationen"
 
 #: src/rpminspect.c:775
 #, c-format
 msgid "*** unsupported architecture specified: `%s`"
-msgstr ""
+msgstr "*** arkitektur som inte stödjs angiven: ”%s”"
 
 #: src/rpminspect.c:793
 #, c-format
 msgid "*** unable to create directory %s"
-msgstr ""
+msgstr "*** kan inte skapa katalogen %s"
 
 #: src/rpminspect.c:851
 #, c-format
@@ -4428,73 +4439,78 @@ msgid ""
 "Version information for libraries and programs used by %s as well as storage "
 "requirements.  This result is for informational and diagnostic purposes only."
 msgstr ""
+"Versionsinformation för bibliotek och program som används av %s liksom "
+"lagringskrav. Detta resultat är endast för informations- och "
+"diagnostiksyften."
 
 #: src/rpminspect.c:858
 #, c-format
 msgid "Space required to download artifacts: %lu bytes (%s)\n"
-msgstr ""
+msgstr "Utrymme som krävs för att hämta artifakter %lu byte (%s)\n"
 
 #: src/rpminspect.c:866
 #, c-format
 msgid "Space required to unpack artifacts: %lu bytes (%s)\n"
-msgstr ""
+msgstr "Utrymme som krävs för att packa upp artifakter %lu byte (%s)\n"
 
 #: src/rpminspect.c:878
 #, c-format
 msgid "Command line arguments used to invoke %s."
-msgstr ""
+msgstr "Kommandoradsargument som användes för att anropa %s."
 
 #: src/rpminspect.c:902
 #, c-format
 msgid "Local configuration file: %s"
-msgstr ""
+msgstr "Lokal konfigurationsfil: %s"
 
 #: src/rpminspect.c:912
 msgid "Before Build"
-msgstr ""
+msgstr "Tidigare bygge"
 
 #: src/rpminspect.c:917
 msgid "After Build"
-msgstr ""
+msgstr "Senare bygge"
 
 #: src/rpminspect.c:920
 msgid "Build"
-msgstr ""
+msgstr "Bygge"
 
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
-msgstr ""
+msgstr "*** inga motparter, se till att paket finns för angivna arkitekturer"
 
 #: src/rpminspect.c:958
 msgid ""
 "*** unable to find a set of peer packages between the before and after builds"
 msgstr ""
+"*** kan inte hitta en uppsättning motpartspaket mellan det tidgare och "
+"senare bygget"
 
 #: src/rpminspect.c:972
 msgid "*** unable to determine product release or none specified (-r)."
-msgstr ""
+msgstr "*** kan inte avgöra produktutgåvan eller så angavs ingen (-r)."
 
 #: src/rpminspect.c:984
 #, c-format
 msgid "Skipping %s inspection..."
-msgstr ""
+msgstr "Hoppar över %s-inspektion …"
 
 #: src/rpminspect.c:989
 msgid "skip"
-msgstr ""
+msgstr "hoppa över"
 
 #: src/rpminspect.c:1009
 #, c-format
 msgid "Running %s inspection..."
-msgstr ""
+msgstr "Kör %s-inspektion …"
 
 #: src/rpminspect.c:1018
 msgid "pass"
-msgstr ""
+msgstr "lyckades"
 
 #: src/rpminspect.c:1018
 msgid "FAIL"
-msgstr ""
+msgstr "MISSLYCKADES"
 
 #: src/rpminspect.c:1046
 #, c-format
@@ -4502,3 +4518,5 @@ msgid ""
 "\n"
 "Keeping working directory: %s\n"
 msgstr ""
+"\n"
+"Behåller arbetskatalogen: %s\n"
