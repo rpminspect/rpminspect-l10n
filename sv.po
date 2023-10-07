@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-10-07 07:35+0000\n"
+"PO-Revision-Date: 2023-10-07 07:48+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -1154,7 +1154,7 @@ msgid ""
 "package -or- honor the old file locations."
 msgstr ""
 "Ändring av %config skall göras försiktigt. Se till att du har installerat "
-"rätt fil och på rätt plats. om ett paket strukturerar om "
+"rätt fil och på rätt plats. Om ett paket strukturerar om "
 "konfigurationsfiler, se till att paketet kan hantera uppgradering av ett "
 "befintligt paket -eller- acceptera de gamla filplatserna."
 
@@ -1728,7 +1728,7 @@ msgstr "*** felformaterad sektion rpmdeps→ignore; hoppar över"
 #: lib/init.c:968
 #, c-format
 msgid "*** Invalid filename in the fileinfo list: %s"
-msgstr "*** felaktigt filnamn i fileinfo-listan: %s"
+msgstr "*** Felaktigt filnamn i fileinfo-listan: %s"
 
 #: lib/init.c:969
 msgid "*** From this invalid line:"
@@ -1841,7 +1841,7 @@ msgstr ""
 
 #: lib/inspect_addedfiles.c:150 lib/inspect_addedfiles.c:164
 msgid "invalid directory ${FILE} on ${ARCH}"
-msgstr "Felaktig katalog ${FILE} på ${ARCH}"
+msgstr "felaktig katalog ${FILE} på ${ARCH}"
 
 #: lib/inspect_addedfiles.c:163
 #, c-format
@@ -3466,7 +3466,7 @@ msgstr "Fick ”%s” i underpaketet %s på %s"
 #: lib/inspect_rpmdeps.c:897
 #, c-format
 msgid "Retained '%s' in source package %s"
-msgstr "BEhöll ”%s” i källpaketet %s"
+msgstr "Behöll ”%s” i källpaketet %s"
 
 #: lib/inspect_rpmdeps.c:899
 #, c-format
@@ -3500,7 +3500,7 @@ msgstr "Tappade ”%s” i källpaketet %s"
 #: lib/inspect_rpmdeps.c:942
 #, c-format
 msgid "Lost '%s' in subpackage %s on %s"
-msgstr "TAppade ”%s” i underpaketet %s på %s"
+msgstr "Tappade ”%s” i underpaketet %s på %s"
 
 #: lib/inspect_runpath.c:136
 #, c-format
@@ -3803,7 +3803,7 @@ msgstr "${FILE} är inte välfomad XML på ${ARCH}"
 #: lib/koji.c:142
 #, c-format
 msgid "*** XML-RPC Fault: %s (%d)"
-msgstr "*** XML RPC-fel: %s (%d)"
+msgstr "*** XML-RPC-fel: %s (%d)"
 
 #: lib/koji.c:652
 #, c-format
