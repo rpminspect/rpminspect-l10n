@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-10-08 05:29+0000\n"
+"PO-Revision-Date: 2023-10-09 12:36+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ka/>\n"
@@ -1049,7 +1049,7 @@ msgstr ""
 
 #: lib/builds.c:290 lib/builds.c:294
 msgid "build"
-msgstr ""
+msgstr "აგება"
 
 #: lib/builds.c:320
 msgid "Downloading module"
@@ -1071,11 +1071,11 @@ msgstr ""
 
 #: lib/builds.c:541 lib/builds.c:545
 msgid "task"
-msgstr ""
+msgstr "ამოცანა"
 
 #: lib/builds.c:659 lib/builds.c:662
 msgid "RPM"
-msgstr ""
+msgstr "RPM"
 
 #: lib/builds.c:791
 #, c-format
@@ -2996,7 +2996,7 @@ msgstr ""
 
 #: lib/inspect_specname.c:75
 msgid "end with"
-msgstr ""
+msgstr "მთავრდება"
 
 #: lib/inspect_specname.c:78
 #, c-format
@@ -3412,7 +3412,7 @@ msgstr ""
 
 #: lib/strfuncs.c:250 lib/strfuncs.c:282
 msgid "NULL"
-msgstr ""
+msgstr "NULL"
 
 #: lib/strfuncs.c:252 lib/strfuncs.c:284
 msgid "OK"
@@ -3420,7 +3420,7 @@ msgstr "დიახ"
 
 #: lib/strfuncs.c:254 lib/strfuncs.c:286
 msgid "INFO"
-msgstr ""
+msgstr "ინფო"
 
 #: lib/strfuncs.c:256 lib/strfuncs.c:288
 msgid "VERIFY"
@@ -3428,7 +3428,7 @@ msgstr ""
 
 #: lib/strfuncs.c:258 lib/strfuncs.c:290
 msgid "BAD"
-msgstr ""
+msgstr "ცუდი"
 
 #: lib/strfuncs.c:260 lib/strfuncs.c:292
 msgid "SKIP"
@@ -3838,7 +3838,7 @@ msgstr ""
 
 #: src/rpminspect.c:920
 msgid "Build"
-msgstr ""
+msgstr "აგება"
 
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
