@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-10-07 07:48+0000\n"
+"PO-Revision-Date: 2023-11-01 02:48+0000\n"
 "Last-Translator: Göran Uddeborg <goeran@uddeborg.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/sv/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.0.2\n"
+"X-Generator: Weblate 5.1.1\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -26,9 +26,9 @@ msgid ""
 "checks to see if the License tag contains any unprofessional words as "
 "defined in the configuration file."
 msgstr ""
-"Verifiera att strängen som anges i licens-taggen av RPM-metadata beskriver "
-"tillåtan programvarulicenser så som de definieras av licensdatabasen. "
-"Kontrollera också aför att se om licens-taggen innehåller några "
+"Verifiera att strängen som anges i licenstaggen av RPM-metadata beskriver "
+"tillåtna programvarulicenser så som de definieras av licensdatabasen. "
+"Kontrollera också för att se om licenstaggen innehåller några "
 "oprofessionella ord så som de definieras i konfigurationsfilen."
 
 #: include/inspect.h:1347
@@ -46,7 +46,7 @@ msgid ""
 "reported."
 msgstr ""
 "Kontrollera om några binära RPM:er före och efter byggena har tomma laster. "
-"Paket som tappade lastdata från före bygget till efter bygget rapporterades."
+"Paket som tappade lastdata från före bygget till efter bygget rapporteras."
 
 #: include/inspect.h:1359
 msgid ""
@@ -58,15 +58,15 @@ msgid ""
 "before build specified, check for differences between the before and after "
 "build values of the previous RPM header values and report them."
 msgstr ""
-"Utför några kontroller av RPM-huvudet. För det första, ontrollera att "
-"Leverantör innehåller den förväntade strängen så som den definieras i "
+"Utför några kontroller av RPM-huvudet. För det första, kontrollera att "
+"leverantör innehåller den förväntade strängen så som den definieras i "
 "konfigurationsfilen. För det andra, kontrollera att byggvärden ligger i den "
 "förväntade underdomänen så som den definieras i konfigurationsfilen. För det "
-"tredje, kontrollera om Sammanfattningssträngen har några oprofessionella "
-"ord. För det fjärde, kontrollera om Beskrivningen har några oproffesionella "
-"ord. Slutligen, om det finns ett bygge innan angivet, kontrollera skillnader "
-"mellan det tidigare och det senare byggenas värden i RPM-huvudet och "
-"rapportera dem."
+"tredje, kontrollera om sammanfattningssträngen innehåller några "
+"oprofessionella ord. För det fjärde, kontrollera om beskrivningen innehåller "
+"några oprofessionella ord. Slutligen, om ett tidigare bygge finns angivet, "
+"kontrollera skillnader mellan det tidigare och det senare byggets värden i "
+"RPM-huvudet och rapportera dem."
 
 #: include/inspect.h:1365
 msgid ""
@@ -81,7 +81,7 @@ msgstr ""
 
 #: include/inspect.h:1371
 msgid "Check that XML files included in the RPM payload are well-formed."
-msgstr "Kontrollera att XML-filer som ingår i RPM-laste är välformade."
+msgstr "Kontrollera att XML-filer som ingår i RPM-lasten är välformade."
 
 #: include/inspect.h:1377
 msgid ""
@@ -94,8 +94,8 @@ msgstr ""
 "Utför flera kontroller av ELF-filer. För det första, kontrollera att ELF-"
 "objekt inte innehåller en körbar stack. För det andra, kontrollera att ELF-"
 "objekt inte innehåller text-omlokaliseringar. Kontrollera när byggen jämförs "
-"att ELF-ojekten i det senare byggena inteförlorade sit PT_GNU_RELRO-segment. "
-"Om det vid jämförelse av byggen finns en lista över förbjudan "
+"att ELF-objekt i det senare bygget inte förlorade ett PT_GNU_RELRO-segment. "
+"Om det vid jämförelse av byggen finns en lista över förbjudna "
 "biblioteksfunktioner, se till att ingenting använder dem."
 
 #: include/inspect.h:1383
@@ -123,8 +123,8 @@ msgid ""
 "Ensure compliance with modularity build and packaging policies (only valid "
 "for module builds, no-op otherwise)."
 msgstr ""
-"Säkerställ överensstämmelse bygg- och paketeringspolicier för modularitet ("
-"endast giltigt för modulbyggen, gör inget annars)."
+"Säkerställ överensstämmelse med bygg- och paketeringspolicyer för "
+"modularitet (endast giltigt för modulbyggen, gör inget annars)."
 
 #: include/inspect.h:1411
 msgid ""
@@ -133,8 +133,8 @@ msgid ""
 "exceeded.  The bytecode version is vendor specific to releases and defined "
 "in the configuration file."
 msgstr ""
-"Kontrollera minsta nödvändiga version av Java-bytecode i klassfiler, "
-"repportera bytecode-versionsändringar mellan byggen, och rapportera om "
+"Kontrollera lägsta nödvändiga version av Java-bytecode i klassfiler, "
+"rapportera bytecode-versionsändringar mellan byggen, och rapportera om "
 "bytecode-versioner överskrids. Bytecode-versionen är leverantörsspecifik för "
 "utgåvor och definieras i konfigurationsfilen."
 
@@ -155,7 +155,7 @@ msgstr ""
 "säkerhetspåverkan). Eventuella filer komprimerade med gzip, bzip2 eller xz "
 "kommer endast ha sitt okomprimerade innehåll jämfört, vilket tillåter "
 "ändringar av den valda komprimeringsnivån. Meddelandekatalogsfiler (.mo) "
-"packas upp och jämförs med diff(1). Pulika C- och C++-huvudfiler "
+"packas upp och jämförs med diff(1). Publika C- och C++-huvudfiler "
 "preprocessas och jämförs med diff(1). Alla ändringar med diff-utdata "
 "inkluderas i resultatet."
 
@@ -168,8 +168,8 @@ msgid ""
 "the VERIFY level or higher."
 msgstr ""
 "Rapportera filer som har bytt installationssökväg eller mellan underpaket "
-"mellan byggen. Filer flyttade med ett säkerhetsökvägsprefix genererar "
-"speciella rapporter ifall en säkerhetsgranskning krävs. Ombaserade paket "
+"mellan byggen. Filer flyttade med ett säkerhetssökvägsprefix genererar "
+"speciella rapporter om en säkerhetsgranskning krävs. Ombaserade paket "
 "rapporterar dessa upptäckter på nivån INFO medan icke ombaserade paket "
 "rapporterar dem på nivån VERIFY eller högre."
 
@@ -183,9 +183,9 @@ msgid ""
 "these findings at the INFO level while non-rebased packages report them at "
 "the VERIFY level or higher."
 msgstr ""
-"Rapportera borttagna filer mellan det tidigare bygger och det senare bygget. "
+"Rapportera borttagna filer mellan det tidigare bygget och det senare bygget. "
 "Delade bibliotek ger ytterligare rapportutdata eftersom de kan utgöra "
-"oväntade borttagande av beroenden. Filer som tas bort med ett "
+"oväntade borttaganden av beroenden. Filer som tas bort med ett "
 "säkerhetssökvägsprefix genererar speciella rapporter ifall en "
 "säkerhetsgranskning krävs. Käll-RPM:er och debuginfo-filer ignoreras av "
 "denna granskning. Ombaserade paket rapporterar dessa upptäckter på nivån "
@@ -230,7 +230,7 @@ msgid ""
 "and after build have been specified, also report ownership changes."
 msgstr ""
 "Rapportera filer och kataloger som ägs av oväntade användare och grupper. "
-"Kontrollera för att säkerställa at körbara ägs av rätt användare och grupp. "
+"Kontrollera för att säkerställa att körbara ägs av rätt användare och grupp. "
 "Om ett tidigare och ett senare bygge har angivits, rapportera då även "
 "ändring av ägande."
 
@@ -248,7 +248,7 @@ msgstr ""
 "konfigurationsdatan.). Om syntaxkontrollen returnerar något nollskilt, "
 "rapportera det till användaren och returnera en kombinerad standard ut och "
 "standard fel. Om två byggen jämförs, utför den föregående kontrollen men "
-"rapportera även om ett digare felaktigt skript nu klarar syntaxkontrollen."
+"rapportera även om ett tidigare felaktigt skript nu klarar syntaxkontrollen."
 
 #: include/inspect.h:1459
 msgid ""
@@ -260,8 +260,8 @@ msgid ""
 msgstr ""
 "Utför annocheck-tester definierade i konfigurationsfilen på alla ELF-filer i "
 "bygget. Ett enskilt angivet bygge kommer bara utföra en analys. Två angivna "
-"byggen kommer jämföra testresultaten mellan det idigare och det senare "
-"bygget. Om inga annocheck-tester definieras i konfigurationsfilen hopppas "
+"byggen kommer jämföra testresultaten mellan det tidigare och det senare "
+"bygget. Om inga annocheck-tester definieras i konfigurationsfilen hoppas "
 "denna inspektion över."
 
 #: include/inspect.h:1465
@@ -280,7 +280,7 @@ msgid ""
 msgstr ""
 "Rapportera filstorleksändringar mellan byggen. Om tomma filer slutar vara "
 "tomma eller filer som inte är tomma blir tomma, rapportera dessa som "
-"resultat som behöver verifikation. Rapportera filändringsprocent som enbard "
+"resultat som behöver verifikation. Rapportera filändringsprocent som enbart "
 "information."
 
 #: include/inspect.h:1477
@@ -301,7 +301,7 @@ msgid ""
 "capabilities changes not listed will raise a message requiring Security Team "
 "review."
 msgstr ""
-"Rapportera ändringar av capabilties(7) mellan byggen. Kontrollera mot "
+"Rapportera ändringar av capabilities(7) mellan byggen. Kontrollera mot "
 "förmågelistan för produktutgåvan som angetts eller härletts. Eventuella "
 "ändringar av förmågor som inte är listade kommer skapa ett meddelande som "
 "kräver granskning av säkerhetsgruppen."
@@ -314,7 +314,7 @@ msgid ""
 msgstr ""
 "Rapportera ändringar av parametrar till kärnmoduler, beroenden, PCI-ID eller "
 "symboler mellan byggen. Granskningen är avsedd som ett "
-"informationsinsamlingsverktyg för att samla kärnmodulkillnader mellan två "
+"informationsinsamlingsverktyg för att samla kärnmodulskillnader mellan två "
 "byggen."
 
 #: include/inspect.h:1501
@@ -359,8 +359,8 @@ msgid ""
 "migrating to /usr/sbin."
 msgstr ""
 "Rapportera filer som är paketerade i kataloger som inte längre används av "
-"produkten. Vanligen betyder detta att ett paket har uppdaterats för att ta "
-"hänsyn till migrering av sökvägar. Det huvudsakliga exemplet är /bin som "
+"produkten. Vanligen betyder detta att ett paket inte har uppdaterats för att "
+"ta hänsyn till migrering av sökvägar. Det huvudsakliga exemplet är /bin som "
 "migrerar till /usr/bin och /sbin som migrerar till /usr/sbin."
 
 #: include/inspect.h:1525
@@ -449,7 +449,7 @@ msgstr ""
 "Kontrollera och rapportera ändringar i konfigurationsfiler som är markerade "
 "med %config i spec-filen. Om ändringar endast är blanktecken eller "
 "formatering rapporteras resultatet på nivån INFO. Innehålls- och "
-"lägesändringar rapporteras på nivån VERIFY om inte jämförelsen är mellan "
+"platsändringar rapporteras på nivån VERIFY om inte jämförelsen är mellan "
 "ombaserade paket."
 
 #: include/inspect.h:1567
@@ -473,7 +473,7 @@ msgid ""
 "can also list patch names that rpminspect should ignore during the "
 "inspection."
 msgstr ""
-"Inspektera alla patchar som är definierade i spec-filen och rapportera "
+"Inspektera alla patchar som är definierade i spec-filen och rapporterar "
 "ändringar mellan byggen. Testfunktionen här är att säkerställa att alla "
 "definierade patchar i inledningen har ett motsvarande användningsmakro i "
 "spec-filen. På nivån INFO rapporterar rpminspect ändringar av filantal, "
@@ -501,8 +501,8 @@ msgid ""
 "subdirectory map to the product release string.  The rules in each file "
 "define the politically sensitive allow and deny rules for that release."
 msgstr ""
-"Sök efter kända politiskt känsliga filer i paketet och rapportera ifall de "
-"är tillåtna eller förbjudna. Reglerna kommer från underkatalogen politics/  "
+"Sök efter kända politiskt känsliga filer i paket och rapportera ifall de är "
+"tillåtna eller förbjudna. Reglerna kommer från underkatalogen politics/ i "
 "paketet rpminspect-data för produkten. Filer i underkatalogen politics/ "
 "avbildar till produktutgåvesträngen. Reglerna i varje fil definierar vad "
 "bland politiskt känsligt som är tillåtet och nekat för den utgåvan."
@@ -515,9 +515,9 @@ msgid ""
 "built packages to conform to replacement APIs."
 msgstr ""
 "Säk efter förbjudna funktioner i ELF-filer. Förbjudna funktioner definieras "
-"i konfigurationsfierna för körtid. Vanligen används denna inspektion för att "
-"fånga byggda paket som använder undanbedda API-funktioner om man vill bygga "
-"paket för att följa ersättnings-API:er."
+"i konfigurationsfilerna för körtid. Vanligen används denna inspektion för "
+"att fånga byggda paket som använder undanbedda API-funktioner om man vill "
+"bygga paket för att följa ersättnings-API:er."
 
 #: include/inspect.h:1597
 msgid ""
@@ -560,10 +560,10 @@ msgid ""
 "report where symbols unexpectedly appear or disappear and what corrective "
 "action is needed."
 msgstr ""
-"Kontrollerar att filer i RPM-paket har sina felsökningssymboler "
-"bortstrippade och filer i debuginfo-paket bär med sig felsökningssymboler. "
-"Rapportera vid jämförelse av byggen var symboler oväntad uppträder eller "
-"försvinner och vilka rättningsåtgärder som behövs."
+"Kontrollerar att filer i RPM-paket har sina felsökningssymboler avlägsnade "
+"och filer i debuginfo-paket innehåller felsökningssymboler. Rapportera vid "
+"jämförelse av byggen var symboler oväntat uppträder eller försvinner och "
+"vilka rättningsåtgärder som behövs."
 
 #: include/inspect.h:1621
 msgid "Perform syntax check on udev rules files using udevadm verify."
@@ -571,18 +571,19 @@ msgstr "Utför syntaxkontroll av udev-regelfiler med udevadm verify."
 
 #: include/results.h:31
 msgid "Change the string specified on the 'Vendor:' line in the spec file."
-msgstr "Ändra strängen som anges ra raden ”Leverantör:” i spec-filen."
+msgstr "Ändra strängen som anges på raden ”Leverantör:” i spec-filen."
 
 #: include/results.h:38
 msgid "Make sure the SRPM is built on a host within the expected subdomain."
-msgstr "Se till att SRPM:en är byggd på en värd i den förväntade underdomänen."
+msgstr ""
+"Se till att SRPM:en är byggd på en värd inom den förväntade underdomänen."
 
 #: include/results.h:45
 msgid ""
 "Unprofessional language as defined in the configuration file was found in "
 "the text shown.  Remove or change the offending words and rebuild."
 msgstr ""
-"Oprofessionellt språk så som det defineras i konfigurationsfilenfanns i "
+"Oprofessionellt språk så som det defineras i konfigurationsfilen fanns i "
 "texten som visas. Ta bort eller ändra de stötande orden och bygg om."
 
 #: include/results.h:60 include/results.h:75
@@ -600,7 +601,7 @@ msgid ""
 "distribution (e.g., GPLv2+).  If the license in question is approved, the "
 "license database needs updating in the rpminspect-data package."
 msgstr ""
-"Lincenstaggen måste innehålla en godkänd licenssträng som den defineras av "
+"Licenstaggen måste innehålla en godkänd licenssträng som den defineras av "
 "distributionen (t.ex., GPLv2+). Om licensen i fråga är godkänd behöver "
 "licensdatabasen uppdateras i paketet rpminspect-data."
 
@@ -610,9 +611,9 @@ msgid ""
 "valid licensedb file.  This is also commonly due to a missing vendor "
 "specific rpminspect-data package on the system."
 msgstr ""
-"Se till att lincensedb-inställningen i rpminspect-konfigurationen är satt "
-"till en giltig licensedb-fil. Detta är också ofta på grund av ett saknat "
-"leverantörsspecifikt rpminspekt-data-paket på systemet."
+"Se till att licensedb-inställningen i rpminspect-konfigurationen är satt "
+"till en giltig licensedb-fil. Detta är också ofta orsakat av ett saknat "
+"leverantörsspecifikt rpminspect-data-paket på systemet."
 
 #: include/results.h:104
 msgid ""
@@ -809,8 +810,8 @@ msgid ""
 "%s and send a patch to the project that owns it."
 msgstr ""
 "Bin-sökvägsfiler måste ägas av den bin_owner som angetts i rpminspect-"
-"konfigurationen. Om detta ägarskap är förväntat, uppdatera då %s och skicka "
-"en ändring till projektet som äger den."
+"konfigurationen, vilket vanligen är root. Om detta ägarskap är förväntat, "
+"uppdatera då %s och skicka en ändring till projektet som äger den."
 
 #: include/results.h:381
 #, c-format
@@ -854,7 +855,7 @@ msgid ""
 "process to set correct owner and group information. If expected, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
-"Verifiera att ägarskapsändringar är förvätnade. Om inte, justera "
+"Verifiera att ägarskapsändringar är förväntade. Om inte, justera "
 "paketbyggsprocessen så att rätt ägar- och gruppinformation sätts. Om "
 "förväntat, uppdatera då %s och skicka en ändring till projektet som äger den."
 
@@ -872,11 +873,11 @@ msgstr ""
 "standard (t.ex., setuid) vilket är en situation då rpminspect skulle "
 "kontrollera fileinfo-listan för att säkerställa att paketet följer "
 "leverantörens regler. För att åtgärda, lägg till en fileinfo-regel för denna "
-"fil till leverantörens datapaket under dentillämpliga produktutgåvefilen."
+"fil till leverantörens datapaket under den relevanta produktutgåvefilen."
 
 #: include/results.h:424
 msgid "Consult the shell documentation for proper syntax."
-msgstr "Konsultera skaldokumentationen för rätt syntax."
+msgstr "Se skalets dokumentation för rätt syntax."
 
 #: include/results.h:431
 msgid ""
@@ -922,7 +923,7 @@ msgstr ""
 "DT_NEEDED-symboler har lagts till eller tagits bort. Detta händer när "
 "byggmiljön har olika versioner av de begärda biblioteken. Ibland är detta "
 "avsiktligt men ibland inte. Verifiera att dessa ändringar är förväntade. Om "
-"de inte är det, modifiera paketets spec-fil för att säkerställa abb bygget "
+"de inte är det, modifiera paketets spec-fil för att säkerställa att bygget "
 "länkar med rätt delade bibliotek."
 
 #: include/results.h:490
@@ -1004,7 +1005,7 @@ msgid ""
 "maintenance update."
 msgstr ""
 "Enhetsalias för kärnmoduler ändrades mellan byggen. Detta kan orsaka "
-"användbarhetsproblem för användare om modulparametrar togs bort i en "
+"användbarhetsproblem för användare om modulparametrar ändrades i en "
 "underhållsuppdatering."
 
 #: include/results.h:565
@@ -1015,7 +1016,7 @@ msgid ""
 msgstr ""
 "En arkitektur som fanns i det tidigare bygget saknas nu i det senare bygget. "
 "Detta kan vara medvetet, men kontrollera för att se till att du inte har "
-"några oväntade rader ExclusiveArch i spec-filen."
+"några oväntade ExclusiveArch-rader i spec-filen."
 
 #: include/results.h:566
 msgid ""
@@ -1032,8 +1033,8 @@ msgid ""
 "defining the subpackage in the spec file"
 msgstr ""
 "Ett underpaket som fanns i det tidigare bygget saknas nu i det senare "
-"bygget. Detta kan vara avsiktligt, men kontroller för att säkerställa att du "
-"har korrekt syntax som definierar underpaketet i spec-filen"
+"bygget. Detta kan vara avsiktligt, men kontrollera för att säkerställa att "
+"du har korrekt syntax som definierar underpaketet i spec-filen"
 
 #: include/results.h:577
 msgid ""
@@ -1067,7 +1068,7 @@ msgid ""
 msgstr ""
 "ELF-filer .o och .a skall inte ha med bytekod för LTO ("
 "länktillfällesoptimering, Link Time Optimization). Se till att du har "
-"strippat LTO-bytekod från dessa filer vid installationstillfället."
+"avlägsnat LTO-bytekod från dessa filer vid installationstillfället."
 
 #: include/results.h:617
 msgid ""
@@ -1098,8 +1099,8 @@ msgstr ""
 "tidigare inte symlänk ändras till en symlänk, se till att detta är "
 "avsiktligt. OBS: man kan inte göra en katalog till en symlänk på grund av "
 "begränsningar i RPM. Om du absolut måste göra det, se till att du inkluderar "
-"%pretrans-skriptet för att ersätta en katalog. Se paketeringsguilden för ”"
-"Scriptlet to replace a directory” för mer information."
+"%pretrans-skriptet för att ersätta en katalog. Se riktlinjerna för "
+"paketering under ”Scriptlet to replace a directory” för mer information."
 
 #: include/results.h:628
 #, c-format
@@ -1167,7 +1168,7 @@ msgid ""
 msgstr ""
 "Ändringar hittade bland %doc-filerna. Verifiera att dessa ändringar är "
 "avsiktliga om paketet inte är en ombasering. Ibland byter uppströmsprojekt "
-"namn på eller flyttar dokumentationsfiler och spec-fillen behöver ta hänsyn "
+"namn på eller flyttar dokumentationsfiler och spec-filen behöver ta hänsyn "
 "till dessa ändringar."
 
 #: include/results.h:688
@@ -1182,7 +1183,7 @@ msgstr ""
 "en samling patchar genom att jämföra två träd. När filer försvinner kan det "
 "leda till nollängdspatchar i den resulterande samlingen. Granska för att se "
 "om källpaketet har några patchar med nollängd eller på annat sätt felaktiga "
-"och rätta till problement."
+"och rätta till problemet."
 
 #: include/results.h:690
 #, c-format
@@ -1213,18 +1214,18 @@ msgid ""
 "For example, Patch47 needs to have either a '%patch 47', '%patch -P 47', "
 "'%patch -P47', or '%patch47' macro."
 msgstr ""
-"Den nämnda patchen definieras stämmer inte med numret i makrot %patch. Se "
-"till att alla numrerade patcher har motsvarande %patch-makron. Till exempel, "
-"Patch47 behöver ha endera av makrona ”%patch 47”, ”%patch -P 47”, ”%patch "
-"-P47” eller ”%patch47”."
+"Den nämnda patchen är definierad men stämmer inte med numret i makrot "
+"%patch. Se till att alla numrerade patcher har motsvarande %patch-makron. "
+"Till exempel, Patch47 behöver ha endera av makrona ”%patch 47”, ”%patch -P "
+"47”, ”%patch -P47” eller ”%patch47”."
 
 #: include/results.h:694
 msgid ""
 "The defined patch file is not something rpminspect can handle.  This is "
 "likely a bug and should be reported to the upstream rpminspect project."
 msgstr ""
-"Den definierade är inte något som rpminspect kan hantera. Detta är sannolikt "
-"ett fel och bör rapporteras till rpminspect-projektet uppströms."
+"Den definierade patchen är inte något som rpminspect kan hantera. Detta är "
+"sannolikt ett fel och bör rapporteras till rpminspect-projektet uppströms."
 
 #: include/results.h:704
 msgid ""
@@ -1266,12 +1267,13 @@ msgid ""
 msgstr ""
 "Förbjudna symboler hittades i en ELF-fil i paketet. "
 "Konfigurationsinställningarna för rpminspect indikerar att de nämnda "
-"symbolerna är förbjudnai paket. Om detta är medvetet kan du vilja avaktivera "
-"badfuncs-inspektionen. OM det inte är medvetet, kontrollera manualsidorna "
-"för de nämnda symbolerna för att se vilka API-funktioner som har ersatt de "
-"förbjudna symbolerna. Vanligtvis markeras en funktion som undanbedda men "
-"tillhandahålls fortfarande för att möjliggöra bakåtkompatibilitet. Alltid "
-"när det är möjligt skall de undanbedda funktionerna inte användas."
+"symbolerna är förbjudna i paket. Om detta är medvetet kan du vilja "
+"avaktivera badfuncs-inspektionen. Om det inte är medvetet, kontrollera "
+"manualsidorna för de nämnda symbolerna för att se vilka API-funktioner som "
+"har ersatt de förbjudna symbolerna. Vanligtvis markeras en funktion som "
+"undanbedd men tillhandahålls fortfarande för att möjliggöra "
+"bakåtkompatibilitet. Alltid när det är möjligt skall de undanbedda "
+"funktionerna inte användas."
 
 #: include/results.h:734
 msgid ""
@@ -1282,12 +1284,12 @@ msgid ""
 "try using a program such as patchelf to remove these properties from the ELF "
 "files."
 msgstr ""
-"Antingen egenskapen DT_RPATH eller DT_RUNPATH hittades i delade ELF-objekt i "
-"detta paket. Det avrådes från att använda DT_RPATH och DT_RUNPATH utom i "
-"vissa situationer. Kontrollera för att se till att du avaktiverar rpath "
-"under steget %build i spec-filen. Om du inte kan göra detta lätt kan du "
-"försöka använda ett program såsom patchelf för att ta bort dessa egenskaper "
-"från ELF-filerna."
+"Endera av egenskaperna DT_RPATH eller DT_RUNPATH hittades i delade ELF-"
+"objekt i detta paket. Det avrådes från att använda DT_RPATH och DT_RUNPATH "
+"utom i vissa situationer. Kontrollera för att se till att du avaktiverar "
+"rpath under steget %build i spec-filen. Om du inte kan göra detta lätt kan "
+"du försöka använda ett program såsom patchelf för att ta bort dessa "
+"egenskaper från ELF-filerna."
 
 #: include/results.h:736
 msgid ""
@@ -1307,11 +1309,11 @@ msgid ""
 "discuss the situation with the Product Security Team to determine the "
 "correct course of action."
 msgstr ""
-"Konfigurationsfilen till rpminspect innehåller en list av förbjudna Unicode-"
-"kodpunkter. En av dem hittades i det extraherade och patchade källkodsträdet "
-"eller i en av textkällfilerna i käll-RPM:en. Ta antingen bort denna kodpunkt "
-"eller diskutera situationen med produktsäkerhetsgruppen för att avgöra det "
-"rätta tillvägagångssättet."
+"Konfigurationsfilen till rpminspect innehåller en lista över förbjudna "
+"Unicode-kodpunkter. En av dem hittades i det extraherade och patchade "
+"källkodsträdet eller i en av textkällfilerna i käll-RPM:en. Ta antingen bort "
+"denna kodpunkt eller diskutera situationen med produktsäkerhetsgruppen för "
+"att avgöra det rätta tillvägagångssättet."
 
 #: include/results.h:748
 #, c-format
@@ -1372,8 +1374,8 @@ msgid ""
 msgstr ""
 "Kontrollera underpaketets sektion %files och explicita Provides-satser. "
 "Endast ett underpaket skall tillhandahålla ett givet delat bibliotek. Delade "
-"biblioteks namn läggs automatiskt till so Provides, så det finns inget behov "
-"av att ange dem i spec-filen men man behöver se till att endast ett "
+"biblioteks namn läggs automatiskt till som Provides, så det finns inget "
+"behov av att ange dem i spec-filen men man behöver se till att endast ett "
 "underpaket paketerar ihop det delade biblioteket i fråga."
 
 #: include/results.h:766
@@ -1385,8 +1387,8 @@ msgid ""
 "a rebased build."
 msgstr ""
 "Ett beroende uppräknat i det tidigare bygget ändrades till det nämnda "
-"beroendet i det senare bygget. OM detta är ett VERIFY-resultat betyder det "
-"att rpminspect noterade ändingen i vad den betraktar som en "
+"beroendet i det senare bygget. Om detta är ett VERIFY-resultat betyder det "
+"att rpminspect noterade ändringen i vad den betraktar som en "
 "underhållsuppdatering av ett paket. Ett INFO-resultat betyder att den "
 "noterade denna ändring, men bedömer att den är ok för att den jämför ett "
 "ombaserat bygge."
@@ -1400,8 +1402,8 @@ msgid ""
 "a rebased build."
 msgstr ""
 "Ett nytt beroende syns i det senare bygget som inte fanns i det tidigare "
-"bygget. OM detta är ett VERIFY-resultat betyder det att rpminspect noterade "
-"ändingen i vad den betraktar som en underhållsuppdatering av ett paket. Ett "
+"bygget. Om detta är ett VERIFY-resultat betyder det att rpminspect noterade "
+"ändringen i vad den betraktar som en underhållsuppdatering av ett paket. Ett "
 "INFO-resultat betyder att den noterade denna ändring, men bedömer att den är "
 "ok för att den jämför ett ombaserat bygge."
 
@@ -1415,7 +1417,7 @@ msgid ""
 msgstr ""
 "Ett beroende som syns i det tidigare bygget syns inte i det senare bygget "
 "vilket betyder att det togs bort eller förlorades. Om detta är ett VERIFY-"
-"resultat betyder det att rpminspect noterade ändingen i vad den betraktar "
+"resultat betyder det att rpminspect noterade ändringen i vad den betraktar "
 "som en underhållsuppdatering av ett paket. Ett INFO-resultat betyder att den "
 "noterade denna ändring, men bedömer att den är ok för att den jämför ett "
 "ombaserat bygge."
@@ -1428,7 +1430,7 @@ msgid ""
 "%{version}-%{release}' to capture the package package Epoch in the "
 "dependency."
 msgstr ""
-"Paketet har ett epokvärde större än noll, men det explicita "
+"Paketet har ett epokvärde större än noll, men de explicita "
 "underpaketsberoendena använder det inte konsekvent. För det rapporterade "
 "beroendet behöver ”= %{version}-%{release}” ändras till ”= "
 "%{epoch}:%{version}-%{release}” för att fånga paketets epok i beroendet."
@@ -1678,7 +1680,7 @@ msgstr "*** flaggan måste vara ”on” eller ”off”; ignorerar ”%s”"
 #: lib/init.c:548
 #, c-format
 msgid "*** unknown inspections: `%s`"
-msgstr "*** oväntade inspektioner: ”%s”"
+msgstr "*** okända inspektioner: ”%s”"
 
 #: lib/init.c:559
 msgid "*** malformed/unknown inspections section"
@@ -1698,7 +1700,7 @@ msgstr "*** okänd statisk kontextinställning av modularitet ”%s”"
 #, c-format
 msgid "*** unknown specname match setting '%s', defaulting to 'full'"
 msgstr ""
-"*** okänd matchningsinställning av spec-namn ”%s”; tarstandardvärdet ”full”"
+"*** okänd matchningsinställning av spec-namn ”%s”; tar standardvärdet ”full”"
 
 #: lib/init.c:732
 #, c-format
@@ -1826,7 +1828,7 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
-"Kommando %s\n"
+"Kommando: %s\n"
 "\n"
 "%s"
 
@@ -1855,7 +1857,7 @@ msgstr ""
 #: lib/inspect_addedfiles.c:177
 #, c-format
 msgid "Forbidden directory `%s` found on %s in %s: %s"
-msgstr "Förbjuden katalog ”%s” funnen på %s i %s: %s"
+msgstr "Förbjuden katalog ”%s” hittad på %s i %s: %s"
 
 #: lib/inspect_addedfiles.c:178
 msgid "forbidden directory ${FILE} on ${ARCH}"
@@ -2099,7 +2101,7 @@ msgstr "Filförmågor för %s (%s) finns inte i förmågelistan i %s på %s\n"
 msgid ""
 "File capabilities expected for %s in %s but not found on %s: expected '%s'\n"
 msgstr ""
-"Filförmågor förväntade för %s i %s men finns inte på %s: ”%s” föräntades\n"
+"Filförmågor förväntade för %s i %s men finns inte på %s: ”%s” förväntades\n"
 
 #: lib/inspect_changedfiles.c:31
 msgid ""
@@ -2117,7 +2119,7 @@ msgstr "Komprimerad %s-fil %s ändrade innehåll i %s på %s."
 #: lib/inspect_changedfiles.c:353 lib/inspect_changedfiles.c:367
 #, c-format
 msgid "Error running msgunfmt on %s in %s on %s; malformed mo file?"
-msgstr "Fel när msgunfmt kördes på %s i %s på %s; felformaterade mo-fil?"
+msgstr "Fel när msgunfmt kördes på %s i %s på %s; felformaterad mo-fil?"
 
 #: lib/inspect_changedfiles.c:357 lib/inspect_changedfiles.c:371
 msgid "msgunfmt on ${FILE}"
@@ -2264,7 +2266,7 @@ msgid ""
 "%s in %s on %s carries .gosymtab but should not have the .gnu_debugdata "
 "symbol"
 msgstr ""
-"%s i %s på %s har med .gosymtab ben skall inte ina symbolen .gnu_debugdata"
+"%s i %s på %s innehåller .gosymtab men skall inte ha symbolen .gnu_debugdata"
 
 #: lib/inspect_debuginfo.c:320
 msgid ".gnu_debugdata with .gosymtab"
@@ -2276,8 +2278,7 @@ msgid ""
 "Desktop file %s on %s references executable %s but %s is not executable by "
 "all"
 msgstr ""
-"Skrivbordsfilen %s på %s refererar den körbara %s men %s är inte körbar för "
-"alla"
+"Skrivbordsfilen %s på %s refererar körfilen %s men %s får inte köras av alla"
 
 #: lib/inspect_desktop.c:279
 msgid "${FILE} references non-executable file on ${ARCH}"
@@ -2373,7 +2374,7 @@ msgid ""
 "should be of the form '%s' in the %s tag or in a macro used in the %s tag. "
 "After RPM macro expansion, no dist tag was found in this %s tag value."
 msgstr ""
-"Värdet på taggen %s saknar dist-taggen på korrekt format. Dist-taggen skall "
+"Värdet på taggen %s saknar dist-taggen i korrekt format. Dist-taggen skall "
 "ha formen ”%s” i taggen %s eller i ett makro som används i taggen %s. Efter "
 "expansion av RPM-makron fanns ingen dist-tagg i värdet på taggen %s."
 
@@ -2472,12 +2473,12 @@ msgstr "execstack i ${FILE} på ${ARCH}"
 #, c-format
 msgid "Object still has executable stack (GNU-stack note = X): %s on %s"
 msgstr ""
-"Objektet har fortfarande exekverbar stack (notering GNU-stack =X): %s på %s"
+"Objektet har fortfarande exekverbar stack (notering GNU-stack = X): %s på %s"
 
 #: lib/inspect_elf.c:527
 #, c-format
 msgid "Object has executable stack (GNU-stack note = X): %s on %s"
-msgstr "Objektet har exekverbar stack (notering GNU-stack =X): %s på %s"
+msgstr "Objektet har exekverbar stack (notering GNU-stack = X): %s på %s"
 
 #: lib/inspect_elf.c:531
 #, c-format
@@ -2542,7 +2543,7 @@ msgid ""
 "New package %s is empty (no payloads); this is expected per the rpminspect "
 "configuration"
 msgstr ""
-"Det nya paketet %s är tomt (ingen last); detta är förväntad enligt "
+"Det nya paketet %s är tomt (ingen last); detta är förväntat enligt "
 "rpminspect-konfigurationen"
 
 #: lib/inspect_emptyrpm.c:105
@@ -2708,7 +2709,7 @@ msgid ""
 "Exit code: %d%s%s"
 msgstr ""
 "Kommando: %s\n"
-"Slutkodod: %d%s%s"
+"Slutkod: %d%s%s"
 
 #: lib/inspect_kmod.c:28
 msgid "${FILE} kernel module alias on ${ARCH}"
@@ -2777,21 +2778,21 @@ msgstr "Tom licenstagg i %s"
 
 #: lib/inspect_license.c:509
 msgid "missing License tag in ${FILE}"
-msgstr "saknad License-tagg i ${FILE}"
+msgstr "saknad licenstagg i ${FILE}"
 
 #: lib/inspect_license.c:518
 #, c-format
 msgid "Valid License Tag in %s: %s"
-msgstr "Giltig License-tagg i %s: %s"
+msgstr "Giltig licenstagg i %s: %s"
 
 #: lib/inspect_license.c:532
 #, c-format
 msgid "License Tag contains unprofessional language in %s: %s"
-msgstr "License-taggen innehåller oprofessionellt språk i %s: %s"
+msgstr "Licenstaggen innehåller oprofessionellt språk i %s: %s"
 
 #: lib/inspect_license.c:536
 msgid "unprofessional language in License tag in ${FILE}"
-msgstr "oprofessionellt språk i License-taggen i ${FILE}"
+msgstr "oprofessionellt språk i licenstaggen i ${FILE}"
 
 #: lib/inspect_license.c:573
 msgid "Missing license database(s)."
@@ -2919,7 +2920,7 @@ msgstr ""
 #: lib/inspect_metadata.c:51
 #, c-format
 msgid "Package Vendor \"%s\" is not \"%s\" in %s"
-msgstr "Paketets Vendor ”%s” är inte ”%s” i %s"
+msgstr "Paketets leverantör ”%s” är inte ”%s” i %s"
 
 #: lib/inspect_metadata.c:55
 msgid "invalid vendor ${FILE} on ${ARCH}"
@@ -3308,11 +3309,11 @@ msgstr " rättigheter"
 
 #: lib/inspect_permissions.c:111
 msgid " relaxed"
-msgstr " lättad"
+msgstr " lättade"
 
 #: lib/inspect_permissions.c:114
 msgid " changed"
-msgstr " ändrad"
+msgstr " ändrade"
 
 #: lib/inspect_permissions.c:129
 #, c-format
@@ -3349,8 +3350,8 @@ msgid ""
 "Possible politically sensitive file (%s) found in %s on %s: rules allow this "
 "file."
 msgstr ""
-"Möjligt politiskt känslig fil (%s) funnen i %s på %s: regler tillåter denna "
-"fil."
+"Möjligt politiskt känslig fil (%s) hittades i %s på %s: regler tillåter "
+"denna fil."
 
 #: lib/inspect_politics.c:134
 #, c-format
@@ -3358,7 +3359,7 @@ msgid ""
 "Possible politically sensitive file (%s) found in %s on %s: rules prohibit "
 "this file."
 msgstr ""
-"Möjligt politiskt känslig fil (%s) funnen i %s på %s: regler förhindrar "
+"Möjligt politiskt känslig fil (%s) hittades i %s på %s: regler förhindrar "
 "denna fil."
 
 #: lib/inspect_politics.c:138
@@ -3415,7 +3416,7 @@ msgid ""
 "%s' to the spec file to avoid the need to test interoperability between "
 "various combinations of old and new subpackages."
 msgstr ""
-"Underpaketet %s på %s medför ”%s” vilket kommer från underpaketet %s men "
+"Underpaketet %s på %s innehåller ”%s” vilket kommer från underpaketet %s men "
 "inte har ett explicit paketversionskrav. Lägg till ”Requires: %s = %s” till "
 "spec-filen för att undvika behovet att testa interoperabilitet mellan olika "
 "kombinationer av gamla och nya underpaket."
@@ -3432,7 +3433,7 @@ msgid ""
 "Requires: [%s]"
 msgstr ""
 "Flera underpaket tillhandahåller ”%s”: [%s] men dessa underpaket har ett "
-"explicit krav: [%s]"
+"explicit Requires: [%s]"
 
 #: lib/inspect_rpmdeps.c:410
 #, c-format
@@ -3527,17 +3528,17 @@ msgstr "%s har både DT_RPATH och DT_RUNPATH på %s; detta är inte tillåtet"
 
 #: lib/inspect_shellsyntax.c:125
 msgid "invalid shell script ${FILE} on ${ARCH}"
-msgstr "felaktig skalskript ${FILE} på ${ARCH}"
+msgstr "felaktigt skalskript ${FILE} på ${ARCH}"
 
 #: lib/inspect_shellsyntax.c:132
 #, c-format
 msgid "%s is a shell script but was not before on %s"
-msgstr "%s är ett skalskript men var inte det tidigare på %s"
+msgstr "%s är ett skalskript men var det inte tidigare på %s"
 
 #: lib/inspect_shellsyntax.c:134
 #, c-format
 msgid "%s is a %s script but was a %s script before on %s"
-msgstr "%s är ett %s-skript mer var ett %s-skript tidigare på %s"
+msgstr "%s är ett %s-skript men var ett %s-skript tidigare på %s"
 
 #: lib/inspect_shellsyntax.c:181
 #, c-format
@@ -3577,15 +3578,15 @@ msgstr "oväntat spec-filnamn"
 
 #: lib/inspect_specname.c:71
 msgid "exactly match"
-msgstr "matchar inte exakt"
+msgstr "matchar exakt"
 
 #: lib/inspect_specname.c:73
 msgid "begin with"
-msgstr "börjar inte med"
+msgstr "börjar med"
 
 #: lib/inspect_specname.c:75
 msgid "end with"
-msgstr "slutar inte med"
+msgstr "slutar med"
 
 #: lib/inspect_specname.c:78
 #, c-format
@@ -3694,11 +3695,11 @@ msgstr "%s är inte en giltig udev-regelfil på %s"
 #: lib/inspect_unicode.c:465
 #, c-format
 msgid "*** empty localpath on %s"
-msgstr "*** tom lokalsökväg på %s"
+msgstr "*** tom lokal sökväg på %s"
 
 #: lib/inspect_unicode.c:474
 msgid "forbidden code point in ${FILE} on ${ARCH}"
-msgstr "förbjudna kodpunkt i ${FILE} på ${ARCH}"
+msgstr "förbjuden kodpunkt i ${FILE} på ${ARCH}"
 
 #: lib/inspect_unicode.c:551
 #, c-format
@@ -3707,7 +3708,7 @@ msgid ""
 "at column %ld.  This source file is used by %s."
 msgstr ""
 "En förbjuden kodpunkt, 0x%04X, fanns i källfilen %s på rad %ld i kolumn %ld. "
-"Denna källsfil används av %s."
+"Denna källfil används av %s."
 
 #: lib/inspect_unicode.c:621
 #, c-format
@@ -3813,7 +3814,7 @@ msgstr "*** xmlrpc felkod %s (%d): getBuild(%s) från %s"
 #: lib/koji.c:884
 #, c-format
 msgid "*** Koji build state is %s for %s, cannot continue"
-msgstr "*** Koji byggtillstånd är %s för %s, kan inte fortsätta"
+msgstr "*** Koji-byggtillstånd är %s för %s, kan inte fortsätta"
 
 #: lib/koji.c:1147
 #, c-format
@@ -3823,7 +3824,7 @@ msgstr "*** xmlrpc felkod %s (%d): getTaskInfo(%s) från %s"
 #: lib/koji.c:1171
 #, c-format
 msgid "*** Koji task state is %s for task %s, cannot continue"
-msgstr "*** Koji uppgiftstillstånd är %s för uppgiften %s, kan inte fortsätta"
+msgstr "*** Koji-uppgiftstillstånd är %s för uppgiften %s, kan inte fortsätta"
 
 #: lib/koji.c:1399
 msgid "RPM package build"
@@ -3852,7 +3853,7 @@ msgid ""
 "Detailed results suitable for the console and piping through paging programs."
 msgstr ""
 "Detaljerade resultat lämpliga för konsolen och för rör till "
-"bläddningsprogram."
+"bläddringsprogram."
 
 #: lib/output.c:27
 msgid ""
@@ -3954,7 +3955,7 @@ msgstr "*** hoppar över symboltypen %s"
 
 #: lib/parse_yaml.c:386
 msgid "*** malformed type - freed?"
-msgstr "*** felformaterat typ – friad?"
+msgstr "*** felformaterat typ – frigjord?"
 
 #: lib/peers.c:176
 #, c-format
@@ -4125,7 +4126,7 @@ msgid ""
 "Compare package builds for policy compliance and consistency.\n"
 "\n"
 msgstr ""
-"Jämför paketbyggen med avseende på åtlydnad av policyn och konsistens.\n"
+"Jämför paketbyggen med avseende på åtlydnad av policy och konsekvens.\n"
 "\n"
 
 #: src/rpminspect.c:49
@@ -4166,7 +4167,7 @@ msgstr "  -E LISTA, --exclude=LISTA   Lista över tester att utesluta\n"
 #: src/rpminspect.c:56
 #, c-format
 msgid "                                (default: none)\n"
-msgstr "                                (standard: ingen)\n"
+msgstr "                                (standard: inga)\n"
 
 #: src/rpminspect.c:57
 #, c-format
@@ -4182,12 +4183,12 @@ msgstr "  -r STR, --release=STR       Produktutgåvesträng\n"
 #, c-format
 msgid "  -n, --no-rebase             Disable build rebase detection\n"
 msgstr ""
-"  -n, --no-rebase             Avaktivera detektering av byggmobaseringar\n"
+"  -n, --no-rebase             Avaktivera detektering av byggombaseringar\n"
 
 #: src/rpminspect.c:60
 #, c-format
 msgid "  -b TYPE, --build-type=TYPE  Set Koji build type to TYPE\n"
-msgstr "  -b TYP, --build-type=TYP    Sästt Koji-byggtyp till TYP\n"
+msgstr "  -b TYP, --build-type=TYP    Sätt Koji-byggtyp till TYP\n"
 
 #: src/rpminspect.c:61
 #, c-format
@@ -4212,7 +4213,7 @@ msgstr "                                (standard: text)\n"
 #: src/rpminspect.c:65
 #, c-format
 msgid "  -t TAG, --threshold=TAG     Result threshold triggering exit\n"
-msgstr "  -t TAGG, --threshold=TAGG   Resulttröskelvärde som medför avslut\n"
+msgstr "  -t TAGG, --threshold=TAGG   Resultattröskelvärde som medför avslut\n"
 
 #: src/rpminspect.c:66
 #, c-format
