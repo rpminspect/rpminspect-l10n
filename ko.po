@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
 "PO-Revision-Date: 2024-01-06 14:14+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
 "Language: ko\n"
@@ -2203,7 +2202,7 @@ msgstr "커널 모듈 %s는 매개변수 '%s'를 추가합니다 (%s에 존재�
 #: lib/inspect_kmod.c:226
 #, c-format
 msgid "Kernel module %s removes dependency '%s' (was present in %s)."
-msgstr "커널 모듈 %s는 의존성 '%s'를 추가합니다 (%s에 존재하지 않습니다)."
+msgstr "커널 모듈 %s는 의존성 '%s'를 제거합니다 (%s에 존재하지 않습니다)."
 
 #: lib/inspect_kmod.c:229
 msgid "${FILE} kernel module dependency on ${ARCH}"
