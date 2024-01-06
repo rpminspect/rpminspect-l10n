@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-01-06 13:47+0000\n"
+"PO-Revision-Date: 2024-01-06 14:14+0000\n"
 "Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
 "memory@weblate.org>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
@@ -3129,7 +3129,7 @@ msgstr ""
 
 #: lib/inspect_unicode.c:744
 msgid "The unicode inspection is only for source packages, skipping."
-msgstr ""
+msgstr "특정이름 검사는 원천 꾸러미만 적용되며, 건너뜁니다."
 
 #: lib/inspect_upstream.c:60
 #, c-format
