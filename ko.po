@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-01-06 13:46+0000\n"
+"PO-Revision-Date: 2024-01-06 13:47+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -2197,7 +2197,7 @@ msgstr "${FILE} 커널 모듈 매개변수 (${ARCH} 에서)"
 #: lib/inspect_kmod.c:205
 #, c-format
 msgid "Kernel module %s adds parameter '%s' (was not present in %s)."
-msgstr "커널 모듈 %s는 의존성 '%s'를 추가합니다 (%s에 존재하지 않습니다)."
+msgstr "커널 모듈 %s는 매개변수 '%s'를 추가합니다 (%s에 존재하지 않습니다)."
 
 #: lib/inspect_kmod.c:226
 #, c-format
