@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-01-29 11:36+0000\n"
+"PO-Revision-Date: 2024-01-31 20:40+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -2410,32 +2410,32 @@ msgstr ""
 
 #: lib/inspect_metadata.c:114
 msgid "Description contains unprofessional words on ${ARCH}"
-msgstr ""
+msgstr "설명은 ${ARCH}에서 전문적이지 않은 단어를 포함합니다"
 
 #: lib/inspect_metadata.c:134
 #, c-format
 msgid "Gained Package Vendor \"%s\" in %s"
-msgstr ""
+msgstr "획득된 꾸러미 제조사 \"%s\" (%s에서)"
 
 #: lib/inspect_metadata.c:136
 #, c-format
 msgid "Lost Package Vendor \"%s\" in %s"
-msgstr ""
+msgstr "손실된 꾸러미 제조사 \"%s\" ( %s에서)"
 
 #: lib/inspect_metadata.c:138
 #, c-format
 msgid "Package Vendor changed from \"%s\" to \"%s\" in %s"
-msgstr ""
+msgstr "꾸러미 제조사가 \"%s\"에서 \"%s\"로 변경되었습니다 (%s에서)"
 
 #: lib/inspect_metadata.c:156
 #, c-format
 msgid "Package Summary change from \"%s\" to \"%s\" in %s"
-msgstr ""
+msgstr "꾸러미 요약 변경이 \"%s\"에서 \"%s\"로 변경되었습니다 (%s에서)"
 
 #: lib/inspect_metadata.c:169
 #, c-format
 msgid "Package Description changed in %s"
-msgstr ""
+msgstr "꾸러미 설명이 %s로 변경되었습니다"
 
 #: lib/inspect_metadata.c:170
 #, c-format
@@ -3657,12 +3657,12 @@ msgstr ""
 #, c-format
 msgid ""
 "  -D, --dump-config           Dump configuration settings (in YAML format)\n"
-msgstr ""
+msgstr "  -D, --dump-config           덤프 구성 설정 (YAML 형식에서)\n"
 
 #: src/rpminspect.c:77
 #, c-format
 msgid "  -v, --verbose               Verbose inspection output\n"
-msgstr ""
+msgstr "  -v, --verbose               자세한 검사 출력\n"
 
 #: src/rpminspect.c:78
 #, c-format
