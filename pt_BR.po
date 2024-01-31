@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2023-08-12 19:21+0000\n"
-"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
+"PO-Revision-Date: 2024-01-31 20:40+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 4.18.2\n"
+"X-Generator: Weblate 5.3.1\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -26,12 +26,19 @@ msgid ""
 "checks to see if the License tag contains any unprofessional words as "
 "defined in the configuration file."
 msgstr ""
+"Verifica se a string especificada na tag License dos metadados do RPM "
+"descreve as licenças de software permitidas conforme definido pelo banco de "
+"dados de licenças. Também verifica se a tag License contém palavras não "
+"profissionais, conforme definido no arquivo de configuração."
 
 #: include/inspect.h:1347
 msgid ""
 "Check all binary RPMs in the build for any empty payloads. When comparing "
 "two builds, report new packages in the after build with empty payloads."
 msgstr ""
+"Verifica todos os RPMs binários na compilação para ver se há cargas úteis "
+"(payloads) vazias. Ao comparar duas compilações, relate novos pacotes na "
+"compilação posterior com cargas úteis vazias."
 
 #: include/inspect.h:1353
 msgid ""
@@ -39,6 +46,9 @@ msgid ""
 "Packages that lost payload data from the before build to the after build are "
 "reported."
 msgstr ""
+"Verifica todos os RPMs binários nas compilações antes e depois para ver se "
+"há cargas úteis vazias. Os pacotes que perderam dados de carga útil da "
+"compilação anterior para a compilação posterior são relatados."
 
 #: include/inspect.h:1359
 msgid ""
@@ -50,6 +60,15 @@ msgid ""
 "before build specified, check for differences between the before and after "
 "build values of the previous RPM header values and report them."
 msgstr ""
+"Executa algumas verificações de cabeçalho RPM. Primeiro, verifica se o "
+"Vendor contém a string esperada conforme definido no arquivo de "
+"configuração. Segundo, verifica se o host de compilação está no subdomínio "
+"esperado conforme definido no arquivo de configuração. Terceiro, verifique a "
+"string de Summary em busca de palavras não profissionais. Quarto, verifica a "
+"Description em busca de palavras não profissionais. Por último, se houver "
+"uma compilação anterior especificada, verifique as diferenças entre os "
+"valores de compilação anterior e posterior dos valores de cabeçalho RPM "
+"anteriores e relate-as."
 
 #: include/inspect.h:1365
 msgid ""
@@ -57,10 +76,15 @@ msgid ""
 "man page is compressed. Second, check that each man page contains valid "
 "content. Lastly, check that each man page is installed to the correct path."
 msgstr ""
+"Executa algumas verificações nas páginas man na carga útil do RPM. Primeiro, "
+"verifica se cada página man está compactada. Segundo, verifica se cada "
+"página man contém conteúdo válido. Por último, verifica se cada página man "
+"está instalada no caminho correto."
 
 #: include/inspect.h:1371
 msgid "Check that XML files included in the RPM payload are well-formed."
 msgstr ""
+"Verifica se os arquivos XML incluídos na carga útil RPM estão bem formados."
 
 #: include/inspect.h:1377
 msgid ""
@@ -70,28 +94,44 @@ msgid ""
 "after build did not lose a PT_GNU_RELRO segment. When comparing builds and "
 "there is a list of forbidden library functions, make sure nothing uses them."
 msgstr ""
+"Executa várias verificações nos arquivos ELF. Primeiro, verifica se os "
+"objetos ELF não contêm uma pilha executável. Segundo, verifica se os objetos "
+"ELF não contêm realocações de texto. Ao comparar compilações, verifica se os "
+"objetos ELF na compilação posterior não perderam um segmento PT_GNU_RELRO. "
+"Ao comparar verifica e houver uma lista de funções de biblioteca proibidas, "
+"se certifica de que nada as utilize."
 
 #: include/inspect.h:1383
 msgid ""
 "Perform syntax and file reference checks on *.desktop files. Syntax errors "
 "and invalid file references are reported as errors."
 msgstr ""
+"Executa verificações de sintaxe e de referência de arquivo em arquivos *."
+"desktop. Erros de sintaxe e referências de arquivo inválidas são relatados "
+"como erros."
 
 #: include/inspect.h:1389
 msgid ""
 "Check that the 'Release' tag in the RPM spec file includes the %{?dist} "
 "directive."
 msgstr ""
+"Verifica se a tag 'Release' no arquivo de especificação RPM inclui a "
+"diretiva %{?dist}."
 
 #: include/inspect.h:1395
 msgid "Ensure the spec file name conforms to the NAME.spec naming format."
 msgstr ""
+"Certifica-se de que o nome do arquivo spec esteja em conformidade com o "
+"formato de nomenclatura NOME.spec."
 
 #: include/inspect.h:1403
 msgid ""
 "Ensure compliance with modularity build and packaging policies (only valid "
 "for module builds, no-op otherwise)."
 msgstr ""
+"Garante a conformidade com as políticas de compilação e empacotamento de "
+"modularidade (válido apenas para compilações de módulos, caso contrário, não "
+"operacional)."
 
 #: include/inspect.h:1411
 msgid ""
@@ -100,6 +140,10 @@ msgid ""
 "exceeded.  The bytecode version is vendor specific to releases and defined "
 "in the configuration file."
 msgstr ""
+"Verifica a versão mínima necessária do bytecode Java nos arquivos de classe, "
+"relata alterações na versão do bytecode entre compilações e relate se as "
+"versões do bytecode foram excedidas. A versão do bytecode é específica do "
+"fornecedor para versões e definida no arquivo de configuração."
 
 #: include/inspect.h:1417
 msgid ""
@@ -112,6 +156,15 @@ msgid ""
 "C and C++ header files are preprocessed and compared using diff(1).  Any "
 "changes with diff output are included in the results."
 msgstr ""
+"Relata os arquivos alterados da versão anterior para a posterior. Certas "
+"alterações no arquivo gerarão avisos adicionais se a preocupação for mais "
+"crítica do que apenas relatar alterações (por exemplo, uma suspeita de "
+"impacto na segurança). Quaisquer arquivos compactados gzip, bzip2 ou xz "
+"terão apenas seu conteúdo descompactado comparado, o que permitirá "
+"alterações no nível de compactação utilizado. Os arquivos do catálogo de "
+"mensagens (.mo) são descompactados e comparados usando diff(1). Arquivos de "
+"cabeçalho públicos C e C++ são pré-processados e comparados usando diff(1). "
+"Quaisquer alterações na saída diff são incluídas nos resultados."
 
 #: include/inspect.h:1423
 msgid ""
@@ -121,6 +174,11 @@ msgid ""
 "these findings at the INFO level while non-rebased packages report them at "
 "the VERIFY level or higher."
 msgstr ""
+"Relata arquivos que tiveram mudança nos caminhos de instalação ou entre "
+"subpacotes entre compilações. Os arquivos movidos com um prefixo de caminho "
+"de segurança geram relatórios especiais caso seja necessária uma revisão de "
+"segurança. Pacotes rebaseados relatam essas descobertas no nível INFO, "
+"enquanto pacotes não rebaseados as relatam no nível VERIFY ou superior."
 
 #: include/inspect.h:1429
 msgid ""
@@ -132,6 +190,14 @@ msgid ""
 "these findings at the INFO level while non-rebased packages report them at "
 "the VERIFY level or higher."
 msgstr ""
+"Relata arquivos removidos da compilação anterior para a compilação "
+"posterior. Bibliotecas compartilhadas obtêm resultados de relatórios "
+"adicionais, pois podem ser remoções inesperadas de dependências. Arquivos "
+"removidos com um prefixo de caminho de segurança geram relatórios especiais "
+"caso seja necessária uma revisão de segurança. Os RPMs fonte e os arquivos "
+"debuginfo são ignorados por esta inspeção. Pacotes rebaseados relatam essas "
+"descobertas no nível INFO, enquanto pacotes não rebaseados as relatam no "
+"nível VERIFY ou superior."
 
 #: include/inspect.h:1435
 msgid ""
@@ -143,6 +209,14 @@ msgid ""
 "Rebased packages report these findings at the INFO level while non-rebased "
 "packages report them at the VERIFY level or higher."
 msgstr ""
+"Relata arquivos adicionados da compilação anterior para a compilação "
+"posterior. Os arquivos Debuginfo são ignorados, assim como os arquivos que "
+"correspondem aos padrões definidos no arquivo de configuração. Os arquivos "
+"adicionados aos caminhos de segurança geram relatórios especiais caso seja "
+"necessária uma revisão de segurança. Novos arquivos setuid e setgid geram um "
+"aviso de segurança, a menos que o arquivo esteja na lista fileinfo. Pacotes "
+"rebaseados relatam essas descobertas no nível INFO, enquanto pacotes não "
+"rebaseados as relatam no nível VERIFY ou superior."
 
 #: include/inspect.h:1441
 msgid ""
@@ -151,6 +225,11 @@ msgid ""
 "on the rebaseable list, the change is reported as informational. Otherwise "
 "the change is reported as a rebase of the package and requires inspection."
 msgstr ""
+"Relata arquivos no Source definidos no arquivo spec RPM alterando o conteúdo "
+"entre antes e depois da compilação. Se os arquivos fonte forem alterados e o "
+"pacote estiver na lista rebaseável, a alteração será relatada como "
+"informativa. Caso contrário, a alteração será relatada como um rebase do "
+"pacote e exigirá inspeção."
 
 #: include/inspect.h:1447
 msgid ""
@@ -158,6 +237,10 @@ msgid ""
 "make sure executables are owned by the correct user and group. If a before "
 "and after build have been specified, also report ownership changes."
 msgstr ""
+"Relata arquivos e diretórios pertencentes a usuários e grupos inesperados. "
+"Verifica se os executáveis pertencem ao usuário e grupo corretos. Se uma "
+"compilação antes e depois tiver sido especificada, relata também as "
+"alterações de propriedade."
 
 #: include/inspect.h:1453
 msgid ""
@@ -168,6 +251,13 @@ msgid ""
 "perform the previous check but also report if a previously bad script is now "
 "passing the syntax check."
 msgstr ""
+"Para todos os scripts de shell na compilação, executa uma verificação de "
+"sintaxe usando o shell definido em sua linha #! (shell também deve ser "
+"listado na seção shell dos dados de configuração). Se a verificação de "
+"sintaxe retornar diferente de zero, informa ao usuário e retorna uma "
+"combinação de stdout e stderr. Se estiver comparando duas compilações, "
+"executa a verificação anterior, mas também informa se um script "
+"anteriormente incorreto está passando na verificação de sintaxe."
 
 #: include/inspect.h:1459
 msgid ""
@@ -177,12 +267,20 @@ msgid ""
 "build.  If no annocheck tests are defined in the configuration file, this "
 "inspection is skipped."
 msgstr ""
+"Executa testes do annocheck definidos no arquivo de configuração em todos os "
+"arquivos ELF na compilação. Uma única compilação especificada executará "
+"apenas uma análise. Duas compilações especificadas compararão os resultados "
+"do teste entre a compilação anterior e posterior. Se nenhum teste do "
+"annocheck estiver definido no arquivo de configuração, esta inspeção será "
+"ignorada."
 
 #: include/inspect.h:1465
 msgid ""
 "Compare DT_NEEDED entries in dynamic ELF executables and shared libraries "
 "between the before and after build and report changes."
 msgstr ""
+"Compara entradas DT_NEEDED em executáveis ELF dinâmicos e bibliotecas "
+"compartilhadas entre antes e depois da compilação e relata as alterações."
 
 #: include/inspect.h:1471
 msgid ""
@@ -190,6 +288,10 @@ msgid ""
 "non-empty files became empty, report those as results needing verification.  "
 "Report file change percentages as info-only."
 msgstr ""
+"Relata alterações no tamanho do arquivo entre compilações. Se os arquivos "
+"vazios se tornarem não vazios ou os arquivos não vazios ficarem vazios, "
+"relata-os como resultados que precisam de verificação. Relata as "
+"porcentagens de alteração do arquivo apenas como informação."
 
 #: include/inspect.h:1477
 msgid ""
@@ -197,6 +299,10 @@ msgid ""
 "list for the product release specified or determined.  Any setuid or setgid "
 "changes will raise a message requiring Security Team review."
 msgstr ""
+"Relata alterações no modo stat(2) entre compilações. Verifica a lista "
+"fileinfo da versão do produto especificada ou determinada. Quaisquer "
+"alterações no setuid ou setgid gerarão uma mensagem exigindo revisão da "
+"equipe de segurança."
 
 #: include/inspect.h:1485
 msgid ""
@@ -205,6 +311,10 @@ msgid ""
 "capabilities changes not listed will raise a message requiring Security Team "
 "review."
 msgstr ""
+"Relata alterações em capabilities(7) entre compilações. Verifica a lista de "
+"recursos da versão do produto especificada ou determinada. Quaisquer "
+"alterações de recursos não listadas gerarão uma mensagem exigindo revisão da "
+"Equipe de Segurança."
 
 #: include/inspect.h:1494
 msgid ""
@@ -212,6 +322,10 @@ msgid ""
 "between builds.  This inspection is intended as an information gathering "
 "tool to gather kernel module differences between two builds."
 msgstr ""
+"Relata diferenças de parâmetros em módulo do kernel, de dependência, de ID "
+"PCI ou de símbolos entre compilações. Esta inspeção pretende ser uma "
+"ferramenta de coleta de informações para coletar diferenças de módulos do "
+"kernel entre duas compilações."
 
 #: include/inspect.h:1501
 msgid ""
@@ -221,12 +335,19 @@ msgid ""
 "architectures as provided in the before build and not seeing them in the "
 "after build."
 msgstr ""
+"Relata arquiteturas RPM que aparecem e desaparecem entre as compilações "
+"antes e depois. Esta inspeção não relata a perda de pacotes noarch. O "
+"objetivo desta inspeção é relatar a perda de arquiteturas de máquinas de "
+"destino conforme fornecidas na versão anterior e não vê-las na versão "
+"posterior."
 
 #: include/inspect.h:1507
 msgid ""
 "Report RPM subpackages that appear and disappear between the before and "
 "after builds."
 msgstr ""
+"Relata subpacotes RPM que aparecem e desaparecem entre as compilações antes "
+"e depois."
 
 #: include/inspect.h:1513
 #, c-format
@@ -235,6 +356,9 @@ msgid ""
 "Reports any other differences in the existing changelog between builds and "
 "that the new entry contains new text entries."
 msgstr ""
+"Certifica-se de que os pacotes contenham uma entrada no %changelog para a "
+"versão criada. Relata quaisquer outras diferenças no changelog existente "
+"entre compilações e que a nova entrada contém novas entradas de texto."
 
 #: include/inspect.h:1519
 msgid ""
@@ -243,6 +367,10 @@ msgid ""
 "path migrations.  The main examples are /bin migrating to /usr/bin and /sbin "
 "migrating to /usr/sbin."
 msgstr ""
+"Relata arquivos que estão empacotados em diretórios que não são mais usados "
+"pelo produto. Geralmente isso significa que um pacote não foi atualizado "
+"para dar conta das migrações de caminho. Os principais exemplos são /bin "
+"migrando para /usr/bin e /sbin migrando para /usr/sbin."
 
 #: include/inspect.h:1525
 msgid ""
@@ -252,6 +380,11 @@ msgid ""
 "ELF objects shipped in packages.  This inspection looks for LTO bytecode in "
 "ELF relocatable objects and reports if any is present."
 msgstr ""
+"Link Time Optimization (LTO) produz executáveis e bibliotecas ELF "
+"compartilhadas menores e mais rápidas. O bytecode LTO não é estável de uma "
+"versão do gcc para a próxima. Como tal, o bytecode LTO não deve estar "
+"presente em objetos ELF .a e .o enviados em pacotes. Esta inspeção procura "
+"bytecode LTO em objetos relocáveis ELF e relata se algum estiver presente."
 
 #: include/inspect.h:1531
 msgid ""
@@ -259,18 +392,26 @@ msgid ""
 "ensures absolute and relative symlinks are valid.  It also checks for any "
 "symlink usage that will cause problems for RPM."
 msgstr ""
+"Os links simbólicos devem poder ser resolvidos no sistema instalado. Esta "
+"inspeção garante que os links simbólicos absolutos e relativos sejam "
+"válidos. Ela também verifica qualquer uso de link simbólico que possa causar "
+"problemas ao RPM."
 
 #: include/inspect.h:1537
 #, c-format
 msgid ""
 "Check %files sections in the spec file for any forbidden path references."
 msgstr ""
+"Verifica as seções %files no arquivo spec para quaisquer referências de "
+"caminho proibidas."
 
 #: include/inspect.h:1543
 msgid ""
 "Compare MIME types of files between builds and report any changes for "
 "verification."
 msgstr ""
+"Compara os tipos de arquivos MIME entre compilações e relate quaisquer "
+"alterações para verificação."
 
 #: include/inspect.h:1549
 msgid ""
@@ -283,6 +424,14 @@ msgid ""
 "that, turn off the abidiff inspection or add the package name to the "
 "rebaseable list."
 msgstr ""
+"Ao comparar duas compilações ou dois pacotes, compara os arquivos ELF usando "
+"abidiff(1) do projeto libabigail. As diferenças são relatadas. Se o pacote "
+"for um rebase e não estiver na lista rebaseável e a inspeção de rebase "
+"estiver habilitada, as diferenças de ABI serão relatadas como falhas. A "
+"suposição aqui é que o rpminspect está comparando compilações para fins de "
+"manutenção e você não deseja introduzir nenhuma alteração de ABI para os "
+"usuários. Se você não se importa com isso, desative a inspeção abidiff ou "
+"adicione o nome do pacote à lista rebaseável."
 
 #: include/inspect.h:1555
 msgid ""
@@ -293,6 +442,12 @@ msgid ""
 "rebase, an incompatible change reported by kmidiff is reported for "
 "verification."
 msgstr ""
+"kmidiff compara as interfaces binárias do módulo do kernel de duas árvores "
+"do kernel Linux. O binário KMI é a interface que o kernel do Linux expõe aos "
+"seus módulos. As árvores nas quais estamos interessados aqui são o resultado "
+"da compilação da árvore fonte do kernel Linux. Se as compilações comparadas "
+"não forem consideradas um rebase, uma alteração incompatível reportada pelo "
+"kmidiff será reportada para verificação."
 
 #: include/inspect.h:1561
 #, c-format
@@ -302,6 +457,11 @@ msgid ""
 "is reported at the INFO level.  Content and location changes are reporting "
 "at the VERIFY level unless the comparison is between rebased packages."
 msgstr ""
+"Verifica e relata diferenças nos arquivos de configuração marcados com "
+"%config no arquivo spec. Se as alterações forem apenas espaços em branco ou "
+"formatação, o resultado será relatado no nível INFO. As alterações de "
+"conteúdo e localização são relatadas no nível VERIFY, a menos que a "
+"comparação seja entre pacotes rebaseados."
 
 #: include/inspect.h:1567
 #, c-format
@@ -309,6 +469,8 @@ msgid ""
 "Report changes in %doc marked files.  Files that have been added or removed "
 "as documentation files, for instance."
 msgstr ""
+"Relata alterações em arquivos marcados com %doc. Arquivos que foram "
+"adicionados ou removidos como arquivos de documentação, por exemplo."
 
 #: include/inspect.h:1573
 msgid ""
@@ -322,6 +484,16 @@ msgid ""
 "can also list patch names that rpminspect should ignore during the "
 "inspection."
 msgstr ""
+"Inspeciona todos os patches definidos no arquivo spec e relata alterações "
+"entre compilações. A verificação funcional aqui é garantir que todos os "
+"patches definidos no preâmbulo tenham uma macro de aplicativo correspondente "
+"no arquivo spec. No nível INFO, o rpminspect relata a contagem de arquivos, "
+"a contagem de linhas e as alterações no tamanho do patch. Se os limites "
+"forem atingidos em relação a uma mudança no tamanho do patch ou no número de "
+"arquivos que o patch toca, o rpminspect relata a mudança no nível VERIFY, a "
+"menos que a comparação seja para um rebase. O arquivo de configuração também "
+"pode listar nomes de patches que o rpminspect deve ignorar durante a "
+"inspeção."
 
 #: include/inspect.h:1579
 msgid ""
@@ -329,6 +501,10 @@ msgid ""
 "found by libclamav will fail the inspection.  The ignore_path rules are not "
 "used in this inspection.  All files are scanned."
 msgstr ""
+"Executa uma verificação de vírus em todos os arquivos da compilação usando "
+"libclamav. Qualquer coisa encontrada por libclamav falhará na inspeção. As "
+"regras ignore_path não são usadas nesta inspeção. Todos os arquivos são "
+"verificados."
 
 #: include/inspect.h:1585
 msgid ""
@@ -338,6 +514,12 @@ msgid ""
 "subdirectory map to the product release string.  The rules in each file "
 "define the politically sensitive allow and deny rules for that release."
 msgstr ""
+"Verifica se há arquivos politicamente sensíveis nos pacotes e informe se "
+"eles são permitidos ou proibidos. As regras vêm do subdiretório politics/ no "
+"pacote rpminspect-data do produto. Os arquivos no subdiretório politics/ são "
+"mapeados para a sequência de lançamento do produto. As regras em cada "
+"arquivo definem as regras de permissão e negação politicamente sensíveis "
+"para esse lançamento."
 
 #: include/inspect.h:1591
 msgid ""
@@ -346,12 +528,19 @@ msgid ""
 "catch built packages that make use of deprecated API functions if you wish "
 "built packages to conform to replacement APIs."
 msgstr ""
+"Verifica se há funções proibidas em arquivos ELF. As funções proibidas são "
+"definidas nos arquivos de configuração de tempo de execução. Normalmente "
+"esta inspeção é usada para capturar pacotes construídos que fazem uso de "
+"funções de API descontinuadas se você deseja que os pacotes construídos "
+"estejam em conformidade com APIs de substituição."
 
 #: include/inspect.h:1597
 msgid ""
 "Check for forbidden paths in both the DT_RPATH and DT_RUNPATH settings in "
 "ELF shared objects."
 msgstr ""
+"Verifica caminhos proibidos nas configurações DT_RPATH e DT_RUNPATH em "
+"objetos ELF compartilhados."
 
 #: include/inspect.h:1603
 msgid ""
@@ -359,6 +548,10 @@ msgid ""
 "for any prohibited Unicode code points, as defined in the configuration "
 "file.  Any prohibited code points are reported as a possible security risk."
 msgstr ""
+"Verifica arquivos de código-fonte extraídos e corrigidos, scripts e arquivos "
+"de especificação RPM em busca de pontos de código Unicode proibidos, "
+"conforme definido no arquivo de configuração. Quaisquer pontos de código "
+"proibidos são relatados como um possível risco à segurança."
 
 #: include/inspect.h:1609
 msgid ""
@@ -368,6 +561,12 @@ msgid ""
 "will check for correct RPM dependency metadata when inspecting a single "
 "build and report findings."
 msgstr ""
+"Verifica os metadados de dependência de RPM corretos. Relata descobertas "
+"incorretas ou conflitantes, bem como alterações esperadas ao comparar uma "
+"versão nova com uma versão mais antiga. As alterações são relatadas apenas "
+"ao comparar compilações, mas esta inspeção verificará os metadados corretos "
+"de dependência de RPM ao inspecionar uma única compilação e relatará as "
+"descobertas."
 
 #: include/inspect.h:1615
 msgid ""
@@ -376,24 +575,35 @@ msgid ""
 "report where symbols unexpectedly appear or disappear and what corrective "
 "action is needed."
 msgstr ""
+"Verifica se os arquivos em pacotes RPM têm seus símbolos de depuração "
+"removidos e se os arquivos em pacotes debuginfo carregam símbolos de "
+"depuração. Ao comparar compilações, informa onde os símbolos aparecem ou "
+"desaparecem inesperadamente e quais ações corretivas são necessárias."
 
 #: include/inspect.h:1621
 msgid "Perform syntax check on udev rules files using udevadm verify."
 msgstr ""
+"Executa a verificação de sintaxe nos arquivos de regras do udev usando "
+"udevadm verify."
 
 #: include/results.h:31
 msgid "Change the string specified on the 'Vendor:' line in the spec file."
-msgstr ""
+msgstr "Altere a string especificada na linha 'Vendor:' no arquivo spec."
 
 #: include/results.h:38
 msgid "Make sure the SRPM is built on a host within the expected subdomain."
 msgstr ""
+"Certifique-se de que o SRPM seja compilado em um host dentro do subdomínio "
+"esperado."
 
 #: include/results.h:45
 msgid ""
 "Unprofessional language as defined in the configuration file was found in "
 "the text shown.  Remove or change the offending words and rebuild."
 msgstr ""
+"Linguagem não profissional conforme definida no arquivo de configuração foi "
+"encontrada no texto mostrado. Remova ou altere as palavras ofensivas e "
+"recompile."
 
 #: include/results.h:60 include/results.h:75
 #, c-format
@@ -401,6 +611,8 @@ msgid ""
 "Check to see if you eliminated a subpackage but still have the %package and/"
 "or the %files section for it."
 msgstr ""
+"Verifique se você eliminou um subpacote, mas ainda possui a seção %package e/"
+"ou %files para ele."
 
 #: include/results.h:90
 msgid ""
@@ -408,6 +620,10 @@ msgid ""
 "distribution (e.g., GPLv2+).  If the license in question is approved, the "
 "license database needs updating in the rpminspect-data package."
 msgstr ""
+"A tag License deve conter uma sequência de licença aprovada conforme "
+"definido pela distribuição (por exemplo, GPLv2+). Se a licença em questão é "
+"aprovada, o banco de dados de licenças precisará ser atualizado no pacote "
+"rpminspect-data."
 
 #: include/results.h:97
 msgid ""
@@ -415,6 +631,10 @@ msgid ""
 "valid licensedb file.  This is also commonly due to a missing vendor "
 "specific rpminspect-data package on the system."
 msgstr ""
+"Certifique-se de que a configuração do licensedb na configuração do "
+"rpminspect esteja definida como um arquivo licensedb válido. Isso também "
+"geralmente ocorre devido à falta de um pacote rpminspect-data específico do "
+"fornecedor no sistema."
 
 #: include/results.h:104
 msgid ""
@@ -425,36 +645,54 @@ msgid ""
 "but marked unapproved, you may need to work with the legal team regarding "
 "options for this software."
 msgstr ""
+"A abreviatura de licença especificada não está listada como aprovada no "
+"banco de dados de licenças. O banco de dados de licença é especificado no "
+"arquivo de configuração rpminspect. Verifique este arquivo e envie uma pull "
+"request ao projeto upstream apropriado para atualizar o banco de dados. Se a "
+"licença estiver listada no banco de dados, mas marcada como não aprovada, "
+"talvez seja necessário trabalhar com a equipe jurídica (Legal Team) em "
+"relação às opções para este software."
 
 #: include/results.h:119 include/results.h:154
 msgid "Ensure all object files are compiled with -fPIC"
 msgstr ""
+"Certifique-se de que todos os arquivos objeto sejam compilados com -fPIC"
 
 #: include/results.h:126
 msgid ""
 "Ensure that the package is being built with the correct compiler and "
 "compiler flags"
 msgstr ""
+"Certifique-se de que o pacote esteja sendo compilado com o compilador e "
+"sinalizadores de compilador corretos"
 
 #: include/results.h:133
 msgid ""
 "The data in an ELF file appears to be corrupt; ensure that packaged ELF "
 "files are not being truncated or incorrectly modified"
 msgstr ""
+"Os dados em um arquivo ELF parecem estar corrompidos; certifique-se que os "
+"arquivos ELF empacotados não estejam sendo truncados ou modificados "
+"incorretamente"
 
 #: include/results.h:140
 msgid ""
 "An ELF stack is marked as executable. Ensure that no execstack options are "
 "being passed to the linker, and that no functions are defined on the stack."
 msgstr ""
+"Uma pilha ELF é marcada como executável. Certifique-se de que nenhuma opção "
+"execstack esteja sendo passada para o vinculador e que nenhuma função esteja "
+"definida na pilha."
 
 #: include/results.h:147
 msgid "Ensure executables are linked with with '-z relro -z now'"
 msgstr ""
+"Certifique-se de que os executáveis estão vinculados a '-z relro -z now'"
 
 #: include/results.h:169
 msgid "Correct the errors in the man page as reported by the libmandoc parser."
 msgstr ""
+"Corrija os erros na página man conforme relatado pelo analisador libmandoc."
 
 #: include/results.h:176
 msgid ""
@@ -462,34 +700,47 @@ msgid ""
 "in the directory beneath /usr/share/man that matches the section number of "
 "the page."
 msgstr ""
+"Corrija o caminho de instalação da página man. As páginas man devem ser "
+"instaladas no diretório abaixo de /usr/share/man que corresponda ao número "
+"da seção da página."
 
 #: include/results.h:191
 msgid "Correct the reported errors in the XML document"
-msgstr ""
+msgstr "Corrija os erros relatados no documento XML"
 
 #: include/results.h:206
 msgid ""
 "Refer to the Desktop Entry Specification at https://standards.freedesktop."
 "org/desktop-entry-spec/latest/ for help correcting the errors and warnings"
 msgstr ""
+"Consulte a especificação de entrada de desktop em https://standards."
+"freedesktop.org/desktop-entry-spec/latest/ para obter ajuda na correção de "
+"erros e avisos"
 
 #: include/results.h:221
 msgid ""
 "The Release: tag in the spec file must include a '%{?dist}' string.  Please "
 "add this to the spec file per the distribution packaging guidelines."
 msgstr ""
+"A tag Release: no arquivo spec deve incluir uma string '%{?dist}'. Adicione "
+"isso ao arquivo spec de acordo com as diretrizes de empacotamento de "
+"distribuição."
 
 #: include/results.h:236
 msgid ""
 "The spec file name does not match the expected NAME.spec format.  Rename the "
 "spec file to conform to this policy."
 msgstr ""
+"O nome do arquivo spec não corresponde ao formato NOME.spec esperado. "
+"Renomeie o arquivo spec para estar em conformidade com esta política."
 
 #: include/results.h:253
 msgid ""
 "This package is part of a module but is missing the %{modularitylabel} "
 "header tag.  Add this as a %define in the spec file and rebuild."
 msgstr ""
+"Este pacote faz parte de um módulo, mas não possui a tag de cabeçalho "
+"%{modularitylabel}. Adicione isso como %define no arquivo spec e recompile."
 
 #: include/results.h:260
 msgid ""
@@ -499,6 +750,11 @@ msgid ""
 "rules determining if the /data/static_context setting is required, "
 "forbidden, or recommend."
 msgstr ""
+"Esta compilação contém uma configuração /data/static_context válida ou "
+"inválida. Consulte as regras do módulo do produto que você está compilando "
+"para determinar qual deve ser a configuração. As definições de configuração "
+"do rpminspect também definem as regras que determinam se a configuração /"
+"data/static_context é necessária, proibida ou recomendada."
 
 #: include/results.h:277
 msgid ""
@@ -506,24 +762,36 @@ msgid ""
 "met for the product release.  Ensure you are using the correct JDK for the "
 "build."
 msgstr ""
+"A versão do bytecode Java para um ou mais arquivos de classe na compilação "
+"não foi atendida na liberação do produto. Certifique-se de estar usando o "
+"JDK correto para a compilação."
 
 #: include/results.h:292
 msgid ""
 "File changes were found.  In most cases these are expected, but it is a good "
 "idea to verify the changes found are deliberate."
 msgstr ""
+"Foram encontradas alterações no arquivo. Na maioria dos casos, isto é "
+"esperado, mas é uma boa ideia verificar se as alterações encontradas são "
+"deliberadas."
 
 #: include/results.h:307
 msgid ""
 "Unexpected file moves were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file moves between builds."
 msgstr ""
+"Foram encontradas movimentações inesperadas de arquivos. Verifique se essas "
+"alterações estão corretas. Se não estiverem, ajuste a compilação para evitar "
+"que o arquivo seja movido entre as compilações."
 
 #: include/results.h:322
 msgid ""
 "Unexpected file removals were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file removals between builds."
 msgstr ""
+"Foram encontradas remoções inesperadas de arquivos. Verifique se essas "
+"alterações estão corretas. Se não estiverem, ajuste a compilação para evitar "
+"remoções de arquivos entre compilações."
 
 #: include/results.h:337
 #, c-format
@@ -535,6 +803,13 @@ msgid ""
 "You may also need to update the data package or local configuration file and "
 "change the forbidden_path_prefixes or forbidden_path_suffixes list."
 msgstr ""
+"Adições inesperadas de arquivos foram encontradas. Verifique se essas "
+"alterações estão corretas. Se não estiverem, ajuste a compilação para evitar "
+"adições de arquivos entre compilações. Se estiverem corretos, atualize %s e "
+"envie um patch para o projeto de dados rpminspect que possui esse arquivo "
+"para que o rpminspect saiba que pode esperar essa mudança. Você também pode "
+"precisar atualizar o pacote de dados ou o arquivo de configuração local e "
+"alterar a lista de forbidden_path_prefixes ou forbidden_path_suffixes."
 
 #: include/results.h:352
 #, c-format
@@ -544,6 +819,10 @@ msgid ""
 "deliberate, but needs inspection. If this change is expected, update %s and "
 "send a patch to the project that owns that file."
 msgstr ""
+"Conteúdo do arquivo fonte alterado inesperadamente. A versão do pacote não "
+"mudou entre as compilações, mas o conteúdo do arquivo fonte sim. Isto pode "
+"ser deliberado, mas precisa de inspeção. Se esta alteração for esperada, "
+"atualize %s e envie um patch para o projeto que possui esse arquivo."
 
 #: include/results.h:367
 #, c-format
@@ -552,6 +831,9 @@ msgid ""
 "permissions are expected, update %s and send a patch to the project that "
 "owns it."
 msgstr ""
+"Certifique-se de que a seção %%files inclua a macro %%defattr. Se essas "
+"permissões forem esperadas, atualize %s e envie um patch para o projeto que "
+"contenha isso."
 
 #: include/results.h:374
 #, c-format
@@ -560,6 +842,9 @@ msgid ""
 "configuration, which is usually root. If this ownership is expected, update "
 "%s and send a patch to the project that owns it."
 msgstr ""
+"Os arquivos de caminho bin devem pertencer ao bin_owner definido na "
+"configuração do rpminspect, que geralmente é root. Se esta propriedade for "
+"esperada, atualize %s e envie um patch para o projeto que contenha isso."
 
 #: include/results.h:381
 #, c-format
@@ -568,6 +853,9 @@ msgid ""
 "configuration, which is usually root. If this ownership is expect, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"Os arquivos de caminho bin devem pertencer ao bin_group definido na "
+"configuração do rpminspect, que geralmente é root. Se esta propriedade for "
+"esperada, atualize %s e envie um patch para o projeto que o possui."
 
 #: include/results.h:388
 #, c-format
@@ -576,6 +864,10 @@ msgid ""
 "or remove the world execute bit on the file (chmod o-x). If this ownership "
 "is expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"Faça chgrp do arquivo para bin_group definido na configuração do rpminspect "
+"ou remova o bit de execução mundial do arquivo (chmod o-x). Se esta "
+"propriedade for esperada, atualize %s e envie um patch para o projeto que "
+"contenha isso."
 
 #: include/results.h:395
 #, c-format
@@ -584,6 +876,10 @@ msgid ""
 "or remove the group write bit on the file (chmod g-w). If this ownership is "
 "expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"Use chgrp no arquivo para bin_group definido na configuração do rpminspect "
+"ou remova o bit de gravação do grupo no arquivo (chmod g-w). Se esta "
+"propriedade for esperada, atualize %s e envie um patch para o projeto que "
+"contenha isso."
 
 #: include/results.h:402
 #, c-format
@@ -592,6 +888,10 @@ msgid ""
 "process to set correct owner and group information. If expected, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"Verifique se as mudanças de propriedade são esperadas. Caso contrário, "
+"ajuste o processo de compilação do pacote para definir as informações "
+"corretas do proprietário e do grupo. Se esperado, atualize %s e envie um "
+"patch para o projeto que contenha isso."
 
 #: include/results.h:409
 msgid ""
@@ -602,22 +902,33 @@ msgid ""
 "remedy, add a fileinfo rule for this file to the vendor data package under "
 "the appropriate product release file."
 msgstr ""
+"O rpminspect está esperando uma regra fileinfo do pacote de dados do "
+"fornecedor para este arquivo. Normalmente, isso significa que o arquivo "
+"carrega um conjunto de permissões não padrão (por exemplo, setuid), que é "
+"uma condição em que o rpminspect verificaria a lista de informações do "
+"arquivo para garantir que o pacote esteja em conformidade com as regras do "
+"fornecedor. Para remediar, adicione uma regra fileinfo para esse arquivo ao "
+"pacote de dados do fornecedor no arquivo de versão do produto apropriado."
 
 #: include/results.h:424
 msgid "Consult the shell documentation for proper syntax."
-msgstr ""
+msgstr "Consulte a documentação do shell para obter a sintaxe correta."
 
 #: include/results.h:431
 msgid ""
 "The file referenced was not a known shell script in the before build but is "
 "now a shell script in the after build."
 msgstr ""
+"O arquivo referenciado não era um script de shell conhecido na compilação "
+"anterior, mas agora é um script de shell na compilação posterior."
 
 #: include/results.h:438
 msgid ""
 "The referenced shell script is invalid. Consider debugging it with the '-n' "
 "option on the shell to find and fix the problem."
 msgstr ""
+"O script de shell referenciado é inválido. Considere depurá-lo com a opção '-"
+"n' no shell para localizar e corrigir o problema."
 
 #: include/results.h:453
 msgid "See annocheck(1) for more information."
@@ -630,6 +941,11 @@ msgid ""
 "declarations). Symbols may also appear as unfortified if the compiler is "
 "unable to determine the size of a buffer, which is not necessarily an error."
 msgstr ""
+"Certifique-se de que todos os arquivos de objeto sejam compilados com '-O2 -"
+"D_FORTIFY_SOURCE=2' e que todos os cabeçalhos apropriados sejam incluídos ("
+"sem declarações de função implícitas). Os símbolos também podem parecer não "
+"fortificados se o compilador não for capaz de determinar o tamanho de um "
+"buffer, o que não é necessariamente um erro."
 
 #: include/results.h:475
 msgid ""
@@ -639,6 +955,12 @@ msgid ""
 "If they are not, modify the package spec file to ensure the build links with "
 "the correct shared libraries."
 msgstr ""
+"Símbolos DT_NEEDED foram adicionados ou removidos. Isso acontece quando o "
+"ambiente de compilação possui versões diferentes das bibliotecas "
+"necessárias. Às vezes isso é deliberado, mas às vezes não. Verifique se "
+"essas alterações são esperadas. Se não estiverem, modifique o arquivo spec "
+"do pacote para garantir que a compilação esteja vinculada às bibliotecas "
+"compartilhadas corretas."
 
 #: include/results.h:490
 msgid ""
@@ -646,6 +968,9 @@ msgid ""
 "is, you can adjust the filesize inspection settings in the rpminspect.yaml "
 "file."
 msgstr ""
+"Um arquivo cresceu bastante. Certifique-se de que esta alteração seja "
+"intencional. Se estiver, você pode ajustar as configurações de inspeção de "
+"tamanho de arquivo no arquivo rpminspect.yaml."
 
 #: include/results.h:497
 msgid ""
@@ -653,18 +978,27 @@ msgid ""
 "it is, you can adjust the filesize inspection settings in the rpminspect."
 "yaml file."
 msgstr ""
+"Um arquivo encolheu bastante. Certifique-se de que esta alteração seja "
+"intencional. Se estiver, você pode ajustar as configurações de inspeção de "
+"tamanho de arquivo no arquivo rpminspect.yaml."
 
 #: include/results.h:504
 msgid ""
 "A previously empty file is no longer empty.  Make sure this change is "
 "intended and fix the package spec file if necessary."
 msgstr ""
+"Um arquivo anteriormente vazio não está mais vazio. Certifique-se de que "
+"essa alteração seja intencional e corrija o arquivo spec do pacote, se "
+"necessário."
 
 #: include/results.h:511
 msgid ""
 "A previously non-empty file is now empty.  Make sure this change is intended "
 "and fix the package space file if necessary."
 msgstr ""
+"Um arquivo anteriormente não vazio agora está vazio. Certifique-se de que "
+"essa alteração seja intencional e corrija o arquivo de espaço do pacote, se "
+"necessário."
 
 #: include/results.h:526
 #, c-format
@@ -675,6 +1009,12 @@ msgid ""
 "may also be of help for this situation.  If necessary, update %s with the "
 "changes found here and send a patch to the project that owns the data file."
 msgstr ""
+"Recursos inesperados foram encontrados no arquivo indicado. Consulte "
+"capabilities(7) e ajuste os arquivos no pacote ou modifique a lista de "
+"capacidades no pacote de dados de fornecedores do rpminspect. A equipe de "
+"segurança também pode ajudar nesta situação. Se necessário, atualize %s com "
+"as alterações encontradas aqui e envie um patch para o projeto que possui o "
+"arquivo de dados."
 
 #: include/results.h:541
 msgid ""
@@ -682,6 +1022,9 @@ msgid ""
 "usability problems for users if module parameters were removed in a "
 "maintenance update."
 msgstr ""
+"Os parâmetros de módulo do kernel foram removidos entre as compilações. Isto "
+"pode apresentar problemas de usabilidade para os usuários se os parâmetros "
+"de módulo forem removidos em uma atualização de manutenção."
 
 #: include/results.h:548
 msgid ""
@@ -689,6 +1032,9 @@ msgid ""
 "usability problems for users if module dependencies changed in a maintenance "
 "update."
 msgstr ""
+"Dependências do módulo do kernel alteradas entre compilações. Isto pode "
+"apresentar problemas de usabilidade para os usuários se as dependências do "
+"módulo forem alteradas em uma atualização de manutenção."
 
 #: include/results.h:555
 msgid ""
@@ -696,6 +1042,9 @@ msgid ""
 "usability problems for users if module device aliases changed in a "
 "maintenance update."
 msgstr ""
+"Apelidos de dispositivos do módulo kernel alterados entre compilações. Isso "
+"pode apresentar problemas de usabilidade para os usuários se os aliases dos "
+"dispositivos do módulo forem alterados em uma atualização de manutenção."
 
 #: include/results.h:565
 msgid ""
@@ -703,12 +1052,17 @@ msgid ""
 "build.  This may be deliberate, but check to make sure you do not have any "
 "unexpected ExclusiveArch lines in the spec file."
 msgstr ""
+"Uma arquitetura presente na compilação anterior agora está faltando na "
+"compilação posterior. Isso pode ser deliberado, mas verifique se você não "
+"possui nenhuma linha ExclusiveArch inesperada no arquivo spec."
 
 #: include/results.h:566
 msgid ""
 "A new architecture has appeared in the after build.  This may indicate "
 "progress in the world of computing."
 msgstr ""
+"Uma nova arquitetura apareceu após a compilação. Isto pode indicar progresso "
+"no mundo da computação."
 
 #: include/results.h:576
 msgid ""
@@ -716,12 +1070,17 @@ msgid ""
 "This may be deliberate, but check to make sure you have correct syntax "
 "defining the subpackage in the spec file"
 msgstr ""
+"Um subpacote presente na compilação anterior agora está ausente na "
+"compilação posterior. Isso pode ser deliberado, mas verifique se você possui "
+"a sintaxe correta definindo o subpacote no arquivo spec"
 
 #: include/results.h:577
 msgid ""
 "A new subpackage has appeared in the after build.  This may indicate "
 "progress in the world of computing."
 msgstr ""
+"Um novo subpacote apareceu após a compilação. Isso pode indicar progresso no "
+"mundo da computação."
 
 #: include/results.h:587
 #, c-format
@@ -729,18 +1088,25 @@ msgid ""
 "Make sure the spec file in the after build contains a valid %changelog "
 "section."
 msgstr ""
+"Certifique-se de que o arquivo spec na compilação posterior contenha uma "
+"seção %changelog válida."
 
 #: include/results.h:597
 msgid ""
 "Files should not be installed in old directory names.  Modify the package to "
 "install the affected file to the preferred directory."
 msgstr ""
+"Os arquivos não devem ser instalados em nomes de diretórios antigos. "
+"Modifique o pacote para instalar o arquivo afetado no diretório preferido."
 
 #: include/results.h:607
 msgid ""
 "ELF .o and .a files should not carry LTO (Link Time Optimization) bytecode.  "
 "Make sure you have stripped LTO bytecode from those files at install time."
 msgstr ""
+"Os arquivos ELF .o e .a não devem conter bytecode LTO (Link Time "
+"Optimization). Certifique-se de ter removido o bytecode LTO desses arquivos "
+"no momento da instalação."
 
 #: include/results.h:617
 msgid ""
@@ -749,6 +1115,12 @@ msgid ""
 "and have a non-symlink turn in to a symlink, ensure this is deliberate.  "
 "NOTE:  You cannot turn a directory in to a symlink due to RPM limitations."
 msgstr ""
+"Certifique-se de que os links simbólicos apontem para um destino válido em "
+"um dos subpacotes da compilação; links simbólicos pendentes (dangling) não "
+"são permitidos. Se você estiver comparando compilações e um link não "
+"simbólico se transformar em um link simbólico, certifique-se de que isso "
+"seja deliberado. NOTA: Você não pode transformar um diretório em um link "
+"simbólico devido às limitações do RPM."
 
 #: include/results.h:618
 #, c-format
@@ -761,6 +1133,15 @@ msgid ""
 "scriptlet for replacing a directory.  See the packaging guidelines for "
 "'Scriptlet to replace a directory' for more information."
 msgstr ""
+"Certifique-se de que os links simbólicos apontem para um destino válido em "
+"um dos subpacotes da compilação; links simbólicos pendentes (dandling) não "
+"são permitidos. Se você estiver comparando compilações e um link não "
+"simbólico se transformar em um link simbólico, certifique-se de que isso "
+"seja deliberado. NOTA: Você não pode transformar um diretório em um link "
+"simbólico devido às limitações do RPM. Se for absolutamente necessário fazer "
+"isso, certifique-se de incluir o scriptlet %pretrans para substituir um "
+"diretório. Consulte as diretrizes de empacotamento para 'Scriptlet para "
+"substituir um diretório' para obter mais informações."
 
 #: include/results.h:628
 #, c-format
@@ -770,6 +1151,10 @@ msgid ""
 "See the RPM documentation or distribution package maintainer guide for more "
 "information."
 msgstr ""
+"Remova referências de caminhos proibidos da linha indicada na seção %files. "
+"Em muitos casos, você pode usar macros RPM para especificar locais de "
+"caminho. Consulte a documentação do RPM ou o guia do mantenedor do pacote de "
+"distribuição para obter mais informações."
 
 #: include/results.h:638
 msgid ""
@@ -777,6 +1162,9 @@ msgid ""
 "is intended and if necessary fix the spec file so the correct file is "
 "included in the built package."
 msgstr ""
+"Em muitos casos, a alteração do tipo MIME é deliberada. Verifique se a "
+"alteração é intencional e, se necessário, corrija o arquivo spec para que o "
+"arquivo correto seja incluído no pacote compilado."
 
 #: include/results.h:648
 msgid ""
@@ -784,6 +1172,10 @@ msgid ""
 "users.  See the abidiff(1) documentation and the distribution ABI policies "
 "to determine if this detected change is allowed."
 msgstr ""
+"As alterações da ABI introduzidas durante as atualizações de manutenção "
+"podem causar problemas para os usuários. Consulte a documentação do "
+"abidiff(1) e as políticas de distribuição da ABI para determinar se esta "
+"alteração detectada é permitida."
 
 #: include/results.h:658
 msgid ""
@@ -791,6 +1183,10 @@ msgid ""
 "problems for users.  See the libabigail documentation and the distribution "
 "KMI policy to determine if this detected change is allowed."
 msgstr ""
+"A interface do módulo kernel introduzida durante as atualizações de "
+"manutenção pode causar problemas para os usuários. Consulte a documentação "
+"do libabigail e a política KMI de distribuição para determinar se esta "
+"alteração detectada é permitida."
 
 #: include/results.h:668
 #, c-format
@@ -800,6 +1196,11 @@ msgid ""
 "configuration files, make sure the package can handle upgrading an existing "
 "package -or- honor the old file locations."
 msgstr ""
+"As alterações em %config devem ser feitas com cuidado. Certifique-se de ter "
+"instalado o arquivo correto e no local correto. Se um pacote estiver "
+"reestruturando arquivos de configuração, certifique-se de que o pacote possa "
+"lidar com a atualização de um pacote existente -ou- respeite os locais de "
+"arquivo antigos."
 
 #: include/results.h:678
 #, c-format
@@ -808,6 +1209,10 @@ msgid ""
 "the package is not a rebase.  Sometimes upstream projects rename or move "
 "documentation files and the spec file needs to account for those changes."
 msgstr ""
+"Alterações encontradas entre os arquivos %doc. Verifique se essas alterações "
+"são intencionais se o pacote não for um rebase. Às vezes, os projetos "
+"upstream renomeiam ou movem arquivos de documentação e o arquivo spec "
+"precisa levar em conta essas alterações."
 
 #: include/results.h:688
 msgid ""
@@ -817,6 +1222,11 @@ msgid ""
 "the source package has any zero length or otherwise invalid patches and "
 "correct the problem."
 msgstr ""
+"Um arquivo de patch inválido foi encontrado. Geralmente, isso é o resultado "
+"da geração de uma coleção de patches comparando duas árvores. Quando os "
+"arquivos desaparecem, isso pode levar a patches de comprimento zero na "
+"coleção resultante. Verifique se o pacote fonte tem comprimento zero ou "
+"patches inválidos e corrija o problema."
 
 #: include/results.h:690
 #, c-format
@@ -830,6 +1240,15 @@ msgid ""
 "define the patch at the top of the spec file.  So Patch47 is applied with "
 "either a '%patch 47', '%patch -P 47', '%patch -P47', or '%patch47' macro."
 msgstr ""
+"O patch nomeado está definido no cabeçalho do RPM fonte (isso significa que "
+"possui uma definição PatchN: no arquivo spec), mas não é aplicado em nenhum "
+"lugar do arquivo spec. Está faltando uma macro %patch correspondente e o "
+"arquivo spec não possui as macros %autosetup ou %autopatch. Você pode "
+"corrigir isso adicionando a macro %patch apropriada no arquivo spec ("
+"geralmente na seção %prep). O número especificado com a macro %patch "
+"corresponde ao número usado para definir o patch no topo do arquivo spec. "
+"Portanto, Patch47 é aplicado com uma macro '%patch 47', '%patch -P 47', "
+"'%patch -P47' ou '%patch47'."
 
 #: include/results.h:692
 #, c-format
@@ -839,12 +1258,18 @@ msgid ""
 "For example, Patch47 needs to have either a '%patch 47', '%patch -P 47', "
 "'%patch -P47', or '%patch47' macro."
 msgstr ""
+"O patch nomeado está definido, mas não corresponde por número à macro "
+"%patch. Certifique-se de que todos os patches numerados tenham macros %patch "
+"correspondentes. Por exemplo, Patch47 precisa ter uma macro '%patch 47', "
+"'%patch -P 47', '%patch -P47' ou '%patch47'."
 
 #: include/results.h:694
 msgid ""
 "The defined patch file is not something rpminspect can handle.  This is "
 "likely a bug and should be reported to the upstream rpminspect project."
 msgstr ""
+"O arquivo de patch definido não é algo que o rpminspect possa manipular. "
+"Provavelmente é um bug e deve ser relatado ao projeto upstream do rpminspect."
 
 #: include/results.h:704
 msgid ""
@@ -854,6 +1279,11 @@ msgid ""
 "sure the file in question is clean, please file a bug with rpminspect for "
 "further help."
 msgstr ""
+"ClamAV encontrou um vírus no arquivo nomeado. Isso pode ser um falso "
+"positivo, mas você deve inspecionar manualmente o arquivo em questão para "
+"garantir que esteja limpo. Isso pode ser um problema com o banco de dados ou "
+"detecção do ClamAV. Se você tiver certeza de que o arquivo em questão está "
+"limpo, registre um bug no rpminspect para obter mais ajuda."
 
 #: include/results.h:714
 #, c-format
@@ -863,6 +1293,10 @@ msgid ""
 "vendor data package for the product.  Modify the %s file and send a patch to "
 "the project that owns it."
 msgstr ""
+"Um arquivo com potencial conteúdo politicamente sensível foi encontrado no "
+"pacote. Se esse arquivo for permitido, ele deverá ser adicionado ao pacote "
+"de dados do fornecedor rpminspect do produto. Modifique o arquivo %s e envie "
+"um patch para o projeto que contém isso."
 
 #: include/results.h:724
 msgid ""
@@ -875,6 +1309,14 @@ msgid ""
 "order to allow for backwards compatibility.  Whenever possible the "
 "deprecated functions should not be used."
 msgstr ""
+"Símbolos proibidos foram encontrados em um arquivo ELF no pacote. As "
+"definições de configuração do rpminspect indicam que os símbolos nomeados "
+"são proibidos em pacotes. Se isso for deliberado, você pode desabilitar a "
+"inspeção de badfuncs. Se não for deliberado, verifique as páginas de manual "
+"dos símbolos nomeados para ver quais funções da API substituíram os símbolos "
+"proibidos. Normalmente, uma função é marcada como descontinuada, mas ainda "
+"fornecida para permitir compatibilidade com versões anteriores. Sempre que "
+"possível, as funções obsoletas não devem ser usadas."
 
 #: include/results.h:734
 msgid ""
@@ -885,6 +1327,12 @@ msgid ""
 "try using a program such as patchelf to remove these properties from the ELF "
 "files."
 msgstr ""
+"As propriedades DT_RPATH ou DT_RUNPATH foram encontradas em objetos "
+"compartilhados ELF neste pacote. O uso de DT_RPATH e DT_RUNPATH é "
+"desencorajado, exceto em determinadas situações. Verifique se você desativou "
+"o rpath durante o estágio %build do arquivo spec. Se não conseguir fazer "
+"isso facilmente, você pode tentar usar um programa como o patchelf para "
+"remover essas propriedades dos arquivos ELF."
 
 #: include/results.h:736
 msgid ""
@@ -892,6 +1340,10 @@ msgid ""
 "This indicates a linker error and should not happen.  ELF objects should "
 "only carry DT_RPATH or DT_RUNPATH, never both."
 msgstr ""
+"As propriedades DT_RPATH e DT_RUNPATH foram encontradas em um objeto "
+"compartilhado ELF. Isso indica um erro do vinculador e não deveria "
+"acontecer. Objetos ELF devem carregar apenas DT_RPATH ou DT_RUNPATH, nunca "
+"ambos."
 
 #: include/results.h:746
 msgid ""
@@ -901,6 +1353,11 @@ msgid ""
 "discuss the situation with the Product Security Team to determine the "
 "correct course of action."
 msgstr ""
+"O arquivo de configuração rpminspect contém uma lista de pontos de código "
+"Unicode proibidos. Um foi encontrado na árvore de fontes extraída e "
+"corrigida ou em um dos arquivos de texto fonte no RPM de origem. Remova esse "
+"ponto de código ou discuta a situação com a equipe de segurança do produto "
+"para determinar o curso de ação correto."
 
 #: include/results.h:748
 #, c-format
@@ -911,6 +1368,11 @@ msgid ""
 "running.  A common cause is removal of the working directory while the "
 "program is executing."
 msgstr ""
+"A seção %prep do arquivo spec não pôde ser executada por algum motivo. Isso "
+"geralmente resulta de uma falha no librpmbuild, que geralmente está ligada a "
+"problemas de extração de arquivos ou à alteração do sistema de arquivos "
+"enquanto o rpminspect está em execução. Uma causa comum é a remoção do "
+"diretório de trabalho enquanto o programa está em execução."
 
 #: include/results.h:758
 msgid ""
@@ -918,6 +1380,10 @@ msgid ""
 "Check the spec file for this dependency and ensure you have not misspelled a "
 "macro or used a macro name that does not exist."
 msgstr ""
+"Macros de arquivo spec RPM não expandidas foram encontradas na regra de "
+"dependência observada. Verifique o arquivo spec dessa dependência e "
+"certifique-se de não ter digitado uma macro incorretamente ou usado um nome "
+"de macro que não existe."
 
 #: include/results.h:760
 msgid ""
@@ -926,6 +1392,10 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{version}-%{release}' "
 "in the spec file."
 msgstr ""
+"Adicione o Requires explícito indicado ao arquivo spec do subpacote nomeado. "
+"Subpacotes que dependem de bibliotecas compartilhadas em outro subpacote "
+"devem conter um 'Requires: NOME_SUBPACOTE = %{version}-%{release}' explícito "
+"no arquivo spec."
 
 #: include/results.h:762
 msgid ""
@@ -934,6 +1404,10 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{epoch}:%{version}-"
 "%{release}' in the spec file."
 msgstr ""
+"Adicione o Requires explícito indicado ao arquivo spec do subpacote nomeado. "
+"Os subpacotes que dependem de bibliotecas compartilhadas em outro subpacote "
+"devem conter um explícito 'Requires: NOME_SUBPACOTE = "
+"%{epoch}:%{version}-%{release}' no arquivo spec."
 
 #: include/results.h:764
 #, c-format
@@ -944,6 +1418,12 @@ msgid ""
 "spec file but you do need to make sure only one subpackage is packaging up "
 "the shared library in question."
 msgstr ""
+"Verifique as seções %files do subpacote e as instruções Provides explícitas. "
+"Apenas um subpacote deve fornecer uma determinada biblioteca compartilhada. "
+"Os nomes das bibliotecas compartilhadas são adicionados automaticamente como "
+"Provides, portanto não há necessidade de especificá-los no arquivo spec, mas "
+"você precisa ter certeza de que apenas um subpacote está empacotando a "
+"biblioteca compartilhada em questão."
 
 #: include/results.h:766
 msgid ""
@@ -953,6 +1433,12 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Uma dependência listada na compilação anterior foi alterada para a "
+"dependência indicada na compilação posterior. Se este for um resultado "
+"VERIFY, significa que o rpminspect notou a mudança no que considera uma "
+"atualização de manutenção em um pacote. Um resultado INFO significa que ele "
+"percebeu essa mudança, mas considera que está tudo bem porque está "
+"comparando uma compilação rebaseada."
 
 #: include/results.h:768
 msgid ""
@@ -962,6 +1448,11 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Uma nova dependência é vista na compilação posterior que não estava presente "
+"na compilação anterior. Se este for um resultado VERIFY, significa que o "
+"rpminspect notou a mudança no que considera uma atualização de manutenção em "
+"um pacote. Um resultado INFO significa que ele percebeu essa mudança, mas "
+"considera que está tudo bem porque está comparando uma compilação rebaseada."
 
 #: include/results.h:770
 msgid ""
@@ -971,6 +1462,12 @@ msgid ""
 "An INFO result means it noticed this change, but deems it ok because it is "
 "comparing a rebased build."
 msgstr ""
+"Uma dependência vista na compilação anterior não é vista na compilação "
+"posterior, o que significa que foi removida ou perdida. Se este for um "
+"resultado VERIFY, significa que o rpminspect notou a mudança no que "
+"considera uma atualização de manutenção em um pacote. Um resultado INFO "
+"significa que ele percebeu essa mudança, mas considera que está tudo bem "
+"porque está comparando uma compilação rebaseada."
 
 #: include/results.h:772
 msgid ""
@@ -980,27 +1477,33 @@ msgid ""
 "%{version}-%{release}' to capture the package package Epoch in the "
 "dependency."
 msgstr ""
+"O pacote tem um valor de Epoch maior que zero, mas as dependências "
+"explícitas do subpacote não o utilizam de forma consistente. Para a "
+"dependência relatada, '= %{version}-%{release}' precisa mudar para '= "
+"%{epoch}:%{version}-%{release}' para capturar o pacote Epoch na dependência."
 
 #: include/results.h:781
 msgid ""
 "Refer to the udev documentation at https://www.freedesktop.org/software/"
 "systemd/man/udev.html for help correcting the errors and warnings."
 msgstr ""
+"Consulte a documentação do udev em https://www.freedesktop.org/software/"
+"systemd/man/udev.html para obter ajuda na correção de erros e avisos."
 
 #: lib/abi.c:65
 #, c-format
 msgid "*** malformed ABI level identifier: %s"
-msgstr ""
+msgstr "*** identificador de nível ABI malformado: %s"
 
 #: lib/abi.c:70
 #, c-format
 msgid "*** ABI level %d already defined"
-msgstr ""
+msgstr "*** nível ABI %d já definido"
 
 #: lib/abi.c:84
 #, c-format
 msgid "*** malformed ABI level entry: %s"
-msgstr ""
+msgstr "*** entrada de nível ABI malformada: %s"
 
 #: lib/builds.c:73
 #, c-format
@@ -1010,7 +1513,7 @@ msgstr ""
 #: lib/builds.c:85
 #, c-format
 msgid "*** unknown working directory type: %d"
-msgstr ""
+msgstr "*** tipo de diretório de trabalho desconhecido: %d"
 
 #: lib/builds.c:173
 #, c-format
@@ -1020,7 +1523,7 @@ msgstr ""
 #: lib/builds.c:205
 #, c-format
 msgid "*** unknown directory member encountered: %s"
-msgstr ""
+msgstr "*** membro de diretório desconhecido encontrado: %s"
 
 #: lib/builds.c:234
 #, c-format
@@ -1030,12 +1533,13 @@ msgstr ""
 #: lib/builds.c:235 lib/peers.c:177
 #, c-format
 msgid "    Need %s in %s, have %s.\n"
-msgstr ""
+msgstr "    Preciso de %s em %s, tenho %s.\n"
 
 #: lib/builds.c:236 lib/peers.c:178
 #, c-format
 msgid "See the `-w' option for specifying an alternate working directory.\n"
 msgstr ""
+"Veja a opção `-w' para especificar um diretório de trabalho alternativo.\n"
 
 #: lib/builds.c:249
 #, c-format
