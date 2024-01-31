@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-01-31 20:40+0000\n"
-"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
+"PO-Revision-Date: 2024-01-31 21:23+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -1553,33 +1553,33 @@ msgstr ""
 #: lib/builds.c:250
 #, c-format
 msgid "Ensure %s has sufficient space available."
-msgstr "Garante que %s tem espaço suficiente disponível."
+msgstr "Certifique-se de que %s tenha espaço suficiente disponível."
 
 #: lib/builds.c:290 lib/builds.c:294
 msgid "build"
-msgstr ""
+msgstr "compilação"
 
 #: lib/builds.c:320
 msgid "Downloading module"
-msgstr ""
+msgstr "Baixando módulo"
 
 #: lib/builds.c:323
 msgid "Downloading RPM build"
-msgstr ""
+msgstr "Baixando compilação de RPM"
 
 #: lib/builds.c:373 lib/inspect_modularity.c:47
 #, c-format
 msgid "*** ignoring malformed module metadata file: %s"
-msgstr ""
+msgstr "*** ignorando arquivo de metadados de módulo malformado: %s"
 
 #: lib/builds.c:383
 #, c-format
 msgid "*** malformed rpm filters in file: %s"
-msgstr ""
+msgstr "*** filtros rpm malformados no arquivo: %s"
 
 #: lib/builds.c:541 lib/builds.c:545
 msgid "task"
-msgstr ""
+msgstr "tarefa"
 
 #: lib/builds.c:659 lib/builds.c:662
 msgid "RPM"
@@ -1588,32 +1588,32 @@ msgstr "RPM"
 #: lib/builds.c:791
 #, c-format
 msgid "*** `%s' already exists in %s"
-msgstr ""
+msgstr "*** `%s' já existe em %s"
 
 #: lib/builds.c:829
 #, c-format
 msgid "*** unable to find local build: %s"
-msgstr ""
+msgstr "*** não foi possível encontrar a compilação local: %s"
 
 #: lib/builds.c:841
 #, c-format
 msgid "*** unable to download RPM: %s"
-msgstr ""
+msgstr "*** não foi possível baixar o RPM: %s"
 
 #: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
 #, c-format
 msgid "*** unable to find build %s in Koji hub %s"
-msgstr ""
+msgstr "*** não foi possível encontrar a compilação %s no hub do Koji %s"
 
 #: lib/builds.c:872
 #, c-format
 msgid "*** unable to find task %s in Koji hub %s"
-msgstr ""
+msgstr "*** não foi possível encontrar a tarefa %s no hub do Koji %s"
 
 #: lib/checksums.c:91
 #, c-format
 msgid "*** %s is a FIFO"
-msgstr ""
+msgstr "*** %s é um FIFO"
 
 #: lib/copyfile.c:117
 #, c-format
@@ -1622,17 +1622,17 @@ msgstr "%s já existe"
 
 #: lib/copyfile.c:122
 msgid ", overwriting"
-msgstr ""
+msgstr ", sobrescrevendo"
 
 #: lib/curl.c:267 lib/readfile.c:60
 #, c-format
 msgid "*** unable to read %s"
-msgstr ""
+msgstr "*** não foi possível ler %s"
 
 #: lib/fileinfo.c:64
 #, c-format
 msgid "%s in %s on %s carries expected mode %04o"
-msgstr ""
+msgstr "%s em %s em %s carrega o modo esperado %04o"
 
 #: lib/fileinfo.c:76
 #, c-format
@@ -1640,6 +1640,8 @@ msgid ""
 "%s in %s on %s carries unexpected mode %04o; expected mode %04o; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s em %s em %s carrega o modo inesperado %04o; esperava-se o modo %04o; "
+"requer inspeção pela Equipe de Segurança"
 
 #: lib/fileinfo.c:96
 #, c-format
@@ -1647,11 +1649,13 @@ msgid ""
 "%s in %s on %s carries insecure mode %04o, Security Team review may be "
 "required"
 msgstr ""
+"%s em %s em %s carrega o modo inseguro %04o, uma revisão da Equipe de "
+"Segurança pode ser necessária"
 
 #: lib/fileinfo.c:155
 #, c-format
 msgid "%s in %s on %s carries expected owner '%s'"
-msgstr ""
+msgstr "%s em %s em %s carrega o proprietário esperado '%s'"
 
 #: lib/fileinfo.c:168
 #, c-format
@@ -1659,6 +1663,8 @@ msgid ""
 "%s in %s on %s carries unexpected owner '%s'; expected owner '%s'; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s em %s em %s carrega um proprietário inesperado '%s'; esperava-se o "
+"proprietário '%s'; requer inspeção pela Equipe de Segurança"
 
 #: lib/fileinfo.c:192 lib/fileinfo.c:286
 #, c-format
@@ -1666,11 +1672,14 @@ msgid ""
 "%s in %s on %s carries insecure mode %04o but has no fileinfo rule for owner "
 "specification, Security Team review may be required"
 msgstr ""
+"%s em %s em %s carrega o modo inseguro %04o, mas não tem regra fileinfo para "
+"especificação do proprietário, pode ser necessária uma revisão da Equipe de "
+"Segurança"
 
 #: lib/fileinfo.c:249
 #, c-format
 msgid "%s in %s on %s carries expected group '%s'"
-msgstr ""
+msgstr "%s em %s em %s carrega o grupo esperado '%s'"
 
 #: lib/fileinfo.c:262
 #, c-format
@@ -1678,80 +1687,88 @@ msgid ""
 "%s in %s on %s carries group unexpected '%s'; expected group '%s'; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s em %s em %s carrega o grupo inesperado '%s'; esperava-se o grupo '%s'; "
+"requer inspeção pela Equipe de Segurança"
 
 #: lib/init.c:226
 #, c-format
 msgid "*** invalid input string `%s`"
-msgstr ""
+msgstr "*** string de entrada inválida `%s`"
 
 #: lib/init.c:253 lib/init.c:262 lib/init.c:270 lib/init.c:282 lib/init.c:291
 #: lib/init.c:299 lib/init.c:311 lib/init.c:320 lib/init.c:328 lib/init.c:340
 #, c-format
 msgid "*** invalid mode string: %s"
-msgstr ""
+msgstr "*** string de modo inválido: %s"
 
 #: lib/init.c:378
 #, c-format
 msgid "*** problem adding entries to array %s->%s"
-msgstr ""
+msgstr "*** problema ao adicionar entradas ao array %s->%s"
 
 #: lib/init.c:399
 #, c-format
 msgid "*** problem adding ignore entries to %s"
-msgstr ""
+msgstr "*** problema ao adicionar entradas ignoradas em %s"
 
 #: lib/init.c:418 lib/init.c:432
 msgid "*** error reading "
-msgstr ""
+msgstr "*** erro ao ler "
 
 #: lib/init.c:458
 #, c-format
 msgid "*** ignoring malformed section %s->%s"
-msgstr ""
+msgstr "*** ignorando seção malformada %s->%s"
 
 #: lib/init.c:515 lib/init.c:528
 #, c-format
 msgid "*** error reading %s ignore pattern"
-msgstr ""
+msgstr "*** erro ao ler o padrão a ser ignorado %s"
 
 #: lib/init.c:544
 #, c-format
 msgid "*** flag must be 'on' or 'off'; ignoring '%s'"
-msgstr ""
+msgstr "*** o sinalizador deve ser 'on' ou 'off'; ignorando '%s'"
 
 #: lib/init.c:548
 #, c-format
 msgid "*** unknown inspections: `%s`"
-msgstr ""
+msgstr "*** inspeções desconhecidas: `%s`"
 
 #: lib/init.c:559
 msgid "*** malformed/unknown inspections section"
-msgstr ""
+msgstr "*** seção de inspeções malformadas/desconhecidas"
 
 #: lib/init.c:591
 #, c-format
 msgid "*** ignoring malformed %s configuration file: %s"
-msgstr ""
+msgstr "*** ignorando arquivo de configuração %s malformado: %s"
 
 #: lib/init.c:653
 #, c-format
 msgid "*** unknown modularity static context settiongs '%s'"
 msgstr ""
+"*** configurações de contexto estático de modularidade desconhecida '%s'"
 
 #: lib/init.c:717
 #, c-format
 msgid "*** unknown specname match setting '%s', defaulting to 'full'"
 msgstr ""
+"*** configuração de correspondência de nome de especificação desconhecido "
+"'%s', usando o padrão 'full'"
 
 #: lib/init.c:732
 #, c-format
 msgid "*** unknown specname primary setting '%s', defaulting to 'name'"
 msgstr ""
+"*** configuração primária de nome de especificação desconhecido '%s', usando "
+"o padrão 'name'"
 
 #: lib/init.c:747
 #, c-format
 msgid "*** invalid annocheck failure_reporting_level: %s, defaulting to %s"
 msgstr ""
+"*** failure_reporting_level inválido do annocheck: %s, usando o padrão %s"
 
 #: lib/init.c:804
 msgid "*** malformed badfuncs->allowed section"
