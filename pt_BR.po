@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
 "PO-Revision-Date: 2024-01-31 20:40+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -932,7 +932,7 @@ msgstr ""
 
 #: include/results.h:453
 msgid "See annocheck(1) for more information."
-msgstr ""
+msgstr "Veja annocheck(1) para mais informações."
 
 #: include/results.h:460
 msgid ""
@@ -1508,7 +1508,7 @@ msgstr "*** entrada de nível ABI malformada: %s"
 #: lib/builds.c:73
 #, c-format
 msgid "*** unable to create download directory %s"
-msgstr ""
+msgstr "*** não foi possível criar o diretório de download %s"
 
 #: lib/builds.c:85
 #, c-format
@@ -1518,7 +1518,7 @@ msgstr "*** tipo de diretório de trabalho desconhecido: %d"
 #: lib/builds.c:173
 #, c-format
 msgid "*** unable to read %s, skipping"
-msgstr ""
+msgstr "*** não foi possível ler %s, ignorando"
 
 #: lib/builds.c:205
 #, c-format
@@ -1529,6 +1529,8 @@ msgstr "*** membro de diretório desconhecido encontrado: %s"
 #, c-format
 msgid "There is not enough available space to download the requested %s.\n"
 msgstr ""
+"Não há espaço disponível o suficiente para fazer o download do %s "
+"requisitado.\n"
 
 #: lib/builds.c:235 lib/peers.c:177
 #, c-format
@@ -1545,11 +1547,13 @@ msgstr ""
 #, c-format
 msgid "Unable to determine the required space to download the requested %s.\n"
 msgstr ""
+"Não foi possível determinar o espaço necessário para fazer o download do %s "
+"requisitado.\n"
 
 #: lib/builds.c:250
 #, c-format
 msgid "Ensure %s has sufficient space available."
-msgstr ""
+msgstr "Garante que %s tem espaço suficiente disponível."
 
 #: lib/builds.c:290 lib/builds.c:294
 msgid "build"
