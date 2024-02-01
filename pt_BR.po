@@ -9,7 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
 "PO-Revision-Date: 2024-02-02 17:36+0000\n"
-"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Last-Translator: Daimar Stein <daimarstein@pm.me>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -3523,7 +3523,7 @@ msgstr "'${FILE}' precisa de epoch em %s em ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:807
 msgid "spec file"
-msgstr "Arquivos Spec"
+msgstr "arquivo spec"
 
 #: lib/inspect_rpmdeps.c:887
 #, c-format
