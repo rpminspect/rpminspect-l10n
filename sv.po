@@ -111,8 +111,8 @@ msgid ""
 "Check that the 'Release' tag in the RPM spec file includes the %{?dist} "
 "directive."
 msgstr ""
-"Kontrollera att taggen ”Utgåva” i RPM-spec-filen inkluderar direktivet "
-"%{?dist}."
+"Kontrollera att taggen ”Utgåva” i RPM-spec-filen inkluderar direktivet %{?"
+"dist}."
 
 #: include/inspect.h:1395
 msgid "Ensure the spec file name conforms to the NAME.spec naming format."
@@ -844,8 +844,8 @@ msgid ""
 "expected, update %s and send a patch to the project that owns it."
 msgstr ""
 "Gör antingen chgrp på filen till den bin_group som angetts i rpminspect-"
-"konfigurationen eller ta bort biten skrivrättighet för gruppen på filen ("
-"chmod g-w). Om detta ägarskap är förväntat, uppdatera då %s och skicka en "
+"konfigurationen eller ta bort biten skrivrättighet för gruppen på filen "
+"(chmod g-w). Om detta ägarskap är förväntat, uppdatera då %s och skicka en "
 "ändring till projektet som äger den."
 
 #: include/results.h:402
@@ -1066,8 +1066,8 @@ msgid ""
 "ELF .o and .a files should not carry LTO (Link Time Optimization) bytecode.  "
 "Make sure you have stripped LTO bytecode from those files at install time."
 msgstr ""
-"ELF-filer .o och .a skall inte ha med bytekod för LTO ("
-"länktillfällesoptimering, Link Time Optimization). Se till att du har "
+"ELF-filer .o och .a skall inte ha med bytekod för LTO "
+"(länktillfällesoptimering, Link Time Optimization). Se till att du har "
 "avlägsnat LTO-bytekod från dessa filer vid installationstillfället."
 
 #: include/results.h:617
@@ -1203,8 +1203,8 @@ msgstr ""
 "%autosetup eller %autopatch. Man kan fixa detta genom att lägga till det "
 "lämpliga %patch-makrot i spec-filen (normalt i %prep-sektionen). Antalet som "
 "anges med makrot %patch motsvrar numret som används för att definiera "
-"patchen i början av spec-filen. Så Patch47 används med endera av makrona ”"
-"%patch 47”, ”%patch -P 47”, ”%patch -P47” eller ”%patch47”."
+"patchen i början av spec-filen. Så Patch47 används med endera av makrona "
+"”%patch 47”, ”%patch -P 47”, ”%patch -P47” eller ”%patch47”."
 
 #: include/results.h:692
 #, c-format
@@ -1432,8 +1432,8 @@ msgid ""
 msgstr ""
 "Paketet har ett epokvärde större än noll, men de explicita "
 "underpaketsberoendena använder det inte konsekvent. För det rapporterade "
-"beroendet behöver ”= %{version}-%{release}” ändras till ”= "
-"%{epoch}:%{version}-%{release}” för att fånga paketets epok i beroendet."
+"beroendet behöver ”= %{version}-%{release}” ändras till ”= %{epoch}:"
+"%{version}-%{release}” för att fånga paketets epok i beroendet."
 
 #: include/results.h:781
 msgid ""
@@ -1481,7 +1481,8 @@ msgstr "*** okänd katalogmedlem påträffades: %s"
 #: lib/builds.c:234
 #, c-format
 msgid "There is not enough available space to download the requested %s.\n"
-msgstr "Det finns inte tillräckligt med utrymme för att hämta den begärda %s.\n"
+msgstr ""
+"Det finns inte tillräckligt med utrymme för att hämta den begärda %s.\n"
 
 #: lib/builds.c:235 lib/peers.c:177
 #, c-format
@@ -1496,7 +1497,8 @@ msgstr "Se flaggan ”-w” för att ange en alternativ arbetskatalog.\n"
 #: lib/builds.c:249
 #, c-format
 msgid "Unable to determine the required space to download the requested %s.\n"
-msgstr "Kan inte avgöra det nödvändiga utrymmet för att hämta den begärda %s.\n"
+msgstr ""
+"Kan inte avgöra det nödvändiga utrymmet för att hämta den begärda %s.\n"
 
 #: lib/builds.c:250
 #, c-format
@@ -2169,8 +2171,8 @@ msgid ""
 "%%config file %s went from actual file to symlink (pointing to %s) in %s on "
 "%s"
 msgstr ""
-"%%config-filen %s gick från en faktiskt fil till en symlänk (som pekar på %s)"
-" i %s på %s"
+"%%config-filen %s gick från en faktiskt fil till en symlänk (som pekar på "
+"%s) i %s på %s"
 
 #: lib/inspect_config.c:123
 #, c-format
@@ -4172,7 +4174,8 @@ msgstr "                                (standard: inga)\n"
 #: src/rpminspect.c:57
 #, c-format
 msgid "  -a LIST, --arches=LIST      List of architectures to check\n"
-msgstr "  -a LISTA, --arches=LISTA    Lista över arkitekturer att kontrollera\n"
+msgstr ""
+"  -a LISTA, --arches=LISTA    Lista över arkitekturer att kontrollera\n"
 
 #: src/rpminspect.c:58
 #, c-format

@@ -3667,7 +3667,8 @@ msgstr "  -v, --verbose               자세한 검사 출력\n"
 #: src/rpminspect.c:78
 #, c-format
 msgid "                              when finished, display full path\n"
-msgstr "                              종료 되었을 때에, 전체 경로를 표시합니다\n"
+msgstr ""
+"                              종료 되었을 때에, 전체 경로를 표시합니다\n"
 
 #: src/rpminspect.c:79
 #, c-format

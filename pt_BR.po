@@ -942,8 +942,8 @@ msgid ""
 "unable to determine the size of a buffer, which is not necessarily an error."
 msgstr ""
 "Certifique-se de que todos os arquivos de objeto sejam compilados com '-O2 -"
-"D_FORTIFY_SOURCE=2' e que todos os cabeçalhos apropriados sejam incluídos ("
-"sem declarações de função implícitas). Os símbolos também podem parecer não "
+"D_FORTIFY_SOURCE=2' e que todos os cabeçalhos apropriados sejam incluídos "
+"(sem declarações de função implícitas). Os símbolos também podem parecer não "
 "fortificados se o compilador não for capaz de determinar o tamanho de um "
 "buffer, o que não é necessariamente um erro."
 
@@ -1244,8 +1244,8 @@ msgstr ""
 "possui uma definição PatchN: no arquivo spec), mas não é aplicado em nenhum "
 "lugar do arquivo spec. Está faltando uma macro %patch correspondente e o "
 "arquivo spec não possui as macros %autosetup ou %autopatch. Você pode "
-"corrigir isso adicionando a macro %patch apropriada no arquivo spec ("
-"geralmente na seção %prep). O número especificado com a macro %patch "
+"corrigir isso adicionando a macro %patch apropriada no arquivo spec "
+"(geralmente na seção %prep). O número especificado com a macro %patch "
 "corresponde ao número usado para definir o patch no topo do arquivo spec. "
 "Portanto, Patch47 é aplicado com uma macro '%patch 47', '%patch -P 47', "
 "'%patch -P47' ou '%patch47'."
@@ -1406,8 +1406,8 @@ msgid ""
 msgstr ""
 "Adicione o Requires explícito indicado ao arquivo spec do subpacote nomeado. "
 "Os subpacotes que dependem de bibliotecas compartilhadas em outro subpacote "
-"devem conter um explícito 'Requires: NOME_SUBPACOTE = "
-"%{epoch}:%{version}-%{release}' no arquivo spec."
+"devem conter um explícito 'Requires: NOME_SUBPACOTE = %{epoch}:%{version}-"
+"%{release}' no arquivo spec."
 
 #: include/results.h:764
 #, c-format
@@ -1874,7 +1874,8 @@ msgstr ""
 #: lib/inspect_abidiff.c:304
 #, c-format
 msgid "Comparing from %s to %s in package %s on %s revealed ABI differences."
-msgstr "A comparação de %s com %s no pacote %s em %s revelou diferenças de ABI."
+msgstr ""
+"A comparação de %s com %s no pacote %s em %s revelou diferenças de ABI."
 
 #: lib/inspect_abidiff.c:309
 #, c-format
@@ -2229,8 +2230,8 @@ msgid ""
 "%%config file %s went from actual file to symlink (pointing to %s) in %s on "
 "%s"
 msgstr ""
-"O arquivo %%config %s passou do arquivo real para o link simbólico ("
-"apontando para %s) em %s em %s"
+"O arquivo %%config %s passou do arquivo real para o link simbólico "
+"(apontando para %s) em %s em %s"
 
 #: lib/inspect_config.c:123
 #, c-format

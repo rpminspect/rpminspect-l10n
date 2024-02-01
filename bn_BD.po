@@ -81,8 +81,7 @@ msgstr ""
 msgid ""
 "Check that the 'Release' tag in the RPM spec file includes the %{?dist} "
 "directive."
-msgstr ""
-"RPM স্পেক ফাইলের 'রিলিজ' ট্যাগে %{?dist} নির্দেশ রয়েছে কিনা পরীক্ষা করুন।"
+msgstr "RPM স্পেক ফাইলের 'রিলিজ' ট্যাগে %{?dist} নির্দেশ রয়েছে কিনা পরীক্ষা করুন।"
 
 #: include/inspect.h:1395
 msgid "Ensure the spec file name conforms to the NAME.spec naming format."
