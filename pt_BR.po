@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-02-01 03:14+0000\n"
+"PO-Revision-Date: 2024-02-01 10:11+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/pt_BR/>\n"
@@ -2818,137 +2818,144 @@ msgstr "Dependência do módulo do kernel ${FILE} em ${ARCH}"
 #, c-format
 msgid "Kernel module %s adds dependency '%s' (was not present in %s)."
 msgstr ""
+"O módulo do kernel %s adiciona dependência '%s' (não estava presente em %s)."
 
 #: lib/inspect_kmod.c:246
 msgid "${FILE} kernel module parameter"
-msgstr ""
+msgstr "Parâmetro de módulo do kernel ${FILE}"
 
 #: lib/inspect_license.c:47
 #, c-format
 msgid "*** parse error in license database %s"
-msgstr ""
+msgstr "*** erro de análise no banco de dados de licenças %s"
 
 #: lib/inspect_license.c:135
 msgid "*** problem checking license database"
-msgstr ""
+msgstr "*** problema ao verificar banco de dados de licenças"
 
 #: lib/inspect_license.c:464
 #, c-format
 msgid "Unapproved license in %s: %s"
-msgstr ""
+msgstr "Licença não aprovada em %s: %s"
 
 #: lib/inspect_license.c:505
 #, c-format
 msgid "Empty License Tag in %s"
-msgstr ""
+msgstr "Tag License vazia em %s"
 
 #: lib/inspect_license.c:509
 msgid "missing License tag in ${FILE}"
-msgstr ""
+msgstr "faltando tag License em ${FILE}"
 
 #: lib/inspect_license.c:518
 #, c-format
 msgid "Valid License Tag in %s: %s"
-msgstr ""
+msgstr "Tag License válida em %s: %s"
 
 #: lib/inspect_license.c:532
 #, c-format
 msgid "License Tag contains unprofessional language in %s: %s"
-msgstr ""
+msgstr "A tag License contém linguagem não profissional em %s: %s"
 
 #: lib/inspect_license.c:536
 msgid "unprofessional language in License tag in ${FILE}"
-msgstr ""
+msgstr "linguagem não profissional na tag License em ${FILE}"
 
 #: lib/inspect_license.c:573
 msgid "Missing license database(s)."
-msgstr ""
+msgstr "Faltando banco(s) de dados de licença."
 
 #: lib/inspect_license.c:577
 msgid "missing license database"
-msgstr ""
+msgstr "faltando banco de dados de licença"
 
 #: lib/inspect_lostpayload.c:62
 #, c-format
 msgid "Existing subpackage %s is now missing on %s"
-msgstr ""
+msgstr "O subpacote %s existente agora está faltando em %s"
 
 #: lib/inspect_lostpayload.c:66
 msgid "missing subpackage ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "faltando subpacote ${FILE} em ${ARCH}"
 
 #: lib/inspect_lostpayload.c:82
 #, c-format
 msgid "Package %s on %s continues to be empty (no payloads)"
-msgstr ""
+msgstr "O pacote %s em %s continua vazio (sem cargas úteis)"
 
 #: lib/inspect_lostpayload.c:86
 msgid "existing empty subpackage ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "subpacote vazio existente ${FILE} em ${ARCH}"
 
 #: lib/inspect_lostpayload.c:93
 #, c-format
 msgid "Package %s on %s became empty (no payloads)"
-msgstr ""
+msgstr "O pacote %s em %s ficou vazio (sem cargas úteis)"
 
 #: lib/inspect_lostpayload.c:97
 msgid "subpackage ${FILE} on ${ARCH} now has empty payload"
-msgstr ""
+msgstr "o subpacote ${FILE} em ${ARCH} agora tem carga útil vazia"
 
 #: lib/inspect_lto.c:144
 msgid "${FILE} not portable on ${ARCH}"
-msgstr ""
+msgstr "${FILE} não é portátil em ${ARCH}"
 
 #: lib/inspect_lto.c:152
 #, c-format
 msgid ""
 "%s contains symbols [%s] on %s; this is not portable across compiler versions"
 msgstr ""
+"%s contém símbolos [%s] em %s; isso não é portátil entre versões do "
+"compilador"
 
 #: lib/inspect_lto.c:168
 #, c-format
 msgid ""
 "%s contains symbol [%s] on %s; this is not portable across compiler versions"
 msgstr ""
+"%s contém o símbolo [%s] em %s; isso não é portátil entre versões do "
+"compilador"
 
 #: lib/inspect_manpage.c:52
 #, c-format
 msgid "Error parsing %s:%d:%d: %s: %s: %s\n"
-msgstr ""
+msgstr "Erro ao analisar %s:%d:%d: %s: %s: %s\n"
 
 #: lib/inspect_manpage.c:81
 #, c-format
 msgid "*** unable to compile man page path regular expression: %s"
 msgstr ""
+"*** não foi possível compilar a expressão regular do caminho da página man: "
+"%s"
 
 #: lib/inspect_manpage.c:179
 #, c-format
 msgid "Unable to open man page %s\n"
-msgstr ""
+msgstr "Não foi possível abrir a página man %s\n"
 
 #: lib/inspect_manpage.c:187
 #, c-format
 msgid "Man page %s does not end in %s\n"
-msgstr ""
+msgstr "A página man %s não termina em %s\n"
 
 #: lib/inspect_manpage.c:195
 #, c-format
 msgid "man page with %s suffix is not really compressed with gzip\n"
-msgstr ""
+msgstr "A página man com sufixo %s não está realmente compactada com gzip\n"
 
 #: lib/inspect_manpage.c:236
 #, c-format
 msgid "Errors found validating %s\n"
-msgstr ""
+msgstr "Erros encontrados na validação de %s\n"
 
 #: lib/inspect_manpage.c:299
 #, c-format
 msgid "Man page %s is possibly empty on %s in %s"
-msgstr ""
+msgstr "A página man %s está possivelmente vazia em %s em %s"
 
 #: lib/inspect_manpage.c:302
 msgid "empty man page ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "página man vazia ${FILE} em ${ARCH}"
 
 #: lib/inspect_manpage.c:315
 #, c-format
