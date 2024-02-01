@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-01-31 20:40+0000\n"
+"PO-Revision-Date: 2024-02-02 17:36+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -1080,7 +1080,7 @@ msgstr "RPM"
 #: lib/builds.c:791
 #, c-format
 msgid "*** `%s' already exists in %s"
-msgstr "*** `%s'는 이미 %s에 존재합니다"
+msgstr "*** `%s'는 이미 %s 에 존재합니다"
 
 #: lib/builds.c:829
 #, c-format
@@ -1095,22 +1095,22 @@ msgstr "*** RPM을 내려 받을 수 없음: %s"
 #: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
 #, c-format
 msgid "*** unable to find build %s in Koji hub %s"
-msgstr "*** Koji 허브 %s에서 %s 제작을 찾을 수 없음"
+msgstr "*** %s (Koji 허브 %s 에서) 제작을 찾을 수 없음"
 
 #: lib/builds.c:872
 #, c-format
 msgid "*** unable to find task %s in Koji hub %s"
-msgstr "*** Koji 허브 %s에서 작업 %s를 찾을 수 없음"
+msgstr "*** 작업 %s (Koji 허브 %s 에서)를 찾을 수 없음"
 
 #: lib/checksums.c:91
 #, c-format
 msgid "*** %s is a FIFO"
-msgstr "*** %s는 FIFO입니다"
+msgstr "*** %s 는 FIFO입니다"
 
 #: lib/copyfile.c:117
 #, c-format
 msgid "%s already exists"
-msgstr "%s가 이미 존재합니다"
+msgstr "%s 가 이미 존재합니다"
 
 #: lib/copyfile.c:122
 msgid ", overwriting"
@@ -1119,7 +1119,7 @@ msgstr ", 덮어쓰기"
 #: lib/curl.c:267 lib/readfile.c:60
 #, c-format
 msgid "*** unable to read %s"
-msgstr "*** %s를 읽을 수 없음"
+msgstr "*** %s 를 읽을 수 없음"
 
 #: lib/fileinfo.c:64
 #, c-format
@@ -1889,7 +1889,7 @@ msgstr ""
 #: lib/inspect_dsodeps.c:94
 #, c-format
 msgid "%s was an ELF file and now is not on %s"
-msgstr "%s는 ELF 파일이었고 이젠 %s에 없습니다"
+msgstr "%s 는 ELF 파일이었고 이젠 %s 에 없습니다"
 
 #: lib/inspect_dsodeps.c:96 lib/inspect_dsodeps.c:108
 msgid "ELF file ${FILE} on ${ARCH}"
@@ -1898,7 +1898,7 @@ msgstr "${ARCH}의 ELF 파일 ${FILE}"
 #: lib/inspect_dsodeps.c:106
 #, c-format
 msgid "%s was a dynamic ELF file and now is not on %s"
-msgstr "%s는 동적 ELF 파일이었고 이젠 %s에 없습니다"
+msgstr "%s 는 동적 ELF 파일이었고 이젠 %s 에 없습니다"
 
 #: lib/inspect_dsodeps.c:146
 #, c-format
@@ -2188,7 +2188,7 @@ msgstr "커널 모듈 '%s'는 별칭 '%s'를 얻었습니다"
 #: lib/inspect_kmod.c:188
 #, c-format
 msgid "Kernel module %s removes parameter '%s' (was present in %s)."
-msgstr "커널 모듈 %s는 매개변수 '%s'를 제거합니다 (%s에 존재하지 않습니다)."
+msgstr "커널 모듈 %s 는 매개변수 '%s'를 제거합니다 (%s 에 존재하지 않습니다)."
 
 #: lib/inspect_kmod.c:191 lib/inspect_kmod.c:208
 msgid "${FILE} kernel module parameter on ${ARCH}"
@@ -2197,12 +2197,12 @@ msgstr "${FILE} 커널 모듈 매개변수 (${ARCH} 에서)"
 #: lib/inspect_kmod.c:205
 #, c-format
 msgid "Kernel module %s adds parameter '%s' (was not present in %s)."
-msgstr "커널 모듈 %s는 매개변수 '%s'를 추가합니다 (%s에 존재하지 않습니다)."
+msgstr "커널 모듈 %s 는 매개변수 '%s'를 추가합니다 (%s 에 존재하지 않습니다)."
 
 #: lib/inspect_kmod.c:226
 #, c-format
 msgid "Kernel module %s removes dependency '%s' (was present in %s)."
-msgstr "커널 모듈 %s는 의존성 '%s'를 제거합니다 (%s에 존재하지 않습니다)."
+msgstr "커널 모듈 %s 는 의존성 '%s'를 제거합니다 (%s 에 존재하지 않습니다)."
 
 #: lib/inspect_kmod.c:229
 msgid "${FILE} kernel module dependency on ${ARCH}"
@@ -2211,7 +2211,7 @@ msgstr ""
 #: lib/inspect_kmod.c:243
 #, c-format
 msgid "Kernel module %s adds dependency '%s' (was not present in %s)."
-msgstr "커널 모듈 %s는 의존성 '%s'를 추가합니다 (%s에 존재하지 않습니다)."
+msgstr "커널 모듈 %s 는 의존성 '%s'를 추가합니다 (%s 에 존재하지 않습니다)."
 
 #: lib/inspect_kmod.c:246
 msgid "${FILE} kernel module parameter"
@@ -2415,27 +2415,27 @@ msgstr "설명은 ${ARCH}에서 전문적이지 않은 단어를 포함합니다
 #: lib/inspect_metadata.c:134
 #, c-format
 msgid "Gained Package Vendor \"%s\" in %s"
-msgstr "획득된 꾸러미 제조사 \"%s\" (%s에서)"
+msgstr "획득된 꾸러미 제조사 \"%s\" (%s 에서)"
 
 #: lib/inspect_metadata.c:136
 #, c-format
 msgid "Lost Package Vendor \"%s\" in %s"
-msgstr "손실된 꾸러미 제조사 \"%s\" ( %s에서)"
+msgstr "손실된 꾸러미 제조사 \"%s\" (%s 에서)"
 
 #: lib/inspect_metadata.c:138
 #, c-format
 msgid "Package Vendor changed from \"%s\" to \"%s\" in %s"
-msgstr "꾸러미 제조사가 \"%s\"에서 \"%s\"로 변경되었습니다 (%s에서)"
+msgstr "꾸러미 제조사가 \"%s\" 에서 \"%s\"로 변경되었습니다 (%s 에서)"
 
 #: lib/inspect_metadata.c:156
 #, c-format
 msgid "Package Summary change from \"%s\" to \"%s\" in %s"
-msgstr "꾸러미 요약 변경이 \"%s\"에서 \"%s\"로 변경되었습니다 (%s에서)"
+msgstr "꾸러미 요약 변경이 \"%s\" 에서 \"%s\"로 변경되었습니다 (%s 에서)"
 
 #: lib/inspect_metadata.c:169
 #, c-format
 msgid "Package Description changed in %s"
-msgstr "꾸러미 설명이 %s로 변경되었습니다"
+msgstr "꾸러미 설명이 %s 로 변경되었습니다"
 
 #: lib/inspect_metadata.c:170
 #, c-format
@@ -3276,7 +3276,7 @@ msgstr ""
 #: lib/output_json.c:99 lib/output_summary.c:45 lib/output_text.c:53
 #, c-format
 msgid "*** error opening %s for writing"
-msgstr "*** 작성을 위해 오류 %s를 여는 중"
+msgstr "*** 작성을 위해 오류 %s 를 여는 중"
 
 #: lib/output_summary.c:53
 msgid "added"
@@ -3335,7 +3335,7 @@ msgstr ""
 #: lib/output_xunit.c:54
 #, c-format
 msgid "*** opening %s for writing"
-msgstr "*** 작성을 위해 %s를 여는 중"
+msgstr "*** 작성을 위해 %s 를 여는 중"
 
 #: lib/parse_yaml.c:114 lib/parse_yaml.c:139
 #, c-format
@@ -3368,12 +3368,12 @@ msgstr "*** libelf 버전이 일치하지 않음"
 #: lib/readfile.c:50
 #, c-format
 msgid "*** unable to find end of %s"
-msgstr "*** %s의 끝을 찾을 수 없음"
+msgstr "*** %s 의 끝을 찾을 수 없음"
 
 #: lib/readfile.c:68
 #, c-format
 msgid "*** unable to close %s"
-msgstr "*** %s를 닫을 수 없음"
+msgstr "*** %s 를 닫을 수 없음"
 
 #: lib/rmtree.c:74
 #, c-format
@@ -3707,7 +3707,7 @@ msgstr "*** 제작 (%s)전에 제품 출시가 비어있습니다"
 #: src/rpminspect.c:259
 #, c-format
 msgid "*** unable to determine product release for %s and %s"
-msgstr "*** %s 및 %s를 위한 제품 출시를 결정 할 수 없습니다"
+msgstr "*** %s 및 %s 를 위한 제품 출시를 결정 할 수 없습니다"
 
 #: src/rpminspect.c:260
 msgid ""
@@ -3790,12 +3790,12 @@ msgstr ""
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
 #, c-format
 msgid "*** failed to read configuration file %s"
-msgstr "*** 구성 파일 %s를 읽는데 실패함"
+msgstr "*** 구성 파일 %s 를 읽는데 실패함"
 
 #: src/rpminspect.c:658
 #, c-format
 msgid "*** Please specify a configuration file using '-c' or supply ./%s"
-msgstr "*** '-c'를 사용하여 구성 파일을 지정하거나 ./%s를 제공해 주세요"
+msgstr "*** '-c'를 사용하여 구성 파일을 지정하거나 ./%s 를 제공해 주세요"
 
 #: src/rpminspect.c:736
 msgid "*** Invalid before and after build specification."
@@ -3813,7 +3813,7 @@ msgstr "*** 미지원 구조가 지정되었습니다: `%s`"
 #: src/rpminspect.c:793
 #, c-format
 msgid "*** unable to create directory %s"
-msgstr "*** 디렉토리 %s를 생성 할 수 없음"
+msgstr "*** 디렉토리 %s 를 생성 할 수 없음"
 
 #: src/rpminspect.c:851
 #, c-format
@@ -3835,7 +3835,7 @@ msgstr "인위결과를 해체하는 데 필요한 공간: %lu 바이트 (%s)\n"
 #: src/rpminspect.c:878
 #, c-format
 msgid "Command line arguments used to invoke %s."
-msgstr "명령줄 인수는 %s를 호출하는 데 사용되었습니다."
+msgstr "명령줄 인수는 %s 를 호출하는 데 사용되었습니다."
 
 #: src/rpminspect.c:902
 #, c-format
