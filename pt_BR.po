@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-02-04 08:53+0000\n"
+"PO-Revision-Date: 2024-02-04 19:50+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/pt_BR/>\n"
@@ -4000,6 +4000,9 @@ msgid ""
 "%s\n"
 "\n"
 msgstr ""
+"Detalhes\n"
+"%s\n"
+"\n"
 
 #: lib/output_text.c:103 lib/output_xunit.c:118
 #, c-format
@@ -4007,44 +4010,46 @@ msgid ""
 "Suggested Remedy:\n"
 "%s"
 msgstr ""
+"Remediação sugerida:\n"
+"%s"
 
 #: lib/output_xunit.c:54
 #, c-format
 msgid "*** opening %s for writing"
-msgstr ""
+msgstr "*** abrindo %s para escrita"
 
 #: lib/parse_yaml.c:114 lib/parse_yaml.c:139
 #, c-format
 msgid "*** %s: broken document"
-msgstr ""
+msgstr "*** %s: documento quebrado"
 
 #: lib/parse_yaml.c:158 lib/parse_yaml.c:305
 #, c-format
 msgid "*** skipping token type %s"
-msgstr ""
+msgstr "*** ignorando o tipo de token %s"
 
 #: lib/parse_yaml.c:386
 msgid "*** malformed type - freed?"
-msgstr ""
+msgstr "*** tipo malformado - liberado?"
 
 #: lib/peers.c:176
 #, c-format
 msgid "There is not enough available space to unpack all of the RPMs.\n"
-msgstr ""
+msgstr "Não há espaço disponível suficiente para descompactar todos os RPMs.\n"
 
 #: lib/readelf.c:48
 #, c-format
 msgid "*** unknown elftype_t %d"
-msgstr ""
+msgstr "*** elftype_t desconhecido %d"
 
 #: lib/readelf.c:76
 msgid "*** libelf version mismatch"
-msgstr ""
+msgstr "*** incompatibilidade da versão do libelf"
 
 #: lib/readfile.c:50
 #, c-format
 msgid "*** unable to find end of %s"
-msgstr ""
+msgstr "*** não foi possível encontrar o final de %s"
 
 #: lib/readfile.c:68
 #, c-format
