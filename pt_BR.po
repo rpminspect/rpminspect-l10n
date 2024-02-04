@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-02-04 08:43+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2024-02-04 08:53+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -4163,7 +4162,7 @@ msgstr "FIFO (pipe nomeado)"
 
 #: lib/strfuncs.c:553
 msgid "symbolic link"
-msgstr "Link simbólico"
+msgstr "link simbólico"
 
 #: lib/strfuncs.c:555
 msgid "socket"
@@ -4541,42 +4540,48 @@ msgstr "Depois da compilação"
 
 #: src/rpminspect.c:920
 msgid "Build"
-msgstr "compilação"
+msgstr "Compilação"
 
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
 msgstr ""
+"*** sem pares, certifique-se de que existam pacotes para arquitetura(s) "
+"especificada(s)"
 
 #: src/rpminspect.c:958
 msgid ""
 "*** unable to find a set of peer packages between the before and after builds"
 msgstr ""
+"*** incapaz de encontrar um conjunto de pacotes pares entre as compilações "
+"antes e depois"
 
 #: src/rpminspect.c:972
 msgid "*** unable to determine product release or none specified (-r)."
 msgstr ""
+"*** não foi possível determinar o lançamento do produto ou nenhum "
+"especificado (-r)."
 
 #: src/rpminspect.c:984
 #, c-format
 msgid "Skipping %s inspection..."
-msgstr ""
+msgstr "Ignorando a inspeção de %s..."
 
 #: src/rpminspect.c:989
 msgid "skip"
-msgstr ""
+msgstr "ignorada"
 
 #: src/rpminspect.c:1009
 #, c-format
 msgid "Running %s inspection..."
-msgstr ""
+msgstr "Executando inspeção %s..."
 
 #: src/rpminspect.c:1018
 msgid "pass"
-msgstr ""
+msgstr "passou"
 
 #: src/rpminspect.c:1018
 msgid "FAIL"
-msgstr ""
+msgstr "FALHOU"
 
 #: src/rpminspect.c:1046
 #, c-format
@@ -4584,3 +4589,5 @@ msgid ""
 "\n"
 "Keeping working directory: %s\n"
 msgstr ""
+"\n"
+"Mantendo o diretório de trabalho: %s\n"
