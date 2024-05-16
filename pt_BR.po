@@ -1,0 +1,4609 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the rpminspect package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: rpminspect\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-06-27 09:21-0400\n"
+"PO-Revision-Date: 2024-04-06 04:17+0000\n"
+"Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
+"Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
+"projects/rpminspect/main/pt_BR/>\n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.4\n"
+
+#: include/inspect.h:1341
+msgid ""
+"Verify the string specified in the License tag of the RPM metadata describes "
+"permissible software licenses as defined by the license database. Also "
+"checks to see if the License tag contains any unprofessional words as "
+"defined in the configuration file."
+msgstr ""
+"Verifica se a string especificada na tag License dos metadados do RPM "
+"descreve as licenças de software permitidas conforme definido pelo banco de "
+"dados de licenças. Também verifica se a tag License contém palavras não "
+"profissionais, conforme definido no arquivo de configuração."
+
+#: include/inspect.h:1347
+msgid ""
+"Check all binary RPMs in the build for any empty payloads. When comparing "
+"two builds, report new packages in the after build with empty payloads."
+msgstr ""
+"Verifica todos os RPMs binários na compilação para ver se há cargas úteis "
+"(payloads) vazias. Ao comparar duas compilações, relate novos pacotes na "
+"compilação posterior com cargas úteis vazias."
+
+#: include/inspect.h:1353
+msgid ""
+"Check all binary RPMs in the before and after builds for any empty payloads. "
+"Packages that lost payload data from the before build to the after build are "
+"reported."
+msgstr ""
+"Verifica todos os RPMs binários nas compilações antes e depois para ver se "
+"há cargas úteis vazias. Os pacotes que perderam dados de carga útil da "
+"compilação anterior para a compilação posterior são relatados."
+
+#: include/inspect.h:1359
+msgid ""
+"Perform some RPM header checks. First, check that the Vendor contains the "
+"expected string as defined in the configuration file. Second, check that the "
+"build host is in the expected subdomain as defined in the configuration "
+"file. Third, check the Summary string for any unprofessional words. Fourth, "
+"check the Description for any unprofessional words. Lastly, if there is a "
+"before build specified, check for differences between the before and after "
+"build values of the previous RPM header values and report them."
+msgstr ""
+"Executa algumas verificações de cabeçalho RPM. Primeiro, verifica se o "
+"Vendor contém a string esperada conforme definido no arquivo de "
+"configuração. Segundo, verifica se o host de compilação está no subdomínio "
+"esperado conforme definido no arquivo de configuração. Terceiro, verifique a "
+"string de Summary em busca de palavras não profissionais. Quarto, verifica a "
+"Description em busca de palavras não profissionais. Por último, se houver "
+"uma compilação anterior especificada, verifique as diferenças entre os "
+"valores de compilação anterior e posterior dos valores de cabeçalho RPM "
+"anteriores e relate-as."
+
+#: include/inspect.h:1365
+msgid ""
+"Perform some checks on man pages in the RPM payload. First, check that each "
+"man page is compressed. Second, check that each man page contains valid "
+"content. Lastly, check that each man page is installed to the correct path."
+msgstr ""
+"Executa algumas verificações nas páginas man na carga útil do RPM. Primeiro, "
+"verifica se cada página man está compactada. Segundo, verifica se cada "
+"página man contém conteúdo válido. Por último, verifica se cada página man "
+"está instalada no caminho correto."
+
+#: include/inspect.h:1371
+msgid "Check that XML files included in the RPM payload are well-formed."
+msgstr ""
+"Verifica se os arquivos XML incluídos na carga útil RPM estão bem formados."
+
+#: include/inspect.h:1377
+msgid ""
+"Perform several checks on ELF files. First, check that ELF objects do not "
+"contain an executable stack. Second, check that ELF objects do not contain "
+"text relocations. When comparing builds, check that the ELF objects in the "
+"after build did not lose a PT_GNU_RELRO segment. When comparing builds and "
+"there is a list of forbidden library functions, make sure nothing uses them."
+msgstr ""
+"Executa várias verificações nos arquivos ELF. Primeiro, verifica se os "
+"objetos ELF não contêm uma pilha executável. Segundo, verifica se os objetos "
+"ELF não contêm realocações de texto. Ao comparar compilações, verifica se os "
+"objetos ELF na compilação posterior não perderam um segmento PT_GNU_RELRO. "
+"Ao comparar verifica e houver uma lista de funções de biblioteca proibidas, "
+"se certifica de que nada as utilize."
+
+#: include/inspect.h:1383
+msgid ""
+"Perform syntax and file reference checks on *.desktop files. Syntax errors "
+"and invalid file references are reported as errors."
+msgstr ""
+"Executa verificações de sintaxe e de referência de arquivo em arquivos *."
+"desktop. Erros de sintaxe e referências de arquivo inválidas são relatados "
+"como erros."
+
+#: include/inspect.h:1389
+msgid ""
+"Check that the 'Release' tag in the RPM spec file includes the %{?dist} "
+"directive."
+msgstr ""
+"Verifica se a tag 'Release' no arquivo de especificação RPM inclui a "
+"diretiva %{?dist}."
+
+#: include/inspect.h:1395
+msgid "Ensure the spec file name conforms to the NAME.spec naming format."
+msgstr ""
+"Certifica-se de que o nome do arquivo spec esteja em conformidade com o "
+"formato de nomenclatura NOME.spec."
+
+#: include/inspect.h:1403
+msgid ""
+"Ensure compliance with modularity build and packaging policies (only valid "
+"for module builds, no-op otherwise)."
+msgstr ""
+"Garante a conformidade com as políticas de compilação e empacotamento de "
+"modularidade (válido apenas para compilações de módulos, caso contrário, não "
+"operacional)."
+
+#: include/inspect.h:1411
+msgid ""
+"Check minimum required Java bytecode version in class files, report bytecode "
+"version changes between builds, and report if bytecode versions are "
+"exceeded.  The bytecode version is vendor specific to releases and defined "
+"in the configuration file."
+msgstr ""
+"Verifica a versão mínima necessária do bytecode Java nos arquivos de classe, "
+"relata alterações na versão do bytecode entre compilações e relate se as "
+"versões do bytecode foram excedidas. A versão do bytecode é específica do "
+"fornecedor para versões e definida no arquivo de configuração."
+
+#: include/inspect.h:1417
+msgid ""
+"Report changed files from the before build to the after build.  Certain file "
+"changes will raise additional warnings if the concern is more critical than "
+"just reporting changes (e.g., a suspected security impact).  Any gzip, "
+"bzip2, or xz compressed files will have their uncompressed content compared "
+"only, which will allow changes through in the compression level used.  "
+"Message catalog files (.mo) are unpacked and compared using diff(1).  Public "
+"C and C++ header files are preprocessed and compared using diff(1).  Any "
+"changes with diff output are included in the results."
+msgstr ""
+"Relata os arquivos alterados da versão anterior para a posterior. Certas "
+"alterações no arquivo gerarão avisos adicionais se a preocupação for mais "
+"crítica do que apenas relatar alterações (por exemplo, uma suspeita de "
+"impacto na segurança). Quaisquer arquivos compactados gzip, bzip2 ou xz "
+"terão apenas seu conteúdo descompactado comparado, o que permitirá "
+"alterações no nível de compactação utilizado. Os arquivos do catálogo de "
+"mensagens (.mo) são descompactados e comparados usando diff(1). Arquivos de "
+"cabeçalho públicos C e C++ são pré-processados e comparados usando diff(1). "
+"Quaisquer alterações na saída diff são incluídas nos resultados."
+
+#: include/inspect.h:1423
+msgid ""
+"Report files that have moved installation paths or across subpackages "
+"between builds.  Files moved with a security path prefix generate special "
+"reporting in case a security review is required.  Rebased packages report "
+"these findings at the INFO level while non-rebased packages report them at "
+"the VERIFY level or higher."
+msgstr ""
+"Relata arquivos que tiveram mudança nos caminhos de instalação ou entre "
+"subpacotes entre compilações. Os arquivos movidos com um prefixo de caminho "
+"de segurança geram relatórios especiais caso seja necessária uma revisão de "
+"segurança. Pacotes rebaseados relatam essas descobertas no nível INFO, "
+"enquanto pacotes não rebaseados as relatam no nível VERIFY ou superior."
+
+#: include/inspect.h:1429
+msgid ""
+"Report removed files from the before build to the after build.  Shared "
+"libraries get additional reporting output as they may be unexpected "
+"dependency removals.  Files removed with a security path prefix generate "
+"special reporting in case a security review is required.  Source RPMs and "
+"debuginfo files are ignored by this inspection.  Rebased packages report "
+"these findings at the INFO level while non-rebased packages report them at "
+"the VERIFY level or higher."
+msgstr ""
+"Relata arquivos removidos da compilação anterior para a compilação "
+"posterior. Bibliotecas compartilhadas obtêm resultados de relatórios "
+"adicionais, pois podem ser remoções inesperadas de dependências. Arquivos "
+"removidos com um prefixo de caminho de segurança geram relatórios especiais "
+"caso seja necessária uma revisão de segurança. Os RPMs fonte e os arquivos "
+"debuginfo são ignorados por esta inspeção. Pacotes rebaseados relatam essas "
+"descobertas no nível INFO, enquanto pacotes não rebaseados as relatam no "
+"nível VERIFY ou superior."
+
+#: include/inspect.h:1435
+msgid ""
+"Report added files from the before build to the after build.  Debuginfo "
+"files are ignored as are files that match the patterns defined in the "
+"configuration file.  Files added to security paths generate special "
+"reporting in case a security review is required.  New setuid and setgid "
+"files raise a security warning unless the file is in the fileinfo list.  "
+"Rebased packages report these findings at the INFO level while non-rebased "
+"packages report them at the VERIFY level or higher."
+msgstr ""
+"Relata arquivos adicionados da compilação anterior para a compilação "
+"posterior. Os arquivos Debuginfo são ignorados, assim como os arquivos que "
+"correspondem aos padrões definidos no arquivo de configuração. Os arquivos "
+"adicionados aos caminhos de segurança geram relatórios especiais caso seja "
+"necessária uma revisão de segurança. Novos arquivos setuid e setgid geram um "
+"aviso de segurança, a menos que o arquivo esteja na lista fileinfo. Pacotes "
+"rebaseados relatam essas descobertas no nível INFO, enquanto pacotes não "
+"rebaseados as relatam no nível VERIFY ou superior."
+
+#: include/inspect.h:1441
+msgid ""
+"Report Source archives defined in the RPM spec file changing content between "
+"the before and after build. If the source archives change and the package is "
+"on the rebaseable list, the change is reported as informational. Otherwise "
+"the change is reported as a rebase of the package and requires inspection."
+msgstr ""
+"Relata arquivos no Source definidos no arquivo spec RPM alterando o conteúdo "
+"entre antes e depois da compilação. Se os arquivos fonte forem alterados e o "
+"pacote estiver na lista rebaseável, a alteração será relatada como "
+"informativa. Caso contrário, a alteração será relatada como um rebase do "
+"pacote e exigirá inspeção."
+
+#: include/inspect.h:1447
+msgid ""
+"Report files and directories owned by unexpected users and groups. Check to "
+"make sure executables are owned by the correct user and group. If a before "
+"and after build have been specified, also report ownership changes."
+msgstr ""
+"Relata arquivos e diretórios pertencentes a usuários e grupos inesperados. "
+"Verifica se os executáveis pertencem ao usuário e grupo corretos. Se uma "
+"compilação antes e depois tiver sido especificada, relata também as "
+"alterações de propriedade."
+
+#: include/inspect.h:1453
+msgid ""
+"For all shell scripts in the build, perform a syntax check on it using the "
+"shell defined in its #! line (shell must also be listed in shell section of "
+"the configuration data). If the syntax check returns non-zero, report it to "
+"the user and return a combined stdout and stderr. If comparing two builds, "
+"perform the previous check but also report if a previously bad script is now "
+"passing the syntax check."
+msgstr ""
+"Para todos os scripts de shell na compilação, executa uma verificação de "
+"sintaxe usando o shell definido em sua linha #! (shell também deve ser "
+"listado na seção shell dos dados de configuração). Se a verificação de "
+"sintaxe retornar diferente de zero, informa ao usuário e retorna uma "
+"combinação de stdout e stderr. Se estiver comparando duas compilações, "
+"executa a verificação anterior, mas também informa se um script "
+"anteriormente incorreto está passando na verificação de sintaxe."
+
+#: include/inspect.h:1459
+msgid ""
+"Perform annocheck tests defined in the configuration file on all ELF files "
+"in the build.  A single build specified will perform an analysis only.  Two "
+"builds specified will compare the test results between the before and after "
+"build.  If no annocheck tests are defined in the configuration file, this "
+"inspection is skipped."
+msgstr ""
+"Executa testes do annocheck definidos no arquivo de configuração em todos os "
+"arquivos ELF na compilação. Uma única compilação especificada executará "
+"apenas uma análise. Duas compilações especificadas compararão os resultados "
+"do teste entre a compilação anterior e posterior. Se nenhum teste do "
+"annocheck estiver definido no arquivo de configuração, esta inspeção será "
+"ignorada."
+
+#: include/inspect.h:1465
+msgid ""
+"Compare DT_NEEDED entries in dynamic ELF executables and shared libraries "
+"between the before and after build and report changes."
+msgstr ""
+"Compara entradas DT_NEEDED em executáveis ELF dinâmicos e bibliotecas "
+"compartilhadas entre antes e depois da compilação e relata as alterações."
+
+#: include/inspect.h:1471
+msgid ""
+"Report file size changes between builds.  If empty files became non-empty or "
+"non-empty files became empty, report those as results needing verification.  "
+"Report file change percentages as info-only."
+msgstr ""
+"Relata alterações no tamanho do arquivo entre compilações. Se os arquivos "
+"vazios se tornarem não vazios ou os arquivos não vazios ficarem vazios, "
+"relata-os como resultados que precisam de verificação. Relata as "
+"porcentagens de alteração do arquivo apenas como informação."
+
+#: include/inspect.h:1477
+msgid ""
+"Report stat(2) mode changes between builds.  Checks against the fileinfo "
+"list for the product release specified or determined.  Any setuid or setgid "
+"changes will raise a message requiring Security Team review."
+msgstr ""
+"Relata alterações no modo stat(2) entre compilações. Verifica a lista "
+"fileinfo da versão do produto especificada ou determinada. Quaisquer "
+"alterações no setuid ou setgid gerarão uma mensagem exigindo revisão da "
+"equipe de segurança."
+
+#: include/inspect.h:1485
+msgid ""
+"Report capabilities(7) changes between builds.  Checks against the "
+"capabilities list for the product release specified or determined.  Any "
+"capabilities changes not listed will raise a message requiring Security Team "
+"review."
+msgstr ""
+"Relata alterações em capabilities(7) entre compilações. Verifica a lista de "
+"recursos da versão do produto especificada ou determinada. Quaisquer "
+"alterações de recursos não listadas gerarão uma mensagem exigindo revisão da "
+"Equipe de Segurança."
+
+#: include/inspect.h:1494
+msgid ""
+"Report kernel module parameter, dependency, PCI ID, or symbol differences "
+"between builds.  This inspection is intended as an information gathering "
+"tool to gather kernel module differences between two builds."
+msgstr ""
+"Relata diferenças de parâmetros em módulo do kernel, de dependência, de ID "
+"PCI ou de símbolos entre compilações. Esta inspeção pretende ser uma "
+"ferramenta de coleta de informações para coletar diferenças de módulos do "
+"kernel entre duas compilações."
+
+#: include/inspect.h:1501
+msgid ""
+"Report RPM architectures that appear and disappear between the before and "
+"after builds.  This inspection does not report the loss of noarch packages.  "
+"The purpose of this inspection is to report the loss of target machine "
+"architectures as provided in the before build and not seeing them in the "
+"after build."
+msgstr ""
+"Relata arquiteturas RPM que aparecem e desaparecem entre as compilações "
+"antes e depois. Esta inspeção não relata a perda de pacotes noarch. O "
+"objetivo desta inspeção é relatar a perda de arquiteturas de máquinas de "
+"destino conforme fornecidas na versão anterior e não vê-las na versão "
+"posterior."
+
+#: include/inspect.h:1507
+msgid ""
+"Report RPM subpackages that appear and disappear between the before and "
+"after builds."
+msgstr ""
+"Relata subpacotes RPM que aparecem e desaparecem entre as compilações antes "
+"e depois."
+
+#: include/inspect.h:1513
+#, c-format
+msgid ""
+"Ensure packages contain an entry in the %changelog for the version built.  "
+"Reports any other differences in the existing changelog between builds and "
+"that the new entry contains new text entries."
+msgstr ""
+"Certifica-se de que os pacotes contenham uma entrada no %changelog para a "
+"versão criada. Relata quaisquer outras diferenças no changelog existente "
+"entre compilações e que a nova entrada contém novas entradas de texto."
+
+#: include/inspect.h:1519
+msgid ""
+"Report files that are packaged in directories that are no longer used by the "
+"product.  Usually this means a package has not been updated to account for "
+"path migrations.  The main examples are /bin migrating to /usr/bin and /sbin "
+"migrating to /usr/sbin."
+msgstr ""
+"Relata arquivos que estão empacotados em diretórios que não são mais usados "
+"pelo produto. Geralmente isso significa que um pacote não foi atualizado "
+"para dar conta das migrações de caminho. Os principais exemplos são /bin "
+"migrando para /usr/bin e /sbin migrando para /usr/sbin."
+
+#: include/inspect.h:1525
+msgid ""
+"Link Time Optimization (LTO) produces smaller and faster shared ELF "
+"executables and libraries.  LTO bytecode is not stable from one release of "
+"gcc to the next.  As such, LTO bytecode should not be present in .a and .o "
+"ELF objects shipped in packages.  This inspection looks for LTO bytecode in "
+"ELF relocatable objects and reports if any is present."
+msgstr ""
+"Link Time Optimization (LTO) produz executáveis e bibliotecas ELF "
+"compartilhadas menores e mais rápidas. O bytecode LTO não é estável de uma "
+"versão do gcc para a próxima. Como tal, o bytecode LTO não deve estar "
+"presente em objetos ELF .a e .o enviados em pacotes. Esta inspeção procura "
+"bytecode LTO em objetos relocáveis ELF e relata se algum estiver presente."
+
+#: include/inspect.h:1531
+msgid ""
+"Symbolic links must be resolvable on the installed system.  This inspection "
+"ensures absolute and relative symlinks are valid.  It also checks for any "
+"symlink usage that will cause problems for RPM."
+msgstr ""
+"Os links simbólicos devem poder ser resolvidos no sistema instalado. Esta "
+"inspeção garante que os links simbólicos absolutos e relativos sejam "
+"válidos. Ela também verifica qualquer uso de link simbólico que possa causar "
+"problemas ao RPM."
+
+#: include/inspect.h:1537
+#, c-format
+msgid ""
+"Check %files sections in the spec file for any forbidden path references."
+msgstr ""
+"Verifica as seções %files no arquivo spec para quaisquer referências de "
+"caminho proibidas."
+
+#: include/inspect.h:1543
+msgid ""
+"Compare MIME types of files between builds and report any changes for "
+"verification."
+msgstr ""
+"Compara os tipos de arquivos MIME entre compilações e relate quaisquer "
+"alterações para verificação."
+
+#: include/inspect.h:1549
+msgid ""
+"When comparing two builds or two packages, compare ELF files using "
+"abidiff(1) from the libabigail project.  Differences are reported.  If the "
+"package is a rebase and not on the rebaseable list and the rebase inspection "
+"is enabled, ABI differences are reported as failures.  The assumption here "
+"is that rpminspect is comparing builds for maintenance purposes and you do "
+"not want to introduce any ABI changes for users.  If you do not care about "
+"that, turn off the abidiff inspection or add the package name to the "
+"rebaseable list."
+msgstr ""
+"Ao comparar duas compilações ou dois pacotes, compara os arquivos ELF usando "
+"abidiff(1) do projeto libabigail. As diferenças são relatadas. Se o pacote "
+"for um rebase e não estiver na lista rebaseável e a inspeção de rebase "
+"estiver habilitada, as diferenças de ABI serão relatadas como falhas. A "
+"suposição aqui é que o rpminspect está comparando compilações para fins de "
+"manutenção e você não deseja introduzir nenhuma alteração de ABI para os "
+"usuários. Se você não se importa com isso, desative a inspeção abidiff ou "
+"adicione o nome do pacote à lista rebaseável."
+
+#: include/inspect.h:1555
+msgid ""
+"kmidiff compares the binary Kernel Module Interfaces of two Linux kernel "
+"trees.  The binary KMI is the interface that the Linux kernel exposes to its "
+"modules.  The trees we are interested in here are the result of the build of "
+"the Linux kernel source tree.  If the builds compared are not considered a "
+"rebase, an incompatible change reported by kmidiff is reported for "
+"verification."
+msgstr ""
+"kmidiff compara as interfaces binárias do módulo do kernel de duas árvores "
+"do kernel Linux. O binário KMI é a interface que o kernel do Linux expõe aos "
+"seus módulos. As árvores nas quais estamos interessados aqui são o resultado "
+"da compilação da árvore fonte do kernel Linux. Se as compilações comparadas "
+"não forem consideradas um rebase, uma alteração incompatível reportada pelo "
+"kmidiff será reportada para verificação."
+
+#: include/inspect.h:1561
+#, c-format
+msgid ""
+"Check for and report differences in configuration files marked with %config "
+"in the spec file.  If changes are whitespace or formatting only, the result "
+"is reported at the INFO level.  Content and location changes are reporting "
+"at the VERIFY level unless the comparison is between rebased packages."
+msgstr ""
+"Verifica e relata diferenças nos arquivos de configuração marcados com "
+"%config no arquivo spec. Se as alterações forem apenas espaços em branco ou "
+"formatação, o resultado será relatado no nível INFO. As alterações de "
+"conteúdo e localização são relatadas no nível VERIFY, a menos que a "
+"comparação seja entre pacotes rebaseados."
+
+#: include/inspect.h:1567
+#, c-format
+msgid ""
+"Report changes in %doc marked files.  Files that have been added or removed "
+"as documentation files, for instance."
+msgstr ""
+"Relata alterações em arquivos marcados com %doc. Arquivos que foram "
+"adicionados ou removidos como arquivos de documentação, por exemplo."
+
+#: include/inspect.h:1573
+msgid ""
+"Inspects all patches defined in the spec file and reports changes between "
+"builds.  The functional check here is to ensure all defined patches in the "
+"preamble have a corresponding application macro in the spec file.  At the "
+"INFO level, rpminspect reports file count, line count, and patch size "
+"changes.  If thresholds are reached regarding a change in the patch size or "
+"the number of files the patch touches, rpminspect reports the change at the "
+"VERIFY level unless the comparison is for a rebase.  The configuration file "
+"can also list patch names that rpminspect should ignore during the "
+"inspection."
+msgstr ""
+"Inspeciona todos os patches definidos no arquivo spec e relata alterações "
+"entre compilações. A verificação funcional aqui é garantir que todos os "
+"patches definidos no preâmbulo tenham uma macro de aplicativo correspondente "
+"no arquivo spec. No nível INFO, o rpminspect relata a contagem de arquivos, "
+"a contagem de linhas e as alterações no tamanho do patch. Se os limites "
+"forem atingidos em relação a uma mudança no tamanho do patch ou no número de "
+"arquivos que o patch toca, o rpminspect relata a mudança no nível VERIFY, a "
+"menos que a comparação seja para um rebase. O arquivo de configuração também "
+"pode listar nomes de patches que o rpminspect deve ignorar durante a "
+"inspeção."
+
+#: include/inspect.h:1579
+msgid ""
+"Performs a virus scan on every file in the build using libclamav.  Anything "
+"found by libclamav will fail the inspection.  The ignore_path rules are not "
+"used in this inspection.  All files are scanned."
+msgstr ""
+"Executa uma verificação de vírus em todos os arquivos da compilação usando "
+"libclamav. Qualquer coisa encontrada por libclamav falhará na inspeção. As "
+"regras ignore_path não são usadas nesta inspeção. Todos os arquivos são "
+"verificados."
+
+#: include/inspect.h:1585
+msgid ""
+"Check for known politically sensitive files in packages and report if they "
+"are allowed or prohibited.  The rules come from the politics/ subdirectory "
+"in the rpminspect-data package for the product.  Files in politics/ "
+"subdirectory map to the product release string.  The rules in each file "
+"define the politically sensitive allow and deny rules for that release."
+msgstr ""
+"Verifica se há arquivos politicamente sensíveis nos pacotes e informe se "
+"eles são permitidos ou proibidos. As regras vêm do subdiretório politics/ no "
+"pacote rpminspect-data do produto. Os arquivos no subdiretório politics/ são "
+"mapeados para a sequência de lançamento do produto. As regras em cada "
+"arquivo definem as regras de permissão e negação politicamente sensíveis "
+"para esse lançamento."
+
+#: include/inspect.h:1591
+msgid ""
+"Check for forbidden functions in ELF files.  Forbidden functions are defined "
+"in the runtime configuration files.  Usually this inspection is used to "
+"catch built packages that make use of deprecated API functions if you wish "
+"built packages to conform to replacement APIs."
+msgstr ""
+"Verifica se há funções proibidas em arquivos ELF. As funções proibidas são "
+"definidas nos arquivos de configuração de tempo de execução. Normalmente "
+"esta inspeção é usada para capturar pacotes construídos que fazem uso de "
+"funções de API descontinuadas se você deseja que os pacotes construídos "
+"estejam em conformidade com APIs de substituição."
+
+#: include/inspect.h:1597
+msgid ""
+"Check for forbidden paths in both the DT_RPATH and DT_RUNPATH settings in "
+"ELF shared objects."
+msgstr ""
+"Verifica caminhos proibidos nas configurações DT_RPATH e DT_RUNPATH em "
+"objetos ELF compartilhados."
+
+#: include/inspect.h:1603
+msgid ""
+"Scan extracted and patched source code files, scripts, and RPM spec files "
+"for any prohibited Unicode code points, as defined in the configuration "
+"file.  Any prohibited code points are reported as a possible security risk."
+msgstr ""
+"Verifica arquivos de código-fonte extraídos e corrigidos, scripts e arquivos "
+"de especificação RPM em busca de pontos de código Unicode proibidos, "
+"conforme definido no arquivo de configuração. Quaisquer pontos de código "
+"proibidos são relatados como um possível risco à segurança."
+
+#: include/inspect.h:1609
+msgid ""
+"Check for correct RPM dependency metadata.  Report incorrect or conflicting "
+"findings as well as expected changes when comparing a new build to an older "
+"build.  Changes are only reported when comparing builds, but this inspection "
+"will check for correct RPM dependency metadata when inspecting a single "
+"build and report findings."
+msgstr ""
+"Verifica os metadados de dependência de RPM corretos. Relata descobertas "
+"incorretas ou conflitantes, bem como alterações esperadas ao comparar uma "
+"versão nova com uma versão mais antiga. As alterações são relatadas apenas "
+"ao comparar compilações, mas esta inspeção verificará os metadados corretos "
+"de dependência de RPM ao inspecionar uma única compilação e relatará as "
+"descobertas."
+
+#: include/inspect.h:1615
+msgid ""
+"Checks that files in RPM packages have their debugging symbols stripped and "
+"files in debuginfo packages carry debugging symbols.  When comparing builds, "
+"report where symbols unexpectedly appear or disappear and what corrective "
+"action is needed."
+msgstr ""
+"Verifica se os arquivos em pacotes RPM têm seus símbolos de depuração "
+"removidos e se os arquivos em pacotes debuginfo carregam símbolos de "
+"depuração. Ao comparar compilações, informa onde os símbolos aparecem ou "
+"desaparecem inesperadamente e quais ações corretivas são necessárias."
+
+#: include/inspect.h:1621
+msgid "Perform syntax check on udev rules files using udevadm verify."
+msgstr ""
+"Executa a verificação de sintaxe nos arquivos de regras do udev usando "
+"udevadm verify."
+
+#: include/results.h:31
+msgid "Change the string specified on the 'Vendor:' line in the spec file."
+msgstr "Altere a string especificada na linha 'Vendor:' no arquivo spec."
+
+#: include/results.h:38
+msgid "Make sure the SRPM is built on a host within the expected subdomain."
+msgstr ""
+"Certifique-se de que o SRPM seja compilado em um host dentro do subdomínio "
+"esperado."
+
+#: include/results.h:45
+msgid ""
+"Unprofessional language as defined in the configuration file was found in "
+"the text shown.  Remove or change the offending words and rebuild."
+msgstr ""
+"Linguagem não profissional conforme definida no arquivo de configuração foi "
+"encontrada no texto mostrado. Remova ou altere as palavras ofensivas e "
+"recompile."
+
+#: include/results.h:60 include/results.h:75
+#, c-format
+msgid ""
+"Check to see if you eliminated a subpackage but still have the %package and/"
+"or the %files section for it."
+msgstr ""
+"Verifique se você eliminou um subpacote, mas ainda possui a seção %package e/"
+"ou %files para ele."
+
+#: include/results.h:90
+msgid ""
+"The License tag must contain an approved license string as defined by the "
+"distribution (e.g., GPLv2+).  If the license in question is approved, the "
+"license database needs updating in the rpminspect-data package."
+msgstr ""
+"A tag License deve conter uma sequência de licença aprovada conforme "
+"definido pela distribuição (por exemplo, GPLv2+). Se a licença em questão é "
+"aprovada, o banco de dados de licenças precisará ser atualizado no pacote "
+"rpminspect-data."
+
+#: include/results.h:97
+msgid ""
+"Make sure the licensedb setting in the rpminspect configuration is set to a "
+"valid licensedb file.  This is also commonly due to a missing vendor "
+"specific rpminspect-data package on the system."
+msgstr ""
+"Certifique-se de que a configuração do licensedb na configuração do "
+"rpminspect esteja definida como um arquivo licensedb válido. Isso também "
+"geralmente ocorre devido à falta de um pacote rpminspect-data específico do "
+"fornecedor no sistema."
+
+#: include/results.h:104
+msgid ""
+"The specified license abbreviation is not listed as approved in the license "
+"database.  The license database is specified in the rpminspect configuration "
+"file.  Check this file and send a pull request to the appropriate upstream "
+"project to update the database.  If the license is listed in the database "
+"but marked unapproved, you may need to work with the legal team regarding "
+"options for this software."
+msgstr ""
+"A abreviatura de licença especificada não está listada como aprovada no "
+"banco de dados de licenças. O banco de dados de licença é especificado no "
+"arquivo de configuração rpminspect. Verifique este arquivo e envie uma pull "
+"request ao projeto upstream apropriado para atualizar o banco de dados. Se a "
+"licença estiver listada no banco de dados, mas marcada como não aprovada, "
+"talvez seja necessário trabalhar com a equipe jurídica (Legal Team) em "
+"relação às opções para este software."
+
+#: include/results.h:119 include/results.h:154
+msgid "Ensure all object files are compiled with -fPIC"
+msgstr ""
+"Certifique-se de que todos os arquivos objeto sejam compilados com -fPIC"
+
+#: include/results.h:126
+msgid ""
+"Ensure that the package is being built with the correct compiler and "
+"compiler flags"
+msgstr ""
+"Certifique-se de que o pacote esteja sendo compilado com o compilador e "
+"sinalizadores de compilador corretos"
+
+#: include/results.h:133
+msgid ""
+"The data in an ELF file appears to be corrupt; ensure that packaged ELF "
+"files are not being truncated or incorrectly modified"
+msgstr ""
+"Os dados em um arquivo ELF parecem estar corrompidos; certifique-se que os "
+"arquivos ELF empacotados não estejam sendo truncados ou modificados "
+"incorretamente"
+
+#: include/results.h:140
+msgid ""
+"An ELF stack is marked as executable. Ensure that no execstack options are "
+"being passed to the linker, and that no functions are defined on the stack."
+msgstr ""
+"Uma pilha ELF é marcada como executável. Certifique-se de que nenhuma opção "
+"execstack esteja sendo passada para o vinculador e que nenhuma função esteja "
+"definida na pilha."
+
+#: include/results.h:147
+msgid "Ensure executables are linked with with '-z relro -z now'"
+msgstr ""
+"Certifique-se de que os executáveis estão vinculados a '-z relro -z now'"
+
+#: include/results.h:169
+msgid "Correct the errors in the man page as reported by the libmandoc parser."
+msgstr ""
+"Corrija os erros na página man conforme relatado pelo analisador libmandoc."
+
+#: include/results.h:176
+msgid ""
+"Correct the installation path for the man page. Man pages must be installed "
+"in the directory beneath /usr/share/man that matches the section number of "
+"the page."
+msgstr ""
+"Corrija o caminho de instalação da página man. As páginas man devem ser "
+"instaladas no diretório abaixo de /usr/share/man que corresponda ao número "
+"da seção da página."
+
+#: include/results.h:191
+msgid "Correct the reported errors in the XML document"
+msgstr "Corrija os erros relatados no documento XML"
+
+#: include/results.h:206
+msgid ""
+"Refer to the Desktop Entry Specification at https://standards.freedesktop."
+"org/desktop-entry-spec/latest/ for help correcting the errors and warnings"
+msgstr ""
+"Consulte a especificação de entrada de desktop em https://standards."
+"freedesktop.org/desktop-entry-spec/latest/ para obter ajuda na correção de "
+"erros e avisos"
+
+#: include/results.h:221
+msgid ""
+"The Release: tag in the spec file must include a '%{?dist}' string.  Please "
+"add this to the spec file per the distribution packaging guidelines."
+msgstr ""
+"A tag Release: no arquivo spec deve incluir uma string '%{?dist}'. Adicione "
+"isso ao arquivo spec de acordo com as diretrizes de empacotamento de "
+"distribuição."
+
+#: include/results.h:236
+msgid ""
+"The spec file name does not match the expected NAME.spec format.  Rename the "
+"spec file to conform to this policy."
+msgstr ""
+"O nome do arquivo spec não corresponde ao formato NOME.spec esperado. "
+"Renomeie o arquivo spec para estar em conformidade com esta política."
+
+#: include/results.h:253
+msgid ""
+"This package is part of a module but is missing the %{modularitylabel} "
+"header tag.  Add this as a %define in the spec file and rebuild."
+msgstr ""
+"Este pacote faz parte de um módulo, mas não possui a tag de cabeçalho "
+"%{modularitylabel}. Adicione isso como %define no arquivo spec e recompile."
+
+#: include/results.h:260
+msgid ""
+"This build either contains a valid or invalid /data/static_context setting.  "
+"Refer to the module rules for the product you are building to determine what "
+"the setting should be.  The rpminspect configuration settings also set the "
+"rules determining if the /data/static_context setting is required, "
+"forbidden, or recommend."
+msgstr ""
+"Esta compilação contém uma configuração /data/static_context válida ou "
+"inválida. Consulte as regras do módulo do produto que você está compilando "
+"para determinar qual deve ser a configuração. As definições de configuração "
+"do rpminspect também definem as regras que determinam se a configuração /"
+"data/static_context é necessária, proibida ou recomendada."
+
+#: include/results.h:277
+msgid ""
+"The Java bytecode version for one or more class files in the build was not "
+"met for the product release.  Ensure you are using the correct JDK for the "
+"build."
+msgstr ""
+"A versão do bytecode Java para um ou mais arquivos de classe na compilação "
+"não foi atendida na liberação do produto. Certifique-se de estar usando o "
+"JDK correto para a compilação."
+
+#: include/results.h:292
+msgid ""
+"File changes were found.  In most cases these are expected, but it is a good "
+"idea to verify the changes found are deliberate."
+msgstr ""
+"Foram encontradas alterações no arquivo. Na maioria dos casos, isto é "
+"esperado, mas é uma boa ideia verificar se as alterações encontradas são "
+"deliberadas."
+
+#: include/results.h:307
+msgid ""
+"Unexpected file moves were found.  Verify these changes are correct.  If "
+"they are not, adjust the build to prevent the file moves between builds."
+msgstr ""
+"Foram encontradas movimentações inesperadas de arquivos. Verifique se essas "
+"alterações estão corretas. Se não estiverem, ajuste a compilação para evitar "
+"que o arquivo seja movido entre as compilações."
+
+#: include/results.h:322
+msgid ""
+"Unexpected file removals were found.  Verify these changes are correct.  If "
+"they are not, adjust the build to prevent the file removals between builds."
+msgstr ""
+"Foram encontradas remoções inesperadas de arquivos. Verifique se essas "
+"alterações estão corretas. Se não estiverem, ajuste a compilação para evitar "
+"remoções de arquivos entre compilações."
+
+#: include/results.h:337
+#, c-format
+msgid ""
+"Unexpected file additions were found.  Verify these changes are correct.  If "
+"they are not, adjust the build to prevent the file additions between "
+"builds.  If they are correct, update %s and send a patch to the rpminspect "
+"data project owning that file so rpminspect knows to expect this change.  "
+"You may also need to update the data package or local configuration file and "
+"change the forbidden_path_prefixes or forbidden_path_suffixes list."
+msgstr ""
+"Adições inesperadas de arquivos foram encontradas. Verifique se essas "
+"alterações estão corretas. Se não estiverem, ajuste a compilação para evitar "
+"adições de arquivos entre compilações. Se estiverem corretos, atualize %s e "
+"envie um patch para o projeto de dados rpminspect que possui esse arquivo "
+"para que o rpminspect saiba que pode esperar essa mudança. Você também pode "
+"precisar atualizar o pacote de dados ou o arquivo de configuração local e "
+"alterar a lista de forbidden_path_prefixes ou forbidden_path_suffixes."
+
+#: include/results.h:352
+#, c-format
+msgid ""
+"Unexpected changed source archive content. The version of the package did "
+"not change between builds, but the source archive content did. This may be "
+"deliberate, but needs inspection. If this change is expected, update %s and "
+"send a patch to the project that owns that file."
+msgstr ""
+"Conteúdo do arquivo fonte alterado inesperadamente. A versão do pacote não "
+"mudou entre as compilações, mas o conteúdo do arquivo fonte sim. Isto pode "
+"ser deliberado, mas precisa de inspeção. Se esta alteração for esperada, "
+"atualize %s e envie um patch para o projeto que possui esse arquivo."
+
+#: include/results.h:367
+#, c-format
+msgid ""
+"Make sure the %%files section includes the %%defattr macro. If these "
+"permissions are expected, update %s and send a patch to the project that "
+"owns it."
+msgstr ""
+"Certifique-se de que a seção %%files inclua a macro %%defattr. Se essas "
+"permissões forem esperadas, atualize %s e envie um patch para o projeto que "
+"contenha isso."
+
+#: include/results.h:374
+#, c-format
+msgid ""
+"Bin path files must be owned by the bin_owner set in the rpminspect "
+"configuration, which is usually root. If this ownership is expected, update "
+"%s and send a patch to the project that owns it."
+msgstr ""
+"Os arquivos de caminho bin devem pertencer ao bin_owner definido na "
+"configuração do rpminspect, que geralmente é root. Se esta propriedade for "
+"esperada, atualize %s e envie um patch para o projeto que contenha isso."
+
+#: include/results.h:381
+#, c-format
+msgid ""
+"Bin path files must be owned by the bin_group set in the rpminspect "
+"configuration, which is usually root. If this ownership is expect, update %s "
+"and send a patch to the project that owns it."
+msgstr ""
+"Os arquivos de caminho bin devem pertencer ao bin_group definido na "
+"configuração do rpminspect, que geralmente é root. Se esta propriedade for "
+"esperada, atualize %s e envie um patch para o projeto que o possui."
+
+#: include/results.h:388
+#, c-format
+msgid ""
+"Either chgrp the file to the bin_group set in the rpminspect configuration "
+"or remove the world execute bit on the file (chmod o-x). If this ownership "
+"is expected, update %s and send a patch to the project that owns it."
+msgstr ""
+"Faça chgrp do arquivo para bin_group definido na configuração do rpminspect "
+"ou remova o bit de execução mundial do arquivo (chmod o-x). Se esta "
+"propriedade for esperada, atualize %s e envie um patch para o projeto que "
+"contenha isso."
+
+#: include/results.h:395
+#, c-format
+msgid ""
+"Either chgrp the file to the bin_group set in the rpminspect configuration "
+"or remove the group write bit on the file (chmod g-w). If this ownership is "
+"expected, update %s and send a patch to the project that owns it."
+msgstr ""
+"Use chgrp no arquivo para bin_group definido na configuração do rpminspect "
+"ou remova o bit de gravação do grupo no arquivo (chmod g-w). Se esta "
+"propriedade for esperada, atualize %s e envie um patch para o projeto que "
+"contenha isso."
+
+#: include/results.h:402
+#, c-format
+msgid ""
+"Verify the ownership changes are expected. If not, adjust the package build "
+"process to set correct owner and group information. If expected, update %s "
+"and send a patch to the project that owns it."
+msgstr ""
+"Verifique se as mudanças de propriedade são esperadas. Caso contrário, "
+"ajuste o processo de compilação do pacote para definir as informações "
+"corretas do proprietário e do grupo. Se esperado, atualize %s e envie um "
+"patch para o projeto que contenha isso."
+
+#: include/results.h:409
+msgid ""
+"rpminspect is expecting a fileinfo rule from the vendor data package for "
+"this file. Usually this means the file carries a non-standard set of "
+"permissions (e.g., setuid) which is a condition where rpminspect would check "
+"the fileinfo list to ensure the package conforms to the vendor rules. To "
+"remedy, add a fileinfo rule for this file to the vendor data package under "
+"the appropriate product release file."
+msgstr ""
+"O rpminspect está esperando uma regra fileinfo do pacote de dados do "
+"fornecedor para este arquivo. Normalmente, isso significa que o arquivo "
+"carrega um conjunto de permissões não padrão (por exemplo, setuid), que é "
+"uma condição em que o rpminspect verificaria a lista de informações do "
+"arquivo para garantir que o pacote esteja em conformidade com as regras do "
+"fornecedor. Para remediar, adicione uma regra fileinfo para esse arquivo ao "
+"pacote de dados do fornecedor no arquivo de versão do produto apropriado."
+
+#: include/results.h:424
+msgid "Consult the shell documentation for proper syntax."
+msgstr "Consulte a documentação do shell para obter a sintaxe correta."
+
+#: include/results.h:431
+msgid ""
+"The file referenced was not a known shell script in the before build but is "
+"now a shell script in the after build."
+msgstr ""
+"O arquivo referenciado não era um script de shell conhecido na compilação "
+"anterior, mas agora é um script de shell na compilação posterior."
+
+#: include/results.h:438
+msgid ""
+"The referenced shell script is invalid. Consider debugging it with the '-n' "
+"option on the shell to find and fix the problem."
+msgstr ""
+"O script de shell referenciado é inválido. Considere depurá-lo com a opção '-"
+"n' no shell para localizar e corrigir o problema."
+
+#: include/results.h:453
+msgid "See annocheck(1) for more information."
+msgstr "Veja annocheck(1) para mais informações."
+
+#: include/results.h:460
+msgid ""
+"Ensure all object files are compiled with '-O2 -D_FORTIFY_SOURCE=2', and "
+"that all appropriate headers are included (no implicit function "
+"declarations). Symbols may also appear as unfortified if the compiler is "
+"unable to determine the size of a buffer, which is not necessarily an error."
+msgstr ""
+"Certifique-se de que todos os arquivos de objeto sejam compilados com '-O2 -"
+"D_FORTIFY_SOURCE=2' e que todos os cabeçalhos apropriados sejam incluídos "
+"(sem declarações de função implícitas). Os símbolos também podem parecer não "
+"fortificados se o compilador não for capaz de determinar o tamanho de um "
+"buffer, o que não é necessariamente um erro."
+
+#: include/results.h:475
+msgid ""
+"DT_NEEDED symbols have been added or removed.  This happens when the build "
+"environment has different versions of the required libraries.  Sometimes "
+"this is deliberate but sometimes not.  Verify these changes are expected.  "
+"If they are not, modify the package spec file to ensure the build links with "
+"the correct shared libraries."
+msgstr ""
+"Símbolos DT_NEEDED foram adicionados ou removidos. Isso acontece quando o "
+"ambiente de compilação possui versões diferentes das bibliotecas "
+"necessárias. Às vezes isso é deliberado, mas às vezes não. Verifique se "
+"essas alterações são esperadas. Se não estiverem, modifique o arquivo spec "
+"do pacote para garantir que a compilação esteja vinculada às bibliotecas "
+"compartilhadas corretas."
+
+#: include/results.h:490
+msgid ""
+"A file grew by a noticeable amount.  Ensure this change is intended.  If it "
+"is, you can adjust the filesize inspection settings in the rpminspect.yaml "
+"file."
+msgstr ""
+"Um arquivo cresceu bastante. Certifique-se de que esta alteração seja "
+"intencional. Se estiver, você pode ajustar as configurações de inspeção de "
+"tamanho de arquivo no arquivo rpminspect.yaml."
+
+#: include/results.h:497
+msgid ""
+"A file shrank by a noticeable amount.  Ensure this change is intended.  If "
+"it is, you can adjust the filesize inspection settings in the rpminspect."
+"yaml file."
+msgstr ""
+"Um arquivo encolheu bastante. Certifique-se de que esta alteração seja "
+"intencional. Se estiver, você pode ajustar as configurações de inspeção de "
+"tamanho de arquivo no arquivo rpminspect.yaml."
+
+#: include/results.h:504
+msgid ""
+"A previously empty file is no longer empty.  Make sure this change is "
+"intended and fix the package spec file if necessary."
+msgstr ""
+"Um arquivo anteriormente vazio não está mais vazio. Certifique-se de que "
+"essa alteração seja intencional e corrija o arquivo spec do pacote, se "
+"necessário."
+
+#: include/results.h:511
+msgid ""
+"A previously non-empty file is now empty.  Make sure this change is intended "
+"and fix the package space file if necessary."
+msgstr ""
+"Um arquivo anteriormente não vazio agora está vazio. Certifique-se de que "
+"essa alteração seja intencional e corrija o arquivo de espaço do pacote, se "
+"necessário."
+
+#: include/results.h:526
+#, c-format
+msgid ""
+"Unexpected capabilities were found on the indicated file.  Consult "
+"capabilities(7) and either adjust the files in the package or modify the "
+"capabilities list in the rpminspect vendor data package.  The security team "
+"may also be of help for this situation.  If necessary, update %s with the "
+"changes found here and send a patch to the project that owns the data file."
+msgstr ""
+"Recursos inesperados foram encontrados no arquivo indicado. Consulte "
+"capabilities(7) e ajuste os arquivos no pacote ou modifique a lista de "
+"capacidades no pacote de dados de fornecedores do rpminspect. A equipe de "
+"segurança também pode ajudar nesta situação. Se necessário, atualize %s com "
+"as alterações encontradas aqui e envie um patch para o projeto que possui o "
+"arquivo de dados."
+
+#: include/results.h:541
+msgid ""
+"Kernel module parameters were removed between builds.  This may present "
+"usability problems for users if module parameters were removed in a "
+"maintenance update."
+msgstr ""
+"Os parâmetros de módulo do kernel foram removidos entre as compilações. Isto "
+"pode apresentar problemas de usabilidade para os usuários se os parâmetros "
+"de módulo forem removidos em uma atualização de manutenção."
+
+#: include/results.h:548
+msgid ""
+"Kernel module dependencies changed between builds.  This may present "
+"usability problems for users if module dependencies changed in a maintenance "
+"update."
+msgstr ""
+"Dependências do módulo do kernel alteradas entre compilações. Isto pode "
+"apresentar problemas de usabilidade para os usuários se as dependências do "
+"módulo forem alteradas em uma atualização de manutenção."
+
+#: include/results.h:555
+msgid ""
+"Kernel module device aliases changed between builds.  This may present "
+"usability problems for users if module device aliases changed in a "
+"maintenance update."
+msgstr ""
+"Apelidos de dispositivos do módulo kernel alterados entre compilações. Isso "
+"pode apresentar problemas de usabilidade para os usuários se os aliases dos "
+"dispositivos do módulo forem alterados em uma atualização de manutenção."
+
+#: include/results.h:565
+msgid ""
+"An architecture present in the before build is now missing in the after "
+"build.  This may be deliberate, but check to make sure you do not have any "
+"unexpected ExclusiveArch lines in the spec file."
+msgstr ""
+"Uma arquitetura presente na compilação anterior agora está faltando na "
+"compilação posterior. Isso pode ser deliberado, mas verifique se você não "
+"possui nenhuma linha ExclusiveArch inesperada no arquivo spec."
+
+#: include/results.h:566
+msgid ""
+"A new architecture has appeared in the after build.  This may indicate "
+"progress in the world of computing."
+msgstr ""
+"Uma nova arquitetura apareceu após a compilação. Isto pode indicar progresso "
+"no mundo da computação."
+
+#: include/results.h:576
+msgid ""
+"A subpackage present in the before build is now missing in the after build.  "
+"This may be deliberate, but check to make sure you have correct syntax "
+"defining the subpackage in the spec file"
+msgstr ""
+"Um subpacote presente na compilação anterior agora está ausente na "
+"compilação posterior. Isso pode ser deliberado, mas verifique se você possui "
+"a sintaxe correta definindo o subpacote no arquivo spec"
+
+#: include/results.h:577
+msgid ""
+"A new subpackage has appeared in the after build.  This may indicate "
+"progress in the world of computing."
+msgstr ""
+"Um novo subpacote apareceu após a compilação. Isso pode indicar progresso no "
+"mundo da computação."
+
+#: include/results.h:587
+#, c-format
+msgid ""
+"Make sure the spec file in the after build contains a valid %changelog "
+"section."
+msgstr ""
+"Certifique-se de que o arquivo spec na compilação posterior contenha uma "
+"seção %changelog válida."
+
+#: include/results.h:597
+msgid ""
+"Files should not be installed in old directory names.  Modify the package to "
+"install the affected file to the preferred directory."
+msgstr ""
+"Os arquivos não devem ser instalados em nomes de diretórios antigos. "
+"Modifique o pacote para instalar o arquivo afetado no diretório preferido."
+
+#: include/results.h:607
+msgid ""
+"ELF .o and .a files should not carry LTO (Link Time Optimization) bytecode.  "
+"Make sure you have stripped LTO bytecode from those files at install time."
+msgstr ""
+"Os arquivos ELF .o e .a não devem conter bytecode LTO (Link Time "
+"Optimization). Certifique-se de ter removido o bytecode LTO desses arquivos "
+"no momento da instalação."
+
+#: include/results.h:617
+msgid ""
+"Make sure symlinks point to a valid destination in one of the subpackages of "
+"the build; dangling symlinks are not allowed.  If you are comparing builds "
+"and have a non-symlink turn in to a symlink, ensure this is deliberate.  "
+"NOTE:  You cannot turn a directory in to a symlink due to RPM limitations."
+msgstr ""
+"Certifique-se de que os links simbólicos apontem para um destino válido em "
+"um dos subpacotes da compilação; links simbólicos pendentes (dangling) não "
+"são permitidos. Se você estiver comparando compilações e um link não "
+"simbólico se transformar em um link simbólico, certifique-se de que isso "
+"seja deliberado. NOTA: Você não pode transformar um diretório em um link "
+"simbólico devido às limitações do RPM."
+
+#: include/results.h:618
+#, c-format
+msgid ""
+"Make sure symlinks point to a valid destination in one of the subpackages of "
+"the build; dangling symlinks are not allowed.  If you are comparing builds "
+"and have a non-symlink turn in to a symlink, ensure this is deliberate.  "
+"NOTE:  You cannot turn a directory in to a symlink due to RPM limitations.  "
+"If you absolutely must do that, make sure you include the %pretrans "
+"scriptlet for replacing a directory.  See the packaging guidelines for "
+"'Scriptlet to replace a directory' for more information."
+msgstr ""
+"Certifique-se de que os links simbólicos apontem para um destino válido em "
+"um dos subpacotes da compilação; links simbólicos pendentes (dandling) não "
+"são permitidos. Se você estiver comparando compilações e um link não "
+"simbólico se transformar em um link simbólico, certifique-se de que isso "
+"seja deliberado. NOTA: Você não pode transformar um diretório em um link "
+"simbólico devido às limitações do RPM. Se for absolutamente necessário fazer "
+"isso, certifique-se de incluir o scriptlet %pretrans para substituir um "
+"diretório. Consulte as diretrizes de empacotamento para 'Scriptlet para "
+"substituir um diretório' para obter mais informações."
+
+#: include/results.h:628
+#, c-format
+msgid ""
+"Remove forbidden path references from the indicated line in the %files "
+"section.  In many cases you can use RPM macros to specify path locations.  "
+"See the RPM documentation or distribution package maintainer guide for more "
+"information."
+msgstr ""
+"Remova referências de caminhos proibidos da linha indicada na seção %files. "
+"Em muitos casos, você pode usar macros RPM para especificar locais de "
+"caminho. Consulte a documentação do RPM ou o guia do mantenedor do pacote de "
+"distribuição para obter mais informações."
+
+#: include/results.h:638
+msgid ""
+"In many cases the changing MIME type is deliberate.  Verify that the change "
+"is intended and if necessary fix the spec file so the correct file is "
+"included in the built package."
+msgstr ""
+"Em muitos casos, a alteração do tipo MIME é deliberada. Verifique se a "
+"alteração é intencional e, se necessário, corrija o arquivo spec para que o "
+"arquivo correto seja incluído no pacote compilado."
+
+#: include/results.h:648
+msgid ""
+"ABI changes introduced during maintenance updates can lead to problems for "
+"users.  See the abidiff(1) documentation and the distribution ABI policies "
+"to determine if this detected change is allowed."
+msgstr ""
+"As alterações da ABI introduzidas durante as atualizações de manutenção "
+"podem causar problemas para os usuários. Consulte a documentação do "
+"abidiff(1) e as políticas de distribuição da ABI para determinar se esta "
+"alteração detectada é permitida."
+
+#: include/results.h:658
+msgid ""
+"Kernel Module Interface introduced during maintenance updates can lead to "
+"problems for users.  See the libabigail documentation and the distribution "
+"KMI policy to determine if this detected change is allowed."
+msgstr ""
+"A interface do módulo kernel introduzida durante as atualizações de "
+"manutenção pode causar problemas para os usuários. Consulte a documentação "
+"do libabigail e a política KMI de distribuição para determinar se esta "
+"alteração detectada é permitida."
+
+#: include/results.h:668
+#, c-format
+msgid ""
+"Changes to %config should be done carefully.  Make sure you have installed "
+"the correct file and in the correct location.  If a package is restructuring "
+"configuration files, make sure the package can handle upgrading an existing "
+"package -or- honor the old file locations."
+msgstr ""
+"As alterações em %config devem ser feitas com cuidado. Certifique-se de ter "
+"instalado o arquivo correto e no local correto. Se um pacote estiver "
+"reestruturando arquivos de configuração, certifique-se de que o pacote possa "
+"lidar com a atualização de um pacote existente -ou- respeite os locais de "
+"arquivo antigos."
+
+#: include/results.h:678
+#, c-format
+msgid ""
+"Changes found among the %doc files.  Verify these changes are intended if "
+"the package is not a rebase.  Sometimes upstream projects rename or move "
+"documentation files and the spec file needs to account for those changes."
+msgstr ""
+"Alterações encontradas entre os arquivos %doc. Verifique se essas alterações "
+"são intencionais se o pacote não for um rebase. Às vezes, os projetos "
+"upstream renomeiam ou movem arquivos de documentação e o arquivo spec "
+"precisa levar em conta essas alterações."
+
+#: include/results.h:688
+msgid ""
+"An invalid patch file was found.  This is usually the result of generating a "
+"collection of patches by comparing two trees.  When files disappear that can "
+"lead to zero length patches in the resulting collection.  Check to see if "
+"the source package has any zero length or otherwise invalid patches and "
+"correct the problem."
+msgstr ""
+"Um arquivo de patch inválido foi encontrado. Geralmente, isso é o resultado "
+"da geração de uma coleção de patches comparando duas árvores. Quando os "
+"arquivos desaparecem, isso pode levar a patches de comprimento zero na "
+"coleção resultante. Verifique se o pacote fonte tem comprimento zero ou "
+"patches inválidos e corrija o problema."
+
+#: include/results.h:690
+#, c-format
+msgid ""
+"The named patch is defined in the source RPM header (this means it has a "
+"PatchN: definition in the spec file) but is not applied anywhere in the spec "
+"file.  It is missing a corresponding %patch macro and the spec file lacks "
+"the %autosetup or %autopatch macros.  You can fix this by adding the "
+"appropriate %patch macro in the spec file (usually in the %prep section).  "
+"The number specified with the %patch macro corresponds to the number used to "
+"define the patch at the top of the spec file.  So Patch47 is applied with "
+"either a '%patch 47', '%patch -P 47', '%patch -P47', or '%patch47' macro."
+msgstr ""
+"O patch nomeado está definido no cabeçalho do RPM fonte (isso significa que "
+"possui uma definição PatchN: no arquivo spec), mas não é aplicado em nenhum "
+"lugar do arquivo spec. Está faltando uma macro %patch correspondente e o "
+"arquivo spec não possui as macros %autosetup ou %autopatch. Você pode "
+"corrigir isso adicionando a macro %patch apropriada no arquivo spec "
+"(geralmente na seção %prep). O número especificado com a macro %patch "
+"corresponde ao número usado para definir o patch no topo do arquivo spec. "
+"Portanto, Patch47 é aplicado com uma macro '%patch 47', '%patch -P 47', "
+"'%patch -P47' ou '%patch47'."
+
+#: include/results.h:692
+#, c-format
+msgid ""
+"The named patch is defined but is mismatched by number with the %patch "
+"macro.  Make sure all numbered patches have corresponding %patch macros.  "
+"For example, Patch47 needs to have either a '%patch 47', '%patch -P 47', "
+"'%patch -P47', or '%patch47' macro."
+msgstr ""
+"O patch nomeado está definido, mas não corresponde por número à macro "
+"%patch. Certifique-se de que todos os patches numerados tenham macros %patch "
+"correspondentes. Por exemplo, Patch47 precisa ter uma macro '%patch 47', "
+"'%patch -P 47', '%patch -P47' ou '%patch47'."
+
+#: include/results.h:694
+msgid ""
+"The defined patch file is not something rpminspect can handle.  This is "
+"likely a bug and should be reported to the upstream rpminspect project."
+msgstr ""
+"O arquivo de patch definido não é algo que o rpminspect possa manipular. "
+"Provavelmente é um bug e deve ser relatado ao projeto upstream do rpminspect."
+
+#: include/results.h:704
+msgid ""
+"ClamAV has found a virus in the named file.  This may be a false positive, "
+"but you should manually inspect the file in question to ensure it is clean.  "
+"This may be a problem with the ClamAV database or detection.  If you are "
+"sure the file in question is clean, please file a bug with rpminspect for "
+"further help."
+msgstr ""
+"ClamAV encontrou um vírus no arquivo nomeado. Isso pode ser um falso "
+"positivo, mas você deve inspecionar manualmente o arquivo em questão para "
+"garantir que esteja limpo. Isso pode ser um problema com o banco de dados ou "
+"detecção do ClamAV. Se você tiver certeza de que o arquivo em questão está "
+"limpo, registre um bug no rpminspect para obter mais ajuda."
+
+#: include/results.h:714
+#, c-format
+msgid ""
+"A file with potential politically sensitive content was found in the "
+"package.  If this file is permitted, it should be added to the rpminspect "
+"vendor data package for the product.  Modify the %s file and send a patch to "
+"the project that owns it."
+msgstr ""
+"Um arquivo com potencial conteúdo politicamente sensível foi encontrado no "
+"pacote. Se esse arquivo for permitido, ele deverá ser adicionado ao pacote "
+"de dados do fornecedor rpminspect do produto. Modifique o arquivo %s e envie "
+"um patch para o projeto que contém isso."
+
+#: include/results.h:724
+msgid ""
+"Forbidden symbols were found in an ELF file in the package.  The "
+"configuration settings for rpminspect indicate the named symbols are "
+"forbidden in packages.  If this is deliberate, you may want to disable the "
+"badfuncs inspection.  If it is not deliberate, check the man pages for the "
+"named symbols to see what API functions have replaced the forbidden "
+"symbols.  Usually a function is marked as deprecated but still provided in "
+"order to allow for backwards compatibility.  Whenever possible the "
+"deprecated functions should not be used."
+msgstr ""
+"Símbolos proibidos foram encontrados em um arquivo ELF no pacote. As "
+"definições de configuração do rpminspect indicam que os símbolos nomeados "
+"são proibidos em pacotes. Se isso for deliberado, você pode desabilitar a "
+"inspeção de badfuncs. Se não for deliberado, verifique as páginas de manual "
+"dos símbolos nomeados para ver quais funções da API substituíram os símbolos "
+"proibidos. Normalmente, uma função é marcada como descontinuada, mas ainda "
+"fornecida para permitir compatibilidade com versões anteriores. Sempre que "
+"possível, as funções obsoletas não devem ser usadas."
+
+#: include/results.h:734
+msgid ""
+"Either DT_RPATH or DT_RUNPATH properties were found on ELF shared objects in "
+"this package.  The use of DT_RPATH and DT_RUNPATH is discouraged except in "
+"certain situations.  Check to see that you a disabling rpath during the "
+"%build stage of the spec file.  If you are unable to do this easily, you can "
+"try using a program such as patchelf to remove these properties from the ELF "
+"files."
+msgstr ""
+"As propriedades DT_RPATH ou DT_RUNPATH foram encontradas em objetos "
+"compartilhados ELF neste pacote. O uso de DT_RPATH e DT_RUNPATH é "
+"desencorajado, exceto em determinadas situações. Verifique se você desativou "
+"o rpath durante o estágio %build do arquivo spec. Se não conseguir fazer "
+"isso facilmente, você pode tentar usar um programa como o patchelf para "
+"remover essas propriedades dos arquivos ELF."
+
+#: include/results.h:736
+msgid ""
+"Both DT_RPATH and DT_RUNPATH properties were found in an ELF shared object.  "
+"This indicates a linker error and should not happen.  ELF objects should "
+"only carry DT_RPATH or DT_RUNPATH, never both."
+msgstr ""
+"As propriedades DT_RPATH e DT_RUNPATH foram encontradas em um objeto "
+"compartilhado ELF. Isso indica um erro do vinculador e não deveria "
+"acontecer. Objetos ELF devem carregar apenas DT_RPATH ou DT_RUNPATH, nunca "
+"ambos."
+
+#: include/results.h:746
+msgid ""
+"The rpminspect configuration file contains a list of forbidden Unicode code "
+"points.  One was found in the extracted and patched source tree or in one of "
+"the text source files in the source RPM.  Either remove this code point or "
+"discuss the situation with the Product Security Team to determine the "
+"correct course of action."
+msgstr ""
+"O arquivo de configuração rpminspect contém uma lista de pontos de código "
+"Unicode proibidos. Um foi encontrado na árvore de fontes extraída e "
+"corrigida ou em um dos arquivos de texto fonte no RPM de origem. Remova esse "
+"ponto de código ou discuta a situação com a equipe de segurança do produto "
+"para determinar o curso de ação correto."
+
+#: include/results.h:748
+#, c-format
+msgid ""
+"The %prep section of the spec file could not be executed for some reason.  "
+"This usually results from a failure in librpmbuild, which is usually tied to "
+"archive extraction problems or the filesystem changing while rpminspect is "
+"running.  A common cause is removal of the working directory while the "
+"program is executing."
+msgstr ""
+"A seção %prep do arquivo spec não pôde ser executada por algum motivo. Isso "
+"geralmente resulta de uma falha no librpmbuild, que geralmente está ligada a "
+"problemas de extração de arquivos ou à alteração do sistema de arquivos "
+"enquanto o rpminspect está em execução. Uma causa comum é a remoção do "
+"diretório de trabalho enquanto o programa está em execução."
+
+#: include/results.h:758
+msgid ""
+"Unexpanded RPM spec file macros were found in the noted dependency rule.  "
+"Check the spec file for this dependency and ensure you have not misspelled a "
+"macro or used a macro name that does not exist."
+msgstr ""
+"Macros de arquivo spec RPM não expandidas foram encontradas na regra de "
+"dependência observada. Verifique o arquivo spec dessa dependência e "
+"certifique-se de não ter digitado uma macro incorretamente ou usado um nome "
+"de macro que não existe."
+
+#: include/results.h:760
+msgid ""
+"Add the indicated explicit Requires to the spec file for the named "
+"subpackage.  Subpackages depending on shared libraries in another subpackage "
+"must carry an explicit 'Requires: SUBPACKAGE_NAME = %{version}-%{release}' "
+"in the spec file."
+msgstr ""
+"Adicione o Requires explícito indicado ao arquivo spec do subpacote nomeado. "
+"Subpacotes que dependem de bibliotecas compartilhadas em outro subpacote "
+"devem conter um 'Requires: NOME_SUBPACOTE = %{version}-%{release}' explícito "
+"no arquivo spec."
+
+#: include/results.h:762
+msgid ""
+"Add the indicated explicit Requires to the spec file for the named "
+"subpackage.  Subpackages depending on shared libraries in another subpackage "
+"must carry an explicit 'Requires: SUBPACKAGE_NAME = %{epoch}:%{version}-"
+"%{release}' in the spec file."
+msgstr ""
+"Adicione o Requires explícito indicado ao arquivo spec do subpacote nomeado. "
+"Os subpacotes que dependem de bibliotecas compartilhadas em outro subpacote "
+"devem conter um explícito 'Requires: NOME_SUBPACOTE = %{epoch}:%{version}-"
+"%{release}' no arquivo spec."
+
+#: include/results.h:764
+#, c-format
+msgid ""
+"Check subpackage %files sections and explicit Provides statements.  Only one "
+"subpackage should provide a given shared library.  Shared library names are "
+"automatically added as Provides, so there is no need to specify them in the "
+"spec file but you do need to make sure only one subpackage is packaging up "
+"the shared library in question."
+msgstr ""
+"Verifique as seções %files do subpacote e as instruções Provides explícitas. "
+"Apenas um subpacote deve fornecer uma determinada biblioteca compartilhada. "
+"Os nomes das bibliotecas compartilhadas são adicionados automaticamente como "
+"Provides, portanto não há necessidade de especificá-los no arquivo spec, mas "
+"você precisa ter certeza de que apenas um subpacote está empacotando a "
+"biblioteca compartilhada em questão."
+
+#: include/results.h:766
+msgid ""
+"A dependency listed in the before build changed to the indicated dependency "
+"in the after build.  If this is a VERIFY result, it means rpminspect noticed "
+"the change in what it considers a maintenance update in a package.  An INFO "
+"result means it noticed this change, but deems it ok because it is comparing "
+"a rebased build."
+msgstr ""
+"Uma dependência listada na compilação anterior foi alterada para a "
+"dependência indicada na compilação posterior. Se este for um resultado "
+"VERIFY, significa que o rpminspect notou a mudança no que considera uma "
+"atualização de manutenção em um pacote. Um resultado INFO significa que ele "
+"percebeu essa mudança, mas considera que está tudo bem porque está "
+"comparando uma compilação rebaseada."
+
+#: include/results.h:768
+msgid ""
+"A new dependency is seen in the after build that was not present in the "
+"before build.  If this is a VERIFY result, it means rpminspect noticed the "
+"change in what it considers a maintenance update in a package.  An INFO "
+"result means it noticed this change, but deems it ok because it is comparing "
+"a rebased build."
+msgstr ""
+"Uma nova dependência é vista na compilação posterior que não estava presente "
+"na compilação anterior. Se este for um resultado VERIFY, significa que o "
+"rpminspect notou a mudança no que considera uma atualização de manutenção em "
+"um pacote. Um resultado INFO significa que ele percebeu essa mudança, mas "
+"considera que está tudo bem porque está comparando uma compilação rebaseada."
+
+#: include/results.h:770
+msgid ""
+"A dependency seen in the before build is not seen in the after build meaning "
+"it was removed or lost.  If this is a VERIFY result, it means rpminspect "
+"noticed the change in what it considers a maintenance update in a package.  "
+"An INFO result means it noticed this change, but deems it ok because it is "
+"comparing a rebased build."
+msgstr ""
+"Uma dependência vista na compilação anterior não é vista na compilação "
+"posterior, o que significa que foi removida ou perdida. Se este for um "
+"resultado VERIFY, significa que o rpminspect notou a mudança no que "
+"considera uma atualização de manutenção em um pacote. Um resultado INFO "
+"significa que ele percebeu essa mudança, mas considera que está tudo bem "
+"porque está comparando uma compilação rebaseada."
+
+#: include/results.h:772
+msgid ""
+"The package has an Epoch value greater than zero, but the explicit "
+"subpackage dependencies are not consistently using it.  For the dependency "
+"reported, the '= %{version}-%{release}' needs to change to '= %{epoch}:"
+"%{version}-%{release}' to capture the package package Epoch in the "
+"dependency."
+msgstr ""
+"O pacote tem um valor de Epoch maior que zero, mas as dependências "
+"explícitas do subpacote não o utilizam de forma consistente. Para a "
+"dependência relatada, '= %{version}-%{release}' precisa mudar para '= "
+"%{epoch}:%{version}-%{release}' para capturar o pacote Epoch na dependência."
+
+#: include/results.h:781
+msgid ""
+"Refer to the udev documentation at https://www.freedesktop.org/software/"
+"systemd/man/udev.html for help correcting the errors and warnings."
+msgstr ""
+"Consulte a documentação do udev em https://www.freedesktop.org/software/"
+"systemd/man/udev.html para obter ajuda na correção de erros e avisos."
+
+#: lib/abi.c:65
+#, c-format
+msgid "*** malformed ABI level identifier: %s"
+msgstr "*** identificador de nível ABI malformado: %s"
+
+#: lib/abi.c:70
+#, c-format
+msgid "*** ABI level %d already defined"
+msgstr "*** nível ABI %d já definido"
+
+#: lib/abi.c:84
+#, c-format
+msgid "*** malformed ABI level entry: %s"
+msgstr "*** entrada de nível ABI malformada: %s"
+
+#: lib/builds.c:73
+#, c-format
+msgid "*** unable to create download directory %s"
+msgstr "*** não foi possível criar o diretório de download %s"
+
+#: lib/builds.c:85
+#, c-format
+msgid "*** unknown working directory type: %d"
+msgstr "*** tipo de diretório de trabalho desconhecido: %d"
+
+#: lib/builds.c:173
+#, c-format
+msgid "*** unable to read %s, skipping"
+msgstr "*** não foi possível ler %s, ignorando"
+
+#: lib/builds.c:205
+#, c-format
+msgid "*** unknown directory member encountered: %s"
+msgstr "*** membro de diretório desconhecido encontrado: %s"
+
+#: lib/builds.c:234
+#, c-format
+msgid "There is not enough available space to download the requested %s.\n"
+msgstr ""
+"Não há espaço disponível o suficiente para fazer o download do %s "
+"requisitado.\n"
+
+#: lib/builds.c:235 lib/peers.c:177
+#, c-format
+msgid "    Need %s in %s, have %s.\n"
+msgstr "    Preciso de %s em %s, tenho %s.\n"
+
+#: lib/builds.c:236 lib/peers.c:178
+#, c-format
+msgid "See the `-w' option for specifying an alternate working directory.\n"
+msgstr ""
+"Veja a opção `-w' para especificar um diretório de trabalho alternativo.\n"
+
+#: lib/builds.c:249
+#, c-format
+msgid "Unable to determine the required space to download the requested %s.\n"
+msgstr ""
+"Não foi possível determinar o espaço necessário para fazer o download do %s "
+"requisitado.\n"
+
+#: lib/builds.c:250
+#, c-format
+msgid "Ensure %s has sufficient space available."
+msgstr "Certifique-se de que %s tenha espaço suficiente disponível."
+
+#: lib/builds.c:290 lib/builds.c:294
+msgid "build"
+msgstr "compilação"
+
+#: lib/builds.c:320
+msgid "Downloading module"
+msgstr "Baixando módulo"
+
+#: lib/builds.c:323
+msgid "Downloading RPM build"
+msgstr "Baixando compilação de RPM"
+
+#: lib/builds.c:373 lib/inspect_modularity.c:47
+#, c-format
+msgid "*** ignoring malformed module metadata file: %s"
+msgstr "*** ignorando arquivo de metadados de módulo malformado: %s"
+
+#: lib/builds.c:383
+#, c-format
+msgid "*** malformed rpm filters in file: %s"
+msgstr "*** filtros rpm malformados no arquivo: %s"
+
+#: lib/builds.c:541 lib/builds.c:545
+msgid "task"
+msgstr "tarefa"
+
+#: lib/builds.c:659 lib/builds.c:662
+msgid "RPM"
+msgstr "RPM"
+
+#: lib/builds.c:791
+#, c-format
+msgid "*** `%s' already exists in %s"
+msgstr "*** `%s' já existe em %s"
+
+#: lib/builds.c:829
+#, c-format
+msgid "*** unable to find local build: %s"
+msgstr "*** não foi possível encontrar a compilação local: %s"
+
+#: lib/builds.c:841
+#, c-format
+msgid "*** unable to download RPM: %s"
+msgstr "*** não foi possível baixar o RPM: %s"
+
+#: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
+#, c-format
+msgid "*** unable to find build %s in Koji hub %s"
+msgstr "*** não foi possível encontrar a compilação %s no hub do Koji %s"
+
+#: lib/builds.c:872
+#, c-format
+msgid "*** unable to find task %s in Koji hub %s"
+msgstr "*** não foi possível encontrar a tarefa %s no hub do Koji %s"
+
+#: lib/checksums.c:91
+#, c-format
+msgid "*** %s is a FIFO"
+msgstr "*** %s é um FIFO"
+
+#: lib/copyfile.c:117
+#, c-format
+msgid "%s already exists"
+msgstr "%s já existe"
+
+#: lib/copyfile.c:122
+msgid ", overwriting"
+msgstr ", sobrescrevendo"
+
+#: lib/curl.c:267 lib/readfile.c:60
+#, c-format
+msgid "*** unable to read %s"
+msgstr "*** não foi possível ler %s"
+
+#: lib/fileinfo.c:64
+#, c-format
+msgid "%s in %s on %s carries expected mode %04o"
+msgstr "%s em %s em %s carrega o modo esperado %04o"
+
+#: lib/fileinfo.c:76
+#, c-format
+msgid ""
+"%s in %s on %s carries unexpected mode %04o; expected mode %04o; requires "
+"inspection by the Security Team"
+msgstr ""
+"%s em %s em %s carrega o modo inesperado %04o; esperava-se o modo %04o; "
+"requer inspeção pela Equipe de Segurança"
+
+#: lib/fileinfo.c:96
+#, c-format
+msgid ""
+"%s in %s on %s carries insecure mode %04o, Security Team review may be "
+"required"
+msgstr ""
+"%s em %s em %s carrega o modo inseguro %04o, uma revisão da Equipe de "
+"Segurança pode ser necessária"
+
+#: lib/fileinfo.c:155
+#, c-format
+msgid "%s in %s on %s carries expected owner '%s'"
+msgstr "%s em %s em %s carrega o proprietário esperado '%s'"
+
+#: lib/fileinfo.c:168
+#, c-format
+msgid ""
+"%s in %s on %s carries unexpected owner '%s'; expected owner '%s'; requires "
+"inspection by the Security Team"
+msgstr ""
+"%s em %s em %s carrega um proprietário inesperado '%s'; esperava-se o "
+"proprietário '%s'; requer inspeção pela Equipe de Segurança"
+
+#: lib/fileinfo.c:192 lib/fileinfo.c:286
+#, c-format
+msgid ""
+"%s in %s on %s carries insecure mode %04o but has no fileinfo rule for owner "
+"specification, Security Team review may be required"
+msgstr ""
+"%s em %s em %s carrega o modo inseguro %04o, mas não tem regra fileinfo para "
+"especificação do proprietário, pode ser necessária uma revisão da Equipe de "
+"Segurança"
+
+#: lib/fileinfo.c:249
+#, c-format
+msgid "%s in %s on %s carries expected group '%s'"
+msgstr "%s em %s em %s carrega o grupo esperado '%s'"
+
+#: lib/fileinfo.c:262
+#, c-format
+msgid ""
+"%s in %s on %s carries group unexpected '%s'; expected group '%s'; requires "
+"inspection by the Security Team"
+msgstr ""
+"%s em %s em %s carrega o grupo inesperado '%s'; esperava-se o grupo '%s'; "
+"requer inspeção pela Equipe de Segurança"
+
+#: lib/init.c:226
+#, c-format
+msgid "*** invalid input string `%s`"
+msgstr "*** string de entrada inválida `%s`"
+
+#: lib/init.c:253 lib/init.c:262 lib/init.c:270 lib/init.c:282 lib/init.c:291
+#: lib/init.c:299 lib/init.c:311 lib/init.c:320 lib/init.c:328 lib/init.c:340
+#, c-format
+msgid "*** invalid mode string: %s"
+msgstr "*** string de modo inválido: %s"
+
+#: lib/init.c:378
+#, c-format
+msgid "*** problem adding entries to array %s->%s"
+msgstr "*** problema ao adicionar entradas ao array %s->%s"
+
+#: lib/init.c:399
+#, c-format
+msgid "*** problem adding ignore entries to %s"
+msgstr "*** problema ao adicionar entradas ignoradas em %s"
+
+#: lib/init.c:418 lib/init.c:432
+msgid "*** error reading "
+msgstr "*** erro ao ler "
+
+#: lib/init.c:458
+#, c-format
+msgid "*** ignoring malformed section %s->%s"
+msgstr "*** ignorando seção malformada %s->%s"
+
+#: lib/init.c:515 lib/init.c:528
+#, c-format
+msgid "*** error reading %s ignore pattern"
+msgstr "*** erro ao ler o padrão a ser ignorado %s"
+
+#: lib/init.c:544
+#, c-format
+msgid "*** flag must be 'on' or 'off'; ignoring '%s'"
+msgstr "*** o sinalizador deve ser 'on' ou 'off'; ignorando '%s'"
+
+#: lib/init.c:548
+#, c-format
+msgid "*** unknown inspections: `%s`"
+msgstr "*** inspeções desconhecidas: `%s`"
+
+#: lib/init.c:559
+msgid "*** malformed/unknown inspections section"
+msgstr "*** seção de inspeções malformadas/desconhecidas"
+
+#: lib/init.c:591
+#, c-format
+msgid "*** ignoring malformed %s configuration file: %s"
+msgstr "*** ignorando arquivo de configuração %s malformado: %s"
+
+#: lib/init.c:653
+#, c-format
+msgid "*** unknown modularity static context settiongs '%s'"
+msgstr ""
+"*** configurações de contexto estático de modularidade desconhecida '%s'"
+
+#: lib/init.c:717
+#, c-format
+msgid "*** unknown specname match setting '%s', defaulting to 'full'"
+msgstr ""
+"*** configuração de correspondência de nome de especificação desconhecido "
+"'%s', usando o padrão 'full'"
+
+#: lib/init.c:732
+#, c-format
+msgid "*** unknown specname primary setting '%s', defaulting to 'name'"
+msgstr ""
+"*** configuração primária de nome de especificação desconhecido '%s', usando "
+"o padrão 'name'"
+
+#: lib/init.c:747
+#, c-format
+msgid "*** invalid annocheck failure_reporting_level: %s, defaulting to %s"
+msgstr ""
+"*** failure_reporting_level inválido do annocheck: %s, usando o padrão %s"
+
+#: lib/init.c:804
+msgid "*** malformed badfuncs->allowed section"
+msgstr "*** seção badfuncs->allowed malformada"
+
+#: lib/init.c:822
+#, c-format
+msgid "*** error reading unicode exclude regular expression: %s"
+msgstr "*** erro ao ler expressão regular de exclusão de unicode: %s"
+
+#: lib/init.c:832
+msgid "*** malformed rpmdeps->ignore section; skipping"
+msgstr "*** seção rpmdeps->ignore malformado; pulando"
+
+#: lib/init.c:968
+#, c-format
+msgid "*** Invalid filename in the fileinfo list: %s"
+msgstr "*** Nome de arquivo inválido na lista fileinfo: %s"
+
+#: lib/init.c:969
+msgid "*** From this invalid line:"
+msgstr "*** Desta linha inválida:"
+
+#: lib/init.c:970
+#, c-format
+msgid "***     %s"
+msgstr "***     %s"
+
+#: lib/init.c:1121
+#, c-format
+msgid "*** unexpected token `%s' seen in %s, cannot continue"
+msgstr "*** token inesperado `%s' visto em %s, não é possível continuar"
+
+#: lib/init.c:1414
+#, c-format
+msgid "*** invalid security rule: %s"
+msgstr "*** regra de segurança inválida: %s"
+
+#: lib/init.c:1426
+#, c-format
+msgid "*** unknown security rule: %s"
+msgstr "*** regra de segurança desconhecida: %s"
+
+#: lib/init.c:1435
+#, c-format
+msgid "*** unknown security action: %s"
+msgstr "*** ação de segurança desconhecida: %s"
+
+#: lib/init.c:1461
+#, c-format
+msgid "*** malformed security line: %s"
+msgstr "*** linha de segurança malformada: %s"
+
+#: lib/init.c:1622
+#, c-format
+msgid "*** missing configuration file `%s'"
+msgstr "*** faltando arquivo de configuração `%s'"
+
+#: lib/init.c:1658
+#, c-format
+msgid "*** unable to find profile '%s'"
+msgstr "*** não foi possível encontrar o perfil '%s'"
+
+#: lib/inspect_abidiff.c:266
+msgid "abidiff usage error"
+msgstr "erro de uso do abidiff"
+
+#: lib/inspect_abidiff.c:275
+msgid "ABI change in ${FILE} on ${ARCH}"
+msgstr "Alteração de ABI em ${FILE} em ${ARCH}"
+
+#: lib/inspect_abidiff.c:284
+msgid "ABI incompatible change in ${FILE} on ${ARCH}"
+msgstr "Alteração incompatível com ABI em ${FILE} em ${ARCH}"
+
+#: lib/inspect_abidiff.c:296
+#, c-format
+msgid ""
+"Comparing old vs. new version of %s in package %s with ABI compatibility "
+"level %ld on %s revealed ABI differences."
+msgstr ""
+"Comparar a versão antiga com a nova de %s no pacote %s com o nível de "
+"compatibilidade da ABI %ld em %s revelou diferenças de ABI."
+
+#: lib/inspect_abidiff.c:298
+#, c-format
+msgid ""
+"Comparing old vs. new version of %s in package %s on %s revealed ABI "
+"differences."
+msgstr ""
+"A comparação da versão antiga com a nova de %s no pacote %s em %s revelou "
+"diferenças de ABI."
+
+#: lib/inspect_abidiff.c:302
+#, c-format
+msgid ""
+"Comparing from %s to %s in package %s with ABI compatibility level %ld on %s "
+"revealed ABI differences."
+msgstr ""
+"A comparação de %s com %s no pacote %s com nível de compatibilidade ABI %ld "
+"em %s revelou diferenças de ABI."
+
+#: lib/inspect_abidiff.c:304
+#, c-format
+msgid "Comparing from %s to %s in package %s on %s revealed ABI differences."
+msgstr ""
+"A comparação de %s com %s no pacote %s em %s revelou diferenças de ABI."
+
+#: lib/inspect_abidiff.c:309
+#, c-format
+msgid ""
+"Command: %s\n"
+"\n"
+"%s"
+msgstr ""
+"Comando: %s\n"
+"\n"
+"%s"
+
+#: lib/inspect_addedfiles.c:149
+#, c-format
+msgid ""
+"Packages should not contain files or directories starting with `%s` on %s in "
+"%s: %s"
+msgstr ""
+"Os pacotes não devem conter arquivos ou diretórios começando com `%s` em %s "
+"em %s: %s"
+
+#: lib/inspect_addedfiles.c:150 lib/inspect_addedfiles.c:164
+msgid "invalid directory ${FILE} on ${ARCH}"
+msgstr "diretório inválido ${FILE} em ${ARCH}"
+
+#: lib/inspect_addedfiles.c:163
+#, c-format
+msgid ""
+"Packages should not contain files or directories ending with `%s` on %s in "
+"%s: %s"
+msgstr ""
+"Os pacotes não devem conter arquivos ou diretórios que terminem com `%s` em "
+"%s em %s: %s"
+
+#: lib/inspect_addedfiles.c:177
+#, c-format
+msgid "Forbidden directory `%s` found on %s in %s: %s"
+msgstr "Diretório proibido `%s` encontrado em %s em %s: %s"
+
+#: lib/inspect_addedfiles.c:178
+msgid "forbidden directory ${FILE} on ${ARCH}"
+msgstr "diretório proibido ${FILE} em ${ARCH}"
+
+#: lib/inspect_addedfiles.c:209
+#, c-format
+msgid ""
+"New security-related file `%s` added on %s in %s requires inspection by the "
+"Security Team"
+msgstr ""
+"Novo arquivo relacionado à segurança `%s` adicionado em %s em %s requer "
+"inspeção pela Equipe de Segurança"
+
+#: lib/inspect_addedfiles.c:211
+msgid "new security-related file ${FILE} on ${ARCH}"
+msgstr "novo arquivo relacionado à segurança ${FILE} em ${ARCH}"
+
+#: lib/inspect_addedfiles.c:231
+#, c-format
+msgid "`%s` added on %s in %s"
+msgstr "`%s` adicionado em %s em %s"
+
+#: lib/inspect_addedfiles.c:232
+msgid "new file ${FILE} on ${ARCH}"
+msgstr "novo arquivo ${FILE} em ${ARCH}"
+
+#: lib/inspect_addedfiles.c:248
+msgid "the fileinfo list"
+msgstr "a lista fileinfo"
+
+#: lib/inspect_annocheck.c:116 lib/inspect_annocheck.c:151
+#, c-format
+msgid "*** libannocheck_enable_profile: %s"
+msgstr "*** libannocheck_enable_profile: %s"
+
+#: lib/inspect_annocheck.c:136
+#, c-format
+msgid "*** libannocheck_get_known_profiles: %s"
+msgstr "*** libannocheck_get_known_profiles: %s"
+
+#: lib/inspect_annocheck.c:168
+msgid "NOT RUN"
+msgstr "NÃO EXECUTAR"
+
+#: lib/inspect_annocheck.c:170
+msgid "PASSED"
+msgstr "PASSOU"
+
+#: lib/inspect_annocheck.c:172 lib/output_summary.c:59
+msgid "FAILED"
+msgstr "FALHOU"
+
+#: lib/inspect_annocheck.c:174
+msgid "MAYBE"
+msgstr "TALVEZ"
+
+#: lib/inspect_annocheck.c:176
+msgid "skipped"
+msgstr "pulado"
+
+#: lib/inspect_annocheck.c:178 lib/strfuncs.c:557
+msgid "UNKNOWN"
+msgstr "DESCONHECIDO"
+
+#: lib/inspect_annocheck.c:226
+#, c-format
+msgid "*** libannocheck_init: %s"
+msgstr "*** libannocheck_init: %s"
+
+#: lib/inspect_annocheck.c:255
+#, c-format
+msgid "*** libannocheck_%s_test: %s"
+msgstr "*** libannocheck_%s_test: %s"
+
+#: lib/inspect_annocheck.c:267
+#, c-format
+msgid "*** libannocheck_enable_all_tests: %s"
+msgstr "*** libannocheck_enable_all_tests: %s"
+
+#: lib/inspect_annocheck.c:280
+#, c-format
+msgid "*** libannocheck_reinit: %s"
+msgstr "*** libannocheck_reinit: %s"
+
+#: lib/inspect_annocheck.c:373
+#, c-format
+msgid "*** before libannocheck_run_tests: %s (%d)"
+msgstr "*** antes de libannocheck_run_tests: %s (%d)"
+
+#: lib/inspect_annocheck.c:382 lib/inspect_annocheck.c:426
+#, c-format
+msgid "*** libannocheck_get_known_tests: %s"
+msgstr "*** libannocheck_get_known_tests: %s"
+
+#: lib/inspect_annocheck.c:400 lib/inspect_annocheck.c:530
+#, c-format
+msgid "*** libannocheck_finish: %s"
+msgstr "*** libannocheck_finish: %s"
+
+#: lib/inspect_annocheck.c:417
+#, c-format
+msgid "*** after libannocheck_run_tests: %s (%d)"
+msgstr "*** após libannocheck_run_tests: %s (%d)"
+
+#: lib/inspect_annocheck.c:461 lib/inspect_annocheck.c:613
+msgid "lost -D_FORTIFY_SOURCE in ${FILE} on ${ARCH}"
+msgstr "perdeu -D_FORTIFY_SOURCE em ${FILE} em ${ARCH}"
+
+#: lib/inspect_annocheck.c:464
+#, c-format
+msgid "%s may have lost -O2 -D_FORTIFY_SOURCE on %s"
+msgstr "%s pode ter perdido -O2 -D_FORTIFY_SOURCE em %s"
+
+#: lib/inspect_annocheck.c:489
+#, c-format
+msgid "libannocheck '%s' continues passing for %s on %s"
+msgstr "libannocheck '%s' continua passando para %s em %s"
+
+#: lib/inspect_annocheck.c:492
+#, c-format
+msgid "libannocheck '%s' test now passes for %s on %s"
+msgstr "O teste libannocheck '%s' agora passa para %s em %s"
+
+#: lib/inspect_annocheck.c:495
+#, c-format
+msgid "libannocheck '%s' test now fails for %s on %s"
+msgstr "O teste libannocheck '%s' agora falha para %s em %s"
+
+#: lib/inspect_annocheck.c:498 lib/inspect_annocheck.c:505
+#, c-format
+msgid "libannocheck '%s' test fails for %s on %s"
+msgstr "O teste libannocheck '%s' falha para %s em %s"
+
+#: lib/inspect_annocheck.c:503
+#, c-format
+msgid "libannocheck '%s' test passes for %s on %s"
+msgstr "O teste libannocheck '%s' passa para %s em %s"
+
+#: lib/inspect_annocheck.c:551 lib/inspect_annocheck.c:569
+#, c-format
+msgid "annocheck '%s' test passes for %s on %s"
+msgstr "O teste annocheck '%s' passa para %s em %s"
+
+#: lib/inspect_annocheck.c:553
+#, c-format
+msgid "annocheck '%s' test now passes for %s on %s"
+msgstr "O teste annocheck '%s' agora passa para %s em %s"
+
+#: lib/inspect_annocheck.c:555
+#, c-format
+msgid "annocheck '%s' test now fails for %s on %s"
+msgstr "O teste annocheck '%s' agora falha para %s em %s"
+
+#: lib/inspect_annocheck.c:561 lib/inspect_annocheck.c:571
+#, c-format
+msgid "annocheck '%s' test fails for %s on %s"
+msgstr "O teste annocheck '%s' falha para %s em %s"
+
+#: lib/inspect_annocheck.c:616
+#, c-format
+msgid "%s may have lost -D_FORTIFY_SOURCE on %s"
+msgstr "%s pode ter perdido -D_FORTIFY_SOURCE em %s"
+
+#: lib/inspect_arch.c:77
+msgid "lost ${ARCH}"
+msgstr "perdeu ${ARCH}"
+
+#: lib/inspect_arch.c:79
+#, c-format
+msgid "Architecture '%s' has disappeared"
+msgstr "A arquitetura '%s' desapareceu"
+
+#: lib/inspect_arch.c:94
+msgid "gained ${ARCH}"
+msgstr "ganhou ${ARCH}"
+
+#: lib/inspect_arch.c:96
+#, c-format
+msgid "Architecture '%s' has appeared"
+msgstr "A arquitetura '%s' apareceu"
+
+#: lib/inspect_badfuncs.c:152
+#, c-format
+msgid "Forbidden function symbols found:\n"
+msgstr "Símbolos de função proibidos encontrados:\n"
+
+#: lib/inspect_badfuncs.c:168
+#, c-format
+msgid "%s may use forbidden functions on %s"
+msgstr "%s pode usar funções proibidas em %s"
+
+#: lib/inspect_badfuncs.c:175
+msgid "forbidden functions in ${FILE} on ${ARCH}"
+msgstr "funções proibidas em ${FILE} em ${ARCH}"
+
+#: lib/inspect_capabilities.c:82
+#, c-format
+msgid "File capabilities for %s changed from '%s' to '%s' in %s on %s\n"
+msgstr ""
+"Capacidades de arquivo para %s alteradas de '%s' para '%s' em %s em %s\n"
+
+#: lib/inspect_capabilities.c:86
+msgid "${FILE} capabilities on ${ARCH}"
+msgstr "Capacidades de ${FILE} em ${ARCH}"
+
+#: lib/inspect_capabilities.c:98
+#, c-format
+msgid "File capabilities found for %s: '%s' in %s on %s\n"
+msgstr "Capacidades de arquivo encontrados para %s: '%s' em %s em %s\n"
+
+#: lib/inspect_capabilities.c:134
+#, c-format
+msgid ""
+"File capabilities list entry found for %s: '%s' in %s on %s, matches "
+"package\n"
+msgstr ""
+"Entrada da lista de recursos de arquivo encontrada para %s: '%s' em %s em "
+"%s, corresponde ao pacote\n"
+
+#: lib/inspect_capabilities.c:145
+#, c-format
+msgid ""
+"File capabilities list mismatch for %s: expected '%s', got '%s' in %s on %s\n"
+msgstr ""
+"Lista de capacidades de arquivo incompatível para %s: '%s' esperado, obtido "
+"'%s' em %s em %s\n"
+
+#: lib/inspect_capabilities.c:149 lib/inspect_capabilities.c:169
+#: lib/inspect_capabilities.c:188
+msgid "${FILE} capabilities list on ${ARCH}"
+msgstr "Lista de capacidades ${FILE} em ${ARCH}"
+
+#: lib/inspect_capabilities.c:165
+#, c-format
+msgid ""
+"File capabilities for %s (%s) not found on the capabilities list in %s on "
+"%s\n"
+msgstr ""
+"Capacidades de arquivo para %s (%s) não encontradas na lista de capacidades "
+"em %s em %s\n"
+
+#: lib/inspect_capabilities.c:184
+#, c-format
+msgid ""
+"File capabilities expected for %s in %s but not found on %s: expected '%s'\n"
+msgstr ""
+"Capacidades de arquivo esperados para %s em %s, mas não encontrados em %s: "
+"esperado '%s'\n"
+
+#: lib/inspect_changedfiles.c:31
+msgid ""
+"  Changes to security policy related files require inspection by the "
+"Security Response Team."
+msgstr ""
+"  As alterações nos arquivos relacionados à política de segurança exigem "
+"inspeção pela Equipe de Resposta de Segurança."
+
+#: lib/inspect_changedfiles.c:319
+#, c-format
+msgid "Compressed %s file %s changed content in %s on %s."
+msgstr "O arquivo %s compactado %s alterou o conteúdo em %s em %s."
+
+#: lib/inspect_changedfiles.c:353 lib/inspect_changedfiles.c:367
+#, c-format
+msgid "Error running msgunfmt on %s in %s on %s; malformed mo file?"
+msgstr "Erro ao executar msgunfmt em %s em %s em %s; arquivo mo malformado?"
+
+#: lib/inspect_changedfiles.c:357 lib/inspect_changedfiles.c:371
+msgid "msgunfmt on ${FILE}"
+msgstr "msgunfmt em ${FILE}"
+
+#: lib/inspect_changedfiles.c:382
+#, c-format
+msgid "Message catalog %s changed content in %s on %s"
+msgstr "O catálogo de mensagens %s alterou o conteúdo em %s em %s"
+
+#: lib/inspect_changedfiles.c:386 lib/inspect_changedfiles.c:443
+#: lib/inspect_changedfiles.c:465
+msgid "${FILE}"
+msgstr "${FILE}"
+
+#: lib/inspect_changedfiles.c:439
+#, c-format
+msgid ""
+"Public header file %s changed content in %s on %s.  A unified diff of the "
+"changes follows."
+msgstr ""
+"O arquivo de cabeçalho público %s alterou o conteúdo em %s em %s. Segue uma "
+"comparação unificada das mudanças."
+
+#: lib/inspect_changedfiles.c:462
+#, c-format
+msgid "File %s changed content in %s on %s."
+msgstr "O arquivo %s alterou o conteúdo em %s em %s."
+
+#: lib/inspect_changelog.c:235 lib/inspect_changelog.c:369
+#, c-format
+msgid "%%changelog"
+msgstr "%%changelog"
+
+#: lib/inspect_changelog.c:438
+msgid "Inspection skipped because this build's type is not `rpm'."
+msgstr "A inspeção foi ignorada porque o tipo desta compilação não é `rpm'."
+
+#: lib/inspect_config.c:65
+#, c-format
+msgid "%config ${FILE}"
+msgstr "%config ${FILE}"
+
+#: lib/inspect_config.c:114
+#, c-format
+msgid ""
+"%%config file %s went from actual file to symlink (pointing to %s) in %s on "
+"%s"
+msgstr ""
+"O arquivo %%config %s passou do arquivo real para o link simbólico "
+"(apontando para %s) em %s em %s"
+
+#: lib/inspect_config.c:123
+#, c-format
+msgid ""
+"%%config file %s was a symlink (pointing to %s), became an actual file in %s "
+"on %s"
+msgstr ""
+"O arquivo %%config %s era um link simbólico (apontando para %s), tornou-se "
+"um arquivo real em %s em %s"
+
+#: lib/inspect_config.c:132
+#, c-format
+msgid "Symlink value for %%config file %s changed in %s on %s."
+msgstr ""
+"Valor do link simbólico para o arquivo %%config %s alterado em %s em %s."
+
+#: lib/inspect_config.c:153
+#, c-format
+msgid "%%config file content change for %s in %s on %s"
+msgstr "Alteração no conteúdo do arquivo %%config para %s em %s em %s"
+
+#: lib/inspect_config.c:168
+#, c-format
+msgid ""
+"%%config file change for %s in %s on %s (%smarked as %%config -> %smarked as "
+"%%config)\n"
+msgstr ""
+"Alteração do arquivo %%config para %s em %s em %s (%smarcado como %%config -"
+"> %smarcado como %%config)\n"
+
+#: lib/inspect_config.c:169 lib/inspect_doc.c:114
+msgid "not "
+msgstr "não "
+
+#: lib/inspect_debuginfo.c:217
+#, c-format
+msgid "%s in %s on %s is missing debugging symbols"
+msgstr "%s em %s em %s faltam símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:221
+msgid "missing debugging symbols"
+msgstr "faltando símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:224
+#, c-format
+msgid "Missing: %s"
+msgstr "Faltando: %s"
+
+#: lib/inspect_debuginfo.c:235
+#, c-format
+msgid "%s in %s on %s contains debugging symbols"
+msgstr "%s em %s em %s contém símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:239
+msgid "contains debugging symbols"
+msgstr "contém símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:241
+#, c-format
+msgid "Contains: %s"
+msgstr "Contém: %s"
+
+#: lib/inspect_debuginfo.c:260
+#, c-format
+msgid "%s in %s on %s gained debugging symbols"
+msgstr "%s em %s em %s ganhou símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:261
+msgid "gained debugging symbols"
+msgstr "ganhou símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:266
+#, c-format
+msgid "Gained: %s"
+msgstr "Ganhou: %s"
+
+#: lib/inspect_debuginfo.c:286
+#, c-format
+msgid "%s in %s on %s lost debugging symbols"
+msgstr "%s em %s em %s perdeu símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:287
+msgid "lost debugging symbols"
+msgstr "perdeu símbolos de depuração"
+
+#: lib/inspect_debuginfo.c:292
+#, c-format
+msgid "Lost: %s"
+msgstr "Perdeu: %s"
+
+#: lib/inspect_debuginfo.c:318
+#, c-format
+msgid ""
+"%s in %s on %s carries .gosymtab but should not have the .gnu_debugdata "
+"symbol"
+msgstr ""
+"%s em %s em %s carrega .gosymtab, mas não deveria ter o símbolo ."
+"gnu_debugdata"
+
+#: lib/inspect_debuginfo.c:320
+msgid ".gnu_debugdata with .gosymtab"
+msgstr ".gnu_debugdata com .gosymtab"
+
+#: lib/inspect_desktop.c:275
+#, c-format
+msgid ""
+"Desktop file %s on %s references executable %s but %s is not executable by "
+"all"
+msgstr ""
+"O arquivo desktop %s em %s faz referência ao executável %s, mas %s não é "
+"executável por todos"
+
+#: lib/inspect_desktop.c:279
+msgid "${FILE} references non-executable file on ${ARCH}"
+msgstr "${FILE} faz referência a arquivo não executável em ${ARCH}"
+
+#: lib/inspect_desktop.c:300
+#, c-format
+msgid ""
+"Desktop file %s on %s references executable %s; no subpackages contain an "
+"executable of that name, however it has a TryExec key so it may be ignored "
+"in case %s does not exist"
+msgstr ""
+"O arquivo desktop %s em %s faz referência ao executável %s; nenhum subpacote "
+"contém um executável com esse nome, porém ele possui uma chave TryExec, "
+"portanto pode ser ignorado caso %s não exista"
+
+#: lib/inspect_desktop.c:308
+#, c-format
+msgid ""
+"Desktop file %s on %s references executable %s but no subpackages contain an "
+"executable of that name"
+msgstr ""
+"O arquivo desktop %s em %s faz referência ao executável %s, mas nenhum "
+"subpacote contém um executável com esse nome"
+
+#: lib/inspect_desktop.c:312
+msgid "${FILE} references missing executable on ${ARCH}"
+msgstr "${FILE} faz referência ao executável ausente em ${ARCH}"
+
+#: lib/inspect_desktop.c:354
+#, c-format
+msgid "Desktop file %s on %s references icon %s but %s is not readable by all"
+msgstr ""
+"O arquivo desktop %s em %s faz referência ao ícone %s, mas %s não pode ser "
+"lido por todos"
+
+#: lib/inspect_desktop.c:358
+msgid "${FILE} references unreadble icon on ${ARCH}"
+msgstr "${FILE} faz referência a ícone ilegível em ${ARCH}"
+
+#: lib/inspect_desktop.c:376
+#, c-format
+msgid "Desktop file %s on %s references icon %s but no subpackages contain %s"
+msgstr ""
+"O arquivo desktop %s em %s faz referência ao ícone %s, mas nenhum subpacote "
+"contém %s"
+
+#: lib/inspect_desktop.c:380
+msgid "${FILE} references missing icon on ${ARCH}"
+msgstr "${FILE} faz referência a um ícone ausente em ${ARCH}"
+
+#: lib/inspect_desktop.c:452
+msgid "${FILE} is not valid on ${ARCH}"
+msgstr "${FILE} não é válido em ${ARCH}"
+
+#: lib/inspect_desktop.c:455
+#, c-format
+msgid ""
+"File %s is no longer a valid desktop entry file on %s; desktop-file-validate "
+"reports:"
+msgstr ""
+"O arquivo %s não é mais um arquivo válido de entradas desktop em %s; desktop-"
+"file-validate relata:"
+
+#: lib/inspect_desktop.c:457
+#, c-format
+msgid ""
+"New file %s is not a valid desktop file on %s; desktop-file-validate reports:"
+msgstr ""
+"O novo arquivo %s não é um arquivo desktop válido em %s; desktop-file-"
+"validate relata:"
+
+#: lib/inspect_desktop.c:459
+#, c-format
+msgid ""
+"File %s is not a valid desktop file on %s; desktop-file-validate reports:"
+msgstr ""
+"O arquivo %s não é um arquivo desktop válido em %s; desktop-file-validate "
+"relata:"
+
+#: lib/inspect_disttag.c:184
+#, c-format
+msgid "The %s file is missing the %s tag."
+msgstr "O arquivo %s não possui a tag %s."
+
+#: lib/inspect_disttag.c:186
+msgid "${FILE} missing Release tag"
+msgstr "${FILE} carece da tag Release"
+
+#: lib/inspect_disttag.c:192
+#, c-format
+msgid ""
+"The %s tag value is missing the dist tag in the proper form. The dist tag "
+"should be of the form '%s' in the %s tag or in a macro used in the %s tag. "
+"After RPM macro expansion, no dist tag was found in this %s tag value."
+msgstr ""
+"O valor da tag %s não contém a tag dist no formato adequado. A tag dist deve "
+"estar no formato '%s' na tag %s ou em uma macro usada na tag %s. Após a "
+"expansão da macro RPM, nenhuma tag dist foi encontrada neste valor de tag %s."
+
+#: lib/inspect_disttag.c:194
+#, c-format
+msgid "${FILE} does not use '%%{?dist}' in Release"
+msgstr "${FILE} não usa '%%{?dist}' em Release"
+
+#: lib/inspect_disttag.c:263
+msgid "Specified package is not a source RPM, skipping."
+msgstr "O pacote especificado não é um RPM fonte, ignorando."
+
+#: lib/inspect_doc.c:71
+#, c-format
+msgid "%doc ${FILE}"
+msgstr "%doc ${FILE}"
+
+#: lib/inspect_doc.c:98
+#, c-format
+msgid "%%doc file content change for %s in %s on %s\n"
+msgstr "Alteração no conteúdo do arquivo %%doc para %s em %s em %s\n"
+
+#: lib/inspect_doc.c:113
+#, c-format
+msgid ""
+"%%doc file change for %s in %s on %s (%smarked as %%doc -> %smarked as "
+"%%doc)\n"
+msgstr ""
+"Alteração do arquivo %%doc para %s em %s em %s (%smarcado como %%doc -> "
+"%smarcado como %%doc)\n"
+
+#: lib/inspect_dsodeps.c:94
+#, c-format
+msgid "%s was an ELF file and now is not on %s"
+msgstr "%s era um arquivo ELF e agora não está em %s"
+
+#: lib/inspect_dsodeps.c:96 lib/inspect_dsodeps.c:108
+msgid "ELF file ${FILE} on ${ARCH}"
+msgstr "Arquivo ELF ${FILE} em ${ARCH}"
+
+#: lib/inspect_dsodeps.c:106
+#, c-format
+msgid "%s was a dynamic ELF file and now is not on %s"
+msgstr "%s era um arquivo ELF dinâmico e agora não está em %s"
+
+#: lib/inspect_dsodeps.c:146
+#, c-format
+msgid "DT_NEEDED symbol(s) removed from %s on %s"
+msgstr "Símbolo(s) DT_NEEDED removido(s) de %s em %s"
+
+#: lib/inspect_dsodeps.c:148 lib/inspect_dsodeps.c:165
+msgid "DT_NEEDED symbol(s) in ${FILE} on ${ARCH}"
+msgstr "Símbolo(s) DT_NEEDED em ${FILE} em ${ARCH}"
+
+#: lib/inspect_dsodeps.c:163
+#, c-format
+msgid "DT_NEEDED symbol(s) added to %s on %s"
+msgstr "Símbolo(s) DT_NEEDED adicionados a %s em %s"
+
+#: lib/inspect_elf.c:433
+#, c-format
+msgid "Object still has executable stack (no GNU-stack note): %s on %s"
+msgstr ""
+"O objeto ainda possui pilha executável (sem nota sobre pilha GNU): %s em %s"
+
+#: lib/inspect_elf.c:435
+#, c-format
+msgid "Object has executable stack (no GNU-stack note): %s on %s"
+msgstr "O objeto possui pilha executável (sem nota sobre pilha GNU): %s em %s"
+
+#: lib/inspect_elf.c:438
+#, c-format
+msgid "Program built without GNU_STACK: %s on %s"
+msgstr "Programa compilado sem GNU_STACK: %s em %s"
+
+#: lib/inspect_elf.c:444
+msgid "GNU_STACK in ${FILE} on ${ARCH}"
+msgstr "GNU_STACK em ${FILE} em ${ARCH}"
+
+#: lib/inspect_elf.c:496
+#, c-format
+msgid "File %s has invalid execstack flags (%s) on %s"
+msgstr "O arquivo %s possui sinalizadores execstack inválidos (%s) em %s"
+
+#: lib/inspect_elf.c:501
+#, c-format
+msgid "File %s has unrecognized GNU_STACK '%s' (expected RW or RWE) on %s"
+msgstr ""
+"O arquivo %s possui GNU_STACK '%s' (RW ou RWE esperado) não reconhecido em %s"
+
+#: lib/inspect_elf.c:510 lib/inspect_elf.c:540
+msgid "execstack in ${FILE} on ${ARCH}"
+msgstr "execstack em ${FILE} em ${ARCH}"
+
+#: lib/inspect_elf.c:525
+#, c-format
+msgid "Object still has executable stack (GNU-stack note = X): %s on %s"
+msgstr ""
+"O objeto ainda possui pilha executável (nota da pilha GNU = X): %s em %s"
+
+#: lib/inspect_elf.c:527
+#, c-format
+msgid "Object has executable stack (GNU-stack note = X): %s on %s"
+msgstr "O objeto possui uma pilha executável (nota da pilha GNU = X): %s em %s"
+
+#: lib/inspect_elf.c:531
+#, c-format
+msgid "Stack is still executable: %s on %s"
+msgstr "A pilha ainda é executável: %s em %s"
+
+#: lib/inspect_elf.c:533
+#, c-format
+msgid "Stack is executable: %s on %s"
+msgstr "A pilha é executável: %s em %s"
+
+#: lib/inspect_elf.c:564
+#, c-format
+msgid "%s lost full GNU_RELRO security protection on %s"
+msgstr "%s perdeu proteção de segurança completa do GNU_RELRO em %s"
+
+#: lib/inspect_elf.c:567
+#, c-format
+msgid "%s lost GNU_RELRO security protection on %s"
+msgstr "%s perdeu a proteção de segurança GNU_RELRO em %s"
+
+#: lib/inspect_elf.c:578
+msgid "lost GNU_RELRO in ${FILE} on ${ARCH}"
+msgstr "perdeu GNU_RELRO em ${FILE} em ${ARCH}"
+
+#: lib/inspect_elf.c:725
+#, c-format
+msgid "The following objects lost -fPIC:\n"
+msgstr "Os seguintes objetos perderam -fPIC:\n"
+
+#: lib/inspect_elf.c:742
+#, c-format
+msgid "The following new objects were built without -fPIC:\n"
+msgstr "Os seguintes novos objetos foram compilados sem -fPIC:\n"
+
+#: lib/inspect_elf.c:755
+#, c-format
+msgid "%s in %s has objects built without -fPIC on %s"
+msgstr "%s em %s possui objetos compilados sem -fPIC em %s"
+
+#: lib/inspect_elf.c:763
+msgid "missing -fPIC in ${FILE} on ${ARCH}"
+msgstr "faltando -fPIC em ${FILE} em ${ARCH}"
+
+#: lib/inspect_elf.c:799
+msgid "TEXTREL relocations in ${FILE} on ${ARCH}"
+msgstr "Realocações de TEXTREL em ${FILE} em ${ARCH}"
+
+#: lib/inspect_elf.c:814
+#, c-format
+msgid "%s in %s acquired TEXTREL relocations on %s"
+msgstr "%s em %s adquiriu realocações TEXTREL em %s"
+
+#: lib/inspect_elf.c:817
+#, c-format
+msgid "%s in %s has TEXTREL relocations on %s"
+msgstr "%s em %s tem realocações TEXTREL em %s"
+
+#: lib/inspect_emptyrpm.c:95
+#, c-format
+msgid ""
+"New package %s is empty (no payloads); this is expected per the rpminspect "
+"configuration"
+msgstr ""
+"O novo pacote %s está vazio (sem cargas úteis); isso é esperado pela "
+"configuração do rpminspect"
+
+#: lib/inspect_emptyrpm.c:105
+#, c-format
+msgid ""
+"New package %s is empty (no payloads); this is expected because the package "
+"only contains %%ghost entries"
+msgstr ""
+"O novo pacote %s está vazio (sem cargas úteis); isto é esperado porque o "
+"pacote contém apenas entradas %%ghost"
+
+#: lib/inspect_emptyrpm.c:116
+#, c-format
+msgid "New package %s is empty (no payloads)"
+msgstr "O novo pacote %s está vazio (sem cargas úteis)"
+
+#: lib/inspect_emptyrpm.c:120
+msgid "${FILE} has empty payload"
+msgstr "${FILE} tem carga útil vazia"
+
+#: lib/inspect_files.c:111
+#, c-format
+msgid "Forbidden path reference (%s) on line %ld of %s"
+msgstr "Referência de caminho proibido (%s) na linha %ld de %s"
+
+#: lib/inspect_files.c:113
+#, c-format
+msgid "invalid spec line: %s"
+msgstr "linha do spec inválida: %s"
+
+#: lib/inspect_files.c:172
+msgid "The files inspection is only for source packages, skipping."
+msgstr "A inspeção de arquivos é apenas para pacotes fonte, ignorando."
+
+#: lib/inspect_filesize.c:67
+#, c-format
+msgid "%s became a non-empty file on %s"
+msgstr "%s tornou-se um arquivo não vazio em %s"
+
+#: lib/inspect_filesize.c:71
+msgid "non-empty ${FILE} on ${ARCH}"
+msgstr "${FILE} não vazio em ${ARCH}"
+
+#: lib/inspect_filesize.c:76
+#, c-format
+msgid "%s became an empty file on %s"
+msgstr "%s tornou-se um arquivo vazio em %s"
+
+#: lib/inspect_filesize.c:80
+msgid "empty ${FILE} on ${ARCH}"
+msgstr "vazio ${FILE} em ${ARCH}"
+
+#: lib/inspect_filesize.c:98
+#, c-format
+msgid "%s grew by %lld%% on %s"
+msgstr "%s cresceu %lld%% em %s"
+
+#: lib/inspect_filesize.c:99
+msgid "${FILE} size grew on ${ARCH}"
+msgstr "O tamanho de ${FILE} aumentou em ${ARCH}"
+
+#: lib/inspect_filesize.c:103
+#, c-format
+msgid "%s shrank by %lld%% on %s"
+msgstr "%s encolheu em %lld%% em %s"
+
+#: lib/inspect_filesize.c:104
+msgid "${FILE} size shrank on ${ARCH}"
+msgstr "O tamanho de ${FILE} diminuiu em ${ARCH}"
+
+#: lib/inspect_javabytecode.c:130
+#, c-format
+msgid ""
+"File %s (%s), Java byte code version %d is incorrect (wrong endianness? "
+"corrupted file? space JDK?)"
+msgstr ""
+"Arquivo %s (%s), versão do código de byte Java %d está incorreta (endianness "
+"errado? arquivo corrompido? espaço JDK?)"
+
+#: lib/inspect_javabytecode.c:131
+msgid "incorrect Java byte code version in ${FILE}"
+msgstr "versão incorreta do código de bytes Java em ${FILE}"
+
+#: lib/inspect_javabytecode.c:136
+#, c-format
+msgid ""
+"File %s (%s), Java byte code version %d greater than supported major version "
+"%d for product release %s"
+msgstr ""
+"Arquivo %s (%s), versão do código de byte Java %d superior à versão "
+"principal suportada %d para o lançamento do produto %s"
+
+#: lib/inspect_javabytecode.c:137
+msgid "Java byte code version too new in ${FILE}"
+msgstr "Versão do código de bytes Java muito nova em ${FILE}"
+
+#: lib/inspect_javabytecode.c:152
+#, c-format
+msgid "Java byte code version changed from %d to %d in %s from %s"
+msgstr "Versão do código de byte Java alterada de %d para %d em %s de %s"
+
+#: lib/inspect_javabytecode.c:153
+msgid "Java byte code version changed in ${FILE}"
+msgstr "Versão do código de bytes Java alterada em ${FILE}"
+
+#: lib/inspect_javabytecode.c:255 lib/inspect_javabytecode.c:267
+msgid "*** missing JVM version to product release mapping"
+msgstr "*** faltando versão JVM para mapeamento de lançamento do produto"
+
+#: lib/inspect_kmidiff.c:252
+#, c-format
+msgid ""
+"Comparing %s to %s in package %s on %s generated a kmidiff(1) usage error."
+msgstr ""
+"Comparar %s com %s no pacote %s em %s gerou um erro de uso do kmidiff(1)."
+
+#: lib/inspect_kmidiff.c:254
+msgid "kmidiff usage error"
+msgstr "erro de uso do kmidiff"
+
+#: lib/inspect_kmidiff.c:256
+#, c-format
+msgid ""
+"Comparing %s to %s in package %s on %s revealed Kernel Module Interface "
+"(KMI) differences."
+msgstr ""
+"A comparação de %s com %s no pacote %s em %s revelou diferenças na Kernel "
+"Module Interface (KMI)."
+
+#: lib/inspect_kmidiff.c:258
+msgid "KMI change in ${FILE} on ${ARCH}"
+msgstr "Alteração de KMI em ${FILE} em ${ARCH}"
+
+#: lib/inspect_kmidiff.c:260
+#, c-format
+msgid ""
+"Comparing %s to %s in package %s on %s revealed incompatible Kernel Module "
+"Interface (KMI) differences."
+msgstr ""
+"A comparação de %s com %s no pacote %s em %s revelou diferenças "
+"incompatíveis na Kernel Module Interface (KMI)."
+
+#: lib/inspect_kmidiff.c:263
+msgid "KMI incompatible change in ${FILE} on ${ARCH}"
+msgstr "Alteração incompatível com KMI em ${FILE} em ${ARCH}"
+
+#: lib/inspect_kmidiff.c:265
+#, c-format
+msgid ""
+"kmidiff(1) comparison of %s to %s in package %s on %s ended unexpectedly."
+msgstr ""
+"A comparação kmidiff(1) de %s com %s no pacote %s em %s terminou "
+"inesperadamente."
+
+#: lib/inspect_kmidiff.c:267
+msgid "kmidiff unexpected exit"
+msgstr "saída inesperada do kmidiff"
+
+#: lib/inspect_kmidiff.c:274
+#, c-format
+msgid ""
+"Command: %s\n"
+"Exit code: %d%s%s"
+msgstr ""
+"Comando: %s\n"
+"Código de saída: %d%s%s"
+
+#: lib/inspect_kmod.c:28
+msgid "${FILE} kernel module alias on ${ARCH}"
+msgstr "Alias do módulo do kernel ${FILE} em ${ARCH}"
+
+#: lib/inspect_kmod.c:31
+#, c-format
+msgid "Kernel module '%s' lost alias '%s'"
+msgstr "O módulo do kernel '%s' perdeu o alias '%s'"
+
+#: lib/inspect_kmod.c:41
+#, c-format
+msgid "Kernel module '%s' gained alias '%s'"
+msgstr "O módulo do kernel '%s' ganhou o alias '%s'"
+
+#: lib/inspect_kmod.c:188
+#, c-format
+msgid "Kernel module %s removes parameter '%s' (was present in %s)."
+msgstr "O módulo do kernel %s remove o parâmetro '%s' (estava presente em %s)."
+
+#: lib/inspect_kmod.c:191 lib/inspect_kmod.c:208
+msgid "${FILE} kernel module parameter on ${ARCH}"
+msgstr "Parâmetro do módulo do kernel ${FILE} em ${ARCH}"
+
+#: lib/inspect_kmod.c:205
+#, c-format
+msgid "Kernel module %s adds parameter '%s' (was not present in %s)."
+msgstr ""
+"O módulo do kernel %s adiciona o parâmetro '%s' (não estava presente em %s)."
+
+#: lib/inspect_kmod.c:226
+#, c-format
+msgid "Kernel module %s removes dependency '%s' (was present in %s)."
+msgstr ""
+"O módulo do kernel %s remove a dependência '%s' (estava presente em %s)."
+
+#: lib/inspect_kmod.c:229
+msgid "${FILE} kernel module dependency on ${ARCH}"
+msgstr "Dependência do módulo do kernel ${FILE} em ${ARCH}"
+
+#: lib/inspect_kmod.c:243
+#, c-format
+msgid "Kernel module %s adds dependency '%s' (was not present in %s)."
+msgstr ""
+"O módulo do kernel %s adiciona dependência '%s' (não estava presente em %s)."
+
+#: lib/inspect_kmod.c:246
+msgid "${FILE} kernel module parameter"
+msgstr "Parâmetro de módulo do kernel ${FILE}"
+
+#: lib/inspect_license.c:47
+#, c-format
+msgid "*** parse error in license database %s"
+msgstr "*** erro de análise no banco de dados de licenças %s"
+
+#: lib/inspect_license.c:135
+msgid "*** problem checking license database"
+msgstr "*** problema ao verificar banco de dados de licenças"
+
+#: lib/inspect_license.c:464
+#, c-format
+msgid "Unapproved license in %s: %s"
+msgstr "Licença não aprovada em %s: %s"
+
+#: lib/inspect_license.c:505
+#, c-format
+msgid "Empty License Tag in %s"
+msgstr "Tag License vazia em %s"
+
+#: lib/inspect_license.c:509
+msgid "missing License tag in ${FILE}"
+msgstr "faltando tag License em ${FILE}"
+
+#: lib/inspect_license.c:518
+#, c-format
+msgid "Valid License Tag in %s: %s"
+msgstr "Tag License válida em %s: %s"
+
+#: lib/inspect_license.c:532
+#, c-format
+msgid "License Tag contains unprofessional language in %s: %s"
+msgstr "A tag License contém linguagem não profissional em %s: %s"
+
+#: lib/inspect_license.c:536
+msgid "unprofessional language in License tag in ${FILE}"
+msgstr "linguagem não profissional na tag License em ${FILE}"
+
+#: lib/inspect_license.c:573
+msgid "Missing license database(s)."
+msgstr "Faltando banco(s) de dados de licença."
+
+#: lib/inspect_license.c:577
+msgid "missing license database"
+msgstr "faltando banco de dados de licença"
+
+#: lib/inspect_lostpayload.c:62
+#, c-format
+msgid "Existing subpackage %s is now missing on %s"
+msgstr "O subpacote %s existente agora está faltando em %s"
+
+#: lib/inspect_lostpayload.c:66
+msgid "missing subpackage ${FILE} on ${ARCH}"
+msgstr "faltando subpacote ${FILE} em ${ARCH}"
+
+#: lib/inspect_lostpayload.c:82
+#, c-format
+msgid "Package %s on %s continues to be empty (no payloads)"
+msgstr "O pacote %s em %s continua vazio (sem cargas úteis)"
+
+#: lib/inspect_lostpayload.c:86
+msgid "existing empty subpackage ${FILE} on ${ARCH}"
+msgstr "subpacote vazio existente ${FILE} em ${ARCH}"
+
+#: lib/inspect_lostpayload.c:93
+#, c-format
+msgid "Package %s on %s became empty (no payloads)"
+msgstr "O pacote %s em %s ficou vazio (sem cargas úteis)"
+
+#: lib/inspect_lostpayload.c:97
+msgid "subpackage ${FILE} on ${ARCH} now has empty payload"
+msgstr "o subpacote ${FILE} em ${ARCH} agora tem carga útil vazia"
+
+#: lib/inspect_lto.c:144
+msgid "${FILE} not portable on ${ARCH}"
+msgstr "${FILE} não é portátil em ${ARCH}"
+
+#: lib/inspect_lto.c:152
+#, c-format
+msgid ""
+"%s contains symbols [%s] on %s; this is not portable across compiler versions"
+msgstr ""
+"%s contém símbolos [%s] em %s; isso não é portátil entre versões do "
+"compilador"
+
+#: lib/inspect_lto.c:168
+#, c-format
+msgid ""
+"%s contains symbol [%s] on %s; this is not portable across compiler versions"
+msgstr ""
+"%s contém o símbolo [%s] em %s; isso não é portátil entre versões do "
+"compilador"
+
+#: lib/inspect_manpage.c:52
+#, c-format
+msgid "Error parsing %s:%d:%d: %s: %s: %s\n"
+msgstr "Erro ao analisar %s:%d:%d: %s: %s: %s\n"
+
+#: lib/inspect_manpage.c:81
+#, c-format
+msgid "*** unable to compile man page path regular expression: %s"
+msgstr ""
+"*** não foi possível compilar a expressão regular do caminho da página man: "
+"%s"
+
+#: lib/inspect_manpage.c:179
+#, c-format
+msgid "Unable to open man page %s\n"
+msgstr "Não foi possível abrir a página man %s\n"
+
+#: lib/inspect_manpage.c:187
+#, c-format
+msgid "Man page %s does not end in %s\n"
+msgstr "A página man %s não termina em %s\n"
+
+#: lib/inspect_manpage.c:195
+#, c-format
+msgid "man page with %s suffix is not really compressed with gzip\n"
+msgstr "A página man com sufixo %s não está realmente compactada com gzip\n"
+
+#: lib/inspect_manpage.c:236
+#, c-format
+msgid "Errors found validating %s\n"
+msgstr "Erros encontrados na validação de %s\n"
+
+#: lib/inspect_manpage.c:299
+#, c-format
+msgid "Man page %s is possibly empty on %s in %s"
+msgstr "A página man %s está possivelmente vazia em %s em %s"
+
+#: lib/inspect_manpage.c:302
+msgid "empty man page ${FILE} on ${ARCH}"
+msgstr "página man vazia ${FILE} em ${ARCH}"
+
+#: lib/inspect_manpage.c:315
+#, c-format
+msgid "Man page checker reported problems with %s on %s in %s"
+msgstr "O verificador de páginas man relatou problemas com %s em %s em %s"
+
+#: lib/inspect_manpage.c:318
+msgid "man page ${FILE} on ${ARCH} has errors"
+msgstr "A página man ${FILE} em ${ARCH} contém erros"
+
+#: lib/inspect_manpage.c:327
+#, c-format
+msgid "Man page %s has incorrect path on %s in %s"
+msgstr "A página man %s tem caminho incorreto em %s em %s"
+
+#: lib/inspect_manpage.c:330
+msgid "man page ${FILE} on ${ARCH} has incorrect path"
+msgstr "A página man ${FILE} em ${ARCH} tem um caminho incorreto"
+
+#: lib/inspect_metadata.c:40
+#, c-format
+msgid ""
+"Vendor not set in the rpminspect configuration, ignoring Package Vendor "
+"\"%s\" in %s"
+msgstr ""
+"Fornecedor não definido na configuração do rpminspect, ignorando o "
+"fornecedor do pacote \"%s\" em %s"
+
+#: lib/inspect_metadata.c:51
+#, c-format
+msgid "Package Vendor \"%s\" is not \"%s\" in %s"
+msgstr "Fornecedor do pacote \"%s\" não é \"%s\" em %s"
+
+#: lib/inspect_metadata.c:55
+msgid "invalid vendor ${FILE} on ${ARCH}"
+msgstr "fornecedor inválido ${FILE} em ${ARCH}"
+
+#: lib/inspect_metadata.c:76
+#, c-format
+msgid ""
+"Package Build Host \"%s\" is not within an expected build host subdomain in "
+"%s"
+msgstr ""
+"O host de compilação do pacote \"%s\" não está em um subdomínio esperado do "
+"host de compilação em %s"
+
+#: lib/inspect_metadata.c:80
+msgid "invalid build host ${FILE} on ${ARCH}"
+msgstr "host de compilação inválido ${FILE} em ${ARCH}"
+
+#: lib/inspect_metadata.c:92
+#, c-format
+msgid "Package Summary contains unprofessional language in %s"
+msgstr "O resumo do pacote contém linguagem não profissional em %s"
+
+#: lib/inspect_metadata.c:93
+#, c-format
+msgid "Summary: %s"
+msgstr "Resumo: %s"
+
+#: lib/inspect_metadata.c:97
+msgid "Summary contains unprofessional words on ${ARCH}"
+msgstr "O resumo contém palavras não profissionais em ${ARCH}"
+
+#: lib/inspect_metadata.c:109
+#, c-format
+msgid "Package Description contains unprofessional language in %s:"
+msgstr "A descrição do pacote contém linguagem não profissional em %s:"
+
+#: lib/inspect_metadata.c:114
+msgid "Description contains unprofessional words on ${ARCH}"
+msgstr "A descrição contém palavras não profissionais em ${ARCH}"
+
+#: lib/inspect_metadata.c:134
+#, c-format
+msgid "Gained Package Vendor \"%s\" in %s"
+msgstr "Ganhou fornecedor do pacote \"%s\" em %s"
+
+#: lib/inspect_metadata.c:136
+#, c-format
+msgid "Lost Package Vendor \"%s\" in %s"
+msgstr "Perdeu fornecedor do pacote \"%s\" em %s"
+
+#: lib/inspect_metadata.c:138
+#, c-format
+msgid "Package Vendor changed from \"%s\" to \"%s\" in %s"
+msgstr "Fornecedor do pacote alterado de \"%s\" para \"%s\" em %s"
+
+#: lib/inspect_metadata.c:156
+#, c-format
+msgid "Package Summary change from \"%s\" to \"%s\" in %s"
+msgstr "Mudança no resumo do pacote de \"%s\" para \"%s\" em %s"
+
+#: lib/inspect_metadata.c:169
+#, c-format
+msgid "Package Description changed in %s"
+msgstr "Descrição do pacote alterada em %s"
+
+#: lib/inspect_metadata.c:170
+#, c-format
+msgid ""
+"from:\n"
+"\n"
+"%s\n"
+"\n"
+"to:\n"
+"\n"
+"%s"
+msgstr ""
+"de:\n"
+"\n"
+"%s\n"
+"\n"
+"para:\n"
+"\n"
+"%s"
+
+#: lib/inspect_modularity.c:119
+#, c-format
+msgid ""
+"The /data/static_context value in %s is %s, but the product release rules "
+"forbid the presence of /data/static_context in the module metadata."
+msgstr ""
+"O valor de /data/static_context em %s é %s, mas as regras de lançamento do "
+"produto proíbem a presença de /data/static_context nos metadados do módulo."
+
+#: lib/inspect_modularity.c:125
+#, c-format
+msgid ""
+"The /data/static_context value in %s is %s, but the product release rules "
+"require the presence of /data/static_context in the module metadata."
+msgstr ""
+"O valor de /data/static_context em %s é %s, mas as regras de lançamento do "
+"produto exigem a presença de /data/static_context nos metadados do módulo."
+
+#: lib/inspect_modularity.c:131
+#, c-format
+msgid ""
+"The /data/static_context value in %s is %s, but the product release rules "
+"recommend the presence of /data/static_context in the module metadata."
+msgstr ""
+"O valor de /data/static_context em %s é %s, mas as regras de lançamento do "
+"produto recomendam a presença de /data/static_context nos metadados do "
+"módulo."
+
+#: lib/inspect_modularity.c:133
+#, c-format
+msgid ""
+"The /data/static_context value in %s is %s, and the product release rules do "
+"not have a setting for /data/static_context in the module metadata."
+msgstr ""
+"O valor de /data/static_context em %s é %s e as regras de lançamento do "
+"produto não têm uma configuração para /data/static_context nos metadados do "
+"módulo."
+
+#: lib/inspect_modularity.c:135
+#, c-format
+msgid ""
+"The /data/static_context value in %s is %s as required by the product "
+"release rules."
+msgstr ""
+"O valor /data/static_context em %s é %s conforme exigido pelas regras de "
+"lançamento do produto."
+
+#: lib/inspect_modularity.c:143
+#, c-format
+msgid "%s The /data/static_context value is the same as in %s."
+msgstr "%s O valor de /data/static_context é o mesmo que em %s."
+
+#: lib/inspect_modularity.c:145
+#, c-format
+msgid "%s The /data/static_context value has changed since %s."
+msgstr "%s O valor de /data/static_context mudou desde %s."
+
+#: lib/inspect_modularity.c:180
+#, c-format
+msgid ""
+"Package \"%s\" is part of a module but lacks the '%%{modularitylabel}' "
+"header tag."
+msgstr ""
+"O pacote \"%s\" faz parte de um módulo, mas não possui a tag de cabeçalho "
+"'%%{modularitylabel}'."
+
+#: lib/inspect_modularity.c:224
+msgid "Inspection skipped because this build's type is not `module'."
+msgstr "A inspeção foi ignorada porque o tipo desta compilação não é `module'."
+
+#: lib/inspect_movedfiles.c:52
+#, c-format
+msgid "%s moved to ${FILE} on ${ARCH}"
+msgstr "%s mudou para ${FILE} em ${ARCH}"
+
+#: lib/inspect_movedfiles.c:55
+#, c-format
+msgid "%s probably moved to %s on %s\n"
+msgstr "%s provavelmente mudou para %s em %s\n"
+
+#: lib/inspect_ownership.c:77
+#, c-format
+msgid "File %s has forbidden owner `%s` on %s"
+msgstr "O arquivo %s tem o proprietário proibido `%s` em %s"
+
+#: lib/inspect_ownership.c:82
+msgid "forbidden owner for ${FILE} on ${ARCH}"
+msgstr "proprietário proibido para ${FILE} em ${ARCH}"
+
+#: lib/inspect_ownership.c:92
+#, c-format
+msgid "File %s has forbidden group `%s` on %s"
+msgstr "O arquivo %s tem o grupo proibido `%s` em %s"
+
+#: lib/inspect_ownership.c:97
+msgid "forbidden group for ${FILE} on ${ARCH}"
+msgstr "grupo proibido para ${FILE} em ${ARCH}"
+
+#: lib/inspect_ownership.c:119
+#, c-format
+msgid "File %s has owner `%s` on %s, but should be `%s`"
+msgstr "O arquivo %s tem proprietário `%s` em %s, mas deveria ser `%s`"
+
+#: lib/inspect_ownership.c:124
+msgid "invalid owner for ${FILE} on ${ARCH}"
+msgstr "proprietário inválido para ${FILE} em ${ARCH}"
+
+#: lib/inspect_ownership.c:162
+#, c-format
+msgid ""
+"File %s on %s has CAP_SETUID capability but group `%s` and is world "
+"executable"
+msgstr ""
+"O arquivo %s em %s tem capacidade CAP_SETUID, mas grupo `%s` e é executável "
+"por todos"
+
+#: lib/inspect_ownership.c:166
+msgid "CAP_SETUID and o+x for ${FILE} on ${ARCH}"
+msgstr "CAP_SETUID e o+x para ${FILE} em ${ARCH}"
+
+#: lib/inspect_ownership.c:179
+#, c-format
+msgid ""
+"File %s on %s has CAP_SETUID capability but group `%s` and is group writable"
+msgstr ""
+"O arquivo %s em %s tem capacidade CAP_SETUID, mas grupo `%s` e é gravável "
+"para o grupo"
+
+#: lib/inspect_ownership.c:183
+msgid "CAP_SETUID and g+w for ${FILE} on ${ARCH}"
+msgstr "CAP_SETUID e g+w para ${FILE} em ${ARCH}"
+
+#: lib/inspect_ownership.c:199
+#, c-format
+msgid "File %s has group `%s` on %s, but should be `%s`"
+msgstr "O arquivo %s tem o grupo `%s` em %s, mas deveria ser `%s`"
+
+#: lib/inspect_ownership.c:204
+msgid "invalid group for ${FILE} on ${ARCH}"
+msgstr "grupo inválido para ${FILE} em ${ARCH}"
+
+#: lib/inspect_ownership.c:268
+#, c-format
+msgid "File %s changed %s from `%s` to `%s` on %s"
+msgstr "O arquivo %s mudou %s de `%s` para `%s` em %s"
+
+#: lib/inspect_ownership.c:270
+msgid "${FILE} changed owner on ${ARCH}"
+msgstr "${FILE} mudou de proprietário em ${ARCH}"
+
+#: lib/inspect_patches.c:395
+#, c-format
+msgid ""
+"Patch number %ld (%s) is missing a corresponding %%patch%ld macro, usually "
+"in %%prep."
+msgstr ""
+"O patch de número %ld (%s) carece de uma macro %%patch%ld correspondente, "
+"geralmente em %%prep."
+
+#: lib/inspect_patches.c:397
+#, c-format
+msgid "missing %%patch macro for ${FILE}"
+msgstr "macro de %%patch faltando para ${FILE}"
+
+#: lib/inspect_patches.c:399
+#, c-format
+msgid "Patch number %ld (%s) is mismatched with %%patch%ld macro."
+msgstr "O patch de número %ld (%s) não corresponde à macro %%patch%ld."
+
+#: lib/inspect_patches.c:401
+#, c-format
+msgid "mismatched %%patch macro for ${FILE}"
+msgstr "macro %%patch incompatível para ${FILE}"
+
+#: lib/inspect_patches.c:422
+msgid "undefined Patch ${FILE}"
+msgstr "Patch indefinido ${FILE}"
+
+#: lib/inspect_patches.c:423
+#, c-format
+msgid "Undefined Patch file %s."
+msgstr "Arquivo de patch indefinido %s."
+
+#: lib/inspect_patches.c:436 lib/inspect_patches.c:444
+#, c-format
+msgid "*** unable to uncompress patch: %s"
+msgstr "*** não foi possível descompactar patch: %s"
+
+#: lib/inspect_patches.c:473
+msgid "corrupt patch ${FILE}"
+msgstr "patch corrompido ${FILE}"
+
+#: lib/inspect_patches.c:477 lib/inspect_patches.c:484
+#, c-format
+msgid "Patch %s is under 4 bytes in size - is it corrupt?"
+msgstr "O patch %s tem menos de 4 bytes de tamanho - está corrompido?"
+
+#: lib/inspect_patches.c:506
+#, c-format
+msgid "%s changed (%ld bytes -> %ld bytes)"
+msgstr "%s alterado (%ld bytes -> %ld bytes)"
+
+#: lib/inspect_patches.c:510 lib/inspect_patches.c:535
+msgid "patch file ${FILE}"
+msgstr "arquivo patch ${FILE}"
+
+#: lib/inspect_patches.c:531
+#, c-format
+msgid "New patch file `%s` appeared"
+msgstr "Novo arquivo de patch `%s` apareceu"
+
+#: lib/inspect_patches.c:551
+msgid "patch changes ${FILE}"
+msgstr "patch altera ${FILE}"
+
+#: lib/inspect_patches.c:555
+#, c-format
+msgid "%s touches as many as %ld line%s"
+msgstr "%s toca até %ld linha%s"
+
+#: lib/inspect_patches.c:557
+#, c-format
+msgid "%s touches %ld file%s"
+msgstr "%s toca %ld arquivo%s"
+
+#: lib/inspect_patches.c:559
+#, c-format
+msgid "%s touches %ld file%s and %s%ld line%s"
+msgstr "%s toca %ld arquivo%s e %s%ld linha%s"
+
+#: lib/inspect_patches.c:559
+msgid "as many as "
+msgstr "até "
+
+#: lib/inspect_patches.c:626 lib/inspect_upstream.c:141
+msgid "No source packages available, skipping inspection."
+msgstr "Nenhum pacote fonte disponível, ignorando a inspeção."
+
+#: lib/inspect_patches.c:725
+#, c-format
+msgid "Unhandled patch file `%s` defined in spec file"
+msgstr "Arquivo de patch `%s` não tratado definido no arquivo spec"
+
+#: lib/inspect_patches.c:822
+#, c-format
+msgid "*** unrecognized %%patch line: %s"
+msgstr "*** linha %%patch não reconhecida: %s"
+
+#: lib/inspect_patches.c:828
+#, c-format
+msgid "*** unable to read spec file line: %s"
+msgstr "*** não foi possível ler a linha do arquivo spec: %s"
+
+#: lib/inspect_patches.c:881
+#, c-format
+msgid "Patch file `%s` removed"
+msgstr "Arquivo de patch `%s` removido"
+
+#: lib/inspect_pathmigration.c:81
+#, c-format
+msgid "File %s found should be in %s on %s"
+msgstr "O arquivo %s encontrado deveria estar em %s em %s"
+
+#: lib/inspect_pathmigration.c:82
+#, c-format
+msgid "${FILE} should be in %s on ${ARCH}"
+msgstr "${FILE} deveria estar em %s em ${ARCH}"
+
+#: lib/inspect_permissions.c:84
+msgid " changed setuid/setgid;"
+msgstr " mudou setuid/setgid;"
+
+#: lib/inspect_permissions.c:89
+msgid " became a directory;"
+msgstr " se tornou um diretório;"
+
+#: lib/inspect_permissions.c:91
+msgid " became a character device;"
+msgstr " se tornou um dispositivo de caractere;"
+
+#: lib/inspect_permissions.c:93
+msgid " became a block device;"
+msgstr " se tornou um dispositivo de bloco;"
+
+#: lib/inspect_permissions.c:95
+msgid " became a regular file;"
+msgstr " se tornou um arquivo regular;"
+
+#: lib/inspect_permissions.c:97
+msgid " became a FIFO;"
+msgstr " se tornou um FIFO;"
+
+#: lib/inspect_permissions.c:99
+msgid " became a symbolic link;"
+msgstr " se tornou um link simbólico;"
+
+#: lib/inspect_permissions.c:101
+msgid " became a socket;"
+msgstr " se tornou um socket;"
+
+#: lib/inspect_permissions.c:105
+msgid " permissions"
+msgstr " permissões"
+
+#: lib/inspect_permissions.c:111
+msgid " relaxed"
+msgstr " relaxadas"
+
+#: lib/inspect_permissions.c:114
+msgid " changed"
+msgstr " alteradas"
+
+#: lib/inspect_permissions.c:129
+#, c-format
+msgid "%s from %04o to %04o on %s"
+msgstr "%s de %04o para %04o em %s"
+
+#: lib/inspect_permissions.c:135
+#, c-format
+msgid "${FILE} permissions from %04o to %04o on ${ARCH}"
+msgstr "Permissões de ${FILE} de %04o para %04o em ${ARCH}"
+
+#: lib/inspect_permissions.c:149
+#, c-format
+msgid "%s (%s) is world-writable on %s"
+msgstr "%s (%s) é gravável por todos em %s"
+
+#: lib/inspect_permissions.c:152
+msgid "${FILE} is world-writable on ${ARCH}"
+msgstr "${FILE} é gravável por todos em ${ARCH}"
+
+#: lib/inspect_politics.c:47 lib/inspect_politics.c:67
+#, c-format
+msgid "*** invalid politics entry with pattern=%s and digest=%s"
+msgstr "*** entrada de políticas inválida com pattern=%s e digest=%s"
+
+#: lib/inspect_politics.c:92
+#, c-format
+msgid "*** unknown digest type for pattern %s: %s"
+msgstr "*** tipo de digest desconhecido para pattern %s: %s"
+
+#: lib/inspect_politics.c:126
+#, c-format
+msgid ""
+"Possible politically sensitive file (%s) found in %s on %s: rules allow this "
+"file."
+msgstr ""
+"Possível arquivo politicamente sensível (%s) encontrado em %s em %s: as "
+"regras permitem este arquivo."
+
+#: lib/inspect_politics.c:134
+#, c-format
+msgid ""
+"Possible politically sensitive file (%s) found in %s on %s: rules prohibit "
+"this file."
+msgstr ""
+"Possível arquivo politicamente sensível (%s) encontrado em %s em %s: as "
+"regras proíbem este arquivo."
+
+#: lib/inspect_politics.c:138
+msgid "${FILE} is politically sensitive"
+msgstr "${FILE} é politicamente sensível"
+
+#: lib/inspect_removedfiles.c:26
+msgid ""
+"; Removing security policy related files requires inspection by the Security "
+"Response Team."
+msgstr ""
+"; A remoção de arquivos relacionados à política de segurança requer inspeção "
+"pela Equipe de Resposta de Segurança."
+
+#: lib/inspect_removedfiles.c:85
+msgid "library ${FILE} removed on ${ARCH}"
+msgstr "biblioteca ${FILE} removida em ${ARCH}"
+
+#: lib/inspect_removedfiles.c:131
+#, c-format
+msgid "ABI break: Library %s with SONAME '%s' removed from %s"
+msgstr "Quebra de ABI: Biblioteca %s com SONAME '%s' removido de %s"
+
+#: lib/inspect_removedfiles.c:132
+msgid "missing SONAME in ${FILE} on ${ARCH}"
+msgstr "faltando SONAME em ${FILE} em ${ARCH}"
+
+#: lib/inspect_removedfiles.c:135
+#, c-format
+msgid "ABI break: Library %s removed from %s"
+msgstr "Quebra de ABI: Biblioteca %s removida de %s"
+
+#: lib/inspect_removedfiles.c:138
+#, c-format
+msgid "%s removed from %s"
+msgstr "%s removido de %s"
+
+#: lib/inspect_rpmdeps.c:129
+#, c-format
+msgid "Invalid looking %s dependency in the %s package on %s: %s"
+msgstr "Dependência %s com aparência de inválida no pacote %s em %s: %s"
+
+#: lib/inspect_rpmdeps.c:132 lib/inspect_rpmdeps.c:892
+#: lib/inspect_rpmdeps.c:902 lib/inspect_rpmdeps.c:948
+#, c-format
+msgid "'${FILE}' in %s on ${ARCH}"
+msgstr "'${FILE}' em %s em ${ARCH}"
+
+#: lib/inspect_rpmdeps.c:386
+#, c-format
+msgid ""
+"Subpackage %s on %s carries '%s' which comes from subpackage %s but does not "
+"carry an explicit package version requirement.  Please add 'Requires: %s = "
+"%s' to the spec file to avoid the need to test interoperability between "
+"various combinations of old and new subpackages."
+msgstr ""
+"O subpacote %s em %s carrega '%s' que vem do subpacote %s mas não carrega um "
+"requisito explícito de versão do pacote. Adicione 'Requires: %s = %s' ao "
+"arquivo spec para evitar a necessidade de testar a interoperabilidade entre "
+"várias combinações de subpacotes novos e antigos."
+
+#: lib/inspect_rpmdeps.c:387
+#, c-format
+msgid "missing 'Requires: ${FILE} = %s' in %s on ${ARCH}"
+msgstr "faltando 'Requires: ${FILE} = %s' em %s em ${ARCH}"
+
+#: lib/inspect_rpmdeps.c:409
+#, c-format
+msgid ""
+"Multiple subpackages provide '%s': [%s] but these subpackages carry explicit "
+"Requires: [%s]"
+msgstr ""
+"Vários subpacotes fornecem '%s': [%s], mas esses subpacotes carregam "
+"Requires explícito: [%s]"
+
+#: lib/inspect_rpmdeps.c:410
+#, c-format
+msgid "%s all provide '${FILE}' on ${ARCH}"
+msgstr "%s todos fornecem '${FILE}' em ${ARCH}"
+
+#: lib/inspect_rpmdeps.c:540
+#, c-format
+msgid "Missing epoch prefix on the version-release in '%s' for %s on %s"
+msgstr "Faltando o prefixo de epoch no version-release em '%s' para %s em %s"
+
+#: lib/inspect_rpmdeps.c:541
+#, c-format
+msgid "'${FILE}' needs epoch in %s on ${ARCH}"
+msgstr "'${FILE}' precisa de epoch em %s em ${ARCH}"
+
+#: lib/inspect_rpmdeps.c:807
+msgid "spec file"
+msgstr "arquivo spec"
+
+#: lib/inspect_rpmdeps.c:887
+#, c-format
+msgid "Gained '%s' in source package %s"
+msgstr "Ganhou '%s' no pacote fonte %s"
+
+#: lib/inspect_rpmdeps.c:889
+#, c-format
+msgid "Gained '%s' in subpackage %s on %s"
+msgstr "Ganhou '%s' no subpacote %s em %s"
+
+#: lib/inspect_rpmdeps.c:897
+#, c-format
+msgid "Retained '%s' in source package %s"
+msgstr "Retido '%s' no pacote fonte %s"
+
+#: lib/inspect_rpmdeps.c:899
+#, c-format
+msgid "Retained '%s' in subpackage %s on %s"
+msgstr "Retido '%s' no subpacote %s em %s"
+
+#: lib/inspect_rpmdeps.c:907
+#, c-format
+msgid "Changed '%s' to '%s' in source package %s"
+msgstr "Alterado '%s' para '%s' no pacote fonte %s"
+
+#: lib/inspect_rpmdeps.c:909
+#, c-format
+msgid "Changed '%s' to '%s' in subpackage %s on %s"
+msgstr "Alterado '%s' para '%s' no subpacote %s em %s"
+
+#: lib/inspect_rpmdeps.c:912
+#, c-format
+msgid "'%s' became '${FILE}' in %s on ${ARCH}"
+msgstr "'%s' tornou-se '${FILE}' em %s em ${ARCH}"
+
+#: lib/inspect_rpmdeps.c:918
+msgid "; this is expected"
+msgstr "; isso é esperado"
+
+#: lib/inspect_rpmdeps.c:940
+#, c-format
+msgid "Lost '%s' in source package %s"
+msgstr "Perdeu '%s' no pacote fonte %s"
+
+#: lib/inspect_rpmdeps.c:942
+#, c-format
+msgid "Lost '%s' in subpackage %s on %s"
+msgstr "Perdeu '%s' no subpacote %s em %s"
+
+#: lib/inspect_runpath.c:136
+#, c-format
+msgid "*** unable to compile $ORIGIN root prefix regular expression: %s"
+msgstr ""
+"*** não foi possível compilar a expressão regular do prefixo raiz $ORIGIN: %s"
+
+#: lib/inspect_runpath.c:190
+#, c-format
+msgid "%s has an invalid-looking %s on %s: %s"
+msgstr "%s tem um %s de aparência inválida em %s: %s"
+
+#: lib/inspect_runpath.c:192
+msgid "runtime search path in ${FILE} on ${ARCH}"
+msgstr "caminho de pesquisa do runtime em ${FILE} em ${ARCH}"
+
+#: lib/inspect_runpath.c:270
+msgid "both DT_RPATH and DT_RUNPATH in ${FILE} on ${ARCH}"
+msgstr "ambos DT_RPATH e DT_RUNPATH em ${FILE} em ${ARCH}"
+
+#: lib/inspect_runpath.c:272
+#, c-format
+msgid "%s has both DT_RPATH and DT_RUNPATH on %s; this is not allowed"
+msgstr "%s tem DT_RPATH e DT_RUNPATH em %s; isso não é permitido"
+
+#: lib/inspect_shellsyntax.c:125
+msgid "invalid shell script ${FILE} on ${ARCH}"
+msgstr "script de shell inválido ${FILE} em ${ARCH}"
+
+#: lib/inspect_shellsyntax.c:132
+#, c-format
+msgid "%s is a shell script but was not before on %s"
+msgstr "%s é um script de shell, mas não existia antes em %s"
+
+#: lib/inspect_shellsyntax.c:134
+#, c-format
+msgid "%s is a %s script but was a %s script before on %s"
+msgstr "%s é um script %s, mas já era um script %s antes em %s"
+
+#: lib/inspect_shellsyntax.c:181
+#, c-format
+msgid "%s is no longer a valid %s script on %s"
+msgstr "%s não é mais um script %s válido em %s"
+
+#: lib/inspect_shellsyntax.c:190
+#, c-format
+msgid "%s became a valid %s script on %s"
+msgstr "%s tornou-se um script %s válido em %s"
+
+#: lib/inspect_shellsyntax.c:193
+msgid ""
+". The script fails with '-n' but passes with '-O extglob'; be sure 'shopt "
+"extglob' is set in the script."
+msgstr ""
+". O script falha com '-n', mas passa com '-O extglob'; certifique-se de que "
+"'shopt extglob' esteja definido no script."
+
+#: lib/inspect_shellsyntax.c:204 lib/inspect_shellsyntax.c:224
+#, c-format
+msgid "%s is not a valid %s script on %s"
+msgstr "%s não é um script %s válido em %s"
+
+#: lib/inspect_shellsyntax.c:215
+#, c-format
+msgid ""
+"%s fails with '-n' but passes with '-O extglob'; be sure 'shopt extglob' is "
+"set in the script on %s"
+msgstr ""
+"%s falha com '-n' mas passa com '-O extglob'; certifique-se de que 'shopt "
+"extglob' esteja definido no script em %s"
+
+#: lib/inspect_specname.c:68
+msgid "unexpected spec filename"
+msgstr "nome de arquivo spec inesperado"
+
+#: lib/inspect_specname.c:71
+msgid "exactly match"
+msgstr "corresponde exatamente"
+
+#: lib/inspect_specname.c:73
+msgid "begin with"
+msgstr "começa com"
+
+#: lib/inspect_specname.c:75
+msgid "end with"
+msgstr "termina com"
+
+#: lib/inspect_specname.c:78
+#, c-format
+msgid "Spec filename does not %s the primary name %s; got '%s'"
+msgstr "O nome do arquivo spec não é %s o nome primário %s; obteve '%s'"
+
+#: lib/inspect_specname.c:109
+msgid "The specname inspection is only for source packages, skipping."
+msgstr "A inspeção de specname é apenas para pacotes fonte, ignorando."
+
+#: lib/inspect_subpackages.c:68
+#, c-format
+msgid "Subpackage '%s' has disappeared on '%s'"
+msgstr "O subpacote '%s' desapareceu em '%s'"
+
+#: lib/inspect_subpackages.c:75 lib/inspect_subpackages.c:99
+msgid "subpackage ${FILE}"
+msgstr "subpacote ${FILE}"
+
+#: lib/inspect_subpackages.c:92
+#, c-format
+msgid "Subpackage '%s' has appeared on '%s'"
+msgstr "O subpacote '%s' apareceu em '%s'"
+
+#: lib/inspect_symlinks.c:98
+#, c-format
+msgid ""
+"Directory %s became a symbolic link (to %s) in %s on %s; this is not allowed!"
+msgstr ""
+"O diretório %s tornou-se um link simbólico (para %s) em %s em %s; isso não é "
+"permitido!"
+
+#: lib/inspect_symlinks.c:100
+#, c-format
+msgid "%s %s became a symbolic link (to %s) in %s on %s"
+msgstr "%s %s tornou-se um link simbólico (para %s) em %s em %s"
+
+#: lib/inspect_symlinks.c:108
+msgid "${FILE} became a symlink on ${ARCH}"
+msgstr "${FILE} tornou-se um link simbólico em ${ARCH}"
+
+#: lib/inspect_symlinks.c:125
+msgid "unable to read symlink ${FILE} on ${ARCH}"
+msgstr "não é possível ler o link simbólico ${FILE} em ${ARCH}"
+
+#: lib/inspect_symlinks.c:126
+#, c-format
+msgid "An error occurred reading symbolic link %s in %s on %s."
+msgstr "Ocorreu um erro ao ler o link simbólico %s em %s em %s."
+
+#: lib/inspect_symlinks.c:178
+#, c-format
+msgid ""
+"%s %s has too many levels of redirects and cannot be resolved in %s on %s"
+msgstr ""
+"%s %s tem muitos níveis de redirecionamentos e não pode ser resolvido em %s "
+"em %s"
+
+#: lib/inspect_symlinks.c:182
+msgid "too many redirects for ${FILE} on ${ARCH}"
+msgstr "muitos redirecionamentos para ${FILE} em ${ARCH}"
+
+#: lib/inspect_symlinks.c:277
+#, c-format
+msgid "%s %s %s a dangling symbolic link in %s on %s"
+msgstr "%s %s %s um link simbólico pendente em %s em %s"
+
+#: lib/inspect_symlinks.c:284
+msgid "dangling symlink ${FILE} on ${ARCH}"
+msgstr "link simbólico pendente ${FILE} em ${ARCH}"
+
+#: lib/inspect_types.c:69
+msgid "${FILE} MIME type on ${ARCH}"
+msgstr "Tipo MIME de ${FILE} em ${ARCH}"
+
+#: lib/inspect_types.c:77 lib/inspect_types.c:82
+#, c-format
+msgid "Unknown MIME type `%s' on %s in %s"
+msgstr "Tipo MIME desconhecido `%s' em %s em %s"
+
+#: lib/inspect_types.c:107
+#, c-format
+msgid "MIME type for %s in %s was `%s/%s' and became `%s/%s'"
+msgstr "O tipo MIME para %s em %s era `%s/%s' e se tornou `%s/%s'"
+
+#: lib/inspect_udevrules.c:104 lib/inspect_udevrules.c:116
+#, c-format
+msgid "%s is a valid udev rules file on %s"
+msgstr "%s é um arquivo válido de regras do udev em %s"
+
+#: lib/inspect_udevrules.c:106
+#, c-format
+msgid "%s is now a valid udev rules file on %s"
+msgstr "%s agora é um arquivo válido de regras do udev em %s"
+
+#: lib/inspect_udevrules.c:109
+#, c-format
+msgid "%s is no longer a valid udev rules file on %s"
+msgstr "%s não é mais um arquivo válido de regras do udev em %s"
+
+#: lib/inspect_udevrules.c:112 lib/inspect_udevrules.c:118
+#, c-format
+msgid "%s is not a valid udev rules file on %s"
+msgstr "%s não é um arquivo válido de regras do udev em %s"
+
+#: lib/inspect_unicode.c:465
+#, c-format
+msgid "*** empty localpath on %s"
+msgstr "*** localpath vazio em %s"
+
+#: lib/inspect_unicode.c:474
+msgid "forbidden code point in ${FILE} on ${ARCH}"
+msgstr "ponto de código proibido em ${FILE} em ${ARCH}"
+
+#: lib/inspect_unicode.c:551
+#, c-format
+msgid ""
+"A forbidden code point, 0x%04X, was found in the %s source file on line %ld "
+"at column %ld.  This source file is used by %s."
+msgstr ""
+"Um ponto de código proibido, 0x%04X, foi encontrado no arquivo fonte %s na "
+"linha %ld na coluna %ld. Este arquivo fonte é usado por %s."
+
+#: lib/inspect_unicode.c:621
+#, c-format
+msgid "unable to run %prep in ${FILE}"
+msgstr "não é possível executar %prep em ${FILE}"
+
+#: lib/inspect_unicode.c:624
+#, c-format
+msgid ""
+"Unable to run through the %%prep section in %s or manually unpack sources "
+"for further scanning."
+msgstr ""
+"Não é possível executar a seção %%prep em %s ou descompactar manualmente as "
+"fontes para verificação adicional."
+
+#: lib/inspect_unicode.c:744
+msgid "The unicode inspection is only for source packages, skipping."
+msgstr "A inspeção unicode é apenas para pacotes fonte, ignorando."
+
+#: lib/inspect_upstream.c:60
+#, c-format
+msgid "New upstream source file `%s` appeared"
+msgstr "Novo arquivo fonte upstream `%s` apareceu"
+
+#: lib/inspect_upstream.c:62
+msgid "new source file ${FILE}"
+msgstr "novo arquivo fonte ${FILE}"
+
+#: lib/inspect_upstream.c:91
+#, c-format
+msgid "Upstream source file `%s` changed content"
+msgstr "O arquivo fonte upstream `%s` alterou o conteúdo"
+
+#: lib/inspect_upstream.c:93
+msgid "checksum of ${FILE}"
+msgstr "soma de verificação de ${FILE}"
+
+#: lib/inspect_upstream.c:195
+#, c-format
+msgid "Source file `%s` removed"
+msgstr "Arquivo fonte `%s` removido"
+
+#: lib/inspect_upstream.c:197
+msgid "source file ${FILE} removed"
+msgstr "arquivo fonte ${FILE} removido"
+
+#: lib/inspect_virus.c:40
+msgid "*** cl_engine_new returned NULL, check clamav library"
+msgstr "*** cl_engine_new retornou NULL, verifique a biblioteca do clamav"
+
+#: lib/inspect_virus.c:98
+#, c-format
+msgid "Virus detected in %s in the %s package on %s: %s"
+msgstr "Vírus detectado em %s no pacote %s em %s: %s"
+
+#: lib/inspect_virus.c:135
+msgid "clamav version information"
+msgstr "informações da versão do clamav"
+
+#: lib/inspect_virus.c:140
+#, c-format
+msgid "clamav version %s"
+msgstr "clamav versão %s"
+
+#: lib/inspect_virus.c:145
+#, c-format
+msgid "*** missing %s"
+msgstr "*** faltando %s"
+
+#: lib/inspect_virus.c:169
+#, c-format
+msgid "%s version %u (%s)"
+msgstr "%s versão %u (%s)"
+
+#: lib/inspect_virus.c:201
+msgid "virus or malware in ${FILE} on ${ARCH}"
+msgstr "vírus ou malware em ${FILE} em ${ARCH}"
+
+#: lib/inspect_xml.c:195
+#, c-format
+msgid "%s is a well-formed XML file in %s on %s, but is not a valid XML file"
+msgstr ""
+"%s é um arquivo XML bem formado em %s em %s, mas não é um arquivo XML válido"
+
+#: lib/inspect_xml.c:203
+#, c-format
+msgid "%s is not a well-formed XML file in %s on %s"
+msgstr "%s não é um arquivo XML bem formado em %s em %s"
+
+#: lib/inspect_xml.c:207
+msgid "${FILE} is not well-formed XML on ${ARCH}"
+msgstr "${FILE} não é um XML bem formado em ${ARCH}"
+
+#: lib/koji.c:142
+#, c-format
+msgid "*** XML-RPC Fault: %s (%d)"
+msgstr "*** Falha no XML-RPC: %s (%d)"
+
+#: lib/koji.c:652
+#, c-format
+msgid "*** xmlrpc fault code %s (%d): getBuild(%s) from %s"
+msgstr "*** código de falha xmlrpc %s (%d): getBuild(%s) de %s"
+
+#: lib/koji.c:884
+#, c-format
+msgid "*** Koji build state is %s for %s, cannot continue"
+msgstr ""
+"*** O estado da compilação do Koji é %s para %s, não é possível continuar"
+
+#: lib/koji.c:1147
+#, c-format
+msgid "*** xmlrpc fault code %s (%d): getTaskInfo(%s) from %s"
+msgstr "*** código de falha xmlrpc %s (%d): getTaskInfo(%s) de %s"
+
+#: lib/koji.c:1171
+#, c-format
+msgid "*** Koji task state is %s for task %s, cannot continue"
+msgstr ""
+"*** O estado de tarefa do Koji é %s para a tarefa %s, não é possível "
+"continuar"
+
+#: lib/koji.c:1399
+msgid "RPM package build"
+msgstr "Compilação de pacote RPM"
+
+#: lib/koji.c:1401
+msgid "Module build consisting of multiple RPM package builds"
+msgstr ""
+"Compilação de módulo que consiste em múltiplas compilações de pacotes RPM"
+
+#: lib/magic.c:21
+msgid "*** unable to initialize the magic library"
+msgstr "*** não foi possível inicializar a biblioteca mágica"
+
+#: lib/magic.c:26
+#, c-format
+msgid "*** unable to load the magic database: %s"
+msgstr "*** não foi possível carregar o banco de dados mágico: %s"
+
+#: lib/mkdirp.c:76 lib/mkdirp.c:89
+#, c-format
+msgid "*** unable to mkdir %s"
+msgstr "*** não foi possível fazer mkdir %s"
+
+#: lib/output.c:25
+msgid ""
+"Detailed results suitable for the console and piping through paging programs."
+msgstr ""
+"Resultados detalhados adequados para o console e canalização por meio de "
+"programas de paginação."
+
+#: lib/output.c:27
+msgid ""
+"Results organized as a JSON data structure suitable for reading by web "
+"applications and other frontend tools."
+msgstr ""
+"Resultados organizados como uma estrutura de dados JSON adequada para "
+"leitura por aplicações web e outras ferramentas frontend."
+
+#: lib/output.c:29
+msgid ""
+"Results organized as an XUnit data structure suitable for use with Jenkins "
+"and other XUnit-enabled services."
+msgstr ""
+"Resultados organizados como uma estrutura de dados XUnit adequada para uso "
+"com Jenkins e outros serviços habilitados para XUnit."
+
+#: lib/output.c:31
+msgid ""
+"Results summarized with one result per line, suitable for console viewing "
+"with a paging program."
+msgstr ""
+"Resultados resumidos com um resultado por linha, adequado para visualização "
+"em console com um programa de paginação."
+
+#: lib/output_json.c:99 lib/output_summary.c:45 lib/output_text.c:53
+#, c-format
+msgid "*** error opening %s for writing"
+msgstr "*** erro ao abrir %s para escrita"
+
+#: lib/output_summary.c:53
+msgid "added"
+msgstr "adicionado"
+
+#: lib/output_summary.c:55
+msgid "removed"
+msgstr "removido"
+
+#: lib/output_summary.c:57
+msgid "changed"
+msgstr "alterado"
+
+#: lib/output_summary.c:61
+msgid "ok"
+msgstr "ok"
+
+#: lib/output_summary.c:63
+msgid "unknown"
+msgstr "desconhecido"
+
+#: lib/output_text.c:92 lib/output_xunit.c:83
+#, c-format
+msgid "Result: %s\n"
+msgstr "Resultado: %s\n"
+
+#: lib/output_text.c:95 lib/output_xunit.c:96
+#, c-format
+msgid ""
+"Waiver Authorization: %s\n"
+"\n"
+msgstr ""
+"Autorização de isenção: %s\n"
+"\n"
+
+#: lib/output_text.c:99 lib/output_xunit.c:110
+#, c-format
+msgid ""
+"Details:\n"
+"%s\n"
+"\n"
+msgstr ""
+"Detalhes\n"
+"%s\n"
+"\n"
+
+#: lib/output_text.c:103 lib/output_xunit.c:118
+#, c-format
+msgid ""
+"Suggested Remedy:\n"
+"%s"
+msgstr ""
+"Remediação sugerida:\n"
+"%s"
+
+#: lib/output_xunit.c:54
+#, c-format
+msgid "*** opening %s for writing"
+msgstr "*** abrindo %s para escrita"
+
+#: lib/parse_yaml.c:114 lib/parse_yaml.c:139
+#, c-format
+msgid "*** %s: broken document"
+msgstr "*** %s: documento quebrado"
+
+#: lib/parse_yaml.c:158 lib/parse_yaml.c:305
+#, c-format
+msgid "*** skipping token type %s"
+msgstr "*** ignorando o tipo de token %s"
+
+#: lib/parse_yaml.c:386
+msgid "*** malformed type - freed?"
+msgstr "*** tipo malformado - liberado?"
+
+#: lib/peers.c:176
+#, c-format
+msgid "There is not enough available space to unpack all of the RPMs.\n"
+msgstr "Não há espaço disponível suficiente para descompactar todos os RPMs.\n"
+
+#: lib/readelf.c:48
+#, c-format
+msgid "*** unknown elftype_t %d"
+msgstr "*** elftype_t desconhecido %d"
+
+#: lib/readelf.c:76
+msgid "*** libelf version mismatch"
+msgstr "*** incompatibilidade da versão do libelf"
+
+#: lib/readfile.c:50
+#, c-format
+msgid "*** unable to find end of %s"
+msgstr "*** não foi possível encontrar o final de %s"
+
+#: lib/readfile.c:68
+#, c-format
+msgid "*** unable to close %s"
+msgstr "*** não foi possível fechar %s"
+
+#: lib/rmtree.c:74
+#, c-format
+msgid "*** %s is not a directory"
+msgstr "*** %s não é um diretório"
+
+#: lib/rpm.c:71
+#, c-format
+msgid "*** Fopen failed for %s: %s"
+msgstr "*** Fopen falhou para %s: %s"
+
+#: lib/rpm.c:255
+#, c-format
+msgid "*** file index %d is out of bounds for %s"
+msgstr "*** o índice de arquivo %d está fora dos limites para %s"
+
+#: lib/rpm.c:431
+msgid "*** error reading file from RPM payload"
+msgstr "*** erro ao ler arquivo da carga útil RPM"
+
+#: lib/runcmd.c:171
+#, c-format
+msgid "%d"
+msgstr "%d"
+
+#: lib/runcmd.c:173
+#, c-format
+msgid "%d (%s)"
+msgstr "%d (%s)"
+
+#: lib/runcmd.c:178
+#, c-format
+msgid ""
+"%s\n"
+"\n"
+"%s tried to run the command and it received signal %s"
+msgstr ""
+"%s\n"
+"\n"
+"%s tentou executar o comando e recebeu o sinal %s"
+
+#: lib/runcmd.c:182
+#, c-format
+msgid "%s tried to run the command and it received signal %s"
+msgstr "%s tentou executar o comando e recebeu o sinal %s"
+
+#: lib/strfuncs.c:250 lib/strfuncs.c:282
+msgid "NULL"
+msgstr "NULO"
+
+#: lib/strfuncs.c:252 lib/strfuncs.c:284
+msgid "OK"
+msgstr "OK"
+
+#: lib/strfuncs.c:254 lib/strfuncs.c:286
+msgid "INFO"
+msgstr "INFO"
+
+#: lib/strfuncs.c:256 lib/strfuncs.c:288
+msgid "VERIFY"
+msgstr "VERIFICAR"
+
+#: lib/strfuncs.c:258 lib/strfuncs.c:290
+msgid "BAD"
+msgstr "INVÁLIDO"
+
+#: lib/strfuncs.c:260 lib/strfuncs.c:292
+msgid "SKIP"
+msgstr "PULAR"
+
+#: lib/strfuncs.c:262 lib/strfuncs.c:294
+msgid "DIAGNOSTICS"
+msgstr "DIAGNÓSTICO"
+
+#: lib/strfuncs.c:264 lib/strfuncs.c:314
+msgid "UnKnOwN"
+msgstr "DeScoNhEcidO"
+
+#: lib/strfuncs.c:308
+msgid "Not Waivable"
+msgstr "Não isentável"
+
+#: lib/strfuncs.c:310
+msgid "Anyone"
+msgstr "Qualquer pessoa"
+
+#: lib/strfuncs.c:312
+msgid "Security"
+msgstr "Segurança"
+
+#: lib/strfuncs.c:543
+msgid "regular file"
+msgstr "arquivo regular"
+
+#: lib/strfuncs.c:545
+msgid "directory"
+msgstr "diretório"
+
+#: lib/strfuncs.c:547
+msgid "character device"
+msgstr "dispositivo de caractere"
+
+#: lib/strfuncs.c:549
+msgid "block device"
+msgstr "dispositivo de bloco"
+
+#: lib/strfuncs.c:551
+msgid "FIFO (named pipe)"
+msgstr "FIFO (pipe nomeado)"
+
+#: lib/strfuncs.c:553
+msgid "symbolic link"
+msgstr "link simbólico"
+
+#: lib/strfuncs.c:555
+msgid "socket"
+msgstr "socket"
+
+#: lib/strfuncs.c:614
+msgid "Success."
+msgstr "Sucesso."
+
+#: lib/strfuncs.c:616
+msgid "One or more inspections failed."
+msgstr "Uma ou mais inspeções falharam."
+
+#: lib/strfuncs.c:618
+msgid "Program error."
+msgstr "Erro no programa."
+
+#: lib/strfuncs.c:620
+msgid "The specified profile is not found."
+msgstr "O perfil especificado não foi encontrado."
+
+#: lib/strfuncs.c:622
+msgid "Insufficient disk space in the working directory."
+msgstr "Espaço em disco insuficiente no diretório de trabalho."
+
+#: src/rpminspect.c:48
+#, c-format
+msgid ""
+"Compare package builds for policy compliance and consistency.\n"
+"\n"
+msgstr ""
+"Compara compilações de pacotes para conformidade e consistência de políticas."
+"\n"
+"\n"
+
+#: src/rpminspect.c:49
+#, c-format
+msgid "Usage: %s [OPTIONS] [before build] [after build]\n"
+msgstr "Uso: %s [OPÇÕES] [antes da compilação] [depois da compilação]\n"
+
+#: src/rpminspect.c:50
+#, c-format
+msgid "Options:\n"
+msgstr "Opções:\n"
+
+#: src/rpminspect.c:51
+#, c-format
+msgid "  -c FILE, --config=FILE      Configuration file to use\n"
+msgstr "  -c ARQUIVO, --config=ARQUIVO  Arquivo de configuração para usar\n"
+
+#: src/rpminspect.c:52
+#, c-format
+msgid "  -p NAME, --profile=NAME     Configuration profile to use\n"
+msgstr "  -p NOME, --profile=NOME     Perfil de configuração para usar\n"
+
+#: src/rpminspect.c:53
+#, c-format
+msgid "  -T LIST, --tests=LIST       List of tests to run\n"
+msgstr "  -T LISTA, --tests=LISTA     Lista de testes para executar\n"
+
+#: src/rpminspect.c:54
+#, c-format
+msgid "                                (default: ALL)\n"
+msgstr "                                (padrão: TODOS)\n"
+
+#: src/rpminspect.c:55
+#, c-format
+msgid "  -E LIST, --exclude=LIST     List of tests to exclude\n"
+msgstr "  -E LISTA, --exclude=LISTA   Lista de teses para excluir\n"
+
+#: src/rpminspect.c:56
+#, c-format
+msgid "                                (default: none)\n"
+msgstr "                                (padrão: nenhum)\n"
+
+#: src/rpminspect.c:57
+#, c-format
+msgid "  -a LIST, --arches=LIST      List of architectures to check\n"
+msgstr "  -a LISTA, --arches=LISTA    Lista de arquiteturas para verificar\n"
+
+#: src/rpminspect.c:58
+#, c-format
+msgid "  -r STR, --release=STR       Product release string\n"
+msgstr "  -r STR, --release=STR       String de lançamento do produto\n"
+
+#: src/rpminspect.c:59
+#, c-format
+msgid "  -n, --no-rebase             Disable build rebase detection\n"
+msgstr ""
+"  -n, --no-rebase             Desabilita detecção de rebase da compilação\n"
+
+#: src/rpminspect.c:60
+#, c-format
+msgid "  -b TYPE, --build-type=TYPE  Set Koji build type to TYPE\n"
+msgstr ""
+"  -b TIPO, --build-type=TIPO  Define o tipo de compilação do Koji com TIPO\n"
+
+#: src/rpminspect.c:61
+#, c-format
+msgid "  -o FILE, --output=FILE      Write results to FILE\n"
+msgstr "  -o ARQUIVO, --output=ARQUIVO  Escreve os resultados no ARQUIVO\n"
+
+#: src/rpminspect.c:62
+#, c-format
+msgid "                                (default: stdout)\n"
+msgstr "                                (padrão: stdout)\n"
+
+#: src/rpminspect.c:63
+#, c-format
+msgid "  -F TYPE, --format=TYPE      Format output results as TYPE\n"
+msgstr ""
+"  -F TIPO, --format=TIPO      Formata os resultados de saída como TIPO\n"
+
+#: src/rpminspect.c:64
+#, c-format
+msgid "                                (default: text)\n"
+msgstr "                                (padrão: text)\n"
+
+#: src/rpminspect.c:65
+#, c-format
+msgid "  -t TAG, --threshold=TAG     Result threshold triggering exit\n"
+msgstr "  -t TAG, --threshold=TAG     Limite do resultado que aciona a falha\n"
+
+#: src/rpminspect.c:66
+#, c-format
+msgid "                              failure (default: VERIFY)\n"
+msgstr "                              na saída (padrão: VERIFICAR)\n"
+
+#: src/rpminspect.c:67
+#, c-format
+msgid "  -s TAG, --suppress=TAG      Results suppression threshold\n"
+msgstr "  -s TAG, --suppress=TAG      Limite de supressão de resultados\n"
+
+#: src/rpminspect.c:68
+#, c-format
+msgid "                                (default: off, report everything)\n"
+msgstr "                                (padrão: desligado, relata tudo)\n"
+
+#: src/rpminspect.c:69
+#, c-format
+msgid "  -l, --list                  List available tests and formats\n"
+msgstr "  -l, --list                  Lista de testes e formatos disponíveis\n"
+
+#: src/rpminspect.c:70
+#, c-format
+msgid "  -w PATH, --workdir=PATH     Temporary directory to use\n"
+msgstr "  -w CAMINHO, --workdir=CAMINHO  Diretório temporário para usar\n"
+
+#: src/rpminspect.c:71
+#, c-format
+msgid "                                (default: %s)\n"
+msgstr "                                (padrão: %s)\n"
+
+#: src/rpminspect.c:72
+#, c-format
+msgid ""
+"  -f, --fetch-only            Fetch builds only, do not perform inspections\n"
+msgstr ""
+"  \"  -f, --fetch-only            Obtém compilações apenas, não faz "
+"inspeções\n"
+
+#: src/rpminspect.c:73
+#, c-format
+msgid "                                (implies -k)\n"
+msgstr "                                (implica em -k)\n"
+
+#: src/rpminspect.c:74
+#, c-format
+msgid ""
+"  -k, --keep                  Do not remove the comparison working files\n"
+msgstr ""
+"  -k, --keep                  Não remove arquivos de trabalho de comparação\n"
+
+#: src/rpminspect.c:75
+#, c-format
+msgid "  -d, --debug                 Debugging mode output\n"
+msgstr "  -d, --debug                 Saída no modo de depuração\n"
+
+#: src/rpminspect.c:76
+#, c-format
+msgid ""
+"  -D, --dump-config           Dump configuration settings (in YAML format)\n"
+msgstr ""
+"  -D, --dump-config           Despeja as configurações (no formato YAML)\n"
+
+#: src/rpminspect.c:77
+#, c-format
+msgid "  -v, --verbose               Verbose inspection output\n"
+msgstr "  -v, --verbose               Saída verbosa de inspeção\n"
+
+#: src/rpminspect.c:78
+#, c-format
+msgid "                              when finished, display full path\n"
+msgstr ""
+"                              \"                              ao finalizar, "
+"exibe o caminho completo\n"
+
+#: src/rpminspect.c:79
+#, c-format
+msgid "  -?, --help                  Display usage information\n"
+msgstr "  -?, --help                  Exibe informações de uso\n"
+
+#: src/rpminspect.c:80
+#, c-format
+msgid "  -V, --version               Display program version\n"
+msgstr "  -V, --version               Exibe versão do programa\n"
+
+#: src/rpminspect.c:81
+#, c-format
+msgid ""
+"\n"
+"See the rpminspect(1) man page for more information.\n"
+msgstr ""
+"\n"
+"Consulte a página man rpminspect(1) para obter mais informações.\n"
+
+#: src/rpminspect.c:114
+#, c-format
+msgid "*** unable to compile product release regular expression: %s"
+msgstr ""
+"*** não foi possível compilar a expressão regular de lançamento do produto: "
+"%s"
+
+#: src/rpminspect.c:168 src/rpminspect.c:179
+#, c-format
+msgid "*** product release for after build (%s) is empty"
+msgstr "*** o lançamento do produto após a compilação (%s) está vazio"
+
+#: src/rpminspect.c:196 src/rpminspect.c:204
+#, c-format
+msgid "*** product release for before build (%s) is empty"
+msgstr "*** o lançamento do produto antes da compilação (%s) está vazio"
+
+#: src/rpminspect.c:259
+#, c-format
+msgid "*** unable to determine product release for %s and %s"
+msgstr "*** não foi possível determinar o lançamento do produto para %s e %s"
+
+#: src/rpminspect.c:260
+msgid ""
+"*** See the 'favor_release' setting in the rpminspect configuration file."
+msgstr ""
+"*** Veja a configuração 'favor_release' no arquivo de configuração do "
+"rpminspect."
+
+#: src/rpminspect.c:288
+msgid "*** the -T and -E options are mutually exclusive"
+msgstr "*** as opções -T e -E são mutuamente exclusivas"
+
+#: src/rpminspect.c:289 src/rpminspect.c:305 src/rpminspect.c:737
+#: src/rpminspect.c:776
+#, c-format
+msgid "*** See `%s --help` for more information."
+msgstr "*** Veja `%s --help` para mais informações."
+
+#: src/rpminspect.c:304
+#, c-format
+msgid "*** unknown inspection: `%s`"
+msgstr "*** inspeção desconhecida: `%s`"
+
+#: src/rpminspect.c:455
+#, c-format
+msgid "*** unsupported build type: `%s`."
+msgstr "*** tipo de compilação não suportado: `%s`."
+
+#: src/rpminspect.c:464
+#, c-format
+msgid "*** invalid build type: `%s`."
+msgstr "*** tipo de compilação inválido: `%s`."
+
+#: src/rpminspect.c:481
+#, c-format
+msgid "*** invalid output format: `%s`."
+msgstr "*** formato de saída inválido: `%s`."
+
+#: src/rpminspect.c:493
+#, c-format
+msgid "*** unable to expand working directory: `%s`"
+msgstr "*** não foi possível expandir o diretório de trabalho: `%s`"
+
+#: src/rpminspect.c:506
+#, c-format
+msgid "*** unable to use `%s' as working directory"
+msgstr "*** não foi possível usar `%s' como diretório de trabalho"
+
+#: src/rpminspect.c:536
+#, c-format
+msgid "%s version %s\n"
+msgstr "%s versão %s\n"
+
+#: src/rpminspect.c:539
+#, c-format
+msgid "*** ?? getopt returned character code 0%o ??"
+msgstr "*** ?? getopt retornou o código de caractere 0%o ??"
+
+#: src/rpminspect.c:546
+#, c-format
+msgid "Available build types:\n"
+msgstr "Tipos de compilação disponíveis:\n"
+
+#: src/rpminspect.c:567
+#, c-format
+msgid ""
+"\n"
+"Available output formats:\n"
+msgstr ""
+"\n"
+"Formatos de saída disponíveis:\n"
+
+#: src/rpminspect.c:584
+#, c-format
+msgid ""
+"\n"
+"Available inspections:\n"
+msgstr ""
+"\n"
+"Inspeções disponíveis:\n"
+
+#: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
+#, c-format
+msgid "*** failed to read configuration file %s"
+msgstr "*** falha ao ler o arquivo de configuração %s"
+
+#: src/rpminspect.c:658
+#, c-format
+msgid "*** Please specify a configuration file using '-c' or supply ./%s"
+msgstr "*** Especifique um arquivo de configuração usando '-c' ou forneça ./%s"
+
+#: src/rpminspect.c:736
+msgid "*** Invalid before and after build specification."
+msgstr "*** Especificação inválida de antes e depois da compilação."
+
+#: src/rpminspect.c:744
+msgid "*** unable to read RPM configuration"
+msgstr "*** não foi possível ler a configuração RPM"
+
+#: src/rpminspect.c:775
+#, c-format
+msgid "*** unsupported architecture specified: `%s`"
+msgstr "*** arquitetura não suportada especificada: `%s`"
+
+#: src/rpminspect.c:793
+#, c-format
+msgid "*** unable to create directory %s"
+msgstr "*** não foi possível criar diretório %s"
+
+#: src/rpminspect.c:851
+#, c-format
+msgid ""
+"Version information for libraries and programs used by %s as well as storage "
+"requirements.  This result is for informational and diagnostic purposes only."
+msgstr ""
+"Informações sobre versões de bibliotecas e programas usados por %s, bem como "
+"requisitos de armazenamento. Este resultado é apenas para fins informativos "
+"e de diagnóstico."
+
+#: src/rpminspect.c:858
+#, c-format
+msgid "Space required to download artifacts: %lu bytes (%s)\n"
+msgstr "Espaço necessário para baixar artefatos: %lu bytes (%s)\n"
+
+#: src/rpminspect.c:866
+#, c-format
+msgid "Space required to unpack artifacts: %lu bytes (%s)\n"
+msgstr "Espaço necessário para descompactar artefatos: %lu bytes (%s)\n"
+
+#: src/rpminspect.c:878
+#, c-format
+msgid "Command line arguments used to invoke %s."
+msgstr "Argumentos de linha de comando usados para invocar %s."
+
+#: src/rpminspect.c:902
+#, c-format
+msgid "Local configuration file: %s"
+msgstr "Arquivo de configuração local: %s"
+
+#: src/rpminspect.c:912
+msgid "Before Build"
+msgstr "Antes da compilação"
+
+#: src/rpminspect.c:917
+msgid "After Build"
+msgstr "Depois da compilação"
+
+#: src/rpminspect.c:920
+msgid "Build"
+msgstr "Compilação"
+
+#: src/rpminspect.c:937
+msgid "*** no peers, ensure packages exist for specified architecture(s)"
+msgstr ""
+"*** sem pares, certifique-se de que existam pacotes para arquitetura(s) "
+"especificada(s)"
+
+#: src/rpminspect.c:958
+msgid ""
+"*** unable to find a set of peer packages between the before and after builds"
+msgstr ""
+"*** incapaz de encontrar um conjunto de pacotes pares entre as compilações "
+"antes e depois"
+
+#: src/rpminspect.c:972
+msgid "*** unable to determine product release or none specified (-r)."
+msgstr ""
+"*** não foi possível determinar o lançamento do produto ou nenhum "
+"especificado (-r)."
+
+#: src/rpminspect.c:984
+#, c-format
+msgid "Skipping %s inspection..."
+msgstr "Ignorando a inspeção de %s..."
+
+#: src/rpminspect.c:989
+msgid "skip"
+msgstr "ignorada"
+
+#: src/rpminspect.c:1009
+#, c-format
+msgid "Running %s inspection..."
+msgstr "Executando inspeção %s..."
+
+#: src/rpminspect.c:1018
+msgid "pass"
+msgstr "passou"
+
+#: src/rpminspect.c:1018
+msgid "FAIL"
+msgstr "FALHOU"
+
+#: src/rpminspect.c:1046
+#, c-format
+msgid ""
+"\n"
+"Keeping working directory: %s\n"
+msgstr ""
+"\n"
+"Mantendo o diretório de trabalho: %s\n"
