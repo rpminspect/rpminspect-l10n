@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-06-10 08:36+0000\n"
+"PO-Revision-Date: 2024-06-18 02:36+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -1265,12 +1265,12 @@ msgstr ""
 
 #: lib/init.c:969
 msgid "*** From this invalid line:"
-msgstr ""
+msgstr "*** 이 잘못된 줄에서:"
 
 #: lib/init.c:970
 #, c-format
 msgid "***     %s"
-msgstr ""
+msgstr "***     %s"
 
 #: lib/init.c:1121
 #, c-format
@@ -1405,21 +1405,21 @@ msgstr "${ARCH}의 신규 파일 ${FILE}"
 
 #: lib/inspect_addedfiles.c:248
 msgid "the fileinfo list"
-msgstr ""
+msgstr "fileinfo 목록"
 
 #: lib/inspect_annocheck.c:116 lib/inspect_annocheck.c:151
 #, c-format
 msgid "*** libannocheck_enable_profile: %s"
-msgstr ""
+msgstr "*** libannocheck_enable_profile: %s"
 
 #: lib/inspect_annocheck.c:136
 #, c-format
 msgid "*** libannocheck_get_known_profiles: %s"
-msgstr ""
+msgstr "*** libannocheck_get_known_profiles: %s"
 
 #: lib/inspect_annocheck.c:168
 msgid "NOT RUN"
-msgstr ""
+msgstr "동작 하지 않음"
 
 #: lib/inspect_annocheck.c:170
 msgid "PASSED"
