@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-06-18 02:36+0000\n"
+"PO-Revision-Date: 2024-11-17 04:38+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.5.5\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -3655,7 +3655,7 @@ msgstr ""
 #: src/rpminspect.c:75
 #, c-format
 msgid "  -d, --debug                 Debugging mode output\n"
-msgstr ""
+msgstr "  -d, --debug                 디버깅 방식의 출력\n"
 
 #: src/rpminspect.c:76
 #, c-format
