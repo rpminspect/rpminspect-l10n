@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-11-17 04:38+0000\n"
+"PO-Revision-Date: 2024-12-19 07:38+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9.1\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -1454,36 +1454,36 @@ msgstr "*** libannocheck_%s_test: %s"
 #: lib/inspect_annocheck.c:267
 #, c-format
 msgid "*** libannocheck_enable_all_tests: %s"
-msgstr ""
+msgstr "*** libannocheck_enable_all_tests: %s"
 
 #: lib/inspect_annocheck.c:280
 #, c-format
 msgid "*** libannocheck_reinit: %s"
-msgstr ""
+msgstr "*** libannocheck_reinit: %s"
 
 #: lib/inspect_annocheck.c:373
 #, c-format
 msgid "*** before libannocheck_run_tests: %s (%d)"
-msgstr ""
+msgstr "*** libannocheck_run_tests 수행 전: %s (%d)"
 
 #: lib/inspect_annocheck.c:382 lib/inspect_annocheck.c:426
 #, c-format
 msgid "*** libannocheck_get_known_tests: %s"
-msgstr ""
+msgstr "*** libannocheck_get_known_tests: %s"
 
 #: lib/inspect_annocheck.c:400 lib/inspect_annocheck.c:530
 #, c-format
 msgid "*** libannocheck_finish: %s"
-msgstr ""
+msgstr "*** libannocheck_finish: %s"
 
 #: lib/inspect_annocheck.c:417
 #, c-format
 msgid "*** after libannocheck_run_tests: %s (%d)"
-msgstr ""
+msgstr "*** libannocheck_run_tests 수행 후: %s (%d)"
 
 #: lib/inspect_annocheck.c:461 lib/inspect_annocheck.c:613
 msgid "lost -D_FORTIFY_SOURCE in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${ARCH}에서 ${FILE}의 -D_FORTIFY_SOURCE 손실"
 
 #: lib/inspect_annocheck.c:464
 #, c-format
@@ -3633,24 +3633,24 @@ msgstr ""
 #: src/rpminspect.c:71
 #, c-format
 msgid "                                (default: %s)\n"
-msgstr ""
+msgstr "                                (기본값: %s)\n"
 
 #: src/rpminspect.c:72
 #, c-format
 msgid ""
 "  -f, --fetch-only            Fetch builds only, do not perform inspections\n"
-msgstr ""
+msgstr "  -f, --fetch-only            제작만 가져오고, 검사는 수행하지 않습니다\n"
 
 #: src/rpminspect.c:73
 #, c-format
 msgid "                                (implies -k)\n"
-msgstr ""
+msgstr "                                (암시 -k)\n"
 
 #: src/rpminspect.c:74
 #, c-format
 msgid ""
 "  -k, --keep                  Do not remove the comparison working files\n"
-msgstr ""
+msgstr "  -k, --keep                  비교 작업 파일을 제거하지 않습니다\n"
 
 #: src/rpminspect.c:75
 #, c-format
