@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-11-23 11:38+0000\n"
+"PO-Revision-Date: 2024-12-19 07:38+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/fi/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.9.1\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -1681,7 +1681,7 @@ msgstr ""
 #: lib/inspect_changelog.c:235 lib/inspect_changelog.c:369
 #, c-format
 msgid "%%changelog"
-msgstr ""
+msgstr "%%changelog"
 
 #: lib/inspect_changelog.c:438
 msgid "Inspection skipped because this build's type is not `rpm'."
@@ -2094,7 +2094,7 @@ msgstr ""
 #: lib/inspect_filesize.c:98
 #, c-format
 msgid "%s grew by %lld%% on %s"
-msgstr ""
+msgstr "%s kasvoi %lld %% %s:lla"
 
 #: lib/inspect_filesize.c:99
 msgid "${FILE} size grew on ${ARCH}"
@@ -2103,7 +2103,7 @@ msgstr ""
 #: lib/inspect_filesize.c:103
 #, c-format
 msgid "%s shrank by %lld%% on %s"
-msgstr ""
+msgstr "%s kutistui %lld %% %s:lla"
 
 #: lib/inspect_filesize.c:104
 msgid "${FILE} size shrank on ${ARCH}"
@@ -2522,6 +2522,8 @@ msgid ""
 "Package \"%s\" is part of a module but lacks the '%%{modularitylabel}' "
 "header tag."
 msgstr ""
+"Paketti \"%s\" on osa moduulia, mutta siitä puuttuu otsikon nimiö "
+"%%{modularitylabel}."
 
 #: lib/inspect_modularity.c:224
 msgid "Inspection skipped because this build's type is not `module'."
@@ -2609,21 +2611,23 @@ msgid ""
 "Patch number %ld (%s) is missing a corresponding %%patch%ld macro, usually "
 "in %%prep."
 msgstr ""
+"Korjaustiedoston numerosta %ld (%s) puuttuu vastaava %%patch%ld-makro, "
+"yleensä %%prep:ssa."
 
 #: lib/inspect_patches.c:397
 #, c-format
 msgid "missing %%patch macro for ${FILE}"
-msgstr ""
+msgstr "puuttuva %%patch-makro ${FILE}:lle"
 
 #: lib/inspect_patches.c:399
 #, c-format
 msgid "Patch number %ld (%s) is mismatched with %%patch%ld macro."
-msgstr ""
+msgstr "Korjaustiedoston numero %ld (%s) ei täsmää %%patch%ld-makron kanssa."
 
 #: lib/inspect_patches.c:401
 #, c-format
 msgid "mismatched %%patch macro for ${FILE}"
-msgstr ""
+msgstr "ei täsmää %%patch-makro ${FILE}:lle"
 
 #: lib/inspect_patches.c:422
 msgid "undefined Patch ${FILE}"
@@ -2697,7 +2701,7 @@ msgstr ""
 #: lib/inspect_patches.c:822
 #, c-format
 msgid "*** unrecognized %%patch line: %s"
-msgstr ""
+msgstr "*** tunnistamaton %%patch-rivi: %s"
 
 #: lib/inspect_patches.c:828
 #, c-format
@@ -3147,6 +3151,8 @@ msgid ""
 "Unable to run through the %%prep section in %s or manually unpack sources "
 "for further scanning."
 msgstr ""
+"Ei voida suorittaa %%prep-osion läpi %s:ssa tai purkaa lähteitä "
+"manuaalisesti lisätarkistusta varten."
 
 #: lib/inspect_unicode.c:744
 msgid "The unicode inspection is only for source packages, skipping."
