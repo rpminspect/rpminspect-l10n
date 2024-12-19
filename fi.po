@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-12-19 07:38+0000\n"
+"PO-Revision-Date: 2024-12-19 17:23+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/fi/>\n"
@@ -3444,7 +3444,7 @@ msgstr ""
 
 #: lib/strfuncs.c:252 lib/strfuncs.c:284
 msgid "OK"
-msgstr "OK"
+msgstr "Hyvä on"
 
 #: lib/strfuncs.c:254 lib/strfuncs.c:286
 msgid "INFO"
