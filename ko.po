@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-12-19 07:38+0000\n"
+"PO-Revision-Date: 2025-01-07 14:21+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.9.1\n"
+"X-Generator: Weblate 5.9.2\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -26,6 +26,9 @@ msgid ""
 "checks to see if the License tag contains any unprofessional words as "
 "defined in the configuration file."
 msgstr ""
+"RPM 메타자료의 License 태그에서 지정된 문자열이 저작권 데이터베이스에서 "
+"확인된 허용 소프트웨어 저작권을 설명하는지 확인합니다. 또한 만약 License "
+"태그가 구성 파일에서 확인된 비-전문적인 단어가 포함되어 있는지도 확인하세요."
 
 #: include/inspect.h:1347
 msgid ""
@@ -1174,13 +1177,13 @@ msgstr ""
 #: lib/init.c:226
 #, c-format
 msgid "*** invalid input string `%s`"
-msgstr ""
+msgstr "*** 잘못된 입력 문자열 `%s`"
 
 #: lib/init.c:253 lib/init.c:262 lib/init.c:270 lib/init.c:282 lib/init.c:291
 #: lib/init.c:299 lib/init.c:311 lib/init.c:320 lib/init.c:328 lib/init.c:340
 #, c-format
 msgid "*** invalid mode string: %s"
-msgstr ""
+msgstr "*** 잘못된 방식 문자열: %s"
 
 #: lib/init.c:378
 #, c-format
@@ -1194,7 +1197,7 @@ msgstr ""
 
 #: lib/init.c:418 lib/init.c:432
 msgid "*** error reading "
-msgstr ""
+msgstr "*** 오류 읽기 "
 
 #: lib/init.c:458
 #, c-format
@@ -1365,7 +1368,7 @@ msgstr ""
 
 #: lib/inspect_addedfiles.c:150 lib/inspect_addedfiles.c:164
 msgid "invalid directory ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${ARCH}에서 잘못된 디렉토리 ${FILE}"
 
 #: lib/inspect_addedfiles.c:163
 #, c-format
@@ -2409,7 +2412,7 @@ msgstr ""
 #: lib/inspect_metadata.c:109
 #, c-format
 msgid "Package Description contains unprofessional language in %s:"
-msgstr ""
+msgstr "꾸러미 설명은 비-전문적인 언어를 포함합니다 %s:"
 
 #: lib/inspect_metadata.c:114
 msgid "Description contains unprofessional words on ${ARCH}"
@@ -2451,6 +2454,13 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"에서:\n"
+"\n"
+"%s\n"
+"\n"
+"까지:\n"
+"\n"
+"%s"
 
 #: lib/inspect_modularity.c:119
 #, c-format
@@ -3104,7 +3114,7 @@ msgstr ""
 #: lib/inspect_unicode.c:465
 #, c-format
 msgid "*** empty localpath on %s"
-msgstr ""
+msgstr "*** %s에서 빈 localpath"
 
 #: lib/inspect_unicode.c:474
 msgid "forbidden code point in ${FILE} on ${ARCH}"
@@ -3158,30 +3168,30 @@ msgstr ""
 
 #: lib/inspect_upstream.c:197
 msgid "source file ${FILE} removed"
-msgstr ""
+msgstr "원천 파일 ${FILE}가 제거되었습니다"
 
 #: lib/inspect_virus.c:40
 msgid "*** cl_engine_new returned NULL, check clamav library"
-msgstr ""
+msgstr "*** cl_engine_new가 NULL 을 반환되었으며, clamav 라이브러리를 확인하세요"
 
 #: lib/inspect_virus.c:98
 #, c-format
 msgid "Virus detected in %s in the %s package on %s: %s"
-msgstr ""
+msgstr "%s 꾸러미의 %s에서 바이러스가 탐지되었습니다 %s: %s"
 
 #: lib/inspect_virus.c:135
 msgid "clamav version information"
-msgstr ""
+msgstr "clamav 버전 정보"
 
 #: lib/inspect_virus.c:140
 #, c-format
 msgid "clamav version %s"
-msgstr ""
+msgstr "clamav 버전 %s"
 
 #: lib/inspect_virus.c:145
 #, c-format
 msgid "*** missing %s"
-msgstr ""
+msgstr "*** %s 누락"
 
 #: lib/inspect_virus.c:169
 #, c-format
@@ -3518,11 +3528,13 @@ msgid ""
 "Compare package builds for policy compliance and consistency.\n"
 "\n"
 msgstr ""
+"정책 준수 및 일관성을 위해 꾸러미 제작을 비교합니다.\n"
+"\n"
 
 #: src/rpminspect.c:49
 #, c-format
 msgid "Usage: %s [OPTIONS] [before build] [after build]\n"
-msgstr ""
+msgstr "사용법: %s [OPTIONS] [before build] [after build]\n"
 
 #: src/rpminspect.c:50
 #, c-format
@@ -3603,32 +3615,32 @@ msgstr "                                (기본값: text)\n"
 #: src/rpminspect.c:65
 #, c-format
 msgid "  -t TAG, --threshold=TAG     Result threshold triggering exit\n"
-msgstr ""
+msgstr "  -t TAG, --threshold=TAG     임계 트리거 종료 결과\n"
 
 #: src/rpminspect.c:66
 #, c-format
 msgid "                              failure (default: VERIFY)\n"
-msgstr ""
+msgstr "                              실패 (기본값: 검증)\n"
 
 #: src/rpminspect.c:67
 #, c-format
 msgid "  -s TAG, --suppress=TAG      Results suppression threshold\n"
-msgstr ""
+msgstr "  -s TAG, --suppress=TAG      억제 임계값 결과\n"
 
 #: src/rpminspect.c:68
 #, c-format
 msgid "                                (default: off, report everything)\n"
-msgstr ""
+msgstr "                                (기본값: 꺼짐, 모든 것을 보고)\n"
 
 #: src/rpminspect.c:69
 #, c-format
 msgid "  -l, --list                  List available tests and formats\n"
-msgstr ""
+msgstr "  -l, --list                  사용 가능한 시험 및 형식을 나열합니다\n"
 
 #: src/rpminspect.c:70
 #, c-format
 msgid "  -w PATH, --workdir=PATH     Temporary directory to use\n"
-msgstr ""
+msgstr "  -w PATH, --workdir=PATH     사용하려는 임시 디렉토리\n"
 
 #: src/rpminspect.c:71
 #, c-format
