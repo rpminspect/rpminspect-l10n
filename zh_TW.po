@@ -8,13 +8,16 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-06 15:04+0000\n"
+"Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
+"projects/rpminspect/main/zh_TW/>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.10.4\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -1107,7 +1110,7 @@ msgstr ""
 #: lib/copyfile.c:117
 #, c-format
 msgid "%s already exists"
-msgstr ""
+msgstr "%s 已經存在"
 
 #: lib/copyfile.c:122
 msgid ", overwriting"
@@ -1417,11 +1420,11 @@ msgstr ""
 
 #: lib/inspect_annocheck.c:170
 msgid "PASSED"
-msgstr ""
+msgstr "通過"
 
 #: lib/inspect_annocheck.c:172 lib/output_summary.c:59
 msgid "FAILED"
-msgstr ""
+msgstr "失敗"
 
 #: lib/inspect_annocheck.c:174
 msgid "MAYBE"
@@ -1429,7 +1432,7 @@ msgstr ""
 
 #: lib/inspect_annocheck.c:176
 msgid "skipped"
-msgstr ""
+msgstr "已跳過"
 
 #: lib/inspect_annocheck.c:178 lib/strfuncs.c:557
 msgid "UNKNOWN"
@@ -1700,7 +1703,7 @@ msgstr ""
 
 #: lib/inspect_config.c:169 lib/inspect_doc.c:114
 msgid "not "
-msgstr ""
+msgstr "不是 "
 
 #: lib/inspect_debuginfo.c:217
 #, c-format
@@ -2863,7 +2866,7 @@ msgstr ""
 
 #: lib/inspect_rpmdeps.c:807
 msgid "spec file"
-msgstr ""
+msgstr "規格檔案"
 
 #: lib/inspect_rpmdeps.c:887
 #, c-format
@@ -3277,15 +3280,15 @@ msgstr ""
 
 #: lib/output_summary.c:53
 msgid "added"
-msgstr ""
+msgstr "已新增"
 
 #: lib/output_summary.c:55
 msgid "removed"
-msgstr ""
+msgstr "移除"
 
 #: lib/output_summary.c:57
 msgid "changed"
-msgstr ""
+msgstr "變更"
 
 #: lib/output_summary.c:61
 msgid "ok"
@@ -3293,7 +3296,7 @@ msgstr ""
 
 #: lib/output_summary.c:63
 msgid "unknown"
-msgstr ""
+msgstr "未知"
 
 #: lib/output_text.c:92 lib/output_xunit.c:83
 #, c-format
@@ -3413,7 +3416,7 @@ msgstr ""
 
 #: lib/strfuncs.c:252 lib/strfuncs.c:284
 msgid "OK"
-msgstr ""
+msgstr "正確"
 
 #: lib/strfuncs.c:254 lib/strfuncs.c:286
 msgid "INFO"
@@ -3449,23 +3452,23 @@ msgstr ""
 
 #: lib/strfuncs.c:312
 msgid "Security"
-msgstr ""
+msgstr "安全性"
 
 #: lib/strfuncs.c:543
 msgid "regular file"
-msgstr ""
+msgstr "正規檔案"
 
 #: lib/strfuncs.c:545
 msgid "directory"
-msgstr ""
+msgstr "目錄"
 
 #: lib/strfuncs.c:547
 msgid "character device"
-msgstr ""
+msgstr "字元裝置"
 
 #: lib/strfuncs.c:549
 msgid "block device"
-msgstr ""
+msgstr "區塊裝置"
 
 #: lib/strfuncs.c:551
 msgid "FIFO (named pipe)"
@@ -3473,15 +3476,15 @@ msgstr ""
 
 #: lib/strfuncs.c:553
 msgid "symbolic link"
-msgstr ""
+msgstr "符號連結"
 
 #: lib/strfuncs.c:555
 msgid "socket"
-msgstr ""
+msgstr "socket"
 
 #: lib/strfuncs.c:614
 msgid "Success."
-msgstr ""
+msgstr "成功。"
 
 #: lib/strfuncs.c:616
 msgid "One or more inspections failed."
@@ -3744,7 +3747,7 @@ msgstr ""
 #: src/rpminspect.c:536
 #, c-format
 msgid "%s version %s\n"
-msgstr ""
+msgstr "%s 版本 %s\n"
 
 #: src/rpminspect.c:539
 #, c-format
@@ -3773,7 +3776,7 @@ msgstr ""
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
 #, c-format
 msgid "*** failed to read configuration file %s"
-msgstr ""
+msgstr "*** 讀取設定檔案 %s 失敗"
 
 #: src/rpminspect.c:658
 #, c-format
