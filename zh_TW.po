@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-04-06 15:04+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2025-04-27 08:05+0000\n"
+"Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -18,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.10.4\n"
+"X-Generator: Weblate 5.11\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -1050,58 +1049,58 @@ msgstr ""
 
 #: lib/builds.c:290 lib/builds.c:294
 msgid "build"
-msgstr ""
+msgstr "建置"
 
 #: lib/builds.c:320
 msgid "Downloading module"
-msgstr ""
+msgstr "下載模組"
 
 #: lib/builds.c:323
 msgid "Downloading RPM build"
-msgstr ""
+msgstr "正在下載 RPM 建置檔"
 
 #: lib/builds.c:373 lib/inspect_modularity.c:47
 #, c-format
 msgid "*** ignoring malformed module metadata file: %s"
-msgstr ""
+msgstr "*** 忽略畸形的模組中繼資料檔案： %s"
 
 #: lib/builds.c:383
 #, c-format
 msgid "*** malformed rpm filters in file: %s"
-msgstr ""
+msgstr "*** 檔案中有畸形的 rpm 過濾器： %s"
 
 #: lib/builds.c:541 lib/builds.c:545
 msgid "task"
-msgstr ""
+msgstr "工作"
 
 #: lib/builds.c:659 lib/builds.c:662
 msgid "RPM"
-msgstr ""
+msgstr "RPM"
 
 #: lib/builds.c:791
 #, c-format
 msgid "*** `%s' already exists in %s"
-msgstr ""
+msgstr "*** `%s' 已在 %s 中存在"
 
 #: lib/builds.c:829
 #, c-format
 msgid "*** unable to find local build: %s"
-msgstr ""
+msgstr "*** 無法找到本機建置：%s"
 
 #: lib/builds.c:841
 #, c-format
 msgid "*** unable to download RPM: %s"
-msgstr ""
+msgstr "*** 無法下載 RPM: %s"
 
 #: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
 #, c-format
 msgid "*** unable to find build %s in Koji hub %s"
-msgstr ""
+msgstr "*** 無法在 Koji hub %s 中找到 build %s"
 
 #: lib/builds.c:872
 #, c-format
 msgid "*** unable to find task %s in Koji hub %s"
-msgstr ""
+msgstr "*** 無法在 Koji hub %s 中找到任務 %s"
 
 #: lib/checksums.c:91
 #, c-format
