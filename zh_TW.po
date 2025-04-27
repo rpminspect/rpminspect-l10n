@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
 "PO-Revision-Date: 2025-04-27 08:05+0000\n"
-"Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://translate.fedoraproject.org/"
 "projects/rpminspect/main/zh_TW/>\n"
 "Language: zh_TW\n"
@@ -2739,7 +2740,7 @@ msgstr ""
 
 #: lib/inspect_permissions.c:114
 msgid " changed"
-msgstr ""
+msgstr " 變更"
 
 #: lib/inspect_permissions.c:129
 #, c-format
