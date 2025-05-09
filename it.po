@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-04-27 13:52+0000\n"
+"PO-Revision-Date: 2025-05-09 21:29+0000\n"
 "Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11\n"
+"X-Generator: Weblate 5.11.3\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -3313,7 +3313,7 @@ msgstr "%s tocca %ld file%s"
 #: lib/inspect_patches.c:559
 #, c-format
 msgid "%s touches %ld file%s and %s%ld line%s"
-msgstr ""
+msgstr "%s tocca il file %ld%s e la riga %s%ld%s"
 
 #: lib/inspect_patches.c:559
 msgid "as many as "
@@ -4472,12 +4472,12 @@ msgstr "%s versione %s\n"
 #: src/rpminspect.c:539
 #, c-format
 msgid "*** ?? getopt returned character code 0%o ??"
-msgstr ""
+msgstr "*** ?? getopt ha restituito il codice carattere 0%o ??"
 
 #: src/rpminspect.c:546
 #, c-format
 msgid "Available build types:\n"
-msgstr ""
+msgstr "Tipi di build disponibili:\n"
 
 #: src/rpminspect.c:567
 #, c-format
@@ -4485,6 +4485,8 @@ msgid ""
 "\n"
 "Available output formats:\n"
 msgstr ""
+"\n"
+"Formati di output disponibili:\n"
 
 #: src/rpminspect.c:584
 #, c-format
@@ -4492,34 +4494,37 @@ msgid ""
 "\n"
 "Available inspections:\n"
 msgstr ""
+"\n"
+"Ispezioni disponibili:\n"
 
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
 #, c-format
 msgid "*** failed to read configuration file %s"
-msgstr ""
+msgstr "*** Impossibile leggere il file di configurazione %s"
 
 #: src/rpminspect.c:658
 #, c-format
 msgid "*** Please specify a configuration file using '-c' or supply ./%s"
 msgstr ""
+"*** Specificare un file di configurazione utilizzando '-c' o fornire ./%s"
 
 #: src/rpminspect.c:736
 msgid "*** Invalid before and after build specification."
-msgstr ""
+msgstr "*** Specifiche non valide prima e dopo la compilazione."
 
 #: src/rpminspect.c:744
 msgid "*** unable to read RPM configuration"
-msgstr ""
+msgstr "*** Impossibile leggere la configurazione RPM"
 
 #: src/rpminspect.c:775
 #, c-format
 msgid "*** unsupported architecture specified: `%s`"
-msgstr ""
+msgstr "*** architettura non supportata specificata: `%s`"
 
 #: src/rpminspect.c:793
 #, c-format
 msgid "*** unable to create directory %s"
-msgstr ""
+msgstr "*** Impossibile creare la directory %s"
 
 #: src/rpminspect.c:851
 #, c-format
@@ -4527,30 +4532,33 @@ msgid ""
 "Version information for libraries and programs used by %s as well as storage "
 "requirements.  This result is for informational and diagnostic purposes only."
 msgstr ""
+"Informazioni sulla versione delle librerie e dei programmi utilizzati da %s, "
+"nonché sui requisiti di archiviazione. Questo risultato è solo a scopo "
+"informativo e diagnostico."
 
 #: src/rpminspect.c:858
 #, c-format
 msgid "Space required to download artifacts: %lu bytes (%s)\n"
-msgstr ""
+msgstr "Spazio richiesto per scaricare gli artefatti: %lu byte (%s)\n"
 
 #: src/rpminspect.c:866
 #, c-format
 msgid "Space required to unpack artifacts: %lu bytes (%s)\n"
-msgstr ""
+msgstr "Spazio richiesto per decomprimere gli artefatti: %lu byte (%s)\n"
 
 #: src/rpminspect.c:878
 #, c-format
 msgid "Command line arguments used to invoke %s."
-msgstr ""
+msgstr "Argomenti della riga di comando utilizzati per richiamare %s."
 
 #: src/rpminspect.c:902
 #, c-format
 msgid "Local configuration file: %s"
-msgstr ""
+msgstr "File di configurazione locale: %s"
 
 #: src/rpminspect.c:912
 msgid "Before Build"
-msgstr ""
+msgstr "Prima della Build"
 
 #: src/rpminspect.c:917
 msgid "After Build"
@@ -4563,29 +4571,35 @@ msgstr ""
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
 msgstr ""
+"*** nessun peer, assicurarsi che i pacchetti esistano per l'architettura "
+"specificata"
 
 #: src/rpminspect.c:958
 msgid ""
 "*** unable to find a set of peer packages between the before and after builds"
 msgstr ""
+"*** Impossibile trovare un set di pacchetti peer tra le build precedenti e "
+"successive"
 
 #: src/rpminspect.c:972
 msgid "*** unable to determine product release or none specified (-r)."
 msgstr ""
+"*** Impossibile determinare la versione del prodotto o nessuna specificata "
+"(-r)."
 
 #: src/rpminspect.c:984
 #, c-format
 msgid "Skipping %s inspection..."
-msgstr ""
+msgstr "Ispezione %s saltata..."
 
 #: src/rpminspect.c:989
 msgid "skip"
-msgstr ""
+msgstr "salta"
 
 #: src/rpminspect.c:1009
 #, c-format
 msgid "Running %s inspection..."
-msgstr ""
+msgstr "Esecuzione dell'ispezione %s..."
 
 #: src/rpminspect.c:1018
 msgid "pass"
@@ -4601,3 +4615,5 @@ msgid ""
 "\n"
 "Keeping working directory: %s\n"
 msgstr ""
+"\n"
+"Mantenimento della directory di lavoro: %s\n"
