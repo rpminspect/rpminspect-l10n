@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-05-09 21:29+0000\n"
+"PO-Revision-Date: 2025-06-01 12:25+0000\n"
 "Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/it/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.3\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -4562,11 +4562,11 @@ msgstr "Prima della Build"
 
 #: src/rpminspect.c:917
 msgid "After Build"
-msgstr ""
+msgstr "Dopo la Build"
 
 #: src/rpminspect.c:920
 msgid "Build"
-msgstr ""
+msgstr "Build"
 
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
@@ -4607,7 +4607,7 @@ msgstr ""
 
 #: src/rpminspect.c:1018
 msgid "FAIL"
-msgstr ""
+msgstr "FAIL"
 
 #: src/rpminspect.c:1046
 #, c-format
