@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-07 21:00+0000\n"
+"PO-Revision-Date: 2025-06-07 23:29+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -796,8 +796,9 @@ msgid ""
 msgstr ""
 
 #: include/results.h:453
+#, fuzzy
 msgid "See annocheck(1) for more information."
-msgstr ""
+msgstr "Consulte annocheck(1) para más información."
 
 #: include/results.h:460
 msgid ""
@@ -1164,49 +1165,49 @@ msgid ""
 msgstr ""
 
 #: lib/abi.c:65
-#, c-format
+#, c-format, fuzzy
 msgid "*** malformed ABI level identifier: %s"
-msgstr ""
+msgstr "*** identificador de nivel de ABI malformado: %s"
 
 #: lib/abi.c:70
-#, c-format
+#, c-format, fuzzy
 msgid "*** ABI level %d already defined"
-msgstr ""
+msgstr "*** nivel ABI %d ya definido"
 
 #: lib/abi.c:84
-#, c-format
+#, c-format, fuzzy
 msgid "*** malformed ABI level entry: %s"
-msgstr ""
+msgstr "*** apunte de nivel ABI malformado: %s"
 
 #: lib/builds.c:73
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to create download directory %s"
-msgstr ""
+msgstr "*** no es capaz de crear el directorio de descarga %s"
 
 #: lib/builds.c:85
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown working directory type: %d"
-msgstr ""
+msgstr "*** tipo directivo de trabajo desconocido: %d"
 
 #: lib/builds.c:173
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to read %s, skipping"
-msgstr ""
+msgstr "*** no es capaz de leer %s, se hace caso omiso"
 
 #: lib/builds.c:205
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown directory member encountered: %s"
-msgstr ""
+msgstr "*** miembro de directorio desconocido encontrado: %s"
 
 #: lib/builds.c:234
-#, c-format
+#, c-format, fuzzy
 msgid "There is not enough available space to download the requested %s.\n"
-msgstr ""
+msgstr "No hay suficiente espacio disponible para descargar el %s soliciado.\n"
 
 #: lib/builds.c:235 lib/peers.c:177
-#, c-format
+#, c-format, fuzzy
 msgid "    Need %s in %s, have %s.\n"
-msgstr ""
+msgstr "    Necesita %s interno a %s, tiene %s.\n"
 
 #: lib/builds.c:236 lib/peers.c:178
 #, c-format
@@ -1236,14 +1237,14 @@ msgid "Downloading RPM build"
 msgstr ""
 
 #: lib/builds.c:373 lib/inspect_modularity.c:47
-#, c-format
+#, c-format, fuzzy
 msgid "*** ignoring malformed module metadata file: %s"
-msgstr ""
+msgstr "*** se ignora archivo de metadatos del módulo malformado: %s"
 
 #: lib/builds.c:383
-#, c-format
+#, c-format, fuzzy
 msgid "*** malformed rpm filters in file: %s"
-msgstr ""
+msgstr "*** filtros rpm malformados en archivo: %s"
 
 #: lib/builds.c:541 lib/builds.c:545
 msgid "task"
@@ -1254,24 +1255,24 @@ msgid "RPM"
 msgstr "RPM"
 
 #: lib/builds.c:791
-#, c-format
+#, c-format, fuzzy
 msgid "*** `%s' already exists in %s"
-msgstr ""
+msgstr "*** `%s' ya existe en %s"
 
 #: lib/builds.c:829
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to find local build: %s"
-msgstr ""
+msgstr "*** no es capaz de encontrar la compilación local: %s"
 
 #: lib/builds.c:841
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to download RPM: %s"
-msgstr ""
+msgstr "*** no es capaz de descargar RPM: %s"
 
 #: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to find build %s in Koji hub %s"
-msgstr ""
+msgstr "*** no es capaz de encontrar la compilación %s en hub Koji %s"
 
 #: lib/builds.c:872
 #, c-format
@@ -1279,23 +1280,23 @@ msgid "*** unable to find task %s in Koji hub %s"
 msgstr ""
 
 #: lib/checksums.c:91
-#, c-format
+#, c-format, fuzzy
 msgid "*** %s is a FIFO"
-msgstr ""
+msgstr "*** %s es una FIFO"
 
 #: lib/copyfile.c:117
-#, c-format
+#, c-format, fuzzy
 msgid "%s already exists"
-msgstr ""
+msgstr "%s ya existe"
 
 #: lib/copyfile.c:122
 msgid ", overwriting"
 msgstr ""
 
 #: lib/curl.c:267 lib/readfile.c:60
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to read %s"
-msgstr ""
+msgstr "*** no es capaz de leer %s"
 
 #: lib/fileinfo.c:64
 #, c-format
@@ -1348,15 +1349,15 @@ msgid ""
 msgstr ""
 
 #: lib/init.c:226
-#, c-format
+#, c-format, fuzzy
 msgid "*** invalid input string `%s`"
-msgstr ""
+msgstr "*** cadena `%s` de entrada no válida"
 
 #: lib/init.c:253 lib/init.c:262 lib/init.c:270 lib/init.c:282 lib/init.c:291
 #: lib/init.c:299 lib/init.c:311 lib/init.c:320 lib/init.c:328 lib/init.c:340
-#, c-format
+#, c-format, fuzzy
 msgid "*** invalid mode string: %s"
-msgstr ""
+msgstr "*** modo cadena no válido: %s"
 
 #: lib/init.c:378
 #, c-format
@@ -1369,37 +1370,38 @@ msgid "*** problem adding ignore entries to %s"
 msgstr ""
 
 #: lib/init.c:418 lib/init.c:432
+#, fuzzy
 msgid "*** error reading "
-msgstr ""
+msgstr "*** error de lectura "
 
 #: lib/init.c:458
-#, c-format
+#, c-format, fuzzy
 msgid "*** ignoring malformed section %s->%s"
-msgstr ""
+msgstr "*** se ignara la sección malformada %s->%s"
 
 #: lib/init.c:515 lib/init.c:528
-#, c-format
+#, c-format, fuzzy
 msgid "*** error reading %s ignore pattern"
-msgstr ""
+msgstr "*** error al leer %s descarta patrón"
 
 #: lib/init.c:544
-#, c-format
+#, c-format, fuzzy
 msgid "*** flag must be 'on' or 'off'; ignoring '%s'"
-msgstr ""
+msgstr "*** inficador debe ser 'on' u 'off'; se hace caso omiso a '%s'"
 
 #: lib/init.c:548
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown inspections: `%s`"
-msgstr ""
+msgstr "*** inspecciones desconocidas: `%s`"
 
 #: lib/init.c:559
 msgid "*** malformed/unknown inspections section"
 msgstr ""
 
 #: lib/init.c:591
-#, c-format
+#, c-format, fuzzy
 msgid "*** ignoring malformed %s configuration file: %s"
-msgstr ""
+msgstr "*** se ignora archivo de configuración %s mal formado: %s"
 
 #: lib/init.c:653
 #, c-format
@@ -1417,36 +1419,38 @@ msgid "*** unknown specname primary setting '%s', defaulting to 'name'"
 msgstr ""
 
 #: lib/init.c:747
-#, c-format
+#, c-format, fuzzy
 msgid "*** invalid annocheck failure_reporting_level: %s, defaulting to %s"
-msgstr ""
+msgstr "*** annocheck no váldio failure_reporting_level: %s, predet. a %s"
 
 #: lib/init.c:804
+#, fuzzy
 msgid "*** malformed badfuncs->allowed section"
-msgstr ""
+msgstr "*** sección badfuncs->allowed malformada"
 
 #: lib/init.c:822
-#, c-format
+#, c-format, fuzzy
 msgid "*** error reading unicode exclude regular expression: %s"
-msgstr ""
+msgstr "*** error al leer unicode excluye expresión regular: %s"
 
 #: lib/init.c:832
 msgid "*** malformed rpmdeps->ignore section; skipping"
 msgstr ""
 
 #: lib/init.c:968
-#, c-format
+#, c-format, fuzzy
 msgid "*** Invalid filename in the fileinfo list: %s"
-msgstr ""
+msgstr "*** nombre de archivo no válido dentro de listado fileinfo: %s"
 
 #: lib/init.c:969
+#, fuzzy
 msgid "*** From this invalid line:"
-msgstr ""
+msgstr "*** Desde esta línea no válida:"
 
 #: lib/init.c:970
-#, c-format
+#, c-format, fuzzy
 msgid "***     %s"
-msgstr ""
+msgstr "***     %s"
 
 #: lib/init.c:1121
 #, c-format
@@ -1454,38 +1458,39 @@ msgid "*** unexpected token `%s' seen in %s, cannot continue"
 msgstr ""
 
 #: lib/init.c:1414
-#, c-format
+#, c-format, fuzzy
 msgid "*** invalid security rule: %s"
-msgstr ""
+msgstr "*** regla de seguridad no válida: %s"
 
 #: lib/init.c:1426
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown security rule: %s"
-msgstr ""
+msgstr "*** regla de seguridad desconocida: %s"
 
 #: lib/init.c:1435
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown security action: %s"
-msgstr ""
+msgstr "*** desconoce acción de seguridad: %s"
 
 #: lib/init.c:1461
-#, c-format
+#, c-format, fuzzy
 msgid "*** malformed security line: %s"
-msgstr ""
+msgstr "*** línea de seguridad malformada: %s"
 
 #: lib/init.c:1622
-#, c-format
+#, c-format, fuzzy
 msgid "*** missing configuration file `%s'"
-msgstr ""
+msgstr "*** ausentando archivo de configuración `%s'"
 
 #: lib/init.c:1658
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to find profile '%s'"
-msgstr ""
+msgstr "*** no es capaz de encontrar el perfil '%s'"
 
 #: lib/inspect_abidiff.c:266
+#, fuzzy
 msgid "abidiff usage error"
-msgstr ""
+msgstr "error de uso abidiff"
 
 #: lib/inspect_abidiff.c:275
 msgid "ABI change in ${FILE} on ${ARCH}"
@@ -1530,11 +1535,13 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_addedfiles.c:149
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Packages should not contain files or directories starting with `%s` on %s in "
 "%s: %s"
 msgstr ""
+"Paquetes no contendrían archivos o directorios iniciando con `%spp en %s en "
+"%s: %s"
 
 #: lib/inspect_addedfiles.c:150 lib/inspect_addedfiles.c:164
 msgid "invalid directory ${FILE} on ${ARCH}"
@@ -1568,22 +1575,23 @@ msgid "new security-related file ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_addedfiles.c:231
-#, c-format
+#, c-format, fuzzy
 msgid "`%s` added on %s in %s"
-msgstr ""
+msgstr "`%s` agregado sobre %s en %s"
 
 #: lib/inspect_addedfiles.c:232
 msgid "new file ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_addedfiles.c:248
+#, fuzzy
 msgid "the fileinfo list"
-msgstr ""
+msgstr "el listado fileinfo"
 
 #: lib/inspect_annocheck.c:116 lib/inspect_annocheck.c:151
-#, c-format
+#, c-format, fuzzy
 msgid "*** libannocheck_enable_profile: %s"
-msgstr ""
+msgstr "*** libannocheck_enable_profile: %s"
 
 #: lib/inspect_annocheck.c:136
 #, c-format
@@ -1607,61 +1615,62 @@ msgid "MAYBE"
 msgstr "QUIZÁ"
 
 #: lib/inspect_annocheck.c:176
+#, fuzzy
 msgid "skipped"
-msgstr ""
+msgstr "omitido"
 
 #: lib/inspect_annocheck.c:178 lib/strfuncs.c:557
 msgid "UNKNOWN"
 msgstr "DESCONOCIDO"
 
 #: lib/inspect_annocheck.c:226
-#, c-format
+#, c-format, fuzzy
 msgid "*** libannocheck_init: %s"
-msgstr ""
+msgstr "*** libannocheck_init: %s"
 
 #: lib/inspect_annocheck.c:255
-#, c-format
+#, c-format, fuzzy
 msgid "*** libannocheck_%s_test: %s"
-msgstr ""
+msgstr "*** libannocheck_%s_test: %s"
 
 #: lib/inspect_annocheck.c:267
-#, c-format
+#, c-format, fuzzy
 msgid "*** libannocheck_enable_all_tests: %s"
-msgstr ""
+msgstr "*** libannocheck_enable_all_tests: %s"
 
 #: lib/inspect_annocheck.c:280
-#, c-format
+#, c-format, fuzzy
 msgid "*** libannocheck_reinit: %s"
-msgstr ""
+msgstr "*** libannocheck_reinit: %s"
 
 #: lib/inspect_annocheck.c:373
-#, c-format
+#, c-format, fuzzy
 msgid "*** before libannocheck_run_tests: %s (%d)"
-msgstr ""
+msgstr "*** tras libannocheck_run_tests: %s (%d)"
 
 #: lib/inspect_annocheck.c:382 lib/inspect_annocheck.c:426
-#, c-format
+#, c-format, fuzzy
 msgid "*** libannocheck_get_known_tests: %s"
-msgstr ""
+msgstr "*** libannocheck_get_known_tests: %s"
 
 #: lib/inspect_annocheck.c:400 lib/inspect_annocheck.c:530
-#, c-format
+#, c-format, fuzzy
 msgid "*** libannocheck_finish: %s"
-msgstr ""
+msgstr "*** libannocheck_finish: %s"
 
 #: lib/inspect_annocheck.c:417
-#, c-format
+#, c-format, fuzzy
 msgid "*** after libannocheck_run_tests: %s (%d)"
-msgstr ""
+msgstr "*** tras libannocheck_run_tests: %s (%d)"
 
 #: lib/inspect_annocheck.c:461 lib/inspect_annocheck.c:613
 msgid "lost -D_FORTIFY_SOURCE in ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_annocheck.c:464
-#, c-format
+#, c-format, fuzzy
 msgid "%s may have lost -O2 -D_FORTIFY_SOURCE on %s"
-msgstr ""
+msgstr "%s puede tener pérdida -O2 -D_FORTIFY_SOURCE sobre %s"
 
 #: lib/inspect_annocheck.c:489
 #, c-format
@@ -1737,27 +1746,29 @@ msgid "Forbidden function symbols found:\n"
 msgstr ""
 
 #: lib/inspect_badfuncs.c:168
-#, c-format
+#, c-format, fuzzy
 msgid "%s may use forbidden functions on %s"
-msgstr ""
+msgstr "%s puede utilizar funciones prohibida en %s"
 
 #: lib/inspect_badfuncs.c:175
 msgid "forbidden functions in ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_capabilities.c:82
-#, c-format
+#, c-format, fuzzy
 msgid "File capabilities for %s changed from '%s' to '%s' in %s on %s\n"
 msgstr ""
+"Capacidades de archivo para %s cambiada desde '%s' a '%s' en %s sobre %s\n"
 
 #: lib/inspect_capabilities.c:86
+#, fuzzy
 msgid "${FILE} capabilities on ${ARCH}"
-msgstr ""
+msgstr "${FILE} de capacidades sobre ${ARCH}"
 
 #: lib/inspect_capabilities.c:98
-#, c-format
+#, c-format, fuzzy
 msgid "File capabilities found for %s: '%s' in %s on %s\n"
-msgstr ""
+msgstr "Capacidades de archivo encontrado para %s: '%s' en %s sobre %s\n"
 
 #: lib/inspect_capabilities.c:134
 #, c-format
@@ -1774,8 +1785,9 @@ msgstr ""
 
 #: lib/inspect_capabilities.c:149 lib/inspect_capabilities.c:169
 #: lib/inspect_capabilities.c:188
+#, fuzzy
 msgid "${FILE} capabilities list on ${ARCH}"
-msgstr ""
+msgstr "${FILE} con listado de capacidades sobre ${ARCH}"
 
 #: lib/inspect_capabilities.c:165
 #, c-format
@@ -1791,10 +1803,13 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_changedfiles.c:31
+#, fuzzy
 msgid ""
 "  Changes to security policy related files require inspection by the "
 "Security Response Team."
 msgstr ""
+"  Cambia a normativa de seguridad relacionó archivos requiere inspección por "
+"el Securty Response Team."
 
 #: lib/inspect_changedfiles.c:319
 #, c-format
@@ -1833,18 +1848,18 @@ msgid "File %s changed content in %s on %s."
 msgstr ""
 
 #: lib/inspect_changelog.c:235 lib/inspect_changelog.c:369
-#, c-format
+#, c-format, fuzzy
 msgid "%%changelog"
-msgstr ""
+msgstr "%%changelog"
 
 #: lib/inspect_changelog.c:438
 msgid "Inspection skipped because this build's type is not `rpm'."
 msgstr ""
 
 #: lib/inspect_config.c:65
-#, c-format
+#, c-format, fuzzy
 msgid "%config ${FILE}"
-msgstr ""
+msgstr "%config ${FILE}"
 
 #: lib/inspect_config.c:114
 #, c-format
@@ -1866,9 +1881,9 @@ msgid "Symlink value for %%config file %s changed in %s on %s."
 msgstr ""
 
 #: lib/inspect_config.c:153
-#, c-format
+#, c-format, fuzzy
 msgid "%%config file content change for %s in %s on %s"
-msgstr ""
+msgstr "%%config del contenido del archivo cambia para %s en %s sobre %s"
 
 #: lib/inspect_config.c:168
 #, c-format
@@ -1919,14 +1934,14 @@ msgid "gained debugging symbols"
 msgstr ""
 
 #: lib/inspect_debuginfo.c:266
-#, c-format
+#, c-format, fuzzy
 msgid "Gained: %s"
-msgstr ""
+msgstr "Ganado: %s"
 
 #: lib/inspect_debuginfo.c:286
-#, c-format
+#, c-format, fuzzy
 msgid "%s in %s on %s lost debugging symbols"
-msgstr ""
+msgstr "%s en %s en %s pierde símbolos de depuración"
 
 #: lib/inspect_debuginfo.c:287
 msgid "lost debugging symbols"
@@ -1945,8 +1960,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_debuginfo.c:320
+#, fuzzy
 msgid ".gnu_debugdata with .gosymtab"
-msgstr ""
+msgstr ".gnu_debugdata con .gosymtab"
 
 #: lib/inspect_desktop.c:275
 #, c-format
@@ -1975,8 +1991,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_desktop.c:312
+#, fuzzy
 msgid "${FILE} references missing executable on ${ARCH}"
-msgstr ""
+msgstr "${FILE} le falta referencias ejecutables sobre ${ARCH}"
 
 #: lib/inspect_desktop.c:354
 #, c-format
@@ -1984,8 +2001,9 @@ msgid "Desktop file %s on %s references icon %s but %s is not readable by all"
 msgstr ""
 
 #: lib/inspect_desktop.c:358
+#, fuzzy
 msgid "${FILE} references unreadble icon on ${ARCH}"
-msgstr ""
+msgstr "${FILE} referencias de ícono no legible sobre ${ARCH}"
 
 #: lib/inspect_desktop.c:376
 #, c-format
@@ -1993,12 +2011,14 @@ msgid "Desktop file %s on %s references icon %s but no subpackages contain %s"
 msgstr ""
 
 #: lib/inspect_desktop.c:380
+#, fuzzy
 msgid "${FILE} references missing icon on ${ARCH}"
-msgstr ""
+msgstr "${FILE} le falta referencias de ícono en ${ARCH}"
 
 #: lib/inspect_desktop.c:452
+#, fuzzy
 msgid "${FILE} is not valid on ${ARCH}"
-msgstr ""
+msgstr "${FILE} no es válido sobre ${ARCH}"
 
 #: lib/inspect_desktop.c:455
 #, c-format
@@ -2020,13 +2040,14 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_disttag.c:184
-#, c-format
+#, c-format, fuzzy
 msgid "The %s file is missing the %s tag."
-msgstr ""
+msgstr "Al archivo %s le falta la etiqueta %s."
 
 #: lib/inspect_disttag.c:186
+#, fuzzy
 msgid "${FILE} missing Release tag"
-msgstr ""
+msgstr "${FILE} le falta etiqueta Release"
 
 #: lib/inspect_disttag.c:192
 #, c-format
@@ -2037,23 +2058,23 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_disttag.c:194
-#, c-format
+#, c-format, fuzzy
 msgid "${FILE} does not use '%%{?dist}' in Release"
-msgstr ""
+msgstr "${FILE} no utiliza '%%{?dist}' en Release"
 
 #: lib/inspect_disttag.c:263
 msgid "Specified package is not a source RPM, skipping."
 msgstr ""
 
 #: lib/inspect_doc.c:71
-#, c-format
+#, c-format, fuzzy
 msgid "%doc ${FILE}"
-msgstr ""
+msgstr "%doc ${FILE}"
 
 #: lib/inspect_doc.c:98
-#, c-format
+#, c-format, fuzzy
 msgid "%%doc file content change for %s in %s on %s\n"
-msgstr ""
+msgstr "%%doc de contenido de archivo cambia para %s en %s sobre %s\n"
 
 #: lib/inspect_doc.c:113
 #, c-format
@@ -2068,8 +2089,9 @@ msgid "%s was an ELF file and now is not on %s"
 msgstr ""
 
 #: lib/inspect_dsodeps.c:96 lib/inspect_dsodeps.c:108
+#, fuzzy
 msgid "ELF file ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "Archivo ${FILE} ELF en ${ARCH}"
 
 #: lib/inspect_dsodeps.c:106
 #, c-format
@@ -2106,8 +2128,9 @@ msgid "Program built without GNU_STACK: %s on %s"
 msgstr ""
 
 #: lib/inspect_elf.c:444
+#, fuzzy
 msgid "GNU_STACK in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "GNU_STACK en ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_elf.c:496
 #, c-format
@@ -2120,8 +2143,9 @@ msgid "File %s has unrecognized GNU_STACK '%s' (expected RW or RWE) on %s"
 msgstr ""
 
 #: lib/inspect_elf.c:510 lib/inspect_elf.c:540
+#, fuzzy
 msgid "execstack in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "execstack en ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_elf.c:525
 #, c-format
@@ -2129,9 +2153,9 @@ msgid "Object still has executable stack (GNU-stack note = X): %s on %s"
 msgstr ""
 
 #: lib/inspect_elf.c:527
-#, c-format
+#, c-format, fuzzy
 msgid "Object has executable stack (GNU-stack note = X): %s on %s"
-msgstr ""
+msgstr "Objeto tiene pila ejecutable (Nota Pila GNU = X): %s en %s"
 
 #: lib/inspect_elf.c:531
 #, c-format
@@ -2158,9 +2182,9 @@ msgid "lost GNU_RELRO in ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_elf.c:725
-#, c-format
+#, c-format, fuzzy
 msgid "The following objects lost -fPIC:\n"
-msgstr ""
+msgstr "Los siguientes objetos perdidos -fPIC:\n"
 
 #: lib/inspect_elf.c:742
 #, c-format
@@ -2173,12 +2197,14 @@ msgid "%s in %s has objects built without -fPIC on %s"
 msgstr ""
 
 #: lib/inspect_elf.c:763
+#, fuzzy
 msgid "missing -fPIC in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "falta -fPIC en ${FILE} en ${ARCH}"
 
 #: lib/inspect_elf.c:799
+#, fuzzy
 msgid "TEXTREL relocations in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "TEXTREL de reubicación interno a ${FILE} en ${ARCH}"
 
 #: lib/inspect_elf.c:814
 #, c-format
@@ -2205,13 +2231,14 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_emptyrpm.c:116
-#, c-format
+#, c-format, fuzzy
 msgid "New package %s is empty (no payloads)"
-msgstr ""
+msgstr "Paquete %s nuevo está vacío (sin payloads)"
 
 #: lib/inspect_emptyrpm.c:120
+#, fuzzy
 msgid "${FILE} has empty payload"
-msgstr ""
+msgstr "${FILE} tiene de carga útil vacía"
 
 #: lib/inspect_files.c:111
 #, c-format
@@ -2228,31 +2255,33 @@ msgid "The files inspection is only for source packages, skipping."
 msgstr ""
 
 #: lib/inspect_filesize.c:67
-#, c-format
+#, c-format, fuzzy
 msgid "%s became a non-empty file on %s"
-msgstr ""
+msgstr "%s se vuelve un archivo no vacío en %s"
 
 #: lib/inspect_filesize.c:71
 msgid "non-empty ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_filesize.c:76
-#, c-format
+#, c-format, fuzzy
 msgid "%s became an empty file on %s"
-msgstr ""
+msgstr "%s se vuelve un archivo vacío en %s"
 
 #: lib/inspect_filesize.c:80
+#, fuzzy
 msgid "empty ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${FILE} vacío en ${ARCH}"
 
 #: lib/inspect_filesize.c:98
-#, c-format
+#, c-format, fuzzy
 msgid "%s grew by %lld%% on %s"
-msgstr ""
+msgstr "%s creció por %lld%% sobre %s"
 
 #: lib/inspect_filesize.c:99
+#, fuzzy
 msgid "${FILE} size grew on ${ARCH}"
-msgstr ""
+msgstr "${FILE} con tamaño creciente sobre ${ARCH}"
 
 #: lib/inspect_filesize.c:103
 #, c-format
@@ -2260,8 +2289,9 @@ msgid "%s shrank by %lld%% on %s"
 msgstr ""
 
 #: lib/inspect_filesize.c:104
+#, fuzzy
 msgid "${FILE} size shrank on ${ARCH}"
-msgstr ""
+msgstr "${FILE} con tamaño menguante sobre ${ARCH}"
 
 #: lib/inspect_javabytecode.c:130
 #, c-format
@@ -2316,8 +2346,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_kmidiff.c:258
+#, fuzzy
 msgid "KMI change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "Cambio KMI en ${FILE} en ${ARCH}"
 
 #: lib/inspect_kmidiff.c:260
 #, c-format
@@ -2337,8 +2368,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_kmidiff.c:267
+#, fuzzy
 msgid "kmidiff unexpected exit"
-msgstr ""
+msgstr "salida kmidiff inesperada"
 
 #: lib/inspect_kmidiff.c:274
 #, c-format
@@ -2348,18 +2380,19 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_kmod.c:28
+#, fuzzy
 msgid "${FILE} kernel module alias on ${ARCH}"
-msgstr ""
+msgstr "${FILE} alias del módulo de kernel en ${ARCH}"
 
 #: lib/inspect_kmod.c:31
-#, c-format
+#, c-format, fuzzy
 msgid "Kernel module '%s' lost alias '%s'"
-msgstr ""
+msgstr "Módulo del kernel '%s' perdió alias '%s'"
 
 #: lib/inspect_kmod.c:41
-#, c-format
+#, c-format, fuzzy
 msgid "Kernel module '%s' gained alias '%s'"
-msgstr ""
+msgstr "Módulo del kernel '%s' ganó alias '%s'"
 
 #: lib/inspect_kmod.c:188
 #, c-format
@@ -2381,8 +2414,9 @@ msgid "Kernel module %s removes dependency '%s' (was present in %s)."
 msgstr ""
 
 #: lib/inspect_kmod.c:229
+#, fuzzy
 msgid "${FILE} kernel module dependency on ${ARCH}"
-msgstr ""
+msgstr "${FILE} dependencia de módulo del kernel sobre ${ARCH}"
 
 #: lib/inspect_kmod.c:243
 #, c-format
@@ -2390,22 +2424,23 @@ msgid "Kernel module %s adds dependency '%s' (was not present in %s)."
 msgstr ""
 
 #: lib/inspect_kmod.c:246
+#, fuzzy
 msgid "${FILE} kernel module parameter"
-msgstr ""
+msgstr "${FILE} parámetro del módulo del kernel"
 
 #: lib/inspect_license.c:47
-#, c-format
+#, c-format, fuzzy
 msgid "*** parse error in license database %s"
-msgstr ""
+msgstr "*** error de intérprete en base de datos de licencia %s"
 
 #: lib/inspect_license.c:135
 msgid "*** problem checking license database"
 msgstr ""
 
 #: lib/inspect_license.c:464
-#, c-format
+#, c-format, fuzzy
 msgid "Unapproved license in %s: %s"
-msgstr ""
+msgstr "Licencia inapropiada en %s: %s"
 
 #: lib/inspect_license.c:505
 #, c-format
@@ -2417,9 +2452,9 @@ msgid "missing License tag in ${FILE}"
 msgstr ""
 
 #: lib/inspect_license.c:518
-#, c-format
+#, c-format, fuzzy
 msgid "Valid License Tag in %s: %s"
-msgstr ""
+msgstr "Etiqueta de Licencia Válida en %s: %s"
 
 #: lib/inspect_license.c:532
 #, c-format
@@ -2439,9 +2474,9 @@ msgid "missing license database"
 msgstr ""
 
 #: lib/inspect_lostpayload.c:62
-#, c-format
+#, c-format, fuzzy
 msgid "Existing subpackage %s is now missing on %s"
-msgstr ""
+msgstr "Existiendo subpaquete %s ahora falta en %s"
 
 #: lib/inspect_lostpayload.c:66
 msgid "missing subpackage ${FILE} on ${ARCH}"
@@ -2453,8 +2488,9 @@ msgid "Package %s on %s continues to be empty (no payloads)"
 msgstr ""
 
 #: lib/inspect_lostpayload.c:86
+#, fuzzy
 msgid "existing empty subpackage ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "existiendo subpaquete ${FILE} vacío en ${ARCH}"
 
 #: lib/inspect_lostpayload.c:93
 #, c-format
@@ -2466,8 +2502,9 @@ msgid "subpackage ${FILE} on ${ARCH} now has empty payload"
 msgstr ""
 
 #: lib/inspect_lto.c:144
+#, fuzzy
 msgid "${FILE} not portable on ${ARCH}"
-msgstr ""
+msgstr "${FILE} no portable en ${ARCH}"
 
 #: lib/inspect_lto.c:152
 #, c-format
@@ -2492,9 +2529,9 @@ msgid "*** unable to compile man page path regular expression: %s"
 msgstr ""
 
 #: lib/inspect_manpage.c:179
-#, c-format
+#, c-format, fuzzy
 msgid "Unable to open man page %s\n"
-msgstr ""
+msgstr "No es capaz de abrir la página man %s\n"
 
 #: lib/inspect_manpage.c:187
 #, c-format
@@ -2507,9 +2544,9 @@ msgid "man page with %s suffix is not really compressed with gzip\n"
 msgstr ""
 
 #: lib/inspect_manpage.c:236
-#, c-format
+#, c-format, fuzzy
 msgid "Errors found validating %s\n"
-msgstr ""
+msgstr "Errores encontrados validando %s\n"
 
 #: lib/inspect_manpage.c:299
 #, c-format
@@ -2589,9 +2626,9 @@ msgid "Description contains unprofessional words on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_metadata.c:134
-#, c-format
+#, c-format, fuzzy
 msgid "Gained Package Vendor \"%s\" in %s"
-msgstr ""
+msgstr "Ganado Provedor del Paquete «%s» en %s"
 
 #: lib/inspect_metadata.c:136
 #, c-format
@@ -2604,9 +2641,9 @@ msgid "Package Vendor changed from \"%s\" to \"%s\" in %s"
 msgstr ""
 
 #: lib/inspect_metadata.c:156
-#, c-format
+#, c-format, fuzzy
 msgid "Package Summary change from \"%s\" to \"%s\" in %s"
-msgstr ""
+msgstr "Cambio de Sumario de Paquete desde \"%s\" a \"%s\" en %s"
 
 #: lib/inspect_metadata.c:169
 #, c-format
@@ -2682,9 +2719,9 @@ msgid "Inspection skipped because this build's type is not `module'."
 msgstr ""
 
 #: lib/inspect_movedfiles.c:52
-#, c-format
+#, c-format, fuzzy
 msgid "%s moved to ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "%s movido a ${FILE} en ${ARCH}"
 
 #: lib/inspect_movedfiles.c:55
 #, c-format
@@ -2692,9 +2729,9 @@ msgid "%s probably moved to %s on %s\n"
 msgstr ""
 
 #: lib/inspect_ownership.c:77
-#, c-format
+#, c-format, fuzzy
 msgid "File %s has forbidden owner `%s` on %s"
-msgstr ""
+msgstr "Archivo %s tiene propietario `%s` prohibido sobre %s"
 
 #: lib/inspect_ownership.c:82
 msgid "forbidden owner for ${FILE} on ${ARCH}"
@@ -2754,8 +2791,9 @@ msgid "File %s changed %s from `%s` to `%s` on %s"
 msgstr ""
 
 #: lib/inspect_ownership.c:270
+#, fuzzy
 msgid "${FILE} changed owner on ${ARCH}"
-msgstr ""
+msgstr "${FILE} cambió propietario sobre ${ARCH}"
 
 #: lib/inspect_patches.c:395
 #, c-format
@@ -2780,32 +2818,33 @@ msgid "mismatched %%patch macro for ${FILE}"
 msgstr ""
 
 #: lib/inspect_patches.c:422
+#, fuzzy
 msgid "undefined Patch ${FILE}"
-msgstr ""
+msgstr "parche ${FILE} indefinido"
 
 #: lib/inspect_patches.c:423
-#, c-format
+#, c-format, fuzzy
 msgid "Undefined Patch file %s."
-msgstr ""
+msgstr "Parche Indefinido del archivo %s."
 
 #: lib/inspect_patches.c:436 lib/inspect_patches.c:444
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to uncompress patch: %s"
-msgstr ""
+msgstr "*** no es capaz de descomprimir parche: %s"
 
 #: lib/inspect_patches.c:473
 msgid "corrupt patch ${FILE}"
 msgstr ""
 
 #: lib/inspect_patches.c:477 lib/inspect_patches.c:484
-#, c-format
+#, c-format, fuzzy
 msgid "Patch %s is under 4 bytes in size - is it corrupt?"
-msgstr ""
+msgstr "Parche %s está bajo 4 bytes en tamaño - ¿está corrupto?"
 
 #: lib/inspect_patches.c:506
-#, c-format
+#, c-format, fuzzy
 msgid "%s changed (%ld bytes -> %ld bytes)"
-msgstr ""
+msgstr "%s cambiado (%ld bytes -> %ld bytes)"
 
 #: lib/inspect_patches.c:510 lib/inspect_patches.c:535
 msgid "patch file ${FILE}"
@@ -2817,8 +2856,9 @@ msgid "New patch file `%s` appeared"
 msgstr ""
 
 #: lib/inspect_patches.c:551
+#, fuzzy
 msgid "patch changes ${FILE}"
-msgstr ""
+msgstr "parche cambia ${FILE}"
 
 #: lib/inspect_patches.c:555
 #, c-format
@@ -2826,9 +2866,9 @@ msgid "%s touches as many as %ld line%s"
 msgstr ""
 
 #: lib/inspect_patches.c:557
-#, c-format
+#, c-format, fuzzy
 msgid "%s touches %ld file%s"
-msgstr ""
+msgstr "%s toca %ld archivo%s"
 
 #: lib/inspect_patches.c:559
 #, c-format
@@ -2836,8 +2876,9 @@ msgid "%s touches %ld file%s and %s%ld line%s"
 msgstr ""
 
 #: lib/inspect_patches.c:559
+#, fuzzy
 msgid "as many as "
-msgstr ""
+msgstr "tantos como "
 
 #: lib/inspect_patches.c:626 lib/inspect_upstream.c:141
 msgid "No source packages available, skipping inspection."
@@ -2849,19 +2890,19 @@ msgid "Unhandled patch file `%s` defined in spec file"
 msgstr ""
 
 #: lib/inspect_patches.c:822
-#, c-format
+#, c-format, fuzzy
 msgid "*** unrecognized %%patch line: %s"
-msgstr ""
+msgstr "*** línea %%patch no reconocida: %s"
 
 #: lib/inspect_patches.c:828
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to read spec file line: %s"
-msgstr ""
+msgstr "*** no es capaz de leer línea de archivo spec: %s"
 
 #: lib/inspect_patches.c:881
-#, c-format
+#, c-format, fuzzy
 msgid "Patch file `%s` removed"
-msgstr ""
+msgstr "Parche de archivo `%s` retirado"
 
 #: lib/inspect_pathmigration.c:81
 #, c-format
@@ -2869,13 +2910,14 @@ msgid "File %s found should be in %s on %s"
 msgstr ""
 
 #: lib/inspect_pathmigration.c:82
-#, c-format
+#, c-format, fuzzy
 msgid "${FILE} should be in %s on ${ARCH}"
-msgstr ""
+msgstr "${FILE} estaría dentro de %s sobre ${ARCH}"
 
 #: lib/inspect_permissions.c:84
+#, fuzzy
 msgid " changed setuid/setgid;"
-msgstr ""
+msgstr " cambiado setuid/setgid;"
 
 #: lib/inspect_permissions.c:89
 msgid " became a directory;"
@@ -2886,41 +2928,47 @@ msgid " became a character device;"
 msgstr ""
 
 #: lib/inspect_permissions.c:93
+#, fuzzy
 msgid " became a block device;"
-msgstr ""
+msgstr " convertido en un dispositivo de bloque;"
 
 #: lib/inspect_permissions.c:95
 msgid " became a regular file;"
 msgstr ""
 
 #: lib/inspect_permissions.c:97
+#, fuzzy
 msgid " became a FIFO;"
-msgstr ""
+msgstr " convertido en FILO;"
 
 #: lib/inspect_permissions.c:99
+#, fuzzy
 msgid " became a symbolic link;"
-msgstr ""
+msgstr " convertido en enlace simbólico;"
 
 #: lib/inspect_permissions.c:101
+#, fuzzy
 msgid " became a socket;"
-msgstr ""
+msgstr " convertido en un zócalo;"
 
 #: lib/inspect_permissions.c:105
 msgid " permissions"
 msgstr " permisos"
 
 #: lib/inspect_permissions.c:111
+#, fuzzy
 msgid " relaxed"
-msgstr ""
+msgstr " relajado"
 
 #: lib/inspect_permissions.c:114
+#, fuzzy
 msgid " changed"
-msgstr ""
+msgstr " cambiado"
 
 #: lib/inspect_permissions.c:129
-#, c-format
+#, c-format, fuzzy
 msgid "%s from %04o to %04o on %s"
-msgstr ""
+msgstr "%s desde %04o a %04o en %s"
 
 #: lib/inspect_permissions.c:135
 #, c-format
@@ -2928,13 +2976,14 @@ msgid "${FILE} permissions from %04o to %04o on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_permissions.c:149
-#, c-format
+#, c-format, fuzzy
 msgid "%s (%s) is world-writable on %s"
-msgstr ""
+msgstr "%s (%s) es escribible por todos en %s"
 
 #: lib/inspect_permissions.c:152
+#, fuzzy
 msgid "${FILE} is world-writable on ${ARCH}"
-msgstr ""
+msgstr "${FILE} es escribible por todos sobre ${ARCH}"
 
 #: lib/inspect_politics.c:47 lib/inspect_politics.c:67
 #, c-format
@@ -2942,9 +2991,9 @@ msgid "*** invalid politics entry with pattern=%s and digest=%s"
 msgstr ""
 
 #: lib/inspect_politics.c:92
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown digest type for pattern %s: %s"
-msgstr ""
+msgstr "*** tipo digest desconocido para patron %s: %s"
 
 #: lib/inspect_politics.c:126
 #, c-format
@@ -2961,8 +3010,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_politics.c:138
+#, fuzzy
 msgid "${FILE} is politically sensitive"
-msgstr ""
+msgstr "${FILE} es confidencial"
 
 #: lib/inspect_removedfiles.c:26
 msgid ""
@@ -2971,8 +3021,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_removedfiles.c:85
+#, fuzzy
 msgid "library ${FILE} removed on ${ARCH}"
-msgstr ""
+msgstr "biblioteca ${FILE} retirada sobre ${ARCH}"
 
 #: lib/inspect_removedfiles.c:131
 #, c-format
@@ -2989,9 +3040,9 @@ msgid "ABI break: Library %s removed from %s"
 msgstr ""
 
 #: lib/inspect_removedfiles.c:138
-#, c-format
+#, c-format, fuzzy
 msgid "%s removed from %s"
-msgstr ""
+msgstr "%s retirado desde %s"
 
 #: lib/inspect_rpmdeps.c:129
 #, c-format
@@ -3026,9 +3077,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_rpmdeps.c:410
-#, c-format
+#, c-format, fuzzy
 msgid "%s all provide '${FILE}' on ${ARCH}"
-msgstr ""
+msgstr "%s todo proporcona '${FILE}' en ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:540
 #, c-format
@@ -3041,8 +3092,9 @@ msgid "'${FILE}' needs epoch in %s on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_rpmdeps.c:807
+#, fuzzy
 msgid "spec file"
-msgstr ""
+msgstr "archivo específico"
 
 #: lib/inspect_rpmdeps.c:887
 #, c-format
@@ -3080,8 +3132,9 @@ msgid "'%s' became '${FILE}' in %s on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_rpmdeps.c:918
+#, fuzzy
 msgid "; this is expected"
-msgstr ""
+msgstr "; esto es esperado"
 
 #: lib/inspect_rpmdeps.c:940
 #, c-format
@@ -3089,9 +3142,9 @@ msgid "Lost '%s' in source package %s"
 msgstr ""
 
 #: lib/inspect_rpmdeps.c:942
-#, c-format
+#, c-format, fuzzy
 msgid "Lost '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "Perdido '%s' en subpaquete %s en %s"
 
 #: lib/inspect_runpath.c:136
 #, c-format
@@ -3121,9 +3174,9 @@ msgid "invalid shell script ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_shellsyntax.c:132
-#, c-format
+#, c-format, fuzzy
 msgid "%s is a shell script but was not before on %s"
-msgstr ""
+msgstr "%s es un guion de shell pero no fue anterior a %s"
 
 #: lib/inspect_shellsyntax.c:134
 #, c-format
@@ -3131,14 +3184,14 @@ msgid "%s is a %s script but was a %s script before on %s"
 msgstr ""
 
 #: lib/inspect_shellsyntax.c:181
-#, c-format
+#, c-format, fuzzy
 msgid "%s is no longer a valid %s script on %s"
-msgstr ""
+msgstr "%s no es más largo un script %s válido sobre %s"
 
 #: lib/inspect_shellsyntax.c:190
-#, c-format
+#, c-format, fuzzy
 msgid "%s became a valid %s script on %s"
-msgstr ""
+msgstr "%s se vuelve un guion %s válido sobre %s"
 
 #: lib/inspect_shellsyntax.c:193
 msgid ""
@@ -3159,20 +3212,23 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_specname.c:68
+#, fuzzy
 msgid "unexpected spec filename"
-msgstr ""
+msgstr "espec de nombre del archivo inesperado"
 
 #: lib/inspect_specname.c:71
+#, fuzzy
 msgid "exactly match"
-msgstr ""
+msgstr "exactamente coincide"
 
 #: lib/inspect_specname.c:73
 msgid "begin with"
 msgstr ""
 
 #: lib/inspect_specname.c:75
+#, fuzzy
 msgid "end with"
-msgstr ""
+msgstr "finaliza con"
 
 #: lib/inspect_specname.c:78
 #, c-format
@@ -3189,8 +3245,9 @@ msgid "Subpackage '%s' has disappeared on '%s'"
 msgstr ""
 
 #: lib/inspect_subpackages.c:75 lib/inspect_subpackages.c:99
+#, fuzzy
 msgid "subpackage ${FILE}"
-msgstr ""
+msgstr "subpaquete ${FILE}"
 
 #: lib/inspect_subpackages.c:92
 #, c-format
@@ -3209,12 +3266,14 @@ msgid "%s %s became a symbolic link (to %s) in %s on %s"
 msgstr ""
 
 #: lib/inspect_symlinks.c:108
+#, fuzzy
 msgid "${FILE} became a symlink on ${ARCH}"
-msgstr ""
+msgstr "${FILE} se combierte en un enlace simbólico en ${ARCH}"
 
 #: lib/inspect_symlinks.c:125
+#, fuzzy
 msgid "unable to read symlink ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "no es capaz de leer enlace simbólico ${FILE} en ${ARCH}"
 
 #: lib/inspect_symlinks.c:126
 #, c-format
@@ -3228,8 +3287,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_symlinks.c:182
+#, fuzzy
 msgid "too many redirects for ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "demasiadas redirecciones para ${FILE} en ${ARCH}"
 
 #: lib/inspect_symlinks.c:277
 #, c-format
@@ -3241,18 +3301,19 @@ msgid "dangling symlink ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_types.c:69
+#, fuzzy
 msgid "${FILE} MIME type on ${ARCH}"
-msgstr ""
+msgstr "${FILE} de tipo MIME sobre ${ARCH}"
 
 #: lib/inspect_types.c:77 lib/inspect_types.c:82
-#, c-format
+#, c-format, fuzzy
 msgid "Unknown MIME type `%s' on %s in %s"
-msgstr ""
+msgstr "Tipo MIME `%s' desconocido sobre %s en %s"
 
 #: lib/inspect_types.c:107
-#, c-format
+#, c-format, fuzzy
 msgid "MIME type for %s in %s was `%s/%s' and became `%s/%s'"
-msgstr ""
+msgstr "Tipo MIME para %s en %s era `%s/%s' y se vuelve `%s/%s'"
 
 #: lib/inspect_udevrules.c:104 lib/inspect_udevrules.c:116
 #, c-format
@@ -3270,14 +3331,14 @@ msgid "%s is no longer a valid udev rules file on %s"
 msgstr ""
 
 #: lib/inspect_udevrules.c:112 lib/inspect_udevrules.c:118
-#, c-format
+#, c-format, fuzzy
 msgid "%s is not a valid udev rules file on %s"
-msgstr ""
+msgstr "%s no es un archivo de reglas udev válido en %s"
 
 #: lib/inspect_unicode.c:465
-#, c-format
+#, c-format, fuzzy
 msgid "*** empty localpath on %s"
-msgstr ""
+msgstr "*** ruta local vacía en %s"
 
 #: lib/inspect_unicode.c:474
 msgid "forbidden code point in ${FILE} on ${ARCH}"
@@ -3291,9 +3352,9 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_unicode.c:621
-#, c-format
+#, c-format, fuzzy
 msgid "unable to run %prep in ${FILE}"
-msgstr ""
+msgstr "no es capaz de ejecutar %prep en ${FILE}"
 
 #: lib/inspect_unicode.c:624
 #, c-format
@@ -3321,8 +3382,9 @@ msgid "Upstream source file `%s` changed content"
 msgstr ""
 
 #: lib/inspect_upstream.c:93
+#, fuzzy
 msgid "checksum of ${FILE}"
-msgstr ""
+msgstr "checksum de ${FILE}"
 
 #: lib/inspect_upstream.c:195
 #, c-format
@@ -3334,8 +3396,9 @@ msgid "source file ${FILE} removed"
 msgstr ""
 
 #: lib/inspect_virus.c:40
+#, fuzzy
 msgid "*** cl_engine_new returned NULL, check clamav library"
-msgstr ""
+msgstr "*** cl_engine_new devolvió NULL, compruebe la biblioteca clamav"
 
 #: lib/inspect_virus.c:98
 #, c-format
@@ -3343,8 +3406,9 @@ msgid "Virus detected in %s in the %s package on %s: %s"
 msgstr ""
 
 #: lib/inspect_virus.c:135
+#, fuzzy
 msgid "clamav version information"
-msgstr ""
+msgstr "información de la versión de clamav"
 
 #: lib/inspect_virus.c:140
 #, c-format
@@ -3352,9 +3416,9 @@ msgid "clamav version %s"
 msgstr ""
 
 #: lib/inspect_virus.c:145
-#, c-format
+#, c-format, fuzzy
 msgid "*** missing %s"
-msgstr ""
+msgstr "*** ausentando %s"
 
 #: lib/inspect_virus.c:169
 #, c-format
@@ -3362,8 +3426,9 @@ msgid "%s version %u (%s)"
 msgstr ""
 
 #: lib/inspect_virus.c:201
+#, fuzzy
 msgid "virus or malware in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "virus o malware dentro de ${FILE} en ${ARCH}"
 
 #: lib/inspect_xml.c:195
 #, c-format
@@ -3371,13 +3436,14 @@ msgid "%s is a well-formed XML file in %s on %s, but is not a valid XML file"
 msgstr ""
 
 #: lib/inspect_xml.c:203
-#, c-format
+#, c-format, fuzzy
 msgid "%s is not a well-formed XML file in %s on %s"
-msgstr ""
+msgstr "%s no es un archivo XML bien formado interno a %s en %s"
 
 #: lib/inspect_xml.c:207
+#, fuzzy
 msgid "${FILE} is not well-formed XML on ${ARCH}"
-msgstr ""
+msgstr "${FILE} no es un XML bien formado sobre ${ARCH}"
 
 #: lib/koji.c:142
 #, c-format
@@ -3385,9 +3451,9 @@ msgid "*** XML-RPC Fault: %s (%d)"
 msgstr ""
 
 #: lib/koji.c:652
-#, c-format
+#, c-format, fuzzy
 msgid "*** xmlrpc fault code %s (%d): getBuild(%s) from %s"
-msgstr ""
+msgstr "*** código %s ausente de xmlrpc (%d): getBuild(%s) desde %s"
 
 #: lib/koji.c:884
 #, c-format
@@ -3395,9 +3461,9 @@ msgid "*** Koji build state is %s for %s, cannot continue"
 msgstr ""
 
 #: lib/koji.c:1147
-#, c-format
+#, c-format, fuzzy
 msgid "*** xmlrpc fault code %s (%d): getTaskInfo(%s) from %s"
-msgstr ""
+msgstr "*** código %s ausente de xmlrpc (%d): gatTaskInfo(%s) desde %s"
 
 #: lib/koji.c:1171
 #, c-format
@@ -3405,26 +3471,28 @@ msgid "*** Koji task state is %s for task %s, cannot continue"
 msgstr ""
 
 #: lib/koji.c:1399
+#, fuzzy
 msgid "RPM package build"
-msgstr ""
+msgstr "Paquete compilado RPM"
 
 #: lib/koji.c:1401
 msgid "Module build consisting of multiple RPM package builds"
 msgstr ""
 
 #: lib/magic.c:21
+#, fuzzy
 msgid "*** unable to initialize the magic library"
-msgstr ""
+msgstr "*** no es capaz de inicializar la biblioteca mágica"
 
 #: lib/magic.c:26
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to load the magic database: %s"
-msgstr ""
+msgstr "*** no es capaz de cargar la base de datos mágica: %s"
 
 #: lib/mkdirp.c:76 lib/mkdirp.c:89
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to mkdir %s"
-msgstr ""
+msgstr "*** no es capaz de ejecutar mkdir %s"
 
 #: lib/output.c:25
 msgid ""
@@ -3450,9 +3518,9 @@ msgid ""
 msgstr ""
 
 #: lib/output_json.c:99 lib/output_summary.c:45 lib/output_text.c:53
-#, c-format
+#, c-format, fuzzy
 msgid "*** error opening %s for writing"
-msgstr ""
+msgstr "*** error al abrir %s para escribir"
 
 #: lib/output_summary.c:53
 msgid "added"
@@ -3480,41 +3548,48 @@ msgid "Result: %s\n"
 msgstr ""
 
 #: lib/output_text.c:95 lib/output_xunit.c:96
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Waiver Authorization: %s\n"
 "\n"
 msgstr ""
+"Autorización Waiver: %s\n"
+"\n"
 
 #: lib/output_text.c:99 lib/output_xunit.c:110
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Details:\n"
 "%s\n"
 "\n"
 msgstr ""
+"Detalles:\n"
+"%s\n"
+"\n"
 
 #: lib/output_text.c:103 lib/output_xunit.c:118
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Suggested Remedy:\n"
 "%s"
 msgstr ""
+"Remedio segerido:\n"
+"%s"
 
 #: lib/output_xunit.c:54
-#, c-format
+#, c-format, fuzzy
 msgid "*** opening %s for writing"
-msgstr ""
+msgstr "*** abriendo %s para escribir"
 
 #: lib/parse_yaml.c:114 lib/parse_yaml.c:139
-#, c-format
+#, c-format, fuzzy
 msgid "*** %s: broken document"
-msgstr ""
+msgstr "*** %s: documento roto"
 
 #: lib/parse_yaml.c:158 lib/parse_yaml.c:305
-#, c-format
+#, c-format, fuzzy
 msgid "*** skipping token type %s"
-msgstr ""
+msgstr "*** se descarta tipo de vale %s"
 
 #: lib/parse_yaml.c:386
 msgid "*** malformed type - freed?"
@@ -3526,42 +3601,44 @@ msgid "There is not enough available space to unpack all of the RPMs.\n"
 msgstr ""
 
 #: lib/readelf.c:48
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown elftype_t %d"
-msgstr ""
+msgstr "*** elftype_t %d desconocido"
 
 #: lib/readelf.c:76
+#, fuzzy
 msgid "*** libelf version mismatch"
-msgstr ""
+msgstr "*** no coincide la versión libelf"
 
 #: lib/readfile.c:50
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to find end of %s"
-msgstr ""
+msgstr "*** no es capaz de encontrar el final de %s"
 
 #: lib/readfile.c:68
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to close %s"
-msgstr ""
+msgstr "*** no es capaz de cerrar %s"
 
 #: lib/rmtree.c:74
-#, c-format
+#, c-format, fuzzy
 msgid "*** %s is not a directory"
-msgstr ""
+msgstr "*** %s no es un directorio"
 
 #: lib/rpm.c:71
-#, c-format
+#, c-format, fuzzy
 msgid "*** Fopen failed for %s: %s"
-msgstr ""
+msgstr "*** Fopen incorrecto para %s: %s"
 
 #: lib/rpm.c:255
-#, c-format
+#, c-format, fuzzy
 msgid "*** file index %d is out of bounds for %s"
-msgstr ""
+msgstr "*** índice de archivo %d está fuera de acotaciones para %s"
 
 #: lib/rpm.c:431
+#, fuzzy
 msgid "*** error reading file from RPM payload"
-msgstr ""
+msgstr "*** error al leer archivo desde carga útil RPM: %s"
 
 #: lib/runcmd.c:171
 #, c-format
@@ -3569,9 +3646,9 @@ msgid "%d"
 msgstr "%d"
 
 #: lib/runcmd.c:173
-#, c-format
+#, c-format, fuzzy
 msgid "%d (%s)"
-msgstr ""
+msgstr "%d (%s)"
 
 #: lib/runcmd.c:178
 #, c-format
@@ -3595,8 +3672,9 @@ msgid "OK"
 msgstr "CORRECTO"
 
 #: lib/strfuncs.c:254 lib/strfuncs.c:286
+#, fuzzy
 msgid "INFO"
-msgstr ""
+msgstr "INFO"
 
 #: lib/strfuncs.c:256 lib/strfuncs.c:288
 msgid "VERIFY"
@@ -3615,16 +3693,18 @@ msgid "DIAGNOSTICS"
 msgstr ""
 
 #: lib/strfuncs.c:264 lib/strfuncs.c:314
+#, fuzzy
 msgid "UnKnOwN"
-msgstr ""
+msgstr "DeScOnOcIdO"
 
 #: lib/strfuncs.c:308
 msgid "Not Waivable"
 msgstr ""
 
 #: lib/strfuncs.c:310
+#, fuzzy
 msgid "Anyone"
-msgstr ""
+msgstr "Cualquiera"
 
 #: lib/strfuncs.c:312
 msgid "Security"
@@ -3655,8 +3735,9 @@ msgid "symbolic link"
 msgstr ""
 
 #: lib/strfuncs.c:555
+#, fuzzy
 msgid "socket"
-msgstr ""
+msgstr "zócalo"
 
 #: lib/strfuncs.c:614
 msgid "Success."
@@ -3671,8 +3752,9 @@ msgid "Program error."
 msgstr ""
 
 #: lib/strfuncs.c:620
+#, fuzzy
 msgid "The specified profile is not found."
-msgstr ""
+msgstr "El perfil especificado no es encontrado."
 
 #: lib/strfuncs.c:622
 msgid "Insufficient disk space in the working directory."
@@ -3696,9 +3778,10 @@ msgid "Options:\n"
 msgstr "Opciones:\n"
 
 #: src/rpminspect.c:51
-#, c-format
+#, c-format, fuzzy
 msgid "  -c FILE, --config=FILE      Configuration file to use\n"
 msgstr ""
+"  -c ARCHIVO, --config=ARCHIVO      Archivo de configuration para utilizar\n"
 
 #: src/rpminspect.c:52
 #, c-format
@@ -3711,9 +3794,9 @@ msgid "  -T LIST, --tests=LIST       List of tests to run\n"
 msgstr ""
 
 #: src/rpminspect.c:54
-#, c-format
+#, c-format, fuzzy
 msgid "                                (default: ALL)\n"
-msgstr ""
+msgstr "                                (predet.: ALL)\n"
 
 #: src/rpminspect.c:55
 #, c-format
@@ -3721,9 +3804,9 @@ msgid "  -E LIST, --exclude=LIST     List of tests to exclude\n"
 msgstr ""
 
 #: src/rpminspect.c:56
-#, c-format
+#, c-format, fuzzy
 msgid "                                (default: none)\n"
-msgstr ""
+msgstr "                                (predet.: none)\n"
 
 #: src/rpminspect.c:57
 #, c-format
@@ -3741,9 +3824,9 @@ msgid "  -n, --no-rebase             Disable build rebase detection\n"
 msgstr ""
 
 #: src/rpminspect.c:60
-#, c-format
+#, c-format, fuzzy
 msgid "  -b TYPE, --build-type=TYPE  Set Koji build type to TYPE\n"
-msgstr ""
+msgstr "  -b TYPE, --build-type=TYPE  Fija tipo de compilación Koji a TYPE\n"
 
 #: src/rpminspect.c:61
 #, c-format
@@ -3751,9 +3834,9 @@ msgid "  -o FILE, --output=FILE      Write results to FILE\n"
 msgstr ""
 
 #: src/rpminspect.c:62
-#, c-format
+#, c-format, fuzzy
 msgid "                                (default: stdout)\n"
-msgstr ""
+msgstr "                                (predet.: stdout)\n"
 
 #: src/rpminspect.c:63
 #, c-format
@@ -3761,9 +3844,9 @@ msgid "  -F TYPE, --format=TYPE      Format output results as TYPE\n"
 msgstr ""
 
 #: src/rpminspect.c:64
-#, c-format
+#, c-format, fuzzy
 msgid "                                (default: text)\n"
-msgstr ""
+msgstr "                                (predet.: text)\n"
 
 #: src/rpminspect.c:65
 #, c-format
@@ -3771,9 +3854,9 @@ msgid "  -t TAG, --threshold=TAG     Result threshold triggering exit\n"
 msgstr ""
 
 #: src/rpminspect.c:66
-#, c-format
+#, c-format, fuzzy
 msgid "                              failure (default: VERIFY)\n"
-msgstr ""
+msgstr "                              fallo (predet.: VERIFY)\n"
 
 #: src/rpminspect.c:67
 #, c-format
@@ -3781,14 +3864,14 @@ msgid "  -s TAG, --suppress=TAG      Results suppression threshold\n"
 msgstr ""
 
 #: src/rpminspect.c:68
-#, c-format
+#, c-format, fuzzy
 msgid "                                (default: off, report everything)\n"
-msgstr ""
+msgstr "                                (por defecto: off, informa todo)\n"
 
 #: src/rpminspect.c:69
-#, c-format
+#, c-format, fuzzy
 msgid "  -l, --list                  List available tests and formats\n"
-msgstr ""
+msgstr "  -l, --list                  Listado de test disponibles y formatos\n"
 
 #: src/rpminspect.c:70
 #, c-format
@@ -3796,9 +3879,9 @@ msgid "  -w PATH, --workdir=PATH     Temporary directory to use\n"
 msgstr ""
 
 #: src/rpminspect.c:71
-#, c-format
+#, c-format, fuzzy
 msgid "                                (default: %s)\n"
-msgstr ""
+msgstr "                                (predet.: %s)\n"
 
 #: src/rpminspect.c:72
 #, c-format
@@ -3807,9 +3890,9 @@ msgid ""
 msgstr ""
 
 #: src/rpminspect.c:73
-#, c-format
+#, c-format, fuzzy
 msgid "                                (implies -k)\n"
-msgstr ""
+msgstr "                                (implica -k)\n"
 
 #: src/rpminspect.c:74
 #, c-format
@@ -3834,14 +3917,14 @@ msgid "  -v, --verbose               Verbose inspection output\n"
 msgstr ""
 
 #: src/rpminspect.c:78
-#, c-format
+#, c-format, fuzzy
 msgid "                              when finished, display full path\n"
-msgstr ""
+msgstr "                              cuando finalizó, exhiba ruta completa\n"
 
 #: src/rpminspect.c:79
-#, c-format
+#, c-format, fuzzy
 msgid "  -?, --help                  Display usage information\n"
-msgstr ""
+msgstr "  -?, --help                 Exhibe información de uso\n"
 
 #: src/rpminspect.c:80
 #, c-format
@@ -3849,16 +3932,19 @@ msgid "  -V, --version               Display program version\n"
 msgstr ""
 
 #: src/rpminspect.c:81
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "\n"
 "See the rpminspect(1) man page for more information.\n"
 msgstr ""
+"\n"
+"Consulte la página man de rpminspect(1) para más información.\n"
 
 #: src/rpminspect.c:114
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to compile product release regular expression: %s"
 msgstr ""
+"*** no es capaz de compilar expresión regular de publicación del producto: %s"
 
 #: src/rpminspect.c:168 src/rpminspect.c:179
 #, c-format
@@ -3871,9 +3957,9 @@ msgid "*** product release for before build (%s) is empty"
 msgstr ""
 
 #: src/rpminspect.c:259
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to determine product release for %s and %s"
-msgstr ""
+msgstr "*** no es capaz de determinar publicación de producto para %s y %s"
 
 #: src/rpminspect.c:260
 msgid ""
@@ -3881,8 +3967,9 @@ msgid ""
 msgstr ""
 
 #: src/rpminspect.c:288
+#, fuzzy
 msgid "*** the -T and -E options are mutually exclusive"
-msgstr ""
+msgstr "*** las opciones -T y -E son mutuamente exclusivas"
 
 #: src/rpminspect.c:289 src/rpminspect.c:305 src/rpminspect.c:737
 #: src/rpminspect.c:776
@@ -3891,34 +3978,34 @@ msgid "*** See `%s --help` for more information."
 msgstr ""
 
 #: src/rpminspect.c:304
-#, c-format
+#, c-format, fuzzy
 msgid "*** unknown inspection: `%s`"
-msgstr ""
+msgstr "*** inspección desconocidoa: `%s`"
 
 #: src/rpminspect.c:455
-#, c-format
+#, c-format, fuzzy
 msgid "*** unsupported build type: `%s`."
-msgstr ""
+msgstr "*** tipo de compilación no admitido: `%s`."
 
 #: src/rpminspect.c:464
-#, c-format
+#, c-format, fuzzy
 msgid "*** invalid build type: `%s`."
-msgstr ""
+msgstr "*** tipo de compilación no válido: `%s`."
 
 #: src/rpminspect.c:481
-#, c-format
+#, c-format, fuzzy
 msgid "*** invalid output format: `%s`."
-msgstr ""
+msgstr "*** formato de salida no válida: `%s`."
 
 #: src/rpminspect.c:493
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to expand working directory: `%s`"
-msgstr ""
+msgstr "*** no es capaz de expandir directorio de trabajo: `%s`"
 
 #: src/rpminspect.c:506
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to use `%s' as working directory"
-msgstr ""
+msgstr "*** no es capaz de utilizar `%s' como directorio de trabajo"
 
 #: src/rpminspect.c:536
 #, c-format
@@ -3926,33 +4013,37 @@ msgid "%s version %s\n"
 msgstr ""
 
 #: src/rpminspect.c:539
-#, c-format
+#, c-format, fuzzy
 msgid "*** ?? getopt returned character code 0%o ??"
-msgstr ""
+msgstr "*** ?? getopt devolvió código de carácter 0%o ??"
 
 #: src/rpminspect.c:546
-#, c-format
+#, c-format, fuzzy
 msgid "Available build types:\n"
-msgstr ""
+msgstr "Tipo de compilación disponible:\n"
 
 #: src/rpminspect.c:567
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "\n"
 "Available output formats:\n"
 msgstr ""
+"\n"
+"Formatos de salida disponibles:\n"
 
 #: src/rpminspect.c:584
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "\n"
 "Available inspections:\n"
 msgstr ""
+"\n"
+"Inspecciones disponibles:\n"
 
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
-#, c-format
+#, c-format, fuzzy
 msgid "*** failed to read configuration file %s"
-msgstr ""
+msgstr "*** fallaba al leer archivo de configuración %s"
 
 #: src/rpminspect.c:658
 #, c-format
@@ -3960,22 +4051,24 @@ msgid "*** Please specify a configuration file using '-c' or supply ./%s"
 msgstr ""
 
 #: src/rpminspect.c:736
+#, fuzzy
 msgid "*** Invalid before and after build specification."
-msgstr ""
+msgstr "*** No válido antes y después de especificación de compilación."
 
 #: src/rpminspect.c:744
+#, fuzzy
 msgid "*** unable to read RPM configuration"
-msgstr ""
+msgstr "*** no es capaz de leer configuración RPM"
 
 #: src/rpminspect.c:775
-#, c-format
+#, c-format, fuzzy
 msgid "*** unsupported architecture specified: `%s`"
-msgstr ""
+msgstr "*** no se admite la arquitectura especificada: `%s`"
 
 #: src/rpminspect.c:793
-#, c-format
+#, c-format, fuzzy
 msgid "*** unable to create directory %s"
-msgstr ""
+msgstr "*** no es capaz de crear directorio %s"
 
 #: src/rpminspect.c:851
 #, c-format
@@ -3990,9 +4083,9 @@ msgid "Space required to download artifacts: %lu bytes (%s)\n"
 msgstr ""
 
 #: src/rpminspect.c:866
-#, c-format
+#, c-format, fuzzy
 msgid "Space required to unpack artifacts: %lu bytes (%s)\n"
-msgstr ""
+msgstr "Espacio requerido para desempaquetar artefactos. %lu bytes (%s)\n"
 
 #: src/rpminspect.c:878
 #, c-format
@@ -4030,18 +4123,19 @@ msgid "*** unable to determine product release or none specified (-r)."
 msgstr ""
 
 #: src/rpminspect.c:984
-#, c-format
+#, c-format, fuzzy
 msgid "Skipping %s inspection..."
-msgstr ""
+msgstr "Descarta inspección %s..."
 
 #: src/rpminspect.c:989
+#, fuzzy
 msgid "skip"
-msgstr ""
+msgstr "omitir"
 
 #: src/rpminspect.c:1009
-#, c-format
+#, c-format, fuzzy
 msgid "Running %s inspection..."
-msgstr ""
+msgstr "Ejecutando inspección %s..."
 
 #: src/rpminspect.c:1018
 msgid "pass"
@@ -4052,8 +4146,10 @@ msgid "FAIL"
 msgstr ""
 
 #: src/rpminspect.c:1046
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "\n"
 "Keeping working directory: %s\n"
 msgstr ""
+"\n"
+"Conservando directorio de trabajo: %s\n"
