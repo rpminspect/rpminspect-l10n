@@ -8,8 +8,8 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2024-09-07 08:38+0000\n"
-"Last-Translator: N M <nm@users.noreply.translate.fedoraproject.org>\n"
+"PO-Revision-Date: 2025-06-07 19:31+0000\n"
+"Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.11.4\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -26,12 +26,20 @@ msgid ""
 "checks to see if the License tag contains any unprofessional words as "
 "defined in the configuration file."
 msgstr ""
+"Verifica la cadena especificada dentro de la License etiquetada de los "
+"metadatos de RPM descritos son permisibles las licencias del software como "
+"definió por la base de datos de licencia. Además comprueba consultar si la "
+"etiqueta de License contiene cualquier palabra no profesional como definía "
+"en el archivo de configuración."
 
 #: include/inspect.h:1347
 msgid ""
 "Check all binary RPMs in the build for any empty payloads. When comparing "
 "two builds, report new packages in the after build with empty payloads."
 msgstr ""
+"Compruebe todos los RPMs binarios en la compilación para cualquier carga "
+"útil vacía. Cuándo comparar dos compilaciones, informe paquetes nuevos "
+"dentro de la compilación posterior con carga útil vacía."
 
 #: include/inspect.h:1353
 msgid ""
@@ -39,6 +47,9 @@ msgid ""
 "Packages that lost payload data from the before build to the after build are "
 "reported."
 msgstr ""
+"Comprueba todos los RPM binarios dentro antes y después de compilaciones por "
+"cualquier carga útil de datos desde la compilación anterior para la "
+"compilación posterior sea informada."
 
 #: include/inspect.h:1359
 msgid ""
@@ -50,6 +61,15 @@ msgid ""
 "before build specified, check for differences between the before and after "
 "build values of the previous RPM header values and report them."
 msgstr ""
+"Actúa algunas comprobaciones de cabecera de RPM. Primero, comprueba que el "
+"proveedor Vendor contiene la cadena esperada como esté definida en el "
+"archivo de configuración. Segundo, comprueba que el host anfitrión está "
+"dentro del subdominio esperado como está definido en el archivo de "
+"configuración. Tercero, comprobar la cadena Summary para cualquier palabra "
+"no profesional. Cuarto, comprobar en Description cualquier palabra no "
+"profesional. Finalmente, si hay antes una compilación especificada, "
+"compruebe las diferencias de valores en el anterior y el posterior tras los "
+"valores de compilación de los valores precios de cabecera RPM e informarlos."
 
 #: include/inspect.h:1365
 msgid ""
@@ -57,10 +77,16 @@ msgid ""
 "man page is compressed. Second, check that each man page contains valid "
 "content. Lastly, check that each man page is installed to the correct path."
 msgstr ""
+"Realiza algunas comprobaciones sobre las páginas man dentro de la carga útil "
+"del RPM. Primero, compruebe que cada página man esté comprimida. Segundo, "
+"compruebe que cada página man contenga contenido válido. Finalmente, "
+"compruebe que cada página man esté instalada en la ruta correcta."
 
 #: include/inspect.h:1371
 msgid "Check that XML files included in the RPM payload are well-formed."
 msgstr ""
+"Compruebe que los archivos #XML incluidos dentro de la carga útil de RPM "
+"están bien-formados."
 
 #: include/inspect.h:1377
 msgid ""
@@ -70,28 +96,43 @@ msgid ""
 "after build did not lose a PT_GNU_RELRO segment. When comparing builds and "
 "there is a list of forbidden library functions, make sure nothing uses them."
 msgstr ""
+"Realiza varias comprobaciones sobre archivos ELF. Primero, comprueba que los "
+"objetos ELF no contengan una pila ejecutable. Segundo, comprueba que los "
+"objetos ELF no contentan texto reubicados. Cuándo compara compilaciones, "
+"comprueba que los objetos ELF dentro de la compilación posterior no pierda "
+"un segmento PT_GNU_RELRO. Cuando compare compilaciones y hay un listado de "
+"funciones de biblioteca prohibida, asegúrese que nada les utiliza."
 
 #: include/inspect.h:1383
 msgid ""
 "Perform syntax and file reference checks on *.desktop files. Syntax errors "
 "and invalid file references are reported as errors."
 msgstr ""
+"Realiza comprobaciones de sintaxis y referencia en archivos *.desktop. "
+"Errores de sintaxis y referencias de archivo no válido están informados como "
+"errores."
 
 #: include/inspect.h:1389
 msgid ""
 "Check that the 'Release' tag in the RPM spec file includes the %{?dist} "
 "directive."
 msgstr ""
+"Comprueba que el etiquetado 'Release' dentro del archivo específico de RPM "
+"incluye la directiva %{?dist}."
 
 #: include/inspect.h:1395
 msgid "Ensure the spec file name conforms to the NAME.spec naming format."
 msgstr ""
+"Asegura que el nombre spec de archivo conforma al formato de nombre "
+"NOMBRE.spec."
 
 #: include/inspect.h:1403
 msgid ""
 "Ensure compliance with modularity build and packaging policies (only valid "
 "for module builds, no-op otherwise)."
 msgstr ""
+"Asegura conformidad con modularidad en normativas de compilación y "
+"empaquetado (solo válidos para compilaciones de módulo, no-op en otro caso)."
 
 #: include/inspect.h:1411
 msgid ""
@@ -100,6 +141,11 @@ msgid ""
 "exceeded.  The bytecode version is vendor specific to releases and defined "
 "in the configuration file."
 msgstr ""
+"Controla la versión mínima del bytecode Java requerido en archivos de clase, "
+"informa los cambios de versión del bytecode entre compilaciones, e informa "
+"si las versiones de bytecode son superadas.  La versión bytecode es "
+"específica del proveedor para despliegues y definidos dentro del archivo de "
+"configuración."
 
 #: include/inspect.h:1417
 msgid ""
@@ -112,6 +158,16 @@ msgid ""
 "C and C++ header files are preprocessed and compared using diff(1).  Any "
 "changes with diff output are included in the results."
 msgstr ""
+"El informe cambió archivos desde la compilación anterior a la compilación "
+"posterior.  Ciertos cambios de archivo elevarán avisos adicionales si el "
+"concierto es más crítico que tan solo informar cambios (p.ej., un impacto de "
+"seguridad sospechoso).  Cualquier archivo comprimido con gzip, bzip2, o xz "
+"tendrán su contenido descomprimido solo comparado, lo cual permitirá cambiar "
+"a lo largo del nivel de compresión utilizado.  Los archivos del catálogo de "
+"mensaje (.mo) son desempaquetados y comparados utilizando diff(1).  Los "
+"archivos de cabecera públicos de C y C++ son pre-procesados y compadados "
+"utilizando diff(1).  Cualquier cambio con la salida diff son incluidos "
+"dentro del resultado."
 
 #: include/inspect.h:1423
 msgid ""
@@ -1420,15 +1476,15 @@ msgstr ""
 
 #: lib/inspect_annocheck.c:170
 msgid "PASSED"
-msgstr "PASADO"
+msgstr "APROBADO"
 
 #: lib/inspect_annocheck.c:172 lib/output_summary.c:59
 msgid "FAILED"
-msgstr "FALLÓ"
+msgstr "INCORRECTO"
 
 #: lib/inspect_annocheck.c:174
 msgid "MAYBE"
-msgstr "TAL VEZ"
+msgstr "QUIZÁ"
 
 #: lib/inspect_annocheck.c:176
 msgid "skipped"
@@ -3280,7 +3336,7 @@ msgstr ""
 
 #: lib/output_summary.c:53
 msgid "added"
-msgstr "Añadido"
+msgstr "añadido"
 
 #: lib/output_summary.c:55
 msgid "removed"
@@ -3292,7 +3348,7 @@ msgstr "cambiado"
 
 #: lib/output_summary.c:61
 msgid "ok"
-msgstr "ok"
+msgstr "correcto"
 
 #: lib/output_summary.c:63
 msgid "unknown"
@@ -3416,7 +3472,7 @@ msgstr ""
 
 #: lib/strfuncs.c:252 lib/strfuncs.c:284
 msgid "OK"
-msgstr "OK"
+msgstr "CORRECTO"
 
 #: lib/strfuncs.c:254 lib/strfuncs.c:286
 msgid "INFO"
@@ -3456,7 +3512,7 @@ msgstr "Seguridad"
 
 #: lib/strfuncs.c:543
 msgid "regular file"
-msgstr "archivo regular"
+msgstr "archivo usual"
 
 #: lib/strfuncs.c:545
 msgid "directory"
@@ -3484,7 +3540,7 @@ msgstr ""
 
 #: lib/strfuncs.c:614
 msgid "Success."
-msgstr "Éxito."
+msgstr "Logrado."
 
 #: lib/strfuncs.c:616
 msgid "One or more inspections failed."
