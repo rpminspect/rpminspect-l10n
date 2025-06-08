@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-07 23:29+0000\n"
+"PO-Revision-Date: 2025-06-08 08:55+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -556,20 +556,29 @@ msgstr ""
 #: include/inspect.h:1621
 msgid "Perform syntax check on udev rules files using udevadm verify."
 msgstr ""
+"Realice una verificación de sintaxis en los archivos de reglas de udev "
+"usando udevadm verify."
 
 #: include/results.h:31
 msgid "Change the string specified on the 'Vendor:' line in the spec file."
 msgstr ""
+"Cambie la cadena especificada en la línea 'Vendor:' en el archivo de "
+"especificaciones."
 
 #: include/results.h:38
 msgid "Make sure the SRPM is built on a host within the expected subdomain."
 msgstr ""
+"Asegúrese de que el SRPM esté construido en un host dentro del subdominio "
+"esperado."
 
 #: include/results.h:45
 msgid ""
 "Unprofessional language as defined in the configuration file was found in "
 "the text shown.  Remove or change the offending words and rebuild."
 msgstr ""
+"Se ha encontrado un idioma inapropiado, según lo definido en el archivo de "
+"configuración, en el texto mostrado. Elimine o modifique las palabras "
+"ofensivas y reconstruya el sistema."
 
 #: include/results.h:60 include/results.h:75
 #, c-format
@@ -577,6 +586,8 @@ msgid ""
 "Check to see if you eliminated a subpackage but still have the %package and/"
 "or the %files section for it."
 msgstr ""
+"Verifique si eliminó un subpaquete pero aún tiene la sección %package y/o "
+"%files para él."
 
 #: include/results.h:90
 msgid ""
