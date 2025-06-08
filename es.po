@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-08 08:55+0000\n"
+"PO-Revision-Date: 2025-06-08 09:52+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -587,7 +587,7 @@ msgid ""
 "or the %files section for it."
 msgstr ""
 "Verifique si eliminó un subpaquete pero aún tiene la sección %package y/o "
-"%files para él."
+"sección %files para ello."
 
 #: include/results.h:90
 msgid ""
@@ -595,6 +595,10 @@ msgid ""
 "distribution (e.g., GPLv2+).  If the license in question is approved, the "
 "license database needs updating in the rpminspect-data package."
 msgstr ""
+"La etiqueta Licence debe contener una cadena de licencia aprobada como "
+"definió por la distribución (p.ej., GPLv2+).  Si está aprobada la licencia "
+"en cuestión, la base de datos de licencia necesita actualizarse en el "
+"paquete rpminspect-data."
 
 #: include/results.h:97
 msgid ""
@@ -602,6 +606,10 @@ msgid ""
 "valid licensedb file.  This is also commonly due to a missing vendor "
 "specific rpminspect-data package on the system."
 msgstr ""
+"Asegure que la especificación de licensedb dentro de la configuración "
+"rpminspect está puesta para un archivo licensedb válido.  Esto además es "
+"comúnmente debido a una especificación de proveedor ausente en el paquete "
+"rpminspect-data del sistema."
 
 #: include/results.h:104
 msgid ""
@@ -615,33 +623,43 @@ msgstr ""
 
 #: include/results.h:119 include/results.h:154
 msgid "Ensure all object files are compiled with -fPIC"
-msgstr ""
+msgstr "Asegure todos los archivos objeto estén compilados con -fPIC"
 
 #: include/results.h:126
 msgid ""
 "Ensure that the package is being built with the correct compiler and "
 "compiler flags"
 msgstr ""
+"Asegure que el paquete esté siendo compilado con el compilador correcto y "
+"los indicadores del compilador"
 
 #: include/results.h:133
 msgid ""
 "The data in an ELF file appears to be corrupt; ensure that packaged ELF "
 "files are not being truncated or incorrectly modified"
 msgstr ""
+"Los datos dentro del un archivo ELF parece estar corrupto; asegure que los "
+"archivos ELF empaquetados no están siendo truncados o modificados "
+"incorrectamente"
 
 #: include/results.h:140
 msgid ""
 "An ELF stack is marked as executable. Ensure that no execstack options are "
 "being passed to the linker, and that no functions are defined on the stack."
 msgstr ""
+"Una pula ELF está marcada como ejecutable. Asegúrese que ninguna de las "
+"opciones de execstack está siendo pasada para el enlazador, y que ninguna de "
+"las funciones están definidas en la pila."
 
 #: include/results.h:147
 msgid "Ensure executables are linked with with '-z relro -z now'"
-msgstr ""
+msgstr "Asegure ejecutables estén enlazados con '-z relro -z now'"
 
 #: include/results.h:169
 msgid "Correct the errors in the man page as reported by the libmandoc parser."
 msgstr ""
+"Corrija los errores dentro de la página man como informó por el intérprete "
+"libmandoc."
 
 #: include/results.h:176
 msgid ""
@@ -649,34 +667,49 @@ msgid ""
 "in the directory beneath /usr/share/man that matches the section number of "
 "the page."
 msgstr ""
+"Corrija la ruta de instalación para la página man. Las páginas man deben "
+"estar instalados dentro del directorio entre /usr/share/man que coincida con "
+"el número de la sección de la página."
 
 #: include/results.h:191
 msgid "Correct the reported errors in the XML document"
-msgstr ""
+msgstr "Corrige los errores informados en el documento XML"
 
 #: include/results.h:206
 msgid ""
 "Refer to the Desktop Entry Specification at https://standards.freedesktop."
 "org/desktop-entry-spec/latest/ for help correcting the errors and warnings"
 msgstr ""
+"Refiera a la Especificación de Apunte de Escritorio en https://"
+"standards.freedesktop.org/desktop-entry-spec/latest/ para ayuda corrigiendo "
+"los errores y advertencias"
 
 #: include/results.h:221
 msgid ""
 "The Release: tag in the spec file must include a '%{?dist}' string.  Please "
 "add this to the spec file per the distribution packaging guidelines."
 msgstr ""
+"La etiqueta Release: en el archivo spec debe incluir una cadena '%{?dist}'.  "
+"Añada esto para el archivo spec por la líneas de guía del empaquetado de la "
+"distribución."
 
 #: include/results.h:236
 msgid ""
 "The spec file name does not match the expected NAME.spec format.  Rename the "
 "spec file to conform to this policy."
 msgstr ""
+"El nombre del archivo spec no coincide con el formato NOMBRE.spec "
+"especificado.  Renombre el archivo spec para estar en conforme a esta "
+"normativa."
 
 #: include/results.h:253
 msgid ""
 "This package is part of a module but is missing the %{modularitylabel} "
 "header tag.  Add this as a %define in the spec file and rebuild."
 msgstr ""
+"Este paquete es parte de un módulo pero le falta la etiqueta de cabecera "
+"%{modularitylabel}.  Añade esto como una %define dentro del archivo spec y "
+"recompile."
 
 #: include/results.h:260
 msgid ""
@@ -739,6 +772,9 @@ msgid ""
 "permissions are expected, update %s and send a patch to the project that "
 "owns it."
 msgstr ""
+"Asegúrese que la sección %%files incluya la macro %%defattr. Si estos "
+"permisos son esperados, actualice %s y envíe un parche para el proyecto que "
+"lo pertenezca."
 
 #: include/results.h:374
 #, c-format
@@ -747,6 +783,10 @@ msgid ""
 "configuration, which is usually root. If this ownership is expected, update "
 "%s and send a patch to the project that owns it."
 msgstr ""
+"Los archivos de ruta bin deben ser propietarios por el conjunto bin_owner "
+"dentro de la configuración rpminspect, la cual es usualmente root. Si esta "
+"posesión es esperada, actualice %s y envíe un parche para el proyecto que lo "
+"pertenezca."
 
 #: include/results.h:381
 #, c-format
@@ -755,6 +795,10 @@ msgid ""
 "configuration, which is usually root. If this ownership is expect, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"Los archivos de ruta binaria debe ser propiedad por el conjunto bin_group "
+"dentro de la configuración rpminspect, la cual usualmente es root. Si esta "
+"propiedad es esperada, actualice %s y envíe un parche al proyecto que lo "
+"pertenezca."
 
 #: include/results.h:388
 #, c-format
@@ -779,6 +823,10 @@ msgid ""
 "process to set correct owner and group information. If expected, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"Verifique los cambios de propiedad especificados. Si no, ajunte el proceso "
+"de compilación del paquete para establecer propiedad correcta e información "
+"del grupo. Si se esperaban, actualice %s y envíe el parche al proyecto que "
+"lo pertenezca."
 
 #: include/results.h:409
 msgid ""
