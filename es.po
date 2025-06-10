@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-10 19:21+0000\n"
+"PO-Revision-Date: 2025-06-10 20:13+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -1137,6 +1137,12 @@ msgid ""
 "and have a non-symlink turn in to a symlink, ensure this is deliberate.  "
 "NOTE:  You cannot turn a directory in to a symlink due to RPM limitations."
 msgstr ""
+"Asegure que el punto de los enlaces simbólicos a un destino válido dentro de "
+"uno de los subpaquetes de la compilación; bailando enlaces simbólicos no "
+"está permitido.  Si está comparando compilaciones y tiene un enlace no "
+"simbólico dentro para un enlace simbólico, asegure esto esté deliberado.  "
+"NOTA:  No se puede volver a un directorio dentro para un enlace simbólico "
+"debido a limitaciones de RPM."
 
 #: include/results.h:618
 #, c-format
@@ -1165,6 +1171,9 @@ msgid ""
 "is intended and if necessary fix the spec file so the correct file is "
 "included in the built package."
 msgstr ""
+"En muchos casos el tipo MIME cambiado está deliberado.  Verifique que el "
+"cambio es intencionado y si necesario repara el archivo spec tal que el "
+"archivo correcto esté incluido dentro del paquete construido."
 
 #: include/results.h:648
 msgid ""
@@ -1172,6 +1181,10 @@ msgid ""
 "users.  See the abidiff(1) documentation and the distribution ABI policies "
 "to determine if this detected change is allowed."
 msgstr ""
+"Cambios ABI introducido durante actualizaciones de mantenimiento puede "
+"dirigir a problemas para usuarios.  Consulte la documentación de abidiff(1) "
+"y las normativas ABI de distribución para determinar si este cambio "
+"detectado está permitido."
 
 #: include/results.h:658
 msgid ""
@@ -1179,6 +1192,10 @@ msgid ""
 "problems for users.  See the libabigail documentation and the distribution "
 "KMI policy to determine if this detected change is allowed."
 msgstr ""
+"El Interfaz de Módulo del Kernel introducido durante actualizaciones de "
+"mantenimiento pueden llevar a problemas para usuarios.  Consulte la "
+"documentación libabigail y la normativa de distribución KMI para determinar "
+"si este cambio detectado está permitido."
 
 #: include/results.h:668
 #, c-format
@@ -1188,6 +1205,11 @@ msgid ""
 "configuration files, make sure the package can handle upgrading an existing "
 "package -or- honor the old file locations."
 msgstr ""
+"Cambia a %config sería hecho cuidadosamente.  Asegure que tenga instalado el "
+"archivo correcto y dentro del lugar correcto.  Si un paquete está "
+"estructurando archivos de configuración, asegúrese que el paquete puede "
+"manipular modernizar un paquete existente -o- honrar los lugares del archivo "
+"antiguo."
 
 #: include/results.h:678
 #, c-format
@@ -1196,6 +1218,10 @@ msgid ""
 "the package is not a rebase.  Sometimes upstream projects rename or move "
 "documentation files and the spec file needs to account for those changes."
 msgstr ""
+"Cambios encontrados entre los archivos %doc.  Verifique estos cambios son "
+"intencionados si el paquete no es un rebase.  Algunas vces  renombra los "
+"proyectos en proyecto o mueven archivos de documentación y el archivo spec "
+"necesarios a cuenta para aquellos cambios."
 
 #: include/results.h:688
 msgid ""
@@ -1899,7 +1925,7 @@ msgstr "*** tras libannocheck_run_tests: %s (%d)"
 
 #: lib/inspect_annocheck.c:461 lib/inspect_annocheck.c:613
 msgid "lost -D_FORTIFY_SOURCE in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "perdió -D_FORTIFY_SOURCE en ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_annocheck.c:464
 #, c-format
@@ -1919,17 +1945,17 @@ msgstr "libannocheck '%s' prueba ahora aprobada para %s sobre %s"
 #: lib/inspect_annocheck.c:495
 #, c-format
 msgid "libannocheck '%s' test now fails for %s on %s"
-msgstr ""
+msgstr "libannocheck '%s' ahora prueba fallos para %s sobre %s"
 
 #: lib/inspect_annocheck.c:498 lib/inspect_annocheck.c:505
 #, c-format
 msgid "libannocheck '%s' test fails for %s on %s"
-msgstr ""
+msgstr "libannocheck '%s' prueba falla para %s sobre %s"
 
 #: lib/inspect_annocheck.c:503
 #, c-format
 msgid "libannocheck '%s' test passes for %s on %s"
-msgstr ""
+msgstr "libannocheck '%s' prueba pasada para %s sobre %s"
 
 #: lib/inspect_annocheck.c:551 lib/inspect_annocheck.c:569
 #, c-format
@@ -1939,68 +1965,67 @@ msgstr ""
 #: lib/inspect_annocheck.c:553
 #, c-format
 msgid "annocheck '%s' test now passes for %s on %s"
-msgstr ""
+msgstr "annocheck '%s' prueba ahora pasada para %s sobre %s"
 
 #: lib/inspect_annocheck.c:555
 #, c-format
 msgid "annocheck '%s' test now fails for %s on %s"
-msgstr ""
+msgstr "annocheck '%s' prueba ahora falla para %s sobre %s"
 
 #: lib/inspect_annocheck.c:561 lib/inspect_annocheck.c:571
 #, c-format
 msgid "annocheck '%s' test fails for %s on %s"
-msgstr ""
+msgstr "annocheck '%s' prueba falla para %s sobre %s"
 
 #: lib/inspect_annocheck.c:616
 #, c-format
 msgid "%s may have lost -D_FORTIFY_SOURCE on %s"
-msgstr ""
+msgstr "%s puede haber perdido -D_FORTIFY_SOURCE sobre %s"
 
 #: lib/inspect_arch.c:77
 msgid "lost ${ARCH}"
-msgstr ""
+msgstr "pierde ${ARCH}"
 
 #: lib/inspect_arch.c:79
 #, c-format
 msgid "Architecture '%s' has disappeared"
-msgstr ""
+msgstr "Arquitectura '%s' ha desaparecido"
 
 #: lib/inspect_arch.c:94
 msgid "gained ${ARCH}"
-msgstr ""
+msgstr "ganaba ${ARCH}"
 
 #: lib/inspect_arch.c:96
 #, c-format
 msgid "Architecture '%s' has appeared"
-msgstr ""
+msgstr "Arquitectura '%s' ha aparecido"
 
 #: lib/inspect_badfuncs.c:152
 #, c-format
 msgid "Forbidden function symbols found:\n"
-msgstr ""
+msgstr "Símbolos de función prohibida encontrado:\n"
 
 #: lib/inspect_badfuncs.c:168
-#, c-format, fuzzy
+#, c-format
 msgid "%s may use forbidden functions on %s"
-msgstr "%s puede utilizar funciones prohibida en %s"
+msgstr "%s puede utilizar funciones prohibida sobre %s"
 
 #: lib/inspect_badfuncs.c:175
 msgid "forbidden functions in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "funciones prohibidas en ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_capabilities.c:82
-#, c-format, fuzzy
+#, c-format
 msgid "File capabilities for %s changed from '%s' to '%s' in %s on %s\n"
 msgstr ""
 "Capacidades de archivo para %s cambiada desde '%s' a '%s' en %s sobre %s\n"
 
 #: lib/inspect_capabilities.c:86
-#, fuzzy
 msgid "${FILE} capabilities on ${ARCH}"
 msgstr "${FILE} de capacidades sobre ${ARCH}"
 
 #: lib/inspect_capabilities.c:98
-#, c-format, fuzzy
+#, c-format
 msgid "File capabilities found for %s: '%s' in %s on %s\n"
 msgstr "Capacidades de archivo encontrado para %s: '%s' en %s sobre %s\n"
 
@@ -2010,6 +2035,8 @@ msgid ""
 "File capabilities list entry found for %s: '%s' in %s on %s, matches "
 "package\n"
 msgstr ""
+"Encontrado apunte de listado de capacidades del archivo para %s: '%s' dentro "
+"de %s sobre %s, coincide con paquete\n"
 
 #: lib/inspect_capabilities.c:145
 #, c-format
@@ -2139,7 +2166,7 @@ msgstr ""
 
 #: lib/inspect_debuginfo.c:221
 msgid "missing debugging symbols"
-msgstr ""
+msgstr "faltando símbolos depurantes"
 
 #: lib/inspect_debuginfo.c:224
 #, c-format
@@ -2149,11 +2176,11 @@ msgstr "Ausente: %s"
 #: lib/inspect_debuginfo.c:235
 #, c-format
 msgid "%s in %s on %s contains debugging symbols"
-msgstr ""
+msgstr "%s dentro de %s en %s contiene símbolos depurantes"
 
 #: lib/inspect_debuginfo.c:239
 msgid "contains debugging symbols"
-msgstr ""
+msgstr "contiene símbolos depurantes"
 
 #: lib/inspect_debuginfo.c:241
 #, c-format
@@ -2163,14 +2190,14 @@ msgstr "Contiene: %s"
 #: lib/inspect_debuginfo.c:260
 #, c-format
 msgid "%s in %s on %s gained debugging symbols"
-msgstr ""
+msgstr "%s interno a %s sobre %s ganó símbolos depurantes"
 
 #: lib/inspect_debuginfo.c:261
 msgid "gained debugging symbols"
-msgstr ""
+msgstr "ganó símbolos depurantes"
 
 #: lib/inspect_debuginfo.c:266
-#, c-format, fuzzy
+#, c-format
 msgid "Gained: %s"
 msgstr "Ganado: %s"
 
@@ -2181,7 +2208,7 @@ msgstr "%s interno a %s sobre %s pierde símbolos de depuración"
 
 #: lib/inspect_debuginfo.c:287
 msgid "lost debugging symbols"
-msgstr "pierde símbolos de depuración"
+msgstr "pierde símbolos depurantes"
 
 #: lib/inspect_debuginfo.c:292
 #, c-format
@@ -2194,6 +2221,8 @@ msgid ""
 "%s in %s on %s carries .gosymtab but should not have the .gnu_debugdata "
 "symbol"
 msgstr ""
+"%s interno a %s sobre %s lleva .gosymtab pero tendría el símbolo "
+".gnu_debugdata"
 
 #: lib/inspect_debuginfo.c:320
 msgid ".gnu_debugdata with .gosymtab"
@@ -2205,10 +2234,12 @@ msgid ""
 "Desktop file %s on %s references executable %s but %s is not executable by "
 "all"
 msgstr ""
+"Archivo %s de escritorio en %s referencia ejecutable %s pero %s no es "
+"ejecutable para todos"
 
 #: lib/inspect_desktop.c:279
 msgid "${FILE} references non-executable file on ${ARCH}"
-msgstr ""
+msgstr "${FILE} referencia archivo no-ejecutable sobre ${ARCH}"
 
 #: lib/inspect_desktop.c:300
 #, c-format
@@ -2217,6 +2248,9 @@ msgid ""
 "executable of that name, however it has a TryExec key so it may be ignored "
 "in case %s does not exist"
 msgstr ""
+"Archivo %s de escritorio sobre %s referencia ejecutable %s; no subpaquetes "
+"contienen un ejecutable de ese nombre, sin embargo tiene una clave TryExec "
+"tal que puede ser ignorado en caso de %s no existe"
 
 #: lib/inspect_desktop.c:308
 #, c-format
@@ -2224,9 +2258,10 @@ msgid ""
 "Desktop file %s on %s references executable %s but no subpackages contain an "
 "executable of that name"
 msgstr ""
+"Archivo %s de escritorio en %s se referencia ejecutable %s pero no "
+"subpaquetes contiene un ejecutable de ese nombre"
 
 #: lib/inspect_desktop.c:312
-#, fuzzy
 msgid "${FILE} references missing executable on ${ARCH}"
 msgstr "${FILE} le falta referencias ejecutables sobre ${ARCH}"
 
@@ -2234,24 +2269,25 @@ msgstr "${FILE} le falta referencias ejecutables sobre ${ARCH}"
 #, c-format
 msgid "Desktop file %s on %s references icon %s but %s is not readable by all"
 msgstr ""
+"Archivo %s de escritorio sobre %s referencia icono %s pero %s no es legible "
+"por todos"
 
 #: lib/inspect_desktop.c:358
-#, fuzzy
 msgid "${FILE} references unreadble icon on ${ARCH}"
-msgstr "${FILE} referencias de ícono no legible sobre ${ARCH}"
+msgstr "${FILE} referencias de icono no legible sobre ${ARCH}"
 
 #: lib/inspect_desktop.c:376
 #, c-format
 msgid "Desktop file %s on %s references icon %s but no subpackages contain %s"
 msgstr ""
+"Archivo %s de escritorio sobre %s referencia icono %s pero ningún subpaquete "
+"contiene %s"
 
 #: lib/inspect_desktop.c:380
-#, fuzzy
 msgid "${FILE} references missing icon on ${ARCH}"
-msgstr "${FILE} le falta referencias de ícono en ${ARCH}"
+msgstr "${FILE} le falta referencias de icono en ${ARCH}"
 
 #: lib/inspect_desktop.c:452
-#, fuzzy
 msgid "${FILE} is not valid on ${ARCH}"
 msgstr "${FILE} no es válido sobre ${ARCH}"
 
@@ -2261,26 +2297,31 @@ msgid ""
 "File %s is no longer a valid desktop entry file on %s; desktop-file-validate "
 "reports:"
 msgstr ""
+"El archivo %s no es más largo que un archivo de apunte de escroto válido en "
+"%s; desktop-file-validate informa:"
 
 #: lib/inspect_desktop.c:457
 #, c-format
 msgid ""
 "New file %s is not a valid desktop file on %s; desktop-file-validate reports:"
 msgstr ""
+"Archivo nuevo %s no es un archivo de escritorio válido en %s; desktop-file-"
+"validate informa:"
 
 #: lib/inspect_desktop.c:459
 #, c-format
 msgid ""
 "File %s is not a valid desktop file on %s; desktop-file-validate reports:"
 msgstr ""
+"Archivo %s no es un archivo de escritorio válido en %s; desktop-file-"
+"validate informa:"
 
 #: lib/inspect_disttag.c:184
-#, c-format, fuzzy
+#, c-format
 msgid "The %s file is missing the %s tag."
 msgstr "Al archivo %s le falta la etiqueta %s."
 
 #: lib/inspect_disttag.c:186
-#, fuzzy
 msgid "${FILE} missing Release tag"
 msgstr "${FILE} le falta etiqueta Release"
 
@@ -2351,12 +2392,12 @@ msgstr "Símbolo(s) DT_NEEDED añadidos a %s en %s"
 #: lib/inspect_elf.c:433
 #, c-format
 msgid "Object still has executable stack (no GNU-stack note): %s on %s"
-msgstr ""
+msgstr "Objeto aún tiene pila ejecutable (nota no pila GNU): %s sobre %s"
 
 #: lib/inspect_elf.c:435
 #, c-format
 msgid "Object has executable stack (no GNU-stack note): %s on %s"
-msgstr ""
+msgstr "Objeto tiene pila ejecutable (nota no pila GNU): %s sobre %s"
 
 #: lib/inspect_elf.c:438
 #, c-format
@@ -2622,19 +2663,20 @@ msgid ""
 "Command: %s\n"
 "Exit code: %d%s%s"
 msgstr ""
+"Instrucción: %s\n"
+"Salida de código: %d%s%s"
 
 #: lib/inspect_kmod.c:28
-#, fuzzy
 msgid "${FILE} kernel module alias on ${ARCH}"
 msgstr "${FILE} alias del módulo de kernel en ${ARCH}"
 
 #: lib/inspect_kmod.c:31
-#, c-format, fuzzy
+#, c-format
 msgid "Kernel module '%s' lost alias '%s'"
 msgstr "Módulo del kernel '%s' perdió alias '%s'"
 
 #: lib/inspect_kmod.c:41
-#, c-format, fuzzy
+#, c-format
 msgid "Kernel module '%s' gained alias '%s'"
 msgstr "Módulo del kernel '%s' ganó alias '%s'"
 
@@ -2645,108 +2687,104 @@ msgstr ""
 
 #: lib/inspect_kmod.c:191 lib/inspect_kmod.c:208
 msgid "${FILE} kernel module parameter on ${ARCH}"
-msgstr ""
+msgstr "Parámetro ${FILE} del módulo del kernel en ${ARCH}"
 
 #: lib/inspect_kmod.c:205
 #, c-format
 msgid "Kernel module %s adds parameter '%s' (was not present in %s)."
-msgstr ""
+msgstr "Módulo de kernel %s añade parámetro '%s' (era no presente en %s)."
 
 #: lib/inspect_kmod.c:226
 #, c-format
 msgid "Kernel module %s removes dependency '%s' (was present in %s)."
-msgstr ""
+msgstr "Módulo de kernel %s retira dependencia '%s' (fue presente en %s)."
 
 #: lib/inspect_kmod.c:229
-#, fuzzy
 msgid "${FILE} kernel module dependency on ${ARCH}"
 msgstr "${FILE} dependencia de módulo del kernel sobre ${ARCH}"
 
 #: lib/inspect_kmod.c:243
 #, c-format
 msgid "Kernel module %s adds dependency '%s' (was not present in %s)."
-msgstr ""
+msgstr "Módulo de kernel %s añade dependencia '%s' (no era presente en %s)."
 
 #: lib/inspect_kmod.c:246
-#, fuzzy
 msgid "${FILE} kernel module parameter"
 msgstr "${FILE} parámetro del módulo del kernel"
 
 #: lib/inspect_license.c:47
-#, c-format, fuzzy
+#, c-format
 msgid "*** parse error in license database %s"
 msgstr "*** error de intérprete en base de datos de licencia %s"
 
 #: lib/inspect_license.c:135
 msgid "*** problem checking license database"
-msgstr ""
+msgstr "*** problema comprobando base de datos de licencia"
 
 #: lib/inspect_license.c:464
-#, c-format, fuzzy
+#, c-format
 msgid "Unapproved license in %s: %s"
 msgstr "Licencia inapropiada en %s: %s"
 
 #: lib/inspect_license.c:505
 #, c-format
 msgid "Empty License Tag in %s"
-msgstr ""
+msgstr "Etiquetado de License vacío en %s"
 
 #: lib/inspect_license.c:509
 msgid "missing License tag in ${FILE}"
-msgstr ""
+msgstr "etiqueta de License ausente en ${FILE}"
 
 #: lib/inspect_license.c:518
-#, c-format, fuzzy
+#, c-format
 msgid "Valid License Tag in %s: %s"
 msgstr "Etiqueta de Licencia Válida en %s: %s"
 
 #: lib/inspect_license.c:532
 #, c-format
 msgid "License Tag contains unprofessional language in %s: %s"
-msgstr ""
+msgstr "Etiqueta License contiene idioma no profesional en %s: %s"
 
 #: lib/inspect_license.c:536
 msgid "unprofessional language in License tag in ${FILE}"
-msgstr ""
+msgstr "idioma no profesional en etiqueta de License en ${FILE}"
 
 #: lib/inspect_license.c:573
 msgid "Missing license database(s)."
-msgstr ""
+msgstr "Licencia ausente en base de datos."
 
 #: lib/inspect_license.c:577
 msgid "missing license database"
-msgstr ""
+msgstr "licencia ausente en base de datos"
 
 #: lib/inspect_lostpayload.c:62
-#, c-format, fuzzy
+#, c-format
 msgid "Existing subpackage %s is now missing on %s"
 msgstr "Existiendo subpaquete %s ahora falta en %s"
 
 #: lib/inspect_lostpayload.c:66
 msgid "missing subpackage ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "subpaquete ausente ${FILE} en el ${ARCH}"
 
 #: lib/inspect_lostpayload.c:82
 #, c-format
 msgid "Package %s on %s continues to be empty (no payloads)"
-msgstr ""
+msgstr "Paquete %s en %s continua para estar vacío (sin cargas útiles)"
 
 #: lib/inspect_lostpayload.c:86
-#, fuzzy
 msgid "existing empty subpackage ${FILE} on ${ARCH}"
 msgstr "existiendo subpaquete ${FILE} vacío en ${ARCH}"
 
 #: lib/inspect_lostpayload.c:93
 #, c-format
 msgid "Package %s on %s became empty (no payloads)"
-msgstr ""
+msgstr "Paquete %s en %s se vuelve vacío (sin carga útil)"
 
 #: lib/inspect_lostpayload.c:97
 msgid "subpackage ${FILE} on ${ARCH} now has empty payload"
-msgstr ""
+msgstr "subpaquete ${FILE} sobre ${ARCH} ahora tiene carga útil vacía"
 
 #: lib/inspect_lto.c:144
-#, fuzzy
 msgid "${FILE} not portable on ${ARCH}"
 msgstr "${FILE} no portable en ${ARCH}"
 
@@ -2755,69 +2793,74 @@ msgstr "${FILE} no portable en ${ARCH}"
 msgid ""
 "%s contains symbols [%s] on %s; this is not portable across compiler versions"
 msgstr ""
+"%s contiene símbolos [%s] sobre %s; esto no es portable a través de "
+"versiones de compilador"
 
 #: lib/inspect_lto.c:168
 #, c-format
 msgid ""
 "%s contains symbol [%s] on %s; this is not portable across compiler versions"
 msgstr ""
+"%s contiene símbolo [%s] sobre %s; esto no es portable a través de versiones "
+"de compilador"
 
 #: lib/inspect_manpage.c:52
 #, c-format
 msgid "Error parsing %s:%d:%d: %s: %s: %s\n"
-msgstr ""
+msgstr "Error interpretando %s:%d:%d: %s: %s: %s\n"
 
 #: lib/inspect_manpage.c:81
 #, c-format
 msgid "*** unable to compile man page path regular expression: %s"
 msgstr ""
+"*** no es capaz de compilar página man con expresión regular de ruta: %s"
 
 #: lib/inspect_manpage.c:179
-#, c-format, fuzzy
+#, c-format
 msgid "Unable to open man page %s\n"
 msgstr "No es capaz de abrir la página man %s\n"
 
 #: lib/inspect_manpage.c:187
 #, c-format
 msgid "Man page %s does not end in %s\n"
-msgstr ""
+msgstr "Página man %s no termina en %s\n"
 
 #: lib/inspect_manpage.c:195
 #, c-format
 msgid "man page with %s suffix is not really compressed with gzip\n"
-msgstr ""
+msgstr "página man con sufijo %s no está realmente comprimida con gzip\n"
 
 #: lib/inspect_manpage.c:236
-#, c-format, fuzzy
+#, c-format
 msgid "Errors found validating %s\n"
 msgstr "Errores encontrados validando %s\n"
 
 #: lib/inspect_manpage.c:299
 #, c-format
 msgid "Man page %s is possibly empty on %s in %s"
-msgstr ""
+msgstr "Página man %s es posiblemente vacía en %s dentro de %s"
 
 #: lib/inspect_manpage.c:302
 msgid "empty man page ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "página man vacía ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_manpage.c:315
 #, c-format
 msgid "Man page checker reported problems with %s on %s in %s"
-msgstr ""
+msgstr "Comprobante de página man informó problemas con %s sobre %s en %s"
 
 #: lib/inspect_manpage.c:318
 msgid "man page ${FILE} on ${ARCH} has errors"
-msgstr ""
+msgstr "página man ${FILE} sobre ${ARCH} tiene errores"
 
 #: lib/inspect_manpage.c:327
 #, c-format
 msgid "Man page %s has incorrect path on %s in %s"
-msgstr ""
+msgstr "Página man %s tiene ruta incorrecta sobre %s en %s"
 
 #: lib/inspect_manpage.c:330
 msgid "man page ${FILE} on ${ARCH} has incorrect path"
-msgstr ""
+msgstr "página man ${FILE} en ${ARCH} tiene ruta incorrecta"
 
 #: lib/inspect_metadata.c:40
 #, c-format
