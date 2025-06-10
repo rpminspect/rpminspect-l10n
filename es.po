@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-10 18:32+0000\n"
+"PO-Revision-Date: 2025-06-10 19:21+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -2029,6 +2029,8 @@ msgid ""
 "File capabilities for %s (%s) not found on the capabilities list in %s on "
 "%s\n"
 msgstr ""
+"Capacidades se archivo para %s (%s) no encontrado en el listado de "
+"capacidades en %s sobre %s\n"
 
 #: lib/inspect_capabilities.c:184
 #, c-format
@@ -2082,7 +2084,7 @@ msgid "File %s changed content in %s on %s."
 msgstr ""
 
 #: lib/inspect_changelog.c:235 lib/inspect_changelog.c:369
-#, c-format, fuzzy
+#, c-format
 msgid "%%changelog"
 msgstr "%%changelog"
 
@@ -2091,7 +2093,7 @@ msgid "Inspection skipped because this build's type is not `rpm'."
 msgstr ""
 
 #: lib/inspect_config.c:65
-#, c-format, fuzzy
+#, c-format
 msgid "%config ${FILE}"
 msgstr "%config ${FILE}"
 
@@ -2142,7 +2144,7 @@ msgstr ""
 #: lib/inspect_debuginfo.c:224
 #, c-format
 msgid "Missing: %s"
-msgstr ""
+msgstr "Ausente: %s"
 
 #: lib/inspect_debuginfo.c:235
 #, c-format
@@ -2156,7 +2158,7 @@ msgstr ""
 #: lib/inspect_debuginfo.c:241
 #, c-format
 msgid "Contains: %s"
-msgstr ""
+msgstr "Contiene: %s"
 
 #: lib/inspect_debuginfo.c:260
 #, c-format
@@ -2173,18 +2175,18 @@ msgid "Gained: %s"
 msgstr "Ganado: %s"
 
 #: lib/inspect_debuginfo.c:286
-#, c-format, fuzzy
+#, c-format
 msgid "%s in %s on %s lost debugging symbols"
-msgstr "%s en %s en %s pierde símbolos de depuración"
+msgstr "%s interno a %s sobre %s pierde símbolos de depuración"
 
 #: lib/inspect_debuginfo.c:287
 msgid "lost debugging symbols"
-msgstr ""
+msgstr "pierde símbolos de depuración"
 
 #: lib/inspect_debuginfo.c:292
 #, c-format
 msgid "Lost: %s"
-msgstr ""
+msgstr "Pierde: %s"
 
 #: lib/inspect_debuginfo.c:318
 #, c-format
@@ -2194,7 +2196,6 @@ msgid ""
 msgstr ""
 
 #: lib/inspect_debuginfo.c:320
-#, fuzzy
 msgid ".gnu_debugdata with .gosymtab"
 msgstr ".gnu_debugdata con .gosymtab"
 
@@ -2298,15 +2299,15 @@ msgstr "${FILE} no utiliza '%%{?dist}' en Release"
 
 #: lib/inspect_disttag.c:263
 msgid "Specified package is not a source RPM, skipping."
-msgstr ""
+msgstr "Paquete específico no es una fuente RPM, se descarta."
 
 #: lib/inspect_doc.c:71
-#, c-format, fuzzy
+#, c-format
 msgid "%doc ${FILE}"
 msgstr "%doc ${FILE}"
 
 #: lib/inspect_doc.c:98
-#, c-format, fuzzy
+#, c-format
 msgid "%%doc file content change for %s in %s on %s\n"
 msgstr "%%doc de contenido de archivo cambia para %s en %s sobre %s\n"
 
@@ -2316,35 +2317,36 @@ msgid ""
 "%%doc file change for %s in %s on %s (%smarked as %%doc -> %smarked as "
 "%%doc)\n"
 msgstr ""
+"Archivo %%doc cambia para %s en %s sobre %s (%s marcado como %%doc → "
+"%smarked como %%doc)\n"
 
 #: lib/inspect_dsodeps.c:94
 #, c-format
 msgid "%s was an ELF file and now is not on %s"
-msgstr ""
+msgstr "%s era un archivo ELF y ahora no está en %s"
 
 #: lib/inspect_dsodeps.c:96 lib/inspect_dsodeps.c:108
-#, fuzzy
 msgid "ELF file ${FILE} on ${ARCH}"
-msgstr "Archivo ${FILE} ELF en ${ARCH}"
+msgstr "Archivo ELF ${FILE} en ${ARCH}"
 
 #: lib/inspect_dsodeps.c:106
 #, c-format
 msgid "%s was a dynamic ELF file and now is not on %s"
-msgstr ""
+msgstr "%s fue un archivo ELF dinámico y ahora no está en %s"
 
 #: lib/inspect_dsodeps.c:146
 #, c-format
 msgid "DT_NEEDED symbol(s) removed from %s on %s"
-msgstr ""
+msgstr "Símbolo(s) DT_NEEDED retirados desde %s sobre %s"
 
 #: lib/inspect_dsodeps.c:148 lib/inspect_dsodeps.c:165
 msgid "DT_NEEDED symbol(s) in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "Símbolo(s) DT_NEEDED en ${FILE} en ${ARCH}"
 
 #: lib/inspect_dsodeps.c:163
 #, c-format
 msgid "DT_NEEDED symbol(s) added to %s on %s"
-msgstr ""
+msgstr "Símbolo(s) DT_NEEDED añadidos a %s en %s"
 
 #: lib/inspect_elf.c:433
 #, c-format
@@ -2394,12 +2396,12 @@ msgstr "Objeto tiene pila ejecutable (Nota Pila GNU = X): %s en %s"
 #: lib/inspect_elf.c:531
 #, c-format
 msgid "Stack is still executable: %s on %s"
-msgstr ""
+msgstr "Pila aún es ejecutable: %s sobre %s"
 
 #: lib/inspect_elf.c:533
 #, c-format
 msgid "Stack is executable: %s on %s"
-msgstr ""
+msgstr "Pila es ejecutable: %s sobre %s"
 
 #: lib/inspect_elf.c:564
 #, c-format
@@ -2416,39 +2418,37 @@ msgid "lost GNU_RELRO in ${FILE} on ${ARCH}"
 msgstr ""
 
 #: lib/inspect_elf.c:725
-#, c-format, fuzzy
+#, c-format
 msgid "The following objects lost -fPIC:\n"
 msgstr "Los siguientes objetos perdidos -fPIC:\n"
 
 #: lib/inspect_elf.c:742
 #, c-format
 msgid "The following new objects were built without -fPIC:\n"
-msgstr ""
+msgstr "Los siguientes objetos siguientes fueron construidos sin -fPIC:\n"
 
 #: lib/inspect_elf.c:755
 #, c-format
 msgid "%s in %s has objects built without -fPIC on %s"
-msgstr ""
+msgstr "%s en %s tiene objetos compilados sin -fPIC sobre %s"
 
 #: lib/inspect_elf.c:763
-#, fuzzy
 msgid "missing -fPIC in ${FILE} on ${ARCH}"
 msgstr "falta -fPIC en ${FILE} en ${ARCH}"
 
 #: lib/inspect_elf.c:799
-#, fuzzy
 msgid "TEXTREL relocations in ${FILE} on ${ARCH}"
-msgstr "TEXTREL de reubicación interno a ${FILE} en ${ARCH}"
+msgstr "TEXTREL de reubicaciones internas a ${FILE} en ${ARCH}"
 
 #: lib/inspect_elf.c:814
 #, c-format
 msgid "%s in %s acquired TEXTREL relocations on %s"
-msgstr ""
+msgstr "%s dentro de %s adquirió TEXTREL reubicaciones en %s"
 
 #: lib/inspect_elf.c:817
 #, c-format
 msgid "%s in %s has TEXTREL relocations on %s"
-msgstr ""
+msgstr "%s dentro de %s tiene TEXTREL reubicaciones en %s"
 
 #: lib/inspect_emptyrpm.c:95
 #, c-format
@@ -2456,6 +2456,8 @@ msgid ""
 "New package %s is empty (no payloads); this is expected per the rpminspect "
 "configuration"
 msgstr ""
+"Nuevo paquete %s está vacío (sin cargas útiles); esto es esperado por la "
+"configuración rpminspect"
 
 #: lib/inspect_emptyrpm.c:105
 #, c-format
@@ -2463,57 +2465,56 @@ msgid ""
 "New package %s is empty (no payloads); this is expected because the package "
 "only contains %%ghost entries"
 msgstr ""
+"Paquete %s nuevo está vacío (sin cargas útiles); esto es esperado porque el "
+"paquete solo contiene apuntes %%ghost"
 
 #: lib/inspect_emptyrpm.c:116
-#, c-format, fuzzy
+#, c-format
 msgid "New package %s is empty (no payloads)"
-msgstr "Paquete %s nuevo está vacío (sin payloads)"
+msgstr "Paquete %s nuevo está vacío (sin cargas útiles)"
 
 #: lib/inspect_emptyrpm.c:120
-#, fuzzy
 msgid "${FILE} has empty payload"
 msgstr "${FILE} tiene de carga útil vacía"
 
 #: lib/inspect_files.c:111
 #, c-format
 msgid "Forbidden path reference (%s) on line %ld of %s"
-msgstr ""
+msgstr "Ruta referencial prohibida (%s) en la línea %ld de %s"
 
 #: lib/inspect_files.c:113
 #, c-format
 msgid "invalid spec line: %s"
-msgstr ""
+msgstr "línea spec no válida: %s"
 
 #: lib/inspect_files.c:172
 msgid "The files inspection is only for source packages, skipping."
-msgstr ""
+msgstr "La inspección de archivos solo es para paquetes fuentes, se descarta."
 
 #: lib/inspect_filesize.c:67
-#, c-format, fuzzy
+#, c-format
 msgid "%s became a non-empty file on %s"
 msgstr "%s se vuelve un archivo no vacío en %s"
 
 #: lib/inspect_filesize.c:71
 msgid "non-empty ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${FILE} no vacío sobre ${ARCH}"
 
 #: lib/inspect_filesize.c:76
-#, c-format, fuzzy
+#, c-format
 msgid "%s became an empty file on %s"
-msgstr "%s se vuelve un archivo vacío en %s"
+msgstr "%s vuelve un archivo vacío en %s"
 
 #: lib/inspect_filesize.c:80
-#, fuzzy
 msgid "empty ${FILE} on ${ARCH}"
 msgstr "${FILE} vacío en ${ARCH}"
 
 #: lib/inspect_filesize.c:98
-#, c-format, fuzzy
+#, c-format
 msgid "%s grew by %lld%% on %s"
 msgstr "%s creció por %lld%% sobre %s"
 
 #: lib/inspect_filesize.c:99
-#, fuzzy
 msgid "${FILE} size grew on ${ARCH}"
 msgstr "${FILE} con tamaño creciente sobre ${ARCH}"
 
@@ -2523,7 +2524,6 @@ msgid "%s shrank by %lld%% on %s"
 msgstr ""
 
 #: lib/inspect_filesize.c:104
-#, fuzzy
 msgid "${FILE} size shrank on ${ARCH}"
 msgstr "${FILE} con tamaño menguante sobre ${ARCH}"
 
@@ -2533,10 +2533,12 @@ msgid ""
 "File %s (%s), Java byte code version %d is incorrect (wrong endianness? "
 "corrupted file? space JDK?)"
 msgstr ""
+"Archivo %s (%s), código de byte Java con versión %d es incorrecto (¿"
+"endianness incorrecta? ¿archivo corrompido? ¿espacio JDK?)"
 
 #: lib/inspect_javabytecode.c:131
 msgid "incorrect Java byte code version in ${FILE}"
-msgstr ""
+msgstr "Versión de código byte Java incorrecta en ${FILE}"
 
 #: lib/inspect_javabytecode.c:136
 #, c-format
@@ -2544,33 +2546,37 @@ msgid ""
 "File %s (%s), Java byte code version %d greater than supported major version "
 "%d for product release %s"
 msgstr ""
+"Archivo %s (%s), versión de código byte Java %d mayor que versión principal "
+"%d admitida para producto de liberación %s"
 
 #: lib/inspect_javabytecode.c:137
 msgid "Java byte code version too new in ${FILE}"
-msgstr ""
+msgstr "Versión de código byte Java muy nuevo en ${FILE}"
 
 #: lib/inspect_javabytecode.c:152
 #, c-format
 msgid "Java byte code version changed from %d to %d in %s from %s"
-msgstr ""
+msgstr "Versión de código byte de Java cambiado desde %d a %d en %s desde %s"
 
 #: lib/inspect_javabytecode.c:153
 msgid "Java byte code version changed in ${FILE}"
-msgstr ""
+msgstr "Versión de código byte Java cambiada en ${FILE}"
 
 #: lib/inspect_javabytecode.c:255 lib/inspect_javabytecode.c:267
 msgid "*** missing JVM version to product release mapping"
-msgstr ""
+msgstr "*** versión JVM ausente para producto de publicación asignada"
 
 #: lib/inspect_kmidiff.c:252
 #, c-format
 msgid ""
 "Comparing %s to %s in package %s on %s generated a kmidiff(1) usage error."
 msgstr ""
+"Comparando %s a %s dentro del paquete %s sobre %s generado un error de uso "
+"kmidiff(1)."
 
 #: lib/inspect_kmidiff.c:254
 msgid "kmidiff usage error"
-msgstr ""
+msgstr "error de uso kmidiff"
 
 #: lib/inspect_kmidiff.c:256
 #, c-format
@@ -2578,9 +2584,10 @@ msgid ""
 "Comparing %s to %s in package %s on %s revealed Kernel Module Interface "
 "(KMI) differences."
 msgstr ""
+"Comparando %s a %s en paquete %s sobre %s reveló diferencias Interfaz de "
+"Módulo de Kernel (KMI)."
 
 #: lib/inspect_kmidiff.c:258
-#, fuzzy
 msgid "KMI change in ${FILE} on ${ARCH}"
 msgstr "Cambio KMI en ${FILE} en ${ARCH}"
 
@@ -2590,19 +2597,22 @@ msgid ""
 "Comparing %s to %s in package %s on %s revealed incompatible Kernel Module "
 "Interface (KMI) differences."
 msgstr ""
+"Compara %s a %s en paquete %s sobre %s revelado diferencias de Interfaz de "
+"Módulo de Kernel (KMI) incompatible."
 
 #: lib/inspect_kmidiff.c:263
 msgid "KMI incompatible change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "Cambio incompatible de KMI en ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_kmidiff.c:265
 #, c-format
 msgid ""
 "kmidiff(1) comparison of %s to %s in package %s on %s ended unexpectedly."
 msgstr ""
+"Comparación kmidiff(1) de %s a %s dentro del paquete %s sobre %s finalizado "
+"inesperadamente."
 
 #: lib/inspect_kmidiff.c:267
-#, fuzzy
 msgid "kmidiff unexpected exit"
 msgstr "salida kmidiff inesperada"
 
