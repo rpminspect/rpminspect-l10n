@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-10 21:39+0000\n"
+"PO-Revision-Date: 2025-06-10 21:54+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -1231,6 +1231,11 @@ msgid ""
 "the source package has any zero length or otherwise invalid patches and "
 "correct the problem."
 msgstr ""
+"Se encontró un archivo de parche no válido.  Esto suele deberse a la "
+"generación de una colección de parches mediante la comparación de dos "
+"árboles.  La desaparición de archivos puede generar parches de longitud cero "
+"en la colección resultante.  Compruebe si el paquete fuente contiene parches "
+"de longitud cero o inválidos y corrija el problema."
 
 #: include/results.h:690
 #, c-format
@@ -1244,6 +1249,17 @@ msgid ""
 "define the patch at the top of the spec file.  So Patch47 is applied with "
 "either a '%patch 47', '%patch -P 47', '%patch -P47', or '%patch47' macro."
 msgstr ""
+"El parche con nombre se define en la cabecera RPM del código fuente (esto "
+"significa que tiene una definición \"PatchN:\" en el archivo de "
+"especificaciones), pero no se aplica en ninguna parte del archivo.  Carece "
+"de la macro \"%patch\" correspondiente y el archivo de especificaciones no "
+"tiene las macros \"%autosetup\" ni \"%autopatch\".  Puede solucionar esto "
+"añadiendo la macro \"%patch\" adecuada en el archivo de especificaciones ("
+"normalmente en la sección \"%prep\").  El número especificado con la macro "
+"\"%patch\" corresponde al número utilizado para definir el parche en la "
+"parte superior del archivo de especificaciones.  Por lo tanto, el parche 47 "
+"se aplica con la macro \"%patch 47\", \"%patch -P 47\", \"%patch -P47\" o "
+"\"%patch47\"."
 
 #: include/results.h:692
 #, c-format
@@ -1259,6 +1275,9 @@ msgid ""
 "The defined patch file is not something rpminspect can handle.  This is "
 "likely a bug and should be reported to the upstream rpminspect project."
 msgstr ""
+"El archivo parche definido no es algo rpminspect puede manipular.   Es "
+"probable que se trate de un defecto y se debe informar al proyecto "
+"rpminspect responsable."
 
 #: include/results.h:704
 msgid ""
@@ -1268,6 +1287,12 @@ msgid ""
 "sure the file in question is clean, please file a bug with rpminspect for "
 "further help."
 msgstr ""
+"ClamAV ha encontrado un virus dentro del archivo nombrado.  Esto puede ser "
+"un falso positivo, pero debes inspeccionar manualmente el archivo en "
+"cuestión para asegurarte de que esté limpio.  Esto podría deberse a un "
+"problema con la base de datos o la detección de ClamAV. Si está seguro de "
+"que el archivo en cuestión está limpio, informe de un error a rpminspect "
+"para obtener más ayuda."
 
 #: include/results.h:714
 #, c-format
@@ -1400,6 +1425,9 @@ msgid ""
 "Refer to the udev documentation at https://www.freedesktop.org/software/"
 "systemd/man/udev.html for help correcting the errors and warnings."
 msgstr ""
+"Consulte la documentación de udev en https://www.freedesktop.org/software/"
+"systemd/man/udev.html para obtener ayuda para corregir los errores y las "
+"advertencias."
 
 #: lib/abi.c:65
 #, c-format
@@ -1834,7 +1862,7 @@ msgstr ""
 
 #: lib/inspect_addedfiles.c:211
 msgid "new security-related file ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "nuevo archivo relacionado con la seguridad ${FILE} en ${ARCH}"
 
 #: lib/inspect_addedfiles.c:231
 #, c-format
@@ -4218,36 +4246,38 @@ msgstr ""
 #: src/rpminspect.c:75
 #, c-format
 msgid "  -d, --debug                 Debugging mode output\n"
-msgstr ""
+msgstr "  -d, --debug                 Salida del modo depurador\n"
 
 #: src/rpminspect.c:76
 #, c-format
 msgid ""
 "  -D, --dump-config           Dump configuration settings (in YAML format)\n"
 msgstr ""
+"  -D, --dump-config           Vuelca los parámetros de configuración (en "
+"formato YAML)\n"
 
 #: src/rpminspect.c:77
 #, c-format
 msgid "  -v, --verbose               Verbose inspection output\n"
-msgstr ""
+msgstr "  -v, --verbose               Salida de inspección verborrea\n"
 
 #: src/rpminspect.c:78
-#, c-format, fuzzy
+#, c-format
 msgid "                              when finished, display full path\n"
 msgstr "                              cuando finalizó, exhiba ruta completa\n"
 
 #: src/rpminspect.c:79
-#, c-format, fuzzy
+#, c-format
 msgid "  -?, --help                  Display usage information\n"
 msgstr "  -?, --help                 Exhibe información de uso\n"
 
 #: src/rpminspect.c:80
 #, c-format
 msgid "  -V, --version               Display program version\n"
-msgstr ""
+msgstr "  -V, --version               Exhibe versión del programa\n"
 
 #: src/rpminspect.c:81
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "\n"
 "See the rpminspect(1) man page for more information.\n"
@@ -4256,7 +4286,7 @@ msgstr ""
 "Consulte la página man de rpminspect(1) para más información.\n"
 
 #: src/rpminspect.c:114
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to compile product release regular expression: %s"
 msgstr ""
 "*** no es capaz de compilar expresión regular de publicación del producto: %s"
@@ -4325,7 +4355,7 @@ msgstr "*** no es capaz de utilizar `%s' como directorio de trabajo"
 #: src/rpminspect.c:536
 #, c-format
 msgid "%s version %s\n"
-msgstr ""
+msgstr "%s versión %s\n"
 
 #: src/rpminspect.c:539
 #, c-format, fuzzy
