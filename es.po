@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-10 15:12+0000\n"
+"PO-Revision-Date: 2025-06-10 15:17+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -1282,11 +1282,14 @@ msgstr "    Necesita %s interno a %s, tiene %s.\n"
 #, c-format
 msgid "See the `-w' option for specifying an alternate working directory.\n"
 msgstr ""
+"Consulte la opción `-w` para especificar un directorio de trabajo alterno.\n"
 
 #: lib/builds.c:249
 #, c-format
 msgid "Unable to determine the required space to download the requested %s.\n"
 msgstr ""
+"No es capaz de determinar el espacio requerido para descargar el %s "
+"solicitado.\n"
 
 #: lib/builds.c:250
 #, c-format
@@ -1295,23 +1298,23 @@ msgstr ""
 
 #: lib/builds.c:290 lib/builds.c:294
 msgid "build"
-msgstr ""
+msgstr "compilar"
 
 #: lib/builds.c:320
 msgid "Downloading module"
-msgstr ""
+msgstr "Descargar módulo"
 
 #: lib/builds.c:323
 msgid "Downloading RPM build"
-msgstr ""
+msgstr "Descargar compilación RPM"
 
 #: lib/builds.c:373 lib/inspect_modularity.c:47
-#, c-format, fuzzy
+#, c-format
 msgid "*** ignoring malformed module metadata file: %s"
 msgstr "*** se ignora archivo de metadatos del módulo malformado: %s"
 
 #: lib/builds.c:383
-#, c-format, fuzzy
+#, c-format
 msgid "*** malformed rpm filters in file: %s"
 msgstr "*** filtros rpm malformados en archivo: %s"
 
@@ -1324,46 +1327,46 @@ msgid "RPM"
 msgstr "RPM"
 
 #: lib/builds.c:791
-#, c-format, fuzzy
+#, c-format
 msgid "*** `%s' already exists in %s"
 msgstr "*** `%s' ya existe en %s"
 
 #: lib/builds.c:829
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to find local build: %s"
 msgstr "*** no es capaz de encontrar la compilación local: %s"
 
 #: lib/builds.c:841
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to download RPM: %s"
 msgstr "*** no es capaz de descargar RPM: %s"
 
 #: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to find build %s in Koji hub %s"
 msgstr "*** no es capaz de encontrar la compilación %s en hub Koji %s"
 
 #: lib/builds.c:872
 #, c-format
 msgid "*** unable to find task %s in Koji hub %s"
-msgstr ""
+msgstr "*** no es capaz de encontrar la tarea %s en hub Koji %s"
 
 #: lib/checksums.c:91
-#, c-format, fuzzy
+#, c-format
 msgid "*** %s is a FIFO"
 msgstr "*** %s es una FIFO"
 
 #: lib/copyfile.c:117
-#, c-format, fuzzy
+#, c-format
 msgid "%s already exists"
 msgstr "%s ya existe"
 
 #: lib/copyfile.c:122
 msgid ", overwriting"
-msgstr ""
+msgstr ", sobrescribiendo"
 
 #: lib/curl.c:267 lib/readfile.c:60
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to read %s"
 msgstr "*** no es capaz de leer %s"
 
