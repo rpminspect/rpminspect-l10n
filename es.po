@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-08 09:52+0000\n"
+"PO-Revision-Date: 2025-06-10 15:12+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -595,7 +595,7 @@ msgid ""
 "distribution (e.g., GPLv2+).  If the license in question is approved, the "
 "license database needs updating in the rpminspect-data package."
 msgstr ""
-"La etiqueta Licence debe contener una cadena de licencia aprobada como "
+"La etiqueta License debe contener una cadena de licencia aprobada como "
 "definió por la distribución (p.ej., GPLv2+).  Si está aprobada la licencia "
 "en cuestión, la base de datos de licencia necesita actualizarse en el "
 "paquete rpminspect-data."
@@ -732,18 +732,26 @@ msgid ""
 "File changes were found.  In most cases these are expected, but it is a good "
 "idea to verify the changes found are deliberate."
 msgstr ""
+"Cambios de archivo fueron encontrados.  En muchos casos hay esperados, pero "
+"es buena idea verificar los cambios encontrados al entregar."
 
 #: include/results.h:307
 msgid ""
 "Unexpected file moves were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file moves between builds."
 msgstr ""
+"Movimiento de archivo inesperado encontrado.  Verifique que estos cambios "
+"sean correctos.  Si no lo son, ajunte la compilación para prevenir que los "
+"archivos se muevan entre compilaciones."
 
 #: include/results.h:322
 msgid ""
 "Unexpected file removals were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file removals between builds."
 msgstr ""
+"Fue encontrado archivo inesperado retirado. Verifique estos cambios sean "
+"correctos.  Si no lo son, ajuste la compilación para prevenir las retiradas "
+"de archivo entre compilaciones."
 
 #: include/results.h:337
 #, c-format
@@ -895,6 +903,8 @@ msgid ""
 "A previously empty file is no longer empty.  Make sure this change is "
 "intended and fix the package spec file if necessary."
 msgstr ""
+"Un archivo anterior vacío no es más vacío.  Asegure este cambio es intentado "
+"y repare el paquete spac del archivo si es necesario."
 
 #: include/results.h:511
 msgid ""
@@ -1224,47 +1234,47 @@ msgid ""
 msgstr ""
 
 #: lib/abi.c:65
-#, c-format, fuzzy
+#, c-format
 msgid "*** malformed ABI level identifier: %s"
 msgstr "*** identificador de nivel de ABI malformado: %s"
 
 #: lib/abi.c:70
-#, c-format, fuzzy
+#, c-format
 msgid "*** ABI level %d already defined"
 msgstr "*** nivel ABI %d ya definido"
 
 #: lib/abi.c:84
-#, c-format, fuzzy
+#, c-format
 msgid "*** malformed ABI level entry: %s"
 msgstr "*** apunte de nivel ABI malformado: %s"
 
 #: lib/builds.c:73
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to create download directory %s"
 msgstr "*** no es capaz de crear el directorio de descarga %s"
 
 #: lib/builds.c:85
-#, c-format, fuzzy
+#, c-format
 msgid "*** unknown working directory type: %d"
-msgstr "*** tipo directivo de trabajo desconocido: %d"
+msgstr "*** tipo desconocido del directorio de trabajo: %d"
 
 #: lib/builds.c:173
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to read %s, skipping"
 msgstr "*** no es capaz de leer %s, se hace caso omiso"
 
 #: lib/builds.c:205
-#, c-format, fuzzy
+#, c-format
 msgid "*** unknown directory member encountered: %s"
 msgstr "*** miembro de directorio desconocido encontrado: %s"
 
 #: lib/builds.c:234
-#, c-format, fuzzy
+#, c-format
 msgid "There is not enough available space to download the requested %s.\n"
-msgstr "No hay suficiente espacio disponible para descargar el %s soliciado.\n"
+msgstr "No hay suficiente espacio disponible para descargar el %s solicitado.\n"
 
 #: lib/builds.c:235 lib/peers.c:177
-#, c-format, fuzzy
+#, c-format
 msgid "    Need %s in %s, have %s.\n"
 msgstr "    Necesita %s interno a %s, tiene %s.\n"
 
