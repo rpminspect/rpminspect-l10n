@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-10 21:54+0000\n"
+"PO-Revision-Date: 2025-06-11 22:46+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -1145,7 +1145,7 @@ msgstr ""
 "debido a limitaciones de RPM."
 
 #: include/results.h:618
-#, c-format
+#, c-format, fuzzy
 msgid ""
 "Make sure symlinks point to a valid destination in one of the subpackages of "
 "the build; dangling symlinks are not allowed.  If you are comparing builds "
@@ -1155,6 +1155,15 @@ msgid ""
 "scriptlet for replacing a directory.  See the packaging guidelines for "
 "'Scriptlet to replace a directory' for more information."
 msgstr ""
+"Asegúrese de que los enlaces simbólicos apunten a un destino válido en uno "
+"de los subpaquetes de la compilación; no se permiten enlaces simbólicos "
+"colgantes. Si está comparando compilaciones y un enlace simbólico se "
+"convierte en uno, asegúrese de que sea intencional. NOTA: No es posible "
+"convertir un directorio en un enlace simbólico debido a las limitaciones de "
+"RPM. Si es absolutamente necesario, asegúrese de incluir el scriptlet "
+"%pretrans para reemplazar un directorio. Consulte las directrices de "
+"empaquetado para \"Scriptlet para reemplazar un directorio\" para obtener "
+"más información."
 
 #: include/results.h:628
 #, c-format
@@ -1164,6 +1173,10 @@ msgid ""
 "See the RPM documentation or distribution package maintainer guide for more "
 "information."
 msgstr ""
+"Eliminar referencias de rutas prohibidas de la línea indicada en la sección "
+"%files.  En muchos casos, puede utilizar macros RPM para especificar "
+"ubicaciones de rutas.  Consulte la documentación de RPM o la guía del "
+"mantenedor del paquete de distribución para obtener más información."
 
 #: include/results.h:638
 msgid ""
@@ -1269,6 +1282,10 @@ msgid ""
 "For example, Patch47 needs to have either a '%patch 47', '%patch -P 47', "
 "'%patch -P47', or '%patch47' macro."
 msgstr ""
+"El parche nombrado está definido pero no coincide en número con la macro del "
+"parche %patch.  Asegúrese de que todos los parches numerados tengan su "
+"correspondencia del parche de macros %patch.  Por ejemplo, Patch47 necesita "
+"tener una macro '%patch 47', '%patch -P 47', '%patch -P47', o '%patch47'."
 
 #: include/results.h:694
 msgid ""
@@ -1350,6 +1367,11 @@ msgid ""
 "running.  A common cause is removal of the working directory while the "
 "program is executing."
 msgstr ""
+"La sección %prep del archivo de especificaciones no se pudo ejecutar por "
+"alguna razón.  Esto suele deberse a un fallo en librpmbuild, que suele estar "
+"relacionado con problemas de extracción del archivo o cambios en el sistema "
+"de archivos mientras rpminspect se ejecuta.  Una causa común es la "
+"eliminación del directorio de trabajo mientras el programa se ejecuta."
 
 #: include/results.h:758
 msgid ""
@@ -1357,6 +1379,10 @@ msgid ""
 "Check the spec file for this dependency and ensure you have not misspelled a "
 "macro or used a macro name that does not exist."
 msgstr ""
+"Se encontraron macros del archivo de especificaciones RPM sin expandir en la "
+"regla de dependencia indicada.  Revise el archivo de especificaciones para "
+"esta dependencia y asegúrese de no haber escrito mal una macro ni de haber "
+"usado un nombre de macro inexistente."
 
 #: include/results.h:760
 msgid ""
@@ -1365,6 +1391,11 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{version}-%{release}' "
 "in the spec file."
 msgstr ""
+"Agregue los requisitos explícitos indicados al archivo de especificaciones "
+"del subpaquete indicado.  Los subpaquetes que dependen de bibliotecas "
+"compartidas en otro subpaquete deben incluir un requisito explícito "
+"'Requires: SUBPACKAGE_NAME = %{version}-%{release}' en el archivo de "
+"especificaciones."
 
 #: include/results.h:762
 msgid ""
@@ -1373,6 +1404,11 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{epoch}:%{version}-"
 "%{release}' in the spec file."
 msgstr ""
+"Agregue los requisitos Requires explícitos indicados al archivo de "
+"especificaciones del subpaquete indicado.  Los subpaquetes que dependen de "
+"bibliotecas compartidas en otro subpaquete deben incluir un requisito "
+"explícito 'Requires: SUBPACKAGE_NAME = %{epoch}:%{version}-%{release}' en el "
+"archivo de especificaciones."
 
 #: include/results.h:764
 #, c-format
@@ -1383,6 +1419,12 @@ msgid ""
 "spec file but you do need to make sure only one subpackage is packaging up "
 "the shared library in question."
 msgstr ""
+"Revise las secciones %files del subpaquete y las declaraciones Provides "
+"explícitas. Solo un subpaquete debe proporcionar una biblioteca compartida "
+"determinada. Los nombres de las bibliotecas compartidas se agregan "
+"automáticamente como Provides, por lo que no es necesario especificarlos en "
+"el archivo de especificaciones, pero sí debe asegurarse de que solo un "
+"subpaquete empaquete la biblioteca compartida en cuestión."
 
 #: include/results.h:766
 msgid ""
@@ -1392,6 +1434,12 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Una dependencia listada en la compilación anterior cambió a la dependencia "
+"indicada en la compilación posterior.  Si el resultado es VERIFY, significa "
+"que rpminspect detectó el cambio en lo que considera una actualización de "
+"mantenimiento en un paquete.  Un resultado INFO significa que detectó este "
+"cambio, pero lo considera correcto porque está comparando una compilación "
+"rebasada."
 
 #: include/results.h:768
 msgid ""
@@ -1401,6 +1449,12 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Se detecta una nueva dependencia en la compilación posterior que no estaba "
+"presente en la compilación anterior. Si el resultado es VERIFY, significa "
+"que rpminspect detectó el cambio en lo que considera una actualización de "
+"mantenimiento en un paquete. Un resultado INFO significa que detectó este "
+"cambio, pero lo considera correcto porque está comparando una compilación "
+"rebasada."
 
 #: include/results.h:770
 msgid ""
@@ -1410,6 +1464,12 @@ msgid ""
 "An INFO result means it noticed this change, but deems it ok because it is "
 "comparing a rebased build."
 msgstr ""
+"Una dependencia detectada en la compilación anterior no se detecta en la "
+"compilación posterior, lo que significa que se eliminó o se perdió. Si el "
+"resultado es VERIFY, significa que rpminspect detectó el cambio en lo que "
+"considera una actualización de mantenimiento en un paquete. Un resultado "
+"INFO significa que detectó este cambio, pero lo considera correcto porque "
+"está comparando una compilación rebasada."
 
 #: include/results.h:772
 msgid ""
@@ -1419,6 +1479,11 @@ msgid ""
 "%{version}-%{release}' to capture the package package Epoch in the "
 "dependency."
 msgstr ""
+"El paquete tiene un valor de Epoch mayor que cero, pero las dependencias "
+"explícitas del subpaquete no lo usan consistentemente.  Para la dependencia "
+"reportada, '= %{version}-%{release}' debe cambiarse a '= "
+"%{epoch}:%{version}-%{release}' para capturar la Epoch del paquete en la "
+"dependencia."
 
 #: include/results.h:781
 msgid ""
@@ -3973,7 +4038,7 @@ msgstr "*** índice de archivo %d está fuera de acotaciones para %s"
 
 #: lib/rpm.c:431
 msgid "*** error reading file from RPM payload"
-msgstr "*** error al leer archivo desde carga útil RPM: %s"
+msgstr "*** error al leer archivo desde carga útil RPM"
 
 #: lib/runcmd.c:171
 #, c-format
@@ -4174,7 +4239,7 @@ msgstr "  -o ARCHIVO, --output=ARCHIVO      Escribe resultados al ARCHIVO\n"
 #: src/rpminspect.c:62
 #, c-format
 msgid "                                (default: stdout)\n"
-msgstr "                                (default: stdout)\n"
+msgstr "                                (por defecto: stdout)\n"
 
 #: src/rpminspect.c:63
 #, c-format
@@ -4386,7 +4451,7 @@ msgstr ""
 "Inspecciones disponibles:\n"
 
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
-#, c-format, fuzzy
+#, c-format
 msgid "*** failed to read configuration file %s"
 msgstr "*** fallaba al leer archivo de configuración %s"
 
@@ -4411,7 +4476,7 @@ msgid "*** unsupported architecture specified: `%s`"
 msgstr "*** no se admite la arquitectura especificada: `%s`"
 
 #: src/rpminspect.c:793
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to create directory %s"
 msgstr "*** no es capaz de crear directorio %s"
 
@@ -4452,7 +4517,7 @@ msgstr ""
 
 #: src/rpminspect.c:920
 msgid "Build"
-msgstr ""
+msgstr "Compilar"
 
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
@@ -4484,7 +4549,7 @@ msgstr "Ejecutando inspección %s..."
 
 #: src/rpminspect.c:1018
 msgid "pass"
-msgstr ""
+msgstr "aprobar"
 
 #: src/rpminspect.c:1018
 msgid "FAIL"
