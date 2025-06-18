@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-18 19:42+0000\n"
+"PO-Revision-Date: 2025-06-18 19:44+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -2252,6 +2252,8 @@ msgid ""
 "%%config file %s was a symlink (pointing to %s), became an actual file in %s "
 "on %s"
 msgstr ""
+"%%config de archivo %s fue un enlace simbólico (apuntando a %s), se "
+"convierte en un archivo actual dentro de %s sobre %s"
 
 #: lib/inspect_config.c:132
 #, c-format
