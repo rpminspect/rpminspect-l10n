@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-18 19:44+0000\n"
+"PO-Revision-Date: 2025-06-18 20:16+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -1335,6 +1335,15 @@ msgid ""
 "order to allow for backwards compatibility.  Whenever possible the "
 "deprecated functions should not be used."
 msgstr ""
+"Se encontraron símbolos prohibidos en un archivo ELF del paquete. La "
+"configuración de rpminspect indica que los símbolos con nombre están "
+"prohibidos en los paquetes. Si esto es intencional, puede desactivar la "
+"inspección de badfuncs. Si no es intencional, consulte las páginas del "
+"manual de los símbolos con nombre para ver qué funciones de la API han "
+"reemplazado los símbolos prohibidos. Normalmente, una función se marca como "
+"obsoleta, pero se proporciona para garantizar la compatibilidad con "
+"versiones anteriores. Siempre que sea posible, no se deben utilizar las "
+"funciones obsoletas."
 
 #: include/results.h:734
 msgid ""
@@ -1345,6 +1354,12 @@ msgid ""
 "try using a program such as patchelf to remove these properties from the ELF "
 "files."
 msgstr ""
+"Se encontraron las propiedades DT_RPATH o DT_RUNPATH en los objetos "
+"compartidos ELF de este paquete. Se desaconseja el uso de DT_RPATH y "
+"DT_RUNPATH, excepto en ciertas situaciones. Compruebe que esté "
+"deshabilitando rpath durante la fase %build del archivo de especificaciones. "
+"Si no puede hacerlo fácilmente, puede intentar usar un programa como "
+"patchelf para eliminar estas propiedades de los archivos ELF."
 
 #: include/results.h:736
 msgid ""
@@ -1352,6 +1367,9 @@ msgid ""
 "This indicates a linker error and should not happen.  ELF objects should "
 "only carry DT_RPATH or DT_RUNPATH, never both."
 msgstr ""
+"Se encontraron las propiedades DT_RPATH y DT_RUNPATH en un objeto compartido "
+"ELF. Esto indica un error del enlazador y no debería ocurrir. Los objetos "
+"ELF solo contendría DT_RPATH o DT_RUNPATH, nunca ambos."
 
 #: include/results.h:746
 msgid ""
@@ -1771,6 +1789,7 @@ msgstr ""
 #, c-format
 msgid "*** unknown specname primary setting '%s', defaulting to 'name'"
 msgstr ""
+"*** opciones '%s' de specname primario desconocido, por defecto a 'name'"
 
 #: lib/init.c:747
 #, c-format
@@ -2452,9 +2471,14 @@ msgid ""
 "should be of the form '%s' in the %s tag or in a macro used in the %s tag. "
 "After RPM macro expansion, no dist tag was found in this %s tag value."
 msgstr ""
+"El valor con indicador %s está ausente en el dist etiquetado en el "
+"formulario de propiedad. La etiqueta dist sería de la forma '%s' dentro del "
+"etiquetado %s o dentro de una macro utilizada dentro de la etiqueta %s. Tras "
+"expansión de macro RPM, ninguna etiqueta dist fue encontrada dentro de este "
+"valor de etiqueta %s."
 
 #: lib/inspect_disttag.c:194
-#, c-format, fuzzy
+#, c-format
 msgid "${FILE} does not use '%%{?dist}' in Release"
 msgstr "${FILE} no utiliza '%%{?dist}' en Release"
 
@@ -2525,9 +2549,8 @@ msgid "Program built without GNU_STACK: %s on %s"
 msgstr "Programa comprimido sin GNU_STACK: %s sobre %s"
 
 #: lib/inspect_elf.c:444
-#, fuzzy
 msgid "GNU_STACK in ${FILE} on ${ARCH}"
-msgstr "GNU_STACK en ${FILE} sobre ${ARCH}"
+msgstr "GNU_STACK dentro de ${FILE} en ${ARCH}"
 
 #: lib/inspect_elf.c:496
 #, c-format
@@ -2577,7 +2600,7 @@ msgstr "%s pierde protección de seguridad de GNU_RELRO sobre %s"
 
 #: lib/inspect_elf.c:578
 msgid "lost GNU_RELRO in ${FILE} on ${ARCH}"
-msgstr "perdió GNU_RELRO dentro de ${FILE} para ${ARCH}"
+msgstr "perdía GNU_RELRO dentro de ${FILE} para ${ARCH}"
 
 #: lib/inspect_elf.c:725
 #, c-format
@@ -2683,7 +2706,7 @@ msgstr "${FILE} con tamaño creciente sobre ${ARCH}"
 #: lib/inspect_filesize.c:103
 #, c-format
 msgid "%s shrank by %lld%% on %s"
-msgstr ""
+msgstr "%s menguante por %lld%% sobre %s"
 
 #: lib/inspect_filesize.c:104
 msgid "${FILE} size shrank on ${ARCH}"
@@ -3012,12 +3035,12 @@ msgstr ""
 
 #: lib/inspect_metadata.c:80
 msgid "invalid build host ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "huésped de compilación no válida ${FILE} en ${ARCH}"
 
 #: lib/inspect_metadata.c:92
 #, c-format
 msgid "Package Summary contains unprofessional language in %s"
-msgstr ""
+msgstr "Sumario de Paquete contiene idioma no profesional en %s"
 
 #: lib/inspect_metadata.c:93
 #, c-format
@@ -3500,7 +3523,7 @@ msgstr ""
 #: lib/inspect_rpmdeps.c:387
 #, c-format
 msgid "missing 'Requires: ${FILE} = %s' in %s on ${ARCH}"
-msgstr ""
+msgstr "falta 'Requires: ${FILE} = %s' dentro de %s en ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:409
 #, c-format
@@ -3508,6 +3531,8 @@ msgid ""
 "Multiple subpackages provide '%s': [%s] but these subpackages carry explicit "
 "Requires: [%s]"
 msgstr ""
+"Subpaquetes múltiples proporcionan '%s': [%s] pero estos subpaquetes llevan "
+"explícitamente Requires: [%s]"
 
 #: lib/inspect_rpmdeps.c:410
 #, c-format, fuzzy
@@ -3518,11 +3543,12 @@ msgstr "%s todo proporcona '${FILE}' en ${ARCH}"
 #, c-format
 msgid "Missing epoch prefix on the version-release in '%s' for %s on %s"
 msgstr ""
+"Faltan prefijo epoch en la versversion-release dentro de '%s' para %s en %s"
 
 #: lib/inspect_rpmdeps.c:541
 #, c-format
 msgid "'${FILE}' needs epoch in %s on ${ARCH}"
-msgstr ""
+msgstr "'${FILE}' necesita epoch en %s sobre ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:807
 #, fuzzy
@@ -3532,37 +3558,37 @@ msgstr "archivo específico"
 #: lib/inspect_rpmdeps.c:887
 #, c-format
 msgid "Gained '%s' in source package %s"
-msgstr ""
+msgstr "Ha ganado '%s' en paquete fuente %s"
 
 #: lib/inspect_rpmdeps.c:889
 #, c-format
 msgid "Gained '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "Ha ganado '%s' en subpaquete %s sobre %s"
 
 #: lib/inspect_rpmdeps.c:897
 #, c-format
 msgid "Retained '%s' in source package %s"
-msgstr ""
+msgstr "Retenido '%s' en paquete fuente %s"
 
 #: lib/inspect_rpmdeps.c:899
 #, c-format
 msgid "Retained '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "Retuvo '%s' en subpaquete %s sobre %s"
 
 #: lib/inspect_rpmdeps.c:907
 #, c-format
 msgid "Changed '%s' to '%s' in source package %s"
-msgstr ""
+msgstr "Cambió '%s' a '%s' en paquete fuente %s"
 
 #: lib/inspect_rpmdeps.c:909
 #, c-format
 msgid "Changed '%s' to '%s' in subpackage %s on %s"
-msgstr ""
+msgstr "Cambiado '%s' para '%s' en subpaquete %s en %s"
 
 #: lib/inspect_rpmdeps.c:912
 #, c-format
 msgid "'%s' became '${FILE}' in %s on ${ARCH}"
-msgstr ""
+msgstr "'%s' se convierte en '${FILE}' en %s sobre ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:918
 #, fuzzy
@@ -3572,7 +3598,7 @@ msgstr "; esto es esperado"
 #: lib/inspect_rpmdeps.c:940
 #, c-format
 msgid "Lost '%s' in source package %s"
-msgstr ""
+msgstr "Perdió '%s' en paquete fuente %s"
 
 #: lib/inspect_rpmdeps.c:942
 #, c-format, fuzzy
@@ -3592,7 +3618,7 @@ msgstr "%s tiene una apariencia inválida %s sobre %s: %s"
 
 #: lib/inspect_runpath.c:192
 msgid "runtime search path in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "ruta de búsqueda en tiempo de ejecución en ${FILE} en ${ARCH}"
 
 #: lib/inspect_runpath.c:270
 msgid "both DT_RPATH and DT_RUNPATH in ${FILE} on ${ARCH}"
