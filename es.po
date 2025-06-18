@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-11 22:46+0000\n"
+"PO-Revision-Date: 2025-06-18 19:42+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.4\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: include/inspect.h:1341
 msgid ""
@@ -1319,6 +1319,10 @@ msgid ""
 "vendor data package for the product.  Modify the %s file and send a patch to "
 "the project that owns it."
 msgstr ""
+"Se encontró un archivo con contenido potencial políticamente sensible dentro "
+"del paquete.  Si este archivo está permitido, sería añadido al paquete del "
+"datos del proveedor rpminspect para el producto.  Modifique el archivo %s y "
+"envíe un parche al proyecto que lo pertenece."
 
 #: include/results.h:724
 msgid ""
@@ -1357,6 +1361,11 @@ msgid ""
 "discuss the situation with the Product Security Team to determine the "
 "correct course of action."
 msgstr ""
+"El archivo de configuración para rpminspect contiene un listado de puntos de "
+"código Unicode prohibido.  Se encontró uno en el árbol de origen extraído y "
+"parcheado o en uno de los archivos de origen de texto en el RPM de origen.  "
+"Elimine este punto de código o analice la situación con el Equipo de "
+"Seguridad del Producto para determinar el curso de acción correcto."
 
 #: include/results.h:748
 #, c-format
@@ -1924,6 +1933,8 @@ msgid ""
 "New security-related file `%s` added on %s in %s requires inspection by the "
 "Security Team"
 msgstr ""
+"Nuevo archivo relacionado con la seguridad `%s` añadido en %s dentro de %s "
+"requiere inspección por el Equipo de Seguridad"
 
 #: lib/inspect_addedfiles.c:211
 msgid "new security-related file ${FILE} on ${ARCH}"
@@ -2053,7 +2064,7 @@ msgstr "libannocheck '%s' prueba pasada para %s sobre %s"
 #: lib/inspect_annocheck.c:551 lib/inspect_annocheck.c:569
 #, c-format
 msgid "annocheck '%s' test passes for %s on %s"
-msgstr ""
+msgstr "test annocheck '%s' logrado para %s sobre %s"
 
 #: lib/inspect_annocheck.c:553
 #, c-format
@@ -2136,6 +2147,8 @@ msgstr ""
 msgid ""
 "File capabilities list mismatch for %s: expected '%s', got '%s' in %s on %s\n"
 msgstr ""
+"No coinciden capacidades del listado de archivo para %s: Esperaba '%s', "
+"obtuvo '%s' en %s sobre %s\n"
 
 #: lib/inspect_capabilities.c:149 lib/inspect_capabilities.c:169
 #: lib/inspect_capabilities.c:188
@@ -2157,6 +2170,8 @@ msgstr ""
 msgid ""
 "File capabilities expected for %s in %s but not found on %s: expected '%s'\n"
 msgstr ""
+"Capacidades de archivo esperadas para %s en %s pero no encontrado en %s: "
+"esperaba '%s'\n"
 
 #: lib/inspect_changedfiles.c:31
 #, fuzzy
@@ -2171,20 +2186,23 @@ msgstr ""
 #, c-format
 msgid "Compressed %s file %s changed content in %s on %s."
 msgstr ""
+"%s comprimido del archivo %s ha cambiado el contenido interno a %s en %s."
 
 #: lib/inspect_changedfiles.c:353 lib/inspect_changedfiles.c:367
 #, c-format
 msgid "Error running msgunfmt on %s in %s on %s; malformed mo file?"
 msgstr ""
+"Error ejecutando msgunfmt sobre %s dentro de %s sobre %s; ¿archivo mo "
+"malformado?"
 
 #: lib/inspect_changedfiles.c:357 lib/inspect_changedfiles.c:371
 msgid "msgunfmt on ${FILE}"
-msgstr ""
+msgstr "msgunfmt en ${FILE}"
 
 #: lib/inspect_changedfiles.c:382
 #, c-format
 msgid "Message catalog %s changed content in %s on %s"
-msgstr ""
+msgstr "Catálogo de mensaje %s cambiado el contenido en %s a %s"
 
 #: lib/inspect_changedfiles.c:386 lib/inspect_changedfiles.c:443
 #: lib/inspect_changedfiles.c:465
@@ -2197,11 +2215,13 @@ msgid ""
 "Public header file %s changed content in %s on %s.  A unified diff of the "
 "changes follows."
 msgstr ""
+"Cabecera pública del archivo %s cambió el contenido en %s sobre %s.  Un diff "
+"unificado de los cambios a continuación."
 
 #: lib/inspect_changedfiles.c:462
 #, c-format
 msgid "File %s changed content in %s on %s."
-msgstr ""
+msgstr "Archivo %s cambió el contenido en %s sobre %s."
 
 #: lib/inspect_changelog.c:235 lib/inspect_changelog.c:369
 #, c-format
@@ -2210,7 +2230,7 @@ msgstr "%%changelog"
 
 #: lib/inspect_changelog.c:438
 msgid "Inspection skipped because this build's type is not `rpm'."
-msgstr ""
+msgstr "Inspección descartada porque este tipo de compilación no es `rpm'."
 
 #: lib/inspect_config.c:65
 #, c-format
@@ -2223,6 +2243,8 @@ msgid ""
 "%%config file %s went from actual file to symlink (pointing to %s) in %s on "
 "%s"
 msgstr ""
+"%%config del archivo %s fue desde archivo actual a enlace simbólico ("
+"apuntando a %s) en %s sobre %s"
 
 #: lib/inspect_config.c:123
 #, c-format
@@ -2235,9 +2257,10 @@ msgstr ""
 #, c-format
 msgid "Symlink value for %%config file %s changed in %s on %s."
 msgstr ""
+"Valor de enlace simbólico para archivo %%config %s cambiado en %s sobre %s."
 
 #: lib/inspect_config.c:153
-#, c-format, fuzzy
+#, c-format
 msgid "%%config file content change for %s in %s on %s"
 msgstr "%%config del contenido del archivo cambia para %s en %s sobre %s"
 
@@ -2247,6 +2270,8 @@ msgid ""
 "%%config file change for %s in %s on %s (%smarked as %%config -> %smarked as "
 "%%config)\n"
 msgstr ""
+"%%config del archivo cambia para %s dentro de %s sobre %s (%smarked como "
+"%%config -> %smarked como %%config)\n"
 
 #: lib/inspect_config.c:169 lib/inspect_doc.c:114
 msgid "not "
@@ -2255,7 +2280,7 @@ msgstr "no "
 #: lib/inspect_debuginfo.c:217
 #, c-format
 msgid "%s in %s on %s is missing debugging symbols"
-msgstr ""
+msgstr "%s interno a %s en %s está ausente en símbolos depurador"
 
 #: lib/inspect_debuginfo.c:221
 msgid "missing debugging symbols"
