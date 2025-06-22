@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-22 11:37+0000\n"
+"PO-Revision-Date: 2025-06-22 11:41+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -3717,26 +3717,26 @@ msgstr "Subpaquete '%s' ha aparecido en '%s'"
 msgid ""
 "Directory %s became a symbolic link (to %s) in %s on %s; this is not allowed!"
 msgstr ""
+"Directorio %s se convierte en un enlace simbólico (a %s) dentro de %s sobre "
+"%s; esto no está permitido."
 
 #: lib/inspect_symlinks.c:100
 #, c-format
 msgid "%s %s became a symbolic link (to %s) in %s on %s"
-msgstr ""
+msgstr "%s %s se convierte en enlace simbólico (para %s) dentro de %s en %s"
 
 #: lib/inspect_symlinks.c:108
-#, fuzzy
 msgid "${FILE} became a symlink on ${ARCH}"
-msgstr "${FILE} se combierte en un enlace simbólico en ${ARCH}"
+msgstr "${FILE} se convierte en un enlace simbólico en ${ARCH}"
 
 #: lib/inspect_symlinks.c:125
-#, fuzzy
 msgid "unable to read symlink ${FILE} on ${ARCH}"
 msgstr "no es capaz de leer enlace simbólico ${FILE} en ${ARCH}"
 
 #: lib/inspect_symlinks.c:126
 #, c-format
 msgid "An error occurred reading symbolic link %s in %s on %s."
-msgstr ""
+msgstr "Sucedió un error al leer enlace simbólico %s dentro de %s en %s."
 
 #: lib/inspect_symlinks.c:178
 #, c-format
