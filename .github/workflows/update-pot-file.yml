@@ -9,9 +9,21 @@ jobs:
         # Use containers on their ubuntu latest image
         runs-on: ubuntu-latest
 
+        # Set up the matrix of distributions to test
+        strategy:
+            # only one job at once otherwise one job will push and
+            # second job will get conflict on remote
+            max-parallel: 1
+
+            matrix:
+                container: ["ubuntu:latest"]
+
+        container:
+            image: ${{ matrix.container }}
+
         steps:
             - name: Checkout rpminspect
-              uses: actions/checkout@v4
+              uses: actions/checkout@v3
               with:
                   path: rpminspect
                   repository: rpminspect/rpminspect
@@ -29,7 +41,7 @@ jobs:
                   make -C rpminspect update-pot
 
             - name: Checkout rpminspect-l10n
-              uses: actions/checkout@v4
+              uses: actions/checkout@v3
               with:
                   path: rpminspect-l10n
                   ref: main
