@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-22 11:41+0000\n"
+"PO-Revision-Date: 2025-06-22 11:49+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -3743,53 +3743,53 @@ msgstr "Sucedió un error al leer enlace simbólico %s dentro de %s en %s."
 msgid ""
 "%s %s has too many levels of redirects and cannot be resolved in %s on %s"
 msgstr ""
+"%s %s tiene demasiados niveles de redirecciones y no se puede ser resuelto "
+"dentro de %s en %s"
 
 #: lib/inspect_symlinks.c:182
-#, fuzzy
 msgid "too many redirects for ${FILE} on ${ARCH}"
 msgstr "demasiadas redirecciones para ${FILE} en ${ARCH}"
 
 #: lib/inspect_symlinks.c:277
 #, c-format
 msgid "%s %s %s a dangling symbolic link in %s on %s"
-msgstr ""
+msgstr "%s %s %s un enlace simbólico colgado dentro de %s en %s"
 
 #: lib/inspect_symlinks.c:284
 msgid "dangling symlink ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "enlace simbólico colgado de ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_types.c:69
-#, fuzzy
 msgid "${FILE} MIME type on ${ARCH}"
 msgstr "${FILE} de tipo MIME sobre ${ARCH}"
 
 #: lib/inspect_types.c:77 lib/inspect_types.c:82
-#, c-format, fuzzy
+#, c-format
 msgid "Unknown MIME type `%s' on %s in %s"
 msgstr "Tipo MIME `%s' desconocido sobre %s en %s"
 
 #: lib/inspect_types.c:107
-#, c-format, fuzzy
+#, c-format
 msgid "MIME type for %s in %s was `%s/%s' and became `%s/%s'"
 msgstr "Tipo MIME para %s en %s era `%s/%s' y se vuelve `%s/%s'"
 
 #: lib/inspect_udevrules.c:104 lib/inspect_udevrules.c:116
 #, c-format
 msgid "%s is a valid udev rules file on %s"
-msgstr ""
+msgstr "%s es un archivo de reglas udev en %s"
 
 #: lib/inspect_udevrules.c:106
 #, c-format
 msgid "%s is now a valid udev rules file on %s"
-msgstr ""
+msgstr "%s ahora es un archivo de reglas udev válida en %s"
 
 #: lib/inspect_udevrules.c:109
 #, c-format
 msgid "%s is no longer a valid udev rules file on %s"
-msgstr ""
+msgstr "%s no es archivo de reglas udev más largo en %s"
 
 #: lib/inspect_udevrules.c:112 lib/inspect_udevrules.c:118
-#, c-format, fuzzy
+#, c-format
 msgid "%s is not a valid udev rules file on %s"
 msgstr "%s no es un archivo de reglas udev válido en %s"
 
@@ -3800,7 +3800,7 @@ msgstr "*** ruta local localpath vacía en %s"
 
 #: lib/inspect_unicode.c:474
 msgid "forbidden code point in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "punto de código prohibido en ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_unicode.c:551
 #, c-format
@@ -3808,9 +3808,12 @@ msgid ""
 "A forbidden code point, 0x%04X, was found in the %s source file on line %ld "
 "at column %ld.  This source file is used by %s."
 msgstr ""
+"Un punto de código prohibido, 0x%04X, fue encontrado dentro del archivo "
+"fuente %s en la línea %ld en la columna %ld.  Este archivo fuente es "
+"utilizado por %s."
 
 #: lib/inspect_unicode.c:621
-#, c-format, fuzzy
+#, c-format
 msgid "unable to run %prep in ${FILE}"
 msgstr "no es capaz de ejecutar %prep en ${FILE}"
 
@@ -3820,24 +3823,27 @@ msgid ""
 "Unable to run through the %%prep section in %s or manually unpack sources "
 "for further scanning."
 msgstr ""
+"No es capaz de ejecutar a través de la sección %%prep dentro de %s o "
+"desempaquetar manualmente fuentes para posterior análisis."
 
 #: lib/inspect_unicode.c:744
 msgid "The unicode inspection is only for source packages, skipping."
 msgstr ""
+"La inspección Unicode solamente está para paquetes fuentes, se descarta."
 
 #: lib/inspect_upstream.c:60
 #, c-format
 msgid "New upstream source file `%s` appeared"
-msgstr ""
+msgstr "Apareció archivo de fuente `%s` en flujo nuevo"
 
 #: lib/inspect_upstream.c:62
 msgid "new source file ${FILE}"
-msgstr ""
+msgstr "nuevo archivo fuente ${FILE}"
 
 #: lib/inspect_upstream.c:91
 #, c-format
 msgid "Upstream source file `%s` changed content"
-msgstr ""
+msgstr "Archivo `%s` fuente superior cambió el contenido"
 
 #: lib/inspect_upstream.c:93
 msgid "checksum of ${FILE}"
