@@ -59,7 +59,7 @@ jobs:
                       echo "The rpminspect.pot file did not change."
                       exit 0
                   else
-                      git dif --cached
+                      git diff --cached
                   fi
 
                   git commit -m "Update ${{ matrix.branch }} rpminspect.pot file"
