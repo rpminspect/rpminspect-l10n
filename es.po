@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-21 23:57+0000\n"
+"PO-Revision-Date: 2025-06-22 11:37+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -2171,7 +2171,6 @@ msgstr ""
 
 #: lib/inspect_capabilities.c:149 lib/inspect_capabilities.c:169
 #: lib/inspect_capabilities.c:188
-#, fuzzy
 msgid "${FILE} capabilities list on ${ARCH}"
 msgstr "${FILE} con listado de capacidades sobre ${ARCH}"
 
@@ -2193,7 +2192,6 @@ msgstr ""
 "esperaba '%s'\n"
 
 #: lib/inspect_changedfiles.c:31
-#, fuzzy
 msgid ""
 "  Changes to security policy related files require inspection by the "
 "Security Response Team."
@@ -3076,7 +3074,7 @@ msgid "Package Vendor changed from \"%s\" to \"%s\" in %s"
 msgstr "Proveedor de Paquete cambiado desde \"%s\" a \"%s\" en %s"
 
 #: lib/inspect_metadata.c:156
-#, c-format, fuzzy
+#, c-format
 msgid "Package Summary change from \"%s\" to \"%s\" in %s"
 msgstr "Cambio de Sumario de Paquete desde \"%s\" a \"%s\" en %s"
 
@@ -3535,9 +3533,9 @@ msgstr ""
 "explícitamente Requires: [%s]"
 
 #: lib/inspect_rpmdeps.c:410
-#, c-format, fuzzy
+#, c-format
 msgid "%s all provide '${FILE}' on ${ARCH}"
-msgstr "%s todo proporcona '${FILE}' en ${ARCH}"
+msgstr "%s todo proporciona '${FILE}' en ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:540
 #, c-format
@@ -3551,7 +3549,6 @@ msgid "'${FILE}' needs epoch in %s on ${ARCH}"
 msgstr "'${FILE}' necesita epoch en %s sobre ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:807
-#, fuzzy
 msgid "spec file"
 msgstr "archivo específico"
 
@@ -3591,7 +3588,6 @@ msgid "'%s' became '${FILE}' in %s on ${ARCH}"
 msgstr "'%s' se convierte en '${FILE}' en %s sobre ${ARCH}"
 
 #: lib/inspect_rpmdeps.c:918
-#, fuzzy
 msgid "; this is expected"
 msgstr "; esto es esperado"
 
@@ -3601,9 +3597,9 @@ msgid "Lost '%s' in source package %s"
 msgstr "Perdió '%s' en paquete fuente %s"
 
 #: lib/inspect_rpmdeps.c:942
-#, c-format, fuzzy
+#, c-format
 msgid "Lost '%s' in subpackage %s on %s"
-msgstr "Perdido '%s' en subpaquete %s en %s"
+msgstr "'%s' perdido en subpaquete %s en %s"
 
 #: lib/inspect_runpath.c:136
 #, c-format
@@ -3622,47 +3618,49 @@ msgstr "ruta de búsqueda en tiempo de ejecución en ${FILE} en ${ARCH}"
 
 #: lib/inspect_runpath.c:270
 msgid "both DT_RPATH and DT_RUNPATH in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "ambos DT_RPATH y DT_RUNPATH en ${FILE} sobre ${ARCH}"
 
 #: lib/inspect_runpath.c:272
 #, c-format
 msgid "%s has both DT_RPATH and DT_RUNPATH on %s; this is not allowed"
-msgstr ""
+msgstr "%s tiene ambos DT_RPATH y DT_RUNPATH en %s; esto no está permitido"
 
 #: lib/inspect_shellsyntax.c:125
 msgid "invalid shell script ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "guion ${FILE} de intérprete no válido en ${ARCH}"
 
 #: lib/inspect_shellsyntax.c:132
-#, c-format, fuzzy
+#, c-format
 msgid "%s is a shell script but was not before on %s"
-msgstr "%s es un guion de shell pero no fue anterior a %s"
+msgstr "%s es un guion de intérprete pero no fue anterior a %s"
 
 #: lib/inspect_shellsyntax.c:134
 #, c-format
 msgid "%s is a %s script but was a %s script before on %s"
-msgstr ""
+msgstr "%s es un guion %s pero fue un guion %s anterior a %s"
 
 #: lib/inspect_shellsyntax.c:181
-#, c-format, fuzzy
+#, c-format
 msgid "%s is no longer a valid %s script on %s"
-msgstr "%s no es más largo un script %s válido sobre %s"
+msgstr "%s no es más largo un guion %s válido sobre %s"
 
 #: lib/inspect_shellsyntax.c:190
-#, c-format, fuzzy
+#, c-format
 msgid "%s became a valid %s script on %s"
-msgstr "%s se vuelve un guion %s válido sobre %s"
+msgstr "%s se vuelve un guion %s válido en %s"
 
 #: lib/inspect_shellsyntax.c:193
 msgid ""
 ". The script fails with '-n' but passes with '-O extglob'; be sure 'shopt "
 "extglob' is set in the script."
 msgstr ""
+". El guion falla con '-n' pero aprueba con '-O extglob'; asegúrese que "
+"'shopt extglob' está puesto dentro del guion."
 
 #: lib/inspect_shellsyntax.c:204 lib/inspect_shellsyntax.c:224
 #, c-format
 msgid "%s is not a valid %s script on %s"
-msgstr ""
+msgstr "%s no es un guion %s válido en %s"
 
 #: lib/inspect_shellsyntax.c:215
 #, c-format
@@ -3670,14 +3668,14 @@ msgid ""
 "%s fails with '-n' but passes with '-O extglob'; be sure 'shopt extglob' is "
 "set in the script on %s"
 msgstr ""
+"%s falla con '-n' pero aprueba con '-O extglob'; asegure 'shopt extglob' "
+"esté puesto en el guion en %s"
 
 #: lib/inspect_specname.c:68
-#, fuzzy
 msgid "unexpected spec filename"
-msgstr "espec de nombre del archivo inesperado"
+msgstr "especificación de nombre del archivo inesperado"
 
 #: lib/inspect_specname.c:71
-#, fuzzy
 msgid "exactly match"
 msgstr "exactamente coincide"
 
@@ -3693,6 +3691,7 @@ msgstr "finaliza con"
 #, c-format
 msgid "Spec filename does not %s the primary name %s; got '%s'"
 msgstr ""
+"Nombre de archivo especificado no es %s el nombre primario %s; obtuvo '%s'"
 
 #: lib/inspect_specname.c:109
 msgid "The specname inspection is only for source packages, skipping."
@@ -3702,17 +3701,16 @@ msgstr ""
 #: lib/inspect_subpackages.c:68
 #, c-format
 msgid "Subpackage '%s' has disappeared on '%s'"
-msgstr ""
+msgstr "Subpaquete '%s' ha desaparecido en '%s'"
 
 #: lib/inspect_subpackages.c:75 lib/inspect_subpackages.c:99
-#, fuzzy
 msgid "subpackage ${FILE}"
 msgstr "subpaquete ${FILE}"
 
 #: lib/inspect_subpackages.c:92
 #, c-format
 msgid "Subpackage '%s' has appeared on '%s'"
-msgstr ""
+msgstr "Subpaquete '%s' ha aparecido en '%s'"
 
 #: lib/inspect_symlinks.c:98
 #, c-format
