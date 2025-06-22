@@ -23,7 +23,7 @@ jobs:
 
         steps:
             - name: Checkout rpminspect
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
               with:
                   path: rpminspect
                   repository: rpminspect/rpminspect
@@ -41,7 +41,7 @@ jobs:
                   make -C rpminspect update-pot
 
             - name: Checkout rpminspect-l10n
-              uses: actions/checkout@v3
+              uses: actions/checkout@v4
               with:
                   path: rpminspect-l10n
                   ref: main
