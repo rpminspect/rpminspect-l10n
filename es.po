@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-06-22 11:49+0000\n"
+"PO-Revision-Date: 2025-06-22 12:07+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/es/>\n"
@@ -1992,7 +1992,7 @@ msgstr "APROBADO"
 
 #: lib/inspect_annocheck.c:172 lib/output_summary.c:59
 msgid "FAILED"
-msgstr "INCORRECTO"
+msgstr "FALLADO"
 
 #: lib/inspect_annocheck.c:174
 msgid "MAYBE"
@@ -3517,6 +3517,11 @@ msgid ""
 "%s' to the spec file to avoid the need to test interoperability between "
 "various combinations of old and new subpackages."
 msgstr ""
+"Subpaquete %s en %s arrastra '%s' el cual viene desde subpaquete %s pero no "
+"arrastra un requisito de una versión de paquete explícito.  Añada 'Requires: "
+"%s = %s' al archivo de especificación spec para evitar la necesidad de "
+"probar interoperatividad entre varias combinaciones de subpaquetes antiguos "
+"y nuevos."
 
 #: lib/inspect_rpmdeps.c:387
 #, c-format
@@ -3957,24 +3962,32 @@ msgstr "*** no es capaz de ejecutar mkdir %s"
 msgid ""
 "Detailed results suitable for the console and piping through paging programs."
 msgstr ""
+"Resultados detallados apropiados para la consola y conducto a través de "
+"programas de paginado."
 
 #: lib/output.c:27
 msgid ""
 "Results organized as a JSON data structure suitable for reading by web "
 "applications and other frontend tools."
 msgstr ""
+"Resultado organizado como una estructura de datos JSON apropiado para "
+"lectura por aplicaciones web y otras herramientas frontend."
 
 #: lib/output.c:29
 msgid ""
 "Results organized as an XUnit data structure suitable for use with Jenkins "
 "and other XUnit-enabled services."
 msgstr ""
+"Resultado organizado como una estructura de datos XUnit capaz de utilizar "
+"con Jenkins y otros servicios Activados de XUnit."
 
 #: lib/output.c:31
 msgid ""
 "Results summarized with one result per line, suitable for console viewing "
 "with a paging program."
 msgstr ""
+"Resultados sumados con otro resultado por línea, apropiado por visión por "
+"consola con programa de paginado."
 
 #: lib/output_json.c:99 lib/output_summary.c:45 lib/output_text.c:53
 #, c-format
@@ -4125,7 +4138,7 @@ msgstr "%s intentado para ejecutar la instrucción y recibía la señal %s"
 
 #: lib/strfuncs.c:250 lib/strfuncs.c:282
 msgid "NULL"
-msgstr ""
+msgstr "NULO"
 
 #: lib/strfuncs.c:252 lib/strfuncs.c:284
 msgid "OK"
@@ -4141,7 +4154,7 @@ msgstr "VERIFICAR"
 
 #: lib/strfuncs.c:258 lib/strfuncs.c:290
 msgid "BAD"
-msgstr ""
+msgstr "INCORRECTO"
 
 #: lib/strfuncs.c:260 lib/strfuncs.c:292
 msgid "SKIP"
@@ -4416,25 +4429,26 @@ msgstr ""
 #: src/rpminspect.c:168 src/rpminspect.c:179
 #, c-format
 msgid "*** product release for after build (%s) is empty"
-msgstr ""
+msgstr "*** producto liberado tras compilación (%s) está vacío"
 
 #: src/rpminspect.c:196 src/rpminspect.c:204
 #, c-format
 msgid "*** product release for before build (%s) is empty"
-msgstr ""
+msgstr "*** producto liberado para anterior compilación (%s) está vacío"
 
 #: src/rpminspect.c:259
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to determine product release for %s and %s"
-msgstr "*** no es capaz de determinar publicación de producto para %s y %s"
+msgstr "*** no es capaz de determinar liberación de producto para %s y %s"
 
 #: src/rpminspect.c:260
 msgid ""
 "*** See the 'favor_release' setting in the rpminspect configuration file."
 msgstr ""
+"*** Consulte la opción 'favor_release' dentro del archivo de configuración "
+"rpminspect."
 
 #: src/rpminspect.c:288
-#, fuzzy
 msgid "*** the -T and -E options are mutually exclusive"
 msgstr "*** las opciones -T y -E son mutuamente exclusivas"
 
@@ -4442,35 +4456,35 @@ msgstr "*** las opciones -T y -E son mutuamente exclusivas"
 #: src/rpminspect.c:776
 #, c-format
 msgid "*** See `%s --help` for more information."
-msgstr ""
+msgstr "*** Consulte `%s --help` para más información."
 
 #: src/rpminspect.c:304
-#, c-format, fuzzy
+#, c-format
 msgid "*** unknown inspection: `%s`"
-msgstr "*** inspección desconocidoa: `%s`"
+msgstr "*** inspección desconocida: `%s`"
 
 #: src/rpminspect.c:455
-#, c-format, fuzzy
+#, c-format
 msgid "*** unsupported build type: `%s`."
-msgstr "*** tipo de compilación no admitido: `%s`."
+msgstr "*** tipo no admitido de compilación: `%s`."
 
 #: src/rpminspect.c:464
-#, c-format, fuzzy
+#, c-format
 msgid "*** invalid build type: `%s`."
-msgstr "*** tipo de compilación no válido: `%s`."
+msgstr "*** tipo no válido de compilación: `%s`."
 
 #: src/rpminspect.c:481
-#, c-format, fuzzy
+#, c-format
 msgid "*** invalid output format: `%s`."
-msgstr "*** formato de salida no válida: `%s`."
+msgstr "*** formato de salida no válido: `%s`."
 
 #: src/rpminspect.c:493
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to expand working directory: `%s`"
 msgstr "*** no es capaz de expandir directorio de trabajo: `%s`"
 
 #: src/rpminspect.c:506
-#, c-format, fuzzy
+#, c-format
 msgid "*** unable to use `%s' as working directory"
 msgstr "*** no es capaz de utilizar `%s' como directorio de trabajo"
 
@@ -4480,17 +4494,17 @@ msgid "%s version %s\n"
 msgstr "%s versión %s\n"
 
 #: src/rpminspect.c:539
-#, c-format, fuzzy
+#, c-format
 msgid "*** ?? getopt returned character code 0%o ??"
 msgstr "*** ?? getopt devolvió código de carácter 0%o ??"
 
 #: src/rpminspect.c:546
-#, c-format, fuzzy
+#, c-format
 msgid "Available build types:\n"
 msgstr "Tipo de compilación disponible:\n"
 
 #: src/rpminspect.c:567
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "\n"
 "Available output formats:\n"
@@ -4499,7 +4513,7 @@ msgstr ""
 "Formatos de salida disponibles:\n"
 
 #: src/rpminspect.c:584
-#, c-format, fuzzy
+#, c-format
 msgid ""
 "\n"
 "Available inspections:\n"
@@ -4516,19 +4530,19 @@ msgstr "*** fallaba al leer archivo de configuración %s"
 #, c-format
 msgid "*** Please specify a configuration file using '-c' or supply ./%s"
 msgstr ""
+"*** Especifique un archivo de configuración utilizando '-c' o proporcione ./"
+"%s"
 
 #: src/rpminspect.c:736
-#, fuzzy
 msgid "*** Invalid before and after build specification."
 msgstr "*** No válido antes y después de especificación de compilación."
 
 #: src/rpminspect.c:744
-#, fuzzy
 msgid "*** unable to read RPM configuration"
 msgstr "*** no es capaz de leer configuración RPM"
 
 #: src/rpminspect.c:775
-#, c-format, fuzzy
+#, c-format
 msgid "*** unsupported architecture specified: `%s`"
 msgstr "*** no se admite la arquitectura especificada: `%s`"
 
@@ -4543,34 +4557,37 @@ msgid ""
 "Version information for libraries and programs used by %s as well as storage "
 "requirements.  This result is for informational and diagnostic purposes only."
 msgstr ""
+"Información de versión para bibliotecas y programas utilizado por %s así "
+"como requerimientos de almacenaje.  Este resultado es para información y "
+"diagnósticos solo."
 
 #: src/rpminspect.c:858
 #, c-format
 msgid "Space required to download artifacts: %lu bytes (%s)\n"
-msgstr ""
+msgstr "Espacio requerido para artefactos de descarga: %lu bytes (%s)\n"
 
 #: src/rpminspect.c:866
-#, c-format, fuzzy
+#, c-format
 msgid "Space required to unpack artifacts: %lu bytes (%s)\n"
 msgstr "Espacio requerido para desempaquetar artefactos. %lu bytes (%s)\n"
 
 #: src/rpminspect.c:878
 #, c-format
 msgid "Command line arguments used to invoke %s."
-msgstr ""
+msgstr "Argumentos de línea de instrucción utilizada para invocar %s."
 
 #: src/rpminspect.c:902
 #, c-format
 msgid "Local configuration file: %s"
-msgstr ""
+msgstr "Archivo de configuración local: %s"
 
 #: src/rpminspect.c:912
 msgid "Before Build"
-msgstr ""
+msgstr "Anterior a Compilación"
 
 #: src/rpminspect.c:917
 msgid "After Build"
-msgstr ""
+msgstr "Tras Compilación"
 
 #: src/rpminspect.c:920
 msgid "Build"
@@ -4579,30 +4596,35 @@ msgstr "Compilar"
 #: src/rpminspect.c:937
 msgid "*** no peers, ensure packages exist for specified architecture(s)"
 msgstr ""
+"*** sin parejas, asegure existencia de paquetes para arquitectura(s) "
+"especificada(s)"
 
 #: src/rpminspect.c:958
 msgid ""
 "*** unable to find a set of peer packages between the before and after builds"
 msgstr ""
+"*** no es capaz de encontrar un conjunto de paquetes emparejados entre las "
+"compilaciones anterior y posterior"
 
 #: src/rpminspect.c:972
 msgid "*** unable to determine product release or none specified (-r)."
 msgstr ""
+"*** no es capaz de determinar liberación de producto o ninguno especificado "
+"(-r)."
 
 #: src/rpminspect.c:984
-#, c-format, fuzzy
+#, c-format
 msgid "Skipping %s inspection..."
-msgstr "Descarta inspección %s..."
+msgstr "Descarta inspección %s…"
 
 #: src/rpminspect.c:989
-#, fuzzy
 msgid "skip"
 msgstr "omitir"
 
 #: src/rpminspect.c:1009
-#, c-format, fuzzy
+#, c-format
 msgid "Running %s inspection..."
-msgstr "Ejecutando inspección %s..."
+msgstr "Ejecutando inspección %s…"
 
 #: src/rpminspect.c:1018
 msgid "pass"
@@ -4610,7 +4632,7 @@ msgstr "aprobar"
 
 #: src/rpminspect.c:1018
 msgid "FAIL"
-msgstr ""
+msgstr "FALLO"
 
 #: src/rpminspect.c:1046
 #, c-format
