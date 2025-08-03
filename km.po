@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-08-02 14:53+0000\n"
+"PO-Revision-Date: 2025-08-04 11:53+0000\n"
 "Last-Translator: kanitha chim <kchim@redhat.com>\n"
 "Language-Team: Khmer (Central) <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/km/>\n"
@@ -196,6 +196,13 @@ msgid ""
 "Rebased packages report these findings at the INFO level while non-rebased "
 "packages report them at the VERIFY level or higher."
 msgstr ""
+"រាយការណ៍​ឯកសារ​ដែល​បាន​បន្ថែម​ពី​ before build និង after build។  ឯកសារ Debuginfo "
+"មិន​ត្រូវ​បាន​អើពើ​ដូច​ជា​ឯកសារ​ដែល​ត្រូវ​គ្នា​នឹង​លំនាំ​ដែល​បាន​កំណត់​ក្នុង​ configuration file។  "
+"ឯកសារដែលបានបន្ថែមទៅផ្លូវសុវត្ថិភាពបង្កើតរបាយការណ៍ពិសេស "
+"ក្នុងករណីដែលតម្រូវឱ្យមានការត្រួតពិនិត្យសុវត្ថិភាព។  ឯកសារ setuid និង setgid "
+"ថ្មីបង្កើនការព្រមានសុវត្ថិភាព លុះត្រាតែឯកសារនោះស្ថិតនៅក្នុងបញ្ជី fileinfo ។  Package "
+"ដែលផ្អែកលើមូលដ្ឋានរាយការណ៍ការរកឃើញទាំងនេះនៅកម្រិត INFO ខណៈពេលដែល package "
+"ដែលមិនផ្អែកលើមូលដ្ឋានរាយការណ៍ពួកគេនៅកម្រិត VERIFY ឬខ្ពស់ជាងនេះ។"
 
 #: include/inspect.h:1441
 msgid ""
@@ -204,6 +211,10 @@ msgid ""
 "on the rebaseable list, the change is reported as informational. Otherwise "
 "the change is reported as a rebase of the package and requires inspection."
 msgstr ""
+"រាយការណ៍ Source archives ដែលបានកំណត់នៅក្នុងឯកសារ RPM spec ផ្លាស់ប្តូរមាតិការវាងមុន និងក្រោ"
+"យ build។ ប្រសិនបើ source archives ផ្លាស់ប្តូរ ហើយ package "
+"មាននៅក្នុងបញ្ជីដែលអាចប្រើឡើងវិញបាន ការផ្លាស់ប្តូរត្រូវបានរាយការណ៍ថាជាព័ត៌មាន។ បើមិនដូច្នេះទេ "
+"ការផ្លាស់ប្តូរត្រូវបានរាយការណ៍ថាជាមូលដ្ឋាននៃ package និងទាមទារឱ្យមានការត្រួតពិនិត្យ។"
 
 #: include/inspect.h:1447
 msgid ""
@@ -211,6 +222,9 @@ msgid ""
 "make sure executables are owned by the correct user and group. If a before "
 "and after build have been specified, also report ownership changes."
 msgstr ""
+"រាយការណ៍ឯកសារ និងថតឯកសារដែលជាកម្មសិទ្ធិរបស់អ្នកប្រើប្រាស់ និងក្រុមដែលមិនបានរំពឹងទុក។ "
+"ពិនិត្យមើលដើម្បីធ្វើឱ្យប្រាកដថាការប្រតិបត្តិត្រូវបានគ្រប់គ្រងដោយអ្នកប្រើប្រាស់ និងក្រុមត្រឹមត្រូវ។ ប្រសិនបើ"
+" before និង after build ត្រូវបានបញ្ជាក់ សូមរាយការណ៍ផងដែរអំពីការផ្លាស់ប្តូរកម្មសិទ្ធិ។"
 
 #: include/inspect.h:1453
 msgid ""
@@ -221,6 +235,11 @@ msgid ""
 "perform the previous check but also report if a previously bad script is now "
 "passing the syntax check."
 msgstr ""
+"សម្រាប់​ shell script ​ទាំងអស់​ក្នុង​ build សូម​ពិនិត្យ​ syntax ​លើ​វា​ដោយ​ប្រើ​ shell ដែល​បាន​កំណត់​ក្នុ"
+"ង #! បន្ទាត់ (shell ត្រូវតែត្រូវបានរាយក្នុងផ្នែក shell នៃ configuration data ផងដែរ) ។ "
+"ប្រសិនបើការពិនិត្យ syntax return មិនមែនសូន្យ រាយការណ៍វាទៅអ្នកប្រើប្រាស់ ហើយ return stdout "
+"និង stderr រួមបញ្ចូលគ្នា។ ប្រសិនបើប្រៀបធៀបការ builds ពីរ សូមធ្វើការពិនិត្យពីមុន "
+"ប៉ុន្តែក៏រាយការណ៍ផងដែរ ប្រសិនបើ script មិនត្រឹមត្រូវពីមុនកំពុងឆ្លងកាត់ការត្រួតពិនិត្យ syntax។"
 
 #: include/inspect.h:1459
 msgid ""
@@ -230,12 +249,18 @@ msgid ""
 "build.  If no annocheck tests are defined in the configuration file, this "
 "inspection is skipped."
 msgstr ""
+"អនុវត្តការធ្វើតេស្ត annocheck ដែលបានកំណត់នៅក្នុង configuration file នៅលើឯកសារ ELF "
+"ទាំងអស់នៅក្នុង build ។  Build តែមួយដែលបានបញ្ជាក់នឹងធ្វើការវិភាគតែប៉ុណ្ណោះ។  Builds "
+"ពីរដែលបានបញ្ជាក់នឹងប្រៀបធៀបលទ្ធផលតេស្តរវាងមុន និងក្រោយ build។  ប្រសិនបើគ្មានការធ្វើតេស្ត "
+"annocheck ត្រូវបានកំណត់នៅក្នុង configuration file ទេ ការត្រួតពិនិត្យនេះត្រូវបានរំលង។"
 
 #: include/inspect.h:1465
 msgid ""
 "Compare DT_NEEDED entries in dynamic ELF executables and shared libraries "
 "between the before and after build and report changes."
 msgstr ""
+"ប្រៀបធៀបធាតុ DT_NEEDED នៅក្នុងការប្រតិបត្តិ ELF dynamic និងបណ្ណាល័យចែករំលែករវាងមុន និងក្រោយ "
+"build និងរាយការណ៍ការផ្លាស់ប្តូរ។"
 
 #: include/inspect.h:1471
 msgid ""
@@ -243,6 +268,9 @@ msgid ""
 "non-empty files became empty, report those as results needing verification.  "
 "Report file change percentages as info-only."
 msgstr ""
+"រាយការណ៍ការផ្លាស់ប្តូរទំហំឯកសាររវាង builds។  ប្រសិនបើឯកសារក្លាយជាឯកសារទទេរ ឬ "
+"ឯកសារមិនទទេក្លាយជាទទេ សូមរាយការណ៍ថាជាលទ្ធផលដែលត្រូវការការផ្ទៀងផ្ទាត់។  "
+"រាយការណ៍ភាគរយនៃការផ្លាស់ប្តូរឯកសារជាព័ត៌មានតែប៉ុណ្ណោះ។"
 
 #: include/inspect.h:1477
 msgid ""
@@ -250,6 +278,9 @@ msgid ""
 "list for the product release specified or determined.  Any setuid or setgid "
 "changes will raise a message requiring Security Team review."
 msgstr ""
+"រាយការណ៍ស្ថានភាព (2) របៀបផ្លាស់ប្តូររវាង builds។  ពិនិត្យទៅលើបញ្ជី fileinfo សម្រាប់ការ "
+"product release ដែលបានបញ្ជាក់ ឬកំណត់។  រាល់ការផ្លាស់ប្តូរ setuid ឬ setgid "
+"នឹងលើកសារដែលទាមទារឱ្យក្រុមសន្តិសុខពិនិត្យ។"
 
 #: include/inspect.h:1485
 msgid ""
@@ -258,6 +289,9 @@ msgid ""
 "capabilities changes not listed will raise a message requiring Security Team "
 "review."
 msgstr ""
+"របាយការណ៍សមត្ថភាព (7) ការផ្លាស់ប្តូររវាង builds។  ពិនិត្យមើលបញ្ជីសមត្ថភាពសម្រាប់ product "
+"release ដែលបានបញ្ជាក់ ឬកំណត់។  "
+"រាល់ការផ្លាស់ប្តូរសមត្ថភាពដែលមិនបានរាយបញ្ជីនឹងលើកសារដែលទាមទារឱ្យក្រុមសន្តិសុខពិនិត្យ។"
 
 #: include/inspect.h:1494
 msgid ""
@@ -265,6 +299,9 @@ msgid ""
 "between builds.  This inspection is intended as an information gathering "
 "tool to gather kernel module differences between two builds."
 msgstr ""
+"រាយការណ៍ kernel module parameter, dependency, PCI ID ឬភាពខុសគ្នានៃនិមិត្តសញ្ញារវាង "
+"builds។  ការត្រួតពិនិត្យនេះត្រូវបានបម្រុងទុកជាឧបករណ៍ប្រមូលព័ត៌មានដើម្បីប្រមូលភាពខុសគ្នានៃ kernel "
+"module រវាង builds ពីរ។"
 
 #: include/inspect.h:1501
 msgid ""
@@ -274,12 +311,16 @@ msgid ""
 "architectures as provided in the before build and not seeing them in the "
 "after build."
 msgstr ""
+"រាយការណ៍អំពី architectures RPM ដែលលេចឡើង និងបាត់រវាងមុន និងក្រោយ builds។  "
+"ការត្រួតពិនិត្យនេះមិនរាយការណ៍ពីការបាត់បង់កញ្ចប់ noarch ទេ។  "
+"គោលបំណងនៃការត្រួតពិនិត្យនេះគឺដើម្បីរាយការណ៍ពីការបាត់បង់ស្ថាបត្យកម្មម៉ាស៊ីនគោលដៅដូចដែលបានផ្តល់នៅ "
+"before build ហើយមិនឃើញពួកវានៅ after build។"
 
 #: include/inspect.h:1507
 msgid ""
 "Report RPM subpackages that appear and disappear between the before and "
 "after builds."
-msgstr ""
+msgstr "រាយការណ៍ RPM subpackages ដែលលេចឡើង និងបាត់រវាងមុន និងក្រោយ builds។"
 
 #: include/inspect.h:1513
 #, c-format
@@ -288,6 +329,9 @@ msgid ""
 "Reports any other differences in the existing changelog between builds and "
 "that the new entry contains new text entries."
 msgstr ""
+"ត្រូវប្រាកដថា packages មានធាតុនៅក្នុង %changelog សម្រាប់កំណែ build។  "
+"រាយការណ៍ពីភាពខុសគ្នាផ្សេងទៀតនៅក្នុងកំណត់ហេតុការផ្លាស់ប្តូរដែលមានស្រាប់រវាង build "
+"និងថាធាតុថ្មីមានធាតុអត្ថបទថ្មី។"
 
 #: include/inspect.h:1519
 msgid ""
@@ -296,6 +340,9 @@ msgid ""
 "path migrations.  The main examples are /bin migrating to /usr/bin and /sbin "
 "migrating to /usr/sbin."
 msgstr ""
+"រាយការណ៍ឯកសារដែលត្រូវបានខ្ចប់នៅក្នុងថតដែលលែងប្រើដោយ product។  ជាធម្មតា នេះមានន័យថា "
+"package មួយមិនត្រូវបានធ្វើបច្ចុប្បន្នភាពទៅក្នុងគណនីសម្រាប់ការផ្លាស់ប្តូរ path ទេ។  ឧទាហរណ៍សំខាន់ៗគឺ"
+" /bin ផ្លាស់ទីទៅ /usr/bin និង /sbin ផ្ទេរទៅ /usr/sbin ។"
 
 #: include/inspect.h:1525
 msgid ""
@@ -305,6 +352,11 @@ msgid ""
 "ELF objects shipped in packages.  This inspection looks for LTO bytecode in "
 "ELF relocatable objects and reports if any is present."
 msgstr ""
+"Link Time Optimization (LTO) បង្កើតការប្រតិបត្តិ និងបណ្ណាល័យ ELF ដែលមានទំហំតូចជាង "
+"និងលឿនជាងមុន។  LTO bytecode មិនមានស្ថេរភាពពីការ release gcc មួយទៅបន្ទាប់។  ដូច្នេះ LTO "
+"bytecode មិនគួរមាននៅក្នុង .a និង .o ELF objects ដែលត្រូវបាន shipped នៅក្នុង packages។"
+"  ការត្រួតពិនិត្យនេះរកមើល LTO bytecode នៅក្នុង ELF relocatable objects "
+"និងរបាយការណ៍ប្រសិនបើមាន។"
 
 #: include/inspect.h:1531
 msgid ""
@@ -312,18 +364,23 @@ msgid ""
 "ensures absolute and relative symlinks are valid.  It also checks for any "
 "symlink usage that will cause problems for RPM."
 msgstr ""
+"តំណភ្ជាប់និមិត្តសញ្ញាត្រូវតែអាចដោះស្រាយបាននៅលើប្រព័ន្ធដែលបានដំឡើង។  ការត្រួតពិនិត្យនេះធានាថា "
+"តំណភ្ជាប់និមិត្តសញ្ញាពិតប្រាកដ និងពាក់ព័ន្ធមានសុពលភាព។  វាក៏ពិនិត្យមើលផងដែរសម្រាប់ការប្រើប្រាស់ "
+"symlink ដែលនឹងបង្កឱ្យមានបញ្ហាសម្រាប់ RPM ។"
 
 #: include/inspect.h:1537
 #, c-format
 msgid ""
 "Check %files sections in the spec file for any forbidden path references."
 msgstr ""
+"ពិនិត្យផ្នែក %files នៅក្នុងឯកសារជាក់លាក់សម្រាប់ឯកសារយោងផ្លូវហាមឃាត់ណាមួយ។"
 
 #: include/inspect.h:1543
 msgid ""
 "Compare MIME types of files between builds and report any changes for "
 "verification."
 msgstr ""
+"ប្រៀបធៀបប្រភេទឯកសារ MIME រវាង builds និងរាយការណ៍ការផ្លាស់ប្តូរណាមួយសម្រាប់ការផ្ទៀងផ្ទាត់។"
 
 #: include/inspect.h:1549
 msgid ""
@@ -336,6 +393,13 @@ msgid ""
 "that, turn off the abidiff inspection or add the package name to the "
 "rebaseable list."
 msgstr ""
+"នៅពេលប្រៀបធៀប builds ពីរ ឬ packages ពីរ សូមប្រៀបធៀបឯកសារ ELF ដោយប្រើ abidiff(1) "
+"ពីគម្រោង libabigail ។  ភាពខុសគ្នាត្រូវបានរាយការណ៍។  ប្រសិនបើ package គឺជា rebase មួយ "
+"ហើយមិនមាននៅក្នុងបញ្ជី rebaseable ហើយការត្រួតពិនិត្យ rebase ត្រូវបានបើក ភាពខុសគ្នា ABI "
+"ត្រូវបានរាយការណ៍ថាជាការបរាជ័យ។  ការសន្មតនៅទីនេះគឺថា rpminspect កំពុងប្រៀបធៀប builds "
+"សម្រាប់គោលបំណងថែទាំ ហើយអ្នកមិនចង់ណែនាំការផ្លាស់ប្តូរ ABI សម្រាប់អ្នកប្រើប្រាស់ទេ។  "
+"ប្រសិនបើអ្នកមិនខ្វល់ពីរឿងនោះទេ សូមបិទការត្រួតពិនិត្យ abidiff ឬបន្ថែមឈ្មោះ package "
+"ទៅក្នុងបញ្ជីដែលអាចប្រើឡើងវិញបាន។"
 
 #: include/inspect.h:1555
 msgid ""
@@ -346,6 +410,11 @@ msgid ""
 "rebase, an incompatible change reported by kmidiff is reported for "
 "verification."
 msgstr ""
+"kmidiff ប្រៀបធៀបចំណុច binary Kernel Module Interfaces ពីរនៃ Linux kernel trees។  "
+"Binary KMI ពីរគឺជាចំណុចប្រទាក់ដែល Linux kernel បង្ហាញទៅ modules របស់វា។  Trees "
+"ដែលយើងចាប់អារម្មណ៍នៅទីនេះ គឺជាលទ្ធផលនៃ build នៃ Linux kernel source tree។  ប្រសិនបើ "
+"builds ដែលត្រូវបានប្រៀបធៀបមិនត្រូវបានចាត់ទុកថាជា rebase ទេ "
+"ការផ្លាស់ប្តូរមិនត្រូវគ្នាដែលបានរាយការណ៍ដោយ kmidiff ត្រូវបានរាយការណ៍សម្រាប់ការផ្ទៀងផ្ទាត់។"
 
 #: include/inspect.h:1561
 #, c-format
@@ -355,6 +424,10 @@ msgid ""
 "is reported at the INFO level.  Content and location changes are reporting "
 "at the VERIFY level unless the comparison is between rebased packages."
 msgstr ""
+"ពិនិត្យ និងរាយការណ៍ពីភាពខុសគ្នានៅក្នុង configuration file ដែលបានសម្គាល់ដោយ %config នៅក្នុង "
+"spec file។  ប្រសិនបើការផ្លាស់ប្តូរមានចន្លោះទទេ ឬការធ្វើទ្រង់ទ្រាយតែប៉ុណ្ណោះ "
+"លទ្ធផលត្រូវបានរាយការណ៍នៅកម្រិត INFO ។  ការផ្លាស់ប្តូរខ្លឹមសារ និងទីតាំងកំពុងរាយការណ៍នៅកម្រិត "
+"VERIFY លុះត្រាតែការប្រៀបធៀបរវាង rebased packages។"
 
 #: include/inspect.h:1567
 #, c-format
@@ -362,6 +435,8 @@ msgid ""
 "Report changes in %doc marked files.  Files that have been added or removed "
 "as documentation files, for instance."
 msgstr ""
+"រាយការណ៍ការផ្លាស់ប្តូរនៅក្នុងឯកសារសម្គាល់ %doc ។  ឧទាហរណ៍ ឯកសារដែលត្រូវបានបន្ថែម "
+"ឬដកចេញជាឯកសារ។"
 
 #: include/inspect.h:1573
 msgid ""
@@ -375,6 +450,13 @@ msgid ""
 "can also list patch names that rpminspect should ignore during the "
 "inspection."
 msgstr ""
+"ពិនិត្យ patches ទាំងអស់ដែលបានកំណត់ក្នុង spec file និងរាយការណ៍ការផ្លាស់ប្តូររវាង builds។  "
+"ការត្រួតពិនិត្យមុខងារនៅទីនេះគឺដើម្បីធានាថារាល់ patches ដែលបានកំណត់នៅក្នុង preamble មាន "
+"macro កម្មវិធីដែលត្រូវគ្នានៅក្នុង spec file។  នៅកម្រិត INFO, rpminspect រាយការណ៍ចំនួនឯកសា"
+"រ ចំនួនបន្ទាត់ និងការផ្លាស់ប្តូរទំហំ patch។  ប្រសិនបើកម្រិតត្រូវបានឈានដល់ទាក់ទងនឹងការផ្លាស់ប្តូរទំហំ "
+"patch ឬចំនួនឯកសារដែល patch ប៉ះនោះ, rpminspect រាយការណ៍ពីការផ្លាស់ប្តូរនៅកម្រិត VERIFY "
+"លុះត្រាតែការប្រៀបធៀបនេះគឺសម្រាប rebase។ Configuration file ក៏អាចរាយឈ្មោះ patch ដែល "
+"rpminspect មិនគួរមិនអើពើកំឡុងពេលត្រួតពិនិត្យ។"
 
 #: include/inspect.h:1579
 msgid ""
@@ -382,6 +464,9 @@ msgid ""
 "found by libclamav will fail the inspection.  The ignore_path rules are not "
 "used in this inspection.  All files are scanned."
 msgstr ""
+"ធ្វើការស្កេនមេរោគលើរាល់ឯកសារនៅក្នុង build ដោយប្រើ libclamav។  រាល់អ្វីដែលបានរកឃើញដោយ "
+"libclamav នឹងបរាជ័យក្នុងការត្រួតពិនិត្យ។  ច្បាប់ ignore_path "
+"មិនត្រូវបានប្រើក្នុងការត្រួតពិនិត្យនេះទេ។  ឯកសារទាំងអស់ត្រូវបានស្កេន។"
 
 #: include/inspect.h:1585
 msgid ""
@@ -391,6 +476,12 @@ msgid ""
 "subdirectory map to the product release string.  The rules in each file "
 "define the politically sensitive allow and deny rules for that release."
 msgstr ""
+"ពិនិត្យមើលឯកសារដែលមានភាព sensitive ផ្នែកនយោបាយដែលគេស្គាល់នៅក្នុង packages "
+"ហើយរាយការណ៍ប្រសិនបើពួកគេត្រូវបានអនុញ្ញាត ឬហាមឃាត់។  ច្បាប់បានមកពីគោលនយោបាយ/ថតរងនៅក្នុង "
+"rpminspect-data package សម្រាប់ផលិតផល។  ឯកសារនៅក្នុង politics/ subdirectory map "
+"ទៅកាន់ product release string។  "
+"ច្បាប់នៅក្នុងឯកសារនីមួយៗកំណត់ការអនុញ្ញាតដែលប្រកាន់អក្សរតូចធំផ្នែកនយោបាយ "
+"និងបដិសេធច្បាប់សម្រាប់ការចេញផ្សាយនោះ។"
 
 #: include/inspect.h:1591
 msgid ""
@@ -399,12 +490,17 @@ msgid ""
 "catch built packages that make use of deprecated API functions if you wish "
 "built packages to conform to replacement APIs."
 msgstr ""
+"ពិនិត្យមុខងារហាមឃាត់នៅក្នុងឯកសារ ELF ។  មុខងារហាមឃាត់ត្រូវបានកំណត់នៅក្នុង configuration "
+"files ពេលដំណើរការ។  ជាធម្មតា ការត្រួតពិនិត្យនេះត្រូវបានប្រើដើម្បីចាប់យក package "
+"ដែលបានបង្កើតដែលប្រើមុខងារ API ដែលមិនគាំទ្រ ប្រសិនបើអ្នកចង់ឱ្យ package "
+"ដែលបានបង្កើតដើម្បីអនុលោមតាម APIs ជំនួស។"
 
 #: include/inspect.h:1597
 msgid ""
 "Check for forbidden paths in both the DT_RPATH and DT_RUNPATH settings in "
 "ELF shared objects."
 msgstr ""
+"ពិនិត្យរកផ្លូវហាមឃាត់ទាំងការកំណត់ DT_RPATH និង DT_RUNPATH នៅក្នុងវត្ថុដែលបានចែករំលែក ELF ។"
 
 #: include/inspect.h:1603
 msgid ""
@@ -412,6 +508,9 @@ msgid ""
 "for any prohibited Unicode code points, as defined in the configuration "
 "file.  Any prohibited code points are reported as a possible security risk."
 msgstr ""
+"ស្កែនឯកសារប្រភពកូដ script និងឯកសារ RPM ដែលស្រង់ចេញ "
+"និងផ្គូផ្គងសម្រាប់ចំណុចកូដយូនីកូដដែលត្រូវបានហាមឃាត់ ដូចដែលបានកំណត់ក្នុង configuration file។  "
+"រាល់ចំណុចកូដដែលហាមឃាត់ត្រូវបានរាយការណ៍ថាជាហានិភ័យសុវត្ថិភាពដែលអាចកើតមាន។"
 
 #: include/inspect.h:1609
 msgid ""
@@ -421,6 +520,11 @@ msgid ""
 "will check for correct RPM dependency metadata when inspecting a single "
 "build and report findings."
 msgstr ""
+"ពិនិត្យរកមើល RPM dependency metadata ដែលត្រឹមត្រូវ។  រាយការណ៍ពីការរកឃើញមិនត្រឹមត្រូវ "
+"ឬផ្ទុយគ្នា ក៏ដូចជាការផ្លាស់ប្តូរដែលរំពឹងទុកនៅពេលប្រៀបធៀប new build ទៅនឹង old build។  "
+"ការផ្លាស់ប្តូរត្រូវបានរាយការណ៍តែនៅពេលប្រៀបធៀប builds ប៉ុណ្ណោះ "
+"ប៉ុន្តែការត្រួតពិនិត្យនេះនឹងពិនិត្យរកមើល RPM dependency metadata ត្រឹមត្រូវ នៅពេលពិនិត្យមើល "
+"build តែមួយ និងរាយការណ៍ពីការរកឃើញ។"
 
 #: include/inspect.h:1615
 msgid ""
@@ -429,24 +533,32 @@ msgid ""
 "report where symbols unexpectedly appear or disappear and what corrective "
 "action is needed."
 msgstr ""
+"ពិនិត្យមើលថាឯកសារនៅក្នុងកញ្ចប់ RPM មាន debugging symbols stripped របស់ពួកគេ "
+"ហើយឯកសារនៅក្នុង debuginfo packages មាន debugging symbols។  នៅពេលប្រៀបធៀប builds "
+"សូមរាយការណ៍ពីកន្លែងដែលនិមិត្តសញ្ញាលេចឡើង ឬបាត់ដោយមិនបានរំពឹងទុក និងអ្វីដែលត្រូវការការកែតម្រូវ។"
 
 #: include/inspect.h:1621
 msgid "Perform syntax check on udev rules files using udevadm verify."
 msgstr ""
+"អនុវត្តការត្រួតពិនិត្យ syntax លើឯកសារច្បាប់ udev ដោយប្រើ udevadm verify ។"
 
 #: include/results.h:31
 msgid "Change the string specified on the 'Vendor:' line in the spec file."
 msgstr ""
+"ផ្លាស់ប្តូរខ្សែអក្សរដែលបានបញ្ជាក់នៅលើបន្ទាត់ 'Vendor:' នៅក្នុង spec file។"
 
 #: include/results.h:38
 msgid "Make sure the SRPM is built on a host within the expected subdomain."
 msgstr ""
+"ត្រូវប្រាកដថា SRPM ត្រូវបានបង្កើតឡើងនៅលើម៉ាស៊ីនមួយនៅក្នុង subdomain ដែលរំពឹងទុក។"
 
 #: include/results.h:45
 msgid ""
 "Unprofessional language as defined in the configuration file was found in "
 "the text shown.  Remove or change the offending words and rebuild."
 msgstr ""
+"ភាសាដែលមិនមានវិជ្ជាជីវៈដូចដែលបានកំណត់នៅក្នុង configuration file "
+"ត្រូវបានរកឃើញនៅក្នុងអត្ថបទដែលបានបង្ហាញ។  លុប ឬផ្លាស់ប្តូរពាក្យប្រមាថ ហើយ rebuild។"
 
 #: include/results.h:60 include/results.h:75
 #, c-format
@@ -454,6 +566,8 @@ msgid ""
 "Check to see if you eliminated a subpackage but still have the %package and/"
 "or the %files section for it."
 msgstr ""
+"ពិនិត្យមើលថាតើអ្នកបានលុប subpackage មួយ ប៉ុន្តែនៅតែមានផ្នែក %package and/or %files "
+"section សម្រាប់វា។"
 
 #: include/results.h:90
 msgid ""
@@ -461,6 +575,9 @@ msgid ""
 "distribution (e.g., GPLv2+).  If the license in question is approved, the "
 "license database needs updating in the rpminspect-data package."
 msgstr ""
+"License ត្រូវតែមានខ្សែអក្សរអាជ្ញាប័ណ្ណដែលត្រូវបានអនុម័តដូចដែលបានកំណត់ដោយការចែកចាយ (ឧ. "
+"GPLv2+) ។  ប្រសិនបើអាជ្ញាប័ណ្ណនៅក្នុងសំណួរត្រូវបានអនុម័ត "
+"មូលដ្ឋានទិន្នន័យអាជ្ញាប័ណ្ណត្រូវការការធ្វើបច្ចុប្បន្នភាពនៅក្នុង rpminspect-data package។"
 
 #: include/results.h:97
 msgid ""
@@ -468,6 +585,9 @@ msgid ""
 "valid licensedb file.  This is also commonly due to a missing vendor "
 "specific rpminspect-data package on the system."
 msgstr ""
+"ត្រូវប្រាកដថាការកំណត់ licensedb នៅក្នុង rpminspect configuration ត្រូវបានកំណត់ទៅជាឯកសារ "
+"licensedbត្រឹមត្រូវ។  នេះក៏ជារឿងធម្មតាដែរ ដោយសារតែការបាត់ rpminspect-data package "
+"ជាក់លាក់របស់អ្នកលក់នៅលើប្រព័ន្ធ។"
 
 #: include/results.h:104
 msgid ""
@@ -478,36 +598,47 @@ msgid ""
 "but marked unapproved, you may need to work with the legal team regarding "
 "options for this software."
 msgstr ""
+"អក្សរកាត់​អាជ្ញាប័ណ្ណ​ដែល​បាន​បញ្ជាក់​មិន​ត្រូវ​បាន​រាយ​បញ្ជី​ថា​ត្រូវ​បាន​អនុម័ត​ក្នុង​មូលដ្ឋាន​ទិន្នន័យ​អាជ្ញាប័ណ្ណ​ទេ។"
+"  មូលដ្ឋានទិន្នន័យអាជ្ញាប័ណ្ណត្រូវបានបញ្ជាក់នៅក្នុង rpminspect configuration file។  "
+"ពិនិត្យឯកសារនេះ ហើយផ្ញើសំណើទាញទៅកាន់គម្រោង upstream "
+"ដែលសមស្របដើម្បីធ្វើបច្ចុប្បន្នភាពមូលដ្ឋានទិន្នន័យ។  "
+"ប្រសិនបើអាជ្ញាប័ណ្ណត្រូវបានរាយបញ្ជីក្នុងមូលដ្ឋានទិន្នន័យ ប៉ុន្តែត្រូវបានសម្គាល់ថាមិនបានអនុម័ត "
+"អ្នកប្រហែលជាត្រូវធ្វើការជាមួយក្រុមច្បាប់ទាក់ទងនឹងជម្រើសសម្រាប់កម្មវិធីនេះ។"
 
 #: include/results.h:119 include/results.h:154
 msgid "Ensure all object files are compiled with -fPIC"
-msgstr ""
+msgstr "ត្រូវប្រាកដថាឯកសារវត្ថុទាំងអស់ត្រូវបានចងក្រងជាមួយ -fPIC"
 
 #: include/results.h:126
 msgid ""
 "Ensure that the package is being built with the correct compiler and "
 "compiler flags"
 msgstr ""
+"ត្រូវប្រាកដថា package កំពុងត្រូវបានបង្កើតឡើងជាមួយនឹង compiler និង compiler flags ត្រឹមត្រូវ"
 
 #: include/results.h:133
 msgid ""
 "The data in an ELF file appears to be corrupt; ensure that packaged ELF "
 "files are not being truncated or incorrectly modified"
 msgstr ""
+"ទិន្នន័យនៅក្នុងឯកសារ ELF ហាក់ដូចជាខូច។ ត្រូវប្រាកដថាឯកសារ ELF ដែលបានខ្ចប់មិនត្រូវបានគេកាត់ចេញ "
+"ឬកែប្រែមិនត្រឹមត្រូវ"
 
 #: include/results.h:140
 msgid ""
 "An ELF stack is marked as executable. Ensure that no execstack options are "
 "being passed to the linker, and that no functions are defined on the stack."
 msgstr ""
+"ELF stack ត្រូវបានសម្គាល់ថាអាចប្រតិបត្តិបាន។ ត្រូវប្រាកដថាមិនមានជម្រើស execstack "
+"ណាមួយត្រូវបានបញ្ជូនទៅ linker ហើយថាគ្មានមុខងារណាមួយត្រូវបានកំណត់នៅលើ stack នោះទេ។"
 
 #: include/results.h:147
 msgid "Ensure executables are linked with with '-z relro -z now'"
-msgstr ""
+msgstr "ត្រូវប្រាកដថា executables ត្រូវបានភ្ជាប់ជាមួយ '-z relro -z now'"
 
 #: include/results.h:169
 msgid "Correct the errors in the man page as reported by the libmandoc parser."
-msgstr ""
+msgstr "កែកំហុសនៅក្នុង man page ដូចដែលបានរាយការណ៍ដោយ libmandoc parser ។"
 
 #: include/results.h:176
 msgid ""
@@ -515,34 +646,44 @@ msgid ""
 "in the directory beneath /usr/share/man that matches the section number of "
 "the page."
 msgstr ""
+"កែ installation path សម្រាប់ man page។ Man pages ត្រូវតែត្រូវបានដំឡើងនៅក្នុងថតខាងក្រោម "
+"/usr/share/man ដែលត្រូវនឹង section number នៃទំព័រ។"
 
 #: include/results.h:191
 msgid "Correct the reported errors in the XML document"
-msgstr ""
+msgstr "កែកំហុសដែលបានរាយការណ៍នៅក្នុងឯកសារ XML"
 
 #: include/results.h:206
 msgid ""
 "Refer to the Desktop Entry Specification at https://standards.freedesktop."
 "org/desktop-entry-spec/latest/ for help correcting the errors and warnings"
 msgstr ""
+"សូមមើល Desktop Entry Specification នៅ https://standards.freedesktop.org/"
+"desktop-entry-spec/latest/ សម្រាប់ជំនួយក្នុងការកែកំហុស និងការព្រមាន"
 
 #: include/results.h:221
 msgid ""
 "The Release: tag in the spec file must include a '%{?dist}' string.  Please "
 "add this to the spec file per the distribution packaging guidelines."
 msgstr ""
+"Release៖ tag នៅក្នុង spec file ត្រូវតែរួមបញ្ចូលខ្សែអក្សរ '%{?dist}' ។  សូមបន្ថែមវាទៅក្នុង "
+"spec file តាមការណែនាំអំពីការវេចខ្ចប់ចែកចាយ។"
 
 #: include/results.h:236
 msgid ""
 "The spec file name does not match the expected NAME.spec format.  Rename the "
 "spec file to conform to this policy."
 msgstr ""
+"ឈ្មោះ spec file មិនត្រូវគ្នានឹងទម្រង់ NAME.spec ដែលរំពឹងទុកទេ។  ប្តូរឈ្មោះ spec file "
+"ដើម្បីអនុលោមតាមគោលការណ៍នេះ។"
 
 #: include/results.h:253
 msgid ""
 "This package is part of a module but is missing the %{modularitylabel} "
 "header tag.  Add this as a %define in the spec file and rebuild."
 msgstr ""
+"Package នេះគឺជាផ្នែកមួយនៃ module ប៉ុន្តែបាត់ header tag %{modularitylabel} ។  "
+"បន្ថែមវាជា %define នៅក្នុងឯកសារ spec ហើយ rebuild។"
 
 #: include/results.h:260
 msgid ""
@@ -552,6 +693,10 @@ msgid ""
 "rules determining if the /data/static_context setting is required, "
 "forbidden, or recommend."
 msgstr ""
+"Build នេះមានការកំណត់ /data/static_context ត្រឹមត្រូវ ឬមិនត្រឹមត្រូវ។  សូមមើលច្បាប់នៃ "
+"module សម្រាប់ផលិតផលដែលអ្នកកំពុងសាងសង់ដើម្បីកំណត់ថាតើការកំណត់គួរតែជាអ្វី។  ការកំណត់rpminspect "
+"configuration setting ក៏កំណត់ច្បាប់ដែលកំណត់ថាតើការកំណត់ /data/static_context "
+"ត្រូវបានទាមទារ ហាមឃាត់ ឬណែនាំ។"
 
 #: include/results.h:277
 msgid ""
@@ -559,24 +704,32 @@ msgid ""
 "met for the product release.  Ensure you are using the correct JDK for the "
 "build."
 msgstr ""
+"កំណែ Java bytecode សម្រាប់ឯកសារថ្នាក់មួយ ឬច្រើននៅក្នុង build មិនត្រូវបានបំពេញសម្រាប់ "
+"product release នោះទេ។  ត្រូវប្រាកដថាអ្នកកំពុងប្រើ JDK ត្រឹមត្រូវសម្រាប់ build។"
 
 #: include/results.h:292
 msgid ""
 "File changes were found.  In most cases these are expected, but it is a good "
 "idea to verify the changes found are deliberate."
 msgstr ""
+"ការផ្លាស់ប្ដូរឯកសារត្រូវបានរកឃើញ។  ក្នុងករណីភាគច្រើន ទាំងនេះត្រូវបានរំពឹងទុក "
+"ប៉ុន្តែវាជាការល្អក្នុងការផ្ទៀងផ្ទាត់ការផ្លាស់ប្តូរដែលបានរកឃើញដោយចេតនា។"
 
 #: include/results.h:307
 msgid ""
 "Unexpected file moves were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file moves between builds."
 msgstr ""
+"ការផ្លាស់ទីឯកសារដែលមិនរំពឹងទុកត្រូវបានរកឃើញ។  ផ្ទៀងផ្ទាត់ការផ្លាស់ប្តូរទាំងនេះត្រឹមត្រូវ។  "
+"ប្រសិនបើពួកវាមិនមែនទេ សូមកែតម្រូវ build ដើម្បីការពារកុំឱ្យឯកសារផ្លាស់ទីរវាង builds។"
 
 #: include/results.h:322
 msgid ""
 "Unexpected file removals were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file removals between builds."
 msgstr ""
+"ការលុបឯកសារដែលមិនរំពឹងទុកត្រូវបានរកឃើញ។  ផ្ទៀងផ្ទាត់ការផ្លាស់ប្តូរទាំងនេះត្រឹមត្រូវ។  "
+"ប្រសិនបើពួកវាមិនមែនទេ សូមកែតម្រូវ build ដើម្បីការពារការដកឯកសារចេញរវាង builds។"
 
 #: include/results.h:337
 #, c-format
@@ -588,6 +741,12 @@ msgid ""
 "You may also need to update the data package or local configuration file and "
 "change the forbidden_path_prefixes or forbidden_path_suffixes list."
 msgstr ""
+"ការបន្ថែមឯកសារដែលមិនរំពឹងទុកត្រូវបានរកឃើញ។  ផ្ទៀងផ្ទាត់ការផ្លាស់ប្តូរទាំងនេះត្រឹមត្រូវ។  "
+"ប្រសិនបើពួកគេមិនមែនទេ សូមកែតម្រូវ build ដើម្បីការពារការបន្ថែមឯកសាររវាង builds។  "
+"ប្រសិនបើពួកវាត្រឹមត្រូវ ធ្វើបច្ចុប្បន្នភាព %s ហើយផ្ញើ patch ទៅគម្រោង rpminspect data "
+"ដែលជាម្ចាស់ឯកសារនោះ ដូច្នេះ rpminspect ដឹងថានឹងរំពឹងការផ្លាស់ប្តូរនេះ។  "
+"អ្នកក៏ប្រហែលជាត្រូវធ្វើបច្ចុប្បន្នភាព data package ឬ configuration file មូលដ្ឋាន "
+"ហើយផ្លាស់ប្តូរបញ្ជីឈ្មោះ forbidden_path_prefixes ឬ forbidden_path_suffixes ។"
 
 #: include/results.h:352
 #, c-format
@@ -597,6 +756,10 @@ msgid ""
 "deliberate, but needs inspection. If this change is expected, update %s and "
 "send a patch to the project that owns that file."
 msgstr ""
+"មាតិកា source archive បានផ្លាស់ប្តូរដោយមិនបានរំពឹងទុក។ កំណែ​នៃ​ package ​មិន​បាន​ផ្លាស់​ប្តូ​រ​រវាង​ "
+"builds​, ប៉ុន្តែ​មាតិកា source archive ​បាន​ធ្វើ​។ នេះប្រហែលជាចេតនា "
+"ប៉ុន្តែត្រូវការការត្រួតពិនិត្យ។ ប្រសិនបើការផ្លាស់ប្តូរនេះត្រូវបានរំពឹងទុក ធ្វើបច្ចុប្បន្នភាព %s ហើយផ្ញើ "
+"patch ទៅគម្រោងដែលជាម្ចាស់ឯកសារនោះ។"
 
 #: include/results.h:367
 #, c-format
@@ -605,6 +768,8 @@ msgid ""
 "permissions are expected, update %s and send a patch to the project that "
 "owns it."
 msgstr ""
+"សូមប្រាកដថាផ្នែក %%files រួមបញ្ចូលម៉ាក្រូ %%defattr ។ ប្រសិនបើការអនុញ្ញាតទាំងនេះត្រូវបានរំពឹងទុ"
+"ក ធ្វើបច្ចុប្បន្នភាព %s ហើយផ្ញើ patch ទៅគម្រោងដែលជាម្ចាស់វា។"
 
 #: include/results.h:374
 #, c-format
@@ -613,6 +778,9 @@ msgid ""
 "configuration, which is usually root. If this ownership is expected, update "
 "%s and send a patch to the project that owns it."
 msgstr ""
+"Bin path file ត្រូវតែជាកម្មសិទ្ធិរបស់ bin_owner ដែលបានកំណត់នៅក្នុង rpminspect "
+"configuration ដែលជាធម្មតាជា root ។ ប្រសិនបើកម្មសិទ្ធិនេះត្រូវបានគេរំពឹងទុក ធ្វើបច្ចុប្បន្នភាព "
+"%s ហើយផ្ញើpath ទៅគម្រោងដែលជាម្ចាស់វា។"
 
 #: include/results.h:381
 #, c-format
@@ -621,6 +789,9 @@ msgid ""
 "configuration, which is usually root. If this ownership is expect, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"Bin path files ត្រូវតែជាកម្មសិទ្ធិរបស់ bin_group ដែលបានកំណត់ក្នុង rpminspect "
+"configuration ដែលជាធម្មតាជា root ។ ប្រសិនបើកម្មសិទ្ធិនេះរំពឹងទុក ធ្វើបច្ចុប្បន្នភាព %s "
+"ហើយផ្ញើ patch ទៅគម្រោងដែលជាម្ចាស់វា។"
 
 #: include/results.h:388
 #, c-format
@@ -629,6 +800,9 @@ msgid ""
 "or remove the world execute bit on the file (chmod o-x). If this ownership "
 "is expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"ទាំង chgrp ឯកសារទៅ bin_group ដែលបានកំណត់ក្នុង rpminspect configuration ឬយកចេញ "
+"world execute bit នៅលើឯកសារ (chmod o-x)។ ប្រសិនបើកម្មសិទ្ធិនេះត្រូវបានគេរំពឹងទុក "
+"ធ្វើបច្ចុប្បន្នភាព %s ហើយផ្ញើ path ទៅគម្រោងដែលជាម្ចាស់វា។"
 
 #: include/results.h:395
 #, c-format
@@ -637,6 +811,9 @@ msgid ""
 "or remove the group write bit on the file (chmod g-w). If this ownership is "
 "expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"ទាំង chgrp ឯកសារទៅ bin_group ដែលបានកំណត់ក្នុង rpminspect configuration ឬលុបក្រុម "
+"write bit នៅលើឯកសារ (chmod g-w) ។ ប្រសិនបើកម្មសិទ្ធិនេះត្រូវបានគេរំពឹងទុក ធ្វើបច្ចុប្បន្នភាព "
+"%s ហើយផ្ញើ path ទៅគម្រោងដែលជាម្ចាស់វា។"
 
 #: include/results.h:402
 #, c-format
@@ -645,6 +822,9 @@ msgid ""
 "process to set correct owner and group information. If expected, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"ផ្ទៀងផ្ទាត់ការផ្លាស់ប្តូរកម្មសិទ្ធិត្រូវបានរំពឹងទុក។ បើមិនដូច្នោះទេ កែតម្រូវដំណើរការ package build "
+"ដើម្បីកំណត់ព័ត៌មាន owner និង group ត្រឹមត្រូវ។ ប្រសិនបើរំពឹងទុក ធ្វើបច្ចុប្បន្នភាព %s ហើយផ្ញើ "
+"patch ទៅគម្រោងដែលជាម្ចាស់វា។"
 
 #: include/results.h:409
 msgid ""
@@ -655,26 +835,35 @@ msgid ""
 "remedy, add a fileinfo rule for this file to the vendor data package under "
 "the appropriate product release file."
 msgstr ""
+"rpminspect កំពុងរំពឹងថានឹងមានច្បាប់ fileinfo ពី vendor data package សម្រាប់ឯកសារនេះ។ "
+"ជាធម្មតា វាមានន័យថាឯកសារមានសំណុំការអនុញ្ញាតមិនស្តង់ដារ (ឧ. setuid) ដែលជាលក្ខខណ្ឌដែល "
+"rpminspect នឹងពិនិត្យមើលបញ្ជីឯកសារដើម្បីធានាថា package អនុលោមតាមច្បាប់របស់ vendor។ "
+"ដើម្បីដោះស្រាយ សូមបន្ថែមច្បាប់ fileinfo សម្រាប់ឯកសារនេះទៅក្នុង vendor data package "
+"នៅក្រោមឯកសារចេញផ្សាយផលិតផលដែលសមស្រប។"
 
 #: include/results.h:424
 msgid "Consult the shell documentation for proper syntax."
-msgstr ""
+msgstr "ពិគ្រោះជាមួយឯកសារ shell សម្រាប់ syntax ត្រឹមត្រូវ។"
 
 #: include/results.h:431
 msgid ""
 "The file referenced was not a known shell script in the before build but is "
 "now a shell script in the after build."
 msgstr ""
+"ឯកសារដែលបានយោងមិនមែនជា shell script ដែលគេស្គាល់នៅ before build ទេ ប៉ុន្តែឥឡូវនេះជា "
+"shell script នៅក្នុង after build។"
 
 #: include/results.h:438
 msgid ""
 "The referenced shell script is invalid. Consider debugging it with the '-n' "
 "option on the shell to find and fix the problem."
 msgstr ""
+"Shell script ដែលបានយោងមិនត្រឹមត្រូវទេ។ ពិចារណាបំបាត់កំហុសវាដោយប្រើជម្រើស '-n' នៅលើ shell "
+"ដើម្បីស្វែងរក និងដោះស្រាយបញ្ហា។"
 
 #: include/results.h:453
 msgid "See annocheck(1) for more information."
-msgstr ""
+msgstr "សូមមើល annocheck(1) សម្រាប់ព័ត៌មានបន្ថែម។"
 
 #: include/results.h:460
 msgid ""
@@ -683,6 +872,10 @@ msgid ""
 "declarations). Symbols may also appear as unfortified if the compiler is "
 "unable to determine the size of a buffer, which is not necessarily an error."
 msgstr ""
+"ត្រូវប្រាកដថាឯកសារវត្ថុទាំងអស់ត្រូវបានចងក្រងជាមួយ '-O2 -D_FORTIFY_SOURCE=2' ហើយថា "
+"headers ដែលសមស្របទាំងអស់ត្រូវបានរួមបញ្ចូល (មិនមានការប្រកាសមុខងារដោយប្រយោល)។ "
+"និមិត្តសញ្ញាក៏អាចលេចឡើងជា unfortified ប្រសិនបើ compiler មិនអាចកំណត់ទំហំនៃ buffer "
+"ដែលវាមិនចាំបាច់ជាកំហុសនោះទេ។"
 
 #: include/results.h:475
 msgid ""
@@ -692,6 +885,10 @@ msgid ""
 "If they are not, modify the package spec file to ensure the build links with "
 "the correct shared libraries."
 msgstr ""
+"និមិត្តសញ្ញា DT_NEEDED ត្រូវបានបន្ថែម ឬដកចេញ។  វាកើតឡើងនៅពេលដែល build environment "
+"មានកំណែផ្សេងគ្នានៃបណ្ណាល័យដែលត្រូវការ។  ពេលខ្លះ​នេះ​ជា​ចេតនា ប៉ុន្តែ​ពេលខ្លះ​មិនមែន​ទេ។  "
+"ផ្ទៀងផ្ទាត់ការផ្លាស់ប្តូរទាំងនេះត្រូវបានរំពឹងទុក។  ប្រសិនបើពួកវាមិនមែនទេ សូមកែប្រែ package spec "
+"file ដើម្បីធានាបាននូវតំណភ្ជាប់ build ជាមួយនឹងបណ្ណាល័យចែករំលែកដែលត្រឹមត្រូវ។"
 
 #: include/results.h:490
 msgid ""
@@ -699,6 +896,8 @@ msgid ""
 "is, you can adjust the filesize inspection settings in the rpminspect.yaml "
 "file."
 msgstr ""
+"ឯកសារមួយបានកើនឡើងដោយចំនួនគួរឱ្យកត់សម្គាល់។  ត្រូវប្រាកដថាការផ្លាស់ប្តូរនេះគឺតាមការប៉ុនប៉ង។  "
+"ប្រសិនបើវាពិតមែន អ្នកអាចកែតម្រូវការកំណត់ការត្រួតពិនិត្យទំហំឯកសារនៅក្នុងឯកសារ rpminspect.yaml ។"
 
 #: include/results.h:497
 msgid ""
@@ -706,18 +905,24 @@ msgid ""
 "it is, you can adjust the filesize inspection settings in the rpminspect."
 "yaml file."
 msgstr ""
+"ឯកសារ shrank ដោយចំនួនគួរឱ្យកត់សម្គាល់។  ត្រូវប្រាកដថាការផ្លាស់ប្តូរនេះគឺបានប៉ុនប៉ង។  "
+"ប្រសិនបើវាពិតមែន អ្នកអាចកែតម្រូវការកំណត់ការត្រួតពិនិត្យទំហំឯកសារនៅក្នុងឯកសារ rpminspect.yaml ។"
 
 #: include/results.h:504
 msgid ""
 "A previously empty file is no longer empty.  Make sure this change is "
 "intended and fix the package spec file if necessary."
 msgstr ""
+"ឯកសារទទេពីមុនលែងទទេទៀតហើយ។  សូមប្រាកដថាការផ្លាស់ប្តូរនេះគឺមានបំណង និងជួសជុល package spec "
+"file ប្រសិនបើចាំបាច់។"
 
 #: include/results.h:511
 msgid ""
 "A previously non-empty file is now empty.  Make sure this change is intended "
 "and fix the package space file if necessary."
 msgstr ""
+"ឯកសារពីមុនមិនទទេឥឡូវទទេ។  ត្រូវប្រាកដថាការផ្លាស់ប្តូរនេះមានគោលបំណង និងជួសជុល package spec "
+"file ប្រសិនបើចាំបាច់។"
 
 #: include/results.h:526
 #, c-format
