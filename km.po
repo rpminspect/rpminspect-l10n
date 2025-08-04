@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-08-04 11:53+0000\n"
+"PO-Revision-Date: 2025-08-05 01:17+0000\n"
 "Last-Translator: kanitha chim <kchim@redhat.com>\n"
 "Language-Team: Khmer (Central) <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/km/>\n"
@@ -933,6 +933,11 @@ msgid ""
 "may also be of help for this situation.  If necessary, update %s with the "
 "changes found here and send a patch to the project that owns the data file."
 msgstr ""
+"សមត្ថភាពដែលមិនរំពឹងទុកត្រូវបានរកឃើញនៅលើឯកសារដែលបានចង្អុលបង្ហាញ។  ពិគ្រោះជាមួយ "
+"capabilities(7) និងកែតម្រូវឯកសារនៅក្នុង package ឬកែប្រែបញ្ជីសមត្ថភាពនៅក្នុង rpminspect "
+"vendor data package។  ក្រុមសន្តិសុខក៏អាចជាជំនួយសម្រាប់ស្ថានភាពនេះផងដែរ។  បើចាំបាច់ "
+"ធ្វើបច្ចុប្បន្នភាព %s ជាមួយនឹងការផ្លាស់ប្តូរដែលបានរកឃើញនៅទីនេះ ហើយផ្ញើ patch "
+"ទៅគម្រោងដែលជាម្ចាស់ឯកសារទិន្នន័យ។"
 
 #: include/results.h:541
 msgid ""
@@ -940,6 +945,9 @@ msgid ""
 "usability problems for users if module parameters were removed in a "
 "maintenance update."
 msgstr ""
+"Kernel module parameters ត្រូវបានដកចេញរវាង builds។  "
+"វាអាចបង្ហាញពីបញ្ហាលទ្ធភាពប្រើប្រាស់សម្រាប់អ្នកប្រើប្រាស់ ប្រសិនបើ module parameters "
+"ត្រូវបានដកចេញនៅក្នុងការធ្វើបុច្ចប្បន្នភាពថែទាំ។"
 
 #: include/results.h:548
 msgid ""
@@ -947,6 +955,9 @@ msgid ""
 "usability problems for users if module dependencies changed in a maintenance "
 "update."
 msgstr ""
+"Kernel module dependencies បានផ្លាស់ប្តូររវាង builds។  "
+"វាអាចបង្ហាញពីបញ្ហាលទ្ធភាពប្រើប្រាស់សម្រាប់អ្នកប្រើប្រាស់ ប្រសិនបើ module dependencies "
+"បានផ្លាស់ប្តូរនៅក្នុងការធ្វើបុច្ចប្បន្នភាពថែទាំ។"
 
 #: include/results.h:555
 msgid ""
@@ -954,6 +965,9 @@ msgid ""
 "usability problems for users if module device aliases changed in a "
 "maintenance update."
 msgstr ""
+"Kernel module device aliases បានផ្លាស់ប្តូររវាង builds។  "
+"វាអាចបង្ហាញពីបញ្ហាលទ្ធភាពប្រើប្រាស់សម្រាប់អ្នកប្រើប្រាស់ ប្រសិនបើ module device aliases "
+"បានផ្លាស់ប្តូរនៅក្នុងការធ្វើបុច្ចប្បន្នភាពថែទាំ។"
 
 #: include/results.h:565
 msgid ""
@@ -961,12 +975,16 @@ msgid ""
 "build.  This may be deliberate, but check to make sure you do not have any "
 "unexpected ExclusiveArch lines in the spec file."
 msgstr ""
+"ស្ថាបត្យកម្ម​ដែល​មាន​នៅ​ក្នុង​ before build ​នឹង​បាត់​ឥឡូវ​នេះ​នៅ​ក្នុង​ after build​។  "
+"នេះប្រហែលជាចេតនា ប៉ុន្តែសូមពិនិត្យមើលដើម្បីធ្វើឱ្យប្រាកដថាអ្នកមិនមានបន្ទាត់ ExclusiveArch "
+"ដែលមិនបានរំពឹងទុកនៅក្នុង spec file។"
 
 #: include/results.h:566
 msgid ""
 "A new architecture has appeared in the after build.  This may indicate "
 "progress in the world of computing."
 msgstr ""
+"ស្ថាបត្យកម្ម​ថ្មី​មួយ​បាន​លេច​ឡើង​នៅ after build។  នេះអាចបង្ហាញពីវឌ្ឍនភាពនៅក្នុងពិភពកុំព្យូទ័រ។"
 
 #: include/results.h:576
 msgid ""
@@ -974,12 +992,17 @@ msgid ""
 "This may be deliberate, but check to make sure you have correct syntax "
 "defining the subpackage in the spec file"
 msgstr ""
+"Subpackage ដែល​មាន​នៅ​ក្នុង​ការ​ before build ​នឹង​ត្រូវ​បាត់​ឥឡូវ​នៅ​ក្នុង after build។  "
+"នេះប្រហែលជាចេតនា ប៉ុន្តែសូមពិនិត្យមើលដើម្បីធ្វើឱ្យប្រាកដថាអ្នកមាន syntax ត្រឹមត្រូវដែលកំណត់ "
+"subpackage នៅក្នុង spec file"
 
 #: include/results.h:577
 msgid ""
 "A new subpackage has appeared in the after build.  This may indicate "
 "progress in the world of computing."
 msgstr ""
+"Subpackage ថ្មីមួយបានបង្ហាញខ្លួននៅក្នុង after build។  "
+"នេះអាចបង្ហាញពីវឌ្ឍនភាពនៅក្នុងពិភពកុំព្យូទ័រ។"
 
 #: include/results.h:587
 #, c-format
@@ -987,18 +1010,23 @@ msgid ""
 "Make sure the spec file in the after build contains a valid %changelog "
 "section."
 msgstr ""
+"សូមប្រាកដថា spec file នៅក្នុង after build មានផ្នែក %changelog ត្រឹមត្រូវ។"
 
 #: include/results.h:597
 msgid ""
 "Files should not be installed in old directory names.  Modify the package to "
 "install the affected file to the preferred directory."
 msgstr ""
+"ឯកសារមិនគួរត្រូវបានដំឡើងនៅក្នុងឈ្មោះថតចាស់ទេ។  កែប្រែ package "
+"ដើម្បីដំឡើងឯកសារដែលរងផលប៉ះពាល់ទៅថតដែលពេញចិត្ត។"
 
 #: include/results.h:607
 msgid ""
 "ELF .o and .a files should not carry LTO (Link Time Optimization) bytecode.  "
 "Make sure you have stripped LTO bytecode from those files at install time."
 msgstr ""
+"ឯកសារ ELF .o និង .a មិនគួរផ្ទុក LTO (Link Time Optimization) bytecode ទេ។  "
+"ត្រូវប្រាកដថាអ្នកបានដកកូដ LTO bytecode ចេញពីឯកសារទាំងនោះនៅពេលដំឡើង។"
 
 #: include/results.h:617
 msgid ""
@@ -1007,6 +1035,10 @@ msgid ""
 "and have a non-symlink turn in to a symlink, ensure this is deliberate.  "
 "NOTE:  You cannot turn a directory in to a symlink due to RPM limitations."
 msgstr ""
+"ត្រូវប្រាកដថា symlinks ចង្អុលទៅទិសដៅដែលមានសុពលភាពនៅក្នុង subpackage មួយនៃ build។ "
+"តំណនិមិត្តសញ្ញា dangling មិនត្រូវបានអនុញ្ញាត។  ប្រសិនបើអ្នកកំពុងប្រៀបធៀប builds "
+"ហើយមានការបង្វែរតំណភ្ជាប់ដែលមិនមែនជានិមិត្តសញ្ញាទៅ symlink សូមប្រាកដថានេះជាចេតនា។  ចំណាំ៖ "
+"អ្នក​មិន​អាច​បង្វែរ​ថត​ចូល​ទៅ​ជា symlink ដោយ​សារ​ការ​កំណត់ RPM ។"
 
 #: include/results.h:618
 #, c-format
@@ -1019,6 +1051,13 @@ msgid ""
 "scriptlet for replacing a directory.  See the packaging guidelines for "
 "'Scriptlet to replace a directory' for more information."
 msgstr ""
+"ត្រូវប្រាកដថា symlinks ចង្អុលទៅទិសដៅដែលមានសុពលភាពនៅក្នុង subpackages មួយនៃ build។ "
+"តំណនិមិត្តសញ្ញា dangling មិនត្រូវបានអនុញ្ញាត។  ប្រសិនបើអ្នកកំពុងប្រៀបធៀប builds "
+"ហើយមានការបង្វែរតំណភ្ជាប់ដែលមិនមែនជានិមិត្តសញ្ញាទៅ symlink សូមប្រាកដថានេះជាចេតនា។  ចំណាំ៖ "
+"អ្នក​មិន​អាច​បង្វែរ​ថត​ចូល​ទៅ​ជា symlink ដោយ​សារ​ការ​កំណត់ RPM ។  ប្រសិនបើអ្នកពិតជាត្រូវធ្វើដូច្នេះមែ"
+"ន សូមប្រាកដថាអ្នករួមបញ្ចូល %pretrans scriptlet សម្រាប់ជំនួសថតមួយ។  "
+"សូមមើលការណែនាំអំពីការវេចខ្ចប់សម្រាប់ 'Scriptlet to replace a directory' "
+"សម្រាប់ព័ត៌មានបន្ថែម។"
 
 #: include/results.h:628
 #, c-format
@@ -1028,6 +1067,9 @@ msgid ""
 "See the RPM documentation or distribution package maintainer guide for more "
 "information."
 msgstr ""
+"ដក​សេចក្តី​យោង​ផ្លូវ​ដែល​ហាម​ឃាត់​ចេញ​ពី​បន្ទាត់​ដែល​បាន​បង្ហាញ​ក្នុង​ផ្នែក %files។  ក្នុងករណីជាច្រើន "
+"អ្នកអាចប្រើម៉ាក្រូ RPM ដើម្បីបញ្ជាក់ទីតាំងផ្លូវ។  សូមមើលឯកសារ RPM ឬ distribution package "
+"maintainer guide សម្រាប់ព័ត៌មានបន្ថែម។"
 
 #: include/results.h:638
 msgid ""
@@ -1035,6 +1077,9 @@ msgid ""
 "is intended and if necessary fix the spec file so the correct file is "
 "included in the built package."
 msgstr ""
+"ក្នុងករណីជាច្រើន ការផ្លាស់ប្តូរប្រភេទ MIME គឺចេតនា។  ផ្ទៀងផ្ទាត់ថាការផ្លាស់ប្តូរត្រូវបានបម្រុងទុក "
+"ហើយប្រសិនបើចាំបាច់ជួសជុល spec file ដូច្នេះឯកសារត្រឹមត្រូវត្រូវបានរួមបញ្ចូលនៅក្នុង package "
+"ដែលបានបង្កើត។"
 
 #: include/results.h:648
 msgid ""
@@ -1042,6 +1087,10 @@ msgid ""
 "users.  See the abidiff(1) documentation and the distribution ABI policies "
 "to determine if this detected change is allowed."
 msgstr ""
+"ការផ្លាស់ប្តូរ ABI "
+"ដែលត្រូវបានណែនាំកំឡុងពេលធ្វើបុច្ចប្បន្នភាពថែទាំអាចនាំឱ្យមានបញ្ហាសម្រាប់អ្នកប្រើប្រាស់។  សូមមើលឯកសា"
+"រ abidiff(1) និងគោលការណ៍ចែកចាយ ABI "
+"ដើម្បីកំណត់ថាតើការផ្លាស់ប្តូរដែលបានរកឃើញនេះត្រូវបានអនុញ្ញាត។"
 
 #: include/results.h:658
 msgid ""
@@ -1049,6 +1098,10 @@ msgid ""
 "problems for users.  See the libabigail documentation and the distribution "
 "KMI policy to determine if this detected change is allowed."
 msgstr ""
+"Kernel Module Interface "
+"ដែលបានណែនាំកំឡុងពេលធ្វើបុច្ចប្បន្នភាពថែទាំអាចនាំឱ្យមានបញ្ហាដល់អ្នកប្រើប្រាស់។  សូមមើលឯកសារ "
+"libabigail និងគោលការណ៍ចែកចាយ KMI "
+"ដើម្បីកំណត់ថាតើការផ្លាស់ប្តូរដែលបានរកឃើញនេះត្រូវបានអនុញ្ញាត។"
 
 #: include/results.h:668
 #, c-format
@@ -1058,6 +1111,10 @@ msgid ""
 "configuration files, make sure the package can handle upgrading an existing "
 "package -or- honor the old file locations."
 msgstr ""
+"ការផ្លាស់ប្តូរទៅ %config គួរតែត្រូវបានធ្វើដោយប្រុងប្រយ័ត្ន។  "
+"ត្រូវប្រាកដថាអ្នកបានដំឡើងឯកសារត្រឹមត្រូវ និងនៅក្នុងទីតាំងត្រឹមត្រូវ។  ប្រសិនបើ package "
+"មួយកំពុងរៀបចំរចនាសម្ព័ន្ធ configuration files ឡើងវិញ សូមប្រាកដថា package "
+"អាចដោះស្រាយការធ្វើកំណែឡើង package ដែលមានស្រាប់ ឬគោរពទីតាំងឯកសារចាស់។"
 
 #: include/results.h:678
 #, c-format
@@ -1066,6 +1123,9 @@ msgid ""
 "the package is not a rebase.  Sometimes upstream projects rename or move "
 "documentation files and the spec file needs to account for those changes."
 msgstr ""
+"ការផ្លាស់ប្ដូរដែលបានរកឃើញក្នុងចំណោមឯកសារ %doc។  ផ្ទៀងផ្ទាត់​ការ​ផ្លាស់ប្ដូរ​ទាំង​នេះ​ត្រូវ​បាន​បម្រុង​ទុ"
+"ក ប្រសិន​បើ​កញ្ចប់​មិន​មែន​ជា​ការ​ប្រើ​ប្រាស់​ឡើង​វិញ។  ពេលខ្លះគម្រោងខាងលើប្តូរឈ្មោះ ឬផ្លាស់ទីឯកសារឯកសា"
+"រ ហើយ spec file ត្រូវគិតគូរសម្រាប់ការផ្លាស់ប្តូរទាំងនោះ។"
 
 #: include/results.h:688
 msgid ""
@@ -1075,6 +1135,10 @@ msgid ""
 "the source package has any zero length or otherwise invalid patches and "
 "correct the problem."
 msgstr ""
+"បានរកឃើញឯកសារ patch មិនត្រឹមត្រូវ។  នេះជាធម្មតាជាលទ្ធផលនៃការបង្កើតបណ្តុំនៃ patches "
+"ដោយប្រៀបធៀប trees ពីរ។  នៅពេលដែលឯកសារបាត់ ដែលអាចនាំទៅដល់ការ zero length patches "
+"នៅក្នុងការប្រមូលលទ្ធផល។  ពិនិត្យមើលថាតើកញ្ចប់ប្រភពមាន zero length ឬមិនដូច្នោះទេ patch "
+"មិនត្រឹមត្រូវ ហើយកែបញ្ហា។"
 
 #: include/results.h:690
 #, c-format
