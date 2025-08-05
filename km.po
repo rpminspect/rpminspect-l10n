@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-08-05 01:17+0000\n"
+"PO-Revision-Date: 2025-08-06 17:53+0000\n"
 "Last-Translator: kanitha chim <kchim@redhat.com>\n"
 "Language-Team: Khmer (Central) <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/km/>\n"
@@ -1152,6 +1152,13 @@ msgid ""
 "define the patch at the top of the spec file.  So Patch47 is applied with "
 "either a '%patch 47', '%patch -P 47', '%patch -P47', or '%patch47' macro."
 msgstr ""
+"The named patch ត្រូវបានកំណត់នៅក្នុងប្រភព RPM header (នេះមានន័យថាវាមាន PatchN: "
+"និយមន័យនៅក្នុង spec file) ប៉ុន្តែមិនត្រូវបានអនុវត្តនៅកន្លែងណាមួយនៅក្នុង spec file ទេ។  "
+"វាបាត់ម៉ាក្រូ % patch ដែលត្រូវគ្នា ហើយ spec file ខ្វះម៉ាក្រូ %autosetup ឬ %autopatch ។  "
+"អ្នកអាចជួសជុលវាបានដោយបន្ថែមម៉ាក្រូ %patch ដែលសមស្របនៅក្នុង spec file (ជាធម្មតានៅក្នុងផ្នែក "
+"%prep)។  លេខដែលបានបញ្ជាក់ជាមួយ %patch macro ត្រូវនឹងលេខដែលប្រើដើម្បីកំណត់ patch "
+"នៅផ្នែកខាងលើនៃ spec file។  ដូច្នេះ Patch47 ត្រូវបានអនុវត្តជាមួយ '%patch 47', '%patch "
+"-P 47', '%patch -P47' ឬ '%patch47' macro។"
 
 #: include/results.h:692
 #, c-format
@@ -1161,12 +1168,17 @@ msgid ""
 "For example, Patch47 needs to have either a '%patch 47', '%patch -P 47', "
 "'%patch -P47', or '%patch47' macro."
 msgstr ""
+"The named patch ត្រូវ​បាន​កំណត់ ប៉ុន្តែ​មិន​ត្រូវ​គ្នា​ដោយ​លេខ​ជាមួយ​ម៉ាក្រូ %patch ។  សូមប្រាកដថា "
+"patch ដែលមានលេខទាំងអស់មានម៉ាក្រូ %patch ដែលត្រូវគ្នា។  ឧទាហរណ៍ Patch47 ត្រូវតែមាន "
+"'%patch 47', '%patch -P 47', '%patch -P47' ឬ '%patch47' macro។"
 
 #: include/results.h:694
 msgid ""
 "The defined patch file is not something rpminspect can handle.  This is "
 "likely a bug and should be reported to the upstream rpminspect project."
 msgstr ""
+"Path file ដែលបានកំណត់មិនមែនជាអ្វីដែល rpminspect អាចដោះស្រាយបានទេ។  នេះទំនងជាមានកំហុស "
+"ហើយគួរតែត្រូវបានរាយការណ៍ទៅគម្រោង upstream rpminspect។"
 
 #: include/results.h:704
 msgid ""
@@ -1176,6 +1188,11 @@ msgid ""
 "sure the file in question is clean, please file a bug with rpminspect for "
 "further help."
 msgstr ""
+"ClamAV បានរកឃើញមេរោគនៅក្នុង named file។  នេះអាចជាការវិជ្ជមានមិនត្រឹមត្រូវ "
+"ប៉ុន្តែអ្នកគួរពិនិត្យមើលឯកសារនោះដោយខ្លួនឯងផ្ទាល់ ដើម្បីធានាថាវាត្រឹមត្រូវ។  "
+"នេះអាចជាបញ្ហាជាមួយមូលដ្ឋានទិន្នន័យ ClamAV ឬការរកឃើញ។  "
+"ប្រសិនបើអ្នកប្រាកដថាឯកសារនៅក្នុងសំណួរគឺត្រឹមត្រូវ សូម file a bug ជាមួយ rpminspect "
+"សម្រាប់ជំនួយបន្ថែម។"
 
 #: include/results.h:714
 #, c-format
@@ -1185,6 +1202,9 @@ msgid ""
 "vendor data package for the product.  Modify the %s file and send a patch to "
 "the project that owns it."
 msgstr ""
+"ឯកសារដែលមានខ្លឹមសារ sensitive ផ្នែកនយោបាយត្រូវបានរកឃើញនៅក្នុង package។  "
+"ប្រសិនបើឯកសារនេះត្រូវបានអនុញ្ញាត វាគួរតែត្រូវបានបន្ថែមទៅ rpminspect vendor data "
+"package សម្រាប់ផលិតផល។  កែប្រែឯកសារ %s ហើយផ្ញើ patch ទៅគម្រោងដែលជាម្ចាស់វា។"
 
 #: include/results.h:724
 msgid ""
@@ -1197,6 +1217,13 @@ msgid ""
 "order to allow for backwards compatibility.  Whenever possible the "
 "deprecated functions should not be used."
 msgstr ""
+"និមិត្តសញ្ញាហាមឃាត់ត្រូវបានរកឃើញនៅក្នុងឯកសារ ELF នៅក្នុង package។  Configuration "
+"settings សម្រាប់ rpminspect បង្ហាញថានិមិត្តសញ្ញាដែលមានឈ្មោះត្រូវបានហាមឃាត់នៅក្នុង package។"
+"  ប្រសិនបើនេះជាចេតនា អ្នកប្រហែលជាចង់បិទការត្រួតពិនិត្យ badfuncs។  ប្រសិនបើវាមិនមែនជាចេតនាទេ"
+" សូមពិនិត្យមើល man pages សម្រាប់និមិត្តសញ្ញាដែលមានឈ្មោះ ដើម្បីមើលថាតើមុខងារ API "
+"អ្វីខ្លះបានជំនួសនិមិត្តសញ្ញាហាមឃាត់។  ជាធម្មតាមុខងារមួយត្រូវបានសម្គាល់ថាត្រូវបានឈប់ប្រើប្រាស់ "
+"ប៉ុន្តែនៅតែត្រូវបានផ្តល់ឱ្យ ដើម្បីអនុញ្ញាតឱ្យមាន backwards compatibility។  "
+"នៅពេលណាដែលអាចធ្វើទៅបាន មុខងារដែលឈប់ប្រើប្រាស់មិនគួរត្រូវបានប្រើប្រាស់ទេ។"
 
 #: include/results.h:734
 msgid ""
@@ -1207,6 +1234,11 @@ msgid ""
 "try using a program such as patchelf to remove these properties from the ELF "
 "files."
 msgstr ""
+"លក្ខណៈសម្បត្តិ DT_RPATH ឬ DT_RUNPATH ត្រូវបានរកឃើញនៅលើ ELF shared objects នៅក្នុង "
+"package នេះ។  ការប្រើប្រាស់ DT_RPATH និង DT_RUNPATH ត្រូវបានលើកទឹកចិត្ត "
+"លើកលែងតែក្នុងស្ថានភាពមួយចំនួន។  ពិនិត្យមើលដើម្បីដឹងថាអ្នកបិទ rpath ក្នុងអំឡុងពេល %build នៃ "
+"spec file។  ប្រសិនបើអ្នកមិនអាចធ្វើវាបានយ៉ាងងាយស្រួលទេ អ្នកអាចសាកល្បងប្រើកម្មវិធីដូចជា "
+"patchelf ដើម្បីលុបលក្ខណៈសម្បត្តិទាំងនេះចេញពីឯកសារ ELF។"
 
 #: include/results.h:736
 msgid ""
@@ -1214,6 +1246,9 @@ msgid ""
 "This indicates a linker error and should not happen.  ELF objects should "
 "only carry DT_RPATH or DT_RUNPATH, never both."
 msgstr ""
+"លក្ខណៈសម្បត្តិទាំង DT_RPATH និង DT_RUNPATH ត្រូវបានរកឃើញនៅ ELF shared object។  "
+"នេះបង្ហាញពីកំហុសអ្នកភ្ជាប់ ហើយមិនគួរកើតឡើងទេ។  ELF objects គួរតែមានតែ DT_RPATH ឬ "
+"DT_RUNPATH ប៉ុណ្ណោះ មិនអាចមានទាំងពីរទេ។"
 
 #: include/results.h:746
 msgid ""
@@ -1223,6 +1258,10 @@ msgid ""
 "discuss the situation with the Product Security Team to determine the "
 "correct course of action."
 msgstr ""
+"rpminspect configuration file មានបញ្ជីនៃចំណុចកូដយូនីកូដដែលហាមឃាត់។  "
+"មួយត្រូវបានរកឃើញនៅក្នុងមែកធាងប្រភពដែលបានស្រង់ចេញ និងជួសជុល ឬនៅក្នុងឯកសារប្រភពអត្ថបទមួយនៅក្នុង "
+"source RPM។  ទាំងដកចំណុចកូដនេះចេញ ឬពិភាក្សាអំពីស្ថានភាពជាមួយក្រុមសុវត្ថិភាពផលិតផល "
+"ដើម្បីកំណត់ដំណើរការត្រឹមត្រូវនៃសកម្មភាព។"
 
 #: include/results.h:748
 #, c-format
@@ -1233,6 +1272,11 @@ msgid ""
 "running.  A common cause is removal of the working directory while the "
 "program is executing."
 msgstr ""
+"ផ្នែក %prep នៃ spec file មិនអាចត្រូវបានប្រតិបត្តិដោយហេតុផលមួយចំនួន។  "
+"ជាធម្មតាវាបណ្តាលមកពីការបរាជ័យនៅក្នុង librpmbuild "
+"ដែលជាធម្មតាត្រូវបានចងភ្ជាប់ទៅនឹងបញ្ហាការទាញយក archive ឬការផ្លាស់ប្តូរប្រព័ន្ធឯកសារខណៈពេលដែ"
+"ល rpminspect កំពុងដំណើរការ។  មូលហេតុទូទៅមួយគឺការដក working directory ចេញ "
+"ខណៈពេលដែលកម្មវិធីកំពុងដំណើរការ។"
 
 #: include/results.h:758
 msgid ""
@@ -1240,6 +1284,9 @@ msgid ""
 "Check the spec file for this dependency and ensure you have not misspelled a "
 "macro or used a macro name that does not exist."
 msgstr ""
+"ម៉ាក្រូឯកសារ RPM ដែលមិនពង្រីកត្រូវបានរកឃើញនៅក្នុង dependency rule ដែលបានកត់សម្គាល់។  "
+"ពិនិត្យឯកសារជាក់លាក់សម្រាប់ dependency នេះ ហើយត្រូវប្រាកដថាអ្នកមិនបានសរសេរម៉ាក្រូខុស "
+"ឬប្រើឈ្មោះម៉ាក្រូដែលមិនមាន។"
 
 #: include/results.h:760
 msgid ""
@@ -1248,6 +1295,9 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{version}-%{release}' "
 "in the spec file."
 msgstr ""
+"បន្ថែម Requires ជាក់លាក់ដែលបានចង្អុលបង្ហាញទៅឯកសារជាក់លាក់សម្រាប់ named subpackage។  "
+"Subpackages ​អាស្រ័យ​លើ​ shared libraries ​ក្នុង​ subpackage ផ្សេង​ទៀត​ត្រូវ​តែ​មាន "
+"'Requires: SUBPACKAGE_NAME = %{version}-%{release}' ក្នុង​ spec file។"
 
 #: include/results.h:762
 msgid ""
@@ -1256,6 +1306,9 @@ msgid ""
 "must carry an explicit 'Requires: SUBPACKAGE_NAME = %{epoch}:%{version}-"
 "%{release}' in the spec file."
 msgstr ""
+"បន្ថែម Requires ជាក់លាក់ដែលបានចង្អុលបង្ហាញទៅ spec file សម្រាប់ named subpackage។  "
+"Subpackages អាស្រ័យ​លើ​ shared libraries ​នៅ​ក្នុង​ subpackage ផ្សេង​ទៀត​ត្រូវ​តែ​មាន "
+"'Requires: SUBPACKAGE_NAME = %{epoch}:%{version}-%{release}' ក្នុង​ spec file។"
 
 #: include/results.h:764
 #, c-format
@@ -1266,6 +1319,11 @@ msgid ""
 "spec file but you do need to make sure only one subpackage is packaging up "
 "the shared library in question."
 msgstr ""
+"ពិនិត្យ subpackage %files sections ហើយ Provides សេចក្តីថ្លែងការណ៍ច្បាស់លាស់។  មានតែ "
+"subpackage មួយប៉ុណ្ណោះដែលគួរផ្តល់ដោយ shared library។  Shared library names "
+"ត្រូវបានបន្ថែមដោយស្វ័យប្រវត្តិជាការ Provides ដូច្នេះមិនចាំបាច់បញ្ជាក់ពួកវានៅក្នុង spec file "
+"នោះទេ ប៉ុន្តែអ្នកត្រូវប្រាកដថាមានតែ subpackage មួយប៉ុណ្ណោះដែលកំពុងវេចខ្ចប់ shared library "
+"នោះ។"
 
 #: include/results.h:766
 msgid ""
@@ -1275,6 +1333,11 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Dependency ដែលបានរាយក្នុងបញ្ជី before build បានផ្លាស់ប្តូរទៅជា dependency "
+"ដែលបានចង្អុលបង្ហាញនៅក្នុង after build។  ប្រសិនបើនេះជាលទ្ធផល VERIFY វាមានន័យថា "
+"rpminspect បានកត់សម្គាល់ការផ្លាស់ប្តូរនៅក្នុងអ្វីដែលវាចាត់ទុកការធ្វើបុច្ចប្បន្នភាពនៅក្នុង "
+"package។  លទ្ធផល INFO មាន​ន័យ​ថា​វា​បាន​កត់​សម្គាល់​ការ​ផ្លាស់​ប្តូរ​នេះ ប៉ុន្តែ​យល់​ថា​វា​មិន​អី​ទេ "
+"ព្រោះ​វា​កំពុង​ប្រៀបធៀប​ rebased build។"
 
 #: include/results.h:768
 msgid ""
@@ -1284,6 +1347,11 @@ msgid ""
 "result means it noticed this change, but deems it ok because it is comparing "
 "a rebased build."
 msgstr ""
+"Dependency ថ្មីត្រូវបានគេមើលឃើញនៅក្នុង after build ដែលមិនមានវត្តមាននៅក្នុង before "
+"build។  ប្រសិនបើនេះជាលទ្ធផល VERIFY វាមានន័យថា rpminspect "
+"បានកត់សម្គាល់ការផ្លាស់ប្តូរនៅក្នុងអ្វីដែលវាចាត់ទុកការធ្វើបុច្ចប្បន្នភាពនៅក្នុង package។  លទ្ធផល "
+"INFO មាន​ន័យ​ថា​វា​បាន​កត់​សម្គាល់​ការ​ផ្លាស់​ប្តូរ​នេះ ប៉ុន្តែ​យល់​ថា​វា​មិន​អី​ទេ ព្រោះ​វា​កំពុង​ប្រៀបធៀប​ "
+"rebased build​។"
 
 #: include/results.h:770
 msgid ""
@@ -1293,6 +1361,11 @@ msgid ""
 "An INFO result means it noticed this change, but deems it ok because it is "
 "comparing a rebased build."
 msgstr ""
+"Dependency ដែលឃើញនៅក្នុង before build មិនត្រូវបានគេមើលឃើញនៅ after build "
+"មានន័យថាវាត្រូវបានដកចេញឬបាត់បង់ទេ។  ប្រសិនបើនេះជាលទ្ធផល VERIFY វាមានន័យថា rpminspect "
+"បានកត់សម្គាល់ការផ្លាស់ប្តូរនៅក្នុងអ្វីដែលវាចាត់ទុកការធ្វើបុច្ចប្បន្នភាពនៅក្នុង package។  លទ្ធផល "
+"INFO មាន​ន័យ​ថា​វា​បាន​កត់​សម្គាល់​ការ​ផ្លាស់​ប្តូរ​នេះ ប៉ុន្តែ​យល់​ថា​វា​មិន​អី​ទេ ព្រោះ​វា​កំពុង​ប្រៀបធៀប​ "
+"rebased build។"
 
 #: include/results.h:772
 msgid ""
@@ -1302,151 +1375,157 @@ msgid ""
 "%{version}-%{release}' to capture the package package Epoch in the "
 "dependency."
 msgstr ""
+"Package មានតម្លៃ Epoch ធំជាងសូន្យ ប៉ុន្តែ explicit subpackage dependencies "
+"មិនប្រើប្រាស់វាជាប់លាប់នោះទេ។  សម្រាប់ dependency ដែលបានរាយការណ៍ '= "
+"%{version}-%{release}' ត្រូវការប្តូរទៅ '= %{epoch}:%{version}-%{release}' ដើម្បីចាប់"
+"យក package package Epoch ក្នុង dependency។"
 
 #: include/results.h:781
 msgid ""
 "Refer to the udev documentation at https://www.freedesktop.org/software/"
 "systemd/man/udev.html for help correcting the errors and warnings."
 msgstr ""
+"សូមមើលឯកសារ udev នៅ https://www.freedesktop.org/software/systemd/man/"
+"udev.html សម្រាប់ជំនួយក្នុងការកែកំហុស និងការព្រមាន។"
 
 #: lib/abi.c:65
 #, c-format
 msgid "*** malformed ABI level identifier: %s"
-msgstr ""
+msgstr "*** ការកំណត់អត្តសញ្ញាណកម្រិត ABI មិនត្រឹមត្រូវ៖ %s"
 
 #: lib/abi.c:70
 #, c-format
 msgid "*** ABI level %d already defined"
-msgstr ""
+msgstr "*** កម្រិត ABI %d បានកំណត់រួចហើយ"
 
 #: lib/abi.c:84
 #, c-format
 msgid "*** malformed ABI level entry: %s"
-msgstr ""
+msgstr "*** ធាតុកម្រិត ABI ខុសទម្រង់៖ %s"
 
 #: lib/builds.c:73
 #, c-format
 msgid "*** unable to create download directory %s"
-msgstr ""
+msgstr "*** មិនអាចបង្កើត download directory %s បានទេ"
 
 #: lib/builds.c:85
 #, c-format
 msgid "*** unknown working directory type: %d"
-msgstr ""
+msgstr "***មិនស្គាល់ប្រភេទថតឯកសារ៖ %d"
 
 #: lib/builds.c:173
 #, c-format
 msgid "*** unable to read %s, skipping"
-msgstr ""
+msgstr "*** មិនអាចអាន %s បាន រំលង"
 
 #: lib/builds.c:205
 #, c-format
 msgid "*** unknown directory member encountered: %s"
-msgstr ""
+msgstr "*** សមាជិកថតមិនស្គាល់បានជួបប្រទះ៖ %s"
 
 #: lib/builds.c:234
 #, c-format
 msgid "There is not enough available space to download the requested %s.\n"
-msgstr ""
+msgstr "មិនមានកន្លែងទំនេរគ្រប់គ្រាន់ដើម្បីទាញយក %s ដែលបានស្នើសុំនោះទេ។\n"
 
 #: lib/builds.c:235 lib/peers.c:177
 #, c-format
 msgid "    Need %s in %s, have %s.\n"
-msgstr ""
+msgstr "    ត្រូវការ %s ក្នុង %s មាន %s ។\n"
 
 #: lib/builds.c:236 lib/peers.c:178
 #, c-format
 msgid "See the `-w' option for specifying an alternate working directory.\n"
-msgstr ""
+msgstr "សូមមើលជម្រើស `-w' សម្រាប់បញ្ជាក់ alternate working directory។\n"
 
 #: lib/builds.c:249
 #, c-format
 msgid "Unable to determine the required space to download the requested %s.\n"
-msgstr ""
+msgstr "មិនអាចកំណត់ទំហំដែលត្រូវការដើម្បីទាញយក %s ដែលបានស្នើនោះទេ។\n"
 
 #: lib/builds.c:250
 #, c-format
 msgid "Ensure %s has sufficient space available."
-msgstr ""
+msgstr "ត្រូវប្រាកដថា %s មាន space ទំនេរគ្រប់គ្រាន់។"
 
 #: lib/builds.c:290 lib/builds.c:294
 msgid "build"
-msgstr ""
+msgstr "ការសាងសង់ build"
 
 #: lib/builds.c:320
 msgid "Downloading module"
-msgstr ""
+msgstr "កំពុងទាញយក module"
 
 #: lib/builds.c:323
 msgid "Downloading RPM build"
-msgstr ""
+msgstr "កំពុងទាញយក RPM build"
 
 #: lib/builds.c:373 lib/inspect_modularity.c:47
 #, c-format
 msgid "*** ignoring malformed module metadata file: %s"
-msgstr ""
+msgstr "*** មិនអើពើឯកសារទិន្នន័យមេតារបស់ម៉ូឌុលដែលខូចទ្រង់ទ្រាយ៖ %s"
 
 #: lib/builds.c:383
 #, c-format
 msgid "*** malformed rpm filters in file: %s"
-msgstr ""
+msgstr "*** តម្រង rpm ខុសក្នុងឯកសារ៖ %s"
 
 #: lib/builds.c:541 lib/builds.c:545
 msgid "task"
-msgstr ""
+msgstr "ភារកិច្ច"
 
 #: lib/builds.c:659 lib/builds.c:662
 msgid "RPM"
-msgstr ""
+msgstr "RPM"
 
 #: lib/builds.c:791
 #, c-format
 msgid "*** `%s' already exists in %s"
-msgstr ""
+msgstr "*** `%s' មានរួចហើយនៅក្នុង %s"
 
 #: lib/builds.c:829
 #, c-format
 msgid "*** unable to find local build: %s"
-msgstr ""
+msgstr "*** មិនអាចស្វែងរក local build បានទេ៖ %s"
 
 #: lib/builds.c:841
 #, c-format
 msgid "*** unable to download RPM: %s"
-msgstr ""
+msgstr "*** មិនអាចទាញយក RPM បានទេ៖ %s"
 
 #: lib/builds.c:860 lib/builds.c:893 lib/builds.c:903
 #, c-format
 msgid "*** unable to find build %s in Koji hub %s"
-msgstr ""
+msgstr "*** មិនអាចស្វែងរក build %s នៅក្នុង Koji hub %s បានទេ"
 
 #: lib/builds.c:872
 #, c-format
 msgid "*** unable to find task %s in Koji hub %s"
-msgstr ""
+msgstr "*** មិនអាចស្វែងរកកិច្ចការ %s នៅក្នុង Koji hub %s បានទេ"
 
 #: lib/checksums.c:91
 #, c-format
 msgid "*** %s is a FIFO"
-msgstr ""
+msgstr "*** %s គឺជា FIFO"
 
 #: lib/copyfile.c:117
 #, c-format
 msgid "%s already exists"
-msgstr ""
+msgstr "%s មានរួចហើយ"
 
 #: lib/copyfile.c:122
 msgid ", overwriting"
-msgstr ""
+msgstr ", សរសេរជាន់លើ"
 
 #: lib/curl.c:267 lib/readfile.c:60
 #, c-format
 msgid "*** unable to read %s"
-msgstr ""
+msgstr "*** មិនអាចអាន %s បានទេ"
 
 #: lib/fileinfo.c:64
 #, c-format
 msgid "%s in %s on %s carries expected mode %04o"
-msgstr ""
+msgstr "%s ក្នុង %s លើ %s ដំណើរការរបៀបរំពឹងទុក %04o"
 
 #: lib/fileinfo.c:76
 #, c-format
@@ -1454,6 +1533,8 @@ msgid ""
 "%s in %s on %s carries unexpected mode %04o; expected mode %04o; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s ក្នុង %s នៅលើ %s ដំណើរការ mode ដែលមិនរំពឹងទុក %04o; mode រំពឹងទុក %04o; "
+"ទាមទារការត្រួតពិនិត្យដោយក្រុមសន្តិសុខ"
 
 #: lib/fileinfo.c:96
 #, c-format
@@ -1461,11 +1542,13 @@ msgid ""
 "%s in %s on %s carries insecure mode %04o, Security Team review may be "
 "required"
 msgstr ""
+"%s ក្នុង %s លើ %s ដំណើរការ insecure mode %04o "
+"ការត្រួតពិនិត្យក្រុមសុវត្ថិភាពអាចត្រូវបានទាមទារ"
 
 #: lib/fileinfo.c:155
 #, c-format
 msgid "%s in %s on %s carries expected owner '%s'"
-msgstr ""
+msgstr "%s ក្នុង %s នៅលើ %s ផ្ទុក owner ដែលរំពឹងទុក '%s'"
 
 #: lib/fileinfo.c:168
 #, c-format
@@ -1473,6 +1556,8 @@ msgid ""
 "%s in %s on %s carries unexpected owner '%s'; expected owner '%s'; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s ក្នុង %s នៅលើ %s ផ្ទុកម្ចាស់ '%s' ដែលមិនបានរំពឹងទុក; owner ដែលបានរំពឹងទុក '%s'; "
+"ទាមទារការត្រួតពិនិត្យដោយក្រុមសន្តិសុខ"
 
 #: lib/fileinfo.c:192 lib/fileinfo.c:286
 #, c-format
@@ -1480,11 +1565,13 @@ msgid ""
 "%s in %s on %s carries insecure mode %04o but has no fileinfo rule for owner "
 "specification, Security Team review may be required"
 msgstr ""
+"%s ក្នុង %s លើ %s ដំណើរការ insecure mode %04o ប៉ុន្តែមិនមាន fileinfo "
+"សម្រាប់ការបញ្ជាក់របស់ម្ចាស់ ការពិនិត្យមើលក្រុមសុវត្ថិភាពអាចនឹងត្រូវបានទាមទារ"
 
 #: lib/fileinfo.c:249
 #, c-format
 msgid "%s in %s on %s carries expected group '%s'"
-msgstr ""
+msgstr "%s ក្នុង %s នៅលើ %s មានក្រុមដែលរំពឹងទុក '%s'"
 
 #: lib/fileinfo.c:262
 #, c-format
@@ -1492,154 +1579,158 @@ msgid ""
 "%s in %s on %s carries group unexpected '%s'; expected group '%s'; requires "
 "inspection by the Security Team"
 msgstr ""
+"%s ក្នុង %s នៅលើ %s ផ្ទុកក្រុមដែលមិនបានរំពឹងទុក '%s'; ក្រុមដែលរំពឹងទុក '%s'; "
+"ទាមទារការត្រួតពិនិត្យដោយក្រុមសន្តិសុខ"
 
 #: lib/init.c:226
 #, c-format
 msgid "*** invalid input string `%s`"
-msgstr ""
+msgstr "*** ខ្សែអក្សរបញ្ចូលមិនត្រឹមត្រូវ `%s`"
 
 #: lib/init.c:253 lib/init.c:262 lib/init.c:270 lib/init.c:282 lib/init.c:291
 #: lib/init.c:299 lib/init.c:311 lib/init.c:320 lib/init.c:328 lib/init.c:340
 #, c-format
 msgid "*** invalid mode string: %s"
-msgstr ""
+msgstr "*** mode string មិនត្រឹមត្រូវ៖ %s"
 
 #: lib/init.c:378
 #, c-format
 msgid "*** problem adding entries to array %s->%s"
-msgstr ""
+msgstr "*** បញ្ហាក្នុងការបន្ថែមធាតុទៅ array %s->%s"
 
 #: lib/init.c:399
 #, c-format
 msgid "*** problem adding ignore entries to %s"
-msgstr ""
+msgstr "*** បញ្ហាក្នុងការបន្ថែម ignore entries ទៅ %s"
 
 #: lib/init.c:418 lib/init.c:432
 msgid "*** error reading "
-msgstr ""
+msgstr "*** កំហុសក្នុងការអាន "
 
 #: lib/init.c:458
 #, c-format
 msgid "*** ignoring malformed section %s->%s"
-msgstr ""
+msgstr "*** មិនអើពើផ្នែកដែលខូចទ្រង់ទ្រាយ %s->%s"
 
 #: lib/init.c:515 lib/init.c:528
 #, c-format
 msgid "*** error reading %s ignore pattern"
-msgstr ""
+msgstr "*** កំហុសក្នុងការអាន %s មិនអើពើលំនាំ"
 
 #: lib/init.c:544
 #, c-format
 msgid "*** flag must be 'on' or 'off'; ignoring '%s'"
-msgstr ""
+msgstr "*** flag ត្រូវតែ 'on' ឬ 'off'; មិនអើពើ '%s'"
 
 #: lib/init.c:548
 #, c-format
 msgid "*** unknown inspections: `%s`"
-msgstr ""
+msgstr "*** ការត្រួតពិនិត្យមិនស្គាល់៖ `%s`"
 
 #: lib/init.c:559
 msgid "*** malformed/unknown inspections section"
-msgstr ""
+msgstr "*** ផ្នែកត្រួតពិនិត្យខុសទម្រង់/មិនស្គាល់"
 
 #: lib/init.c:591
 #, c-format
 msgid "*** ignoring malformed %s configuration file: %s"
-msgstr ""
+msgstr "*** មិនអើពើ %s configuration file ដែលខុសទម្រង់៖ %s"
 
 #: lib/init.c:653
 #, c-format
 msgid "*** unknown modularity static context settiongs '%s'"
-msgstr ""
+msgstr "*** ការកំណត់ modularity static context ដែលមិនស្គាល់ '%s'"
 
 #: lib/init.c:717
 #, c-format
 msgid "*** unknown specname match setting '%s', defaulting to 'full'"
-msgstr ""
+msgstr "*** មិនស្គាល់ឈ្មោះដែលត្រូវគ្នានឹងការកំណត់ '%s' លំនាំដើមជា 'full'"
 
 #: lib/init.c:732
 #, c-format
 msgid "*** unknown specname primary setting '%s', defaulting to 'name'"
-msgstr ""
+msgstr "*** មិនស្គាល់ specname primary setting '%s' លំនាំដើមទៅជា 'name'"
 
 #: lib/init.c:747
 #, c-format
 msgid "*** invalid annocheck failure_reporting_level: %s, defaulting to %s"
 msgstr ""
+"*** ការត្រួតពិនិត្យ annocheck fail_reporting_level មិនត្រឹមត្រូវ៖ %s លំនាំដើមទៅ %s"
 
 #: lib/init.c:804
 msgid "*** malformed badfuncs->allowed section"
-msgstr ""
+msgstr "*** malformed badfuncs->allowed section"
 
 #: lib/init.c:822
 #, c-format
 msgid "*** error reading unicode exclude regular expression: %s"
-msgstr ""
+msgstr "*** កំហុសក្នុងការអានយូនីកូដមិនរាប់បញ្ចូល regular expression៖ %s"
 
 #: lib/init.c:832
 msgid "*** malformed rpmdeps->ignore section; skipping"
-msgstr ""
+msgstr "*** malformed rpmdeps->ignore section; រំលង"
 
 #: lib/init.c:968
 #, c-format
 msgid "*** Invalid filename in the fileinfo list: %s"
-msgstr ""
+msgstr "*** filename មិនត្រឹមត្រូវនៅក្នុងបញ្ជី fileinfo: %s"
 
 #: lib/init.c:969
+#, fuzzy
 msgid "*** From this invalid line:"
-msgstr ""
+msgstr "*** From this invalid line:"
 
 #: lib/init.c:970
-#, c-format
+#, c-format, fuzzy
 msgid "***     %s"
-msgstr ""
+msgstr "***     %s"
 
 #: lib/init.c:1121
 #, c-format
 msgid "*** unexpected token `%s' seen in %s, cannot continue"
-msgstr ""
+msgstr "*** token មិនបានរំពឹងទុក `%s' បានឃើញនៅក្នុង %s, មិនអាចបន្តបាន"
 
 #: lib/init.c:1414
 #, c-format
 msgid "*** invalid security rule: %s"
-msgstr ""
+msgstr "*** security rule មិនត្រឹមត្រូវ: %s"
 
 #: lib/init.c:1426
 #, c-format
 msgid "*** unknown security rule: %s"
-msgstr ""
+msgstr "*** មិនស្គាល់ security rule: %s"
 
 #: lib/init.c:1435
 #, c-format
 msgid "*** unknown security action: %s"
-msgstr ""
+msgstr "*** មិនស្គាល់សកម្មភាព security: %s"
 
 #: lib/init.c:1461
-#, c-format
+#, c-format, fuzzy
 msgid "*** malformed security line: %s"
-msgstr ""
+msgstr "*** malformed security line: %s"
 
 #: lib/init.c:1622
 #, c-format
 msgid "*** missing configuration file `%s'"
-msgstr ""
+msgstr "*** មិនឃើញមាន configuration file `%s'"
 
 #: lib/init.c:1658
 #, c-format
 msgid "*** unable to find profile '%s'"
-msgstr ""
+msgstr "*** មិនអាចស្វែងរក profile '%s'"
 
 #: lib/inspect_abidiff.c:266
 msgid "abidiff usage error"
-msgstr ""
+msgstr "កំហុសការប្រើប្រាស់ abidiff"
 
 #: lib/inspect_abidiff.c:275
 msgid "ABI change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "ABI ផ្លាស់ប្ដូរនៅក្នុង ${FILE} នៅលើ ${ARCH}"
 
 #: lib/inspect_abidiff.c:284
 msgid "ABI incompatible change in ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "ABI incompatible change នៅក្នុង ${FILE} នៅលើ ${ARCH}"
 
 #: lib/inspect_abidiff.c:296
 #, c-format
@@ -1647,6 +1738,8 @@ msgid ""
 "Comparing old vs. new version of %s in package %s with ABI compatibility "
 "level %ld on %s revealed ABI differences."
 msgstr ""
+"ការប្រៀបធៀបកំណែចាស់ និងកំណែថ្មីនៃ %s នៅក្នុង package %s ជាមួយនឹងកម្រិត compatibility របស់ "
+"ABI %ld នៅលើ %s បានបង្ហាញពីភាពខុសគ្នារបស់ ABI ។"
 
 #: lib/inspect_abidiff.c:298
 #, c-format
@@ -1654,6 +1747,8 @@ msgid ""
 "Comparing old vs. new version of %s in package %s on %s revealed ABI "
 "differences."
 msgstr ""
+"ការប្រៀបធៀបកំណែចាស់ និងកំណែថ្មីនៃ %s នៅក្នុង package %s នៅលើ %s បានបង្ហាញពីភាពខុសគ្នារបស់ "
+"ABI ។"
 
 #: lib/inspect_abidiff.c:302
 #, c-format
