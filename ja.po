@@ -9,7 +9,8 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
 "PO-Revision-Date: 2025-08-08 06:22+0000\n"
-"Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
+"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
+"memory@weblate.org>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ja/>\n"
 "Language: ja\n"
@@ -1282,7 +1283,7 @@ msgstr ""
 #: lib/curl.c:267 lib/readfile.c:60
 #, c-format
 msgid "*** unable to read %s"
-msgstr ""
+msgstr "読み取れません: %s"
 
 #: lib/fileinfo.c:64
 #, c-format
