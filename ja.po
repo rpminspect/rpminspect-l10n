@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-08-08 06:26+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2025-08-09 00:16+0000\n"
+"Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ja/>\n"
 "Language: ja\n"
@@ -212,7 +211,7 @@ msgid ""
 "Rebased packages report these findings at the INFO level while non-rebased "
 "packages report them at the VERIFY level or higher."
 msgstr ""
-"ビルド前後で追加されたファイルを報告します。 debuginfo "
+"ビルド前後で追加されたファイルを報告します。 Debuginfo "
 "ファイルは設定ファイル内でパターン指定されたファイルと同様に無視されます。ま"
 "た、セキュリティパス内にファイルが追加された場合は、セキュリティレビューが必"
 "要であるものとして特別な報告が行われます。このほか、 fileinfo "
@@ -229,11 +228,11 @@ msgid ""
 "on the rebaseable list, the change is reported as informational. Otherwise "
 "the change is reported as a rebase of the package and requires inspection."
 msgstr ""
-"RPM spec "
-"ファイル内に指定されたソースアーカイブの内容が、ビルド前後で変更されているか"
-"どうかを確認します。ソースアーカイブが変更されていて、かつパッケージがリベー"
-"ス可能な一覧に含まれている場合、変更は情報レベルで報告されます。それ以外の場"
-"合はパッケージのリベースとして報告され、調査を求めます。"
+"RPM spec ファイル内に指定された Source "
+"アーカイブの内容が、ビルド前後で変更されているかどうかを確認します。ソースア"
+"ーカイブが変更されていて、かつパッケージがリベース可能な一覧に含まれている場"
+"合、変更は情報レベルで報告されます。それ以外の場合はパッケージのリベースとし"
+"て報告され、調査を求めます。"
 
 #: include/inspect.h:1447
 msgid ""
@@ -259,8 +258,8 @@ msgstr ""
 "行で指定されたシェルを利用して分包チェックを行います "
 "(シェルは設定データ内のシェルセクション内に存在していなければなりません) 。"
 "文法チェックが 0 "
-"以外の値を返した場合はユーザに対してその旨を報告するとともに、標準出力および"
-"標準エラー出力の内容を返します。 2 "
+"以外の値を返した場合はユーザに対してその旨を報告するとともに、 stdout および "
+"stderr の内容を返します。 2 "
 "つのビルドを比較する場合は以前のチェックを実行するとともに、以前は不合格だっ"
 "たスクリプトが合格しているかどうかも確認します。"
 
@@ -486,6 +485,16 @@ msgid ""
 "can also list patch names that rpminspect should ignore during the "
 "inspection."
 msgstr ""
+"spec "
+"ファイル内に指定された全てのパッチファイルを調査し、ビルド間での差異を報告し"
+"ます。ここでの機能チェックは、プリアンブル部分で指定された全てのパッチに対し"
+"て、 spec ファイル内に対応するアプリケーションマクロがあることを確認します。"
+"また INFO レベルでは、 rpminspect "
+"はファイル数や行数、パッチサイズの変更についても報告を行います。このほか、パ"
+"ッチサイズやパッチの適用先となるファイル数が一定の閾値を超過した場合、"
+"比較がリベースでなければ VERIFY "
+"レベルでの変更報告となります。設定ファイルでは、調査時に無視したいパッチ名の"
+"一覧を指定することができます。"
 
 #: include/inspect.h:1579
 msgid ""
@@ -493,6 +502,9 @@ msgid ""
 "found by libclamav will fail the inspection.  The ignore_path rules are not "
 "used in this inspection.  All files are scanned."
 msgstr ""
+"libclamav を利用してビルド内の各ファイルに対してウィルスチェックを行います。 "
+"libclamav で検出されたもの全てが調査失敗として報告されます。この調査では "
+"ignore_path ルールは使用されません。全てのファイルが対象となります。"
 
 #: include/inspect.h:1585
 msgid ""
@@ -502,6 +514,13 @@ msgid ""
 "subdirectory map to the product release string.  The rules in each file "
 "define the politically sensitive allow and deny rules for that release."
 msgstr ""
+"パッケージ内で既知となっている政治的機微ファイルについて調査を行い、それらが"
+"許可されてするか禁止されているかを報告します。ルールは製品に含まれる "
+"rpminspect-data パッケージ内の politics/ サブディレクトリ内にあります。なお、"
+" politics/ "
+"サブディレクトリ内のファイルは、製品リリース文字列に割り当てられています。各"
+"ファイル内のルールでは、政治的機微な項目に対して許可または禁止のルールが設定"
+"されています。"
 
 #: include/inspect.h:1591
 msgid ""
@@ -510,12 +529,18 @@ msgid ""
 "catch built packages that make use of deprecated API functions if you wish "
 "built packages to conform to replacement APIs."
 msgstr ""
+"ELF "
+"ファイル内の禁止関数についてチェックを行います。禁止された関数は実行時の設定"
+"ファイル内で指定することができます。通常、"
+"この調査は構築済みのパッケージを代替 API に準拠させる目的で、非推奨の API "
+"関数を使用してビルドされたパッケージを検出するために使用します。"
 
 #: include/inspect.h:1597
 msgid ""
 "Check for forbidden paths in both the DT_RPATH and DT_RUNPATH settings in "
 "ELF shared objects."
-msgstr ""
+msgstr "ELF 共有オブジェクト内に、 DT_RPATH および DT_RUNPATH "
+"設定内に含まれる禁止パスが存在していないかどうかを確認します。"
 
 #: include/inspect.h:1603
 msgid ""
@@ -523,6 +548,10 @@ msgid ""
 "for any prohibited Unicode code points, as defined in the configuration "
 "file.  Any prohibited code points are reported as a possible security risk."
 msgstr ""
+"抽出およびパッチ適用されたソースコードファイルやスクリプト、および RPM spec "
+"ファイルを検索して、設定ファイル内に指定された禁止 Unicode "
+"コードポイントが存在していないかどうかを確認します。禁止コードポイントはセキ"
+"ュリティリスクとして報告されます。"
 
 #: include/inspect.h:1609
 msgid ""
@@ -532,6 +561,11 @@ msgid ""
 "will check for correct RPM dependency metadata when inspecting a single "
 "build and report findings."
 msgstr ""
+"RPM "
+"の依存関係メタデータを読み込み、正しくない依存関係や矛盾する依存関係を報告す"
+"るとともに、新旧のビルドで変更が予定通りであるかどうかを確認します。変更点は"
+"ビルド間の比較時にのみ行われますが、 RPM "
+"依存関係のメタデータが正しいかどうかのチェックは単一の調査でも行われます。"
 
 #: include/inspect.h:1615
 msgid ""
@@ -540,31 +574,40 @@ msgid ""
 "report where symbols unexpectedly appear or disappear and what corrective "
 "action is needed."
 msgstr ""
+"RPM パッケージ内にあるファイルからデバッグシンボルが削除されていること、"
+"および debuginfo "
+"パッケージにそれらのデバッグシンボルが存在していることを確認します。ビルド間"
+"を比較する場合、シンボルが予期せず現れたり消失したりしているかどうかも確認し"
+"、対応する適切なアクションを提示します。"
 
 #: include/inspect.h:1621
 msgid "Perform syntax check on udev rules files using udevadm verify."
-msgstr ""
+msgstr "udevadm verify で使用される udev ルールファイルの文法チェックを行います。"
 
 #: include/results.h:31
 msgid "Change the string specified on the 'Vendor:' line in the spec file."
-msgstr ""
+msgstr "spec ファイル内の 'Vendor:' 行で指定されている文字列を変更します。"
 
 #: include/results.h:38
 msgid "Make sure the SRPM is built on a host within the expected subdomain."
-msgstr ""
+msgstr "SRPM が期待通りのサブドメイン内のホストで構築されたかどうかを確認します。"
 
 #: include/results.h:45
 msgid ""
 "Unprofessional language as defined in the configuration file was found in "
 "the text shown.  Remove or change the offending words and rebuild."
 msgstr ""
+"設定ファイル内で指定した非専門用語がテキスト内に含まれているかどうかを確認し"
+"ます。このほか、不快な言葉使いについても削除もしくは変更を行って再ビルドしま"
+"す。"
 
 #: include/results.h:60 include/results.h:75
 #, c-format
 msgid ""
 "Check to see if you eliminated a subpackage but still have the %package and/"
 "or the %files section for it."
-msgstr ""
+msgstr "サブパッケージを削除した場合、対応する %package, %files "
+"セクションを適切に削除したかどうかを確認します。"
 
 #: include/results.h:90
 msgid ""
@@ -572,6 +615,10 @@ msgid ""
 "distribution (e.g., GPLv2+).  If the license in question is approved, the "
 "license database needs updating in the rpminspect-data package."
 msgstr ""
+"License タグにはディストリビューションが指定する承認済みライセンス文字列 (例:"
+" GPLv2+) を指定しなければなりません。新たにライセンスが承認された場合は、 "
+"rpminspect-data "
+"パッケージに含まれるライセンスデータベースを更新する必要があります。"
 
 #: include/results.h:97
 msgid ""
@@ -579,6 +626,10 @@ msgid ""
 "valid licensedb file.  This is also commonly due to a missing vendor "
 "specific rpminspect-data package on the system."
 msgstr ""
+"rpminspect の設定ファイルで licensedb "
+"が正しいライセンスデータベースファイルを示していることを確認してください。こ"
+"れは通常、システム内にベンダー固有の rpminspect-data "
+"パッケージが無い場合に発生します。"
 
 #: include/results.h:104
 msgid ""
@@ -589,36 +640,49 @@ msgid ""
 "but marked unapproved, you may need to work with the legal team regarding "
 "options for this software."
 msgstr ""
+"指定したライセンス省略表記がライセンスデータベース内に記載されていません。"
+"ライセンスデータベースは rpminspect "
+"の設定ファイル内で指定されています。このファイルを確認して、必要であれば提供"
+"元のプロジェクトに対してファイルを送信し、プルリクエストを実施してください。"
+"なお、一覧内に記述があるものの非承認として指定されている場合は、このソフトウ"
+"ェアに対して法務チームとの共同作業が必要になるかも知れません。"
 
 #: include/results.h:119 include/results.h:154
 msgid "Ensure all object files are compiled with -fPIC"
-msgstr ""
+msgstr "全てのオブジェクトファイルが -fPIC でコンパイルされていることの確認"
 
 #: include/results.h:126
 msgid ""
 "Ensure that the package is being built with the correct compiler and "
 "compiler flags"
-msgstr ""
+msgstr "パッケージが正しいコンパイラおよびコンパイラオプションで構築されていることの"
+"確認"
 
 #: include/results.h:133
 msgid ""
 "The data in an ELF file appears to be corrupt; ensure that packaged ELF "
 "files are not being truncated or incorrectly modified"
 msgstr ""
+"ELF ファイル内のデータが壊れているように見えます; パッケージ内の ELF "
+"ファイルが切り捨てられていたり、不正に修正されていたりしていないかを確認して"
+"ください"
 
 #: include/results.h:140
 msgid ""
 "An ELF stack is marked as executable. Ensure that no execstack options are "
 "being passed to the linker, and that no functions are defined on the stack."
 msgstr ""
+"ELF スタックが実行可能としてマークされています。リンカーに対して execstack "
+"オプションを渡していないこと、およびスタック内で関数を定義していないことを確"
+"認してください。"
 
 #: include/results.h:147
 msgid "Ensure executables are linked with with '-z relro -z now'"
-msgstr ""
+msgstr "実行ファイルが '-z relro -z now' でリンクされていることの確認"
 
 #: include/results.h:169
 msgid "Correct the errors in the man page as reported by the libmandoc parser."
-msgstr ""
+msgstr "libmandoc パーサーによって報告されたマニュアルページ内のエラーを修正します。"
 
 #: include/results.h:176
 msgid ""
@@ -626,34 +690,49 @@ msgid ""
 "in the directory beneath /usr/share/man that matches the section number of "
 "the page."
 msgstr ""
+"マニュアルページに対するインストールパスを修正します。マニュアルページは /"
+"usr/share/man "
+"以下の該当セクションのディレクトリにインストールしなければなりません。"
 
 #: include/results.h:191
 msgid "Correct the reported errors in the XML document"
-msgstr ""
+msgstr "XML 文書内で報告されたエラーの修正"
 
 #: include/results.h:206
 msgid ""
 "Refer to the Desktop Entry Specification at https://standards.freedesktop."
 "org/desktop-entry-spec/latest/ for help correcting the errors and warnings"
 msgstr ""
+"エラーと警告の修正について、詳しくは https://standards.freedesktop.org/"
+"desktop-entry-spec/latest/ "
+"で定義されているデスクトップ項目仕様を参照してください"
 
 #: include/results.h:221
 msgid ""
 "The Release: tag in the spec file must include a '%{?dist}' string.  Please "
 "add this to the spec file per the distribution packaging guidelines."
 msgstr ""
+"spec ファイル内の Release: タグ内には '%{?dist}' "
+"という文字列が含まれていなければなりません。ディストリビューションのパッケー"
+"ジングガイドラインに従い、 spec ファイル内にこの文字列を追加してください。"
 
 #: include/results.h:236
 msgid ""
 "The spec file name does not match the expected NAME.spec format.  Rename the "
 "spec file to conform to this policy."
 msgstr ""
+"spec ファイルのファイル名が予期する NAME.spec "
+"形式になっていません。このポリシーに合致させるため、 spec "
+"ファイルの名前変更を実施してください。"
 
 #: include/results.h:253
 msgid ""
 "This package is part of a module but is missing the %{modularitylabel} "
 "header tag.  Add this as a %define in the spec file and rebuild."
 msgstr ""
+"パッケージはモジュールの一部ですが、 %{modularitylabel} "
+"ヘッダタグがありません。 spec ファイル内で %define "
+"を利用して追加し、再構築してください。"
 
 #: include/results.h:260
 msgid ""
@@ -663,6 +742,12 @@ msgid ""
 "rules determining if the /data/static_context setting is required, "
 "forbidden, or recommend."
 msgstr ""
+"このビルドには正しい /data/static_context 設定もしくは正しくない /data/"
+"static_context "
+"設定が含まれています。構築先の製品に対するモジュールルールを参照して設定内容"
+"を決定してください。 rpminspect の設定では、 /data/static_context "
+"設定が必要かどうか、禁止するかどうか、推奨するかどうかをそれぞれ設定すること"
+"ができます。"
 
 #: include/results.h:277
 msgid ""
@@ -670,24 +755,34 @@ msgid ""
 "met for the product release.  Ensure you are using the correct JDK for the "
 "build."
 msgstr ""
+"1 つまたは複数のクラスファイルが、製品リリースが求める Java "
+"バイトコードバージョンに合致していません。ビルドに対して正しい JDK "
+"を使用しているかどうかをご確認ください。"
 
 #: include/results.h:292
 msgid ""
 "File changes were found.  In most cases these are expected, but it is a good "
 "idea to verify the changes found are deliberate."
-msgstr ""
+msgstr "ファイル変更を検出しました。ほとんどの場合これは期待通りではありますが、この"
+"変更が意図したものかどうかを念のためご確認ください。"
 
 #: include/results.h:307
 msgid ""
 "Unexpected file moves were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file moves between builds."
 msgstr ""
+"予期しないファイルの移動を検出しました。この変更が正しいかどうかご確認くださ"
+"い。正しくない場合は、ビルド間でファイルを移動しないように変更を行ってくださ"
+"い。"
 
 #: include/results.h:322
 msgid ""
 "Unexpected file removals were found.  Verify these changes are correct.  If "
 "they are not, adjust the build to prevent the file removals between builds."
 msgstr ""
+"予期しないファイルの削除を検出しました。この変更が正しいかどうかご確認くださ"
+"い。正しくない場合は、ビルド間でファイルを削除しないように変更を行ってくださ"
+"い。"
 
 #: include/results.h:337
 #, c-format
@@ -699,6 +794,13 @@ msgid ""
 "You may also need to update the data package or local configuration file and "
 "change the forbidden_path_prefixes or forbidden_path_suffixes list."
 msgstr ""
+"予期しないファイルの追加を検出しました。この変更が正しいかどうかご確認くださ"
+"い。正しくない場合は、ビルド間でファイルを追加しないように変更を行ってくださ"
+"い。正しい場合は %s を更新して rpminspect "
+"プロジェクトにパッチを送信して、この変更が期待通りであるものとして登録してく"
+"ださい。また、データパッケージやローカルの設定ファイルの更新を行って、 "
+"forbidden_path_prefixes または forbidden_path_suffixes "
+"の変更を行う必要があるかも知れません。"
 
 #: include/results.h:352
 #, c-format
@@ -708,6 +810,12 @@ msgid ""
 "deliberate, but needs inspection. If this change is expected, update %s and "
 "send a patch to the project that owns that file."
 msgstr ""
+"予期しないソースアーカイブ内容の変更を検出しました。ビルド間でパッケージのバ"
+"ージョンが変更されていないのに、ソースアーカイブの内容が変更されています。こ"
+"れが意図したものである可能性もありますが、念のためご確認ください。"
+"もしも変更が期待通りの場合は %s "
+"を更新して、ファイルの所有者であるプロジェクトに対してパッチを送信してくださ"
+"い。"
 
 #: include/results.h:367
 #, c-format
@@ -716,6 +824,11 @@ msgid ""
 "permissions are expected, update %s and send a patch to the project that "
 "owns it."
 msgstr ""
+"%%files セクション内に %%defattr "
+"マクロが含まれているかどうかを確認してください。"
+"これらのパーミッションが期待通りの場合は %s "
+"を更新して、ファイルの所有者であるプロジェクトに対してパッチを送信してくださ"
+"い。"
 
 #: include/results.h:374
 #, c-format
@@ -724,6 +837,11 @@ msgid ""
 "configuration, which is usually root. If this ownership is expected, update "
 "%s and send a patch to the project that owns it."
 msgstr ""
+"bin パス内のファイルは rpminspect 設定内の bin_owner "
+"で指定するユーザが所有していなければなりません (通常は root) 。"
+"この所有権が期待通りの場合は %s "
+"を更新して、ファイルの所有者であるプロジェクトに対してパッチを送信してくださ"
+"い。"
 
 #: include/results.h:381
 #, c-format
@@ -732,6 +850,11 @@ msgid ""
 "configuration, which is usually root. If this ownership is expect, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"bin パス内のファイルは rpminspect 設定内の bin_group "
+"で指定するグループが所有していなければなりません (通常は root) 。"
+"この所有権が期待通りの場合は %s "
+"を更新して、ファイルの所有者であるプロジェクトに対してパッチを送信してくださ"
+"い。"
 
 #: include/results.h:388
 #, c-format
@@ -740,6 +863,11 @@ msgid ""
 "or remove the world execute bit on the file (chmod o-x). If this ownership "
 "is expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"対象のファイルを chgrp して rpminspect の設定ファイル内で設定されている "
+"bin_group にするか、もしくは全ユーザに対する実行可能ビットを削除 (chmod o-x) "
+"してください。この所有権が期待通りの場合は %s "
+"を更新して、ファイルの所有者であるプロジェクトに対してパッチを送信してくださ"
+"い。"
 
 #: include/results.h:395
 #, c-format
@@ -748,6 +876,11 @@ msgid ""
 "or remove the group write bit on the file (chmod g-w). If this ownership is "
 "expected, update %s and send a patch to the project that owns it."
 msgstr ""
+"対象のファイルを chgrp して rpminspect の設定ファイル内で設定されている "
+"bin_group にするか、もしくはグループに対する書き込み可能ビットを削除 (chmod "
+"g-w) してください。この所有権が期待通りの場合は %s "
+"を更新して、ファイルの所有者であるプロジェクトに対してパッチを送信してくださ"
+"い。"
 
 #: include/results.h:402
 #, c-format
@@ -756,6 +889,11 @@ msgid ""
 "process to set correct owner and group information. If expected, update %s "
 "and send a patch to the project that owns it."
 msgstr ""
+"所有者の変更が期待通りであるかどうかをご確認ください。期待通りではなかった場"
+"合は、パッケージのビルド処理を変更して、前と同じ所有者およびグループになるよ"
+"うにしてください。期待通りの場合は %s "
+"を更新して、ファイルの所有者であるプロジェクトに対してパッチを送信してくださ"
+"い。"
 
 #: include/results.h:409
 msgid ""
@@ -766,26 +904,36 @@ msgid ""
 "remedy, add a fileinfo rule for this file to the vendor data package under "
 "the appropriate product release file."
 msgstr ""
+"rpminspect は、このファイルに対するベンダーデータパッケージからの fileinfo "
+"ルールを必要としています。通常、これはファイルが非標準のパーミッションセット "
+"(例: setuid) を保持していることを意味しています。これは、 rpminspect が "
+"fileinfo "
+"リストをチェックして、パッケージがベンダー指定のルールに準拠している稼働かを"
+"確認する条件になっています。これを修正するには、適切な製品リリースファイル内"
+"にあるベンダーデータパッケージに対して、このファイルに対応する fileinfo "
+"ルールを追加してください。"
 
 #: include/results.h:424
 msgid "Consult the shell documentation for proper syntax."
-msgstr ""
+msgstr "正しい文法について、詳しくはシェルのドキュメンテーションをお読みください。"
 
 #: include/results.h:431
 msgid ""
 "The file referenced was not a known shell script in the before build but is "
 "now a shell script in the after build."
-msgstr ""
+msgstr "参照したファイルは、ビルド前は既知のシェルスクリプトでは無かったものの、ビル"
+"ド後は既知のシェルスクリプトになっています。"
 
 #: include/results.h:438
 msgid ""
 "The referenced shell script is invalid. Consider debugging it with the '-n' "
 "option on the shell to find and fix the problem."
-msgstr ""
+msgstr "参照したシェルスクリプトは正しくありません。シェルに対して '-n' "
+"オプションを指定してデバッグし、問題点を修正してください。"
 
 #: include/results.h:453
 msgid "See annocheck(1) for more information."
-msgstr ""
+msgstr "詳しくは annocheck(1) をお読みください。"
 
 #: include/results.h:460
 msgid ""
@@ -794,6 +942,12 @@ msgid ""
 "declarations). Symbols may also appear as unfortified if the compiler is "
 "unable to determine the size of a buffer, which is not necessarily an error."
 msgstr ""
+"全てのオブジェクトファイルが '-O2 -D_FORTIFY_SOURCE=2' "
+"でコンパイルされていること、および全ての適切なヘッダファイルが include "
+"されていること (暗黙の関数定義が無いこと) "
+"を確認します。なお、コンパイラがバッファのサイズを判断できない場合、シンボル"
+"が強化されていないと表示される場合もありますが、こちらは必ずしもエラーとは限"
+"りません。"
 
 #: include/results.h:475
 msgid ""
@@ -803,6 +957,13 @@ msgid ""
 "If they are not, modify the package spec file to ensure the build links with "
 "the correct shared libraries."
 msgstr ""
+"DT_NEEDED "
+"シンボルが追加または削除されています。これはビルド環境で使用されているライブ"
+"ラリのバージョンが異なる場合に発生します。これは意図したものである場合もあり"
+"ますし、そうでない場合もあります。そのため、この変更が期待通りかどうかを確認"
+"してください。期待通りでない場合は spec "
+"ファイルを修正して、適切な共有ライブラリを使用してビルドするようにしてくださ"
+"い。"
 
 #: include/results.h:490
 msgid ""
@@ -810,6 +971,9 @@ msgid ""
 "is, you can adjust the filesize inspection settings in the rpminspect.yaml "
 "file."
 msgstr ""
+"ファイルが著しく増大しました。この変更が意図したものかどうかをご確認ください"
+"。意図したものである場合は、 rpminspect.yaml ファイル内の filesize "
+"調査設定のサイズを調整してください。"
 
 #: include/results.h:497
 msgid ""
@@ -817,18 +981,24 @@ msgid ""
 "it is, you can adjust the filesize inspection settings in the rpminspect."
 "yaml file."
 msgstr ""
+"ファイルが著しく縮小しました。この変更が意図したものかどうかをご確認ください"
+"。意図したものである場合は、 rpminspect.yaml ファイル内の filesize "
+"調査設定のサイズを調整してください。"
 
 #: include/results.h:504
 msgid ""
 "A previously empty file is no longer empty.  Make sure this change is "
 "intended and fix the package spec file if necessary."
 msgstr ""
+"以前は空であったファイルが空ではなくなっています。この変更が意図したものかど"
+"うかをご確認し、必要であれば spec ファイルを修正してください。"
 
 #: include/results.h:511
 msgid ""
 "A previously non-empty file is now empty.  Make sure this change is intended "
 "and fix the package space file if necessary."
-msgstr ""
+msgstr "以前は空ではなかったファイルが空になっています。この変更が意図したものかどう"
+"かをご確認し、必要であれば spec ファイルを修正してください。"
 
 #: include/results.h:526
 #, c-format
@@ -839,6 +1009,13 @@ msgid ""
 "may also be of help for this situation.  If necessary, update %s with the "
 "changes found here and send a patch to the project that owns the data file."
 msgstr ""
+"指定されたファイル内に予期しないケーパビリティが検出されました。 "
+"capabilities(7) を参照してパッケージ内のファイルを調整するか、もしくは "
+"rpminspect "
+"のベンダーデータパッケージ無いのケーパビリティリストを修正してください。また"
+"、セキュリティチームの支援が必要かもしれません。また必要であれば、 %s "
+"を更新してここで検出されたファイルを追加し、プロジェクトに対してパッチを送信"
+"してください。"
 
 #: include/results.h:541
 msgid ""
@@ -846,6 +1023,9 @@ msgid ""
 "usability problems for users if module parameters were removed in a "
 "maintenance update."
 msgstr ""
+"ビルド間でカーネルのモジュールパラメータが削除されています。メンテナンス更新"
+"でモジュールパラメータが削除されると、ユーザに対する使いやすさの問題となりえ"
+"ます。"
 
 #: include/results.h:548
 msgid ""
@@ -853,6 +1033,8 @@ msgid ""
 "usability problems for users if module dependencies changed in a maintenance "
 "update."
 msgstr ""
+"ビルド間でカーネルのモジュール依存関係が変化しています。メンテナンス更新でモ"
+"ジュールの依存関係が変化すると、ユーザに対する使いやすさの問題となりえます。"
 
 #: include/results.h:555
 msgid ""
@@ -860,6 +1042,9 @@ msgid ""
 "usability problems for users if module device aliases changed in a "
 "maintenance update."
 msgstr ""
+"ビルド間でカーネルのモジュールのデバイス別名が変化しています。メンテナンス更"
+"新でモジュールのデバイス別名が変化すると、ユーザに対する使いやすさの問題とな"
+"りえます。"
 
 #: include/results.h:565
 msgid ""
