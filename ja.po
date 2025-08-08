@@ -8,9 +8,8 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-08-08 06:24+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"PO-Revision-Date: 2025-08-08 06:26+0000\n"
+"Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ja/>\n"
 "Language: ja\n"
@@ -3535,7 +3534,7 @@ msgstr "*** %s を閉じられません"
 #: lib/rmtree.c:74
 #, c-format
 msgid "*** %s is not a directory"
-msgstr "[%s] はディレクトリーではありません!"
+msgstr "*** %s はディレクトリーではありません"
 
 #: lib/rpm.c:71
 #, c-format
@@ -3580,7 +3579,7 @@ msgstr ""
 
 #: lib/strfuncs.c:252 lib/strfuncs.c:284
 msgid "OK"
-msgstr ""
+msgstr "OK"
 
 #: lib/strfuncs.c:254 lib/strfuncs.c:286
 msgid "INFO"
@@ -3616,39 +3615,39 @@ msgstr ""
 
 #: lib/strfuncs.c:312
 msgid "Security"
-msgstr ""
+msgstr "セキュリティ"
 
 #: lib/strfuncs.c:543
 msgid "regular file"
-msgstr ""
+msgstr "通常ファイル"
 
 #: lib/strfuncs.c:545
 msgid "directory"
-msgstr ""
+msgstr "ディレクトリ"
 
 #: lib/strfuncs.c:547
 msgid "character device"
-msgstr ""
+msgstr "キャラクターデバイス"
 
 #: lib/strfuncs.c:549
 msgid "block device"
-msgstr ""
+msgstr "ブロックデバイス"
 
 #: lib/strfuncs.c:551
 msgid "FIFO (named pipe)"
-msgstr ""
+msgstr "FIFO (名前付きパイプ)"
 
 #: lib/strfuncs.c:553
 msgid "symbolic link"
-msgstr ""
+msgstr "シンボリックリンク"
 
 #: lib/strfuncs.c:555
 msgid "socket"
-msgstr ""
+msgstr "ソケット"
 
 #: lib/strfuncs.c:614
 msgid "Success."
-msgstr ""
+msgstr "成功。"
 
 #: lib/strfuncs.c:616
 msgid "One or more inspections failed."
@@ -3911,7 +3910,7 @@ msgstr ""
 #: src/rpminspect.c:536
 #, c-format
 msgid "%s version %s\n"
-msgstr ""
+msgstr "%s バージョン %s\n"
 
 #: src/rpminspect.c:539
 #, c-format
@@ -3940,7 +3939,7 @@ msgstr ""
 #: src/rpminspect.c:627 src/rpminspect.c:635 src/rpminspect.c:653
 #, c-format
 msgid "*** failed to read configuration file %s"
-msgstr ""
+msgstr "*** 設定ファイル %s の読み込みに失敗しました"
 
 #: src/rpminspect.c:658
 #, c-format
@@ -3963,7 +3962,7 @@ msgstr ""
 #: src/rpminspect.c:793
 #, c-format
 msgid "*** unable to create directory %s"
-msgstr ""
+msgstr "*** ディレクトリ %s を作成できません"
 
 #: src/rpminspect.c:851
 #, c-format
@@ -4037,7 +4036,7 @@ msgstr ""
 
 #: src/rpminspect.c:1018
 msgid "FAIL"
-msgstr ""
+msgstr "失敗"
 
 #: src/rpminspect.c:1046
 #, c-format
