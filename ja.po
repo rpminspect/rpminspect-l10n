@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: rpminspect\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
-"PO-Revision-Date: 2025-08-09 00:16+0000\n"
+"PO-Revision-Date: 2025-08-09 03:26+0000\n"
 "Last-Translator: Yasuhiko Kamata <belphegor@belbel.or.jp>\n"
 "Language-Team: Japanese <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ja/>\n"
@@ -1052,12 +1052,16 @@ msgid ""
 "build.  This may be deliberate, but check to make sure you do not have any "
 "unexpected ExclusiveArch lines in the spec file."
 msgstr ""
+"ビルド前には存在していたアーキテクチャが、ビルド後では消失しています。これは"
+"意図したものであるかもしれませんが、 spec ファイル内で予期しない "
+"ExclusiveArch 行を記述していないかどうかをご確認ください。"
 
 #: include/results.h:566
 msgid ""
 "A new architecture has appeared in the after build.  This may indicate "
 "progress in the world of computing."
-msgstr ""
+msgstr "ビルド後に新しいアーキテクチャが現れています。これはコンピューティングの世界"
+"における進歩を示しているのかもしれません。"
 
 #: include/results.h:576
 msgid ""
@@ -1065,31 +1069,41 @@ msgid ""
 "This may be deliberate, but check to make sure you have correct syntax "
 "defining the subpackage in the spec file"
 msgstr ""
+"ビルド前には存在していたサブパッケージが、ビルド後では消失しています。これは"
+"意図したものであるかもしれませんが、 spec "
+"ファイル内でのサブパッケージの定義が正しいかどうかをご確認ください"
 
 #: include/results.h:577
 msgid ""
 "A new subpackage has appeared in the after build.  This may indicate "
 "progress in the world of computing."
-msgstr ""
+msgstr "ビルド後に新しいサブパッケージが現れています。これはコンピューティングの世界"
+"における進歩を示しているのかもしれません。"
 
 #: include/results.h:587
 #, c-format
 msgid ""
 "Make sure the spec file in the after build contains a valid %changelog "
 "section."
-msgstr ""
+msgstr "ビルド後の spec ファイル内に正しい %changelog "
+"セクションが存在していることをご確認ください。"
 
 #: include/results.h:597
 msgid ""
 "Files should not be installed in old directory names.  Modify the package to "
 "install the affected file to the preferred directory."
 msgstr ""
+"古いディレクトリ名でのファイルのインストールはすべきではありません。パッケー"
+"ジを修正して、適切なディレクトリにインストールされるようにしてください。"
 
 #: include/results.h:607
 msgid ""
 "ELF .o and .a files should not carry LTO (Link Time Optimization) bytecode.  "
 "Make sure you have stripped LTO bytecode from those files at install time."
 msgstr ""
+"ELF 形式の .o, .a ファイルは LTO (Link Time Optimization; リンク時最適化) "
+"のバイトコードを含むべきではありません。インストール時に、"
+"これらのファイルから LTO バイトコードを削除するようにしてください。"
 
 #: include/results.h:617
 msgid ""
@@ -1098,6 +1112,11 @@ msgid ""
 "and have a non-symlink turn in to a symlink, ensure this is deliberate.  "
 "NOTE:  You cannot turn a directory in to a symlink due to RPM limitations."
 msgstr ""
+"サブパッケージに含まれているシンボリックリンクが正しい場所を指し示しているこ"
+"とをご確認ください。不確定なシンボリックリンクは許可されていません。ビルド間"
+"を比較している場合で、非シンボリックリンクをシンボリックリンクに変更している"
+"場合は、これが意図したものであることを確認してください。注意: RPM "
+"側の制限により、ディレクトリをシンボリックリンクに変更することはできません。"
 
 #: include/results.h:618
 #, c-format
@@ -1110,6 +1129,16 @@ msgid ""
 "scriptlet for replacing a directory.  See the packaging guidelines for "
 "'Scriptlet to replace a directory' for more information."
 msgstr ""
+"サブパッケージに含まれているシンボリックリンクが正しい場所を指し示しているこ"
+"とをご確認ください。不確定なシンボリックリンクは許可されていません。ビルド間"
+"を比較している場合で、非シンボリックリンクをシンボリックリンクに変更している"
+"場合は、これが意図したものであることを確認してください。注意: RPM "
+"側の制限により、ディレクトリをシンボリックリンクに変更することはできません。"
+"どうしてもこのような変更が必要な場合は、 %pretrans "
+"スクリプトレット内でディレクトリの置換を実施してください。詳しくは "
+"'Scriptlet to replace a directory' "
+"(ディレクトリを置き換えるためのスクリプトレット) "
+"のパッケージングガイドラインをお読みください。"
 
 #: include/results.h:628
 #, c-format
@@ -1119,6 +1148,11 @@ msgid ""
 "See the RPM documentation or distribution package maintainer guide for more "
 "information."
 msgstr ""
+"%files "
+"セクション内の指定した行から禁止されたパス参照を削除してください。多くの場合"
+"、パス指定を行うにあたって RPM マクロを使用することができます。詳しくは RPM "
+"ドキュメンテーションか、ディストリビューションのパッケージメンテナガイドをお"
+"読みください。"
 
 #: include/results.h:638
 msgid ""
@@ -1126,6 +1160,10 @@ msgid ""
 "is intended and if necessary fix the spec file so the correct file is "
 "included in the built package."
 msgstr ""
+"多くの場合、 MIME "
+"タイプの変更は意図したものですが、念のため変更が正しいことをご確認ください。"
+"また、構築されたパッケージ内に正しいファイルが含まれるよう、必要であれば "
+"spec ファイルを修正してください。"
 
 #: include/results.h:648
 msgid ""
@@ -1133,6 +1171,11 @@ msgid ""
 "users.  See the abidiff(1) documentation and the distribution ABI policies "
 "to determine if this detected change is allowed."
 msgstr ""
+"メンテナンス更新での ABI "
+"の変更は、ユーザに対して障害をもたらします。この変更が許可されるかどうかにつ"
+"いて、詳しくは abidiff(1) "
+"のドキュメンテーションもしくはディストリビューションの ABI "
+"ポリシーをお読みください。"
 
 #: include/results.h:658
 msgid ""
@@ -1140,6 +1183,10 @@ msgid ""
 "problems for users.  See the libabigail documentation and the distribution "
 "KMI policy to determine if this detected change is allowed."
 msgstr ""
+"メンテナンス更新でのカーネルモジュールのインターフェイス変更は、ユーザに対し"
+"て障害をもたらします。この変更が許可されるかどうかについて、詳しくは "
+"libabigail のドキュメンテーションもしくはディストリビューションの KMI "
+"ポリシーをお読みください。"
 
 #: include/results.h:668
 #, c-format
@@ -1149,6 +1196,11 @@ msgid ""
 "configuration files, make sure the package can handle upgrading an existing "
 "package -or- honor the old file locations."
 msgstr ""
+"%config "
+"の変更は注意して実施する必要があります。まずはファイルが正しい場所にインスト"
+"ールされているかどうかを確認してください。もしもパッケージ側で設定ファイルの"
+"構成変更が行われた場合は、既存のパッケージからのアップグレードが正しく行われ"
+"るかどうか、および古いファイルの場所を参照するかどうかも確認してください。"
 
 #: include/results.h:678
 #, c-format
@@ -1157,6 +1209,11 @@ msgid ""
 "the package is not a rebase.  Sometimes upstream projects rename or move "
 "documentation files and the spec file needs to account for those changes."
 msgstr ""
+"%doc "
+"ファイルに対する変更が見つかりました。パッケージのリベースが行われていない場"
+"合は、これらの変更外としたものかどうかをご確認ください。また、アップストリー"
+"ム側でドキュメンテーションファイルの名前変更や移動が行われた場合は、"
+"その変更に追随するために spec ファイルの編集が必要となります。"
 
 #: include/results.h:688
 msgid ""
@@ -1166,6 +1223,12 @@ msgid ""
 "the source package has any zero length or otherwise invalid patches and "
 "correct the problem."
 msgstr ""
+"正しくないパスが見つかりました。これは通常、 2 "
+"つのツリーを比較してパッチ集を生成した場合に発生します。またファイルを削除し"
+"た場合、結果のパッチ集内に 0 の長さのパッチが生成される場合もあります。"
+"ソースパッケージ内に長さが 0 "
+"のパッチや無効なパッチが存在していないかどうかを確認し、問題を修正してくださ"
+"い。"
 
 #: include/results.h:690
 #, c-format
@@ -1179,6 +1242,14 @@ msgid ""
 "define the patch at the top of the spec file.  So Patch47 is applied with "
 "either a '%patch 47', '%patch -P 47', '%patch -P47', or '%patch47' macro."
 msgstr ""
+"ソース RPM ヘッダ内にはパッチ (spec ファイル内の PatchN: で指定したファイル) "
+"の指定がありますが、 spec ファイル内で適用されていないパッチがあります。"
+"これは対応する %patch マクロが使われておらず、かつ %autosetup や %autopatch "
+"のマクロを使用していないことを示しています (通常は %prep セクション内に "
+"%patch マクロがあるはずです) 。なお、 %patch マクロで指定された番号は、 spec "
+"ファイルの冒頭でパッチ番号と同じです。たとえば Patch47 であれば、 '%patch "
+"47', '%patch -P 47', '%patch -P47', '%patch47' "
+"のいずれかで適用を行うべきものです。"
 
 #: include/results.h:692
 #, c-format
@@ -1188,12 +1259,19 @@ msgid ""
 "For example, Patch47 needs to have either a '%patch 47', '%patch -P 47', "
 "'%patch -P47', or '%patch47' macro."
 msgstr ""
+"パッチが定義されていますが、 %patch マクロで指定した番号が合致していません。"
+"それぞれの %patch マクロが正しい番号を指定してすることを確認してください。"
+"たとえば Patch47 であれば、 '%patch 47', '%patch -P 47', '%patch -P47', "
+"'%patch47' のいずれかで適用を行うべきものです。"
 
 #: include/results.h:694
 msgid ""
 "The defined patch file is not something rpminspect can handle.  This is "
 "likely a bug and should be reported to the upstream rpminspect project."
 msgstr ""
+"パッチ適用後のファイルが rpminspect "
+"では処理できませんでした。これはバグであるものと考えられ、アップストリームの "
+"rpminspect プロジェクトへの報告を行うべきものです。"
 
 #: include/results.h:704
 msgid ""
@@ -1203,6 +1281,13 @@ msgid ""
 "sure the file in question is clean, please file a bug with rpminspect for "
 "further help."
 msgstr ""
+"ClamAV がファイル内にウィルスを検知しました。なお検出が擬陽性 "
+"(誤って検出した) "
+"である可能性もありますが、念のため対象のファイルがウィルスに感染していないこ"
+"とを手作業で確認してください。また、 ClamAV "
+"のデータベースもしくは検出システムの問題である場合もあります。ファイルが安全"
+"であることが確実である場合、 rpminspect "
+"に対してバグ報告を行い、追加の支援を受けてください。"
 
 #: include/results.h:714
 #, c-format
@@ -1212,6 +1297,11 @@ msgid ""
 "vendor data package for the product.  Modify the %s file and send a patch to "
 "the project that owns it."
 msgstr ""
+"パッケージ内に政治的に機微な内容が含まれているファイルが見つかりました。この"
+"ファイルが許可される場合は、製品に対する rpminspect "
+"のベンダーデータパッケージ内に追加を行うべきものです。 %s "
+"ファイルを修正して、このファイルを所有するプロジェクトに対してパッチを送信し"
+"てください。"
 
 #: include/results.h:724
 msgid ""
@@ -1224,6 +1314,15 @@ msgid ""
 "order to allow for backwards compatibility.  Whenever possible the "
 "deprecated functions should not be used."
 msgstr ""
+"パッケージ内の ELF ファイル内に、禁止されたシンボルが見つかりました。 "
+"rpminspect "
+"では、設定内で禁止シンボルを指定しています。これが意図したものである場合は、 "
+"badfuncs "
+"調査を無効化してください。意図したものでない場合はマニュアルページを参照して"
+"、禁止シンボルの代替となる API "
+"関数を探してください。通常、これらの禁止シンボルは廃止予定としてマークされて"
+"いるもので、後方互換性確保の観点から現在も提供され続けているものです。廃止予"
+"定の関数はできる限り使用しないでください。"
 
 #: include/results.h:734
 msgid ""
@@ -1234,6 +1333,12 @@ msgid ""
 "try using a program such as patchelf to remove these properties from the ELF "
 "files."
 msgstr ""
+"このパッケージ内の ELF 共有オブジェクト内に、 DT_RPATH または DT_RUNPATH "
+"のプロパティが見つかりました。特定の状況下を除いて、 DT_RPATH や DT_RUNPATH "
+"の使用は推奨されません。まずは spec ファイル内の %build ステージで、 rpath "
+"を無効化しているかどうかを確認してください。この問題が簡単には解決できない場"
+"合は、 patchelf "
+"などのプログラムを利用して、これらのプロパティを削除することもできます。"
 
 #: include/results.h:736
 msgid ""
@@ -1241,6 +1346,10 @@ msgid ""
 "This indicates a linker error and should not happen.  ELF objects should "
 "only carry DT_RPATH or DT_RUNPATH, never both."
 msgstr ""
+"ELF 共有オブジェクト内に DT_RPATH と DT_RUNPATH "
+"の両方のプロパティが見つかりました。これはリンカーのエラーを示しているもので"
+"、発生すべきものではありません。 ELF オブジェクトでは DT_RPATH か DT_RUNPATH "
+"のいずれかのみを含めるべきで、両方を含めるべきではありません。"
 
 #: include/results.h:746
 msgid ""
