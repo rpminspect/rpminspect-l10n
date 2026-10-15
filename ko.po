@@ -2446,7 +2446,7 @@ msgstr ""
 
 #: lib/inspect_metadata.c:55
 msgid "invalid vendor ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${ARCH}에서 잘못된 디렉토리 ${FILE}"
 
 #: lib/inspect_metadata.c:76
 #, c-format
