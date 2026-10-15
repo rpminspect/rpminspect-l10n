@@ -2118,7 +2118,7 @@ msgstr "파일 검사는 원천 꾸러미만 적용되며, 건너뜁니다."
 #: lib/inspect_filesize.c:67
 #, c-format
 msgid "%s became a non-empty file on %s"
-msgstr ""
+msgstr "%s 는 %s 에서 빈 파일이 되었습니다"
 
 #: lib/inspect_filesize.c:71
 msgid "non-empty ${FILE} on ${ARCH}"
