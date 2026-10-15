@@ -2122,7 +2122,7 @@ msgstr "%s 는 %s 에서 빈 파일이 되었습니다"
 
 #: lib/inspect_filesize.c:71
 msgid "non-empty ${FILE} on ${ARCH}"
-msgstr ""
+msgstr "${ARCH} 에서 빈 ${FILE}"
 
 #: lib/inspect_filesize.c:76
 #, c-format
