@@ -9,8 +9,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2023-06-27 09:21-0400\n"
 "PO-Revision-Date: 2026-10-16 08:18+0000\n"
-"Last-Translator: Weblate Translation Memory <noreply-mt-weblate-translation-"
-"memory@weblate.org>\n"
+"Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/"
 "rpminspect/main/ko/>\n"
 "Language: ko\n"
@@ -1413,7 +1412,7 @@ msgstr ""
 
 #: lib/inspect_addedfiles.c:178
 msgid "forbidden directory ${FILE} on ${ARCH}"
-msgstr "${ARCH} 에서 ${FILE} 에 대한 금지된 그룹"
+msgstr "${ARCH} 에서 금지된 디렉토리 ${FILE}"
 
 #: lib/inspect_addedfiles.c:209
 #, c-format
@@ -1937,7 +1936,7 @@ msgstr ""
 #: lib/inspect_doc.c:98
 #, c-format
 msgid "%%doc file content change for %s in %s on %s\n"
-msgstr "%s 의 %s 에서 %s 용 %%config 파일 내용 변경\n"
+msgstr "%s 의 %s 에서 %s 용 %%doc 파일 내용 변경\n"
 
 #: lib/inspect_doc.c:113
 #, c-format
@@ -2118,11 +2117,11 @@ msgstr "파일 검사는 원천 꾸러미만 적용되며, 건너뜁니다."
 #: lib/inspect_filesize.c:67
 #, c-format
 msgid "%s became a non-empty file on %s"
-msgstr "%s 는 %s 에서 빈 파일이 되었습니다"
+msgstr "%s 는 %s 에서 비어 있지 않은 파일이 되었습니다"
 
 #: lib/inspect_filesize.c:71
 msgid "non-empty ${FILE} on ${ARCH}"
-msgstr "${ARCH} 에서 빈 ${FILE}"
+msgstr "${ARCH} 비어 있지 않은 ${FILE}"
 
 #: lib/inspect_filesize.c:76
 #, c-format
@@ -2300,7 +2299,7 @@ msgstr "미승인된 저작권 %s: %s"
 #: lib/inspect_license.c:505
 #, c-format
 msgid "Empty License Tag in %s"
-msgstr "%s 에서 비어 있는 License 태그"
+msgstr "%s 에서 비어 있는 License 표시"
 
 #: lib/inspect_license.c:509
 msgid "missing License tag in ${FILE}"
@@ -2446,7 +2445,7 @@ msgstr ""
 
 #: lib/inspect_metadata.c:55
 msgid "invalid vendor ${FILE} on ${ARCH}"
-msgstr "${ARCH}에서 잘못된 디렉토리 ${FILE}"
+msgstr "${ARCH} 에서 잘못된 공급업체 ${FILE}"
 
 #: lib/inspect_metadata.c:76
 #, c-format
