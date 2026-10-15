@@ -1937,7 +1937,7 @@ msgstr ""
 #: lib/inspect_doc.c:98
 #, c-format
 msgid "%%doc file content change for %s in %s on %s\n"
-msgstr ""
+msgstr "%s 의 %s 에서 %s 용 %%config 파일 내용 변경\n"
 
 #: lib/inspect_doc.c:113
 #, c-format
